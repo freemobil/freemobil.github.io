@@ -260,19 +260,19 @@ internette çok sayıda site tarafından paylaşımı yapılan, dilenirse rahatl
 <div class="col-12">
 <div class="app-screenshots">
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/22.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/22.jpg" alt=""></div>
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/25.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/25.jpg" alt=""></div>
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/26.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/26.jpg" alt=""></div>
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/24.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/24.jpg" alt=""></div>
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/23.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/23.jpg" alt=""></div>
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/18.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/18.jpg" alt=""></div>
 
-<div class="single-screenshot"><img src="https://freemobil.github.io/img/12.jpg" alt=""></div>
+<div class="single-screenshot"><img src="img/12.jpg" alt=""></div>
 
 <div class="single-screenshot"><img src="img/7.jpg" alt=""></div>
 
