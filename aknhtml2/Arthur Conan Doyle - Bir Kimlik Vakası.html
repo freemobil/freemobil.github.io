@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>ProMeTHeuS</title>
+  
+  
+  
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #c9ced3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito, sans-serif;
+  font-size: 12px;
+}
+.bg-container {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -1;
+}
+
+.bg-container img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(15px);
+  -webkit-filter: blur(50px);
+  transform: scale(1.1); 
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+  transition: .5s;
+}
+
+.img-container img.active {
+  transition: .5s;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
+    <div class="bg-container">
+        <img src="" alt="" id="background">
+    </div>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="" alt="" id="cover" class="active">
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio src=""></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time"></span>
+                <span id="duration"></span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  
+      <script id="rendered-js" >
+const image = document.querySelector('#cover');
+const title = document.getElementById('title');
+const artist = document.getElementById('artist');
+const music = document.querySelector('audio');
+const currentTimeEl = document.getElementById('current-time');
+const durationEl = document.getElementById('duration');
+const progress = document.getElementById('progress');
+const progressContainer = document.getElementById('progress-container');
+const prevBtn = document.getElementById('prev');
+const playBtn = document.getElementById('play');
+const nextBtn = document.getElementById('next');
+const background = document.getElementById("background");
+
+// Music
+const songs = [
+{
+  path: "http://archive.org/download/232_20220423/162.mp3",
+  displayName: 'Bir Kimlik Vakası',
+  artist: 'Arthur Conan Doyle',
+  cover: "https://sedat342042.github.io/ft/0022.jpg" }];
+
+
+
+// Check if Playing
+let isPlaying = false;
+
+// Play
+function playSong() {
+  isPlaying = true;
+  playBtn.classList.replace('fa-play', 'fa-pause');
+  playBtn.setAttribute('title', 'Pause');
+  music.play();
+}
+
+// Pause
+function pauseSong() {
+  isPlaying = false;
+  playBtn.classList.replace('fa-pause', 'fa-play');
+  playBtn.setAttribute('title', 'Play');
+  music.pause();
+}
+
+// Play or Pause Event Listener
+playBtn.addEventListener('click', () => isPlaying ? pauseSong() : playSong());
+
+// Update DOM
+function loadSong(song) {
+  title.textContent = song.displayName;
+  artist.textContent = song.artist;
+  music.src = song.path;
+  changeCover(song.cover);
+}
+
+function changeCover(cover) {
+  image.classList.remove('active');
+  setTimeout(() => {
+    image.src = cover;
+    image.classList.add('active');
+  }, 100);
+  background.src = cover;
+}
+
+// Current Song
+let songIndex = 0;
+
+// Previous Song
+function prevSong() {
+  songIndex--;
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}
+
+// Next Song
+function nextSong() {
+  songIndex++;
+  if (songIndex > songs.length - 1) {
+    songIndex = 0;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}
+
+// On Load - Select First Song
+loadSong(songs[songIndex]);
+
+// Update Progress Bar & Time
+function updateProgressBar(e) {
+  if (isPlaying) {
+    const { duration, currentTime } = e.srcElement;
+    // Update progress bar width
+    const progressPercent = currentTime / duration * 100;
+    progress.style.width = `${progressPercent}%`;
+    // Calculate display for duration
+    const durationMinutes = Math.floor(duration / 60);
+    let durationSeconds = Math.floor(duration % 60);
+    if (durationSeconds < 10) {
+      durationSeconds = `0${durationSeconds}`;
+    }
+    // Delay switching duration Element to avoid NaN
+    if (durationSeconds) {
+      durationEl.textContent = `${durationMinutes}:${durationSeconds}`;
+    }
+    // Calculate display for currentTime
+    const currentMinutes = Math.floor(currentTime / 60);
+    let currentSeconds = Math.floor(currentTime % 60);
+    if (currentSeconds < 10) {
+      currentSeconds = `0${currentSeconds}`;
+    }
+    currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
+  }
+}
+
+// Set Progress Bar
+function setProgressBar(e) {
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const { duration } = music;
+  music.currentTime = clickX / width * duration;
+}
+
+// Event Listeners
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+music.addEventListener('ended', nextSong);
+music.addEventListener('timeupdate', updateProgressBar);
+progressContainer.addEventListener('click', setProgressBar);
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
