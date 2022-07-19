@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#box{
+	background-color:#8e44ad;
+}
+
+.box-deco{
+	background-image:url(../images/misc/nav_deco_magenta.png);	
+}
+
+#menu-deploy a{
+	background-color:#8e44ad;
+}
+
+.header-message{
+	background-color:#8e44ad;
+}
+
+.contact-header{
+	background-color:#8e44ad;
+}
+
+.footer{
+	background-color:#8e44ad;
+}
