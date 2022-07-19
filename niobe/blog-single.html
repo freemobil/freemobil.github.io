@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-640x920.png">
+<title>niobe - mobile template</title>
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&display=swap" rel="stylesheet">
+</head>
+<body id="mobile_wrap">
+
+    <div class="panel-overlay"></div>
+
+	<!-- Left panel -->
+	<div id="panel-left"></div>
+	<!-- Right panel -->
+	<div id="panel-right"></div>
+	<!-- Bottom panel -->
+	<div id="panel-bottom"></div>
+
+    <div class="views">
+
+      <div class="view view-main">
+<div class="pages">
+  <div data-page="blogsingle" class="page">
+    <div class="page-content">
+    
+		<div class="navbar navbar--fixed navbar--fixed-top navbar--page" id="header-page"></div>
+	
+     <div id="pages_maincontent">
+      
+      <a href="blog.html" class="backto"><img src="images/icons/orange/back.png" alt="" title="" /></a>
+      <h2 class="blog_title">Good design is making something intelligible and memorable</h2>
+	  
+                  <!-- Slider -->
+                 <div class="swiper-container-pages">
+                    <div class="swiper-wrapper">
+                    
+                      <div class="swiper-slide">
+			<img src="images/page_photo.jpg" alt="" title="" />
+                       </div>
+                      <div class="swiper-slide">
+			<img src="images/page_photo2.jpg" alt="" title="" />
+                       </div>
+                      <div class="swiper-slide">
+			<img src="images/page_photo3.jpg" alt="" title="" />
+                       </div>		   
+					   
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>	
+<div class="page_single layout_fullwidth_padding">	
+          <div class="post_single">
+          <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </p>
+            <span class="post_date">24.02.2015</span>
+            <span class="post_author"> <a href="#">admin</a></span>
+            <span class="post_comments"><a href="#">0</a></span>
+          </div>
+	 <a href="#" data-popup=".popup-social" class="btn btn--full open-popup">SHARE THIS POST</a>
+          
+		  
+	<div class="tabs">
+	
+	  <input type="radio" name="tabs" class="tabradio" id="tabone" checked="checked">
+	  <label class="tablabel tablabel--12" for="tabone">Leave a comment</label>
+	  <div class="tab">
+                            <div class="contactform">
+                            <form id="CommentForm" method="post" action="">
+                            <label>Name:</label>
+                            <input type="text" name="CommentName" id="CommentName" value="" class="form_input" />
+                            <label>Email:</label>
+                            <input type="text" name="CommentEmail" id="CommentEmail" value="" class="form_input" />
+                            <label>Comment:</label>
+                            <textarea name="Comment" id="Comment" class="form_textarea" rows="" cols=""></textarea>
+                            <input type="submit" name="submit" class="form_submit" id="submit" value="SUBMIT" />
+                            </form>
+                            </div>
+	  </div>
+	  
+	  <input type="radio" name="tabs" class="tabradio" id="tabtwo">
+	  <label class="tablabel tablabel--12" for="tabtwo">Comments</label>
+	  <div class="tab">
+                            <ul class="comments">
+                                <li class="comment_row">
+                                    <div class="comm_avatar"><img src="images/icons/orange/user.png" alt="" title="" border="0" /></div>
+                                    <div class="comm_content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit sapien, eleifend in by <a href="#">John Doe</a></p></div>
+                                </li>
+                                <li class="comment_row">
+                                    <div class="comm_avatar"><img src="images/icons/orange/user.png" alt="" title="" border="0" /></div>
+                                    <div class="comm_content"><p>Consectetur adipiscing elit. Nam velit sapien, eleifend in by <a href="#">John Doe</a></p></div>
+                                </li>
+                                <li class="comment_row">
+                                    <div class="comm_avatar"><img src="images/icons/orange/user.png" alt="" title="" border="0" /></div>
+                                    <div class="comm_content"><p>Nam velit sapien, eleifend in by <a href="#">John Doe</a></p></div>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+	  </div>
+	  
+	</div>
+
+		  
+ </div>     
+      
+    </div>
+  </div>
+</div>
+
+         </div>
+    </div>
+</div>
+    <!-- Login Popup -->
+    <div id="popup-login"></div>
+
+    <!-- Register Popup -->
+    <div id="popup-signup"></div>
+	
+    <!-- Forgot Password Popup -->
+    <div id="popup-forgot"></div>
+
+    <!-- Social Icons Popup -->
+    <div id="popup-social"></div>
+    
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.validate.min.js" ></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.custom.js"></script>
+  </body>
+</html>
