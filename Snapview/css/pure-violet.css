@@ -1,0 +1,19 @@
+.home-btn:hover, .form-inline .btn:hover{
+	background-color: #9900FF;
+	color: white;
+}
+ 
+.features-left div:hover h4, 
+.features-right div:hover h4, 
+.clients-list div:hover h4,
+.faq-list div:hover h4{
+	color: #9900FF;
+}
+
+.dark-stroke, .clients-stroke{
+	border-bottom: 2px solid #9900FF;
+}
+
+.btn-lg:hover{
+	background-color: #9900FF;
+}

@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+	<title>Tripe - Mobile Travel HTML Template</title>
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+	<div id="app">
+
+		<div class="view view-main view-init ios-edges" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+					<div class="toolbar-inner">
+						<a href="#tab-home" class="tab-link tab-link-active">
+							<i class="icon ion-ios-home"></i>
+						</a>
+						<a href="#tab-favorite" class="tab-link">
+							<i class="icon ion-ios-bookmark"></i>
+						</a>
+						<a href="#tab-explore" class="tab-link">
+							<i class="icon ion-ios-compass"></i>
+						</a>
+						<a href="#tab-notification" class="tab-link">
+							<span class="notification-point"></span>
+							<i class="icon ion-ios-notifications"></i>
+						</a>
+						<a href="#tab-profile" class="tab-link">
+							<i class="icon ion-ios-person"></i>
+						</a>
+					</div>
+				</div>
+				
+				<div class="tabs">
+
+					<div id="tab-home" class="tab tab-home tab-active">
+
+						<!-- ========== TAB HOME ========== -->
+
+						<div class="header-title">
+							<div class="row">
+								<div class="col-70">
+									<div class="title-left">
+										<span class="title-name">Hi, John Doe</span>
+										<h2>Welcome</h2>
+									</div>
+								</div>
+								<div class="col-30">
+									<div class="profile-avatar">
+										<a href="/sign-in/">
+											<div class="image">
+												<span class="notification-point"></span>
+												<img src="images/profile.jpg" alt="">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header-searchbar">
+							<form class="searchbar">
+								<div class="searchbar-inner">
+									<div class="searchbar-input-wrap">
+										<input type="search" placeholder="Search place, hotel, tour , etc">
+										<i class="searchbar-icon"></i>
+										<span class="input-clear-button"></span>
+									</div>
+									<span class="searchbar-disable-button">Cancel</span>
+								</div>
+							</form>
+						</div>
+
+						<div class="tour-category">
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="/explore-category-tour/">
+											<div class="half-mask"></div>
+											<img src="images/mountain.jpg" alt="">
+											<div class="caption">
+												<h4>Mountain</h4>
+												<span>70 Places</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-tour/">
+											<div class="half-mask"></div>
+											<img src="images/beach.jpg" alt="">
+											<div class="caption">
+												<h4>Beach</h4>
+												<span>70 Places</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-tour/">
+											<div class="half-mask"></div>
+											<img src="images/landscape.jpg" alt="">
+											<div class="caption">
+												<h4>Landscape</h4>
+												<span>70 Places</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-tour/">
+											<div class="half-mask"></div>
+											<img src="images/forest.jpg" alt="">
+											<div class="caption">
+												<h4>Forest</h4>
+												<span>70 Places</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="country-category">
+							<div class="block-title">
+								<span class="overline-title">TODAY</span>
+								<h3>Where are you go?</h3>
+							</div>
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/africa.jpg" alt="">
+											<div class="caption">
+												<h4>Africa</h4>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/australia.jpg" alt="">
+											<div class="caption">
+												<h4>Australia</h4>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/maldives.jpg" alt="">
+											<div class="caption">
+												<h4>Maldives</h4>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/japan.jpg" alt="">
+											<div class="caption">
+												<h4>Japan</h4>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="popular-destination">
+							<div class="block-title">
+								<span class="overline-title">LATEST</span>
+								<h3>Popular Destinations</h3>
+							</div>
+							<div class="block">
+								<div class="swiper-container swiper-init" data-pagination='{"el": ".swiper-pagination"}' data-space-between="20" data-slides-per-view="auto">
+									<div class="swiper-pagination"></div>
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="full-mask"></div>
+											<img src="images/popular-destination1.jpg" alt="">
+											<div class="caption">
+												<a href="/travel-details/"><h4 class="title-tour-large">Highest Mountain in the World</h4></a>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+												<div class="price-booking">
+													<h5>$959 <span>/30 Days</span></h5>
+												</div>
+												<div class="wrap-button">
+													<button class="button">Add to Plan</button>
+												</div>
+											</div>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>Province No. 1, Nepal</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="full-mask"></div>
+											<img src="images/popular-destination2.jpg" alt="">
+											<div class="caption">
+												<a href="/travel-details/"><h4 class="title-tour-large">Middle of a Beautiful Lake Tour</h4></a>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+												<div class="price-booking">
+													<h5>$959 <span>/30 Days</span></h5>
+												</div>
+												<div class="wrap-button">
+													<button class="button">Add to Plan</button>
+												</div>
+											</div>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>Province No. 1, Nepal</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="full-mask"></div>
+											<img src="images/popular-destination3.jpg" alt="">
+											<div class="caption">
+												<a href="/travel-details/"><h4 class="title-tour-large">Charming Underwater Park</h4></a>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+												<div class="price-booking">
+													<h5>$959 <span>/30 Days</span></h5>
+												</div>
+												<div class="wrap-button">
+													<button class="button">Add to Plan</button>
+												</div>
+											</div>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>Province No. 1, Nepal</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="full-mask"></div>
+											<img src="images/popular-destination4.jpg" alt="">
+											<div class="caption">
+												<a href="/travel-details/"><h4 class="title-tour-large">Down the Beauty of the Island</h4></a>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+												<div class="price-booking">
+													<h5>$959 <span>/30 Days</span></h5>
+												</div>
+												<div class="wrap-button">
+													<button class="button">Add to Plan</button>
+												</div>
+											</div>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>Province No. 1, Nepal</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner-offer">
+							<div class="block">
+								<div class="content">
+									<img src="images/banner.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="recommended-tour">
+							<div class="block-title">
+								<span class="overline-title">RECOMMENDED</span>
+								<h3>For You</h3>
+							</div>
+							<div class="block">
+								<div class="two-column-grid">
+									<a href="/travel-details/">
+										<div class="wrap-image">
+											<div class="full-mask"></div>
+											<img src="images/recommended1.jpg" alt="">
+											<div class="caption">
+												<h4>Underwater Tourism</h4>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="who-likes">
+												<i class="icon ion-ios-heart"></i>
+												<span>13050</span>
+											</div>
+										</div>
+									</a>
+									<a href="/travel-details/">
+										<div class="wrap-image">
+											<div class="full-mask"></div>
+											<img src="images/recommended2.jpg" alt="">
+											<div class="caption">
+												<h4>The Pinnacle of Courage</h4>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="who-likes">
+												<i class="icon ion-ios-heart"></i>
+												<span>13050</span>
+											</div>
+										</div>
+									</a>
+									<a href="/travel-details/">
+										<div class="wrap-image">
+											<div class="full-mask"></div>
+											<img src="images/recommended3.jpg" alt="">
+											<div class="caption">
+												<h4>Cliff Top Lodging With a Pool</h4>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="who-likes">
+												<i class="icon ion-ios-heart"></i>
+												<span>13050</span>
+											</div>
+										</div>
+									</a>
+									<a href="/travel-details/">
+										<div class="wrap-image">
+											<div class="full-mask"></div>
+											<img src="images/recommended4.jpg" alt="">
+											<div class="caption">
+												<h4>The Best Ocean Waves</h4>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="who-likes">
+												<i class="icon ion-ios-heart"></i>
+												<span>13050</span>
+											</div>
+										</div>
+									</a>
+									<a href="/travel-details/">
+										<div class="wrap-image">
+											<div class="full-mask"></div>
+											<img src="images/recommended5.jpg" alt="">
+											<div class="caption">
+												<h4>Night Culinary Tour</h4>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="who-likes">
+												<i class="icon ion-ios-heart"></i>
+												<span>13050</span>
+											</div>
+										</div>
+									</a>
+									<a href="/travel-details/">
+										<div class="wrap-image">
+											<div class="full-mask"></div>
+											<img src="images/recommended6.jpg" alt="">
+											<div class="caption">
+												<h4>Beautiful and Cool Inn</h4>
+												<div class="rate-destination">
+													<ul>
+														<li><i class="icon ion-ios-star"></i></li>
+														<li><span>4.5</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="who-likes">
+												<i class="icon ion-ios-heart"></i>
+												<span>13050</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- ========== END TAB HOME ========== -->
+
+					</div>
+
+					<div id="tab-favorite" class="tab tab-favorite">
+						<!-- ========== TAB FAVORITE ========== -->
+
+						<div class="block-title">
+							<span class="overline-title">FAVORITE</span>
+							<h3>That you save</h3>
+						</div>
+
+						<div class="favorite-category">
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="content content-active">
+											<span>Tour</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="content">
+											<span>Destination</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="content">
+											<span>Hotel</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="content">
+											<span>Activities</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="content">
+											<span>Restaurant</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="content">
+											<span>Lodging</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="favorite-item">
+							<div class="block">
+								<div class="content">
+									<div class="image">
+										<img src="images/favorite1.jpg" alt="">
+										<div class="favorite-icon">
+											<i class="icon ion-ios-bookmark"></i>
+										</div>
+									</div>
+									<div class="text">
+										<a href="/travel-details/"><h4>Highest Mountain in the World</h4></a>
+										<p class="location">
+											<i class="icon ion-ios-pin"></i>
+											Privince No. 1, Nepal
+										</p>
+										<div class="price-booking">
+											<h5>$959 <span>/30 Days</span></h5>
+										</div>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-content"></div>
+								<!-- end divider space -->
+
+								<div class="content">
+									<div class="image">
+										<img src="images/favorite2.jpg" alt="">
+										<div class="favorite-icon">
+											<i class="icon ion-ios-bookmark"></i>
+										</div>
+									</div>
+									<div class="text">
+										<a href="/travel-details/"><h4>Middle of a Beautiful Lake Tour</h4></a>
+										<p class="location">
+											<i class="icon ion-ios-pin"></i>
+											Privince No. 1, Nepal
+										</p>
+										<div class="price-booking">
+											<h5>$959 <span>/30 Days</span></h5>
+										</div>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-content"></div>
+								<!-- end divider space -->
+
+								<div class="content">
+									<div class="image">
+										<img src="images/favorite3.jpg" alt="">
+										<div class="favorite-icon">
+											<i class="icon ion-ios-bookmark"></i>
+										</div>
+									</div>
+									<div class="text">
+										<a href="/travel-details/"><h4>Charming Underwater Park</h4></a>
+										<p class="location">
+											<i class="icon ion-ios-pin"></i>
+											Privince No. 1, Nepal
+										</p>
+										<div class="price-booking">
+											<h5>$959 <span>/30 Days</span></h5>
+										</div>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-content"></div>
+								<!-- end divider space -->
+
+								<div class="content">
+									<div class="image">
+										<img src="images/favorite4.jpg" alt="">
+										<div class="favorite-icon">
+											<i class="icon ion-ios-bookmark"></i>
+										</div>
+									</div>
+									<div class="text">
+										<a href="/travel-details/"><h4>Charming Sunset Dots</h4></a>
+										<p class="location">
+											<i class="icon ion-ios-pin"></i>
+											Privince No. 1, Nepal
+										</p>
+										<div class="price-booking">
+											<h5>$959 <span>/30 Days</span></h5>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- ========== END TAB FAVORITE ========== -->
+					</div>
+
+					<div id="tab-explore" class="tab tab-explore">
+						<!-- ========== TAB EXPLORE ========== -->
+
+						<div class="explore-header-slide">
+							<div class="block-title">
+								<span class="overline-title">EXPLORE</span>
+								<h3>Explore the world</h3>
+							</div>
+
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="half-mask half-mask-v"></div>
+										<img src="images/mountain.jpg" alt="">
+										<div class="caption">
+											<h2>Explore Mountain</h2>
+											<p>Explore mountains together around the world</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="half-mask half-mask-v"></div>
+										<img src="images/forest.jpg" alt="">
+										<div class="caption">
+											<h2>Explore Forest</h2>
+											<p>Explore the Forest through various recreational activities</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="half-mask half-mask-v"></div>
+										<img src="images/beach.jpg" alt="">
+										<div class="caption">
+											<h2>Explore Beach</h2>
+											<p>The best beaches & islands to explore</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="explore-too">
+							<div class="block-title">
+								<h3>Explore Too</h3>
+							</div>
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="/explore-category-place/">
+											<div class="half-mask"></div>
+											<img src="images/explore-too1.jpg" alt="">
+											<div class="caption">
+												<h4>Hotels</h4>
+												<span>98 Hotels</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-place/">
+											<div class="half-mask"></div>
+											<img src="images/explore-too2.jpg" alt="">
+											<div class="caption">
+												<h4>Restaurants</h4>
+												<span>210 Restaurants</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-place/">
+											<div class="half-mask"></div>
+											<img src="images/explore-too3.jpg" alt="">
+											<div class="caption">
+												<h4>Tours</h4>
+												<span>1040 Tours</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-place/">
+											<div class="half-mask"></div>
+											<img src="images/explore-too4.jpg" alt="">
+											<div class="caption">
+												<h4>Lodging</h4>
+												<span>140 Lodging</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/explore-category-place/">
+											<div class="half-mask"></div>
+											<img src="images/explore-too5.jpg" alt="">
+											<div class="caption">
+												<h4>Activities</h4>
+												<span>1400 Activities</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="country-category">
+							<div class="block-title">
+								<h3>Popular Destinations</h3>
+							</div>
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/africa.jpg" alt="">
+											<div class="caption">
+												<h4>Africa</h4>
+												<span>98 Tours</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/australia.jpg" alt="">
+											<div class="caption">
+												<h4>Australia</h4>
+												<span>98 Tours</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/maldives.jpg" alt="">
+											<div class="caption">
+												<h4>Maldives</h4>
+												<span>98 Tours</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="/country-details/">
+											<div class="full-mask"></div>
+											<img src="images/japan.jpg" alt="">
+											<div class="caption">
+												<h4>Japan</h4>
+												<span>98 Tours</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner-offer">
+							<div class="block">
+								<div class="content">
+									<img src="images/banner.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="recommended-hotel">
+							<div class="block-title">
+								<h3>Recommended Hotel</h3>
+							</div>
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="images/hotel-h1.jpg" alt="">
+										<div class="text">
+											<p class="location">
+												<i class="icon ion-ios-pin"></i>
+												South Africa
+											</p>
+											<h4>National Hotel of Africa</h4>
+											<div class="price-booking">
+												<h5>$95 <span>/Night</span></h5>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/hotel-h2.jpg" alt="">
+										<div class="text">
+											<p class="location">
+												<i class="icon ion-ios-pin"></i>
+												Australia
+											</p>
+											<h4>Little Airport Hotel</h4>
+											<div class="price-booking">
+												<h5>$105 <span>/Night</span></h5>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="images/hotel-h3.jpg" alt="">
+										<div class="text">
+											<p class="location">
+												<i class="icon ion-ios-pin"></i>
+												Maldivies
+											</p>
+											<h4>Panorama Hotel</h4>
+											<div class="price-booking">
+												<h5>$97 <span>/Night</span></h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ========== END TAB EXPLORE ========== -->
+					</div>
+
+					<div id="tab-notification" class="tab tab-notification">
+						<!-- ========== TAB NOTIFICATION ========== -->
+						<div class="notifi">
+							<div class="block">
+								<div class="block-title">
+									<div class="overline-title">
+										<span>2 MIN AGO</span>
+									</div>
+								</div>
+								<div class="content">
+									<div class="notifi-icon">
+										<i class="icon ion-ios-pricetag"></i>
+									</div>
+									<div class="text">
+										<span class="notification-point"></span>
+										<h5>Special offer - Up to 75%</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.</p>
+									</div>
+								</div>
+
+								<div class="block-title no-margin-horizontal">
+									<div class="overline-title">
+										<span>TODAY</span>
+									</div>
+								</div>
+								<div class="content">
+									<div class="notifi-icon">
+										<i class="icon ion-ios-pricetags"></i>
+									</div>
+									<div class="text">
+										<span class="notification-point"></span>
+										<h5>Get flat 20% discount</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.</p>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-text"></div>
+								<!-- end divider space -->
+
+								<div class="content">
+									<div class="notifi-icon">
+										<i class="icon ion-ios-sunny"></i>
+									</div>
+									<div class="text">
+										<span class="notification-point"></span>
+										<h5>Special offer - Summer sale</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.</p>
+									</div>
+								</div>
+
+								<div class="block-title no-margin-horizontal">
+									<div class="overline-title">
+										<span>3 DAYS AGO</span>
+									</div>
+								</div>
+								<div class="content">
+									<div class="notifi-icon">
+										<i class="icon ion-ios-pricetag"></i>
+									</div>
+									<div class="text">
+										<h5>Mega travel sale</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.</p>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-text"></div>
+								<!-- end divider space -->
+
+								<div class="content">
+									<div class="notifi-icon">
+										<i class="icon ion-ios-bed"></i>
+									</div>
+									<div class="text">
+										<h5>Special offer - Nature hotel</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.</p>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-text"></div>
+								<!-- end divider space -->
+
+								<div class="content">
+									<div class="notifi-icon">
+										<i class="icon ion-ios-pin"></i>
+									</div>
+									<div class="text">
+										<h5>Africa only - Get all activities</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ========== END TAB NOTIFICATION ========== -->
+					</div>
+
+					<div id="tab-profile" class="tab tab-profile">
+						<!-- ========== TAB PROFILE ========== -->
+						<div class="header-image">
+							<img src="images/bg-profile.jpg" alt="">
+						</div>
+						<div class="profile-avatar-name">
+							<div class="block">
+								<img src="images/profile.jpg" alt="">
+								<ul>
+									<li>
+										<div class="title-name">
+											<h4>Brezee Tomsk</h4>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>Province No. 1, Nepal</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="icon-edit">
+											<a href="/profile-settings/">
+												<i class="icon ion-ios-settings"></i>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="profile-statistics">
+							<div class="block">
+								<div class="row">
+									<div class="col-33">
+										<div class="content">
+											<h5>35</h5>
+											<p>Trips</p>
+										</div>
+									</div>
+									<div class="col-33">
+										<div class="content">
+											<h5>90</h5>
+											<p>Favorites</p>
+										</div>
+									</div>
+									<div class="col-33">
+										<div class="content">
+											<h5>211</h5>
+											<p>Photos</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="trip-history">
+							<div class="block-title">
+								<h3>My Trip History</h3>
+							</div>
+							<div class="swiper-container swiper-container-offset swiper-init" data-space-between="20" data-slides-per-view="auto">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="half-mask"></div>
+										<img src="images/mountain.jpg" alt="">
+										<div class="caption">
+											<h4>Mountain</h4>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>Japan</p>
+											</div>
+										</div>
+										<div class="trip-amount">
+											<span><i class="icon ion-ios-checkbox-outline"></i>5</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="half-mask"></div>
+										<img src="images/beach.jpg" alt="">
+										<div class="caption">
+											<h4>Beach</h4>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>New York</p>
+											</div>
+										</div>
+										<div class="trip-amount">
+											<span><i class="icon ion-ios-checkbox-outline"></i>10</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="half-mask"></div>
+										<img src="images/landscape.jpg" alt="">
+										<div class="caption">
+											<h4>Landscape</h4>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>India</p>
+											</div>
+										</div>
+										<div class="trip-amount">
+											<span><i class="icon ion-ios-checkbox-outline"></i>25</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="half-mask"></div>
+										<img src="images/forest.jpg" alt="">
+										<div class="caption">
+											<h4>Forest</h4>
+											<div class="location">
+												<p><i class="icon ion-ios-pin"></i>India</p>
+											</div>
+										</div>
+										<div class="trip-amount">
+											<span><i class="icon ion-ios-checkbox-outline"></i>3</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner-offer">
+							<div class="block">
+								<div class="content">
+									<img src="images/banner.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="menu-list">
+							<div class="block">
+								<div class="list">
+									<ul>
+										<li>
+											<a href="/gallery/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-images"></i></div>
+												<div class="item-inner">
+													<div class="item-title">My Gallery</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/notification/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-notifications"></i></div>
+												<div class="item-inner">
+													<div class="item-title">Notification</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/language/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-globe"></i></div>
+												<div class="item-inner">
+													<div class="item-title">Language</div>
+													<div class="item-after">English</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/settings/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-settings"></i></div>
+												<div class="item-inner">
+													<div class="item-title">Settings</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-text"></div>
+								<!-- end divider space -->
+
+								<div class="list">
+									<ul>
+										<li>
+											<a href="/privacy/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-lock"></i></div>
+												<div class="item-inner">
+													<div class="item-title">Privacy</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/help/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-help-circle-outline"></i></div>
+												<div class="item-inner">
+													<div class="item-title">Help</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="/about-us/" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-information-circle-outline"></i></div>
+												<div class="item-inner">
+													<div class="item-title">About Us</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="item-link item-content">
+												<div class="item-media"><i class="icon ion-ios-log-out"></i></div>
+												<div class="item-inner">
+													<div class="item-title">Logout</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- ========== END TAB PROFILE ========== -->
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/routes.js"></script>
+	<script src="js/app.js"></script>
+	<!-- end script -->
+
+</body>
+</html>

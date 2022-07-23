@@ -1,0 +1,2605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+
+	<link rel="icon" href="images/favicon.png">
+	<title>Zirex - News & Magazine Mobile Template</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.min.css">
+	<link rel="stylesheet" href="css/framework7-icons.css">
+	<link rel="stylesheet" href="css/font-awesome-all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div id="app">
+
+		<div class="view view-main view-init ios-edges" data-url="/">
+			<div class="page page-home page-with-subnavbar">
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+					<div class="toolbar-inner">
+						<a href="#tab-home" class="tab-link tab-link-active">
+							<i class="fas fa-home"></i>
+							<span class="tabbar-label">Home</span>
+						</a>
+						<a href="#tab-bookmark" class="tab-link">
+							<i class="fas fa-bookmark"></i>
+							<span class="tabbar-label">Bookmark</span>
+						</a>
+						<a href="#tab-popular" class="tab-link">
+							<i class="fas fa-fire"></i>
+							<span class="tabbar-label">Popular</span>
+						</a>
+						<a href="#tab-search" class="tab-link">
+							<i class="fas fa-search"></i>
+							<span class="tabbar-label">Search</span>
+						</a>
+						<a href="#tab-profile" class="tab-link">
+							<i class="fas fa-user"></i>
+							<span class="tabbar-label">Profile</span>
+						</a>
+					</div>
+				</div>
+				<div class="tabs">
+					<div id="tab-home" class="tab tab-active tab-home">
+
+						<!-- home -->
+
+						<!-- navbar home -->
+						<div class="navbar navbar-home">
+							<div class="navbar-inner">
+								<div class="left">
+									<a href="#" class="panel-open" data-panel="left">
+										<i class="fas fa-bars"></i>
+									</a>
+								</div>
+								<div class="title"></div>
+								<div class="right">
+									<a href="#">
+										<h4>Jonathan</h4>
+										<img src="images/author.jpg" alt="">
+									</a>
+								</div>
+								<div class="subnavbar">
+									<div class="subnavbar-inner">
+										<div class="toolbar tabbar tabbar-scrollable toolbar-category">
+											<div class="toolbar-inner">
+												<a href="#tab1" class="tab-link tab-link-active">Latest</a>
+												<a href="#tab2" class="tab-link">Sports</a>
+												<a href="#tab3" class="tab-link">Design</a>
+												<a href="#tab4" class="tab-link">Tech</a>
+												<a href="#tab5" class="tab-link">Business</a>
+												<a href="#tab6" class="tab-link">Health</a>
+												<a href="#tab7" class="tab-link">Lifestyle</a>
+												<a href="#tab8" class="tab-link">Travel</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end navbar home -->
+
+						<div class="tabs">
+							<div id="tab1" class="tab page-content tab-active">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-home1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Jonathan Doe Prepares for the Next Olympics in 2020</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">November 5</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-home2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">New "One-click" Features for Designers Make Their Projects Easier</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">November 8</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-home3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">The 10 Most Expensive Laptops This Year Are Equipped With High Specifications</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 1</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- trending topic -->
+								<div class="trending-topic segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Trending Topic</h3>
+										</div>
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/categories-details/">
+														<div class="mask"></div>
+														<img src="images/trending-topic1.jpg" alt="">
+														<div class="image-caption">
+															<h4>Sports</h4>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/categories-details/">
+														<div class="mask"></div>
+														<img src="images/trending-topic2.jpg" alt="">
+														<div class="image-caption">
+															<h4>Design</h4>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/categories-details/">
+														<div class="mask"></div>
+														<img src="images/trending-topic3.jpg" alt="">
+														<div class="image-caption">
+															<h4>Travel</h4>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/categories-details/">
+														<div class="mask"></div>
+														<img src="images/trending-topic4.jpg" alt="">
+														<div class="image-caption">
+															<h4>Tech</h4>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/categories-details/">
+														<div class="mask"></div>
+														<img src="images/trending-topic5.jpg" alt="">
+														<div class="image-caption">
+															<h4>Lifestyle</h4>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end trending topic -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Cable Car Which is Much in Demand in the Winter</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Sale of Company Shares by Startup Leaders</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health7.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">The Benefits of Apples for Our Body Everyday</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Nutritionists Recommend That We Always Consume Nuts</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">A Skateboarding Community to a Skateboard Without Wheels</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+								
+							</div>
+							<div id="tab2" class="page-content tab">
+								
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-sport1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Dealing With His Own Brother in the Final Made Joe Lacking Enthusiasm</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-sport2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">A cameraman gets an unintentional close up of a wayward opening pitch</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-sport3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">8 Facts About Motocross to the Opening of the Community</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">A Skateboarding Community to a Skateboard Without Wheels</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">This Year the Government Inaugurated a Special Road for Bicycles</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">The Minister of Sports Prepares 100 Elastic Basketball Rings</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">International Basketball Association Applies New Rules</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">John Doe Prepares for the Next Olympics in 2020</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/sport6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Get to Know Extreme Motocross Sports</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+							</div>
+							<div id="tab3" class="page-content tab">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-design1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">WorkApp Comes With New Features and Ways to Use Them</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-design2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Tips and Tricks for Choosing Pencils for Sketches and How to Use Them</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-design3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">100 Complete Color Palettes for Sketches for Designers</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">New "One-click" Feature for Designers for Their Projects</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">How to Make a Car Vector With Designapp on Mobile</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Brush Tool for Creating Shadow Effects on Leaves</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winner of the 2019 "Computer Desk Setup" Contest</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/design6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">How to Use the Pen Tool Easily Quickly - Tricks and Tips</h4>
+															<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+							</div>
+							<div id="tab4" class="page-content tab">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-tech1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Sparkling Blue Light That Adorns the City Building at Night</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-tech2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">The Phone Will Be Connected to the Computer Just by Holding It Close</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-tech3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">At This Exhibition Event Detec Brought Up the Theme "Furniture Revolution"</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/tech1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Recognize the Smallest Components in a Computer</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/tech2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Mobile Mobile Devices That Can Be Installed on a Computer</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/tech3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">This Future Technology Makes Your Vehicle More Sophisticated</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/tech4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Blue Laser Light Technology That Can Be Directly Held</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/tech5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Sophisticated and Expensive Small Components</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/tech6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">From Small Processors to High Power Quality</h4>
+															<span class="category-tag">TECH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+								
+
+							</div>
+							<div id="tab5" class="page-content tab">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-business1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">A cameraman gets an unintentional close up of a wayward opening pitch</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-business2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">A cameraman gets an unintentional close up of a wayward opening pitch</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-business3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">A cameraman gets an unintentional close up of a wayward opening pitch</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/business6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+															<span class="category-tag">BUSINESS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+							</div>
+							<div id="tab6" class="page-content tab">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-health1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">10 Errors in the Use of Capsule Drugs and How to Overcome Them</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-health2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">The Benefits of Consuming Fruit Every Day to How to Save It</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-health3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">The Highest Vitamin C Content to Other Vitamin Content</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Lose Weight Regularly by Consuming This Fruit Every Day</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Digestion So Smooth With Consumption of Spinach</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Lift Weights 5 Minutes a Day Lose Weight to 2.5 Kg</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Benefits of Fruits With the Highest Vitamin C Content</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">How to Consume Drugs in Daily Life and How to Prevent Them</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/health6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Doctor: Check Your Health Once Every 2 Months</h4>
+															<span class="category-tag">HEALTH <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+							</div>
+							<div id="tab7" class="page-content tab">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-lifestyle1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Doe: This is My Life, This is My Lifestyle, and This is Who I Am Now</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-lifestyle2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Implementing a Healthy and Pleasant Diet Every Day</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-lifestyle3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Get to Know the Hero of 2 Wheels, Who Works With the Keys Every Day</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">10 Benefits of Spices in Cooking and How to Cook It</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Consume Rice Not Only With Fish, Try With Others</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Vegetables With a Million Benefits to How to Process Them</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Keep Children From Gadgets to the Ground for Children to Play</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">The Benefits of Going to the Jungle for Our Body</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/lifestyle6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Weight Loss to the Highest Mountain Climb</h4>
+															<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+							</div>
+							<div id="tab8" class="page-content tab">
+
+								<!-- slider -->
+								<div class="slider">
+									<div class="container">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-travel1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Children's Stories and Reach the Highest Peak of the World</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-travel2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">See the Beautiful Underwater Park and Coral That is Still Awake</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-travel3.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Vanda Family Style Vacation to the Story of the Child Who Was Asleep</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end slider -->
+
+								<!-- headlines -->
+								<div class="headlines segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>Headlines</h3>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel1.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Holidays Have Arrived, Holidays With Family or Alone?</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel2.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">5 Travel Destinations The trend version of ABC</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="headlines-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel3.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Juna Vacation Stories With Her Small Bag</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end headlines -->
+
+								<!-- focused -->
+								<div class="focused segments">
+									<div class="container">
+										<div class="focused-content">
+											<div class="section-title">
+												<h3>Designer <a href="/focused-details/" class="see-all-link"><i class="fas fa-chevron-right"></i></a></h3>
+											</div>
+											<div class="swiper-container swiper-init" data-space-between="10" data-pagination='{"el": ".swiper-pagination"}'>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img src="images/focused1.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused2.jpg" alt="">
+													</div>
+													<div class="swiper-slide">
+														<img src="images/focused3.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end focused -->
+
+								<!-- latest-news -->
+								<div class="latest-news segments">
+									<div class="container">
+										<div class="section-title">
+											<h3>latest News</h3>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel4.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Lakes Throughout the Country With a Million Beauties</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel5.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">The Blue of the Sea to the Stories of Local Fishermen</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="latest-news-content">
+											<a href="/news-details/">
+												<div class="row">
+													<div class="col-30">
+														<div class="content-image">
+															<img src="images/travel6.jpg" alt="">
+														</div>
+													</div>
+													<div class="col-70">
+														<div class="content-text">
+															<h4 class="title-post">Cable Car Which is Much in Demand in the Winter</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end latest-news -->
+
+							</div>
+						</div>
+
+						<!-- sidebar or panel -->
+						<div class="panel panel-left panel-cover sidebar">
+							<div class="panel-header">
+								<h3>Voe</h3>
+								<h5>Accurate and Trusted</h5>
+							</div>
+
+							<!-- divider line -->
+							<div class="divider-line"></div>
+							<!-- end divider line -->
+
+							<div class="list links-list">
+								<ul>
+									<li>
+										<a href="/new-writing/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">New Writing</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/about-us/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">About Us</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/team/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Our Team</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/contact-us/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Contact Us</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/sign-in/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Sign In</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/sign-up/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Sign Up</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/settings/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Settings</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/faq/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Faq</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title"><i class="fas fa-circle"></i>Live</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- divider line -->
+							<div class="divider-line"></div>
+							<!-- end divider line -->
+
+							<div class="list links-list">
+								<ul>
+									<li>
+										<a href="/categories-details/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Business</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/categories-details/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Design</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/categories-details/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Tech</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/categories-details/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Sports</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/categories-details/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Politics</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="/categories-details/" class="panel-close">
+											<div class="item-inner">
+												<div class="item-title">Lifestyle</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- divider line -->
+							<div class="divider-line"></div>
+							<!-- end divider line -->
+
+							<div class="panel-footer">
+								<p>Copyright © All Right Reserved</p>
+							</div>
+						</div>
+						<!-- end sidebarbar or panel -->
+
+						<!-- end home -->
+
+					</div>
+
+					<div id="tab-bookmark" class="tab tab-bookmark">
+
+						<!-- bookmark -->
+
+						<!-- navbar -->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="title">
+									Bookmark
+								</div>
+								<div class="right"></div>
+
+								<div class="subnavbar">
+									<form class="searchbar searchbar-init" data-search-container=".search-list" data-search-in=".item-title">
+										<div class="searchbar-inner">
+											<div class="searchbar-input-wrap">
+												<input type="search" placeholder="Find the news that you saved">
+												<i class="searchbar-icon"></i>
+												<span class="input-clear-button"></span>
+											</div>
+											<span class="searchbar-disable-button">Cancel</span>
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+						<!-- end navbar -->
+
+						<div class="bookmark segments">
+							<div class="container">	
+								<div class="bookmark-content news-content">
+									<a href="/news-details/">
+										<div class="row">
+											<div class="col-30">
+												<div class="content-image">
+													<img src="images/design2.jpg" alt="">
+												</div>
+											</div>
+											<div class="col-60">
+												<div class="content-text">
+													<h4 class="title-post">Winners of the "Morning Design Awards 2019"</h4>
+													<span class="category-tag">DESIGN <i class="fas fa-circle"></i></span>
+													<span class="date">December 26</span>
+
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="bookmark-symbol">
+													<i class="fas fa-bookmark"></i>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="bookmark-content news-content">
+									<a href="/news-details/">
+										<div class="row">
+											<div class="col-30">
+												<div class="content-image">
+													<img src="images/travel5.jpg" alt="">
+												</div>
+											</div>
+											<div class="col-60">
+												<div class="content-text">
+													<h4 class="title-post">The Blue of the Sea to the Stories of Local Fishermen</h4>
+													<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+													<span class="date">December 26</span>
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="bookmark-symbol">
+													<i class="fas fa-bookmark"></i>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="bookmark-content news-content">
+									<a href="/news-details/">
+										<div class="row">
+											<div class="col-30">
+												<div class="content-image">
+													<img src="images/lifestyle1.jpg" alt="">
+												</div>
+											</div>
+											<div class="col-60">
+												<div class="content-text">
+													<h4 class="title-post">10 Benefits of Spices in Cooking and How to Cook It</h4>
+													<span class="category-tag">LIFESTYLE <i class="fas fa-circle"></i></span>
+													<span class="date">December 26</span>
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="bookmark-symbol">
+													<i class="fas fa-bookmark"></i>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="bookmark-content news-content">
+									<a href="/news-details/">
+										<div class="row">
+											<div class="col-30">
+												<div class="content-image">
+													<img src="images/travel2.jpg" alt="">
+												</div>
+											</div>
+											<div class="col-60">
+												<div class="content-text">
+													<h4 class="title-post">5 Travel Destinations The trend version of ABC</h4>
+													<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+													<span class="date">December 26</span>
+												</div>
+											</div>
+											<div class="col-10">
+												<div class="bookmark-symbol">
+													<i class="fas fa-bookmark"></i>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end bookmark -->
+						
+					</div>
+
+					<div id="tab-popular" class="tab tab-popular">
+
+						<!-- popular news -->
+
+						<div class="popular segments">
+							<div class="container">
+
+								<div class="wrap-popular-category">
+									<div class="section-title popular-title">
+										<h6>Popular News</h6>
+										<h3>Sports <a href="/categories-details/" class="see-all-link">See All</a></h3>
+									</div>
+
+									<!-- slider -->
+									<div class="slider">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-popular-sport1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">A Skateboarding Community to a Skateboard Without Wheels</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-popular-sport2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Team Training Sessions Are Conducted at Night for 2 Hours</h4>
+															<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end slider -->
+
+									<!-- divider -->
+									<div class="divider-space-content"></div>
+									<!-- end divider -->
+
+									<div class="popular-content news-content">
+										<a href="/news-details/">
+											<div class="row">
+												<div class="col-30">
+													<div class="content-image">
+														<img src="images/sport3.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-70">
+													<div class="content-text">
+														<h4 class="title-post">The Minister of Sports Prepares 100 Elastic Basketball Rings</h4>
+														<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+														<span class="date">December 26</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="popular-content news-content">
+										<a href="/news-details/">
+											<div class="row">
+												<div class="col-30">
+													<div class="content-image">
+														<img src="images/sport6.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-70">
+													<div class="content-text">
+														<h4 class="title-post">Get to Know Extreme Motocross Sports</h4>
+														<span class="category-tag">SPORTS <i class="fas fa-circle"></i></span>
+														<span class="date">December 26</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<!-- divider line -->
+								<div class="divider-line"></div>
+								<!-- end divider line -->
+
+								<div class="wrap-popular-category">
+									<div class="section-title popular-title">
+										<h6>Popular News</h6>
+										<h3>Travel <a href="/categories-details/" class="see-all-link">See All</a></h3>
+									</div>
+
+									<!-- slider -->
+									<div class="slider">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-popular-travel1.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">The Blue of the Sea to the Stories of Local Fishermen</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="/news-details/">
+														<div class="mask"></div>
+														<img src="images/slider-popular-travel2.jpg" alt="">
+														<div class="image-caption">
+															<h4 class="title-post">Vanda Family Style Vacation to the Story of the Child Who Was Asleep</h4>
+															<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+															<span class="date">December 26</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end slider -->
+
+									<!-- divider -->
+									<div class="divider-space-content"></div>
+									<!-- end divider -->
+
+									<div class="popular-content news-content">
+										<a href="/news-details/">
+											<div class="row">
+												<div class="col-30">
+													<div class="content-image">
+														<img src="images/travel2.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-70">
+													<div class="content-text">
+														<h4 class="title-post">5 Travel Destinations The trend version of ABC</h4>
+														<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+														<span class="date">December 26</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="popular-content news-content">
+										<a href="/news-details/">
+											<div class="row">
+												<div class="col-30">
+													<div class="content-image">
+														<img src="images/travel6.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-70">
+													<div class="content-text">
+														<h4 class="title-post">Cable Car Which is Much in Demand in the Winter</h4>
+														<span class="category-tag">TRAVEL <i class="fas fa-circle"></i></span>
+														<span class="date">December 26</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- end popular news -->
+
+					</div>
+					<div id="tab-search" class="tab tab-search">
+
+						<!-- search -->
+
+						<!-- navbar -->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="title">
+									Search
+								</div>
+								<div class="right"></div>
+
+								<div class="subnavbar">
+									<form class="searchbar searchbar-init" data-search-container=".search-list" data-search-in=".item-title">
+										<div class="searchbar-inner">
+											<div class="searchbar-input-wrap">
+												<input type="search" placeholder="Enter search words">
+												<i class="searchbar-icon"></i>
+												<span class="input-clear-button"></span>
+											</div>
+											<span class="searchbar-disable-button">Cancel</span>
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+						<!-- end navbar -->
+
+						<div class="search segments">
+							<div class="container">
+								<div class="searchbar-backdrop"></div>
+								<div class="search-list searchbar-found">
+									<div class="top-result-content">
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="content title-search">
+														<h5>Top Result</h5>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="content">
+														<a href="#"><h5>Domestic</h5></a>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="content">
+														<a href="#"><h5>Hero</h5></a>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="content">
+														<a href="#"><h5>Awards</h5></a>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="content">
+														<a href="#"><h5>Challenge</h5></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- divider -->
+									<div class="divider-line"></div>
+									<!-- end divider -->
+
+									<div class="trending-search-content">
+										<div class="wrap-title">
+											<h3>Trending Searches <a href="#">Clear</a></h3>
+										</div>
+										<ul>
+											<li><a href="#">Domestic press conference</a></li>
+											<li><a href="#">A Man commits suicide bombing</a></li>
+											<li><a href="#">The world economy is weakening</a></li>
+											<li><a href="#">Happy mother and child</a></li>
+											<li><a href="#">Between happy and hard</a></li>
+										</ul>
+									</div>
+
+									<!-- divider -->
+									<div class="divider-line"></div>
+									<!-- end divider -->
+
+									<div class="related-search-content">
+										<div class="wrap-title">
+											<h3>Related Search</h3>
+										</div>
+										<div class="swiper-container swiper-init" data-space-between="10" data-slides-per-view="auto">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="related-content news-content">
+														<div class="row">
+															<div class="col-30">
+																<div class="content-image">
+																	<img src="images/travel4.jpg" alt="">
+																</div>
+															</div>
+															<div class="col-70">
+																<div class="content-text">
+																	<h4 class="title-post">Lakes Throughout the Country With a Million Beauties</h4>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="related-content news-content">
+														<div class="row">
+															<div class="col-30">
+																<div class="content-image">
+																	<img src="images/design4.jpg" alt="">
+																</div>
+															</div>
+															<div class="col-70">
+																<div class="content-text">
+																	<h4 class="title-post">Brush Tool for Creating Shadow Effects on Leaves</h4>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="related-content news-content">
+														<div class="row">
+															<div class="col-30">
+																<div class="content-image">
+																	<img src="images/sport4.jpg" alt="">
+																</div>
+															</div>
+															<div class="col-70">
+																<div class="content-text">
+																	<h4 class="title-post">International Basketball Association Applies New Rules</h4>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- divider -->
+									<div class="divider-line"></div>
+									<!-- end divider -->
+
+									<div class="recommended-search-content">
+										<div class="wrap-title">
+											<h3>Recommended <a href="#">Refresh</a></h3>
+										</div>
+										<ul>
+											<li>
+												<a href="#">
+													<img src="images/recommended-search1.jpg" alt="">
+													<h6>Me & Design</h6>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="images/recommended-search2.jpg" alt="">
+													<h6>About The World</h6>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="images/recommended-search3.jpg" alt="">
+													<h6>Life Challenges</h6>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="searchbar-not-found">
+									<div class="history-search-content">
+										<div class="wrap-title">
+											<h3>Search History <a href="#">Clear</a></h3>
+										</div>
+										<ul>
+											<li><a href="#"><i class="fas fa-history"></i>CEO of the news leader</a></li>
+											<li><a href="#"><i class="fas fa-history"></i>Every area experienced a drought</a></li>
+											<li><a href="#"><i class="fas fa-history"></i>Between happy and hard</a></li>
+											<li><a href="#"><i class="fas fa-history"></i>The garden begins to flower</a></li>
+											<li><a href="#"><i class="fas fa-history"></i>The world economy is weakening</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- end search -->
+
+						
+					</div>
+					<div id="tab-profile" class="tab tab-profile">
+
+						<!-- profile -->
+
+						<!-- navbar -->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="title">
+									Profile
+								</div>
+								<div class="right"></div>
+							</div>
+						</div>
+						<!-- end navbar -->
+
+						<div class="profile segments">
+							<div class="container">
+
+								<div class="profile-header">
+									<div class="row">
+										<div class="col-90">
+											<div class="content">
+												<img src="images/profile.jpg" alt="">
+												<div class="title-name">
+													<h4>Michael Smith</h4>
+													<span>Junior Journalist</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-10">
+											<div class="content">
+												<div class="menu">
+													<div class="menu-inner">
+														<div class="menu-item menu-item-dropdown">
+															<div class="menu-item-content"><i class="fas fa-ellipsis-v"></i></div>
+															<div class="menu-dropdown menu-dropdown-right">
+																<div class="menu-dropdown-content">
+																	<a href="/new-writing/" class="menu-dropdown-link menu-close">New Articles</a>
+																	<a href="/settings/" class="menu-dropdown-link menu-close">Settings</a>
+																	<a href="#" class="menu-dropdown-link menu-close">Logout</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- divider space -->
+								<div class="divider-space-content"></div>
+								<!-- end divider space -->
+
+								<div class="profile-content">
+									<div class="list">
+										<ul>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-inner">
+														<div class="item-title">Latest News</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="item-link item-content">
+													<div class="item-inner">
+														<div class="item-title">Popular</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="item-link item-content">
+													<div class="item-inner">
+														<div class="item-title">Bookmark</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="divider-line"></div>
+
+									<div class="section-title">
+										<h3>News Category</h3>
+									</div>
+									<div class="list">
+										<ul>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-palette"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Design</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-basketball-ball"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Sports</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-tshirt"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Fashion</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-cogs"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Technology</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-suitcase-rolling"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Travel</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-chart-bar"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Business</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-utensils"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Food</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-car"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Automotive</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories-details/" class="item-link item-content">
+													<div class="item-media">
+														<i class="fas fa-briefcase-medical"></i>
+													</div>
+													<div class="item-inner">
+														<div class="item-title">Health</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end profile -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/routes.js"></script>
+	<script src="js/app.js"></script>
+	<!-- end script -->
+
+</body>
+</html>

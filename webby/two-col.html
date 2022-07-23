@@ -1,0 +1,189 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png"> 
+<!-- iPhone 3, 3Gs -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" /> 
+<!-- iPhone 4 -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<!-- iPad landscape -->
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<!-- iPad Portrait -->
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<!-- iPad (Retina, portrait) -->
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<!-- iPad (Retina, landscape) -->
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+<!-- Page Title -->
+<title>Epsilon Elements | Mobile Framework Starter</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link href="styles/framework-tablet.css"	rel="stylesheet" type="text/css" media="only screen and (min-width: 767px)"/>
+<link href="styles/bxslider.css"			rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"			rel="stylesheet" type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>	
+<script src="scripts/hammer.js"			type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/jquery.swipebox.js" type="text/javascript"></script>
+<script src="scripts/bxslider.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="tablet-wrapper">
+    <div class="content">
+    
+        <div class="header">
+            <a class="logo" href="index.html">
+                <img src="images/misc/logo.png" width="89" alt="img">
+                <em class="tablet-only">For tablets and mobile!</em>
+            </a>
+            <a href="#" class="deploy-navigation"></a>
+           
+            <div class="navigation" id="navigation">
+            <div class="decoration navigation-decoration mobile-only"></div>
+                <ul class="menu"> 
+                    <li><a class="nav-icon home-icon" href="index.html">HOME</a> </li>
+                    <li><a class="nav-icon about-icon show-drop-one" href="#">ABOUT</a>
+                        <ul class="dropdown drop-one">
+                            <li><a href="intro.html">Introduction</a></li> 
+                            <li><a href="type.html">Typography</a></li> 
+                            <li><a href="jquery.html">jQuery</a></li> 
+                            <li><a href="others.html">Others</a></li> 
+                        </ul>
+                    </li>         
+                    <li><a class="nav-icon gallery-icon show-drop-two selected" href="#">GALLERY</a> 
+                        <ul class="dropdown drop-two">  
+                            <li><a href="one-col.html">One Column</a></li>
+                            <li><a class="selected" href="two-col.html">Two Column</a></li> 
+                            <li><a href="filtrable.html">Filtrable</a></li> 
+                            <li><a href="swipable.html">Swipable</a></li> 
+                            <li><a href="videos.html">Videos</a></li>
+                        </ul> 
+                    </li> 
+                    <li><a class="nav-icon blog-icon show-drop-three" href="#">BLOG</a>
+                        <ul class="dropdown drop-three">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-post.html">Blog Entry</a></li>
+                        </ul>                
+                    </li>
+                    <li><a class="nav-icon mail-icon" href="contact.html">MAIL</a></li> 
+                </ul> 
+            </div>  
+            <div class="clear"></div>          
+		
+        </div>
+    
+    	<div class="decoration"></div> 
+        
+        
+        <div class="container no-bottom">
+            <h4 class="uppercase">Two Thumb Portfolio</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis erat sit amet sapien tempor et eleifend risus faucibus. Maecenas id nibh ut magna adipiscing porta a sit amet sem. Aenean adipiscing tincidunt purus, ac rhoncus lacus laoreet viverra. Nunc commodo metus eget metus congue iaculis. </p>
+            <div class="decoration"></div>
+            <div class="column">
+                <div class="portfolio-item-thumb one-half">
+                    <a class="swipebox" href="images/gallery/full/1.jpg">
+                        <img class="responsive-image" src="images/gallery/thumb/1t.jpg" alt="img">
+                        Image Caption
+                    </a>
+                    <h5 class="uppercase">Item title</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit est, cursus fermentum semper a, mattis sodales velit. 
+                        Sed congue risus quis eros rhoncus eu sagittis dui malesuada. Morbi non purus libero. Mauris id velit ante, interdum pellentesque odio. 
+                    </p>
+                    <a href="#" class="button yellow">Read More</a>
+                </div>
+                <div class="portfolio-item-thumb one-half">
+                    <a class="swipebox" href="images/gallery/full/2.jpg">
+                        <img class="responsive-image" src="images/gallery/thumb/2t.jpg" alt="img">
+                        Image Caption
+                    </a>
+                    <h5 class="uppercase">Item title</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit est, cursus fermentum semper a, mattis sodales velit. 
+                        Sed congue risus quis eros rhoncus eu sagittis dui malesuada. Morbi non purus libero. Mauris id velit ante, interdum pellentesque odio. 
+                    </p>
+                    <a href="#" class="button yellow">Read More</a>
+                </div>
+            </div>  
+            
+            <div class="decoration"></div>
+            
+            <div class="column">
+                <div class="portfolio-item-thumb one-half">
+                    <a class="swipebox" href="images/gallery/full/3.jpg">
+                        <img class="responsive-image" src="images/gallery/thumb/3t.jpg" alt="img">
+                        Image Caption
+                    </a>
+                    <h5 class="uppercase">Item title</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit est, cursus fermentum semper a, mattis sodales velit. 
+                        Sed congue risus quis eros rhoncus eu sagittis dui malesuada. Morbi non purus libero. Mauris id velit ante, interdum pellentesque odio. 
+                    </p>
+                    <a href="#" class="button yellow">Read More</a>
+                </div>
+                <div class="portfolio-item-thumb one-half">
+                    <a class="swipebox" href="images/gallery/full/4.jpg">
+                        <img class="responsive-image" src="images/gallery/thumb/4t.jpg" alt="img">
+                        Image Caption
+                    </a>
+                    <h5 class="uppercase">Item title</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit est, cursus fermentum semper a, mattis sodales velit. 
+                        Sed congue risus quis eros rhoncus eu sagittis dui malesuada. Morbi non purus libero. Mauris id velit ante, interdum pellentesque odio. 
+                    </p>
+                    <a href="#" class="button yellow">Read More</a>
+                </div>
+            </div> 
+        </div>        
+        
+        <div class="decoration"></div>
+        <p class="center-text copyright">Copyright 2013. All rights reserved!</p>
+                
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+<!--
+
+
+
+-->

@@ -1,0 +1,237 @@
+<template>
+    <div class="page">
+
+        <div class="wrap-action-product-d">
+            <div class="row">
+                <div class="col-15">
+                    <div class="content-icon">
+                        <a href="#"><i class="ti-heart"></i></a>
+                    </div>
+                </div>
+                <div class="col-15">
+                    <div class="content-icon">
+                        <a href="#" @click="showToastBottom"><i class="ti-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="col-70">
+                    <div class="content-button">
+                        <button class="button">Buy Now $30.00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <!-- link back -->
+            <a href="" class="link back nav-back">
+                <i class="ti-arrow-left"></i>
+            </a>
+            <!-- end link back -->
+
+            <!-- product details -->
+            <div class="product-details">
+                <div class="header">
+                    <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="0" class="swiper-container swiper-init swiper-container-horizontal">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="mask"></div>
+                                    <img src="images/product3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="mask"></div>
+                                    <img src="images/product4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="mask"></div>
+                                    <img src="images/product8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-content">
+                    <h4>Casual Dress Shirt Men Long Sleeves</h4>
+                    <span class="price">$30.00</span>
+
+                    <!-- small divider -->
+                    <div class="small-divider"></div>
+                    <!-- end  small divider -->
+
+                    <div class="description-product-wrapper section-wrapper">
+                        <div class="wrap-title">
+                            <h3>Description</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iusto sint, sapiente dolore tempora culpa, cupiditate iure, fugit voluptas adipisci laudantium, minima quod impedit repudiandae</p>
+                    </div>
+                    <div class="information-product-wrapper section-wrapper">
+                        <div class="wrap-title">
+                            <h3>Products Information</h3>
+                        </div>
+                        <ul>
+                            <li>Condition <span>New</span></li>
+                            <li>Weight <span>1.000 gr</span></li>
+                            <li>Categories <span>Fashion</span></li>
+                        </ul>
+                    </div>
+                    <div class="product-details-wrapper section-wrapper">
+                        <div class="wrap-title">
+                            <h3>Products Information</h3>
+                        </div>
+                        <ul>
+                            <li>Material <span>100% Cotton</span></li>
+                            <li>Color <span>Multi</span></li>
+                            <li>Status <span>Imported</span></li>
+                            <li>Machine Wash <span>Machine Cold</span></li>
+                        </ul>
+                    </div>
+                    <div class="share-product-wrapper">
+                        <ul>
+                            <li>Share</li>
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-google"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="author-wrapper">
+                        <a href="/account/">
+                            <img src="images/user.png" alt="">
+                            <div class="title-name">
+                                <h4>Dickinson Store</h4>
+                                <span class="location">New York</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="related-product">
+                    <div class="wrap-title">
+                        <h3>Related Products</h3>
+                    </div>
+                    <div data-space-between="10" data-slides-per-view="auto" class="swiper-container swiper-init demo-swiper-auto">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <img src="images/product9.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><p>Casual Dress Shirt Men short Sleeves</p></a>
+                                        <span class="price">$27.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <img src="images/product1.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><p>Original Sweater With 100% Wool Fabric</p></a>
+                                        <span class="price">$30.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <img src="images/product11.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><p>New Style Plain Casual t-shirt</p></a>
+                                        <span class="price">$21.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- small divider -->
+                <div class="small-divider"></div>
+                <!-- end  small divider -->
+
+                <div class="container">
+                    <div class="review-product-wrapper section-wrapper">
+                        <div class="wrap-title">
+                            <h3>Review</h3>
+                        </div>
+                        <div class="content">
+                            <img src="images/comment1.png" alt="">
+                            <div class="text">
+                                <h5>Chester</h5>
+                                <span>2 minute ago</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ducimus.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="images/comment2.png" alt="">
+                            <div class="text">
+                                <h5>Freddy</h5>
+                                <span>2 minute ago</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ducimus.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="images/comment3.png" alt="">
+                            <div class="text">
+                                <h5>Hadden</h5>
+                                <span>2 minute ago</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ducimus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-form-wrapper section-wrapper">
+                        <div class="wrap-title">
+                            <h3>Leave a Reply</h3>
+                        </div>
+                        <form class="list">
+                            <div class="item-input-wrap">
+                                <input type="text" placeholder="Full Name*" required>
+                            </div>
+                            <div class="item-input-wrap">
+                                <input type="email" placeholder="Email*" required>
+                            </div>
+                            <div class="item-input-wrap">
+                                <textarea placeholder="Comment*" required></textarea>
+                            </div>
+                            <button class="button">Send Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end product details -->
+        </div>
+    </div>
+</template>
+
+<script>
+    return {
+        methods: {
+          showToastBottom: function () {
+            var self = this;
+        // Create toast
+        if (!self.toastBottom) {
+          self.toastBottom = self.$app.toast.create({
+            text: 'Product Added to Cart',
+            closeTimeout: 1500,
+        });
+      }
+        // Open it
+        self.toastBottom.open();
+    },
+
+},
+on: {
+  pageBeforeOut: function () {
+    var self = this;
+    self.$app.toast.close();
+},
+pageBeforeRemove: function () {
+    var self = this;
+        // Destroy toasts when page removed
+        if (self.toastBottom) self.toastBottom.destroy();
+    },
+}
+}
+</script>
