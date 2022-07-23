@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Epsilon X</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,500,600,700,800|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+
+<body>
+<div id="page-preloader"></div>
+
+<div id="page-background"></div>
+<div id="page-transitions">
+		
+	<div class="decoration-lines top-deco"><div class="deco-1"></div><div class="deco-2"></div><div class="deco-3"></div><div class="deco-4"></div><div class="deco-5"></div><div class="deco-6"></div><div class="deco-7"></div><div class="deco-8"></div><div class="deco-9"></div><div class="deco-0"></div></div>
+	<div class="decoration-lines bottom-deco"><div class="deco-1"></div><div class="deco-2"></div><div class="deco-3"></div><div class="deco-4"></div><div class="deco-5"></div><div class="deco-6"></div><div class="deco-7"></div><div class="deco-8"></div><div class="deco-9"></div><div class="deco-0"></div></div>
+	
+	<div class="page-content">
+		<div class="header">
+			<a href="index.html" class="header-logo"></a>
+			<a href="#" class="header-icon header-icon-1"><i class="facebook-bg fab fa-facebook-f"></i></a>
+			<a href="#" class="header-icon header-icon-2"><i class="twitter-bg fab fa-twitter"></i></a>
+			<a href="#" class="header-icon header-icon-3"><i class="google-bg fab fa-google-plus-g"></i></a>
+			<div class="decoration"></div>
+		</div>
+
+		<div class="content">
+			<h4 class="regularbold uppercase text-shadow">Send us a message</h4>
+			<p class="text-shadow">
+				Fully working contact form with PHP and AJAX. Send your message and forget! 
+			</p>
+			<div class="container no-bottom">
+				<div class="contact-form no-bottom">
+					<div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+						<div class="container">
+							<h1 class="uppercase ultrabold center-text">Message sent</h1>
+							<p class="center-text">We'll get back to you in the shorts possible time.</p>
+						</div>				
+					</div>
+					<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+						<fieldset>
+							<div class="formValidationError bg-red-dark" id="contactNameFieldError">
+								<p class="center-text uppercase small-text color-white">Name is required!</p>
+							</div>
+							<div class="formValidationError bg-red-dark" id="contactEmailFieldError">
+								<p class="center-text uppercase small-text color-white">Mail address required!</p>
+							</div>
+							<div class="formValidationError bg-red-dark" id="contactEmailFieldError2">
+								<p class="center-text uppercase small-text color-white">Mail address must be valid!</p>
+							</div>
+							<div class="formValidationError bg-red-dark" id="contactMessageTextareaError">
+								<p class="center-text uppercase small-text color-white">Message field is empty!</p>
+							</div>
+							<div class="formFieldWrap">
+								<label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span>
+								</label>
+								<input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+							</div>
+							<div class="formFieldWrap">
+								<label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span>
+								</label>
+								<input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
+							</div>
+							<div class="formTextareaWrap">
+								<label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span>
+								</label>
+								<textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+							</div>
+							<div class="formSubmitButtonErrorsWrap contactFormButton">
+								<input type="submit" class="buttonWrap button button-blue uppercase ultrabold contactSubmitButton" id="contactSubmitButton" value="Send Message" data-formId="contactForm" />
+							</div>
+						</fieldset>
+					</form>			
+				</div>
+			</div>
+			<div class="decoration"></div>
+		</div>
+
+		<div class="content">
+			<h4 class="regularbold uppercase text-shadow">Come over for a coffee!</h4>
+			<p class="text-shadow">
+				Embed your Google Maps. It's easy. You can incorporate Google API if you need to.
+			</p>
+			<iframe class="responsive-image maps polaroid-effect no-bottom" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+		</div>
+
+		<div class="content">		
+			<div class="decoration"></div>
+			<div class="contact-information last-column">
+				<div class="container no-bottom">
+					<p class="contact-information">
+						<strong>Postal Information</strong><br>
+						PO Box 22161 Street Collins East
+						<br> PO Box 16122 Collins Street West
+						<br> Victoria 8007 Australia
+					</p>
+					<p class="contact-information">
+						<strong>Envato Headquarters</strong><br>
+						121 King Street, Melbourne
+						<br> Victoria 3000 Australia
+					</p>
+					<p class="contact-information">
+						<strong>Contact Information:</strong>
+						<a href="tel: +123 456 7890"><i class="fa fa-phone-square color-green-dark"></i>+ 123 456 7890</a>
+						<a href="mailto:name@domain.com"><i class="fa fa-envelope-square color-blue-dark"></i>mail@doamin.com</a>
+						<a href="#"><i class="fab fa-facebook-square facebook-color"></i>enabled.labs</a>
+						<a href="#"><i class="fab fa-twitter-square twitter-color"></i>@iEnabled</a>
+						<a href="#"><i class="fab fa-google-plus-square google-color"></i>@iEnabled</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content"><div class="decoration"></div></div>
+		
+		<p class="copyright-text">Copyright <span class="copyright-year"></span>. All Rights Reserved.<br><a class="back-to-top" href="#">Back to Top</a></p>
+		<div class="footer-socials">
+			<a href="#" class="facebook-bg"><i class="fab fa-facebook-f"></i></a>
+			<a href="#" class="twitter-bg"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="google-bg"><i class="fab fa-google-plus-g"></i></a>
+		</div>
+	</div>
+	
+	<div class="menu" id="main-menu">
+		<div class="owl-carousel menu-slider-6">
+			<a href="index.html"><i class="fa fa-home"></i><em>Home</em></a>
+			<a href="features.html"><i class="fa fa-cog"></i><em>Features</em></a>
+			<a href="#" data-menu="menu-2"><i class="fa fa-camera"></i><em>Gallery</em></a>
+			<a href="portfolio.html"><i class="fa fa-image"></i><em>Folio</em></a>
+			<a href="#" data-menu="menu-3"><i class="fa fa-pencil-alt"></i><em>Blog</em></a>
+			<a href="contact.html" class="active-item"><i class="fa fa-envelope"></i><em>Contact</em></a>
+		</div>
+	</div>		
+	<div class="menu submenu active-submenu" id="menu-2">
+		<div class="owl-carousel menu-slider-5">
+			<a href="gallery-filter.html"><i class="fa fa-filter"></i><em>Filter</em></a>
+			<a href="gallery-1-col.html" class="active-item"><i class="fa fa-square"></i><em>1 Col</em></a>
+			<a href="gallery-2-col.html"><i class="fa fa-th-large"></i><em>2 Col</em></a>
+			<a href="gallery-3-col.html"><i class="fa fa-th"></i><em>3 Col</em></a>
+			<a href="#" class="close-menu"><i class="fa fa-times"></i><em>Close</em></a>
+		</div>
+	</div>
+	<div class="menu submenu" id="menu-3">
+		<div class="owl-carousel menu-slider-3">
+			<a href="blog-home.html"><i class="fa fa-pencil-alt"></i><em>Home</em></a>
+			<a href="blog-post.html"><i class="far fa-edit"></i><em>Post</em></a>
+			<a href="#" class="close-menu"><i class="fa fa-times"></i><em>Close</em></a>
+		</div>
+	</div>
+		
+</div>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+
+</body>

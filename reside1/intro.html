@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Epsilon Framework</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" 	type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>		
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/swipe.js"			type="text/javascript"></script>
+<script src="scripts/swipebox.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+</head>
+
+<body>
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			<em>Loading the content...</em>
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+
+<div id="modal-hider"></div>
+<div id="modal-body">
+    <p class="modal-logo">SUBSCRIBE FOR UPDATES</p>
+	<p class="modal-logo-heading">
+    	Subscribe to the latest news and updates!<br/>
+    </p>
+    <div class="decoration"></div>
+    <div class="modalForm" id="modalForm">
+      <form id="contact">
+          <fieldset>
+              <label for="contactName" id="name_label">NAME:</label>
+              <p id="left_label_name">glad to meet you!</p>
+              <input type="text" name="contactName" id="contactName" size="30" value="" class="text-input" />
+              <span class="error" id="nameError">Please enter your name !</span>
+              
+              <label for="contactEmail" id="email_label">EMAIL:</label>
+              <p id="left_label_mail">we never spam!</p>
+              <input type="text" name="contactEmail" id="contactEmail" size="30" value="" class="text-input" />
+              <span class="error" id="emailError">Please enter your email address !</span> <span class="error" id="emailError2">Please enter a valid email address !</span>
+              
+              <textarea  name="contactMessage" id="contactMessage" class="text-input">Message Sent From Modal Pop-Up</textarea>
+              <span class="error" id="messageError">Please enter message !</span>
+              
+              <p class="contact-button-house">
+                <input type="submit" name="submitMessage" class="contactButton button black" id="contactSubmitBtn" value="SUBSCRIBE"/>
+              </p>            
+              <p class="contact-social-set">
+                    <em>OUR SOCIAL SET</em>
+                    <a href="#"><img src="images/modal_social/facebook@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/twitter@2x.png"  width="16"	alt="img"></a>
+                    <a href="#"><img src="images/modal_social/dribbble@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/rss@2x.png" 	 width="16"	alt="img"></a>
+              </p>
+          </fieldset>
+      </form>
+  </div>
+  <div class="decoration"></div>
+  <a href="#" class="close-modal">Close</a>
+  <em class="close-modal-text">Addresses will remain confidential!</em>
+</div>
+
+<div class="sidebar">
+	<div class="sidebar-scroll">
+		<a href="index.html" class="nav-home">
+        	Home
+        </a>
+        <a href="intro.html" class="nav-about-active">
+        	About
+        </a>
+        <a href="folio.html" class="nav-gallery">
+        	Folio
+        </a>
+        <a href="video.html" class="nav-video">
+        	Video
+        </a>
+        <a href="blog.html" class="nav-blog">
+        	Blog
+        </a>
+        <a href="tel:+1 234 567 890" class="nav-call">
+        	Call
+        </a>
+        <a href="sms:+1 234 567 890" class="nav-text">
+        	SMS
+        </a>
+        <a href="contact.html" class="nav-mail">
+        	Mail
+        </a>
+       	
+    </div>
+</div>
+
+<div class="content">
+
+	<div class="header container">
+    	<a href="#" class="show-nav"></a>
+        <a href="#" class="hide-nav"></a>
+        <img class="replace-2x" src="images/misc/logo.png" width="87" alt="img">
+    </div>
+    
+    <div class="decoration"></div>
+	<div class="container">
+    	<a href="#" class="page-toggle page-toggle-one">Intro</a>
+        <a href="#" class="page-toggle page-toggle-two">Type</a>
+        <a href="#" class="page-toggle page-toggle-three">jQuery</a>
+        <a href="#" class="page-toggle page-toggle-four">Others</a>
+    </div>
+    <div class="decoration"></div>
+    
+    <div class="container">
+    	<img class="image-decoration no-bottom responsive-image" src="http://sphotos-c.ak.fbcdn.net/hphotos-ak-snc7/p206x206/580596_593523903996000_687283245_n.png" alt="img">
+    </div>
+    
+    <div class="decoration"></div>
+    
+    <div id="page-toggle-one"> 
+    	<div class="container no-bottom shadow">
+            <h4 class="heading-icon left-text">General features for Epsilon!</h4>        
+            <ul>
+                <li>Custom jQuery, NOT jQuery Mobile!</li>
+                <li>Page Preloader with fader.</li>
+                <li>Optimized for all types of mobile screens.</li>
+                <li>WebApp Ready.</li>
+                <li>AJAX / PHP Contact Form with Validation.</li>
+                <li>3D Image Slider</li>
+                <li>Touch Swipe Slider</li>
+                <li>Colorbox image gallery.</li>
+                <li>Photoswipe image gallery.</li>
+                <li>Responsive Google Maps support.</li>
+                <li>Full retina support for all graphic elements!</li>
+                <li>850 pixel perfect icons for retina and non retina!</li>
+            </ul>
+            <div class="decoration"></div>
+            <h4 class="heading-icon left-text">Genearal typography features for Epsilon!</h4>
+            <ul>
+                <li>1 column  text.</li>
+                <li>2 columns text.</li>
+                <li>3 columns text.</li>
+                <li>1 column  with icon.</li>
+                <li>2 columns with icon.</li>
+                <li>3 columns with icon.</li>
+                <li>Quotes with icon.</li>
+                <li>Quotes without icon.</li>
+                <li>CSS3 Highlighted Text.</li>
+                <li>CSS3 Dropcaps.</li>
+                <li>CSS3 Table.</li>
+                <li>CSS3 Web 2.0 Buttons.</li>
+                <li>CSS3 Minimal Buttons.</li>
+                <li>CSS3 User Agent Detector.</li>
+                <li>40 List Icons ( Retina Ready )</li>
+                <li>800 Icons columns ( Retina Ready )</li>
+                <li>Thumbnail Blog Post.</li>
+                <li>Fullwidth Blog Post.</li>
+                <li>Ads widget.</li>
+                <li>Recent widget.</li>
+                <li>Comment widget.</li>
+                <li>Replies widget</li>
+            </ul>
+            <div class="decoration"></div>
+            <h4 class="heading-icon left-text">General jQuery feautes for Epsilon!</h4>
+            <ul>
+                <li>jQuery 3D Cube Slider.</li>
+                <li>jQuery Swipe Slider.</li>
+                <li>jQuery Photoswipe Thumbs Gallery.</li>
+                <li>jQuery Colorbox 1 Column Gallery.</li>
+                <li>jQuery Colorbox 2 Column Gallery.</li>
+                <li>jQuery Colorbox Filtrable Gallery.</li>
+                <li>jQuery Checkboxes. ( Retina Ready )</li>
+                <li>jQuery Radioboxes. ( Retina Ready )</li>
+                <li>jQuery On/Off Toggle. ( Retina Ready )</li>
+                <li>jQuery +/- Toggle. ( Retina Ready )</li>
+                <li>jQuery +/x Toggle. ( Retina Ready )</li>
+                <li>jQuery Tabs</li>
+                <li>jQuery classic small notifications.</li>
+                <li>jQuery minimal big notifications.</li>
+                <li>jQuery header notifications.</li>
+                <li>jQuery sliding box for sms numbers, emails, etc!</li>
+                <li>jQuery dropdown menus </li>
+            </ul> 
+        </div>
+        <div class="decoration"></div>
+    </div>
+    <div id="page-toggle-two">
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Typography features!</h4>
+            <p> We've thought about everything you might ever need to make your template full optioned, quotes, columns, speech bubbles, icon lists, default lists, image columns, quotes! All of them are featured bellow!</p>
+        </div>
+        <div class="decoration"></div>
+ 
+ 
+        <!--Simple Lists-->
+        
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Lists and Icon Lists?</h4>
+            <p>lists are probably the most important element in any page! So we piled 40 of the best icons just for you!</p>
+    
+            <div class="column no-bottom">
+                <div class="one-half">
+                    <ul class="icon-lists">
+                        <li class="list-address">Addressbook.</li>
+                        <li class="list-block">Block icon list.</li>
+                        <li class="list-bookmark">Bookmark list.</li>
+                        <li class="list-bubble">Bubble icon list.</li>
+                        <li class="list-briefcase">Briefcase list.</li>
+                        <li class="list-buy">Buy icon list.</li>
+                        <li class="list-calendar">Calendar list.</li>
+                        <li class="list-clipboard">Clipboard list.</li>
+                        <li class="list-delete">Delete icon list.</li>
+                        <li class="list-clock">Clock icon list.</li>
+                        <li class="list-diagram">Diagram list.</li>
+                        <li class="list-document">Document list.</li>
+                        <li class="list-down">Down icon list.</li>
+                        <li class="list-flag">Flag icon list.</li>
+                        <li class="list-folder">Folder icon list.</li>
+                        <li class="list-gear">Gear icon list.</li>
+                        <li class="list-globe">Globe icon list.</li>
+                        <li class="list-heart">Heart icon list.</li>
+                        <li class="list-help">Help icon list.</li>
+                        <li class="list-home">Home icon list.</li>
+                    </ul>            
+                </div>
+                <div class="one-half">
+                    <ul class="icon-lists">
+                        <li class="list-label">Label icon list.</li>
+                        <li class="list-left">Left icon list.</li>
+                        <li class="list-letter">Letter icon list.</li>
+                        <li class="list-monitor">Monitor list.</li>
+                        <li class="list-pencil">Pencil icon list.</li>
+                        <li class="list-plus">Plus icon list.</li>
+                        <li class="list-present">Present list.</li>
+                        <li class="list-print">Print icon list.</li>
+                        <li class="list-right">Right icon list.</li>
+                        <li class="list-save">Save icon list.</li>
+                        <li class="list-shield">Sheild icon list.</li>
+                        <li class="list-statistics">Statistics list.</li>
+                        <li class="list-stop">Stop icon list.</li>
+                        <li class="list-tick">Tick icon list.</li>
+                        <li class="list-trash">Trash icon list.</li>
+                        <li class="list-up">Up icon list.</li>
+                        <li class="list-user">User icon list.</li>
+                        <li class="list-walet">Wallet icon list.</li>
+                        <li class="list-warning">Warning list.</li>
+                        <li class="list-key">Key icon list.</li>
+                    </ul>           
+                </div>
+            </div>
+        </div>  
+        <div class="decoration"></div>
+        
+        
+        <div class="container no-bottom">
+        <h4 class="heading-icon">Regular Lists</h4>
+        <p>Icon lists are nice but some times old fashion is needed!</p>    
+            <div class="column no-bottom">
+                <div class="one-half">
+                    <ul class="regular-list">
+                        <li>List Element 1</li>
+                        <li>List Element 2</li>
+                        <li>List Element 3</li>
+                        <li>List Element 4</li>
+                        <li>List Element 5</li>
+                    </ul>
+                </div>
+                <div class="one-half">
+                    <ul class="regular-list">
+                        <li>List Element 1</li>
+                        <li>List Element 2</li>
+                        <li>List Element 3</li>
+                        <li>List Element 4</li>
+                        <li>List Element 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="decoration"></div>
+            
+        <div class="container no-bottom">
+        <h4 class="heading-icon">Numbered Lists</h4>
+        <p>Icon lists are nice but some times old fashion is needed!</p>    
+            <div class="column no-bottom">
+                <div class="one-half">
+                    <ol class="number-list">
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                    </ol>
+                </div>
+                <div class="one-half">
+                    <ol class="number-list">
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <!-- Headings -->
+        
+        <div class="container">
+            <h4 class="left-text">Left Heading</h4>
+            <p class="left-text">Lorem Ipsum is simply dummy text. </p>
+            
+            <h4 class="center-text">Center Heading</h4>
+            <p class="center-text">Lorem Ipsum is simply dummy text. </p>
+            
+            <h4 class="right-text">Right Heading</h4>
+            <p class="right-text">Lorem Ipsum is simply dummy text. </p>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <div class="container">
+            <h4 class="heading-icon">Show me the headings!</h4>
+            <p>All types of headings, made beautiful, perfectly selected!</p>
+            <h6 class="center-text">This is a heading example</h6>
+            <h4 class="center-text">This is a heading example</h4>
+            <h3 class="center-text">This is a heading example</h3>
+            <h2 class="center-text">This is a heading example</h2>
+            <h1 class="center-text">This is a heading example</h1>
+        </div>
+    
+        <div class="decoration"></div>
+        
+        
+        <!-- Dropcaps-->
+    
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Dropcaps!</h4>
+            <p>Maybe you have a taste for oldschool typography! In that case you really need dropcaps! It's just amazing!</p>
+            <p>
+                <strong class="dropcaps">D</strong>
+                ropcaps is amazing, especially when you love typopgraphy like I do! Typography is important! 
+            </p>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <!--Highlights-->
+     
+        
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Highlights!</h4>
+            <p>There are some parts of text where bold just won't cut it! Having text highlights makes it so much easier to emphesize a point of view!</p>
+            <p>
+                <span class="highlight bg-gray">Highlighted text</span>is simply awesome!
+            </p>
+            
+            <p>
+                <span class="highlight bg-orange">Highlighted text</span>is simply awesome!
+            </p>
+            
+            <p>
+                <span class="highlight bg-yellow">Highlighted text</span>is simply awesome!
+            </p>
+            
+            <p>
+                <span class="highlight bg-green">Highlighted text</span>is simply awesome!
+            </p>
+        </div>
+    
+        <div class="decoration"></div>
+        
+        <!--Speach Bubble-->
+        
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Speach bubbles?</h4>
+            <p>A nice way of showing off a conversation maybe?</p>
+        
+            <em class="speach-left-title">John Doe says:</em>
+            <p class="speach-left">This is just an awesome bubble!</p>
+            
+            <div class="clear"></div>
+            
+            <em class="speach-right-title">Jane Doe replied:</em>
+            <p class="speach-right">Yeap! It's awesome isn't it and it's not that hard to use! And they act like bubbles, only expanding to 75% of width!</p>
+            
+            <div class="clear"></div>  
+                 
+            <em class="speach-left-title">John Doe says:</em>
+            <p class="speach-left">Awesome stuff!</p>
+            
+        </div>
+       
+        <div class="decoration"></div>        
+
+        <!--Quotes-->
+       
+        <div class="container">
+        <h4 class="heading-icon">Quotes</h4>
+        <p>Maybe you have some testimonials you would like to share! So we've styled some quote styles for you!</p>
+            <blockquote class="quote">
+                <em>
+                    "Lorem ipsum dolor sit amet, consec tetur adisc ipiscing elit."
+                </em>
+                <strong>- John Doe, CEO</strong>
+            </blockquote>
+        </div>
+        
+    
+        <div class="container">
+            <blockquote class="quote-icon">
+                <em>
+                    <span class="icon icon-shadow-user1"></span>
+                    "Lorem ipsum dolor sit amet, consec tetur adisc ipiscing elit."
+                </em>
+                <strong>- John Doe, CEO</strong>
+            </blockquote>
+        </div>
+        
+        <div class="decoration"></div>
+    
+        <!--Big text icons-->
+     
+        <div class="container no-bottom">
+            <h4 class="heading-icon">All kinds of columns</h4>
+            <p>Full width, two columns, three columns, simple text, columns with headings, columns with images, columns and more columns!</p>
+        </div>
+    
+        <div class="column">
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon2@2x.png" alt="img">
+                <h5 class="center-text">Big Icons?</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon1@2x.png" alt="img">
+                <h5 class="center-text">Centerd up!</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <div class="column">
+            <div class="one-third">
+                <img class="center-icon" src="images/icons-large/icon2@2x.png" alt="img">
+                <h5 class="center-text">1/3</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-third">
+                <img class="center-icon" src="images/icons-large/icon3@2x.png" alt="img">
+                <h5 class="center-text">2/3</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-third">
+                <img class="center-icon" src="images/icons-large/icon4@2x.png" alt="img">
+                <h5 class="center-text">3/3</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <!-- Big text icons -->
+        
+        <div class="column">
+              <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of of the printing.  </p> 
+        </div>
+        
+        <div class="column">
+            <div class="one-half">
+                <h5>1/2</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply printing dummy text. </p> 
+            </div>
+            <div class="one-half">
+                <h5>2/2</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply printing dummy text. </p> 
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="one-third">  
+                <h5>1/3</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum simply dum text of the pri nt and indu. </p>
+            </div>
+            <div class="one-third">
+                <h5>2/3</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum simply dum text of the pri nt and indu. </p> 
+            </div>
+            <div class="one-third">
+                <h5>3/3</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum simply dum text of the pri nt and indu. </p>
+            </div>
+        </div>
+        
+        <div class="decoration"></div>
+    
+        <!-- Text columns -->
+            
+        <div class="container no-bottom">
+            <h5>1/1</h5>
+            <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of the printing. of the printing.  </p> 
+        </div>
+    
+        <div class="column">
+            <div class="one-half">
+                <h5>1/2</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-half">
+                <h5>2/2</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="one-third">  
+                <h5>1/3</h5>
+                <p>Lorem Ipsum is simply dummy text of the print and industry. </p>
+            </div>
+            <div class="one-third">
+                <h5>2/3</h5>
+                <p>Lorem Ipsum is simply dummy text of the print and industry. </p> 
+            </div>
+            <div class="one-third">
+                <h5>3/3</h5>
+                <p>Lorem Ipsum is simply dummy text of the print and industry. </p>
+            </div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <div class="container">
+			<h class="heading-icon">Image Columns</h4>
+            <p>Any possible variation you can think of can happen with these columns!</p>
+            <img class="responsive-image image-decoration" src="images/gallery/full/002.jpg" alt="img">
+        </div>
+    
+        <div class="column">
+            <div class="one-half">
+				<img class="responsive-image image-decoration" src="images/gallery/full/004.jpg" alt="img">
+            </div>
+            <div class="one-half">
+				<img class="responsive-image image-decoration" src="images/gallery/full/005.jpg" alt="img">
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="one-third">  
+				<img class="responsive-image image-decoration" src="images/gallery/full/007.jpg" alt="img">
+            </div>
+            <div class="one-third">
+				<img class="responsive-image image-decoration" src="images/gallery/full/002.jpg" alt="img">
+            </div>
+            <div class="one-third">
+				<img class="responsive-image image-decoration" src="images/gallery/full/004.jpg" alt="img">
+            </div>
+        </div>
+     
+        <div class="decoration"></div>
+    </div>
+    <div id="page-toggle-three">
+        <div class="container no-bottom">
+        	<h4 class="heading-icon">Checkboxes and Radios</h4>
+            <p>It's important to have more than one style of checkbox, and radio! So we included a couple of sets!</p>
+            <div class="column">
+                <div class="one-half">
+                    <a href="#" class="checker checkbox-v1">Check</a>
+                    <a href="#" class="checker checkbox-v2">Check</a> 
+                    <a href="#" class="checker checkbox-v3">Check</a>         
+                </div>
+                <div class="one-half">
+                    <a href="#" class="checker radio-v1">Check</a>
+                    <a href="#" class="checker radio-v2">Check</a> 
+                    <a href="#" class="checker checkbox-v4">Check</a>       
+                </div>
+            </div>
+        </div>
+        <div class="decoration"></div>
+
+    	<!--Tabs-->
+    	
+        <div class="container">
+        	<h4 class="heading-icon">Tabs!</h4>
+            <p>Tabs are just awesome! So much information in such little space, makes the page compact, clean, and fast loading!</p>
+            <ul id="tab" class="tab">
+                <li class="active"><a class="tab-but" href="#one">But 1</a></li>
+                <li><a class="tab-but" href="#two">But 2</a></li>
+                <li><a class="tab-but" href="#three">But 3</a></li>
+            </ul>
+            <div id="one" class="tab-content">
+                <p>
+                	<img class="replace-2x float-left" width="80" src="images/icons-large/icon1.png" alt="img">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look.
+                </p>
+            </div>
+            <div id="two" class="tab-content">
+                <p>
+                	<img class="replace-2x float-right" width="80" src="images/icons-large/icon4.png" alt="img">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer. 
+                </p>
+            </div>
+        
+            <div id="three" class="tab-content">
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="decoration"></div>
+
+    	<!--Notifications-->
+        
+        <div class="container no-bottom">
+        	<h4 class="heading-icon">Big notifications!</h4>
+            <p>We all find use for these! Maybe something changed, you want your users to know that some part of your page changed! These are a simple way of doing so!</p>
+            <div class="notification-box red-box">
+                    <h4>ALL IS GOOD! I'M IN LOVE!</h4>
+                    <a href="#" class="close-notification">x</a>
+                <div class="clear"></div>
+                <p>
+                    Now now, relax. This is just a notification demo! No need 
+                    to worry. It's not the real thing! This is just a simple 
+                    notification not the apocalypse!  
+                </p>  
+            </div>    
+            
+            <div class="notification-box blue-box">
+                    <h4>ALL IS GOOD! I'M IN LOVE!</h4>
+                    <a href="#" class="close-notification">x</a>
+                <div class="clear"></div>
+                <p>
+                    Now now, relax. This is just a notification demo! No need 
+                    to worry. It's not the real thing! This is just a simple 
+                    notification not the apocalypse!  
+                </p>  
+            </div>
+            
+            <div class="notification-box yellow-box">
+                    <h4>ALL IS GOOD! I'M IN LOVE!</h4>
+                    <a href="#" class="close-notification">x</a>
+                <div class="clear"></div>
+                <p>
+                    Now now, relax. This is just a notification demo! No need 
+                    to worry. It's not the real thing! This is just a simple 
+                    notification not the apocalypse!  
+                </p>  
+            </div>   
+           
+            <div class="notification-box green-box">
+                    <h4>ALL IS GOOD! I'M IN LOVE!</h4>
+                    <a href="#" class="close-notification">x</a>
+                <div class="clear"></div>
+                <p>
+                    Now now, relax. This is just a notification demo! No need 
+                    to worry. It's not the real thing! This is just a simple 
+                    notification not the apocalypse!  
+                </p>  
+            </div>  
+       	</div>
+        
+        <div class="decoration"></div>
+
+    	<!--Toggles-->
+        
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Toggles!!</h4>
+            <p>Maybe you like their design, or the functionality drives you nuts, these are important and they are coded in such fashion you can use as many as you wish on the same page!</p>
+        </div>
+        
+        <div class="container no-bottom">
+            <div class="toggle-container-v3"> 
+                <div class="toggle-v3">
+                    <a href="#" class="show-toggle-v3">Content Is Shown!</a>
+                    <a href="#" class="hide-toggle-v3">Content Is Hidden!</a>
+                    <div class="clear"></div>
+                    <div class="toggle-content-v3">
+                        <div class="toggle-decoration-v3"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap 
+                             into electronic typesetting, remaining essentially unchanged. It was 
+                             popularised in the 1960s with the release of Letraset sheets containing 
+                             Lorem Ipsum passages, and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+
+
+
+        <div class="container no-bottom">
+            <div class="toggle-container-v4"> 
+                <div class="toggle-v4">
+                    <a href="#" class="show-toggle-v4">Content Is Shown!</a>
+                    <a href="#" class="hide-toggle-v4">Content Is Hidden!</a>
+                    <div class="clear"></div>
+                    <div class="toggle-content-v4">
+                        <div class="toggle-decoration-v4"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap 
+                             into electronic typesetting, remaining essentially unchanged. It was 
+                             popularised in the 1960s with the release of Letraset sheets containing 
+                             Lorem Ipsum passages, and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="container no-bottom">
+            <div class="toggle-container-v5"> 
+                <div class="toggle-v5">
+                    <a href="#" class="show-toggle-v5">Content Is Shown!</a>
+                    <a href="#" class="hide-toggle-v5">Content Is Hidden!</a>
+                    <div class="clear"></div>
+                    <div class="toggle-content-v5">
+                        <div class="toggle-decoration-v5"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap 
+                             into electronic typesetting, remaining essentially unchanged. It was 
+                             popularised in the 1960s with the release of Letraset sheets containing 
+                             Lorem Ipsum passages, and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+
+        <div class="container no-bottom">
+            <div class="toggle-container-v2"> 
+                <div class="toggle-v2">
+                    <a href="#" class="show-toggle-v2">Content Is Shown!</a>
+                    <a href="#" class="hide-toggle-v2">Content Is Hidden!</a>
+                    <div class="clear"></div>
+                    <div class="toggle-content-v2">
+                        <div class="toggle-decoration-v2"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap 
+                             into electronic typesetting, remaining essentially unchanged. It was 
+                             popularised in the 1960s with the release of Letraset sheets containing 
+                             Lorem Ipsum passages, and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+            
+        <div class="container no-bottom">
+            <div class="toggle-container-v1"> 
+                <div class="toggle-v1">
+                    <a href="#" class="show-toggle-v1">Content Is Shown!</a>
+                    <a href="#" class="hide-toggle-v1">Content Is Hidden!</a>
+                    <div class="clear"></div>
+                    <div class="toggle-content-v1">
+                        <div class="toggle-decoration-v1"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                             when an unknown printer took a galley of type and scrambled it to make a type 
+                             specimen book. It has survived not only five centuries, but also the leap 
+                             into electronic typesetting, remaining essentially unchanged. It was 
+                             popularised in the 1960s with the release of Letraset sheets containing 
+                             Lorem Ipsum passages, and more recently with desktop publishing software
+                             like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <!--Dropdown-->
+        
+        <div class="container no-bottom">
+        <h4 class="heading-icon">Dropdown menu's?</h4>
+        <p> Most mobile templates only give you one drop down menu, you can use as many as you want with ours</p>
+        
+        	<div class="dropdown-menu">
+            	<a href="#" class="dropdown-deploy"><em class="left-dropdown bg-light"></em>DEPLOY MENU</a>
+                <a href="#" class="dropdown-hidden"><em class="left-dropdown bg-light"></em>HIDE MENU</a>
+                <a href="#" class="dropdown-item bg-light">Dropdown item one</a>
+                <a href="#" class="dropdown-item bg-light">Dropdown item two</a>
+                <a href="#" class="dropdown-item bg-light">Dropdown item three</a>
+                <div class="dropdown-bottom-border"></div>
+            </div>     
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <!--Sliding box-->
+        
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Cute Slider?</h4>
+            <p>Try this for a great anti bot method! Interaction required!</p>
+                <div class="sliding-door">
+                    <div class="sliding-door-top">
+                        <a href="#">
+                            <em class="bg-light"></em>
+                            Tap for our phone number!
+                        </a>
+                    </div>    
+                    <div class="sliding-door-bottom">
+                        <a href="tel:+12 345 7890">
+                            <em class="bg-light"></em>
+                            <strong>Call us:</strong> 
+                            +1 555 354 7890
+                        </a>
+                    </div>
+                </div>
+    		<div class="sliding-door-clear"></div>
+    	</div>
+        
+        <div class="container no-bottom">
+                <div class="sliding-door">
+                    <div class="sliding-door-top">
+                        <a href="#">
+                            <em class="bg-light"></em>
+                            Tap for our mail address!
+                        </a>
+                    </div>    
+                    <div class="sliding-door-bottom">
+                        <a href="mailto:+12 345 7890">
+                            <em class="bg-light"></em>
+                            <strong>Mail us:</strong> 
+                            mail@domain.com
+                        </a>
+                    </div>
+                </div>
+        	<div class="sliding-door-clear"></div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        
+    </div>
+    <div id="page-toggle-four">
+        <div class="container no-bottom">
+            <h4 class="heading-icon">User agent detector!</h4>
+            <p>Detect what user agent is browsing your device! Maybe you have an app that's developed for multiple platforms. This system detects what platform is browsing your page and shows only that button!</p>
+           
+            <div class="column iphone-detected no-detected-background">
+                <p class="uppercase">
+                    <span><img src="images/detector/iphone.png" class="replace-2x" width="26" alt="img"></span>
+                    Availalble for your Apple iPhone on the Apple Appstore! <a href="#">Get it now! Tap here!</a>
+                </p> 
+            </div>
+            
+            <div class="column ipad-detected no-detected-background">
+                <p class="uppercase">
+                    <span><img src="images/detector/ipad.png" class="replace-2x" width="26" alt="img"></span>
+                     Availalble for your Apple iPad on the Apple Appstore! <a href="#">Get it now! Tap here!</a>
+                </p> 
+            </div>
+            
+            <div class="column android-detected no-detected-background">
+                <p class="uppercase">
+                    <span><img src="images/detector/droid.png" class="replace-2x" width="26" alt="img"></span>
+                     Availalble for your Android Device on the GooglePlay store! <a href="#">Get it now! Tap here!</a>  
+                </p> 
+            </div>
+        </div>    
+        <div class="decoration"></div>
+                
+        <!--CSS3 Buttons-->
+        
+        <div class="container">
+            <h4 class="heading-icon">CSS3 Buttons</h4>
+            <p class="no-bottom">Pure CSS3 buttons made to expand to the width of the screen regardless how much text is entered!</p>
+            <a href="#" class="no-bottom demo-button button yellow">But</a>
+            <a href="#" class="no-bottom demo-button button grey">But</a>
+            <a href="#" class="no-bottom demo-button button red">But</a>
+            <a href="#" class="no-bottom demo-button button blue">But</a>
+            <a href="#" class="no-bottom demo-button button green">But</a>
+            <a href="#" class="no-bottom demo-button button black">But</a>
+            <a href="#" class="no-bottom demo-button button purple">But</a>
+            <a href="#" class="no-bottom demo-button button gblue">But</a>
+        </div>
+        
+        <div class="decoration"></div>
+              
+        <div class="container">
+            <h4 class="heading-icon">CSS3 Minimal Buttons</h4>
+            <p class="no-bottom">Pure CSS3 buttons made to expand to the width of the screen regardless how much text is entered!</p>
+            <a href="#" class="no-bottom demo-button button-minimal yellow-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal grey-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal red-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal blue-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal green-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal black-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal purple-minimal">But</a>
+            <a href="#" class="no-bottom demo-button button-minimal gblue-minimal">But</a>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <div class="container">
+        	<h4 class="heading-icon">All above buttons fullscren!</h4>
+            <p class="no-bottom">Yes, you can use fullscreen buttons as well!</p>
+            <a href="#" class="no-bottom demo-button button-minimal grey-minimal fullscreen-button no-bottom">Minimal Fullscreen Button</a>
+        	<a href="#" class="no-bottom demo-button button grey fullscreen-button">Regular Fullscreen Button</a>
+        </div>
+        
+        <div class="decoration"></div>
+
+        <!--Charts-->
+    
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Vertical Charts?</h4>
+            <p>Charts are important, but everyone hates those complicated 500 lines of code charts! We have a solution! Simple CSS3 ones!</p>
+            <div class="decoration"></div>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical red vp30"></span>
+                    <span class="vertical-stat-number">a</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical red vp40"></span>
+                    <span class="vertical-stat-number">b</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical red vp50"></span>
+                    <span class="vertical-stat-number">c</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical yellow vp60"></span>
+                    <span class="vertical-stat-number">d</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical yellow vp70"></span>
+                    <span class="vertical-stat-number">e</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical green vp80"></span>
+                    <span class="vertical-stat-number">f</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical green vp90"></span>
+                    <span class="vertical-stat-number">g</span>
+                </span>
+                <span class="stat-vertical-background">
+                    <span class="percent-vertical green vp100"></span>
+                    <span class="vertical-stat-number">h</span>
+                </span>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="decoration"></div>
+        
+        <div class="container no-bottom">
+            <h4 class="heading-icon">Horizontal Charts?</h4>
+            <p>Charts are important, but everyone hates those complicated 500 lines of code charts! We have a solution! Simple CSS3 ones!</p>
+            <div class="decoration"></div>
+    
+            <div class="stat">
+                <p class="stat-left">Monday</p>
+                <p class="stat-right">123 Visits <strong class="increase">15% Increase</strong></p>
+                <div class="clear"></div>
+                <span class="stat-background">
+                    <span class="stat-cleaner"></span>
+                    <span class="percent green p10"></span>
+                </span>
+            </div>
+            <div class="stat">
+                <p class="stat-left">Tuesday</p>
+                <p class="stat-right">234 Visits<strong class="increase">45% Increase</strong></p>
+                <div class="clear"></div>
+                <span class="stat-background">
+                    <span class="stat-cleaner"></span>
+                    <span class="percent green p40"></span>
+                </span>
+            </div>
+            <div class="stat">
+                <p class="stat-left">Wednesday</p>
+                <p class="stat-right">453 Visits<strong class="increase">55% Increase</strong></p>
+                <div class="clear"></div>
+                <span class="stat-background">
+                    <span class="stat-cleaner"></span>
+                    <span class="percent green p50"></span>
+                </span>
+            </div>
+            <div class="stat">
+                <p class="stat-left">Thursday</p>
+                <p class="stat-right">300 Visits <strong class="decrease">15% Decrease</strong></p>
+                <div class="clear"></div>
+                <span class="stat-background">
+                    <span class="stat-cleaner"></span>
+                    <span class="percent red p40"></span>
+                </span>
+            </div>
+            <div class="stat">
+                <p class="stat-left">Friday</p>
+                <p class="stat-right">123 Visits<strong class="decrease">20% Decrease</strong></p>
+                <div class="clear"></div>
+                <span class="stat-background">
+                    <span class="stat-cleaner"></span>
+                    <span class="percent red p20"></span>
+                </span>
+            </div>
+        </div>
+        <div class="decoration"></div>
+
+    
+        <!--Tables-->
+        <div class="container no-bottom">
+           <h4 class="heading-icon">How about a table?</h4>
+           <p>And it's pure CSS3! That means you just fill in the data, and the table expands to fit the size you need!</p>
+           <table cellspacing='0' class="table">
+                <tr>
+                    <th>TABLE</th>
+                    <th class="table-title">PLUS</th>
+                    <th class="table-title">PRO</th>
+                </tr>
+                    
+                <tr>
+                    <td class="table-sub-title">PACK ONE</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                
+                <tr class='even'>
+                    <td class="table-sub-title">PACK TWO</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                
+                <tr>
+                    <td class="table-sub-title">PACK THREE</td>
+                    <td>No</td>
+                    <td>No</td>
+                </tr>
+                
+                <tr class='even'>
+                    <td class="table-sub-title">VALUE</td>
+                    <td class="price">$9.<sup class="small-price">99</sup></td>
+                    <td class="price">$109.<sup class="small-price">99</sup></td>
+                </tr>       
+            </table>
+        </div> 
+        <div class="decoration"></div>
+    </div>
+    
+   
+	<div class="footer container no-bottom">
+    	<p class="center-text half-bottom">Copyright 2012. All rights reserved!</p>
+    	<p class="center-text">
+        	<a class="subscribe" href="#">Subscribe</a>
+            <em>|</em>
+        	<a class="go-up" href="#">Back to top</a>
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+
+

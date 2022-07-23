@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Epsilon Framework</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" 	type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>		
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/swipe.js"			type="text/javascript"></script>
+<script src="scripts/swipebox.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+</head>
+
+<body>
+
+
+<div class="demo-button">
+	<a href="#" class="delete-cookie modal_button modal_black">Delete Cookie</a>
+</div>
+
+
+
+<div id="modal-hider"></div>
+
+<div id="modal-body">
+	<a href="#" class="close-modal">x</a>
+    <p class="modal-logo">SUBSCRIBE FOR UPDATES</p>
+	<p class="modal-logo-heading">
+    	We'd like to keep you updated with our news!<br/>
+        Subscribe or follow us on our social networks!
+    </p>
+   
+    <div class="decoration"></div>
+   
+    <div class="modalForm" id="modalForm">
+      <form id="contact">
+          <fieldset>
+              <label for="contactName" id="name_label">NAME:</label>
+              <p id="left_label_name">glad to meet you!</p>
+              <input type="text" name="contactName" id="contactName" size="30" value="John Doe?" class="text-input" />
+              <span class="error" id="nameError">Please enter your name !</span>
+              
+              <label for="contactEmail" id="email_label">EMAIL:</label>
+              <p id="left_label_mail">we never spam!</p>
+              <input type="text" name="contactEmail" id="contactEmail" size="30" value="johndoe@domain.com" class="text-input" />
+              <span class="error" id="emailError">Please enter your email address !</span> <span class="error" id="emailError2">Please enter a valid email address !</span>
+              
+              <textarea  name="contactMessage" id="contactMessage" class="text-input">Message Sent From Modal Pop-Up</textarea>
+              <span class="error" id="messageError">Please enter message !</span>
+              
+              <p class="contact-button-house">
+                <input type="submit" name="submitMessage" class="contactButton button black" id="contactSubmitBtn" value="SUBSCRIBE"/>
+              </p>
+              
+              <p class="contact-social-set">
+                    <em>OUR SOCIAL SET</em>
+                    <a href="#"><img src="images/modal_social/facebook@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/twitter@2x.png"  width="16"	alt="img"></a>
+                    <a href="#"><img src="images/modal_social/dribbble@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/rss@2x.png" 	 width="16"	alt="img"></a>
+              </p>
+          </fieldset>
+      </form>
+  </div>
+  
+  <div class="decoration"></div>
+  
+  <a href="#" class="modal_disable">This pop-up is stressing me! Stop showing it!</a>
+    
+</div>
+
+
+	<div class="container">
+    	<h3>Get in touch!</h3>
+        <p>A functional, AJAX, PHP contact form with field validation and some nifty animations added to it! Hope you love it!</p>
+    
+        <div class="contact-form"> 
+            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                <div class="notification-box green-box">
+                    <h4>YOUR MESSAGE HAS BEEN SENT!</h4>
+                    <a href="#" class="close-notification">x</a>
+                    <div class="clear"></div>
+                    <p>
+                        You're message has been successfully sent. Please allow up to 48 hours for us to reply!  
+                    </p>  
+                </div> 
+            </div>
+        
+            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                <fieldset>
+                    <div class="formFieldWrap">
+                        <label class="contactNameField" for="contactNameField">Name:<span>(required)</span></label>
+                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                    </div>
+                    <div class="formFieldWrap">
+                        <label class="contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
+                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                    </div>
+                    <div class="formTextareaWrap">
+                        <label class="contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
+                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                    </div>
+                        <div class="formSubmitButtonErrorsWrap">
+                            <input type="submit" class="buttonWrap button grey contactSubmitButton" id="contactSubmitButton" value="Submit" data-formId="contactForm"/>
+                            <a class="button grey" href="tel:+12 345 657 8963">Call Us</a>
+                            <a class="button grey" href="sms:+12 345 657 8963">SMS Us</a>
+                            <span class="formValidationError" id="contactNameFieldError">
+                                <div class="small-notification red-notification no-bottom">
+                                    <p>Error Sending! Please enter your name!</p>
+                                </div>
+                            </span>             
+                            <span class="formValidationError" id="contactEmailFieldError">
+                                <div class="small-notification red-notification no-bottom">
+                                    <p>Error Sending! Mail address required!</p>
+                                </div>
+                            </span> 
+                            <span class="formValidationError" id="contactEmailFieldError2">
+                                <div class="small-notification red-notification no-bottom">
+                                    <p>Error Sending! Valid Email Address Required</p>
+                                </div>
+                            </span> 
+                            <span class="formValidationError" id="contactMessageTextareaError">
+                                <div class="small-notification red-notification no-bottom">
+                                    <p>Error Sending! Message field is empty!</p>
+                                </div>
+                            </span> 
+                        </div>
+                </fieldset>
+            </form>       
+        </div>
+    
+    </div>
+
+	<div class="decoration"></div>
+	<div class="footer container no-bottom">
+    	<p class="center-text half-bottom">Copyright 2012. All rights reserved!</p>
+    	<p class="center-text">
+        	<a class="subscribe" href="#">Subscribe</a>
+            <em>|</em>
+        	<a class="go-up" href="#">Back to top</a>
+        </p>
+    </div>
+
+
+</body>
+</html>
+
+
+

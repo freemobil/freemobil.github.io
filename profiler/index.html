@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+<title>Epsilon Mobile Framework - Version 2.0</title>
+
+<link href="styles/style.css"     		 rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 		 rel="stylesheet" type="text/css">
+<link href="styles/owl.carousel.css" 	 rel="stylesheet" type="text/css">
+<link href="styles/owl.theme.css" 		 rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"		 rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css"	 rel="stylesheet" type="text/css">
+<link href="styles/animate.css"			 rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework.plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+
+</head>
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+        	<div class="sidebar-shortcuts">
+            	<a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-phone"></i></a>
+                <a class="close-nav" href="#"><i class="fa fa-times"></i></a>
+            </div>
+                        
+            <div class="sidebar-logo">
+                <img src="images/logo-big.png" width="160" alt="img">
+            </div>
+                        
+            <div class="sidebar-breadcrumb">NAVIGATION</div>
+                
+            <div class="navigation-item">
+                <a href="index.html" class="current nav-item">
+                	<i class="fa fa-home"></i>
+                    Homepage
+                    <i class="fa fa-circle"></i>     
+                </a>
+            </div>    
+            <div class="sidebar-decoration"></div>
+            <div class="navigation-item">
+                <a href="#" class="nav-item submenu-deploy">
+                	<i class="fa fa-cog"></i>
+                	Features
+                    <i class="fa fa-angle-up"></i>  
+                </a>
+                <div class="nav-submenu">
+                    <a href="typography.html">
+                    	<i class="fa fa-angle-right"></i>
+                        Typography	 
+                        <i class="fa fa-circle"></i>	
+                    </a>
+                    <a href="jquery.html">
+                    	<i class="fa fa-angle-right"></i>
+                    	jQuery
+                        <i class="fa fa-circle"></i>
+                    </a>
+                    <a href="others.html">
+                    	<i class="fa fa-angle-right"></i>
+                    	Others
+                        <i class="fa fa-circle"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-decoration"></div>
+            <div class="navigation-item">
+                <a href="#" class="nav-item submenu-deploy">
+                	<i class="fa fa-camera"></i>
+                	Gallery 
+                    <i class="fa fa-angle-up"></i>  
+                </a>
+                <div class="nav-submenu">
+                    <a href="gallery-wide.html">	
+                    	<i class="fa fa-angle-right"></i>
+                    	Wide Gallery 	
+                        <i class="fa fa-circle"></i>
+                    </a>
+                    <a href="gallery-square.html">
+                    	<i class="fa fa-angle-right"></i>
+                        Square Gallery	 
+                        <i class="fa fa-circle"></i>	
+                    </a>
+                    <a href="gallery-round.html">
+                    	<i class="fa fa-angle-right"></i>
+                    	Round Gallery
+                        <i class="fa fa-circle"></i>
+                    </a>
+                </div>
+            </div>      
+            <div class="sidebar-decoration"></div>
+            <div class="navigation-item">
+                <a href="#" class="nav-item submenu-deploy">
+                	<i class="fa fa-picture-o"></i>
+                	Portfolio 
+                    <i class="fa fa-angle-up"></i>  
+                </a>
+                <div class="nav-submenu">
+                    <a href="portfolio-adaptive.html">	
+                    	<i class="fa fa-angle-right"></i>
+                    	Adaptive Columns	
+                        <i class="fa fa-circle"></i>
+                    </a>
+                    <a href="portfolio-one.html">
+                    	<i class="fa fa-angle-right"></i>
+                        One Column 
+                        <i class="fa fa-circle"></i>	
+                    </a>
+                    <a href="portfolio-two.html">
+                    	<i class="fa fa-angle-right"></i>
+                    	Two Columns
+                        <i class="fa fa-circle"></i>
+                    </a>
+                    <a href="portfolio-three.html">
+                    	<i class="fa fa-angle-right"></i>
+                    	Three Columns
+                        <i class="fa fa-circle"></i>
+                    </a>
+                </div>
+            </div>   
+            <div class="sidebar-decoration"></div>          
+            <div class="navigation-item">
+                <a href="contact.html" class="nav-item">
+                	<i class="fa fa-envelope-o"></i>
+                	Contact
+                    <i class="fa fa-circle"></i>  
+                </a>
+            </div>  
+			<div class="sidebar-decoration"></div>  
+            <div class="navigation-item">
+                <a href="#" class="close-nav nav-item">
+                	<i class="fa fa-times"></i>
+                	Close
+                    <i class="fa fa-circle"></i>  
+                </a>
+            </div> 
+             
+            <div class="sidebar-breadcrumb">SOCIAL STUFF</div>
+            <div class="navigation-item">
+                <a href="https://www.facebook.com/enabled.labs" class="nav-item">
+                	<i class="fa fa-facebook"></i>
+                    Facebook
+                    <i class="fa fa-link"></i>  
+                </a>
+            </div>    
+			<div class="sidebar-decoration"></div>           
+            <div class="navigation-item">
+                <a href="https://twitter.com/iEnabled" class="nav-item">
+                	<i class="fa fa-twitter"></i>
+                	Twitter
+                    <i class="fa fa-link"></i>  
+                </a>
+            </div>       
+            <div class="sidebar-decoration"></div>
+            <div class="navigation-item">
+                <a href="#" class="nav-item">
+                	<i class="fa fa-google-plus"></i>
+                	Google Plus
+                    <i class="fa fa-link"></i>  
+                </a>
+            </div>             
+            <div class="sidebar-decoration"></div>   
+            <div class="navigation-item">
+                <a href="+ 123 456 7890" class="nav-item">
+                	<i class="fa fa-phone"></i>
+                	Call Me
+                    <i class="fa fa-link"></i>  
+                </a>
+            </div>  
+            <div class="sidebar-decoration"></div>           
+            <div class="navigation-item">
+                <a href="+ 123 456 7890" class="nav-item">
+                	<i class="fa fa-comment-o"></i>
+                	Text Me
+                    <i class="fa fa-link"></i>  
+                </a>
+            </div>  
+            
+            <div class="sidebar-breadcrumb">COPYRIGHT 2014. ALL RIGHTS RESERVED!</div>
+         
+        </div>         
+    </div>
+
+
+    <div id="content" class="page-content"> 
+    	<div class="homepage-top">
+            <div class="homepage-header">
+                <a class="open-nav" href="#"><i class="fa fa-navicon"></i></a>
+                <em>Welcome</em>
+                <a href="contact.html"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="homepage-logo">
+            	<img src="images/logo-big.png" width="160" alt="logo">
+            </div>
+            <div class="homepage-controls">
+            	<a class="homepage-box-one-deploy active-homepage" href="#">About</a>
+                <a class="homepage-box-two-deploy" href="#">Skillset</a>
+                <a class="homepage-box-three-deploy" href="#">Contact</a>
+            </div>
+            <div class="overlay"></div> 
+        </div>
+        
+        <div class="content">       
+            <div class="homepage-box-one active-homepage-box">
+            	<div class="container">
+                    <h3 class="homepage-heading">
+                        I build amazing user interfaces	for your mobile, tablet, or desktop using the latest web techniques!
+                        <a href="#">@envato_market</a>
+                    </h3>
+                </div>
+                <div class="decoration"></div>
+                <div class="container no-bottom">
+                	<img src="images/whois.png" alt="img" class="responsive-image">
+                    <h3>Who is John Doe?</h3>
+                    <p>
+                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Proin eget vulputate nisi. Sed eu gravida felis. Cras leo 
+                        orci, blandit ut diam id, imperdiet eleifend nisl. 
+                        Sed dapibus sit.
+                    </p>
+                </div>
+                <div class="decoration"></div>
+                <div class="one-half-responsive no-bottom">
+                	<div class="column-icon full-bottom">
+                    	<i class="fa fa-institution"></i>
+                    	<h3>Education</h3>
+                        <p>
+                        	Lorem ipsum dolor sit amet, consectetur elit. Nulla nulla
+                        	non dolor lacinia dolor lacinia , id pretium augue sodales ipsumis.
+                        </p>
+                    </div>
+                    <div class="container center-element">
+                    	<h4 class="center-text">Web Design & Development</h4>
+                        <p><i class="fa fa-location-arrow"></i>Planet Mars, The Universe</p>
+                        <p><i class="fa fa-trophy"></i>Web Master Degree</p>
+                        <p><i class="fa fa-calendar-o"></i>2004 - 2007</p>
+                    </div>  
+                    <div class="container center-element">
+                    	<h4 class="center-text">Mobile & Tablet Templates & Themes</h4>
+                        <p><i class="fa fa-location-arrow"></i>Envato Market, Melbourne Victoria</p>
+                        <p><i class="fa fa-trophy"></i>Elite Author, Mobile Niche</p>
+                        <p><i class="fa fa-calendar-o"></i>2009 - 2014</p>
+                    </div>             
+                </div>
+                <div class="decoration hide-if-responsive"></div>
+                <div class="one-half-responsive last-column">
+                	<div class="column-icon full-bottom">
+                    	<i class="fa fa-pencil"></i>
+                    	<h3>Workplaces</h3>
+                        <p>
+                        	Lorem ipsum dolor sit amet, consectetur elit. Nulla nulla
+                        	non dolor lacinia dolor lacinia , id pretium augue sodales ipsumis.
+                        </p>
+                    </div>
+                    <div class="container center-element">
+                    	<h4 class="center-text">Founder at <a href="#">Enabled</a></h4>
+                        <p><i class="fa fa-user"></i>Designer & Developer</p>
+                        <p><i class="fa fa-link"></i><a class="regular-anchor" href="#">www.domain.com</a></p>
+                        <p><i class="fa fa-calendar-o"></i>2009 - 2014</p>
+                    </div>  
+                    <div class="container center-element">
+                    	<h4 class="center-text">Microstock at <a href="#">ThemeForest</a></h4>
+                        <p><i class="fa fa-user"></i>Author & Elite Author</p>
+                        <p><i class="fa fa-link"></i><a class="regular-anchor" href="#">www.domain.com</a></p>
+                        <p><i class="fa fa-calendar-o"></i>2009 - 2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="homepage-box-two">
+            	<div class="container no-bottom">
+                	<h3>John Doe Skills</h3>
+                	<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut lacus pulvinar, 
+                        semper nulla at, volutpat tellus. Quisque et dui feugiat, pellentesque neque quis, 
+                        aliquam massa. Proin et lorem turpis. 
+                    </p>
+                </div>
+                <div class="decoration"></div>
+            	<div class="one-half-responsive">
+                	<h4 class="half-bottom">Profesional Skills</h4>
+                    <p>
+                    	These is the awesome skillset section John Doe provides, this section
+                        is CSS3 built, and you can animate the sections using simple animate.css.
+                    </p>
+                    <div class="chart chart-round">
+                        <strong>First Skill</strong>
+                        <em>10%</em>
+                        <div class="chart-background">
+                            <div class="magenta-chart p10"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Second Skill</strong>
+                        <em>30%</em>
+                        <div class="chart-background">
+                            <div class="red-chart p30"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Third Skill</strong>
+                        <em>30%</em>
+                        <div class="chart-background">
+                            <div class="yellow-chart p50"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Forth Skill</strong>
+                        <em>70%</em>
+                        <div class="chart-background">
+                            <div class="blue-chart p70"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Fifth Skill</strong>
+                        <em>90%</em>
+                        <div class="chart-background">
+                            <div class="green-chart p90"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decoration hide-if-responsive"></div>
+            	<div class="one-half-responsive last-column">
+                	<h4 class="half-bottom">Software Skills</h4>
+                    <p>
+                    	These is the awesome skillset section John Doe provides, this section
+                        is CSS3 built, and you can animate the sections using simple animate.css.
+                    </p>
+                    <div class="chart chart-round">
+                        <strong>Fifth Skill</strong>
+                        <em>90%</em>
+                        <div class="chart-background">
+                            <div class="green-chart p90"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Forth Skill</strong>
+                        <em>70%</em>
+                        <div class="chart-background">
+                            <div class="blue-chart p70"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Third Skill</strong>
+                        <em>30%</em>
+                        <div class="chart-background">
+                            <div class="yellow-chart p50"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>Second Skill</strong>
+                        <em>30%</em>
+                        <div class="chart-background">
+                            <div class="red-chart p30"></div>
+                        </div>
+                    </div>
+                    <div class="chart chart-round">
+                        <strong>First Skill</strong>
+                        <em>10%</em>
+                        <div class="chart-background">
+                            <div class="magenta-chart p10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="homepage-box-three">
+            	<div class="container no-bottom">
+                	<h3>Use our socials</h3>
+                    <p>
+                    	This side is dedicated to all the social networks, phone numbers and other
+                        details you may want to include about John Doe. Styled and made to look
+                        just awesome on mobile and tablet devices!
+                    </p>
+                </div>
+                <div class="container no-bottom">
+                    <div class="hide-if-mobile">
+                        <a href="#" class="one-third-responsive tablet-social facebook-social"><i class="fa fa-facebook"></i>Facebook</a>
+                        <a href="#" class="one-third-responsive tablet-social twitter-social"><i class="fa fa-twitter"></i>Twitter</a>
+                        <a href="#" class="one-third-responsive last-column tablet-social google-social"><i class="fa fa-google-plus"></i>Google Plus</a>
+                    </div>
+                    <div class="hide-if-responsive">
+                        <a href="#" class="mobile-social facebook-social"><i class="fa fa-facebook"></i>Like our page on Facebook</a>
+                        <a href="#" class="one-half mobile-social twitter-social"><i class="fa fa-twitter"></i>Twitter</a>
+                        <a href="#" class="one-half mobile-social last-column google-social"><i class="fa fa-google-plus"></i>Google</a>               
+                    </div>
+                </div>
+                
+                <div class="decoration"></div>
+
+                
+                <div class="one-half-responsive">
+                    <div class="container no-bottom">
+                        <h3>Contact Information</h3>
+                        <p>
+                            <strong>Postal Information</strong><br>
+                            PO Box 16122 Collins Street West<br>
+                            Victoria 8007 Australia
+                        </p>
+                        <p>
+                            <strong>Envato Headquarters</strong><br>
+                            121 King Street, Melbourne <br>
+                            Victoria 3000 Australia
+                        </p>
+                        <p>
+                            <strong>Contact Information:</strong><br>
+                            <a href="#" class="contact-call"><i class="fa fa-phone"></i>Phone: + 123 456 7890</a>
+                            <a href="#" class="contact-text"><i class="fa fa-comments"></i>Message: + 123 456 7890</a>
+                            <a href="#" class="contact-mail"><i class="fa fa-envelope"></i>Email: mail@doamin.com</a>
+                            <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>Fanpage: enabled.labs</a>
+                            <a href="#" class="contact-twitter"><i class="fa fa-twitter"></i>Twitter: @iEnabled</a>
+                        </p>
+                    </div>
+                </div>
+				<div class="decoration hide-if-responsive"></div>
+                <div class="one-half-responsive last-column">
+                    <h3>Send us an email!</h3>
+                    <p>Use the form to send us a message, it's AJAX and PHP powered and it's easy to use!</p>
+                    <div class="container no-bottom">
+                        <div class="contact-form no-bottom"> 
+                            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                                <div class="big-notification green-notification">
+                                    <h3 class="uppercase">Message Sent </h3>
+                                    <a href="#" class="close-big-notification">x</a>
+                                    <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
+                                </div>
+                            </div>
+                        
+                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                                <fieldset>
+                                    <div class="formValidationError" id="contactNameFieldError">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Name is required!</p>
+                                        </div>
+                                    </div>             
+                                    <div class="formValidationError" id="contactEmailFieldError">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Mail address required!</p>
+                                        </div>
+                                    </div> 
+                                    <div class="formValidationError" id="contactEmailFieldError2">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Mail address must be valid!</p>
+                                        </div>
+                                    </div> 
+                                    <div class="formValidationError" id="contactMessageTextareaError">
+                                        <div class="static-notification-red tap-dismiss-notification">
+                                            <p class="center-text uppercase">Message field is empty!</p>
+                                        </div>
+                                    </div>   
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span></label>
+                                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                    </div>
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span></label>
+                                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                                    </div>
+                                    <div class="formTextareaWrap">
+                                        <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span></label>
+                                        <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                                    </div>
+                                    <div class="formSubmitButtonErrorsWrap">
+                                        <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="SUBMIT" data-formId="contactForm"/>
+                                    </div>
+                                </fieldset>
+                            </form>       
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="container no-bottom">
+                <div class="decoration"></div>
+                <p class="center-text half-bottom">Copyright 2014. All rights reserved.</p>
+                <div class="footer-socials">
+                	<a href="#" class="footer-icon footer-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="footer-icon footer-twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="footer-icon footer-google"><i class="fa fa-google-plus"></i></a>
+                	<a href="#" class="footer-icon footer-backtotop"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+                 
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
