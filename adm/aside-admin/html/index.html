@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>aside - Bootstrap 4 web application</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+  <!-- build:css css/styles/app.min.css -->
+  <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <div class="p-a black">
+        <div class="navbar" data-pjax>
+              <a data-toggle="collapse" data-target="#navbar" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
+                <i class="ion-android-menu"></i>
+              </a>
+              <!-- brand -->
+              <a href="index.html" class="navbar-brand">
+              	<div data-ui-include="'images/logo.svg'"></div>
+              	<img src="images/logo.png" alt="." class="hide">
+              	<span class="hidden-folded inline">aside</span>
+              </a>
+              <!-- / brand -->
+      
+              <!-- navbar collapse -->
+              <div class="collapse navbar-toggleable-sm pull-right pull-none-xs" id="navbar">
+                <!-- link and dropdown -->
+                <ul class="nav navbar-nav text-info-hover" data-ui-nav>
+                  <li class="nav-item">
+                    <a href="#features" data-ui-scroll-to class="nav-link">
+                      <span class="nav-text">Features</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#demos" data-ui-scroll-to class="nav-link">
+                      <span class="nav-text">Demos</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="signup.html" class="nav-link">
+                      <span class="nav-text text-info">
+                        Sign Up
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="signin.html" class="nav-link">
+                      <span class="btn btn-md rounded info">
+                        Log in
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- / link and dropdown -->
+              </div>
+              <!-- / navbar collapse -->
+        </div>
+  </div>
+
+  <!-- content -->
+  <div id="content" class="app-content" role="main">
+    <div class="app-body">
+
+<!-- ############ PAGE START-->
+
+<div class="row-col black">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6 text-center">
+		<div class="p-t-lg">
+			<h1 class="m-y-md text-white">Dashboard UI Kit for Modern Web Application Development</h1>
+			<h6 class="text-muted m-b-lg">Bootstrap 4 HTML5 Template</h6>
+			<a href="dashboard.html" class="btn btn-lg rounded success p-x-md m-x">Live Demo</a>
+			<a href="https://themeforest.net/item/aside-dashboard-ui-kit/17903768?ref=flatfull" class="btn btn-lg rounded p-x-md m-x">Get it today just for $25</a>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="black">
+	<div>
+    <canvas data-ui-jp="chart" data-ui-options="
+    {
+      type: 'line',
+      data: {
+          labels: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
+          datasets: [
+              {
+                  label: 'Dataset',
+                  data: [35, 30, 28, 32, 25, 22, 19, 30, 35, 41, 35, 40, 42, 45, 43, 50, 52, 55, 65, 60, 62, 60, 70, 77, 85, 100],
+                  fill: true,
+                  lineTension: 0.3,
+                  backgroundColor: '#2196f3',
+                  borderColor: '#41abff',
+                  borderWidth: 3,
+                  pointBorderColor: '#2196f3',
+                  pointBackgroundColor: '#fff',
+                  pointBorderWidth: 2,
+                  pointHoverRadius: 4,
+                  pointHoverBackgroundColor: '#fff',
+                  pointHoverBorderColor: '#fff',
+                  pointHoverBorderWidth: 2,
+                  pointRadius: 0,
+                  pointHitRadius: 10,
+                  spanGaps: false,
+                  barPercentage: 1
+              }
+          ]
+      },
+      options: {
+      		maintainAspectRatio: false,
+	      	scales:{
+		      	xAxes: [{
+		           display: false,
+		           barPercentage: 0.5
+		        }],
+		        yAxes: [{
+		           display: false
+		        }]
+	       	},
+	       	legend:{
+	       		display: false
+	   		},
+	   		tooltips:{
+	   			enabled: false
+	   		}
+      }
+    }
+    " height="280">
+    </canvas>
+  	</div>
+</div>
+<div class="row-col info h-v p-t-lg">
+	<div class="col-sm-1"></div>
+	<div class="col-sm-5">
+		<div class="p-a-lg">
+			<h3 class="m-y-lg">One-Stop Admin theme</h3>
+			<p class="text-muted m-b-lg text-md">Your one-stop admin dashboard. You'll find a bunch of widgets, useful components. Easy to get started.</p>
+			<a href="https://themeforest.net/user/flatfull/portfolio?ref=flatfull" class="btn rounded btn-outline b-white b-2x m-b-lg p-x-md">Get it now</a>
+		</div>
+	</div>
+	<div class="col-sm-6" style="min-height: 320px; background-image:url(images/dashboard.png); background-size: cover">
+	</div>
+</div>
+<div class="p-y-lg b-b box-shadow-z0 dark-white" id="features">
+	<div class="container p-y-md">
+		<h4 class="text-center m-b-lg">Powerful Admin Template</h4>
+		<div class="row">
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-ios-monitor-outline text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">100% Responsive</h6>
+				<p class="text-muted">Developed to be mobile first, we use a handful of media queries to create sensible breakpoints for our layouts and interfaces. </p>
+			</div>
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-ios-paper-outline text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">Application Layout</h6>
+				<p class="text-muted">We provide a unique layout for your application. It's easy to structure  app information. it's real application layout.</p>
+			</div>
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-ios-pie-outline text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">Data Visulization</h6>
+				<p class="text-muted">Building beautiful chart is easy. Visualize your data in different ways with animated and customisable. Great rendering performance across all modern browsers. </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted text-2x">
+					BS4
+				</span>
+				<h6 class="_600 m-y">Bootstrap 4 framework</h6>
+				<p class="text-muted">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+			</div>
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-social-html5-outline text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">Ajax Powered</h6>
+				<p class="text-muted">Using Html5 pushState without reloading your page's layout or any resources (JS, CSS), giving the appearance of a fast, full page load.</p>
+			</div>
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-social-javascript-outline text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">Lazy load modules</h6>
+				<p class="text-muted">Load modules &amp; components on demand (lazy load) with jQuery. </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-social-sass text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">SASS Css</h6>
+				<p class="text-muted">its source code utilizes Sass, a popular CSS preprocessor. Quickly get started with precompiled CSS or build on the source.</p>
+			</div>
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-social-nodejs text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">Bower &amp; Grunt</h6>
+				<p class="text-muted">Automate development tasks, like compiling less to css, concatenating and minifying js files; Bower manages frameworks, libraries, assets, and utilities for you.</p>
+			</div>
+			<div class="col-sm-4 m-y-md">
+				<span class="text-muted">
+					<i class="ion-social-chrome-outline text-3x"></i>
+				</span>
+				<h6 class="_600 m-y">Cross Browser</h6>
+				<p class="text-muted">Supports a wide variety of modern browsers and devices, built to work best in the latest desktop and mobile browsers</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="dark-light" id="demos">
+	<div class="container">
+		<div class="p-a-lg text-center">
+			<h2 class="m-b-lg">What you get with aside template</h2>
+			<p>
+				<a href="dashboard.html?bg=&folded=true" class="btn info">Light Theme</a>
+				<a href="dashboard.html?bg=black&folded=true" class="btn black">Dark Theme</a>
+				<a href="rtl.dashboard.html?bg=&folded=true" class="btn success">RTL</a>
+			</p>
+		</div>
+	</div>
+	<div class="no-scroll h-v" style="max-height: 500px">
+		<div class="p-a"  style="transform: translate(50%, 0%) scale(.9) rotateX(60deg) rotateY(0deg) rotate(45deg);transform-origin: top;">
+			<div class="row">
+				<div class="col-xs-4">
+					<div>
+						<div class="item-media item-media-4by3 margin">
+						</div>
+						<div class="item-media item-media-4by3 margin">
+						</div>
+						<a href="dashboard.html?bg=black" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/dark.png);background-size: cover">
+						</a>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg info">
+								<div class="hidden-sm-down">
+									<h4>Dark Theme</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+						<a href="app.contact.html" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/contact.png);background-size: cover">
+						</a>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg success">
+								<div class="hidden-sm-down">
+									<h4>Contacts App</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div>
+						<div class="item-media item-media-4by3 margin">
+						</div>
+						<a href="chartjs.html" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/chart.png);background-size: cover">
+						</a>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg accent">
+								<div class="hidden-sm-down">
+									<h4>Beautiful Chart</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+						<a href="dashboard.html?bg=" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/dashboard.png);background-size: cover">
+						</a>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg warn">
+								<div class="hidden-sm-down">
+									<h4>Light Theme</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+						<a href="app.message.html" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/message.png);background-size: cover">
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg indigo">
+								<div class="hidden-sm-down">
+									<h4>Project Management</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+						<a href="app.project.html" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/project.png);background-size: cover">
+						</a>
+						<a href="map.vector.html" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/map.png);background-size: cover">
+						</a>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg danger">
+								<div class="hidden-sm-down">
+									<h4>World Market</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+						<a href="app.inbox.html" class="item-media item-media-4by3 margin box-shadow-z3" style="background-image: url(images/inbox.png);background-size: cover">
+						</a>
+						<div class="item-media item-media-4by3 margin box-shadow-z3">
+							<div class="item-media-content p-a-lg dark-white">
+								<div class="hidden-sm-down">
+									<h4>Message App</h4>
+									<p class="text-muted">Config any color on any blocks. with Grey, Dark, Black Themes</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <div class="footer black text-info-hover">
+  	<div class="container">
+  		<div class="p-y-lg b-b">
+  			<a href="https://themeforest.net/user/flatfull/portfolio?ref=flatfull" class="btn info rounded pull-right pull-none-xs">Get it now</a>
+  			<div class="m-r">
+  				<div class="text-md p-y-sm">Our Admin themes Trusted by 18,000+ businesses worldwide, Do not miss them!</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="container">
+  		<div class="row p-y-lg">
+  			<div class="col-md-5">
+  				<h6 class="text-sm text-u-c m-b text-muted">I'm</h6>
+  				<p>Modern, Clean &amp; Flat User Interface Kit, <br>Made with LOVE &amp; PASSION</p>
+  				<p class="m-t-md text-muted p-r-lg">
+  					<small class="text-muted">You can use it to build your Content manage system, CRM, Task app, Travel app, Medical app...</small>
+  				</p>
+  				<div class="text-muted m-y-lg">
+  					<h2 class="text-muted _600">
+  						<span class="text-muted">aside</span>
+  					</h2>
+  				</div>
+  			</div>
+  			<div class="col-sm-2 col-xs-6">
+  				<h6 class="text-sm text-u-c m-b text-muted">Company</h6>
+  				<div class="m-b-md">
+  					<ul class="nav l-h-2x">
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">About us</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Mobile apps</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Blog news</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Jobs</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Help center</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">FAQ</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Terms &amp; Policy</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Cookies</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="col-sm-2 col-xs-6">
+  				<h6 class="text-sm text-u-c m-b text-muted">App</h6>
+  				<div class="m-b-md">
+  					<ul class="nav l-h-2x">
+  						<li class="nav-item">
+  							<a class="nav-link" href="app.project.html">Projects</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="app.inbox.html">Inbox</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="app.message.html">Message</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="app.contact.html">Contacts</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  
+  			<div class="col-sm-3 col-xs-6">
+  				<h6 class="text-sm text-u-c m-b text-muted">Connect</h6>
+  				<div class="m-b-md">
+  					<ul class="nav l-h-2x">
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Contact</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" href="#">Support</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="p-y-lg">
+  			<div class="m-b-lg text-sm">
+  				
+  				<div class="text-muted pull-right pull-none-xs m-b">
+  					<span class="text-muted">&copy; Copyright. All rights reserved.</span>
+  				</div>
+  				<div>
+  					<a href="#" class="btn btn-sm btn-icon btn-social rounded lt" title="Facebook">
+  				        <i class="fa fa-facebook"></i>
+  				        <i class="fa fa-facebook indigo"></i>
+  				    </a>
+  				    <a href="#" class="btn btn-sm btn-icon btn-social rounded lt" title="Twitter">
+  				        <i class="fa fa-twitter"></i>
+  				        <i class="fa fa-twitter light-blue"></i>
+  				    </a>
+  				    <a href="#" class="btn btn-sm btn-icon btn-social rounded lt" title="Google+">
+  				        <i class="fa fa-google-plus"></i>
+  				        <i class="fa fa-google-plus red-600"></i>
+  				    </a>
+  				</div>
+  	        </div>
+  		</div>
+  	</div>
+  </div>
+
+<!-- ############ LAYOUT END-->
+  </div>
+
+<!-- build:js scripts/app.min.js -->
+<!-- jQuery -->
+  <script src="libs/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="libs/tether/dist/js/tether.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="libs/PACE/pace.min.js"></script>
+  <script src="libs/jquery-pjax/jquery.pjax.js"></script>
+  <script src="libs/blockUI/jquery.blockUI.js"></script>
+  <script src="libs/jscroll/jquery.jscroll.min.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-modal.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-list.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+  <script src="scripts/ui-taburl.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>
