@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Epsilon Framework</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" 	type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>		
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/swipe.js"			type="text/javascript"></script>
+<script src="scripts/swipebox.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+</head>
+
+<body>
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading up the content!
+            <em>Loading depends on connection speed</em>
+        </p>
+    </div>
+</div>
+
+<div id="modal-hider"></div>
+<div id="modal-body">
+    <p class="modal-logo">SUBSCRIBE FOR UPDATES</p>
+    <div class="decoration"></div>
+	<p class="modal-logo-heading">
+    	Subscribe to the latest news and updates!<br/>
+    </p>
+    <div class="decoration"></div>
+    <div class="modalForm" id="modalForm">
+      <form id="contact">
+          <fieldset>
+              <label for="contactName" id="name_label">NAME:</label>
+              <p id="left_label_name">glad to meet you!</p>
+              <input type="text" name="contactName" id="contactName" size="30" value="" class="text-input" />
+              <span class="error" id="nameError">Please enter your name !</span>
+              
+              <label for="contactEmail" id="email_label">EMAIL:</label>
+              <p id="left_label_mail">we never spam!</p>
+              <input type="text" name="contactEmail" id="contactEmail" size="30" value="" class="text-input" />
+              <span class="error" id="emailError">Please enter your email address !</span> <span class="error" id="emailError2">Please enter a valid email address !</span>
+              
+              <textarea  name="contactMessage" id="contactMessage" class="text-input">Message Sent From Modal Pop-Up</textarea>
+              <span class="error" id="messageError">Please enter message !</span>
+              
+              <p class="contact-button-house">
+                <input type="submit" name="submitMessage" class="contactButton button black" id="contactSubmitBtn" value="SUBSCRIBE"/>
+              </p>            
+              <p class="contact-social-set">
+                    <em>OUR SOCIAL SET</em>
+                    <a href="#"><img src="images/modal_social/facebook@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/twitter@2x.png"  width="16"	alt="img"></a>
+                    <a href="#"><img src="images/modal_social/dribbble@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/rss@2x.png" 	 width="16"	alt="img"></a>
+              </p>
+          </fieldset>
+      </form>
+  </div>
+  <div class="decoration"></div>
+  <a href="#" class="close-modal">Close</a>
+  <em class="close-modal-text">Addresses will remain confidential!</em>
+</div>
+
+
+<div class="content">
+
+	<div class="header container white-box top-decoration">
+       	<img class="logo replace-2x" width="61" src="images/misc/logo.png" alt="img">
+    	<a href="#" class="deploy-nav"></a>
+    </div>
+    
+    <div class="navigation">
+    	<a href="index.html"  		class="nav-icon home-nav">Home</a>
+        <a href="#" id="menu-two"   class="nav-icon about-nav active-nav">About</a>
+        <a href="#" id="menu-three" class="nav-icon gallery-nav">Gallery</a>
+        <a href="#" id="menu-four"  class="nav-icon blog-nav">Blog</a>
+        <a href="#" id="menu-five"  class="nav-icon mail-nav">Mail</a>
+        
+        <div class="clear"></div>
+        
+        <div class="menu-one submenu-5-items">
+        	<!--Submenu Standby-->
+        </div>
+        
+        <div class="menu-two submenu-5-items">
+        	<a href="intro.html">Intro</a>
+            <a href="type.html">Type</a>
+            <a class="active-nav"  href="jquery.html">jQuery</a>
+            <a href="other.html">Other</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>   
+        <div class="menu-three submenu-5-items">
+        	<a href="onecol.html">1 Col</a>
+            <a href="twocol.html">2 Col</a>
+            <a href="swipe.html">Swipe</a>
+            <a href="fiter.html">Filter</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        <div class="menu-four submenu-3-items">
+        	<a href="blogpage.html">Blog Page</a>
+            <a href="blogpost.html">Blog Post</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        <div class="menu-five submenu-4-items">
+        	<a href="contact.html">Mail</a>
+            <a class="subscribe" href="#">Subscribe</a>
+            <a href="tel:+1 234 567 8901">Call</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        
+    </div>
+ 
+	<!--Regular Text Columns-->
+
+	<div class="white-box container">
+        <div class="container no-bottom">
+            <h5 class="container-title">Page jquery features!</h5>
+            <div class="decoration"></div>
+            <p>Most of the features of this template that require jQuery to run, except for galleries, those have seprate pages!</p>
+        </div>
+	</div> 
+    
+    <div class="separator"></div>
+    
+    <div class="white-box container">
+        <div class="container no-bottom">
+            <h5 class="container-title">Checkboxes and Radios</h5>
+            <div class="decoration"></div>
+            <p>It's important to have more than one style of checkbox, and radio! So we included a couple of sets!</p>
+            <div class="column shadow">
+                <div class="one-half">
+                    <a href="#" class="checker checkbox-v1">Check</a>
+                    <a href="#" class="checker checkbox-v2">Check</a>
+                    <a href="#" class="checker checkbox-v3">Check</a>         
+                </div>
+                <div class="one-half">
+                	<a href="#" class="checker checkbox-v1">Check</a>
+                    <a href="#" class="checker radio-v2">Check</a> 
+                    <a href="#" class="checker checkbox-v4">Check</a>       
+                </div>
+            </div>
+        </div>    
+    </div>    
+	
+    <div class="separator"></div>
+    
+    <!-- Tabs -->
+
+    <div class="container shadow">
+        <ul id="tab" class="tab">
+            <li class="active"><a class="tab-but" href="#one">Tab But 1</a></li>
+            <li><a class="tab-but" href="#two">Tab But 2</a></li>
+            <li><a class="tab-but" href="#three">Tab But 3</a></li>
+        </ul>
+        <div id="one" class="tab-content">
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
+                or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+            </p>
+        </div>
+        <div id="two" class="tab-content">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+        </div>
+    
+        <div id="three" class="tab-content">
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
+                or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="separator"></div>
+    
+    
+    <!-- jQuery Notifications-->
+
+	<div class="white-box container">
+    	<div class="white-notification container">
+        	<a href="#" class="white-information uppercase">
+            	<strong>Release information</strong><br>
+                We've launched a new template!
+                <em>x</em>
+            </a>
+        </div>
+    </div>
+
+	<div class="white-box container">
+    	<div class="white-notification container">
+        	<a href="#" class="white-warning uppercase">
+            	<strong>Warning</strong><br>
+                A simple warning notification!
+                <em>x</em>
+            </a>
+        </div>
+    </div>
+    
+	<div class="white-box container">
+    	<div class="white-notification container">
+        	<a href="#" class="white-question uppercase">
+            	<strong>Did you know?</strong><br>
+                Notifications match the design!
+                <em>x</em>
+            </a>
+        </div>
+    </div>
+    
+	<div class="white-box container">
+    	<div class="white-notification container">
+        	<a href="#" class="white-disabled uppercase">
+            	<strong>Something removed</strong><br>
+                No features were removed!
+                <em>x</em>
+            </a>
+        </div>
+    </div>
+    
+    <div class="separator"></div>
+
+    <div class="container no-bottom">
+        <div class="toggle-container-v3"> 
+            <div class="toggle-v3">
+                <a href="#" class="show-toggle-v3">Content Is Shown!</a>
+                <a href="#" class="hide-toggle-v3">Content Is Hidden!</a>
+                <div class="clear"></div>
+                <div class="toggle-content-v3">
+                    <div class="toggle-decoration-v3"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type 
+                         specimen book. It has survived not only five centuries, but also the leap 
+                         into electronic typesetting, remaining essentially unchanged. It was 
+                         popularised in the 1960s with the release of Letraset sheets containing 
+                         Lorem Ipsum passages, and more recently with desktop publishing software
+                         like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="container no-bottom">
+        <div class="toggle-container-v4"> 
+            <div class="toggle-v4">
+                <a href="#" class="show-toggle-v4">Content Is Shown!</a>
+                <a href="#" class="hide-toggle-v4">Content Is Hidden!</a>
+                <div class="clear"></div>
+                <div class="toggle-content-v4">
+                    <div class="toggle-decoration-v4"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type 
+                         specimen book. It has survived not only five centuries, but also the leap 
+                         into electronic typesetting, remaining essentially unchanged. It was 
+                         popularised in the 1960s with the release of Letraset sheets containing 
+                         Lorem Ipsum passages, and more recently with desktop publishing software
+                         like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="container no-bottom">
+        <div class="toggle-container-v5"> 
+            <div class="toggle-v5">
+                <a href="#" class="show-toggle-v5">Content Is Shown!</a>
+                <a href="#" class="hide-toggle-v5">Content Is Hidden!</a>
+                <div class="clear"></div>
+                <div class="toggle-content-v5">
+                    <div class="toggle-decoration-v5"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type 
+                         specimen book. It has survived not only five centuries, but also the leap 
+                         into electronic typesetting, remaining essentially unchanged. It was 
+                         popularised in the 1960s with the release of Letraset sheets containing 
+                         Lorem Ipsum passages, and more recently with desktop publishing software
+                         like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="container no-bottom">
+        <div class="toggle-container-v2"> 
+            <div class="toggle-v2">
+                <a href="#" class="show-toggle-v2">Content Is Shown!</a>
+                <a href="#" class="hide-toggle-v2">Content Is Hidden!</a>
+                <div class="clear"></div>
+                <div class="toggle-content-v2">
+                    <div class="toggle-decoration-v2"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type 
+                         specimen book. It has survived not only five centuries, but also the leap 
+                         into electronic typesetting, remaining essentially unchanged. It was 
+                         popularised in the 1960s with the release of Letraset sheets containing 
+                         Lorem Ipsum passages, and more recently with desktop publishing software
+                         like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div> 
+            </div> 
+        </div>
+    </div>
+        
+    <div class="container no-bottom">
+        <div class="toggle-container-v1"> 
+            <div class="toggle-v1">
+                <a href="#" class="show-toggle-v1">Content Is Shown!</a>
+                <a href="#" class="hide-toggle-v1">Content Is Hidden!</a>
+                <div class="clear"></div>
+                <div class="toggle-content-v1">
+                    <div class="toggle-decoration-v1"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type 
+                         specimen book. It has survived not only five centuries, but also the leap 
+                         into electronic typesetting, remaining essentially unchanged. It was 
+                         popularised in the 1960s with the release of Letraset sheets containing 
+                         Lorem Ipsum passages, and more recently with desktop publishing software
+                         like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div> 
+            </div> 
+        </div>
+    </div> 
+    
+    <div class="separator"></div>
+    
+	<div class="container no-bottom">
+        <div class="sliding-door">
+            <div class="sliding-door-top">
+                <a href="#">
+                    <em class="bg-white"></em>
+                    Tap for our phone number!
+                </a>
+            </div>    
+            <div class="sliding-door-bottom">
+                <a href="tel:+12 345 7890">
+                    <em class="bg-white"></em>
+                    <strong>Call us:</strong> 
+                    +1 555 354 7890
+                </a>
+            </div>
+        </div>
+        <div class="sliding-door-clear"></div>
+
+	<div class="container no-bottom">
+        <div class="sliding-door">
+            <div class="sliding-door-top">
+                <a href="#">
+                    <em class="bg-white"></em>
+                    Tap for our phone number!
+                </a>
+            </div>    
+            <div class="sliding-door-bottom">
+                <a href="tel:+12 345 7890">
+                    <em class="bg-white"></em>
+                    <strong>Call us:</strong> 
+                    +1 555 354 7890
+                </a>
+            </div>
+        </div>
+        <div class="sliding-door-clear"></div>
+    </div>
+    
+    <div class="separator"></div>
+    
+    <div class="container no-bottom">    
+    	<div class="dropdown-menu">
+        	<a href="#" class="dropdown-deploy"><em class="left-dropdown bg-white"></em>DEPLOY MENU</a>
+            <a href="#" class="dropdown-hidden"><em class="left-dropdown bg-white"></em>HIDE MENU</a>
+            <a href="#" class="dropdown-item bg-white">Dropdown item one</a>
+            <a href="#" class="dropdown-item bg-white">Dropdown item two</a>
+            <a href="#" class="dropdown-item bg-white">Dropdown item three</a>
+            <div class="dropdown-bottom-border"></div>
+        </div>     
+    </div>
+    
+    <div class="container no-bottom">    
+    	<div class="dropdown-menu">
+        	<a href="#" class="dropdown-deploy"><em class="left-dropdown bg-white"></em>DEPLOY MENU</a>
+            <a href="#" class="dropdown-hidden"><em class="left-dropdown bg-white"></em>HIDE MENU</a>
+            <a href="#" class="dropdown-item bg-white">Dropdown item one</a>
+            <a href="#" class="dropdown-item bg-white">Dropdown item two</a>
+            <a href="#" class="dropdown-item bg-white">Dropdown item three</a>
+            <div class="dropdown-bottom-border"></div>
+        </div>     
+    </div>
+    
+    <div class="separator"></div>
+        
+    <div class="container white-box bottom-decoration">
+    	<p class="center-text footer-text">Copyright 2013. All rights reserved!</p>
+      	<p class="center-text footer-sub-text">
+        	<a class="go-up" href="#">Back to top</a>
+            <em>|</em>
+            <a class="subscribe" href="#">SUBSCRIBE</a>
+            <em>|</em>
+            <a href="#">Privacy Policy</a>
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+
+

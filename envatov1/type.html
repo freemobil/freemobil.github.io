@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Epsilon Framework</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" 	type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>		
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/swipe.js"			type="text/javascript"></script>
+<script src="scripts/swipebox.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+</head>
+
+<body>
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading up the content!
+            <em>Loading depends on connection speed</em>
+        </p>
+    </div>
+</div>
+
+<div id="modal-hider"></div>
+<div id="modal-body">
+    <p class="modal-logo">SUBSCRIBE FOR UPDATES</p>
+    <div class="decoration"></div>
+	<p class="modal-logo-heading">
+    	Subscribe to the latest news and updates!<br/>
+    </p>
+    <div class="decoration"></div>
+    <div class="modalForm" id="modalForm">
+      <form id="contact">
+          <fieldset>
+              <label for="contactName" id="name_label">NAME:</label>
+              <p id="left_label_name">glad to meet you!</p>
+              <input type="text" name="contactName" id="contactName" size="30" value="" class="text-input" />
+              <span class="error" id="nameError">Please enter your name !</span>
+              
+              <label for="contactEmail" id="email_label">EMAIL:</label>
+              <p id="left_label_mail">we never spam!</p>
+              <input type="text" name="contactEmail" id="contactEmail" size="30" value="" class="text-input" />
+              <span class="error" id="emailError">Please enter your email address !</span> <span class="error" id="emailError2">Please enter a valid email address !</span>
+              
+              <textarea  name="contactMessage" id="contactMessage" class="text-input">Message Sent From Modal Pop-Up</textarea>
+              <span class="error" id="messageError">Please enter message !</span>
+              
+              <p class="contact-button-house">
+                <input type="submit" name="submitMessage" class="contactButton button black" id="contactSubmitBtn" value="SUBSCRIBE"/>
+              </p>            
+              <p class="contact-social-set">
+                    <em>OUR SOCIAL SET</em>
+                    <a href="#"><img src="images/modal_social/facebook@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/twitter@2x.png"  width="16"	alt="img"></a>
+                    <a href="#"><img src="images/modal_social/dribbble@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/rss@2x.png" 	 width="16"	alt="img"></a>
+              </p>
+          </fieldset>
+      </form>
+  </div>
+  <div class="decoration"></div>
+  <a href="#" class="close-modal">Close</a>
+  <em class="close-modal-text">Addresses will remain confidential!</em>
+</div>
+
+
+<div class="content">
+
+	<div class="header container white-box top-decoration">
+       	<img class="logo replace-2x" width="61" src="images/misc/logo.png" alt="img">
+    	<a href="#" class="deploy-nav"></a>
+    </div>
+    
+    <div class="navigation">
+    	<a href="index.html"  		class="nav-icon home-nav">Home</a>
+        <a href="#" id="menu-two"   class="nav-icon about-nav active-nav">About</a>
+        <a href="#" id="menu-three" class="nav-icon gallery-nav">Gallery</a>
+        <a href="#" id="menu-four"  class="nav-icon blog-nav">Blog</a>
+        <a href="#" id="menu-five"  class="nav-icon mail-nav">Mail</a>
+        
+        <div class="clear"></div>
+        
+        <div class="menu-one submenu-5-items">
+        	<!--Submenu Standby-->
+        </div>
+        
+        <div class="menu-two submenu-5-items">
+        	<a href="intro.html">Intro</a>
+            <a class="active-nav"  href="type.html">Type</a>
+            <a href="jquery.html">jQuery</a>
+            <a href="other.html">Other</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>   
+        <div class="menu-three submenu-5-items">
+        	<a href="onecol.html">1 Col</a>
+            <a href="twocol.html">2 Col</a>
+            <a href="swipe.html">Swipe</a>
+            <a href="fiter.html">Filter</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        <div class="menu-four submenu-3-items">
+        	<a href="blogpage.html">Blog Page</a>
+            <a href="blogpost.html">Blog Post</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        <div class="menu-five submenu-4-items">
+        	<a href="contact.html">Mail</a>
+            <a class="subscribe" href="#">Subscribe</a>
+            <a href="tel:+1 234 567 8901">Call</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        
+    </div>
+ 
+	<!--Regular Text Columns-->
+
+	<div class="white-box container">
+        <div class="container no-bottom">
+            <h5 class="container-title">Regular text columns!</h5>
+            <div class="decoration"></div>
+            <p>Full width, two columns, three columns, simple text, columns with headings, columns with images, columns and more columns!</p>
+        </div>
+         
+        <div class="container no-bottom">
+            <h5>1/1</h5>
+            <p>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of the printing. of the printing.  </p> 
+        </div>
+    
+        <div class="column">
+            <div class="one-half">
+                <h5>1/2</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-half">
+                <h5>2/2</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="one-third">  
+                <h5>1/3</h5>
+                <p>Lorem Ipsum is simply dummy text of the print and industry. </p>
+            </div>
+            <div class="one-third">
+                <h5>2/3</h5>
+                <p>Lorem Ipsum is simply dummy text of the print and industry. </p> 
+            </div>
+            <div class="one-third">
+                <h5>3/3</h5>
+                <p>Lorem Ipsum is simply dummy text of the print and industry. </p>
+            </div>
+        </div>
+    </div>
+    
+	<div class="separator"></div>
+    
+    <!--Text Columns With Icons-->
+    
+    <div class="white-box container"> 
+        <div class="container no-bottom">
+            <h5 class="container-title">Columns with small icons!</h5>
+            <div class="decoration"></div>
+            <p>Full width, two columns, three columns, simple text, columns with headings, columns with images, columns and more columns!</p>
+        </div>
+        
+        <div class="column">
+            <h5>1/1</h5>
+            <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text.  </p> 
+        </div>
+        
+        <div class="column">
+            <div class="one-half">
+                <h5>1/2</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-half">
+                <h5>2/2</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="one-third">  
+                <h5>1/3</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dum text of the pri nt and indu. </p>
+            </div>
+            <div class="one-third">
+                <h5>2/3</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dum text of the pri nt and indu. </p> 
+            </div>
+            <div class="one-third">
+                <h5>3/3</h5>
+                <p><span class="icon icon-user1"></span>Lorem Ipsum is simply dum text of the pri nt and indu. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="separator"></div>
+    
+    <!--Columns with large icons-->
+    
+    <div class="white-box container">    
+        <div class="container no-bottom">
+            <h5 class="container-title">Columns with large icons!</h5>
+            <div class="decoration"></div>
+            <p>Full width, two columns, three columns, simple text, columns with headings, columns with images, columns and more columns!</p>
+        </div>
+        
+        <div class="container no-bottom">
+            <img class="center-icon" src="images/icons-large/icon1@2x.png" width="70" alt="img">
+            <h5 class="center-text">A large centered icon!</h5>
+            <p class="center-text">Lorem ipsum dolor sit amet, consec tetur elit. </p> 
+        </div> 
+    
+        <div class="column">
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon2@2x.png" alt="img">
+                <h5 class="center-text">Big Icons?</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-half">
+                <img class="center-icon" src="images/icons-large/icon1@2x.png" alt="img">
+                <h5 class="center-text">Centerd up!</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="one-third">
+                <img class="center-icon" src="images/icons-large/icon2@2x.png" alt="img">
+                <h5 class="center-text">Big Icons?</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-third">
+                <img class="center-icon" src="images/icons-large/icon3@2x.png" alt="img">
+                <h5 class="center-text">Big Icons?</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+            <div class="one-third">
+                <img class="center-icon" src="images/icons-large/icon4@2x.png" alt="img">
+                <h5 class="center-text">Big Icons?</h5>
+                <p class="center-text">Lorem Ipsum is simply dummy text of the printing. </p> 
+            </div>
+        </div>
+    </div>     
+        
+	<div class="separator"></div>
+    
+    <!--List Icons-->
+    
+    <div class="white-box container">  
+        <div class="container">
+            <h5 class="container-title">Lists and Icon Lists?</h5>
+            <div class="decoration"></div>
+            <p>lists are probably the most important element in any page! So we piled 40 of the best icons just for you!</p>
+    
+            <div class="column no-bottom">
+                <div class="one-half">
+                    <ul class="icon-lists no-bottom">
+                        <li class="list-address">Addressbook.</li>
+                        <li class="list-block">Block icon list.</li>
+                        <li class="list-bookmark">Bookmark list.</li>
+                        <li class="list-bubble">Bubble icon list.</li>
+                        <li class="list-briefcase">Briefcase list.</li>
+                        <li class="list-buy">Buy icon list.</li>
+                        <li class="list-calendar">Calendar list.</li>
+                        <li class="list-clipboard">Clipboard list.</li>
+                        <li class="list-delete">Delete icon list.</li>
+                        <li class="list-clock">Clock icon list.</li>
+                        <li class="list-diagram">Diagram list.</li>
+                        <li class="list-document">Document list.</li>
+                        <li class="list-down">Down icon list.</li>
+                        <li class="list-flag">Flag icon list.</li>
+                        <li class="list-folder">Folder icon list.</li>
+                        <li class="list-gear">Gear icon list.</li>
+                        <li class="list-globe">Globe icon list.</li>
+                        <li class="list-heart">Heart icon list.</li>
+                        <li class="list-help">Help icon list.</li>
+                        <li class="list-home">Home icon list.</li>
+                    </ul>            
+                </div>
+                <div class="one-half">
+                    <ul class="icon-lists">
+                        <li class="list-label">Label icon list.</li>
+                        <li class="list-left">Left icon list.</li>
+                        <li class="list-letter">Letter icon list.</li>
+                        <li class="list-monitor">Monitor list.</li>
+                        <li class="list-pencil">Pencil icon list.</li>
+                        <li class="list-plus">Plus icon list.</li>
+                        <li class="list-present">Present list.</li>
+                        <li class="list-print">Print icon list.</li>
+                        <li class="list-right">Right icon list.</li>
+                        <li class="list-save">Save icon list.</li>
+                        <li class="list-shield">Sheild icon list.</li>
+                        <li class="list-statistics">Statistics list.</li>
+                        <li class="list-stop">Stop icon list.</li>
+                        <li class="list-tick">Tick icon list.</li>
+                        <li class="list-trash">Trash icon list.</li>
+                        <li class="list-up">Up icon list.</li>
+                        <li class="list-user">User icon list.</li>
+                        <li class="list-walet">Wallet icon list.</li>
+                        <li class="list-warning">Warning list.</li>
+                        <li class="list-key">Key icon list.</li>
+                    </ul>           
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+    <div class="separator"></div>
+    
+    <!--Regular Lists-->
+    
+    <div class="white-box container">   
+        <div class="container">
+            <h5 class="container-title">Regular Lists</h5>
+            <div class="decoration"></div>
+            <p>Icon lists are nice but some times old fashion is needed!</p>    
+            <div class="column no-bottom">
+                <div class="one-half">
+                    <ul class="regular-list">
+                        <li>List Element 1</li>
+                        <li>List Element 2</li>
+                        <li>List Element 3</li>
+                        <li>List Element 4</li>
+                        <li>List Element 5</li>
+                    </ul>
+                </div>
+                <div class="one-half">
+                    <ul class="regular-list">
+                        <li>List Element 1</li>
+                        <li>List Element 2</li>
+                        <li>List Element 3</li>
+                        <li>List Element 4</li>
+                        <li>List Element 5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column no-bottom">
+                <div class="one-half">
+                    <ol class="number-list no-bottom">
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                    </ol>
+                </div>
+                <div class="one-half">
+                    <ol class="number-list no-bottom">
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                        <li>List Element</li>
+                    </ol>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="separator"></div>
+    
+    <!--Heading Examples-->
+    
+    <div class="white-box container">    
+        <div class="container">
+            <h5 class="left-text">Left Heading</h5>
+            <p class="left-text">Lorem Ipsum is simply dummy text. </p>
+            
+            <h5 class="center-text">Center Heading</h5>
+            <p class="center-text">Lorem Ipsum is simply dummy text. </p>
+            
+            <h5 class="right-text no-bottom">Right Heading</h5>
+            <p class="right-text no-bottom">Lorem Ipsum is simply dummy text. </p>
+        </div>     
+    </div>
+    
+    <div class="separator"></div>
+    
+    <!--Heading examples-->
+    
+    <div class="white-box container">    
+        <div class="container">
+            <h5 class="container-title">Show me the headings!</h5>
+            <div class="decoration"></div>
+            <p>All types of headings, made beautiful, perfectly selected! Headings are amazing and are probably one of the most used elements in a template!</p>
+            <h5 class="center-text">This is a heading example</h5>
+            <h4 class="center-text">This is a heading example</h4>
+            <h3 class="center-text">This is a heading example</h3>
+            <h2 class="center-text">This is a heading example</h2>
+            <h1 class="center-text">This is a heading example</h1>
+        </div>
+	</div>
+
+	<div class="separator"></div>
+    
+    <!--Dropcaps-->
+    
+	<div class="white-box container">      
+        <div class="container">
+            <h5 class="container-title">Dropcaps!</h5>
+            <div class="decoration"></div>
+            <p>Maybe you have a taste for oldschool type! In that case you really need dropcaps!</p>
+            <p class="no-bottom">
+                <strong class="dropcaps">D</strong>
+                ropcaps is amazing, especially when you love typopgraphy like I do! 
+            </p>
+        </div>
+    </div>
+        
+    <div class="separator"></div>
+    
+	<!--Highlighted text-->
+    
+    <div class="white-box container">   
+        <div class="container no-bottom">
+            <h5 class="container-title">Highlights!</h5>
+            <div class="decoration"></div>
+            <p>There are some parts of text where bold just won't cut it! Having text highlights makes it so much easier to emphesize a point of view!</p>
+            <p>
+                <span class="highlight bg-gray">Highlighted text</span>is simply awesome!
+            </p>
+            
+            <p>
+                <span class="highlight bg-orange">Highlighted text</span>is simply awesome!
+            </p>
+            
+            <p>
+                <span class="highlight bg-yellow">Highlighted text</span>is simply awesome!
+            </p>
+            
+            <p>
+                <span class="highlight bg-green">Highlighted text</span>is simply awesome!
+            </p>
+        </div>
+	</div>
+
+    <div class="separator"></div>
+    
+	<!--Speach bubbles-->
+    
+    <div class="white-box container"> 
+        <div class="container no-bottom">
+            <h5 class="container-title">Speach bubbles?</h5>
+            <div class="decoration"></div>
+            <p>A nice way of showing off a conversation maybe?</p>
+        
+            <em class="speach-left-title">John Doe says:</em>
+            <p class="speach-left">This is just an awesome bubble!</p>
+            
+            <div class="clear"></div>
+            
+            <em class="speach-right-title">Jane Doe replied:</em>
+            <p class="speach-right">Yeap! It's awesome isn't it and it's not that hard to use! And they act like bubbles, only expanding to 75% of width!</p>
+            
+            <div class="clear"></div>  
+                 
+            <em class="speach-left-title">John Doe says:</em>
+            <p class="speach-left">Awesome stuff!</p>
+        </div> 
+    </div>
+        
+    <div class="separator"></div>
+    
+    <!--Quotes-->
+    
+    <div class="white-box container">  
+        <div class="container">
+        <h5 class="container-title">Quotes</h5>
+        <div class="decoration"></div>
+        <p>Maybe you have some testimonials you would like to share! So we've styled some quote styles for you!</p>
+            <blockquote class="quote">
+                <em>
+                    "Lorem ipsum dolor sit amet, consec tetur adisc ipiscing elit."
+                </em>
+                <strong>- John Doe, CEO</strong>
+            </blockquote>
+        </div>
+    
+        <div class="container">
+            <blockquote class="quote-icon">
+                <em>
+                    <span class="icon icon-user1"></span>
+                    "Lorem ipsum dolor sit amet, consec tetur adisc ipiscing elit."
+                </em>
+                <strong>- John Doe, CEO</strong>
+            </blockquote>
+        </div>
+    </div>
+    
+    <div class="separator"></div>
+
+	<!--Code Examples-->
+
+	<div class="white-box container">
+        <div class="container no-bottom">
+            <h5 class="container-title">Want code?</h5>
+            <div class="decoration"></div>
+            <p>We have this too! Of course! It's suppose to be the most complete template out there!</p>
+            <div class="code">
+                <span class="wline"> &lt;p class="test1" &gt;Simple code! &lt;/p&gt;</span>
+                <span class="gline"> &lt;p class="test2" &gt;Simple code! &lt;/p&gt;</span>
+                <span class="wline"> &lt;p class="test1" &gt;Simple code! &lt;/p&gt;</span>
+                <span class="gline"> &lt;p class="test2" &gt;Simple code! &lt;/p&gt;</span>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="separator"></div>
+ 
+        
+    <div class="container white-box bottom-decoration">
+    	<p class="center-text footer-text">Copyright 2013. All rights reserved!</p>
+      	<p class="center-text footer-sub-text">
+        	<a class="go-up" href="#">Back to top</a>
+            <em>|</em>
+            <a class="subscribe" href="#">SUBSCRIBE</a>
+            <em>|</em>
+            <a href="#">Privacy Policy</a>
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+
+

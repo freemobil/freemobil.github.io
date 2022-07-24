@@ -1,0 +1,129 @@
+
+footer #collapse-footer{
+	display: block;
+}
+.footer-container{
+	clear: both;
+}
+footer .so-page-builder .container{
+    padding: 0 15px;
+}
+footer .copyright a{
+	color: $linkColor;
+}
+.typefooter-1 .socials li a:hover,
+.typefooter-1 .footer-middle .footer-links li a:hover{
+	color: $linkColor;
+}
+.typefooter-1 .newsletter-footer1 .newsletter .block_content form.signup .subcribe button{
+	background-color: $background;
+	&:hover{
+		background-color: darken($background, 10%);
+	}
+}
+.typefooter-1 .module .modtitle:after{
+	background-color: $background;
+}
+
+
+
+// typefooter-2
+.typefooter-2 .footer-top .contnet-footer-top{
+	background: $linkColor;
+}
+.typefooter-2 .footer-top ul.socials li a:hover{
+	color: $linkColor;
+}
+.typefooter-2 .footer-middle .infos-footer ul li:after{
+	color: $linkColor;
+}
+.typefooter-2 .footer-middle .box-information ul li a:hover:after, .typefooter-4 .footer-middle .box-service ul li a:hover:after{
+	background: $linkColor;
+}
+.typefooter-2 .footer-middle .so-popular-tag .box-content a:hover{
+	background: $linkColor;
+}
+
+
+
+.typefooter-3 .footer-bottom{
+	background: $linkColor;
+}
+.typefooter-3 .footer-top .newsletter .block_content .subcribe button{
+	background: $linkColor;
+}
+.typefooter-3 .footer-top .newsletter .box-socials ul.socials li a:hover{
+	background: $linkColor;
+}
+.typefooter-3 .footer-top .infos-footer li:after{
+	color: $linkColor;
+}
+.typefooter-3 .footer-top .box-information ul li a:hover:after, .typefooter-3 .footer-top .box-service ul li a:hover:after{
+	background: $linkColor;
+}
+
+// typefooter-4
+.typefooter-4 .footer-top .contnet-footer-top{
+	background: $linkColor;
+}
+.typefooter-4 .footer-top ul.socials li a:hover{
+	color: $linkColor;
+}
+.typefooter-4 .footer-middle .infos-footer ul li:after{
+	color: $linkColor;
+}
+.typefooter-4 .footer-middle .box-information ul li a:hover:after, .typefooter-4 .footer-middle .box-service ul li a:hover:after{
+	background: $linkColor;
+}
+.typefooter-4 .footer-middle .so-popular-tag .box-content a:hover{
+	background: $linkColor;
+}
+
+// typefooter-5
+.typefooter-5 .infos-footer ul.infos li:hover i{
+	background-color: $background;
+}
+
+.typefooter-5 .box-footer .modcontent ul li a:hover{
+	color: $linkColor;
+}
+.typefooter-5 .box-footer .modcontent ul li a::before,
+.typefooter-5 .module .modtitle::after,
+.typefooter-5 .newsletter-footer4 .newsletter .block_content form.signup .subcribe button{
+	background-color: $background;
+}
+.typefooter-5 .newsletter-footer4 .newsletter .block_content form.signup .subcribe button:hover{
+	background-color: darken($background, 10%);
+}
+.typefooter-5 .socials li a:hover{
+	background-color: $background;
+	border-color: $background;
+}
+.typefooter-5 .categories-footer ul li a:hover{
+	color: $linkColor;
+}
+
+
+.typefooter-6 .coltop a:hover{
+	background-color: $background;
+}
+.typefooter-6 .newsletter-footer6 .newsletter .block_content form.signup .subcribe button:hover:before,
+.typefooter-6 .box-footer .modcontent ul li a:hover::before,
+.typefooter-6 .box-footer .modcontent ul li a:hover{
+	color: $linkColor;
+}
+
+.typefooter-7 .newsletter-footer6 .newsletter .block_content form.signup .subcribe button:hover:before,
+.typefooter-7 .box-footer .modcontent ul li a:hover::before,
+.typefooter-7 .box-footer .modcontent ul li a:hover{
+	color: $linkColor;
+}
+.typefooter-7 .newsletter-footer1 .newsletter .block_content form.signup .subcribe button:hover{
+	background-color: darken($background, 10%);
+}
+
+
+.typefooter-8 .footer-links li a:hover,
+.typefooter-8 .socials li a:hover{
+	color: $linkColor;
+}

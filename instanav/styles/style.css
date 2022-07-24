@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tablet-wrapper{
+	background-image:url(../images/body-bg.png);
+}
+
+body{
+	background-image:url(../images/tablet-bg.png);
+}
+
+.header{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.logo{
+	float:left;
+}
+
+.socials{
+	float:right;
+	width:110px;
+}
+
+.socials a{
+	margin-left:10px;
+	float:left;
+}
+
+.slider-custom-controls{
+	margin-top:-41px;
+}
+
+#slider-next{
+	float:right;
+}
+
+#slider-next a{
+	text-transform:uppercase;
+	color:#252525!important;
+}
+
+#slider-prev a{
+	text-transform:uppercase;
+	color:#252525!important;
+}
+
+.copyright{
+	text-transform:uppercase;
+	font-size:11px;
+	opacity:0.8;
+}
+
+
+.navigation{
+	height:50px;
+	background-repeat:repeat;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	z-index:99999;
+	background: rgb(46,46,46); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(46,46,46,1) 0%, rgba(31,31,31,1) 49%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(46,46,46,1)), color-stop(49%,rgba(31,31,31,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(46,46,46,1) 0%,rgba(31,31,31,1) 49%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(46,46,46,1) 0%,rgba(31,31,31,1) 49%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(46,46,46,1) 0%,rgba(31,31,31,1) 49%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(46,46,46,1) 0%,rgba(31,31,31,1) 49%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.navigation a:last-child{
+	border-right:none!important;
+}
+
+
+.submenu-five-icons{
+	position:fixed;
+	bottom:0px;
+	width:20%;
+	z-index:99999;
+	background-color:#222222;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.submenu-one{margin-left:20%;}
+.submenu-two{margin-left:40%;}
+.submenu-zero{margin-left:0%;}
+.submenu-three{margin-left:60%;}
+.submenu-four{margin-left:80%;}
+
+
+
+.submenu-five-icons a{
+	font-size:10px;
+	text-align:center;
+	color:#FFFFFF;
+	height:50px;
+	border-top:1px solid rgba(255,255,255,0.1);
+	border-bottom:1px solid rgba(0,0,0,0.4);
+}
+
+
+.five-icons a{
+	opacity:0.8;
+	text-align:center;
+	width:20%;
+	float:left;
+	font-size:10px;
+	color:#f8f8f8;
+	text-shadow:0px 1px 2px rgba(0,0,0,0.5);
+	text-transform:uppercase;
+	border-left:1px solid rgba(0,0,0,0.4);
+	border-right:1px solid rgba(255,255,255,0.1);
+	height:100%;
+}
+
+.nav-icon{
+	background-repeat:no-repeat;
+	background-position:center 8px;
+	background-size:20px 20px;
+	padding-top:28px;	
+}
+
+.home-icon{			background-image:url(../images/misc/home.png);}
+.about-icon{		background-image:url(../images/misc/features.png);}
+.folio-icon{		background-image:url(../images/misc/gallery.png);}
+.blog-icon{			background-image:url(../images/misc/blog.png);}
+.mail-icon{			background-image:url(../images/misc/mail.png);}
+.two-column-icon{	background-image:url(../images/misc/gal-icon.png);}
+.one-column-icon{	background-image:url(../images/misc/gal2-icon.png);}
+.video-icon{		background-image:url(../images/misc/gal3-icon.png);}
+.fullwidth-icon{	background-image:url(../images/misc/gal4-icon.png);}
+.filtrable-icon{	background-image:url(../images/misc/gal5-icon.png);}
+.swipable-icon{		background-image:url(../images/misc/gal5-icon.png);}
+.jquery-icon{		background-image:url(../images/misc/jquery.png);}
+.type-icon{			background-image:url(../images/misc/type.png);}
+.touch-icon{		background-image:url(../images/misc/touch.png);}
+.other-icon{		background-image:url(../images/misc/other.png);}
+.close-icon{		background-image:url(../images/misc/close-nav.png);}
+
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom:20px;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.copyright{
+	margin-bottom:70px;
+}
+
+
+

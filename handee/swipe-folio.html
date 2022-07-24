@@ -1,0 +1,165 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png"> 
+<!-- iPhone 3, 3Gs -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" /> 
+<!-- iPhone 4 -->
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<!-- iPad landscape -->
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<!-- iPad Portrait -->
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<!-- iPad (Retina, portrait) -->
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<!-- iPad (Retina, landscape) -->
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+<!-- Page Title -->
+<title>Epsilon Elements | Mobile Framework Starter</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link href="styles/framework-tablet.css"	rel="stylesheet" type="text/css" media="only screen and (min-width: 767px)"/>
+<link href="styles/bxslider.css"			rel="stylesheet" type="text/css">
+<link href="styles/swipebox.css"			rel="stylesheet" type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>	
+<script src="scripts/hammer.js"			type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/jquery.swipebox.js" type="text/javascript"></script>
+<script src="scripts/bxslider.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+
+</head>
+<body>
+
+<div id="preloader disabled">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="page-content">
+		<div class="tablet-wrapper">
+        <div class="header">
+            <img class="logo" src="images/misc/logo@2x.png" width="72" alt="img">
+            <a href="#" class="deploy-navigation"></a>
+        </div>
+        
+        <div class="navigation">
+        	<a href="index.html" class="home-icon">Home</a>
+            <a href="intro.html" class="about-icon">About</a>
+            <a href="jquery.html" class="jquery-icon">jQuery</a>
+            <a href="type.html" class="type-icon">Typography</a>
+            <a href="others.html" class="other-icon">Others</a>
+            <a href="swipe-folio.html" class="gallery-icon active-navigation">Gallery Swipe</a>
+            <a href="filter-folio.html" class="filter-icon">Gallery Filter</a>
+            <a href="full-folio.html" class="full-icon">Gallery Full</a>
+            <a href="two-folio.html" class="two-icon">Gallery Two</a>
+            <a href="blog-page.html" class="blog-icon">Blog</a>
+            <a href="contact.html" class="mail-icon">Mail</a>
+        </div>
+
+        
+        <div class="content">
+        <div class="page-head">
+          <h5 class="uppercase">Touch Folio</h5>
+          <em>Tap and swipe!</em>
+        </div>
+		<div class="decoration"></div>    
+            <div class="container no-bottom">
+                <h4 class="uppercase">A new swipe gallery!</h4>
+                <p>We've rebuilt our swipe gallery, now, with the capability to run PERFECTLY within a self container WebApp! With this new gallery, you can basically run the page on its own from a homepage icon on your iOS Device! </p>
+            </div>
+            
+            <div class="decoration"></div>
+            
+             <ul class="gallery">
+                <li>
+                    <a class="swipebox" href="images/gallery/full/1.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/1t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/2.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/2t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/3.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/3t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/4.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/4t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/5.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/5t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/1.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/1t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/1.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/1t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/2.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/2t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+                <li>
+                    <a class="swipebox" href="images/gallery/full/3.jpg" title="An awesome gallery!">
+                        <img class="image-decoration" src="images/gallery/thumb/3t.jpg" alt="Image 001" />
+                    </a>
+                </li>
+            </ul>                 	
+        	<div class="decoration"></div>
+            <p class="center-text copyright">Copyright 2013. All rights reserved!</p>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+<!--
+
+
+
+-->

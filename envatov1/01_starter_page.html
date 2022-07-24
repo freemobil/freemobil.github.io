@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Epsilon Framework</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" 	type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>		
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/swipe.js"			type="text/javascript"></script>
+<script src="scripts/klass.min.js"		type="text/javascript"></script>
+<script src="scripts/photoswipe.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+</head>
+
+<body>
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading up the content!
+            <em>Loading depends on connection speed</em>
+        </p>
+    </div>
+</div>
+
+<div id="modal-hider"></div>
+<div id="modal-body">
+    <p class="modal-logo">SUBSCRIBE FOR UPDATES</p>
+    <div class="decoration"></div>
+	<p class="modal-logo-heading">
+    	Subscribe to the latest news and updates!<br/>
+    </p>
+    <div class="decoration"></div>
+    <div class="modalForm" id="modalForm">
+      <form id="contact">
+          <fieldset>
+              <label for="contactName" id="name_label">NAME:</label>
+              <p id="left_label_name">glad to meet you!</p>
+              <input type="text" name="contactName" id="contactName" size="30" value="" class="text-input" />
+              <span class="error" id="nameError">Please enter your name !</span>
+              
+              <label for="contactEmail" id="email_label">EMAIL:</label>
+              <p id="left_label_mail">we never spam!</p>
+              <input type="text" name="contactEmail" id="contactEmail" size="30" value="" class="text-input" />
+              <span class="error" id="emailError">Please enter your email address !</span> <span class="error" id="emailError2">Please enter a valid email address !</span>
+              
+              <textarea  name="contactMessage" id="contactMessage" class="text-input">Message Sent From Modal Pop-Up</textarea>
+              <span class="error" id="messageError">Please enter message !</span>
+              
+              <p class="contact-button-house">
+                <input type="submit" name="submitMessage" class="contactButton button black" id="contactSubmitBtn" value="SUBSCRIBE"/>
+              </p>            
+              <p class="contact-social-set">
+                    <em>OUR SOCIAL SET</em>
+                    <a href="#"><img src="images/modal_social/facebook@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/twitter@2x.png"  width="16"	alt="img"></a>
+                    <a href="#"><img src="images/modal_social/dribbble@2x.png" width="16" alt="img"></a>
+                    <a href="#"><img src="images/modal_social/rss@2x.png" 	 width="16"	alt="img"></a>
+              </p>
+          </fieldset>
+      </form>
+  </div>
+  <div class="decoration"></div>
+  <a href="#" class="close-modal">Close</a>
+  <em class="close-modal-text">Addresses will remain confidential!</em>
+</div>
+
+
+<div class="content">
+	<div class="header container white-box top-decoration">
+       	<img class="logo replace-2x" width="61" src="images/misc/logo.png" alt="img">
+    	<a href="#" class="deploy-nav"></a>
+    </div>
+    
+    <div class="navigation">
+    	<a href="index.html"  		class="nav-icon home-nav">Home</a>
+        <a href="#" id="menu-two"   class="nav-icon about-nav active-nav">About</a>
+        <a href="#" id="menu-three" class="nav-icon gallery-nav">Gallery</a>
+        <a href="#" id="menu-four"  class="nav-icon blog-nav">Blog</a>
+        <a href="#" id="menu-five"  class="nav-icon mail-nav">Mail</a>
+        
+        <div class="clear"></div>
+        
+        <div class="menu-one submenu-5-items">
+        	<!--Submenu Standby-->
+        </div>
+        
+        <div class="menu-two submenu-5-items">
+        	<a class="active-nav" href="intro.html">Intro</a>
+            <a href="type.html">Type</a>
+            <a href="jquery.html">jQuery</a>
+            <a href="other.html">Other</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>   
+        <div class="menu-three submenu-5-items">
+        	<a href="onecol.html">1 Col</a>
+            <a href="twocol.html">2 Col</a>
+            <a href="swipe.html">Swipe</a>
+            <a href="fiter.html">Filter</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        <div class="menu-four submenu-3-items">
+        	<a href="blogpage.html">Blog Page</a>
+            <a href="blogpost.html">Blog Post</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        <div class="menu-five submenu-4-items">
+        	<a href="contact.html">Mail</a>
+            <a class="subscribe" href="#">Subscribe</a>
+            <a href="tel:+1 234 567 8901">Call</a>
+            <a class="close-sub" href="#">Close</a>
+        </div>
+        
+    </div>
+ 
+	<div class="separator"></div>
+    
+    <div class="white-box container">
+    	<div class="container">
+        	<!-- Enter your content here! Pleas read the instructions! -->
+        </div>
+    </div>
+    
+    <div class="separator"></div>
+ 
+        
+    <div class="container white-box bottom-decoration">
+    	<p class="center-text footer-text">Copyright 2013. All rights reserved!</p>
+      	<p class="center-text footer-sub-text">
+        	<a class="go-up" href="#">Back to top</a>
+            <em>|</em>
+            <a class="subscribe" href="#">SUBSCRIBE</a>
+            <em>|</em>
+            <a href="#">Privacy Policy</a>
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+
+

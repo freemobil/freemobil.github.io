@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Epsilon X</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+<div id="page-preloader"></div>
+
+<div id="page-background"></div>
+<div id="page-transitions">
+	
+	<div class="sidebar">
+		<div class="sidebar-scroll">
+			<div class="sidebar-header">
+				<a href="#" class="font-12"><i class="fa fa-phone"></i></a>
+				<a href="#" class="font-12"><i class="fa fa-envelope-o"></i></a>
+				<a href="#" class="font-12"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="font-12"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="font-12 toggle-sidebar"><i class="fa fa-times"></i></a>
+			</div>
+			<a href="#" class="sidebar-logo"></a>
+			<div class="sidebar-menu">
+				<a href="index.html" class="menu-item active-item"><i class="fa fa-home"></i><em>Home</em><i class="fa fa-circle"></i></a>
+				<a href="features.html" class="menu-item"><i class="fa fa-cog"></i><em>Features</em><i class="fa fa-circle"></i></a>
+				<a href="#" data-submenu="submenu-1" class="menu-item"><i class="fa fa-image"></i><em>Media</em><i class="fa fa-circle"></i></a>
+				<div id="submenu-1" class="submenu">
+					<a href="portfolio.html">Portfolio</a>
+					<a href="gallery-round.html">Gallery Round</a>
+					<a href="gallery-square.html">Gallery Square</a>
+					<a href="gallery-filter.html">Filterable</a>
+				</div>			
+				<a href="blog.html" class="menu-item"><i class="fa fa-pencil"></i><em>Blog</em><i class="fa fa-circle"></i></a>
+				<a href="contact.html" class="menu-item"><i class="fa fa-envelope-o"></i><em>Contact</em><i class="fa fa-circle"></i></a>
+			</div>
+			<strong class="sidebar-divider">UPDATES</strong>
+			<div class="sidebar-updates">
+				<a href="#"><i class="fa fa-info-circle"></i><em>Google AMP Available<br>06 December 2017</em></a>
+				<a href="#"><i class="fa fa-info-circle"></i><em>HTML & JS  Available<br>06 December 2017</em></a>
+				<a href="#"><i class="fa fa-info-circle"></i><em>Cleaner, Much Faster Code<br>06 December 2017</em></a>
+			</div>
+			<strong class="sidebar-copyright">Copyright <span class="copyright-year"></span>. All rights reserved.</strong>
+			<div class="sidebar-footer">
+				<a href="#" class="font-12"><i class="fa fa-phone"></i></a>
+				<a href="#" class="font-12"><i class="fa fa-envelope-o"></i></a>
+				<a href="#" class="font-12"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="font-12"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="font-12 toggle-sidebar"><i class="fa fa-times"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<a href="#" class="toggle-sidebar"><i class="fa fa-navicon"></i></a>
+		<span>Let's get in Touch</span>
+		<a href="contact.html"><i class="fa fa-envelope"></i></a>
+	</div>
+	<div class="page-content">
+		<a href="#" class="page-logo"></a>
+					
+		<div class="decoration decoration-margins"></div>
+
+		<div class="content">
+			<h4 class="uppercase ultrabold">Contact</h4>
+			<p>Fully working contact form with PHP and AJAX. Send your message and forget!</p>
+			<div class="container no-bottom">
+				<div class="contact-form no-bottom">
+					<div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+						<div class="container">
+							<h1 class="uppercase ultrabold">Message sent</h1>
+							<p>We'll get back to you in the shorts possible time.</p>
+						</div>				
+					</div>
+					<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+						<fieldset>
+							<div class="formValidationError bg-red-dark" id="contactNameFieldError">
+								<p class="center-text uppercase small-text color-white">Name is required!</p>
+							</div>
+							<div class="formValidationError bg-red-dark" id="contactEmailFieldError">
+								<p class="center-text uppercase small-text color-white">Mail address required!</p>
+							</div>
+							<div class="formValidationError bg-red-dark" id="contactEmailFieldError2">
+								<p class="center-text uppercase small-text color-white">Mail address must be valid!</p>
+							</div>
+							<div class="formValidationError bg-red-dark" id="contactMessageTextareaError">
+								<p class="center-text uppercase small-text color-white">Message field is empty!</p>
+							</div>
+							<div class="formFieldWrap">
+								<label class="field-title contactNameField" for="contactNameField">Name:<span>(required)</span>
+								</label>
+								<input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField" />
+							</div>
+							<div class="formFieldWrap">
+								<label class="field-title contactEmailField" for="contactEmailField">Email: <span>(required)</span>
+								</label>
+								<input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
+							</div>
+							<div class="formTextareaWrap">
+								<label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: <span>(required)</span>
+								</label>
+								<textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+							</div>
+							<div class="formSubmitButtonErrorsWrap contactFormButton">
+								<input type="submit" class="buttonWrap button button-blue uppercase ultrabold contactSubmitButton" id="contactSubmitButton" value="Send Message" data-formId="contactForm" />
+							</div>
+						</fieldset>
+					</form>			
+				</div>
+			</div>
+			<div class="decoration"></div>
+		</div>
+
+		<div class="content">
+			<h4 class="uppercase ultrabold">Come over for a coffee</h4>
+			<p class="text-shadow">
+				Embed your Google Maps. It's easy. You can incorporate Google API if you need to.
+			</p>
+			<iframe class="responsive-image maps polaroid-effect no-bottom" src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+		</div>
+
+		<div class="content">		
+			<div class="decoration"></div>
+			<div class="contact-information last-column">
+				<div class="container no-bottom">
+					<p class="contact-information">
+						<strong>Postal Information</strong><br>
+						PO Box 22161 Street Collins East
+						<br> PO Box 16122 Collins Street West
+						<br> Victoria 8007 Australia
+					</p>
+					<p class="contact-information">
+						<strong>Envato Headquarters</strong><br>
+						121 King Street, Melbourne
+						<br> Victoria 3000 Australia
+					</p>
+					<p class="contact-information">
+						<strong>Contact Information:</strong><br>
+						<a href="tel: +123 456 7890"><i class="fa fa-phone-square color-green-dark"></i>+ 123 456 7890</a>
+						<a href="mailto:name@domain.com"><i class="fa fa-envelope-square color-blue-dark"></i>mail@doamin.com</a>
+						<a href="#"><i class="fa fa-facebook-square facebook-color"></i>enabled.labs</a>
+						<a href="#"><i class="fa fa-twitter-square twitter-color"></i>@iEnabled</a>
+						<a href="#"><i class="fa fa-google-plus-square google-color"></i>@iEnabled</a>
+					</p>
+				</div>
+			</div>
+			<div class="decoration"></div>
+		</div>			
+		
+		<p class="copyright-text">Copyright <span class="copyright-year"></span>. All Rights Reserved</p>
+
+		
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+
+</body>

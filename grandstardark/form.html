@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grandstar Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/animsition.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="animsition">
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="icon">
+                <a href="#" class="go-to-back"><img src="img/go-to-back.png" alt=""></a>
+            </div>
+            <div class="title">
+                <h2>Form</h2></div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- form -->
+    <div class="form app-pages app-section">
+        <div class="container">
+            <h3>Text Input</h3>
+            <form action="#">
+                <div class="input-field">
+                    <input type="text" id="text" placeholder="text">
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="email">
+                </div>
+                <div class="input-field">
+                    <input type="number" id="number" placeholder="number">
+                </div>
+                <div class="input-field">
+                    <input type="date" id="date" class="datepicker" placeholder="datepicker">
+                </div>
+                <div class="input-field">
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="textarea"></textarea>
+                </div>
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Uplod Your Files">
+                    </div>
+                </div>
+            </form>
+            <h3>Checkboxes</h3>
+            <form action="#">
+                <p>
+                    <input id="checkbox" type="checkbox">
+                    <label for="checkbox"><span>Checkbox</span></label>
+                </p>
+                <p>
+                    <input id="checkbox-checked" type="checkbox" checked="checked">
+                    <label for="checkbox-checked"><span>Checkbox Checked</span></label>
+                </p>
+                <p>
+                    <input id="filled-in" type="checkbox" checked="checked" class="filled-in">
+                    <label for="filled-in"><span>Filled in</span></label>
+                </p>
+                <p>
+                    <input id="disabled" type="checkbox" disabled="disabled">
+                    <label for="disabled"><span>Disabled</span></label>
+                </p>
+            </form>
+            <h3>Radio Button</h3>
+            <form action="#">
+                <p>
+                    <input id="radio" name="group1" type="radio">
+                    <label for="radio"><span>Radio Button</span></label>
+                </p>
+                <p>
+                    <input class="with-gap" id="radio-gap" name="group1" type="radio">
+                    <label for="radio-gap"><span>Radio Button with Gap</span></label>
+                </p>
+                <p>
+                    <input id="disabled" name="group1" type="radio">
+                    <label for="disabled"><span>Radio Button Disabled</span></label>
+                </p>
+            </form>
+            <h3>Swiches</h3>
+            <form action="#">
+                <!-- Switch -->
+                <div class="switch">
+                    <p>
+                        <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span> On
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Off
+                            <input disabled type="checkbox">
+                            <span class="lever"></span> On
+                        </label>
+                    </p>
+                </div>
+            </form>
+            <h3>Select</h3>
+            <form action="#">
+                <div class="input-field col s12">
+                    <h5>Select</h5>
+                    <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="input-field col s12">
+                    <h5>Multiple Select</h5>
+                    <select multiple>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="input-field col s12">
+                    <h5>Option Group</h5>
+                    <select>
+                        <optgroup label="team 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </optgroup>
+                        <optgroup label="team 2">
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <h5>Image in Select</h5>
+                    <select class="icons">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" data-icon="img/blog1.jpg">example 1</option>
+                        <option value="" data-icon="img/blog2.jpg">example 2</option>
+                        <option value="" data-icon="img/blog3.jpg">example 3</option>
+                    </select>
+                </div>
+
+                <h5>Browser Select</h5>
+                <select class="browser-default">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <!-- end form -->
+
+    <!-- script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/animsition.js"></script>
+
+</body>
+
+</html>
