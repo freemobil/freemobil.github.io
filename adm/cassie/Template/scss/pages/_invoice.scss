@@ -1,0 +1,79 @@
+
+.card-invoice {
+  box-shadow: $shadow-01, $shadow-base;
+  border-color: darken($border-color, 2%);
+
+  &:not([class*="bg-"]) .card-header {
+    background-color: transparent;
+  }
+
+  .card-header {
+    padding: 15px;
+
+    @include media-breakpoint-up(md) {
+      padding: 25px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .card-body {
+    @include media-breakpoint-up(lg) { padding: 30px; }
+
+    h6 { color: $color-text-01; }
+    p { color: $color-text-03; }
+  }
+}
+
+.btn-group-invoice {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    + .btn { margin-left: 5px; }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+}
+
+.table-invoice {
+  thead > tr {
+    td,th {
+      font-size: 11px;
+      font-weight: $font-weight-semibold;
+      font-family: $font-family-secondary, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      color: $color-text-01;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  tbody > tr {
+    th,td {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: $font-size-sm;
+
+      @include media-breakpoint-up(lg) { font-size: $font-size-base; }
+
+      &:first-child { font-weight: $font-weight-medium; }
+      &:nth-child(2) {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  min-height: 100vh;
+  //background-color: $color-ui-01;
+  //@include gradient-y($color-ui-01, darken($color-ui-01, 0.8%));
+  background-attachment: fixed;
+
+  @media (min-width: 1281px) { font-size: 14px; }
+}
+
+.toggle-sidebar {
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+
+    .sidebar {
+      left: 0;
+      box-shadow: $shadow-01;
+      border-right: 1px solid $border-color;
+    }
+
+    .content { transform: translateX($sidebar-width - 10px); }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .sidebar {
+      left: -$sidebar-width;
+      border-right-width: 0;
+      box-shadow: none;
+    }
+
+    .content { margin-left: 0; }
+    .header { left: 0; }
+  }
+}

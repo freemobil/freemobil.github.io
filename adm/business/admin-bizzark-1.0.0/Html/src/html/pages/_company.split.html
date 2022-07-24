@@ -1,0 +1,45 @@
+{% set items = [{
+  name: 'Adrian Demian',
+  title: 'Product Manager',
+  avatar: 'R'
+}, {
+  name: 'Adrian Demian',
+  title: 'Product Manager',
+  avatar: 'R'
+}, {
+  name: 'Adrian Demian',
+  title: 'Product Manager',
+  avatar: 'R'
+}, {
+  name: 'Adrian Demian',
+  title: 'Product Manager',
+  avatar: 'R',
+  offline: true
+}, {
+  name: 'Adrian Demian',
+  title: 'Product Manager',
+  avatar: 'R',
+  offline: true
+}, {
+  name: 'Adrian Demian',
+  title: 'Product Manager',
+  avatar: 'R',
+  offline: true
+}] %}
+
+<div style="padding: 1.125rem 1.25rem;" class="border-bottom"><strong>Contacts</strong></div>
+<div class="flex" data-perfect-scrollbar>
+  <div class="list-group list-group-flush">
+    {% for item in items %}
+    <div class="list-group-item d-flex align-items-center" style="padding: 0.5rem 1.25rem; {% if item.offline %} opacity: 0.4{% endif %}">
+      <span class="avatar mr-3">
+        <span class="avatar-title rounded-circle" style="background-color: #CF4B91">{{ item.avatar }}</span>
+      </span>
+      <div class="flex">
+        <div class="card-title">{{ item.name }}</div>
+        <div class="card-subtitle">{{ item.title }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

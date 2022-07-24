@@ -1,0 +1,40 @@
+.author-img {
+  background-color: #fff;
+  border-radius: 70px;
+  margin-top: -30px;
+  padding: 5px;
+  position: relative;
+  width: 70px;
+  margin-right: .625rem;
+}
+
+a.social {
+  text-align: center;
+  svg {
+    height: 100%;
+  }
+  &.social-facebook {
+    fill: theme-color('facebook');
+    &:hover {
+      fill: darken(theme-color('facebook'), 10%);
+    }
+  }
+  &.social-twitter {
+    fill: theme-color('twitter');
+    &:hover {
+      fill: darken(theme-color('twitter'), 10%);
+    }
+  }
+  &.social-instagram {
+    fill: theme-color('instagram');
+    &:hover {
+      fill: darken(theme-color('instagram'), 10%);
+    }
+  }
+  &.social-dribbble {
+    fill: theme-color('dribbble');
+    &:hover {
+      fill: darken(theme-color('dribbble'), 10%);
+    }
+  }
+}

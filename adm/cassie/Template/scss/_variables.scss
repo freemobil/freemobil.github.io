@@ -1,0 +1,46 @@
+
+// Brand Colors
+$color-brand-01:                  #5556fd;
+$color-brand-02:                  #4bdedb;
+$color-brand-03:                  #c0c3d6;
+$color-brand-04:                  #1e1a70;
+
+$color-theme-01:                  #000000;
+$color-theme-02:                  #263248;
+$color-theme-03:                  #7E8AA2;
+
+// Text Colors
+$color-text-01:                   #06072d;
+$color-text-02:                   #373857; //rgba($color-text-01, .8);
+$color-text-03:                   #575d78; //rgba(desaturate($color-text-02, 25%), .85);
+$color-text-04:                   rgba($color-text-02, .6);
+
+// UI Colors
+$color-ui-01:                     #f9f9fd;
+$color-ui-02:                     #e6e7ef;
+$color-ui-03:                     #c0ccda;
+$color-ui-04:                     #8392a5;
+$color-ui-08:                     darken($color-ui-04, 20%);
+$color-ui-09:                     darken($color-ui-08, 10%);
+
+$color-ui-blue:                   #38c4fa;
+$color-ui-green:                  #22d273;
+
+// Fonts
+$font-weight-medium:              500;
+$font-weight-semibold:            500;
+$font-weight-bold:                700;
+
+
+// Marker
+$marker-icon-size:                16px;
+
+// Shadow
+$shadow-base:                     2px 2px 5px 0 rgba($color-ui-09, .04);
+$shadow-01:                       0 4px 12px 0 rgba($color-ui-04,.15);
+$shadow-02:                       0 1px 3px 0 rgba($color-ui-04,.2);
+
+// Template Panels
+$sidebar-width:                   240px;
+$header-height-mobile:            60px;
+$header-height:                   80px;

@@ -1,0 +1,21 @@
+{% macro component(icons=true, tooltips=false, slug=slug, prefix=prefix) %}
+<li class="sidebar-menu-item{% if slug === 'social-blog' %} active{% endif %}"{% if tooltips %} data-toggle="tooltip" data-title="Blog" data-placement="right" data-container="body" data-boundary="window"{% endif %}>
+  <a class="sidebar-menu-button" href="{{ prefix }}social-blog.html">
+    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">filter_frames</i>
+    <span class="sidebar-menu-text">Blog</span>
+  </a>
+</li>
+<li class="sidebar-menu-item {% if slug === 'social-blog-post' %} active{% endif %}"{% if tooltips %} data-toggle="tooltip" data-title="Blog Post" data-placement="right" data-container="body" data-boundary="window"{% endif %}>
+  <a class="sidebar-menu-button" href="{{ prefix }}social-blog-post.html">
+    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">receipt</i>
+    <span class="sidebar-menu-text">Blog Post</span>
+  </a>
+</li>
+<li class="sidebar-menu-item {% if slug === 'social-edit-post' %} active{% endif %}"{% if tooltips %} data-toggle="tooltip" data-title="Edit Post" data-placement="right" data-container="body" data-boundary="window"{% endif %}>
+  <a class="sidebar-menu-button" href="{{ prefix }}social-edit-post.html">
+    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">edit</i>
+    <span class="sidebar-menu-text">Edit Post</span>
+  </a>
+</li>
+{% endmacro %}
+{{ component() }}

@@ -1,0 +1,98 @@
+
+.signin-panel {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-ui-01;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+
+  .svg-bg {
+    height: 100%;
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      display: block;
+      margin-right: 10%;
+      transform: translateX(calc(10% + 200px));
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-right: 30%;
+      transform: translateX(calc(30% + 200px));
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 50%;
+      transform: translateX(calc(50% + 200px));
+    }
+  }
+}
+
+.signin-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-right: 1px solid darken($border-color, 2%);
+  box-shadow: $shadow-01, $shadow-base;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  @include media-breakpoint-up(sm) {
+    width: 400px;
+  }
+}
+
+.signin-sidebar-body {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px;
+  }
+}
+
+.signin-title {
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: -.5px;
+  color: $color-text-01;
+  margin-bottom: 5px;
+}
+
+.signin-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: $color-text-04;
+}
+
+.signin-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .form-group { margin-bottom: 20px; }
+
+  label {
+    color: $color-text-03;
+    margin-bottom: 2px;
+  }
+
+  .form-control {
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    padding: 0 0 5px;
+    border-width: 0 0 2px 0;
+    color: $color-text-01;
+
+    &::placeholder {
+      font-weight: 400;
+      color: $gray-500;
+    }
+  }
+}

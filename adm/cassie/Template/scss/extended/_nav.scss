@@ -1,0 +1,98 @@
+
+.nav-classic {
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2.5px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    color: $color-text-03;
+    margin: 0;
+
+    svg { margin-right: 10px; }
+
+    .badge {
+      margin-left: auto;
+      color: $color-text-04;
+      padding: 0;
+    }
+
+    @include hover-focus() {
+      background-color: $gray-200;
+    }
+
+    &.active {
+      color: $color-text-01;
+      background-color: $color-ui-02;
+    }
+
+    + .nav-link { margin-top: 1px; }
+  }
+}
+
+.nav-icon {
+  align-items: center;
+
+  .nav-link {
+    padding: 0;
+    + .nav-link { margin-left: 10px; }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.nav-card-icon {
+  align-items: center;
+
+  a {
+    color: $gray-500;
+
+    @include hover-focus() {
+      color: $color-brand-01;
+      svg { fill: rgba($color-brand-01, .2); }
+    }
+
+    + a { margin-left: 5px; }
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+    fill: rgba($gray-500, .1);
+  }
+}
+
+.nav-time-range {
+  a {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    color: $color-text-03;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-ui-01;
+
+    @include hover-focus() {
+      background-color: $gray-200;
+    }
+
+    + a { margin-left: 1px; }
+
+    &.active {
+      background-color: $gray-400;
+      color: $color-text-02;
+    }
+  }
+}

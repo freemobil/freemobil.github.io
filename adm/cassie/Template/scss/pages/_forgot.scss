@@ -1,0 +1,85 @@
+
+.forgot-panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: $color-ui-01;
+}
+
+.forgot-body {
+  width: calc(100% - 350px);
+  overflow: hidden;
+
+  .svg-bg {
+    @include media-breakpoint-up(sm) {
+      height: 100%;
+      transform: translateX(-50%);
+    }
+
+    @include media-breakpoint-up(md) {
+      transform: translateX(-25%);
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+      transform: none;
+    }
+  }
+}
+
+.forgot-sidebar {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #fff;
+  border-left: 1px solid darken($border-color, 2%);
+  box-shadow: $shadow-01;
+
+  @include media-breakpoint-up(sm) { width: 350px; }
+  @include media-breakpoint-up(lg) { width: 400px; }
+}
+
+.forgot-sidebar-body {
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media-breakpoint-up(sm) { padding: 40px; }
+}
+
+.forgot-title {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -.5px;
+  color: $color-text-01;
+  margin-bottom: 8px;
+}
+
+.forgot-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: $color-text-03;
+  line-height: 1.5;
+}
+
+.forgot-form {
+  label {
+    color: $color-text-03;
+    font-size: $font-size-sm;
+    margin-bottom: 2px;
+  }
+
+  .form-control {
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    padding: 0 0 5px;
+    border-width: 0 0 2px 0;
+    color: $color-text-01;
+
+    &::placeholder {
+      font-weight: 400;
+      color: $gray-500;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+
+.badge {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: $font-family-sans-serif;
+  padding: 3px 5px 4px;
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+
+.badge-light { background-color: $gray-300; }
+
+.badge-pill {
+  padding-left: 10px;
+  padding-right: 10px;
+  @include border-radius(8px);
+}
+
+a.badge {
+  color: #fff;
+  text-decoration: none;
+}
+
+.badge-white,
+a.badge-white {
+  border: 1px solid $color-ui-03;
+  background-color: #fff;
+  color: $color-text-03;
+
+  @include hover-focus() {
+    background-color: $color-ui-02;
+    border-color: darken($color-ui-03, .5%);
+  }
+}
+
+.badge-primary-light,
+a.badge-primary-light {
+  border-color: lighten($color-brand-01, 15%);
+  background-color: lighten($color-brand-01, 30%);
+  color: $color-brand-01;
+
+  @include hover-focus() {
+    border-color: $color-brand-01;
+    background-color: lighten($color-brand-01, 25%);
+  }
+}
+
+.badge-success-light,
+a.badge-success-light {
+  border-color: lighten($green, 15%);
+  background-color: lighten($green, 50%);
+  color: $green;
+
+  @include hover-focus() {
+    border-color: $green;
+    background-color: lighten($green, 40%);
+  }
+}
+
+.badge-warning-light,
+a.badge-warning-light {
+  border-color: lighten($yellow, 20%);
+  background-color: lighten($yellow, 40%);
+  color: darken($yellow, 15%);
+
+  @include hover-focus() {
+    border-color: $yellow;
+    background-color: lighten($yellow, 30%);
+  }
+}
+
+.badge-danger-light,
+a.badge-danger-light {
+  border-color: lighten($red, 20%);
+  background-color: lighten($red, 40%);
+  color: darken($red, 15%);
+
+  @include hover-focus() {
+    border-color: $red;
+    background-color: lighten($red, 30%);
+  }
+}

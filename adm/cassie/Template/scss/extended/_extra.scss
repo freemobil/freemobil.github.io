@@ -1,0 +1,48 @@
+
+.chart-legend {
+  display: flex;
+  align-items: center;
+
+  label {
+    margin: 0;
+    font-size: 11px;
+    color: $color-text-03;
+
+    + label { margin-left: 10px; }
+  }
+
+  span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+  }
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .stars {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 0;
+    position: relative;
+    fill: $gray-400;
+
+    &.active {
+      fill: #fdb92c;
+    }
+  }
+
+  > span {
+    display: block;
+    margin-right: 3px;
+  }
+}

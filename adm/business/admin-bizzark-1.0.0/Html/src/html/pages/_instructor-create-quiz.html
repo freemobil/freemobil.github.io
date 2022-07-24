@@ -1,0 +1,46 @@
+{% if 'fluid' in prefix %}<div class="page__header flush-shadow">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
+      <div class="flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Learning</a></li>
+            <li class="breadcrumb-item"><a href="#">Instructor</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit Quiz</li>
+          </ol>
+        </nav>
+        <h1 class="m-lg-0">Basics of Angular JS :: Quiz</h1>
+      </div>
+      <a href="" class="btn btn-success ml-lg-3">Back to Course <i class="material-icons">arrow_forward</i></a>
+    </div>
+  </div>
+  {% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+  
+  {% if 'fluid' in prefix %}
+  <div class="page__header page__header-nav">
+    <div class="{{ containerClass }} page__container">
+      {% include "layouts/_navbar.secondary.html" %}
+    </div>
+  </div>
+  {% endif %}
+  
+  
+  <div class="{{ containerClass }} page__container">
+
+
+    <div class="card">
+      <div class="card-body card-form__body">
+        <form action="#">
+        <div class="form-group mb-3">
+          <label class="control-label h6">New Question:</label>
+          <input type="text" name="question[title]" class="form-control">
+        </div>
+        <button class="btn btn-primary"><i class="material-icons">add</i>  Create Question</button>
+        </form>
+      </div>
+    </div>
+
+  <div id="questions_wrapper">
+    {% include 'pages/_instructor.quiz-questions.html' %}
+  </div>
+</div>

@@ -1,0 +1,189 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+<div class="{{ containerClass }}  page__heading-container">
+  <div class="page__heading">
+    
+    <div class="d-flex align-items-center">
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">{{ module_label }}</li>
+            <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+          </ol>
+        </nav>
+        <h1 class="m-0">{{ title }}</h1>
+      </div>
+      <div class="ml-auto d-flex">
+        <a href="" class="btn btn-light mr-2"><i class="material-icons icon-16pt mr-1">visibility</i> Preview</a>
+        <div class="dropdown">
+          <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Save</a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a href="" class="dropdown-item"><i class="material-icons icon-16pt mr-1">save</i> As New Post</a>
+            <a href="" class="dropdown-item"><i class="material-icons icon-16pt mr-1">save</i> As Draft</a>
+            <a href="" class="dropdown-item"><i class="material-icons icon-16pt mr-1">link</i> Export to PDF</a>
+            <a href="" class="dropdown-item"><i class="material-icons icon-16pt mr-1">link</i> Export to Word</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="row">
+    <div class="col-md-8">
+      
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Post title ...">
+      </div>
+
+      <div class="card">
+        <div class="card-header card-header-tabs-basic nav" role="tablist">
+          <a href="#content" class="active" data-toggle="tab" role="tab" aria-selected="true">Content</a>
+          <a href="#meta" data-toggle="tab" role="tab" aria-selected="false">Meta Title</a>
+          <a href="#keywords" data-toggle="tab" role="tab" aria-selected="false">Keywords</a>
+        </div>
+        <div class="card-body">
+
+          <div class="form-group">
+            <label class="text-label">Text Content</label>
+            <div
+              style="height: 150px;"
+              data-toggle="quill" 
+              data-quill-placeholder="Post content ...">
+              <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. Alias ducimus sunt sequi ipsa molestias, facere eius. Ad architecto id quas impedit, minima eos ab explicabo sed incidunt fuga provident, repellendus!</p>
+              <p><br></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="text-label">Caption &amp; Images</label>
+            <input type="text" class="form-control" placeholder="Caption ...">
+          </div>
+
+          <div 
+            class="dropzone dropzone-multiple w-100" 
+            data-toggle="dropzone" 
+            data-dropzone-multiple 
+            data-dropzone-url="http://"
+            data-dropzone-files='["assets/images/stories/256_rsz_clem-onojeghuo-193397-unsplash.jpg", "assets/images/stories/256_rsz_dex-ezekiel-761373-unsplash.jpg", "assets/images/stories/256_rsz_rhema-kallianpur-275251-unsplash.jpg"]'>
+
+            <div class="fallback">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFileUploadMultiple" multiple>
+                <label class="custom-file-label" for="customFileUploadMultiple">Choose file</label>
+              </div>
+            </div>
+
+            <ul class="dz-preview dz-preview-multiple list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <div class="avatar">
+                      <img src="assets/images/stories/256_rsz_rhema-kallianpur-275251-unsplash.jpg" class="avatar-img rounded" alt="..." data-dz-thumbnail>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="font-weight-bold" data-dz-name>...</div>
+                    <p class="small text-muted mb-0" data-dz-size>...</p>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#" class="text-muted-light" data-dz-remove>
+                      <i class="material-icons">close</i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="card card-body">
+        
+        <div class="form-group">
+          <label class="text-label">Author</label>
+          <select 
+            name="author" 
+            id="author" 
+            data-toggle="select"
+            data-tags="true"
+            data-multiple="true"
+            multiple="multiple"
+            data-minimum-results-for-search="-1"
+            class="form-control"
+            data-placeholder="Select author ...">
+            <option data-avatar-src="assets/images/256_joao-silas-636453-unsplash.jpg" selected="">Jenell D. Matney</option>
+            <option data-avatar-src="assets/images/256_jeremy-banks-798787-unsplash.jpg">Sherri J. Cardenas</option>
+            <option data-avatar-src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg">Joseph S. Ferland</option>
+          </select>
+          <small class="form-text text-muted">Select one or more authors.</small>
+        </div>
+
+        <div class="form-group">
+          <label class="text-label" for="flatpickrSample04">Post date</label>
+          <input 
+            id="flatpickrSample04" 
+            type="text" 
+            class="form-control" 
+            placeholder="Flatpickr date time example" 
+            data-toggle="flatpickr" 
+            data-flatpickr-enable-time="true"
+            data-flatpickr-alt-format="F j, Y at H:i" 
+            data-flatpickr-date-format="Y-m-d H:i" 
+            value="2018-10-07 15:35">
+        </div>
+
+        <div class="form-group">
+          <label class="text-label">Category</label>
+          <select name="category" class="form-control custom-select">
+            <option value="vuejs">VueJs</option>
+            <option value="vuejs">Angular</option>
+            <option value="vuejs">React</option>
+          </select>
+          <small class="form-text text-muted">Select a category.</small>
+        </div>
+
+        <div class="form-group">
+          <label class="text-label" for="select03">Tags</label>
+          <select 
+            id="select03" 
+            data-toggle="select" 
+            multiple
+            class="form-control">
+            <option selected="">JavaScript</option>
+            <option selected="">Angular</option>
+            <option>Bootstrap</option>
+            <option>CSS</option>
+            <option>HTML</option>
+          </select>
+          <small class="form-text text-muted">Select one or more tags.</small>
+        </div>
+
+        <label class="text-label" for="published">Published</label>
+        <div class="d-flex">
+          <div class="custom-control custom-checkbox-toggle custom-control-inline mr-2">
+            <input checked="" type="checkbox" id="published" class="custom-control-input">
+            <label class="custom-control-label" for="published">Yes</label>
+          </div>
+          <label for="published" class="mb-0">Yes</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

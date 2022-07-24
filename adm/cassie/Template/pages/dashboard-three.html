@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard and Admin Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+
+    <title>Cassie Responsive Bootstrap 4 Dashboard and Admin Template</title>
+
+    <!-- vendor css -->
+    <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- template css -->
+    <link rel="stylesheet" href="../assets/css/cassie.css">
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div>
+          <a href="../index.html" class="sidebar-logo"><span>cassie</span></a>
+          <small class="sidebar-logo-headline">Responsive Dashboard Template</small>
+        </div>
+      </div><!-- sidebar-header -->
+      <div id="dpSidebarBody" class="sidebar-body">
+        <ul class="nav nav-sidebar">
+          <li class="nav-label"><label class="content-label">Template Pages</label></li>
+          <li class="nav-item show">
+            <a href="" class="nav-link with-sub active"><i data-feather="box"></i> Dashboard</a>
+            <nav class="nav nav-sub">
+              <a href="dashboard-one.html" class="nav-sub-link">Analytics &amp; Monitoring</a>
+              <a href="dashboard-two.html" class="nav-sub-link">Projects &amp; Web Services</a>
+              <a href="dashboard-three.html" class="nav-sub-link active">Blog &amp; Social Media</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="layout"></i> App Pages</a>
+            <nav class="nav nav-sub">
+              <a href="app-calendar.html" class="nav-sub-link">Calendar</a>
+              <a href="app-chat.html" class="nav-sub-link">Chat</a>
+              <a href="app-mail.html" class="nav-sub-link">Mail</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="lock"></i> Authentication</a>
+            <nav class="nav nav-sub">
+              <a href="page-signin.html" class="nav-sub-link">Sign In</a>
+              <a href="page-signup.html" class="nav-sub-link">Sign Up</a>
+              <a href="page-forgot.html" class="nav-sub-link">Forgot Password</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="x-circle"></i> Error Pages</a>
+            <nav class="nav nav-sub">
+              <a href="page-404.html" class="nav-sub-link">Page Not Found</a>
+              <a href="page-500.html" class="nav-sub-link">Internal Server Error</a>
+              <a href="page-503.html" class="nav-sub-link">Service Unavailable</a>
+              <a href="page-505.html" class="nav-sub-link">Forbidden Access</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="user"></i> User Pages</a>
+            <nav class="nav nav-sub">
+              <a href="page-profile.html" class="nav-sub-link">User Profile</a>
+              <a href="page-timeline.html" class="nav-sub-link">Timeline</a>
+              <a href="page-people.html" class="nav-sub-link">People</a>
+              <a href="page-settings.html" class="nav-sub-link">Profile Settings</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="file-text"></i> Extras</a>
+            <nav class="nav nav-sub">
+              <a href="page-invoice.html" class="nav-sub-link">Invoice</a>
+              <a href="page-pricing.html" class="nav-sub-link">Pricing</a>
+            </nav>
+          </li>
+          <li class="nav-label"><label class="content-label">UI Design Library</label></li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="book"></i> Content</a>
+            <nav class="nav nav-sub">
+              <a href="../components/con-grid.html" class="nav-sub-link">Grid System</a>
+              <a href="../components/con-icons.html" class="nav-sub-link">Icons</a>
+              <a href="../components/con-images.html" class="nav-sub-link">Images</a>
+              <a href="../components/con-typography.html" class="nav-sub-link">Typography</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="layers"></i> Components</a>
+            <nav class="nav nav-sub">
+              <a href="../components/com-accordion.html" class="nav-sub-link">Accordion</a>
+              <a href="../components/com-alerts.html" class="nav-sub-link">Alerts</a>
+              <a href="../components/com-avatar.html" class="nav-sub-link">Avatar</a>
+              <a href="../components/com-badge.html" class="nav-sub-link">Badge</a>
+              <a href="../components/com-breadcrumbs.html" class="nav-sub-link">Breadcrumbs</a>
+              <a href="../components/com-buttons.html" class="nav-sub-link">Buttons</a>
+              <a href="../components/com-button-groups.html" class="nav-sub-link">Button Groups</a>
+              <a href="../components/com-cards.html" class="nav-sub-link">Cards</a>
+              <a href="../components/com-carousel.html" class="nav-sub-link">Carousel</a>
+              <a href="../components/com-collapse.html" class="nav-sub-link">Collapse</a>
+              <a href="../components/com-dropdown.html" class="nav-sub-link">Dropdown</a>
+              <a href="../components/com-list-group.html" class="nav-sub-link">List Group</a>
+              <a href="../components/com-marker.html" class="nav-sub-link">Marker</a>
+              <a href="../components/com-media-object.html" class="nav-sub-link">Media Object</a>
+              <a href="../components/com-modal.html" class="nav-sub-link">Modal</a>
+              <a href="../components/com-navs.html" class="nav-sub-link">Navs</a>
+              <a href="../components/com-navbar.html" class="nav-sub-link">Navbar</a>
+              <a href="../components/com-off-canvas.html" class="nav-sub-link">Off-Canvas</a>
+              <a href="../components/com-pagination.html" class="nav-sub-link">Pagination</a>
+              <a href="../components/com-placeholder.html" class="nav-sub-link">Placeholder</a>
+              <a href="../components/com-popovers.html" class="nav-sub-link">Popovers</a>
+							<a href="../components/com-progress.html" class="nav-sub-link">Progress</a>
+              <a href="../components/com-steps.html" class="nav-sub-link">Steps</a>
+              <a href="../components/com-scrollbar.html" class="nav-sub-link">Scrollbar</a>
+              <a href="../components/com-scrollspy.html" class="nav-sub-link">Scrollspy</a>
+              <a href="../components/com-spinners.html" class="nav-sub-link">Spinners</a>
+              <a href="../components/com-tab.html" class="nav-sub-link">Tab</a>
+              <a href="../components/com-toast.html" class="nav-sub-link">Toast </a>
+              <a href="../components/com-tooltips.html" class="nav-sub-link">Tooltips</a>
+              <a href="../components/com-table-basic.html" class="nav-sub-link">Table Basic</a>
+              <a href="../components/com-table-advanced.html" class="nav-sub-link">Table (Datatable)</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="monitor"></i> Utilities</a>
+            <nav class="nav nav-sub">
+              <a href="../components/util-animation.html" class="nav-sub-link">Animation</a>
+              <a href="../components/util-background.html" class="nav-sub-link">Background</a>
+              <a href="../components/util-border.html" class="nav-sub-link">Border</a>
+              <a href="../components/util-display.html" class="nav-sub-link">Display</a>
+              <a href="../components/util-divider.html" class="nav-sub-link">Divider</a>
+              <a href="../components/util-flex.html" class="nav-sub-link">Flex</a>
+              <a href="../components/util-height.html" class="nav-sub-link">Height</a>
+              <a href="../components/util-margin.html" class="nav-sub-link">Margin</a>
+              <a href="../components/util-padding.html" class="nav-sub-link">Padding</a>
+              <a href="../components/util-position.html" class="nav-sub-link">Position</a>
+              <a href="../components/util-typography.html" class="nav-sub-link">Typography</a>
+              <a href="../components/util-width.html" class="nav-sub-link">Width</a>
+              <a href="../components/util-extras.html" class="nav-sub-link">Extras</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="life-buoy"></i> Forms</a>
+            <nav class="nav nav-sub">
+              <a href="../components/form-elements.html" class="nav-sub-link">Form Elements</a>
+              <a href="../components/form-input-group.html" class="nav-sub-link">Input Group</a>
+              <a href="../components/form-input-tags.html" class="nav-sub-link">Input Tags</a>
+              <a href="../components/form-input-masks.html" class="nav-sub-link">Input Masks</a>
+              <a href="../components/form-validation.html" class="nav-sub-link">Form Validation</a>
+              <a href="../components/form-wizard.html" class="nav-sub-link">Form Wizard</a>
+              <a href="../components/form-text-editor.html" class="nav-sub-link">Text Editor</a>
+              <a href="../components/form-rangeslider.html" class="nav-sub-link">Range Slider</a>
+              <a href="../components/form-datepicker.html" class="nav-sub-link">Date Pickers</a>
+              <a href="../components/form-select2.html" class="nav-sub-link">Select2</a>
+              <a href="../components/form-search.html" class="nav-sub-link">Search</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="pie-chart"></i> Charts</a>
+            <nav class="nav nav-sub">
+              <a href="../components/chart-flot.html" class="nav-sub-link">Flot</a>
+              <a href="../components/chart-chartjs.html" class="nav-sub-link">ChartJS</a>
+              <a href="../components/chart-peity.html" class="nav-sub-link">Peity</a>
+              <a href="../components/chart-sparkline.html" class="nav-sub-link">Sparkline</a>
+              <a href="../components/chart-morris.html" class="nav-sub-link">Morris</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="map-pin"></i> Maps</a>
+            <nav class="nav nav-sub">
+              <a href="../components/map-google.html" class="nav-sub-link">Google Maps</a>
+              <a href="../components/map-leaflet.html" class="nav-sub-link">Leaflet Maps</a>
+              <a href="../components/map-vector.html" class="nav-sub-link">Vector Maps</a>
+            </nav>
+          </li>
+        </ul>
+
+        <hr class="mg-t-30 mg-b-25">
+
+        <ul class="nav nav-sidebar">
+          <li class="nav-item"><a href="themes.html" class="nav-link"><i data-feather="aperture"></i> Themes</a></li>
+          <li class="nav-item"><a href="../docs.html" class="nav-link"><i data-feather="help-circle"></i> Documentation</a></li>
+        </ul>
+
+
+      </div><!-- sidebar-body -->
+    </div><!-- sidebar -->
+
+    <div class="content content-page">
+      <div class="header">
+        <div class="header-left">
+          <a href="" class="burger-menu"><i data-feather="menu"></i></a>
+
+          <div class="header-search">
+            <i data-feather="search"></i>
+            <input type="search" class="form-control" placeholder="What are you looking for?">
+          </div><!-- header-search -->
+        </div><!-- header-left -->
+
+        <div class="header-right">
+          <a href="" class="header-help-link"><i data-feather="help-circle"></i></a>
+          <div class="dropdown dropdown-notification">
+            <a href="" class="dropdown-link new" data-toggle="dropdown"><i data-feather="bell"></i></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-menu-header">
+                <h6>Notifications</h6>
+                <a href=""><i data-feather="more-vertical"></i></a>
+              </div><!-- dropdown-menu-header -->
+              <div class="dropdown-menu-body">
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle text-primary bg-primary-light">s</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Socrates Itumay</strong> marked the task as completed.</p>
+                    <span>5 hours ago</span>
+                  </div>
+                </a>
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle tx-pink bg-pink-light">r</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Reynante Labares</strong> marked the task as incomplete.</p>
+                    <span>8 hours ago</span>
+                  </div>
+                </a>
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle tx-success bg-success-light">d</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Dyanne Aceron</strong> responded to your comment on this <strong>post</strong>.</p>
+                    <span>a day ago</span>
+                  </div>
+                </a>
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle tx-indigo bg-indigo-light">k</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Kirby Avendula</strong> marked the task as incomplete.</p>
+                    <span>2 days ago</span>
+                  </div>
+                </a>
+              </div><!-- dropdown-menu-body -->
+              <div class="dropdown-menu-footer">
+                <a href="">View All Notifications</a>
+              </div>
+            </div><!-- dropdown-menu -->
+          </div>
+          <div class="dropdown dropdown-loggeduser">
+            <a href="" class="dropdown-link" data-toggle="dropdown">
+              <div class="avatar avatar-sm">
+                <img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt="">
+              </div><!-- avatar -->
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-menu-header">
+                <div class="media align-items-center">
+                  <div class="avatar">
+                    <img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt="">
+                  </div><!-- avatar -->
+                  <div class="media-body mg-l-10">
+                    <h6>Louise Kate Lumaad</h6>
+                    <span>Administrator</span>
+                  </div>
+                </div><!-- media -->
+              </div>
+              <div class="dropdown-menu-body">
+                <a href="" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                <a href="" class="dropdown-item"><i data-feather="edit-2"></i> Edit Profile</a>
+                <a href="" class="dropdown-item"><i data-feather="briefcase"></i> Account Settings</a>
+                <a href="" class="dropdown-item"><i data-feather="shield"></i> Privacy Settings</a>
+                <a href="" class="dropdown-item"><i data-feather="log-out"></i> Sign Out</a>
+              </div>
+            </div><!-- dropdown-menu -->
+          </div>
+        </div><!-- header-right -->
+      </div><!-- header -->
+      <div class="content-header justify-content-between">
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Pages</a></li>
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Events &amp; Social Media</li>
+            </ol>
+          </nav>
+          <h4 class="content-title content-title-xs">Welcome to Dashboard</h4>
+        </div>
+      </div><!-- content-header -->
+      <div class="content-body">
+        <div class="row row-sm">
+          <div class="col-sm-4 col-xl">
+            <div class="card card-hover card-social-one">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between mg-b-10">
+                  <h1 class="card-value">926</h1>
+                  <div class="chart-wrapper">
+                    <div id="flotChart1" class="flot-chart"></div>
+                  </div>
+                </div>
+                <h5 class="card-title tx-primary">Connections</h5>
+                <p class="card-desc">Ullamco laboris nisi ut aliquip ex ea com modo cons.</p>
+              </div><!-- card-body -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-4 col-xl mg-t-15 mg-sm-t-0">
+            <div class="card card-hover card-social-one">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between mg-b-10">
+                  <h1 class="card-value">1,108</h1>
+                  <div class="chart-wrapper">
+                    <div id="flotChart2" class="flot-chart"></div>
+                  </div>
+                </div>
+                <h5 class="card-title tx-pink">Your Articles</h5>
+                <p class="card-desc">Ex ea commodo con seq uat ull amco lab oris nisi ut ali.</p>
+              </div><!-- card-body -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-4 col-xl mg-t-15 mg-sm-t-0">
+            <div class="card card-hover card-social-one">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between mg-b-10">
+                  <h1 class="card-value">3,024</h1>
+                  <div class="chart-wrapper">
+                    <div id="flotChart3" class="flot-chart"></div>
+                  </div>
+                </div>
+                <h5 class="card-title tx-teal">Your Photos</h5>
+                <p class="card-desc">Ex ea commodo con seq uat ull amco lab oris nisi ut ali.</p>
+              </div><!-- card-body -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-20 mg-xl-t-0">
+            <div class="card card-hover card-profile-sidebar">
+              <div class="card-header bg-transparent">
+                <div class="media align-items-center">
+                  <div class="avatar avatar-md"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <h6 class="tx-color-01 mg-b-3">Katherine Pechon</h6>
+                    <small class="d-block tx-color-03 tx-13">Front-End Engineer</small>
+                  </div>
+                </div><!-- media -->
+
+                <div class="profile-info">
+                  <div>
+                    <h5>102</h5>
+                    <p>Posts</p>
+                  </div>
+                  <div>
+                    <h5>268</h5>
+                    <p>Following</p>
+                  </div>
+                  <div>
+                    <h5>384</h5>
+                    <p>Followers</p>
+                  </div>
+                </div><!-- profile-info -->
+              </div><!-- card-header -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-social-two">
+              <div class="card-header">
+                <h6 class="card-title mg-b-0">Page Views</h6>
+                <a href="" class="lh-0 link-04"><i data-feather="help-circle" class="svg-14"></i></a>
+              </div>
+              <div class="card-body">
+                <p class="tx-12 tx-color-04">August 01 - August 31</p>
+                <div class="chart-wrapper">
+                  <div class="overlay-body">
+                    <div class="d-flex align-items-baseline">
+                      <h3 class="card-value">2,409</h3>
+                      <span class="card-percent tx-danger"><i class="icon ion-android-arrow-down"></i>5.8%</span>
+                    </div>
+                    <span class="tx-12 tx-color-03">Total Page Views</span>
+                  </div>
+                  <div id="flotChart4" class="flot-chart chart-tick-blue"></div>
+                </div>
+              </div>
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-social-two">
+              <div class="card-header">
+                <h6 class="card-title mg-b-0">Page Likes</h6>
+                <a href="" class="lh-0 link-04"><i data-feather="help-circle" class="svg-14"></i></a>
+              </div>
+              <div class="card-body">
+                <p class="tx-12 tx-color-04">August 01 - August 31</p>
+                <div class="chart-wrapper">
+                  <div class="overlay-body">
+                    <div class="d-flex align-items-baseline">
+                      <h3 class="card-value">1,083</h3>
+                      <span class="card-percent tx-success"><i class="icon ion-android-arrow-up"></i>1.5%</span>
+                    </div>
+                    <span class="tx-12 tx-color-03">Total Page Likes</span>
+                  </div>
+                  <div id="flotChart5" class="flot-chart chart-tick-green"></div>
+                </div>
+              </div>
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-social-two">
+              <div class="card-header">
+                <h6 class="card-title mg-b-0">Post Engagements</h6>
+                <a href="" class="lh-0 link-04"><i data-feather="help-circle" class="svg-14"></i></a>
+              </div>
+              <div class="card-body">
+                <p class="tx-12 tx-color-04">August 01 - August 31</p>
+                <div class="chart-wrapper">
+                  <div class="overlay-body">
+                    <div class="d-flex align-items-baseline">
+                      <h3 class="card-value">6,128</h3>
+                      <span class="card-percent tx-danger"><i class="icon ion-android-arrow-down"></i>0.3%</span>
+                    </div>
+                    <span class="tx-12 tx-color-03">Total Post Engagements</span>
+                  </div>
+                  <div id="flotChart6" class="flot-chart"></div>
+                </div>
+              </div>
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-connection-one">
+              <div class="card-header">
+                <h6 class="card-title mg-b-0">Connections <span>926</span></h6>
+                <a href="" class="tx-12 tx-medium">Show all <i class="icon ion-android-arrow-forward"></i></a>
+              </div><!-- card-header -->
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                    <div class="list-body">
+                      <p class="person-name"><a href="">Jacquelyn Harley</a></p>
+                      <p class="person-location">Market St., San Francisco, CA</p>
+                    </div><!-- list-body -->
+                    <a href="" class="person-more"><i data-feather="more-vertical" class="svg-16"></i></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                    <div class="list-body">
+                      <p class="person-name"><a href="">Larisa Commons</a></p>
+                      <p class="person-location">Cost Ave., Alexandria, MD</p>
+                    </div><!-- list-body -->
+                    <a href="" class="person-more"><i data-feather="more-vertical" class="svg-16"></i></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-primary">j</span></div>
+                    <div class="list-body">
+                      <p class="person-name"><a href="">Jeffrey Ledbetter</a></p>
+                      <p class="person-location">Virgil St., Graceville, FL</p>
+                    </div><!-- list-body -->
+                    <a href="" class="person-more"><i data-feather="more-vertical" class="svg-16"></i></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-teal">d</span></div>
+                    <div class="list-body">
+                      <p class="person-name"><a href="">Debbie Winslett</a></p>
+                      <p class="person-location">Randolph St., Natick, MA</p>
+                    </div><!-- list-body -->
+                    <a href="" class="person-more"><i data-feather="more-vertical" class="svg-16"></i></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                    <div class="list-body">
+                      <p class="person-name"><a href="">Lawrence Green</a></p>
+                      <p class="person-location">Clair St., Gordon, TX</p>
+                    </div><!-- list-body -->
+                    <a href="" class="person-more"><i data-feather="more-vertical" class="svg-16"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div><!-- card -->
+
+            <div class="card card-hover card-post-one mg-t-20">
+              <div class="card-header">
+                <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                <div class="header-body">
+                  <h6>Joyce Meyer</h6>
+                  <p>Aug 10, 2019 8:50am</p>
+                </div>
+              </div><!-- card-header -->
+              <div class="card-body">
+                <p class="mg-b-0">You only have one life, and if it is not going in the direction you want it to, now is the time to make changes.</p>
+              </div><!-- card-body -->
+              <div class="card-footer">
+                <a href=""><i data-feather="eye" class="svg-14"></i> <span>2,024</span></a>
+                <a href=""><i data-feather="message-square" class="svg-14"></i> <span>24</span></a>
+                <a href=""><i data-feather="bookmark" class="svg-14"></i> <span>8</span></a>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-blog-one">
+              <div class="card-body">
+                <span class="badge bg-warning tx-white">Sponsored</span>
+                <h5 class="card-title"><a href="">The Secret Betting Strategy That Beats Online Bookmakers</a></h5>
+                <p class="card-desc">Any fool on the street can tell you that technology is changing at a whiplash in ducing pace.</p>
+              </div><!-- card-body -->
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="avatar avatar-xxs"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                  <h6 class="media-body mg-b-0 tx-13 tx-color-01 mg-l-7">Katherine Lumaad</h6>
+                </div>
+                <span class="tx-gray-500 tx-12">2 hours ago</span>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+
+            <div class="card card-hover card-blog-one mg-t-20">
+              <div class="card-img-wrapper"><img src="https://via.placeholder.com/1280x853/637382/fff" class="card-img" alt=""></div>
+              <div class="marker pos-absolute t-10 l-10 bg-success tx-white">Technology</div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">10 Technologies That Are About to Change the World</a></h5>
+                <p class="card-desc">Any fool on the street can tell you that technology is changing at a whiplash in ducing pace.</p>
+              </div><!-- card-body -->
+              <div class="card-footer">
+                <a href=""><i data-feather="heart" class="svg-14"></i> <span>28</span></a>
+                <a href=""><i data-feather="message-square" class="svg-14"></i> <span>14</span></a>
+                <span class="tx-gray-500 mg-l-auto">2 hours ago</span>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-lg-5 col-xl-4 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-stories-one">
+              <div class="card-header bg-transparent">
+                <h6 class="card-title mg-b-0">Top Stories</h6>
+                <a href="" class="link-03"><i data-feather="more-horizontal" class="svg-14"></i></a>
+              </div><!-- card-header -->
+              <div class="card-body pd-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="avatar"><img src="https://via.placeholder.com/300/637382/fff" class="rounded-circle" alt=""></div>
+                    <div class="list-body">
+                      <h6 class="list-title"><a href="">Javascript Countdown Timer Code</a></h6>
+                      <div class="list-footer">
+                        <a href=""><i data-feather="eye" class="svg-14"></i> <span>1,344</span></a>
+                        <a href=""><i data-feather="message-square" class="svg-14"></i> <span>5</span></a>
+                        <a href=""><i data-feather="share" class="svg-14"></i> <span>2</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-indigo">A</span></div>
+                    <div class="list-body">
+                      <h6 class="list-title"><a href="">Portal Layout Creation with Portlet</a></h6>
+                      <div class="list-footer">
+                        <a href=""><i data-feather="eye" class="svg-14"></i> <span>1,021</span></a>
+                        <a href=""><i data-feather="message-square" class="svg-14"></i> <span>14</span></a>
+                        <a href=""><i data-feather="share" class="svg-14"></i> <span>8</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                    <div class="list-body">
+                      <h6 class="list-title"><a href="">The Daily Routine Experts Recommend for Peak Productivity</a></h6>
+                      <div class="list-footer">
+                        <a href=""><i data-feather="eye" class="svg-14"></i> <span>105</span></a>
+                        <a href=""><i data-feather="message-square" class="svg-14"></i> <span>1</span></a>
+                        <a href=""><i data-feather="share" class="svg-14"></i> <span>3</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-teal">C</span></div>
+                    <div class="list-body">
+                      <h6 class="list-title"><a href="">How Designers Engineer Luck Into Video Games</a></h6>
+                      <div class="list-footer">
+                        <a href=""><i data-feather="eye" class="svg-14"></i> <span>1,021</span></a>
+                        <a href=""><i data-feather="message-square" class="svg-14"></i> <span>14</span></a>
+                        <a href=""><i data-feather="share" class="svg-14"></i> <span>8</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-pink">S</span></div>
+                    <div class="list-body">
+                      <h6 class="list-title"><a href="">The Secret Betting Strategy That Beats Online Bookmakers</a></h6>
+                      <div class="list-footer">
+                        <a href=""><i data-feather="eye" class="svg-14"></i> <span>509</span></a>
+                        <a href=""><i data-feather="message-square" class="svg-14"></i> <span>7</span></a>
+                        <a href=""><i data-feather="share" class="svg-14"></i> <span>1</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-blue">S</span></div>
+                    <div class="list-body">
+                      <h6 class="list-title"><a href="">The Secret Betting Strategy That Beats Online Bookmakers</a></h6>
+                      <div class="list-footer">
+                        <a href=""><i data-feather="eye" class="svg-14"></i> <span>509</span></a>
+                        <a href=""><i data-feather="message-square" class="svg-14"></i> <span>7</span></a>
+                        <a href=""><i data-feather="share" class="svg-14"></i> <span>1</span></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div><!-- card-body -->
+              <div class="card-footer bg-transparent tx-center pd-y-10">
+                <a href="" class="link-03 tx-12 tx-medium">See All Stories <i class="icon ion-android-arrow-forward"></i></a>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-md-8 col-lg-8 col-xl-6 mg-t-15 mg-sm-t-20 order-md-1 order-xl-0">
+            <div class="card card-hover card-profile-one">
+              <div class="card-body">
+                <div class="media">
+                  <div class="avatar avatar-xxl"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                  <div class="media-body">
+                    <h5 class="card-title">Katherine Lumaad</h5>
+                    <p class="card-desc">Explorer. Bacon fanatic. Communicator. Analyst. Student. Social media advocate. Lifelong zombie guru. Gamer. Internet enthusiast.</p>
+
+                    <div class="media-footer">
+                      <div>
+                        <h6>460</h6>
+                        <label>Posts</label>
+                      </div>
+                      <div>
+                        <h6>132</h6>
+                        <label>Followers</label>
+                      </div>
+                      <div>
+                        <h6>84</h6>
+                        <label>Following</label>
+                      </div>
+                    </div><!-- media-footer -->
+                  </div>
+                </div><!-- media -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-md-4 col-lg col-xl-3 mg-t-15 mg-sm-t-20">
+            <div class="card card-hover card-profile-two ht-xl-100p">
+              <div class="card-body">
+                <div class="avatar avatar-md"><img src="https://via.placeholder.com/300/637382/fff" class="rounded-circle" alt=""></div>
+                <h6 class="card-title">Samantha Perez</h6>
+                <p class="card-desc">Explorer. Social media hero. Bacon fanatic. Student.</p>
+              </div><!-- card-body -->
+              <div class="card-footer bg-transparent pd-t-0 bd-t-0">
+                <a href=""><i data-feather="user-plus" class="svg-16"></i></a>
+                <a href=""><i data-feather="arrow-right" class="svg-16"></i></a>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-md-4 col-lg col-xl-3 mg-t-15 mg-sm-t-20">
+            <div class="card card-profile-two card-dark bg-primary bd-primary ht-xl-100p">
+              <div class="card-body">
+                <div class="avatar avatar-md"><img src="https://via.placeholder.com/300/637382/fff" class="rounded-circle" alt=""></div>
+                <h6 class="card-title">Reynante Labares</h6>
+                <p class="card-desc">Internet fanatic. Food expert. Gamer. Organizer.</p>
+              </div><!-- card-body -->
+              <div class="card-footer bg-transparent pd-t-0 bd-t-0">
+                <a href=""><i data-feather="user-plus" class="svg-16"></i></a>
+                <a href=""><i data-feather="arrow-right" class="svg-16"></i></a>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+        </div><!-- row -->
+
+        <div class="row row-sm mg-t-15 mg-sm-t-20">
+          <div class="col-sm-6 col-xl-4">
+            <div class="card card-hover card-profile-three">
+              <div class="card-body">
+                <div class="avatar avatar-online avatar-xxl mg-b-20"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                <h5 class="profile-name"><a href="">Pepper Xo</a></h5>
+                <p class="profile-position">UI/UX Designer</p>
+                <nav class="nav mg-b-15">
+                  <a href="" class="badge badge-primary-light">HTML5</a>
+                  <a href="" class="badge badge-success-light">CSS3</a>
+                  <a href="" class="badge badge-warning-light">Javascript</a>
+                  <a href="" class="badge badge-danger-light">React</a>
+                  <a href="" class="badge badge-white">4+</a>
+                </nav>
+                <p class="profile-bio">Explorer. Bacon fanatic. Communicator. Analyst. Student. Social media advocate. Lifelong zombie guru. Gamer. Internet enthusiast.</p>
+              </div><!-- card-body -->
+              <div class="card-footer row no-gutters">
+                <div class="col">
+                  <a href=""><i data-feather="message-square" class="svg-14"></i> Message</a>
+                </div>
+                <div class="col bd-l">
+                  <a href=""><i data-feather="user" class="svg-14"></i> View Profile</a>
+                </div>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4 mg-t-15 mg-sm-t-0">
+            <div class="card card-hover card-profile-three">
+              <div class="card-body">
+                <div class="avatar avatar-online avatar-xxl mg-b-20"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                <h5 class="profile-name"><a href="">Jillian Janson</a></h5>
+                <p class="profile-position">UI/UX Designer</p>
+                <nav class="nav mg-b-15">
+                  <a href="" class="badge badge-primary">HTML5</a>
+                  <a href="" class="badge badge-success">CSS3</a>
+                  <a href="" class="badge badge-warning">Javascript</a>
+                  <a href="" class="badge badge-danger">React</a>
+                  <a href="" class="badge badge-white">4+</a>
+                </nav>
+                <p class="profile-bio">Explorer. Bacon fanatic. Communicator. Analyst. Student. Social media advocate. Lifelong zombie guru. Gamer. Internet enthusiast.</p>
+              </div><!-- card-body -->
+              <div class="card-footer row no-gutters">
+                <div class="col">
+                  <a href=""><i data-feather="message-square" class="svg-14"></i> Message</a>
+                </div>
+                <div class="col bd-l">
+                  <a href=""><i data-feather="user" class="svg-14"></i> View Profile</a>
+                </div>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-sm-6 col-xl-4">
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- content-body -->
+    </div><!-- content -->
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/feather-icons/feather.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/jquery.flot/jquery.flot.js"></script>
+    <script src="../lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="../lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="../lib/js-cookie/js.cookie.js"></script>
+
+    <script src="../assets/js/cassie.js"></script>
+    <script src="../assets/js/flot.sampledata.js"></script>
+    <script>
+      $(function(){
+
+        'use strict'
+
+        var flotSeries = {
+          series: {
+            stack: 0,
+            bars: {
+              show: true,
+              lineWidth: 0,
+              barWidth: .6,
+              fill: 1
+            }
+          },
+          grid: {
+            labelMargin: 0,
+            borderWidth: 0
+          },
+          yaxis: {
+            show: false,
+            max: 80
+          },
+          xaxis: { show: false }
+        };
+
+        $.plot('#flotChart1', [{
+          data: [[0,0],[1,0],[2,0],[3,70],[4,0]],
+          color: '#5556fd'
+        },{
+          data: [[0,30],[1,20],[2,50],[3,0],[4,30]],
+          color: '#d9dfe7'
+        }], flotSeries);
+
+        $.plot('#flotChart2', [{
+          data: [[0,0],[1,70],[2,0],[3,0],[4,0]],
+          color: '#e83e8c'
+        },{
+          data: [[0,30],[1,0],[2,50],[3,60],[4,30]],
+          color: '#d9dfe7'
+        }], flotSeries);
+
+        $.plot('#flotChart3', [{
+          data: [[0,0],[1,0],[2,0],[3,0],[4,70]],
+          color: '#2bcb9c'
+        },{
+          data: [[0,30],[1,50],[2,40],[3,50],[4,0]],
+          color: '#d9dfe7'
+        }], flotSeries);
+
+        $.plot('#flotChart4', [{
+          data: df1,
+          color: '#38c4fa'
+        }], {
+          series: {
+            shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 1.5,
+              fill: false
+            },
+            points: {
+              show: true,
+              radius: 2,
+              lineWidth: 1.5
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 10,
+          },
+          yaxis: {
+            show: false
+          },
+          xaxis: {
+            show: true,
+            color: '#d6f3fe',
+            min: 9,
+            max: 21,
+            ticks: [[10,'Aug 05'],[12,'Aug 10'],[14,'Aug 15'],[16,'Aug 20'],[18,'Aug 25'],[20,'Aug 30']]
+          }
+        });
+
+        $.plot('#flotChart5', [{
+          data: df1,
+          color: '#22d273'
+        }], {
+          series: {
+            shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 1.5,
+              fill: true,
+              fillColor: { colors: [ { opacity: 0 }, { opacity: 0.5 } ] }
+            },
+            points: {
+              show: true,
+              radius: 2,
+              lineWidth: 1.5
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 10,
+          },
+          yaxis: {
+            show: false
+          },
+          xaxis: {
+            show: true,
+            color: '#d8f8e6',
+            min: 19,
+            max: 31,
+            ticks: [[20,'Aug 05'],[22,'Aug 10'],[24,'Aug 15'],[26,'Aug 20'],[28,'Aug 25'],[30,'Aug 30']]
+          }
+        });
+
+        $.plot('#flotChart6', [{
+          data: df1,
+          color: '#5b8ef9'
+        }], {
+          series: {
+            shadowSize: 0,
+            bars: {
+              show: true,
+              lineWidth: 0,
+              align: 'center',
+              barWidth: .3,
+              fill: 1
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 10,
+          },
+          yaxis: {
+            show: false
+          },
+          xaxis: {
+            show: true,
+            color: '#f2f2ff',
+            min: 49.3,
+            max: 60.8,
+            ticks: [[50,'05'],[52,'10'],[54,'15'],[56,'20'],[58,'25'],[60,'30']]
+          }
+        });
+
+      })
+    </script>
+  </body>
+</html>

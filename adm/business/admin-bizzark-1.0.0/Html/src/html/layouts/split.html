@@ -1,0 +1,17 @@
+{% set split = true %}
+{% set layout = layout or "default" %}
+{% set bodyClass = "layout-" + layout + " app-chat" %}
+{% extends "layouts/" + layout + ".html" %}
+
+{% block page %}
+<div class="app-chat-container{% if 'fixed' in prefix %} {{ containerClass }} page__container{% endif %}">
+  <div class="row m-0 h-100">
+    <div class="col d-flex flex-column p-0 h-100"{% if page_scrollbar !== false %} data-perfect-scrollbar{% endif %}>
+      {{ super() }}
+    </div>
+    <div class="col bg-white border-left d-none d-lg-flex flex-column p-0 h-100 filters-sidebar">
+      {% include 'pages/_' + (page or slug) + '.split.html' ignore missing %}
+    </div>
+  </div>
+</div>
+{% endblock %}

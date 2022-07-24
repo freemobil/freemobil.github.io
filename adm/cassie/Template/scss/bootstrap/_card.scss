@@ -1,0 +1,48 @@
+
+.card {
+  border-radius: 0;
+  border-color: $border-color;
+  box-shadow: $shadow-base;
+  @include transition(all 0.25s);
+
+  &.card-dark {
+    color: rgba(#fff, .7);
+    .card-title { color: #fff; }
+
+    a {
+      color: inherit;
+      @include hover-focus() { color: #fff; }
+    }
+  }
+}
+
+.card-header {
+  padding: 12px 15px;
+  @include media-breakpoint-up(sm) { padding: 20px; }
+
+  .nav-card-icon { line-height: 0; }
+}
+
+.card-body {
+  padding: 15px;
+  @include media-breakpoint-up(sm) { padding: 20px; }
+}
+
+.card-link {
+  color: $color-text-02;
+  text-decoration: underline;
+
+  @include hover-focus() { color: $color-text-01; }
+}
+
+.card-title {
+  color: $color-text-01;
+  line-height: 1;
+}
+
+.card-title-uppercase {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,186 @@
+
+{% set companies = [{
+  name: "Moon Ltd", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$32,124",
+  status: "PAID"
+}, {
+  name: "Blue Space Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$13,593",
+  status: "PAID"
+}, {
+  name: "Visual Design", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$2,229",
+  status: "DUE"
+}, {
+  name: "Fox Technologies", 
+  growth: "54%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$41,139",
+  status: "PAID"
+}, {
+  name: "JMS Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$3,002",
+  status: "DUE"
+}, {
+  name: "Langston Corp", 
+  growth: "9%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$2,884",
+  status: "PAID"
+}, {
+  name: "Compare Solutions", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$15,844",
+  status: "PAID"
+}, {
+  name: "Hill Enterprises", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$9,772",
+  status: "PAID"
+}, {
+  name: "Monday Ltd", 
+  growth: "17%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$44,172",
+  status: "PAID"
+}, {
+  name: "Hexio Enterprise", 
+  growth: "31%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$21,984",
+  status: "PAID"
+},{
+  name: "Moon Ltd", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$32,124",
+  status: "PAID"
+}, {
+  name: "Blue Space Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$13,593",
+  status: "PAID"
+}, {
+  name: "Visual Design", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$2,229",
+  status: "DUE"
+}, {
+  name: "Fox Technologies", 
+  growth: "54%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$41,139",
+  status: "PAID"
+}, {
+  name: "JMS Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$3,002",
+  status: "DUE"
+}, {
+  name: "Langston Corp", 
+  growth: "9%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$2,884",
+  status: "PAID"
+}, {
+  name: "Compare Solutions", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$15,844",
+  status: "PAID"
+}, {
+  name: "Hill Enterprises", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$9,772",
+  status: "PAID"
+}, {
+  name: "Monday Ltd", 
+  growth: "17%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$44,172",
+  status: "PAID"
+}, {
+  name: "Hexio Enterprise", 
+  growth: "31%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$21,984",
+  status: "PAID"
+}] 
+%}
+
+
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading d-flex align-items-center">
+      <div class="flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Companies</li>
+          </ol>
+        </nav>
+        <h1 class="m-0">Companies</h1>
+      </div>
+      <a href="" class="btn btn-success ml-3">Create <i class="material-icons">add</i></a>
+    </div>
+  </div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+  
+   {% if split %}
+  <div class="{{ containerClass }} page__container">
+    <div class="card">
+      {% include 'pages/_companies.table.html' %}
+    </div>
+  </div>
+  {% else %}
+  <div class="{{ containerClass }} page__container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card bg-faded">
+        {% include 'pages/_companies.split.html' %}
+        </div>
+      </div>
+      <div class="col-md-9">
+      <div class="card">
+        {% include 'pages/_companies.table.html' %}
+      </div>
+      </div>
+        
+    </div>
+  </div>
+  {% endif %}
+

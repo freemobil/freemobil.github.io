@@ -1,0 +1,302 @@
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid $border-color;
+  @include transition(all 0.25s);
+
+  @include media-breakpoint-up(sm) { height: 70px; }
+
+  @include media-breakpoint-up(lg) {
+    height: 80px;
+    left: $sidebar-width - 9px;
+  }
+
+  @include media-breakpoint-up(xl) { left: $sidebar-width; }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+
+  @include media-breakpoint-up(sm) { padding-left: 10px; }
+
+  .burger-menu {
+    color: $color-text-02;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition(all 0.1s);
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include hover-focus() { color: $color-text-01; }
+    @include hover() { transform: scale(1.2); }
+  }
+}
+
+.header-search {
+  display: none;
+  align-items: center;
+  margin-left: 10px;
+  padding: 0 7px;
+  height: 36px;
+  background-color: #fff;
+  border: 1px solid $gray-300;
+  @include transition($transition-base);
+
+  @include media-breakpoint-up(sm) { display: flex; }
+
+  &.active {
+    background-color: #fff;
+    border-color: $gray-400;
+    box-shadow: $shadow-01, $shadow-02;
+  }
+
+  svg {
+    stroke-width: 2.5px;
+    color: $color-text-02;
+    width: 18px;
+    height: 18px;
+  }
+
+  .form-control {
+    border-radius: 0;
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 250px;
+
+    &::placeholder {
+      color: $color-text-04;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: none;
+      color: $color-text-01;
+    }
+  }
+}
+
+.header-right {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-up(sm) { padding-right: 20px; }
+  //@include media-breakpoint-up(lg) { padding-right: 30px; }
+
+  a {
+    color: $color-text-03;
+    @include hover-focus() { color: $color-text-01; }
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+
+    @include media-breakpoint-up(lg) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .header-help-link {
+    svg { @include transition(all 0.2s); }
+    @include hover-focus() {
+      svg { transform: scale(1.15); }
+    }
+  }
+
+  .dropdown-link {
+    color: $color-text-03;
+    @include hover-focus() { color: $color-text-01; }
+  }
+
+  .dropdown-notification {
+    margin-left: 5px;
+    @include media-breakpoint-up(lg) { margin-left: 10px; }
+
+    .dropdown-link {
+      &.new {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -3px;
+          right: 2px;
+          width: 7px;
+          height: 7px;
+          @include border-radius(100%);
+          background-color: $red;
+        }
+      }
+
+      svg { @include transition(all 0.2s); }
+
+      @include hover-focus() {
+        svg { transform: scale(1.1); }
+      }
+    }
+
+    .dropdown-menu {
+      margin-top: 21px;
+      margin-right: -5px;
+      width: 310px;
+      border-radius: 0;
+      border-radius: 0;
+      padding: 0;
+      border-color: darken($border-color, 2%);
+      box-shadow: $shadow-01, $shadow-base;
+
+      @include media-breakpoint-up(sm) { margin-top: 26px; }
+      @include media-breakpoint-up(lg) { margin-top: 31.5px; }
+    }
+
+    .dropdown-menu-header {
+      padding: 12px 15px 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $border-color;
+
+      h6 {
+        margin-bottom: 0;
+        font-weight: $font-weight-medium;
+      }
+
+      svg {
+        margin-top: -2px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .dropdown-item {
+      padding: 10px 20px;
+      display: flex;
+      color: $color-text-02;
+      white-space: normal;
+
+      @include hover-focus() { background-color: darken($color-ui-01, 2%); }
+
+      &:active {
+        background-color: $color-ui-02;
+      }
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .dropdown-item-body {
+      flex: 1;
+      margin-left: 15px;
+
+      p {
+        margin-bottom: 2px;
+        font-size: $font-size-sm;
+      }
+
+      strong {
+        font-weight: $font-weight-medium;
+        color: $color-text-01;
+      }
+
+      span {
+        color: $color-text-04;
+        font-size: 12px;
+        display: block;
+      }
+    }
+
+    .dropdown-menu-footer {
+      border-top: 1px solid $border-color;
+      text-align: center;
+      padding: 10px 0;
+      font-size: $font-size-sm;
+    }
+  }
+
+  .dropdown-loggeduser {
+    margin-left: 10px;
+
+    .dropdown-link {
+      .avatar { @include transition(all 0.2s); }
+
+      @include hover-focus() {
+        .avatar { transform: scale(1.1); }
+      }
+    }
+
+    .dropdown-menu {
+      margin-top: 12px;
+      margin-right: -5px;
+      min-width: 240px;
+      border-radius: 0;
+      padding: 0;
+      border-color: darken($border-color, 2%);
+      box-shadow: $shadow-01, $shadow-base;
+
+      @include media-breakpoint-up(sm) { margin-top: 18.5px; }
+      @include media-breakpoint-up(md) { margin-top: 17px; }
+      @include media-breakpoint-up(lg) { margin-top: 22px; }
+    }
+
+    .dropdown-menu-header {
+      padding: 20px;
+
+      h6 {
+        font-weight: $font-weight-medium;
+        margin-bottom: 2px;
+      }
+
+      span {
+        color: $color-text-03;
+        font-size: $font-size-sm;
+      }
+    }
+
+    .dropdown-menu-body {
+      padding: 0 15px 20px;
+    }
+
+    .dropdown-item {
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      font-size: $font-size-sm;
+      color: $color-text-02;
+
+      @include hover-focus() { background-color: darken($color-ui-01, 2%); }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        stroke-width: 2.5px;
+        margin-right: 12px;
+        color: $color-text-01;
+      }
+
+      &:active {
+        background-color: $color-ui-04;
+        color: #fff;
+
+        svg { color: #fff; }
+      }
+    }
+  }
+}

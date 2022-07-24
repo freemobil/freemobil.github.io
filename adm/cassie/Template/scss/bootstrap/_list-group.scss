@@ -1,0 +1,20 @@
+
+.list-group-item {
+  padding: 10px 15px;
+  border-color: $border-color;
+  box-shadow: $shadow-base;
+
+  &.active {
+    background-color: $color-brand-01;
+    border-color: transparent;
+  }
+
+  &.disabled {
+    background-color: $color-ui-01;
+    color: $color-text-04;
+  }
+}
+
+.list-group-item-action {
+  @include hover-focus() { background-color: lighten($color-brand-01, 38%); }
+}

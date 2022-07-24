@@ -1,0 +1,26 @@
+.card__course {
+  .card-header-dark {
+    vertical-align: middle;
+    .card-header__title, .card-header__title a {
+      color: #ffffff;
+      &:hover { text-decoration: none;}
+      .course__title { color: rgba(255,255,255,.54); display: block; font-size: .9rem; margin-bottom: 5px; }
+    }
+    
+  }
+  .card-header {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .play-button {display: none;}
+  .card-img-top {
+    background: #000000;
+    color: $primary;
+    svg {
+      background:#fff; border-radius: 100%;
+      padding: 2px;
+    }
+  }
+}

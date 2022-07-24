@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Activity</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
+
+    <!-- Font Awesome FREE Icons -->
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133433427-1');
+</script> -->
+
+
+    <!-- Facebook Pixel Code -->
+    <!-- <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '327167911228268');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=327167911228268&ev=PageView&noscript=1"
+/></noscript> -->
+    <!-- End Facebook Pixel Code -->
+
+
+
+
+
+
+</head>
+
+<body class="layout-fluid layout-sticky-subnav">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="preloader"></div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+        <!-- Header -->
+
+        <div id="header" class="mdk-header bg-dark js-mdk-header m-0" data-fixed>
+            <div class="mdk-header__content">
+
+                <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-dark pr-0 pr-0" id="navbar" data-primary>
+                    <div class="container-fluid p-0">
+
+                        <!-- Navbar toggler -->
+
+                        <button class="navbar-toggler navbar-toggler-custom navbar-toggler-right d-block" type="button" data-toggle="sidebar">
+                            <span class="material-icons">apps</span>
+                        </button>
+
+
+
+                        <!-- Navbar Brand -->
+                        <a href="fluid-dashboard.html" class="navbar-brand ">
+                            <img class="navbar-brand-icon" src="assets/images/logo@2x.png" height="26" alt="BizzArk">
+                            <span>BizzArk</span>
+                        </a>
+
+
+
+                        <div class="dropdown d-none d-sm-flex border-right navbar-border navbar-height align-items-center">
+                            <a href="#demos" class="btn btn-navbar dropdown-toggle mx-3" data-toggle="dropdown">Social</a>
+                            <div id="demos" class="dropdown-menu">
+                                <a class="dropdown-item" href="fluid-dashboard.html">CRM</a>
+                                <a class="dropdown-item" href="fluid-app-projects.html">Projects</a>
+                                <a class="dropdown-item" href="fluid-student-dashboard.html">Learning</a>
+                                <a class="dropdown-item active" href="fluid-social-activity.html">Social</a>
+                            </div>
+                        </div>
+                        <span class="mr-3"></span>
+
+
+
+                        <form class="search-form d-none d-xl-flex flex mr-3" action="fluid-index.html">
+                            <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </form>
+
+
+                        <ul class="nav navbar-nav ml-auto d-none d-md-flex border-left">
+                            <!-- <li class="nav-item">
+        <a href="" class="nav-link">
+          <i class="material-icons">help_outline</i> Get Help
+        </a>
+      </li>
+      <li class="nav-item mr-3">
+        <a href="fluid-pricing.html" class="btn btn-outline-warning">
+          <i class="material-icons">star</i> PRO
+        </a>
+      </li> -->
+                            <li class="nav-item dropdown">
+                                <a href="#notifications_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                                    <i class="material-icons nav-icon navbar-notifications-indicator">notifications_none</i>
+                                </a>
+                                <div id="notifications_menu" class="dropdown-menu dropdown-menu-right navbar-notifications-menu">
+                                    <div class="dropdown-item d-flex align-items-center py-2">
+                                        <span class="flex navbar-notifications-menu__title m-0">Notifications</span>
+                                        <a href="javascript:void(0)" class="text-muted"><small>Clear all</small></a>
+                                    </div>
+                                    <div class="navbar-notifications-menu__content" data-perfect-scrollbar>
+                                        <div class="py-2">
+
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <div class="avatar avatar-sm" style="width: 32px; height: 32px;">
+                                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="">A.Demian</a> left a comment on <a href="">Stack</a><br>
+                                                    <small class="text-muted">1 minute ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    New user <a href="#">Peter Parker</a> signed up.<br>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title rounded-circle">JD</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                    <div>Hey, how are you? What about our next meeting</div>
+                                                    <small class="text-muted">2 minutes ago</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <div class="avatar avatar-sm" style="width: 32px; height: 32px;">
+                                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="">A.Demian</a> left a comment on <a href="">Stack</a><br>
+                                                    <small class="text-muted">1 minute ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    New user <a href="#">Peter Parker</a> signed up.<br>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title rounded-circle">JD</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                    <div>Hey, how are you? What about our next meeting</div>
+                                                    <small class="text-muted">2 minutes ago</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <div class="avatar avatar-sm" style="width: 32px; height: 32px;">
+                                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="">A.Demian</a> left a comment on <a href="">Stack</a><br>
+                                                    <small class="text-muted">1 minute ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    New user <a href="#">Peter Parker</a> signed up.<br>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title rounded-circle">JD</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                    <div>Hey, how are you? What about our next meeting</div>
+                                                    <small class="text-muted">2 minutes ago</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="dropdown-item text-center navbar-notifications-menu__footer">View All</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav d-none d-sm-flex border-left navbar-border navbar-height align-items-center">
+                            <li class="nav-item dropdown">
+                                <a href="#account_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                                    <!-- <img src="assets/images/avatar/demi.png" class="rounded-circle" width="40" alt="Frontted"> -->
+                                    <span class="avatar avatar-sm">
+                                        <span class="avatar-title rounded-circle bg-warning">AD</span>
+                                    </span>
+                                </a>
+                                <div id="account_menu" class="dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-item-text dropdown-item-text--lh">
+                                        <div><strong>Adrian Demian</strong></div>
+                                        <div>@adriandemian</div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="fluid-dashboard.html">Dashboard</a>
+                                    <a class="dropdown-item" href="fluid-profile.html">My profile</a>
+                                    <a class="dropdown-item" href="fluid-edit-account.html">Edit account</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="fluid-login.html">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- // END Header -->
+
+        <!-- Header Layout Content -->
+        <div class="mdk-header-layout__content page">
+
+
+            <div class="page__header">
+                <div class="container-fluid  page__heading-container">
+                    <div class="page__heading">
+
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="#">Social</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Activity</li>
+                                    </ol>
+                                </nav>
+                                <h1 class="m-0">Activity</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // END page__header -->
+
+
+            <div class="page__header page__header-nav">
+                <div class="container-fluid page__container">
+                    <div class="navbar navbar-secondary navbar-light navbar-expand-sm p-0">
+                        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarsExample03" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="navbar-collapse collapse" id="navbarsExample03">
+
+
+                            <ul class="nav navbar-nav flex">
+
+
+
+
+
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="fluid-social-activity.html">Activity</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Profile</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="fluid-social-profile.html">Profile</a>
+                                        <a class="dropdown-item" href="fluid-social-edit-account.html">Edit Account</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="fluid-social-blog.html">Blog</a>
+                                        <a class="dropdown-item" href="fluid-social-edit-post.html">Edit Post</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fluid-social-discussions.html">Discussions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fluid-social-chat.html">Chat</a>
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="fluid-ui-buttons.html">Buttons</a>
+                                        <a class="dropdown-item" href="fluid-ui-alerts.html">Alerts</a>
+                                        <a class="dropdown-item" href="fluid-ui-avatars.html">Avatars</a>
+                                        <a class="dropdown-item" href="fluid-ui-modals.html">Modals</a>
+                                        <a class="dropdown-item" href="fluid-ui-charts.html">Charts</a>
+                                        <a class="dropdown-item" href="fluid-ui-icons.html">Icons</a>
+                                        <a class="dropdown-item" href="fluid-ui-forms.html">Forms</a>
+                                        <a class="dropdown-item" href="fluid-ui-range-sliders.html">Range Sliders</a>
+                                        <a class="dropdown-item" href="fluid-ui-datetime.html">Time &amp; Date</a>
+                                        <a class="dropdown-item" href="fluid-ui-tables.html">Tables</a>
+                                        <a class="dropdown-item" href="fluid-ui-tabs.html">Tabs</a>
+                                        <a class="dropdown-item" href="fluid-ui-loaders.html">Loaders</a>
+                                        <a class="dropdown-item" href="fluid-ui-drag.html">Drag &amp; Drop</a>
+                                        <a class="dropdown-item" href="fluid-ui-pagination.html">Pagination</a>
+                                        <a class="dropdown-item" href="fluid-ui-vector-maps.html">Vector Maps</a>
+                                    </div>
+                                </li>
+
+
+                                <li class="nav-item ml-sm-auto dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Layouts</a>
+                                    <div class="dropdown-menu dropdown-menu-sm-right">
+                                        <a class="dropdown-item" href="social-activity.html">Default</a>
+                                        <a class="dropdown-item active" href="fluid-social-activity.html">Full Width Navs</a>
+                                        <a class="dropdown-item" href="fixed-social-activity.html">Fixed Navs</a>
+                                        <a class="dropdown-item" href="mini-social-activity.html">Mini Sidebar + Navs</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container-fluid page__container">
+
+
+                <div class="row">
+                    <div class="col-md-8">
+
+
+                        <div class="activity-section">
+
+                            <div class="activity-item d-flex">
+                                <div class="activity-icon activity--color--link-color">
+                                    <i class="material-icons align-middle">description</i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="card p-3">
+                                        <div>
+                                            <a href="#" class="dropdown-toggle float-right" id="activity1" data-toggle="dropdown" data-caret="false" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons text-muted align-middle">more_horiz</i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="activity1">
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                            <a href="#">Andrew Robles</a> <small class="text-muted"> now</small>
+                                        </div>
+                                        <div class="pt-1">
+                                            <div class="mb-2">
+                                                <p>Uploaded a new <i class="material-icons align-middle">local_movies</i>video</p><iframe class="timeline-video" src="https://player.vimeo.com/video/97243285?title=0&byline=0&portrait=0" allowfullscreen></iframe>
+                                            </div>
+                                            <small class="d-flex align-items-center">
+                                                <a href="#" class="text-muted mr-2">
+                                                    <i class="material-icons icon-14pt mr-1">comment</i> 2 comments
+                                                </a>
+                                                <a href="#" class="text-muted">
+                                                    <i class="material-icons icon-14pt mr-1">thumb_up</i> 21 likes
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item d-flex">
+                                <div class="activity-icon activity--color--success">
+                                    <i class="material-icons align-middle">email</i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="card p-3">
+                                        <div>
+                                            <a href="#" class="dropdown-toggle float-right" id="activity2" data-toggle="dropdown" data-caret="false" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons text-muted align-middle">more_horiz</i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="activity2">
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                            <a href="#">Michael Fox</a> <small class="text-muted"> 20 min ago</small>
+                                        </div>
+                                        <div class="pt-1">
+                                            <div class="mb-2">Sent an email <strong>"Completed the first drafts"</strong> <a href="#"><i class="material-icons md-18 align-middle">remove_red_eye</i> View</a></div>
+                                            <small class="d-flex align-items-center">
+                                                <a href="#" class="text-muted mr-2">
+                                                    <i class="material-icons icon-14pt mr-1">comment</i> 4 comments
+                                                </a>
+                                                <a href="#" class="text-muted">
+                                                    <i class="material-icons icon-14pt mr-1">thumb_up</i> 5 likes
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item d-flex">
+                                <div class="activity-icon activity--color--primary">
+                                    <i class="material-icons align-middle">group</i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="card p-3">
+                                        <div>
+                                            <a href="#" class="dropdown-toggle float-right" id="activity3" data-toggle="dropdown" data-caret="false" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons text-muted align-middle">more_horiz</i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="activity3">
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                            <a href="#">Francis Smart</a> <small class="text-muted"> 2 hrs ago</small>
+                                        </div>
+                                        <div class="pt-1">
+                                            <div class="mb-2">Was added to company <a href="#" class="text-muted"><i class="material-icons align-middle md-18">business</i> Themefy LTD</a></div>
+                                            <small class="d-flex align-items-center">
+                                                <a href="#" class="text-muted mr-2">
+                                                    <i class="material-icons icon-14pt mr-1">comment</i> 2 comments
+                                                </a>
+                                                <a href="#" class="text-muted">
+                                                    <i class="material-icons icon-14pt mr-1">thumb_up</i> 1 likes
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item d-flex">
+                                <div class="activity-icon activity--color--warning">
+                                    <i class="material-icons align-middle">monetization_on</i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="card p-3">
+                                        <div>
+                                            <a href="#" class="dropdown-toggle float-right" id="activity4" data-toggle="dropdown" data-caret="false" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons text-muted align-middle">more_horiz</i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="activity4">
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                            <a href="#">Samantha Ray</a> <small class="text-muted"> 2 days ago</small>
+                                        </div>
+                                        <div class="pt-1">
+                                            <div class="mb-2">
+                                                <p>
+                                                    Bought products worth of <strong>$120</strong> with order <a href="#">#21312</a></p>
+                                                <table class="table table-bordered table-sm">
+                                                    <tr>
+                                                        <td>1. <a href="#">TouchScreen</a></td>
+                                                        <td style="width:50px">1 pcs</td>
+                                                        <td style="width:100px" class="text-center">$90</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2. <a href="#">Keyboard</a></td>
+                                                        <td style="width:50px">2 pcs</td>
+                                                        <td style="width:100px" class="text-center">$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <small class="d-flex align-items-center">
+                                                <a href="#" class="text-muted mr-2">
+                                                    <i class="material-icons icon-14pt mr-1">comment</i> 21 comments
+                                                </a>
+                                                <a href="#" class="text-muted">
+                                                    <i class="material-icons icon-14pt mr-1">thumb_up</i> 195 likes
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <div class="card mt-4 mt-md-0">
+                            <img src="assets/images/luke-chesser-2347.jpg" class="card-img cover-photo" alt="">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <div class="author-img">
+                                        <img src="assets/images/avatars/andrew-robles-300868.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <p class="lead mb-0">Andrew Robles</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">I want to talk about two things that are quite important.. <a href="#">read more</a></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="#" class="social social-facebook">
+                                    <svg viewBox="0 0 16 16" width="30%" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                        <path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" /></svg>
+                                </a>
+                                <a href="#" class="social social-twitter">
+                                    <svg viewBox="0 0 16 16" width="30%" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                        <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" /></svg>
+                                </a>
+                                <a href="#" class="social social-instagram">
+                                    <svg viewBox="0 0 16 16" width="30%" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                        <path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28-.38-.15-.64-.32-.92-.6-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z" /></svg>
+                                </a>
+                                <a href="#" class="social social-dribbble">
+                                    <svg viewBox="0 0 16 16" width="30%" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                        <path d="M8 16c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm6.747-6.905c-.234-.074-2.115-.635-4.257-.292.894 2.456 1.258 4.456 1.328 4.872 1.533-1.037 2.624-2.68 2.93-4.58zM10.67 14.3c-.102-.6-.5-2.688-1.46-5.18l-.044.014C5.312 10.477 3.93 13.15 3.806 13.4c1.158.905 2.614 1.444 4.194 1.444.947 0 1.85-.194 2.67-.543zm-7.747-1.72c.155-.266 2.03-3.37 5.555-4.51.09-.03.18-.056.27-.08-.173-.39-.36-.778-.555-1.16-3.413 1.02-6.723.977-7.023.97l-.003.208c0 1.755.665 3.358 1.756 4.57zM1.31 6.61c.307.005 3.122.017 6.318-.832-1.132-2.012-2.353-3.705-2.533-3.952-1.912.902-3.34 2.664-3.784 4.785zM6.4 1.368c.188.253 1.43 1.943 2.548 4 2.43-.91 3.46-2.293 3.582-2.468C11.323 1.827 9.736 1.176 8 1.176c-.55 0-1.087.066-1.6.19zm6.89 2.322c-.145.194-1.29 1.662-3.816 2.694.16.325.31.656.453.99.05.117.1.235.147.352 2.274-.286 4.533.172 4.758.22-.015-1.613-.59-3.094-1.543-4.257z" /></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- // END header-layout__content -->
+
+    </div>
+    <!-- // END header-layout -->
+
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app-settings layout-active="fluid" :layout-location="{
+      'default': 'social-activity.html',
+      'fixed': 'fixed-social-activity.html',
+      'fluid': 'fluid-social-activity.html',
+      'mini': 'mini-social-activity.html'
+    }"></app-settings>
+    </div>
+    <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="end">
+        <div class="mdk-drawer__content">
+            <div class="sidebar sidebar-light sidebar-left" data-perfect-scrollbar>
+                <div class="sidebar-heading sidebar-m-t">Menu</div>
+                <ul class="sidebar-menu">
+
+
+
+
+
+
+
+                    <li class="sidebar-menu-item active">
+                        <a class="sidebar-menu-button" href="fluid-social-activity.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">trending_up</i>
+                            <span class="sidebar-menu-text">Activity</span>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="fluid-social-profile.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">people</i>
+                            <span class="sidebar-menu-text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="fluid-social-edit-account.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">portrait</i>
+                            <span class="sidebar-menu-text">Edit Account</span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="fluid-social-blog.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">filter_frames</i>
+                            <span class="sidebar-menu-text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item ">
+                        <a class="sidebar-menu-button" href="fluid-social-blog-post.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">receipt</i>
+                            <span class="sidebar-menu-text">Blog Post</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item ">
+                        <a class="sidebar-menu-button" href="fluid-social-edit-post.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">edit</i>
+                            <span class="sidebar-menu-text">Edit Post</span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="fluid-social-discussions.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">forum</i>
+                            <span class="sidebar-menu-text">Discussions</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" href="fluid-social-chat.html">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">chat_bubble_outline</i>
+                            <span class="sidebar-menu-text">Chat</span>
+                        </a>
+                    </li>
+
+
+                    <li class="sidebar-menu-item">
+                        <a class="sidebar-menu-button" data-toggle="collapse" href="#layouts_menu">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">view_compact</i>
+                            <span class="sidebar-menu-text">Layouts</span>
+                            <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                        </a>
+                        <ul class="sidebar-submenu collapse" id="layouts_menu">
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="social-activity.html">
+                                    <span class="sidebar-menu-text">Default</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item active">
+                                <a class="sidebar-menu-button" href="fluid-social-activity.html">
+                                    <span class="sidebar-menu-text">Full Width Navs</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="fixed-social-activity.html">
+                                    <span class="sidebar-menu-text">Fixed Navs</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button" href="mini-social-activity.html">
+                                    <span class="sidebar-menu-text">Mini Sidebar + Navs</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sidebar-heading">UI Components</div>
+                <div class="sidebar-block p-0">
+                    <ul class="sidebar-menu" id="components_menu">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-buttons.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">mouse</i>
+                                <span class="sidebar-menu-text">Buttons</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-alerts.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">notifications</i>
+                                <span class="sidebar-menu-text">Alerts</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-avatars.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">person</i>
+                                <span class="sidebar-menu-text">Avatars</span>
+                                <span class="badge badge-primary ml-auto">NEW</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-modals.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+                                <span class="sidebar-menu-text">Modals</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-charts.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">pie_chart_outlined</i>
+                                <span class="sidebar-menu-text">Charts</span>
+                                <span class="badge badge-warning ml-auto">PRO</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-icons.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">brush</i>
+                                <span class="sidebar-menu-text">Icons</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-forms.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">text_format</i>
+                                <span class="sidebar-menu-text">Forms</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-range-sliders.html">
+                                <!-- tune or low_priority or linear_scale or space_bar or swap_calls -->
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">tune</i>
+                                <span class="sidebar-menu-text">Range Sliders</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-datetime.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">event_available</i>
+                                <span class="sidebar-menu-text">Time &amp; Date</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-tables.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dns</i>
+                                <span class="sidebar-menu-text">Tables</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-tabs.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">tab</i>
+                                <span class="sidebar-menu-text">Tabs</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-loaders.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">refresh</i>
+                                <span class="sidebar-menu-text">Loaders</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-drag.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">control_point</i>
+                                <span class="sidebar-menu-text">Drag &amp; Drop</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-pagination.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">last_page</i>
+                                <span class="sidebar-menu-text">Pagination</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fluid-ui-vector-maps.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">location_on</i>
+                                <span class="sidebar-menu-text">Vector Maps</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="sidebar-p-a sidebar-b-y">
+                        <div class="d-flex align-items-top mb-2">
+                            <div class="sidebar-heading m-0 p-0 flex text-body js-text-body">Progress</div>
+                            <div class="font-weight-bold text-success">60%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-p-a">
+                    <a href="https://themeforest.net/item/stack-admin-bootstrap-4-dashboard-template/22959011" class="btn btn-outline-primary btn-block">Purchase &dollar;35</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- App -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/sidebar-mini.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/js/app-settings.js"></script>
+
+
+
+
+
+</body>
+
+</html>

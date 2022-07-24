@@ -1,0 +1,69 @@
+.activity-section {
+  position: relative;
+  .activity-item {
+    &:first-of-type {
+      padding-top:30px;
+    }
+    &:after {
+      position: absolute;
+      top:0;
+      bottom:0;
+      left: 49px;
+      content: '';
+      border-left: 2px solid $border-color;
+    }
+  }
+  .activity-icon {
+    position: absolute;
+    left: 30px;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    background: #fff;
+    color:  $primary;
+    border: 2px solid $primary;
+    z-index:2;
+    .material-icons {
+      position:relative;
+      top: -1px;
+      font-size: 18px;
+    }
+  }
+  .activity-content {
+    width:100%;
+    margin-left: 80px;
+    margin-bottom: $grid-gutter-width;
+  }
+
+  @each $color, $value in $theme-colors {
+    .activity--color--#{$color} {
+      background: $value;
+      border-color: darken($value, 10%);
+      color:#fff;
+    }
+  }
+}
+
+.recent-activity-item {
+  &:before {
+    position: absolute;
+    top: 90px;
+    bottom: 50px;
+    left: 34px;
+    content: '';
+    border-left: 2px solid $border-color;
+  }
+  img {
+    z-index: 2;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.timeline-video {
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+<div class="dropdown d-none d-sm-flex border-right navbar-border navbar-height align-items-center">
+  <a href="#demos" class="btn btn-navbar dropdown-toggle mx-3" data-toggle="dropdown">{{ module_label }}</a>
+  <div id="demos" class="dropdown-menu">
+    <a class="dropdown-item{% if slug === 'dashboard' %} active{% endif %}" href="{{ home_url }}">CRM</a>
+    <a class="dropdown-item{% if slug === 'app-projects' %} active{% endif %}" href="{{ prefix }}app-projects.html">Projects</a>
+    <a class="dropdown-item{% if slug === 'student-dashboard' %} active{% endif %}" href="{{ prefix }}student-dashboard.html">Learning</a>
+    <a class="dropdown-item{% if slug === 'social-activity' %} active{% endif %}" href="{{ prefix }}social-activity.html">Social</a>
+  </div>
+</div>

@@ -1,0 +1,238 @@
+
+.people-list {
+  width: calc(100% + 15px);
+  overflow: hidden;
+
+  @include media-breakpoint-up(sm) { width: calc(100% + 20px); }
+  @include media-breakpoint-up(lg) { width: calc(100% + 30px); }
+
+  .row {
+    padding-right: 10px;
+    width: 900px;
+  }
+
+  &.people-list-one {
+    height: 145px;
+
+    .row {
+      width: 800px;
+      @include media-breakpoint-up(sm) { width: 900px; }
+      @include media-breakpoint-up(xl) { width: auto; }
+    }
+  }
+
+  &.people-list-two { height: 330px; }
+  &.people-list-three { height: 230px; }
+
+  @include media-breakpoint-up(xl) {
+    width: auto;
+    height: auto;
+    overflow: visible;
+
+    .row {
+      width:  auto;
+      padding-right: 0;
+    }
+  }
+}
+
+.people-list-body {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 30px;
+
+  @include media-breakpoint-up(xl) { overflow-x: visible; }
+}
+
+.card-people {
+  @include transition(all 0.25s);
+  height: 100%;
+  border-width: 0;
+  box-shadow: $shadow-base, inset 0 0 0 1px $border-color;
+
+  @include hover() {
+    cursor: pointer;
+    box-shadow: $shadow-01, $shadow-base, inset 0 0 0 1px darken($border-color, 5%);
+  }
+
+  .card-body { padding: 15px; }
+
+  .media-body {
+    margin-left: 15px;
+    color: $color-text-03;
+
+    h6 {
+      font-weight: $font-weight-semibold;
+      color: $color-text-01;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 12px;
+
+      a {
+        color: $color-text-03;
+        @include hover-focus() { text-decoration: underline; }
+      }
+    }
+  }
+
+  .card-footer {
+    padding: 5px 10px 15px 15px;
+    border-top-width: 0;
+    font-size: $font-size-sm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a:not([class*="btn-"]) {
+      color: $color-text-04;
+      @include hover-focus() { color: $color-text-03; }
+    }
+  }
+
+  &:not([class*="bg-"]) .card-footer { background-color: transparent; }
+
+  &.selected {
+    background-color: lighten($color-brand-01, 38%);
+    border-width: 0;
+    box-shadow: $shadow-01, $shadow-base, inset 0 0 0 1px lighten($color-brand-01, 5%);
+  }
+}
+
+.card-people-two {
+  border-width: 0;
+  @include transition(all 0.25s);
+
+  @include hover() {
+    box-shadow: $shadow-01, $shadow-base;
+
+    .card-body,
+    .card-footer { border-color: darken($border-color, 4%); }
+  }
+
+  .card-header {
+    border-width: 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 20px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .avatar {
+    width: 84px;
+    height: 84px;
+    box-shadow: 0 0 0 2px #fff;
+    @include border-radius(100%);
+  }
+
+  .avatar-initial { font-size: 32px; }
+
+  &:not([class*="bg-"]) .card-header { background-color: $color-ui-03; }
+
+  .card-body {
+    border: 1px solid $border-color;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding-top: 50px;
+    text-align: center;
+
+    h6 {
+      font-size: 15px;
+      font-weight: $font-weight-semibold;
+      margin-bottom: 5px;
+      color: $color-text-01;
+    }
+
+    p {
+      color: $color-text-04;
+      margin-bottom: 0;
+      font-size: $font-size-sm;
+
+      a {
+        color: $color-text-03;
+        @include hover-focus() { text-decoration: underline; }
+      }
+    }
+  }
+
+  .follow-info {
+    display: flex;
+
+    > div {
+      flex: 1;
+      text-align: center;
+    }
+
+    h6 {
+      font-size: 20px;
+      font-weight: 400;
+      font-family: $font-family-numeric;
+      margin-bottom: 2px;
+    }
+
+    span {
+      font-size: 10px;
+      font-weight: $font-weight-medium;
+      color: $color-text-04;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+  }
+
+  .card-footer {
+    padding: 0 15px 15px;
+    border: 1px solid $border-color;
+    border-top-width: 0;
+  }
+
+  &:not([class*="bg-"]) .card-footer {
+    background-color: transparent;
+  }
+}
+
+.card-people-three {
+  border-width: 0;
+  @include transition(all 0.25s);
+
+  @include hover() {
+    box-shadow: $shadow-01, $shadow-base;
+    .card-body { border-color: darken($border-color, 4%); }
+  }
+
+  .card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .card-body {
+    border: 1px solid $border-color;
+    border-top-width: 0;
+    padding: 15px;
+    text-align: center;
+
+    h6 {
+      font-size: 14px;
+      font-weight: $font-weight-semibold;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: $font-size-sm;
+      color: $color-text-04;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+/* ###### 9.1 Background  ###### */
+
+// Brand Colors
+.bg-brand-01 { background-color: $color-brand-01; }
+.bg-brand-02 { background-color: $color-brand-02; }
+.bg-brand-03 { background-color: $color-brand-03; }
+.bg-brand-04 { background-color: $color-brand-04; }
+
+.bg-ui-01 { background-color: $color-ui-01; }
+.bg-ui-02 { background-color: $color-ui-02; }
+.bg-ui-03 { background-color: $color-ui-03; }
+.bg-ui-04 { background-color: $color-ui-04; }
+
+.bg-gray-100 { background-color: $gray-100; }
+.bg-gray-200 { background-color: $gray-200; }
+.bg-gray-300 { background-color: $gray-300; }
+.bg-gray-400 { background-color: $gray-400; }
+.bg-gray-500 { background-color: $gray-500; }
+.bg-gray-600 { background-color: $gray-600; }
+.bg-gray-700 { background-color: $gray-700; }
+.bg-gray-800 { background-color: $gray-800; }
+.bg-gray-900 { background-color: $gray-900; }
+
+.bg-white-1 { background-color: rgba(#fff, .1); }
+.bg-white-2 { background-color: rgba(#fff, .2); }
+.bg-white-3 { background-color: rgba(#fff, .3); }
+.bg-white-4 { background-color: rgba(#fff, .4); }
+.bg-white-5 { background-color: rgba(#fff, .5); }
+.bg-white-6 { background-color: rgba(#fff, .6); }
+.bg-white-7 { background-color: rgba(#fff, .7); }
+.bg-white-8 { background-color: rgba(#fff, .8); }
+.bg-white-9 { background-color: rgba(#fff, .9); }
+
+.bg-black-1 { background-color: rgba(#191c22, .1); }
+.bg-black-2 { background-color: rgba(#191c22, .2); }
+.bg-black-3 { background-color: rgba(#191c22, .3); }
+.bg-black-4 { background-color: rgba(#191c22, .4); }
+.bg-black-5 { background-color: rgba(#191c22, .5); }
+.bg-black-6 { background-color: rgba(#191c22, .6); }
+.bg-black-7 { background-color: rgba(#191c22, .7); }
+.bg-black-8 { background-color: rgba(#191c22, .8); }
+.bg-black-9 { background-color: rgba(#191c22, .9); }
+
+.bg-gray-1 { background-color: rgba($gray-900, .1); }
+.bg-gray-2 { background-color: rgba($gray-900, .2); }
+.bg-gray-3 { background-color: rgba($gray-900, .3); }
+.bg-gray-4 { background-color: rgba($gray-900, .4); }
+.bg-gray-5 { background-color: rgba($gray-900, .5); }
+.bg-gray-6 { background-color: rgba($gray-900, .6); }
+.bg-gray-7 { background-color: rgba($gray-900, .7); }
+.bg-gray-8 { background-color: rgba($gray-900, .8); }
+.bg-gray-9 { background-color: rgba($gray-900, .9); }
+
+// Extra background colors
+.bg-indigo { background-color: $indigo; }
+.bg-purple { background-color: $purple; }
+.bg-pink { background-color: $pink; }
+.bg-orange { background-color: $orange; }
+.bg-teal { background-color: $teal; }
+.bg-blue { background-color: $color-ui-blue; }
+.bg-green { background-color: $color-ui-green; }
+
+.bg-transparent { background-color: transparent; }
+
+// Light background color variant
+.bg-primary-light {
+  background-color: lighten($blue, 30%);
+  color: $blue;
+}
+
+.bg-success-light {
+  background-color: lighten($green, 45%);
+  color: $green;
+}
+
+.bg-warning-light {
+  background-color: lighten($yellow, 23%);
+  color: darken($yellow, 25%);
+}
+
+.bg-danger-light {
+  background-color: lighten($red, 35%);
+  color: $red;
+}
+
+.bg-pink-light {
+  background-color: lighten($pink, 38%);
+  color: $pink;
+}
+
+.bg-indigo-light {
+  background-color: lighten($indigo, 45%);
+  color: $indigo;
+}
+
+.bg-teal-light {
+  background-color: lighten($teal, 47%);
+  color: $teal;
+}
+
+// Social background colors
+.bg-facebook { background-color: #4064ac; }
+.bg-twitter { background-color: #00a7e6; }
+
+a,button,.btn {
+  &.bg-facebook {
+    @include hover-focus() { background-color: darken(#4064ac, 5%); }
+  }
+
+  &.bg-twitter {
+    @include hover-focus() { background-color: darken(#00a7e6, 5%); }
+  }
+}

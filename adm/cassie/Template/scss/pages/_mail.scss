@@ -1,0 +1,342 @@
+
+.mail-menu-show {
+  @include media-breakpoint-down(sm) {
+    overflow: hidden;
+
+    .mail-sidebar { display: block; }
+    .mail-body { transform: translateX(220px); }
+  }
+}
+
+
+.content-body-mail {
+  height: calc(100vh - 50px);
+  padding: 15px;
+
+  @include media-breakpoint-up(sm) {
+    height: calc(100vh - 65px);
+    padding: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 80px);
+  }
+}
+
+.mail-panel {
+  position: relative;
+  height: 100%;
+}
+
+.mail-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 210px;
+  padding-right: 10px;
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+.mail-body {
+  width: 100%;
+  height: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+  }
+}
+
+.mail-body-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-up(sm) { margin-bottom: 20px; }
+
+  h5 {
+    margin-bottom: 0;
+    font-size: 24px;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      color: $color-text-04;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+}
+
+.mail-body-content {
+  background-color: #fff;
+  border: 1px solid darken($border-color, 2%);
+  box-shadow: $shadow-01, $shadow-base;
+  height: calc(100% - 45px);
+
+  @include media-breakpoint-up(lg) { height: calc(100% - 50px); }
+}
+
+.mail-navbar {
+  border-bottom: 1px solid $border-color;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  > div:last-child {
+    a {
+      display: inline-block;
+      color: $color-text-04;
+      @include hover-focus() { color: $color-text-02; }
+
+      + a { margin-left: 10px; }
+    }
+  }
+}
+
+.mail-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: calc(100% - 50px);
+  overflow: hidden;
+  position: relative;
+
+  @include media-breakpoint-up(lg) { height: calc(100% - 50px); }
+}
+
+.mail-item {
+  padding: 15px;
+  display: flex;
+  background-color: lighten($gray-100, 1.5%);
+
+  .custom-control {
+    margin-top: 2px;
+    display: none;
+
+    @include media-breakpoint-up(lg) { display: block; }
+  }
+
+  .avatar {
+    @include media-breakpoint-up(lg) { margin-left: 15px; }
+  }
+
+  @include hover-focus() {
+    cursor: pointer;
+    background-color: darken($color-ui-01, 1%);
+  }
+
+  + .mail-item {
+    border-top: 1px solid darken($color-ui-01, 3%);
+  }
+
+  &.unread {
+    background-color: #fff;
+    @include hover-focus() { background-color: #fff; }
+
+    .mail-item-body {
+      > div:first-child span:first-child {
+        color: $color-text-02;
+        font-weight: $font-weight-medium;
+      }
+
+      h6 { color: $color-text-01; }
+      p { color: $color-text-02; }
+    }
+  }
+
+  &.selected {
+    &,&:hover,&:focus {
+      background-color: lighten($color-brand-01, 43%);
+    }
+  }
+}
+
+.mail-item-body {
+  flex: 1;
+  margin-left: 15px;
+
+  > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+    span:first-child {
+      font-size: $font-size-xs;
+      color: $color-text-04;
+    }
+
+    span:last-child {
+      font-size: 11px;
+      color: $gray-500;
+    }
+  }
+
+  h6 {
+    margin-bottom: 5px;
+    color: $color-text-03;
+    font-size: 14px;
+
+    @include media-breakpoint-up(lg) { font-size: 15px; }
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $color-text-04;
+    font-size: $font-size-xs;
+
+    @include media-breakpoint-up(lg) { font-size: $font-size-sm; }
+  }
+}
+
+.mail-from {
+  margin-bottom: 0;
+  font-size: 14px;
+
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    color: $color-text-04;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.mail-msg {
+  padding: 20px;
+  font-size: $font-size-sm;
+  position: relative;
+  overflow: hidden;
+  height: calc(100% - 50px);
+
+  p { color: $color-text-02; }
+  strong { font-weight: $font-weight-medium; }
+}
+
+.mail-compose {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(darken($gray-900, 8%), .7);
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2,1.2);
+  @include transition(all 0.3s);
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1,1);
+
+    &.shrink {
+      background-color: transparent;
+      pointer-events: none;
+
+      .mail-compose-dialog {
+        box-shadow: $shadow-base;
+        width: 500px;
+        right: 10px;
+        bottom: 0;
+        transform: translate(0, 0);
+        pointer-events: all;
+      }
+
+      .nav-link-shrink {
+        svg:first-child { display: none; }
+        svg:last-child { display: block; }
+      }
+
+      .mail-compose-body {
+        padding: 20px;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        @include border-bottom-radius(0);
+      }
+    }
+
+    &.minimize {
+      background-color: transparent;
+      pointer-events: none;
+
+      .mail-compose-dialog {
+        width: 500px;
+        top: auto;
+        left: auto;
+        right: 10px;
+        bottom: 0;
+        transform: none;
+        pointer-events: all;
+      }
+
+      .nav-link-minimize {
+        svg:first-child { display: none; }
+        svg:last-child { display: block; }
+      }
+
+      .mail-compose-body { display: none; }
+    }
+  }
+}
+
+.mail-compose-dialog {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: 80%;
+  max-width: 840px;
+  @include transition(all 0.3s);
+}
+
+.mail-compose-header {
+  background-color: $gray-900;
+  padding: 15px 20px;
+  color: #fff;
+  @include border-top-radius($border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-link {
+    color: rgba(#fff, .5);
+    @include hover-focus() { color: #fff; }
+
+    svg:last-child:not(:first-child) { display: none; }
+  }
+}
+
+.mail-compose-title {
+  margin-bottom: 0;
+  font-weight: $font-weight-base;
+  position: relative;
+  top: 1px;
+}
+
+.mail-compose-body {
+  background-color: #fff;
+  padding: 15px;
+  @include transition(all 0.3s);
+
+  @include media-breakpoint-up(lg) {
+    padding: 20px;
+  }
+
+  .form-control { box-shadow: none !important; }
+}

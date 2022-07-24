@@ -1,0 +1,54 @@
+.button-list > .btn {
+  margin-bottom: .75rem;
+  margin-left: .5rem;
+}
+
+.btn-rounded {
+  border-radius: 100px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn .material-icons {
+  font-size: 1.125rem;
+}
+
+.btn-sm .material-icons {
+  font-size: 1rem;
+}
+
+.btn-light {
+  @include button-variant($background: white, $border: $border-color);
+}
+
+.btn-flush {
+  padding: 0;
+  background: none;
+  color: inherit;
+  line-height: 1;
+  box-shadow: none;
+}
+
+.btn-rounded-social {
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+  line-height: 26px;
+  text-align:center;
+  vertical-align: middle;
+  padding: 0;
+}
+
+
+
+.btn-group .btn-light.active {
+  background: theme-color('primary') !important;
+  color: #ffffff !important;
+}
+
+.btn-hover-primary:hover {
+  color: theme-color('primary') !important;
+}

@@ -1,0 +1,125 @@
+
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include media-breakpoint-up(xl) { max-width: 70%; }
+}
+
+.pricing-wrapper {
+  @include media-breakpoint-up(xl) {
+    max-width: 85%;
+  }
+}
+
+.card-pricing {
+  height: 100%;
+  border-color: darken($border-color, 2%);
+  @include transition(all 0.25s);
+
+  @include hover-focus() {
+    border-color: darken($border-color, 5%);
+    box-shadow: $shadow-01, $shadow-base;
+  }
+
+  &:not([class*="bg-"]) {
+    .card-header,
+    .card-footer { background-color: transparent; }
+  }
+
+  .card-header {
+    padding: 20px;
+
+    h4 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 300;
+      color: $color-brand-01;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $color-text-03;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      stroke-width: 1px;
+      color: $color-brand-01;
+      fill: rgba($color-brand-01, .15);
+    }
+  }
+
+  .card-body {
+    padding: 20px;
+    color: $color-text-03;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 4px;
+      margin-right: 10px;
+
+      &.feather-check {
+        color: $teal
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      + li { margin-top: 5px; }
+    }
+  }
+
+  .card-footer {
+    border-top: 0;
+    padding: 20px;
+  }
+}
+
+.card-pricing-premium {
+  background-color: lighten($color-brand-01, 31.5%);
+  @include gradient-y(#fff, lighten($color-brand-01, 31.5%));
+
+  &,&:hover,&:focus {
+    border-color: $color-brand-01;
+    box-shadow: $shadow-01, $shadow-base;
+  }
+}
+
+.pricing-price {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid $border-color;
+
+  h1 {
+    margin-bottom: 0;
+    color: $color-text-01;
+    font-size: 56px;
+    font-weight: 300;
+    font-family: $font-family-numeric;
+    line-height: .6;
+    display: flex;
+
+    span {
+      font-size: 24px;
+      font-family: $font-family-base;
+      color: $color-text-03;
+      align-self: flex-start;
+    }
+
+    small {
+      font-size: 20px;
+      font-family: $font-family-base;
+      align-self: flex-end;
+    }
+  }
+}

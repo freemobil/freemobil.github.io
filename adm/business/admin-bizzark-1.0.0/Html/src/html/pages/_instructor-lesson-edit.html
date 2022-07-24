@@ -1,0 +1,78 @@
+{% if 'fluid' in prefix %}<div class="page__header flush-shadow">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Learning</a></li>
+          <li class="breadcrumb-item"><a href="#">Instructor</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Edit Lesson</li>
+        </ol>
+      </nav>
+      <h1 class="m-0">Edit Lesson</h1>
+    </div>
+  </div>
+  {% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+  
+  {% if 'fluid' in prefix %}
+  <div class="page__header page__header-nav">
+    <div class="{{ containerClass }} page__container">
+      {% include "layouts/_navbar.secondary.html" %}
+    </div>
+  </div>
+  {% endif %}
+  
+  <div class="{{ containerClass }} page__container">
+
+    {% if layout !== 'mini' %}
+    <div class="row">
+      <div class="col-md-8">
+    {% endif %}
+
+        <div class="card">
+          <div class="card-form__body card-body">
+            <div class="form-group">
+              <label for="category">Course:</label><br/>
+              <select id="category" class="custom-select w-auto">
+                <option value="usa">Basics of Angular</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fname">Title</label>
+              <input id="fname" type="text" class="form-control" placeholder="Title goes here" value="Course title is editable here">
+            </div>
+        
+            <div class="form-group">
+              <label for="desc">Description</label>
+              <textarea id="desc" rows="4" class="form-control" placeholder="Please enter a description"></textarea>
+            </div>
+          
+            <div class="form-group mb-0">
+              <label for="subscribe">Published</label><br>
+              <div class="custom-control custom-checkbox-toggle custom-control-inline mr-1">
+                <input checked="" type="checkbox" id="subscribe" class="custom-control-input">
+                <label class="custom-control-label" for="subscribe">Yes</label>
+              </div>
+              <label for="subscribe" class="mb-0">Yes</label>
+            </div>
+
+          </div>
+          <div class="card-body text-center">
+
+            <button type="submit" class="btn btn-success">Save Changes</button>
+          </div>
+
+        </div>
+      
+      {% if layout !== 'mini' %}  
+      </div>
+      <div class="col-md-4">
+
+        <div class="card">
+          {% include 'pages/_instructor-lesson-edit.video.html' %}
+        </div>
+
+      </div>
+    </div>
+    {% endif %}
+    
+  </div>

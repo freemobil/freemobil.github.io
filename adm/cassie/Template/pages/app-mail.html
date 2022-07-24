@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard and Admin Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+
+    <title>Cassie Responsive Bootstrap 4 Dashboard and Admin Template</title>
+
+    <!-- vendor css -->
+    <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/quill/quill.core.css" rel="stylesheet">
+    <link href="../lib/quill/quill.snow.css" rel="stylesheet">
+
+    <!-- template css -->
+    <link rel="stylesheet" href="../assets/css/cassie.css">
+
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div>
+          <a href="../index.html" class="sidebar-logo"><span>cassie</span></a>
+          <small class="sidebar-logo-headline">Responsive Dashboard Template</small>
+        </div>
+      </div><!-- sidebar-header -->
+      <div id="dpSidebarBody" class="sidebar-body">
+        <ul class="nav nav-sidebar">
+          <li class="nav-label"><label class="content-label">Template Pages</label></li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="box"></i> Dashboard</a>
+            <nav class="nav nav-sub">
+              <a href="dashboard-one.html" class="nav-sub-link">Analytics &amp; Monitoring</a>
+              <a href="dashboard-two.html" class="nav-sub-link">Projects &amp; Web Services</a>
+              <a href="dashboard-three.html" class="nav-sub-link">Blog &amp; Social Media</a>
+            </nav>
+          </li>
+          <li class="nav-item show">
+            <a href="" class="nav-link with-sub active"><i data-feather="layout"></i> App Pages</a>
+            <nav class="nav nav-sub">
+              <a href="app-calendar.html" class="nav-sub-link">Calendar</a>
+              <a href="app-chat.html" class="nav-sub-link">Chat</a>
+              <a href="app-mail.html" class="nav-sub-link active">Mail</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="lock"></i> Authentication</a>
+            <nav class="nav nav-sub">
+              <a href="page-signin.html" class="nav-sub-link">Sign In</a>
+              <a href="page-signup.html" class="nav-sub-link">Sign Up</a>
+              <a href="page-forgot.html" class="nav-sub-link">Forgot Password</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="x-circle"></i> Error Pages</a>
+            <nav class="nav nav-sub">
+              <a href="page-404.html" class="nav-sub-link">Page Not Found</a>
+              <a href="page-500.html" class="nav-sub-link">Internal Server Error</a>
+              <a href="page-503.html" class="nav-sub-link">Service Unavailable</a>
+              <a href="page-505.html" class="nav-sub-link">Forbidden Access</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="user"></i> User Pages</a>
+            <nav class="nav nav-sub">
+              <a href="page-profile.html" class="nav-sub-link">User Profile</a>
+              <a href="page-timeline.html" class="nav-sub-link">Timeline</a>
+              <a href="page-people.html" class="nav-sub-link">People</a>
+              <a href="page-settings.html" class="nav-sub-link">Profile Settings</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="file-text"></i> Extras</a>
+            <nav class="nav nav-sub">
+              <a href="page-invoice.html" class="nav-sub-link">Invoice</a>
+              <a href="page-pricing.html" class="nav-sub-link">Pricing</a>
+            </nav>
+          </li>
+          <li class="nav-label"><label class="content-label">UI Design Library</label></li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="book"></i> Content</a>
+            <nav class="nav nav-sub">
+              <a href="../components/con-grid.html" class="nav-sub-link">Grid System</a>
+              <a href="../components/con-icons.html" class="nav-sub-link">Icons</a>
+              <a href="../components/con-images.html" class="nav-sub-link">Images</a>
+              <a href="../components/con-typography.html" class="nav-sub-link">Typography</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="layers"></i> Components</a>
+            <nav class="nav nav-sub">
+              <a href="../components/com-accordion.html" class="nav-sub-link">Accordion</a>
+              <a href="../components/com-alerts.html" class="nav-sub-link">Alerts</a>
+              <a href="../components/com-avatar.html" class="nav-sub-link">Avatar</a>
+              <a href="../components/com-badge.html" class="nav-sub-link">Badge</a>
+              <a href="../components/com-breadcrumbs.html" class="nav-sub-link">Breadcrumbs</a>
+              <a href="../components/com-buttons.html" class="nav-sub-link">Buttons</a>
+              <a href="../components/com-button-groups.html" class="nav-sub-link">Button Groups</a>
+              <a href="../components/com-cards.html" class="nav-sub-link">Cards</a>
+              <a href="../components/com-carousel.html" class="nav-sub-link">Carousel</a>
+              <a href="../components/com-collapse.html" class="nav-sub-link">Collapse</a>
+              <a href="../components/com-dropdown.html" class="nav-sub-link">Dropdown</a>
+              <a href="../components/com-list-group.html" class="nav-sub-link">List Group</a>
+              <a href="../components/com-marker.html" class="nav-sub-link">Marker</a>
+              <a href="../components/com-media-object.html" class="nav-sub-link">Media Object</a>
+              <a href="../components/com-modal.html" class="nav-sub-link">Modal</a>
+              <a href="../components/com-navs.html" class="nav-sub-link">Navs</a>
+              <a href="../components/com-navbar.html" class="nav-sub-link">Navbar</a>
+              <a href="../components/com-off-canvas.html" class="nav-sub-link">Off-Canvas</a>
+              <a href="../components/com-pagination.html" class="nav-sub-link">Pagination</a>
+              <a href="../components/com-placeholder.html" class="nav-sub-link">Placeholder</a>
+              <a href="../components/com-popovers.html" class="nav-sub-link">Popovers</a>
+							<a href="../components/com-progress.html" class="nav-sub-link">Progress</a>
+              <a href="../components/com-steps.html" class="nav-sub-link">Steps</a>
+              <a href="../components/com-scrollbar.html" class="nav-sub-link">Scrollbar</a>
+              <a href="../components/com-scrollspy.html" class="nav-sub-link">Scrollspy</a>
+              <a href="../components/com-spinners.html" class="nav-sub-link">Spinners</a>
+              <a href="../components/com-tab.html" class="nav-sub-link">Tab</a>
+              <a href="../components/com-toast.html" class="nav-sub-link">Toast </a>
+              <a href="../components/com-tooltips.html" class="nav-sub-link">Tooltips</a>
+              <a href="../components/com-table-basic.html" class="nav-sub-link">Table Basic</a>
+              <a href="../components/com-table-advanced.html" class="nav-sub-link">Table (Datatable)</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="monitor"></i> Utilities</a>
+            <nav class="nav nav-sub">
+              <a href="../components/util-animation.html" class="nav-sub-link">Animation</a>
+              <a href="../components/util-background.html" class="nav-sub-link">Background</a>
+              <a href="../components/util-border.html" class="nav-sub-link">Border</a>
+              <a href="../components/util-display.html" class="nav-sub-link">Display</a>
+              <a href="../components/util-divider.html" class="nav-sub-link">Divider</a>
+              <a href="../components/util-flex.html" class="nav-sub-link">Flex</a>
+              <a href="../components/util-height.html" class="nav-sub-link">Height</a>
+              <a href="../components/util-margin.html" class="nav-sub-link">Margin</a>
+              <a href="../components/util-padding.html" class="nav-sub-link">Padding</a>
+              <a href="../components/util-position.html" class="nav-sub-link">Position</a>
+              <a href="../components/util-typography.html" class="nav-sub-link">Typography</a>
+              <a href="../components/util-width.html" class="nav-sub-link">Width</a>
+              <a href="../components/util-extras.html" class="nav-sub-link">Extras</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="life-buoy"></i> Forms</a>
+            <nav class="nav nav-sub">
+              <a href="../components/form-elements.html" class="nav-sub-link">Form Elements</a>
+              <a href="../components/form-input-group.html" class="nav-sub-link">Input Group</a>
+              <a href="../components/form-input-tags.html" class="nav-sub-link">Input Tags</a>
+              <a href="../components/form-input-masks.html" class="nav-sub-link">Input Masks</a>
+              <a href="../components/form-validation.html" class="nav-sub-link">Form Validation</a>
+              <a href="../components/form-wizard.html" class="nav-sub-link">Form Wizard</a>
+              <a href="../components/form-text-editor.html" class="nav-sub-link">Text Editor</a>
+              <a href="../components/form-rangeslider.html" class="nav-sub-link">Range Slider</a>
+              <a href="../components/form-datepicker.html" class="nav-sub-link">Date Pickers</a>
+              <a href="../components/form-select2.html" class="nav-sub-link">Select2</a>
+              <a href="../components/form-search.html" class="nav-sub-link">Search</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="pie-chart"></i> Charts</a>
+            <nav class="nav nav-sub">
+              <a href="../components/chart-flot.html" class="nav-sub-link">Flot</a>
+              <a href="../components/chart-chartjs.html" class="nav-sub-link">ChartJS</a>
+              <a href="../components/chart-peity.html" class="nav-sub-link">Peity</a>
+              <a href="../components/chart-sparkline.html" class="nav-sub-link">Sparkline</a>
+              <a href="../components/chart-morris.html" class="nav-sub-link">Morris</a>
+            </nav>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link with-sub"><i data-feather="map-pin"></i> Maps</a>
+            <nav class="nav nav-sub">
+              <a href="../components/map-google.html" class="nav-sub-link">Google Maps</a>
+              <a href="../components/map-leaflet.html" class="nav-sub-link">Leaflet Maps</a>
+              <a href="../components/map-vector.html" class="nav-sub-link">Vector Maps</a>
+            </nav>
+          </li>
+        </ul>
+
+        <hr class="mg-t-30 mg-b-25">
+
+        <ul class="nav nav-sidebar">
+          <li class="nav-item"><a href="themes.html" class="nav-link"><i data-feather="aperture"></i> Themes</a></li>
+          <li class="nav-item"><a href="../docs.html" class="nav-link"><i data-feather="help-circle"></i> Documentation</a></li>
+        </ul>
+
+
+      </div><!-- sidebar-body -->
+    </div><!-- sidebar -->
+
+    <div class="content">
+      <div class="header">
+        <div class="header-left">
+          <a id="mainMenu" href="" class="burger-menu d-none d-md-flex"><i data-feather="menu"></i></a>
+          <a id="mailMenu" href="" class="burger-menu d-md-none"><i data-feather="arrow-left"></i></a>
+          <div class="header-search">
+            <i data-feather="search"></i>
+            <input type="search" class="form-control" placeholder="Search for messages">
+          </div><!-- header-search -->
+        </div><!-- header-left -->
+
+        <div class="header-right">
+          <a href="" class="header-help-link"><i data-feather="help-circle"></i></a>
+          <div class="dropdown dropdown-notification">
+            <a href="" class="dropdown-link new" data-toggle="dropdown"><i data-feather="bell"></i></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-menu-header">
+                <h6>Notifications</h6>
+                <a href=""><i data-feather="more-vertical"></i></a>
+              </div><!-- dropdown-menu-header -->
+              <div class="dropdown-menu-body">
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle text-primary bg-primary-light">s</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Socrates Itumay</strong> marked the task as completed.</p>
+                    <span>5 hours ago</span>
+                  </div>
+                </a>
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle tx-pink bg-pink-light">r</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Reynante Labares</strong> marked the task as incomplete.</p>
+                    <span>8 hours ago</span>
+                  </div>
+                </a>
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle tx-success bg-success-light">d</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Dyanne Aceron</strong> responded to your comment on this <strong>post</strong>.</p>
+                    <span>a day ago</span>
+                  </div>
+                </a>
+                <a href="" class="dropdown-item">
+                  <div class="avatar"><span class="avatar-initial rounded-circle tx-indigo bg-indigo-light">k</span></div>
+                  <div class="dropdown-item-body">
+                    <p><strong>Kirby Avendula</strong> marked the task as incomplete.</p>
+                    <span>2 days ago</span>
+                  </div>
+                </a>
+              </div><!-- dropdown-menu-body -->
+              <div class="dropdown-menu-footer">
+                <a href="">View All Notifications</a>
+              </div>
+            </div><!-- dropdown-menu -->
+          </div>
+          <div class="dropdown dropdown-loggeduser">
+            <a href="" class="dropdown-link" data-toggle="dropdown">
+              <div class="avatar avatar-sm">
+                <img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt="">
+              </div><!-- avatar -->
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-menu-header">
+                <div class="media align-items-center">
+                  <div class="avatar">
+                    <img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt="">
+                  </div><!-- avatar -->
+                  <div class="media-body mg-l-10">
+                    <h6>Louise Kate Lumaad</h6>
+                    <span>Administrator</span>
+                  </div>
+                </div><!-- media -->
+              </div>
+              <div class="dropdown-menu-body">
+                <a href="" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                <a href="" class="dropdown-item"><i data-feather="edit-2"></i> Edit Profile</a>
+                <a href="" class="dropdown-item"><i data-feather="briefcase"></i> Account Settings</a>
+                <a href="" class="dropdown-item"><i data-feather="shield"></i> Privacy Settings</a>
+                <a href="" class="dropdown-item"><i data-feather="log-out"></i> Sign Out</a>
+              </div>
+            </div><!-- dropdown-menu -->
+          </div>
+        </div><!-- header-right -->
+      </div><!-- header -->
+      <div class="content-body content-body-mail">
+        <div class="mail-panel">
+          <div class="mail-sidebar">
+            <button id="mailComposeBtn" class="btn btn-block btn-brand-01">Compose</button>
+
+            <nav class="nav nav-classic flex-column tx-13 mg-t-20">
+              <a href="" class="nav-link active"><i data-feather="inbox"></i> <span>Inbox</span> <span class="badge">20</span></a>
+              <a href="" class="nav-link"><i data-feather="monitor"></i> <span>Starred</span> <span class="badge">3</span></a>
+              <a href="" class="nav-link"><i data-feather="clock"></i> <span>Important</span> <span class="badge">10</span></a>
+              <a href="" class="nav-link"><i data-feather="star"></i> <span>Sent Mail</span> <span class="badge">8</span></a>
+              <a href="" class="nav-link"><i data-feather="file"></i> <span>Drafts</span> <span class="badge">15</span></a>
+              <a href="" class="nav-link"><i data-feather="slash"></i> <span>Spam</span> <span class="badge">128</span></a>
+              <a href="" class="nav-link"><i data-feather="trash"></i> <span>Trash</span> <span class="badge">6</span></a>
+            </nav>
+
+            <hr>
+
+            <label class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-04">Label</label>
+            <nav class="nav nav-classic flex-column">
+              <a href="" class="nav-link"><i data-feather="folder"></i> <span>Social</span></a>
+              <a href="" class="nav-link"><i data-feather="folder"></i> <span>Promotions</span></a>
+              <a href="" class="nav-link"><i data-feather="folder"></i> <span>Updates</span></a>
+            </nav>
+          </div><!-- mail-sidebar -->
+          <div id="mailBodyList" class="mail-body">
+            <div class="mail-body-header">
+              <h5>Inbox <span class="d-none d-lg-inline">6 unread messages</span></h5>
+              <div>
+                <span class="text-muted tx-13 mg-r-10 d-none d-lg-inline">1-30 of 157</span>
+                <button class="btn btn-icon btn-xs btn-white" disabled><i data-feather="chevron-left"></i></button>
+                <button class="btn btn-icon btn-xs btn-white"><i data-feather="chevron-right"></i></button>
+                <button class="btn btn-icon btn-xs d-none d-lg-inline"><i data-feather="settings"></i></button>
+              </div>
+            </div><!-- mail-body-header -->
+            <div class="mail-body-content">
+              <div class="mail-navbar">
+                <div class="d-flex align-items-center">
+                  <div class="custom-control custom-checkbox pd-l-15 d-none d-lg-block">
+                    <input type="checkbox" class="custom-control-input" id="checkAll">
+                    <label class="custom-control-label" for="checkAll"></label>
+                  </div>
+                  <div class="tx-14 tx-color-04 mg-lg-l-15">
+                    <span>Sort by:</span>
+                    <a href="" class="link-01">Newest</a>
+                  </div>
+                </div>
+                <div class="d-none d-lg-flex">
+                  <a href=""><i data-feather="rotate-cw"></i></a>
+                  <a href=""><i data-feather="alert-circle"></i></a>
+                  <a href=""><i data-feather="printer"></i></a>
+                  <a href=""><i data-feather="trash"></i></a>
+                  <a href=""><i data-feather="folder"></i></a>
+                  <a href=""><i data-feather="star"></i></a>
+                </div>
+              </div><!-- mail-navbar -->
+              <ul class="mail-list">
+                <li class="mail-item unread">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail1">
+                    <label class="custom-control-label" for="mail1"></label>
+                  </div>
+                  <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Molly Manson</span>
+                      <span>11:15am</span>
+                    </div>
+                    <h6>Simple And Best Responsive Web Design Using CSS</h6>
+                    <p>Responsive Web Design is a great practise to build a website that looks and works similar in almost...</p>
+                  </div>
+                </li>
+                <li class="mail-item unread">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail2">
+                    <label class="custom-control-label" for="mail2"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-primary">d</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Diana Zubiri</span>
+                      <span>10:30am</span>
+                    </div>
+                    <h6>HTML Interview Questions and Answers</h6>
+                    <p>Hi, There are some common questions asked by every interviewer, so here we have collected few questions...</p>
+                  </div>
+                </li>
+                <li class="mail-item">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail3">
+                    <label class="custom-control-label" for="mail3"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-teal">a</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Alex Blake</span>
+                      <span>08:40am</span>
+                    </div>
+                    <h6>Upload an image and make an image gallery</h6>
+                    <p>Here is the overview what we are going to do. Hey friends today we will learn how to upload an image in...</p>
+                  </div>
+                </li>
+                <li class="mail-item">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail4">
+                    <label class="custom-control-label" for="mail4"></label>
+                  </div>
+                  <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Socrates Itumay</span>
+                      <span>Yesterday</span>
+                    </div>
+                    <h6>Scaling a webdesign support team</h6>
+                    <p>The evolution in educative methodologies has transformed the entire concept of training...</p>
+                  </div>
+                </li>
+                <li class="mail-item">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail5">
+                    <label class="custom-control-label" for="mail5"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-pink">j</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Jill Kassidy</span>
+                      <span>Yesterday</span>
+                    </div>
+                    <h6>Simple responsive menu using css3</h6>
+                    <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
+                  </div>
+                </li>
+                <li class="mail-item unread">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail6">
+                    <label class="custom-control-label" for="mail6"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-ui-03 tx-color-02">a</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Alexis Scott</span>
+                      <span>Jul 10</span>
+                    </div>
+                    <h6>Web security testing: how to see the hidden form fields</h6>
+                    <p>In this message you will learn how to see the hidden form fields in web page with help of WebScarab tool....</p>
+                  </div>
+                </li>
+                <li class="mail-item">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail7">
+                    <label class="custom-control-label" for="mail7"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-success">r</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Reynante Labares</span>
+                      <span>Jul 10</span>
+                    </div>
+                    <h6>HTML interview questions and answers</h6>
+                    <p>In this message you will learn how to see the hidden form fields in web page with help of WebScarab tool....</p>
+                  </div>
+                </li>
+                <li class="mail-item">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail8">
+                    <label class="custom-control-label" for="mail8"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-purple">a</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Alexa Grace</span>
+                      <span>Jul 09</span>
+                    </div>
+                    <h6>Upload an image and make an image gallery</h6>
+                    <p>Here is the overview what we are going to do. Hey friends today we will learn how to upload an image in...</p>
+                  </div>
+                </li>
+                <li class="mail-item unread">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail9">
+                    <label class="custom-control-label" for="mail9"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-pink">j</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Jill Kassidy</span>
+                      <span>Jul 08</span>
+                    </div>
+                    <h6>Simple responsive menu using css3</h6>
+                    <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
+                  </div>
+                </li>
+                <li class="mail-item unread">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail10">
+                    <label class="custom-control-label" for="mail10"></label>
+                  </div>
+                  <div class="avatar"><img src="https://via.placeholder.com/500/637382/fff" class="rounded-circle" alt=""></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Lea Grace</span>
+                      <span>Jul 05</span>
+                    </div>
+                    <h6>Simple and best responsive web design using css</h6>
+                    <p>Responsive Web Design is a great practise to build a website that looks and works similar in almost...</p>
+                  </div>
+                </li>
+                <li class="mail-item">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail11">
+                    <label class="custom-control-label" for="mail11"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-indigo">j</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Julia Montes</span>
+                      <span>Jul 02</span>
+                    </div>
+                    <h6>Simple responsive menu using css3</h6>
+                    <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
+                  </div>
+                </li>
+                <li class="mail-item unread">
+                  <div class="custom-control custom-checkbox pd-l-15">
+                    <input type="checkbox" class="custom-control-input" id="mail12">
+                    <label class="custom-control-label" for="mail12"></label>
+                  </div>
+                  <div class="avatar"><span class="avatar-initial rounded-circle bg-teal">h</span></div>
+                  <div class="mail-item-body">
+                    <div>
+                      <span>Helder Owen</span>
+                      <span>Jul 02</span>
+                    </div>
+                    <h6>Upload an image and make an image gallery</h6>
+                    <p>Hello readers! This blog is about how to make a simple navigation menu. First of all you need an unorder...</p>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- mail-body-content -->
+          </div><!-- mail-body -->
+
+          <div id="mailBodyItem" class="mail-body d-none">
+            <div class="mail-body-header">
+              <a href="" id="backToList" class="btn pd-0"><i data-feather="arrow-left"></i> Back to List</a>
+              <div>
+                <span class="text-muted tx-13 mg-r-10">5 of 157</span>
+                <button class="btn btn-icon btn-xs btn-white" disabled><i data-feather="chevron-left"></i></button>
+                <button class="btn btn-icon btn-xs btn-white"><i data-feather="chevron-right"></i></button>
+                <button class="btn btn-icon btn-xs d-none d-lg-inline"><i data-feather="settings"></i></button>
+              </div>
+            </div><!-- mail-body-header -->
+            <div class="mail-body-content">
+              <div class="mail-navbar">
+                <div class="d-flex align-items-center">
+                  <h6 class="mail-from">ThemePixels, Inc. <span class="d-none d-sm-inline">&lt;noreply@themepixels.me&gt;</span></h6>
+                </div>
+                <div>
+                  <a href="" class="d-none d-lg-inline"><i data-feather="star"></i></a>
+                  <a href="" class="d-none d-lg-inline"><i data-feather="arrow-up-right"></i></a>
+                  <a href="" class="d-none d-lg-inline"><i data-feather="printer"></i></a>
+                  <a href="" class="d-none d-lg-inline"><i data-feather="trash"></i></a>
+                  <a href="" class="d-none d-lg-inline"><i data-feather="folder"></i></a>
+                  <a href=""><i data-feather="more-vertical"></i></a>
+                </div>
+              </div><!-- mail-navbar -->
+              <div class="mail-msg">
+                <div class="d-xl-flex justify-content-between align-items-center">
+                  <h5 class="mg-b-0">Simple and best responsive web design using css</h5>
+                  <span class="tx-13 tx-color-04">Sat, Jul 14, 1:36 PM (2 hours ago)</span>
+                </div>
+
+                <hr class="op-0">
+
+                <p>
+                  <strong>Ms. Katherine Lumaad</strong><br>
+                  ThemePixels, Inc.<br>
+                  San Francisco, CA, United States
+                </p>
+
+                <p>Greetings!</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem.</p>
+
+                <p>Sincerely yours,<br>
+                <strong>Envato Design Team</strong></p>
+
+                <hr class="op-0">
+
+                <div id="editor-container" class="tx-13 tx-lg-14 ht-100">
+                  Type here to <u>Reply</u> or <u>Forward</u>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mg-t-10 mg-b-20">
+                  <div id="toolbar-container" class="bd-0-f pd-0-f">
+                    <span class="ql-formats">
+                      <button class="ql-bold"></button>
+                      <button class="ql-italic"></button>
+                      <button class="ql-underline"></button>
+                    </span>
+                    <span class="ql-formats">
+                      <button class="ql-link"></button>
+                      <button class="ql-image"></button>
+                    </span>
+                  </div>
+                  <button class="btn btn-brand-01">Reply</button>
+                </div>
+              </div>
+            </div><!-- mail-body-content -->
+          </div><!-- mail-body -->
+        </div><!-- mail-panel -->
+      </div><!-- content-body -->
+    </div><!-- content -->
+
+    <div id="mailCompose" class="mail-compose">
+      <div class="mail-compose-dialog">
+        <div class="mail-compose-header">
+          <h6 class="mail-compose-title tx-white">New Message</h6>
+          <nav class="nav nav-icon">
+            <a id="mailComposeMinimize" href="" class="nav-link nav-link-minimize d-none d-lg-block">
+              <i data-feather="minus"></i>
+              <i data-feather="square"></i>
+            </a>
+            <a id="mailComposeShrink" href="" class="nav-link nav-link-shrink d-none d-lg-block">
+              <i data-feather="minimize-2"></i>
+              <i data-feather="maximize-2"></i>
+            </a>
+            <a id="mailComposeClose" href="" class="nav-link nav-link-close"><i data-feather="x"></i></a>
+          </nav>
+        </div><!-- mail-compose-header -->
+        <div class="mail-compose-body">
+          <div class="form-row align-items-center">
+            <div class="col-sm">Recipient:</div>
+            <div class="col-sm-10">
+              <input type="text" class="form-control bd-0 pd-x-0" placeholder="Enter recipient's email address">
+            </div>
+          </div>
+          <hr class="mg-y-10">
+          <div class="form-row align-items-center">
+            <div class="col-sm">Subject:</div>
+            <div class="col-sm-10">
+              <input type="text" class="form-control bd-0 pd-x-0" placeholder="Enter subject">
+            </div>
+          </div>
+          <div id="editor-container2" class="tx-14 ht-150 mg-t-15"></div>
+          <div class="d-sm-flex align-items-center justify-content-between mg-t-25">
+            <div id="toolbar-container2" class="bd-0-f pd-0-f">
+              <span class="ql-formats">
+                <button class="ql-bold"></button>
+                <button class="ql-italic"></button>
+                <button class="ql-underline"></button>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-link"></button>
+                <button class="ql-image"></button>
+              </span>
+            </div>
+            <div class="tx-14 mg-t-15 mg-sm-t-0">
+              <button class="btn btn-white mg-r-5">Save as Draft</button>
+              <button class="btn btn-brand-01">Send</button>
+            </div>
+          </div>
+        </div><!-- mail-compose-body -->
+      </div><!-- mail-compose-dialog -->
+    </div><!-- mail-compose -->
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/feather-icons/feather.min.js"></script>
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/js-cookie/js.cookie.js"></script>
+    <script src="../lib/quill/quill.min.js"></script>
+
+    <script src="../assets/js/cassie.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+
+        const mailList = new PerfectScrollbar('.mail-list', {
+          suppressScrollX: true
+        });
+
+        const mailMsg = new PerfectScrollbar('.mail-msg', {
+          suppressScrollX: true
+        });
+
+        // reply form
+        var quill = new Quill('#editor-container', {
+          modules: {
+            toolbar: '#toolbar-container'
+          },
+          placeholder: 'Compose an epic...',
+          theme: 'snow'
+        });
+
+        // compose form
+        var quill2 = new Quill('#editor-container2', {
+          modules: {
+            toolbar: '#toolbar-container2'
+          },
+          placeholder: 'Write your message here',
+          theme: 'snow'
+        });
+
+        $('#mailComposeBtn').on('click', function(){
+          $('#mailCompose').addClass('show');
+        })
+
+        $('#mailComposeClose').on('click', function(e){
+          e.preventDefault()
+
+          if($('#mailCompose').hasClass('minimize') || $('#mailCompose').hasClass('shrink')) {
+            $('#mailCompose').addClass('d-none');
+
+            setTimeout(function(){
+              $('#mailCompose').attr('class', 'mail-compose');
+            },500);
+
+          } else {
+            $('#mailCompose').removeClass('show');
+          }
+        })
+
+        $('#mailComposeShrink').on('click', function(e){
+          e.preventDefault()
+          $('#mailCompose').toggleClass('shrink')
+          $('#mailCompose').removeClass('minimize')
+        })
+
+        $('#mailComposeMinimize').on('click', function(e){
+          e.preventDefault()
+          $('#mailCompose').toggleClass('minimize')
+        })
+
+        $('#checkAll').on('change', function(e){
+          if($(this).is(':checked')) {
+            $('.mail-item').addClass('selected');
+            $('.mail-item .custom-checkbox input').prop('checked', true);
+          } else {
+            $('.mail-item').removeClass('selected');
+            $('.mail-item .custom-checkbox input').prop('checked', false);
+          }
+        })
+
+        $('.mail-item .custom-checkbox input').on('change', function(e){
+          if($(this).is(':checked')) {
+            $(this).closest('.mail-item').addClass('selected');
+          } else {
+            $(this).closest('.mail-item').removeClass('selected');
+          }
+        })
+
+        $('.mail-item-body').on('click', function(e){
+          $('#mailBodyItem').removeClass('d-none');
+          $('#mailBodyList').addClass('d-none');
+
+          if(window.matchMedia('(max-width: 767px)').matches) {
+            $('body').removeClass('mail-menu-show');
+            $('#mailMenu').removeClass('d-none');
+            $('#mainMenu').addClass('d-none');
+          }
+        })
+
+        $('#backToList').on('click', function(e){
+          e.preventDefault();
+          $('#mailBodyItem').addClass('d-none');
+          $('#mailBodyList').removeClass('d-none');
+
+          if(window.matchMedia('(max-width: 767px)').matches) {
+            $('body').removeClass('mail-menu-show');
+            $('#mailMenu').removeClass('d-none');
+            $('#mainMenu').addClass('d-none');
+          }
+        })
+
+        $('#mailMenu').on('click', function(e){
+          e.preventDefault();
+
+          $('body').addClass('mail-menu-show');
+
+          $(this).addClass('d-none');
+          $('#mainMenu').removeClass('d-none');
+        })
+
+      })
+    </script>
+  </body>
+</html>

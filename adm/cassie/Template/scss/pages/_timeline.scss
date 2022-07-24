@@ -1,0 +1,231 @@
+
+.timeline-item {
+  .row {
+    justify-content: space-between;
+
+    > div:first-child { text-align: right; }
+  }
+
+  .date-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 45px;
+      padding-right: 26px;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-right: 65px;
+      padding-top: 48px;
+    }
+
+    @include media-breakpoint-up(lg) { padding-right: 5px; }
+    @media (min-width: 1100px) { padding-right: 0; }
+  }
+}
+
+.timeline-date {
+  font-family: $font-family-sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba($color-text-03, .5);
+  display: block;
+  white-space: nowrap;
+  position: relative;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 9px;
+  }
+}
+
+.timeline-time {
+  font-family: $font-family-sans-serif;
+  font-size: 11px;
+  margin-bottom: 0;
+  margin-left: 5px;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-up(md) { font-size: 21px; }
+
+  span {
+    font-size: 10px;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.timeline-body {
+  position: relative;
+  padding-bottom: 25px;
+  padding-top: 65px;
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 0;
+  }
+
+  &::before {
+    content: '';
+
+    @include media-breakpoint-down(xs) {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 1px);
+      height: 60px;
+      border-left: 1px solid darken($color-ui-02, 2%);
+    }
+
+    @include media-breakpoint-up(sm) {
+      border-left: 1px solid darken($color-ui-02, 2%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -25px;
+      height: auto;
+    }
+
+    @include media-breakpoint-up(md) { left: -47px; }
+  }
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  h6 {
+    margin-bottom: 0;
+    margin-left: 8px;
+    color: $color-text-01;
+    font-size: $font-size-sm;
+
+    @include media-breakpoint-up(md) { font-size: $font-size-base; }
+  }
+
+  > span {
+    margin-left: 5px;
+    color: $color-text-04;
+    font-size: $font-size-sm;
+
+    @include media-breakpoint-up(md) { font-size: $font-size-base; }
+  }
+
+  .avatar {
+    @include media-breakpoint-down(sm) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &::after { right: 0px; }
+  }
+}
+
+.card-timeline {
+  padding: 20px;
+  position: relative;
+  color: $color-text-03;
+  box-shadow: $shadow-base;
+  @include transition(all 0.25s);
+
+  @include hover() {
+    box-shadow: $shadow-01, $shadow-base;
+    border-color: darken($border-color, 3%);
+  }
+
+  &::before {
+    content: '';
+    font-family: 'Ionicons';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #fff;
+    border: 1.5px solid $border-color;
+    @include border-radius(100%);
+    width: 32px;
+    height: 32px;
+
+    @include media-breakpoint-down(xs) {
+      top: -83px;
+      left: 50%;
+      margin-left: -16px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      top: 12px;
+      left: -40.5px;
+    }
+
+    @include media-breakpoint-up(md) {
+      left: -64px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  h5 {
+    font-size: 15px;
+    font-weight: $font-weight-semibold;
+    color: $color-text-01;
+  }
+}
+
+.card-timeline-note {
+  &::before {
+    content: '\f12f';
+    background-color: lighten($teal, 48%);
+    border-color: $teal;
+    color: $teal;
+    font-size: 22px;
+  }
+}
+
+.card-timeline-photo {
+  &::before {
+    content: '\f147';
+    background-color: lighten($blue, 35%);
+    border-color: $blue;
+    color: $blue;
+    font-size: 18px;
+  }
+}
+
+.card-timeline-article {
+  &::before {
+    content: '\f471';
+    background-color: lighten($orange, 38%);
+    border-color: $orange;
+    color: $orange;
+    font-size: 18px;
+  }
+}
+
+.timeline-list-event {
+  li {
+    display: block;
+    + li { margin-top: 10px; }
+  }
+}
+
+.card-timeline-event {
+  color: $color-text-03;
+  padding: 18px 20px 20px;
+  border-color: $border-color;
+  box-shadow: $shadow-base;
+  @include transition(all 0.25s);
+
+  @include hover() {
+    box-shadow: $shadow-01, $shadow-base;
+    border-color: darken($border-color, 3%);
+  }
+}

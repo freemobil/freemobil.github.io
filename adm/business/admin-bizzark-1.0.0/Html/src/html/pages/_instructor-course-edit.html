@@ -1,0 +1,104 @@
+{% if 'fluid' in prefix %}<div class="page__header flush-shadow">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Learning</a></li>
+          <li class="breadcrumb-item"><a href="#">Instructor</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Edit Course</li>
+        </ol>
+      </nav>
+      <h1 class="m-0">Edit Course</h1>
+    </div>
+  </div>
+  {% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+  
+  {% if 'fluid' in prefix %}
+  <div class="page__header page__header-nav">
+    <div class="{{ containerClass }} page__container">
+      {% include "layouts/_navbar.secondary.html" %}
+    </div>
+  </div>
+  {% endif %}
+  
+  
+<div class="{{ containerClass }} page__container">
+
+  {% if layout !== 'mini' %}
+  <div class="row">
+    <div class="col-md-8">
+  {% endif %}
+
+      <div class="card">
+        <div class="card-form__body card-body">
+          <div class="form-group">
+            <label for="slug">Slug (URL)</label>
+            <input id="slug" type="text" class="form-control" placeholder="/course-title-is-editable-here" value="/course-title-is-editable-here">
+          </div>
+      
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input id="title" type="text" class="form-control" placeholder="Title goes here" value="Course title is editable here">
+          </div>
+      
+          <div class="form-group">
+            <label for="desc">Description</label>
+            <textarea id="desc" rows="4" class="form-control" placeholder="Please enter a description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label><br/>
+            <select id="category" class="custom-select w-auto">
+              <option value="usa">Web Design</option>
+              <option value="usa">Web Development</option>
+              <option value="usa">Marketing</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subscribe">Published</label><br>
+            <div class="custom-control custom-checkbox-toggle custom-control-inline mr-1">
+              <input checked="" type="checkbox" id="subscribe" class="custom-control-input">
+              <label class="custom-control-label" for="subscribe">Yes</label>
+            </div>
+            <label for="subscribe" class="mb-0">Yes</label>
+          </div>
+
+          <div class="form-group">
+            <label>Course Preview</label>
+            <div 
+              class="dz-clickable media align-items-center"
+              data-toggle="dropzone"
+              data-dropzone-url="http://"
+              data-dropzone-clickable=".dz-clickable"
+              data-dropzone-files='["assets/images/account-add-photo.svg"]'>
+              <div class="dz-preview dz-file-preview dz-clickable mr-3">
+                <div class="avatar avatar-lg">
+                  <img src="assets/images/account-add-photo.svg" class="avatar-img rounded" alt="..." data-dz-thumbnail>
+                </div>
+              </div>
+              <div class="media-body">
+                <button class="btn btn-sm btn-light dz-clickable">Choose photo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body text-center">
+
+          <button type="submit" class="btn btn-success">Save Changes</button>
+        </div>
+
+      </div>
+
+    {% if layout !== 'mini' %}  
+    </div>
+    <div class="col-md-4">
+      
+      <!-- Lessons -->
+      <div class="card">
+        {% include 'pages/_instructor-course-edit.lessons.html' %}
+      </div>
+
+    </div>
+  </div>
+  {% endif %}
+  
+</div>

@@ -1,0 +1,115 @@
+{% if layout !== 'fixed' and layout !== 'fluid' %}
+  {% include 'layouts/_navbar.switch.html' %}
+{% endif %}
+
+<ul class="nav navbar-nav{% if layout !== 'fixed' and layout !== 'fluid' %} d-none d-md-flex ml-3{% endif %} flex">
+  {% if crm_menu %}
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'dashboard' %} active{% endif %}" href="{{ home_url }}">Home</a>
+  </li>
+  <li class="nav-item dropdown{% if slug === 'companies' or slug === 'company' %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Companies</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'companies' %} active{% endif %}" href="{{ prefix }}companies.html">Manage Companies</a>
+      <a class="dropdown-item{% if slug === 'company' %} active{% endif %}" href="{{ prefix }}company.html">Company Details</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'employees' %} active{% endif %}" href="{{ prefix }}employees.html">Employees</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'invoices' %} active{% endif %}" href="{{ prefix }}invoices.html">Invoices</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'staff' %} active{% endif %}" href="{{ prefix }}staff.html">Reports</a>
+  </li>
+  {% endif %}
+
+  {% if projects_menu %}
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'app-projects' %} active{% endif %}" href="{{ prefix }}app-projects.html">Projects</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'app-trello' %} active{% endif %}" href="{{ prefix }}app-trello.html">Trello</a>
+  </li>
+  {% endif %}
+
+  {% if learning_menu %}
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'student-dashboard' %} active{% endif %}" href="{{ prefix }}student-dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'student-courses' %} active{% endif %}" href="{{ prefix }}student-courses.html">Courses</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'student-course' %} active{% endif %}" href="{{ prefix }}student-course.html">Take Course</a>
+  </li>
+  <li class="nav-item dropdown{% if instructor_menu %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manage</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'instructor-course-edit' %} active{% endif %}" href="{{ prefix }}instructor-course-edit.html">Edit Course</a>
+      <a class="dropdown-item{% if slug === 'instructor-lesson-edit' %} active{% endif %}" href="{{ prefix }}instructor-lesson-edit.html">Edit Lesson</a>
+      <a class="dropdown-item{% if slug === 'instructor-create-quiz' %} active{% endif %}" href="{{ prefix }}instructor-create-quiz.html">Create Quiz</a>
+    </div>
+  </li>
+  {% endif %}
+
+  {% if social_menu %}
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'social-activity' %} active{% endif %}" href="{{ prefix }}social-activity.html">Activity</a>
+  </li>
+  <li class="nav-item dropdown{% if slug === 'social-profile' or slug === 'social-edit-account' %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Profile</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'social-profile' %} active{% endif %}" href="{{ prefix }}social-profile.html">Profile</a>
+      <a class="dropdown-item{% if slug === 'social-edit-account' %} active{% endif %}" href="{{ prefix }}social-edit-account.html">Edit Account</a>
+    </div>
+  </li>
+  <li class="nav-item dropdown{% if 'blog' in slug or 'post' in slug %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'social-blog' %} active{% endif %}" href="{{ prefix }}social-blog.html">Blog</a>
+      <a class="dropdown-item{% if slug === 'social-edit-post' %} active{% endif %}" href="{{ prefix }}social-edit-post.html">Edit Post</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'social-discussions' %} active{% endif %}" href="{{ prefix }}social-discussions.html">Discussions</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if slug === 'social-chat' %} active{% endif %}" href="{{ prefix }}social-chat.html">Chat</a>
+  </li>
+  {% endif %}
+
+  <li class="nav-item dropdown{% if components_menu %} active{% endif %}">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item{% if slug === 'ui-buttons' %} active{% endif %}" href="{{ prefix }}ui-buttons.html">Buttons</a>
+      <a class="dropdown-item{% if slug === 'ui-alerts' %} active{% endif %}" href="{{ prefix }}ui-alerts.html">Alerts</a>
+      <a class="dropdown-item{% if slug === 'ui-avatars' %} active{% endif %}" href="{{ prefix }}ui-avatars.html">Avatars</a>
+      <a class="dropdown-item{% if slug === 'ui-modals' %} active{% endif %}" href="{{ prefix }}ui-modals.html">Modals</a>
+      <a class="dropdown-item{% if slug === 'ui-charts' %} active{% endif %}" href="{{ prefix }}ui-charts.html">Charts</a>
+      <a class="dropdown-item{% if slug === 'ui-icons' %} active{% endif %}" href="{{ prefix }}ui-icons.html">Icons</a>
+      <a class="dropdown-item{% if slug === 'ui-forms' %} active{% endif %}" href="{{ prefix }}ui-forms.html">Forms</a>
+      <a class="dropdown-item{% if slug === 'ui-range-sliders' %} active{% endif %}" href="{{ prefix }}ui-range-sliders.html">Range Sliders</a>
+      <a class="dropdown-item{% if slug === 'ui-datetime' %} active{% endif %}" href="{{ prefix }}ui-datetime.html">Time &amp; Date</a>
+      <a class="dropdown-item{% if slug === 'ui-tables' %} active{% endif %}" href="{{ prefix }}ui-tables.html">Tables</a>
+      <a class="dropdown-item{% if slug === 'ui-tabs' %} active{% endif %}" href="{{ prefix }}ui-tabs.html">Tabs</a>
+      <a class="dropdown-item{% if slug === 'ui-loaders' %} active{% endif %}" href="{{ prefix }}ui-loaders.html">Loaders</a>
+      <a class="dropdown-item{% if slug === 'ui-drag' %} active{% endif %}" href="{{ prefix }}ui-drag.html">Drag &amp; Drop</a>
+      <a class="dropdown-item{% if slug === 'ui-pagination' %} active{% endif %}" href="{{ prefix }}ui-pagination.html">Pagination</a>
+      <a class="dropdown-item{% if slug === 'ui-vector-maps' %} active{% endif %}" href="{{ prefix }}ui-vector-maps.html">Vector Maps</a>
+    </div>
+  </li>
+
+  {% if layout === 'fixed' or layout === 'fluid' %}
+  <li class="nav-item ml-sm-auto dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Layouts</a>
+    <div class="dropdown-menu dropdown-menu-sm-right">
+      <a class="dropdown-item{% if prefix === '' %} active{% endif %}" href="{% if slug === 'dashboard' %}index{% else %}{{ slug }}{% endif %}.html">Default</a>
+      <a class="dropdown-item{% if prefix === 'fluid-' %} active{% endif %}" href="fluid-{{ slug }}.html">Full Width Navs</a>
+      <a class="dropdown-item{% if prefix === 'fixed-' %} active{% endif %}" href="fixed-{{ slug }}.html">Fixed Navs</a>
+      <a class="dropdown-item{% if prefix === 'mini-' %} active{% endif %}" href="mini-{{ slug }}.html">Mini Sidebar + Navs</a>
+    </div>
+  </li>
+  {% endif %}
+</ul>

@@ -1,0 +1,51 @@
+
+.card-hover {
+  @include transition(all 0.25s);
+  @include hover-focus() {
+    box-shadow: $shadow-01, $shadow-base;
+    border-color: darken($border-color, 5%);
+  }
+}
+
+.card-primary { @include card-variant($color-brand-01); }
+.card-success { @include card-variant($green); }
+.card-teal { @include card-variant($teal); }
+.card-purple { @include card-variant($purple); }
+
+.card-blue-light {
+  border-color: lighten($color-ui-blue, 20%);
+
+  .card-body {
+    background-color: rgba($color-ui-blue, .15);
+    @include transition(all 0.25s);
+  }
+
+  &,.card-title { color: darken($color-ui-blue, 40%); }
+  .card-desc { opacity: .85; }
+
+  @include hover-focus() {
+    border-color: $color-ui-blue;
+    .card-body { background-color: rgba($color-ui-blue, .2); }
+  }
+}
+
+.card-success-light {
+  border-color: lighten($color-ui-green, 20%);
+
+  .card-body {
+    background-color: rgba($color-ui-green, .15);
+    @include transition(all 0.25s);
+  }
+
+  &,.card-title { color: darken($color-ui-green, 30%); }
+  .card-desc { opacity: .85; }
+
+  @include hover-focus() {
+    border-color: $color-ui-green;
+    .card-body { background-color: rgba($color-ui-green, .2); }
+  }
+}
+
+.card-value {
+  color: $color-text-01;
+}

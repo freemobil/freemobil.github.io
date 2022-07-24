@@ -1,0 +1,39 @@
+
+.link-01 {
+  color: $color-text-01;
+}
+
+.link-02 {
+  color: $color-text-02;
+  @include hover-focus() { color: $color-text-01; }
+}
+
+.link-03 {
+  color: $color-text-03;
+  @include hover-focus() { color: $color-text-02; }
+}
+
+.link-04 {
+  color: $color-text-04;
+  @include hover-focus() { color: $color-text-02; }
+}
+
+.link-05 {
+  color: $color-text-02;
+  text-decoration: underline;
+  
+  @include hover-focus() {
+    color: $color-brand-01;
+    text-decoration: none;
+  }
+}
+
+.link-gray-500 {
+  color: $gray-500;
+  @include hover-focus() { color: $gray-700; }
+}
+
+.link-white {
+  color: rgba(#fff, .75);
+  @include hover-focus() { color: #fff; }
+}

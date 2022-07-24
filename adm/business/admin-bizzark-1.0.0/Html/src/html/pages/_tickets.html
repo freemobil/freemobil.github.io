@@ -1,0 +1,214 @@
+
+{% set tickets = [{
+  priority: "danger",
+  priority_title: "High Priority",
+  ago: "3 days ago",
+  id: "#4923",
+  title: "Fix spacings on Stories page",
+  assigned_image: "assets/images/256_luke-porter-261779-unsplash.jpg",
+  assigned: "Elizabeth O.",
+  last_updated_short: "MC",
+  last_updated: "Michael C.",
+  milestone: "BUGS"
+},{
+  priority: "muted",
+  priority_title: "Normal",
+  ago: "4 days ago",
+  id: "#4932",
+  title: "Add new project page",
+  assigned_image: "assets/images/256_daniel-gaffey-1060698-unsplash.jpg",
+  assigned: "Adrian D.",
+  last_updated_short: "SK",
+  last_updated: "Smith K.",
+  milestone: "CURRENT"
+},{
+  priority: "muted-light",
+  priority_title: "Low",
+  ago: "3 days ago",
+  id: "#4923",
+  title: "Fix spacings on Stories page",
+  assigned_image: "assets/images/256_luke-porter-261779-unsplash.jpg",
+  assigned: "Elizabeth O.",
+  last_updated_short: "MC",
+  last_updated: "Michael C.",
+  milestone: "BUGS"
+},{
+  priority: "muted-light",
+  priority_title: "Low",
+  ago: "4 days ago",
+  id: "#4932",
+  title: "Add new project page",
+  assigned_image: "assets/images/256_daniel-gaffey-1060698-unsplash.jpg",
+  assigned: "Adrian D.",
+  last_updated_short: "SK",
+  last_updated: "Smith K.",
+  milestone: "CURRENT"
+},
+{
+  priority: "danger",
+  priority_title: "High Priority",
+  ago: "3 days ago",
+  id: "#4923",
+  title: "Fix spacings on Stories page",
+  assigned_image: "assets/images/256_luke-porter-261779-unsplash.jpg",
+  assigned: "Elizabeth O.",
+  last_updated_short: "MC",
+  last_updated: "Michael C.",
+  milestone: "BUGS"
+},{
+  priority: "muted",
+  priority_title: "Normal",
+  ago: "4 days ago",
+  id: "#4932",
+  title: "Add new project page",
+  assigned_image: "assets/images/256_daniel-gaffey-1060698-unsplash.jpg",
+  assigned: "Adrian D.",
+  last_updated_short: "SK",
+  last_updated: "Smith K.",
+  milestone: "CURRENT"
+},{
+  priority: "success",
+  priority_title: "Resolved",
+  ago: "3 days ago",
+  id: "#4923",
+  title: "Fix spacings on Stories page",
+  assigned_image: "assets/images/256_luke-porter-261779-unsplash.jpg",
+  assigned: "Elizabeth O.",
+  last_updated_short: "MC",
+  last_updated: "Michael C.",
+  milestone: "BUGS"
+},{
+  priority: "muted-light",
+  priority_title: "Low",
+  ago: "4 days ago",
+  id: "#4932",
+  title: "Add new project page",
+  assigned_image: "assets/images/256_daniel-gaffey-1060698-unsplash.jpg",
+  assigned: "Adrian D.",
+  last_updated_short: "SK",
+  last_updated: "Smith K.",
+  milestone: "CURRENT"
+}] %}
+
+
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading d-flex align-items-center">
+      <div class="flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#"><i class="material-icons icon-20pt">home</i></a></li>  
+            <li class="breadcrumb-item">Projects</li>
+            <li class="breadcrumb-item active" aria-current="page">Project Name</li>
+          </ol>
+        </nav>
+        <h1 class="m-0">Project Name</h1>
+      </div>
+      <div>
+        <a href="" class="btn btn-light ml-3"><i class="material-icons">settings</i></a>
+        <a href="" class="btn btn-success ml-1">Create Ticket</a>
+      </div>
+    </div>
+  </div>
+  {% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+  {% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+  <div class="{{ containerClass }} page__container">
+    
+    <div class="d-md-flex justify-content-between mb-3">
+      <div class="btn-group btn-group-toggle mb-3 mb-md-0" data-toggle="buttons">
+        <label class="btn btn-light active">
+            <input type="radio" name="options" id="option1" checked=""> Last Updated
+        </label>
+        <label class="btn btn-light">
+            <input type="radio" name="options" id="option332"> Priority
+        </label>
+        <label class="btn btn-light">
+          <input type="radio" name="options" id="option3312"> Ticket
+      </label>
+      </div>
+      <div class="flex-fill ml-md-3 mr-md-3 mb-3 mb-md-0">
+        <form class="search-form d-flex flex" action="#">
+          <button class="btn" type="submit"  ><i class="material-icons">search</i></button>
+          <input type="text" class="form-control" placeholder="Search">
+        </form>
+      </div>
+      <div class="dropdown">
+        <a href="#" data-toggle="dropdown" class="btn btn-light" data-caret>
+          <i class="material-icons">grid_on</i> Table View
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#"><i class="material-icons mr-1">grid_on</i> Table View</a>
+          <a class="dropdown-item" href="#"><i class="material-icons mr-1">today</i> Calendar View</a>
+          <a class="dropdown-item" href="#"><i class="material-icons mr-1">menu</i> List View</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="table-responsive">
+        <table class="table table-md mb-0 thead-border-top-0 table-striped">
+          <thead>
+            <tr>
+              <th style="width: 18px;" class="text-center">!</th>
+              <th style="min-width: 50px;" class="text-center text-muted sort">Age</th>
+              <th style="min-width: 30px;" class="text-center">#ID</th>
+              <th style="min-width: 180px;" class="text-muted sort">Ticket Title</th>
+              <th style="min-width: 150px;" >Assigned to</th>
+              <th style="min-width: 150px;" >Last Updated</th>
+              <th style="min-width:140px" class="text-muted sort">Milestone</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for ticket in tickets %}
+            <tr>
+              <td>
+                <i class="material-icons icon-14pt text-{{ ticket.priority }}"  data-toggle="tooltip" data-title="{{ ticket.priority_title }}">lens</i>
+              </td>
+              <td class="text-center"><small class="text-muted">{{ ticket.ago }}</small></td>
+              <td class="text-center">{{ ticket.id }}</td>
+              <td class="py-3"><a href="#"> {{ ticket.title }}</a></td>
+              <td>
+                <a href="#" class="d-flex align-items-middle text-body">
+                  <span class="avatar avatar-xxs avatar-online mr-2">
+                      <img src="{{ ticket.assigned_image }}" alt="Avatar" class="avatar-img rounded-circle">
+                  </span>
+                  <span>{{ ticket.assigned }}</span>
+                </a>
+              </td>
+              <td>
+                <a href="#" class="d-flex align-items-middle text-body">
+                  <span class="avatar avatar-xxs avatar-online mr-2 "  data-toggle="tooltip" data-placement="top" title=" {{ ticket.last_updated }}">
+                    <span class="avatar-title rounded-circle">  {{ ticket.last_updated_short }}</span>
+                  </span>
+                  <span>  {{ ticket.last_updated }}</span>
+                </a>
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+
+                  <i class="material-icons icon-16pt text-muted-light mr-1">label</i> 
+                  <a href="#" class="text-body">
+                    <span>{{ ticket.milestone}}</span>
+                  </a>
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      {% import "components/pagination.html" as pagination %}
+      {{ pagination.component(pages=4, first=true, last=true, align='center') }}
+      </div>
+
+  </div>

@@ -1,0 +1,88 @@
+<!-- START ACTIVITY -->
+<div class="flex" data-perfect-scrollbar>
+  <div class="card-header card-header-large bg-white d-flex flex-column">
+    <h4 class="card-header__title flex">Recent Activity</h4>
+    <div class=" flatpickr-wrapper d-flex">
+    <div
+      data-toggle="flatpickr" 
+      data-flatpickr-wrap="true"
+      data-flatpickr-static="true" 
+      data-flatpickr-mode="range" 
+      data-flatpickr-alt-format="d/m/Y" 
+      data-flatpickr-date-format="d/m/Y">
+      <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 <span class="text-muted mx-1">to</span> 20/03/2018</a>
+      <input class="d-none" type="hidden" value="13/03/2018 to 20/03/2018" data-input>
+    </div>
+    </div>
+  </div>
+  <div class="list-group list-group-flush">
+    {% set list_items = [{
+      avatar: "assets/images/256_rsz_1andy-lee-642320-unsplash.jpg",
+      name: "Jenell D. Matney",
+      date: "4 days ago",
+      amount: "$573",
+      icon: "monetization_on",
+      icon_bg: "bg-success",
+      message: "Confirmation required for design"
+    }, {
+      avatar: "assets/images/256_daniel-gaffey-1060698-unsplash.jpg",
+      name: "Sherri J. Cardenas", 
+      date: "3 days ago",
+      amount: "$612",
+      icon: "email",
+      icon_bg: "bg-secondary",
+      message: "Improve spacings on Projects page"
+    }, {
+      avatar: "assets/images/256_jeremy-banks-798787-unsplash.jpg",
+      name: "Joseph S. Ferland", 
+      date: "2 days ago",
+      amount: "$244",
+      icon: "monetization_on",
+      icon_bg: "bg-success",
+      message: "You unlocked a new Badge"
+    }, {
+      avatar: "assets/images/256_joao-silas-636453-unsplash.jpg",
+      name: "Bryan K. Davis", 
+      date: "1 day ago",
+      amount: "$664",
+      icon: "monetization_on",
+      icon_bg: "bg-success",
+      message: "Meeting on Friday"
+    }, {
+      avatar: "assets/images/256_michael-dam-258165-unsplash.jpg",
+      name: "Kaci M. Langston", 
+      date: "just now",
+      amount: "$631",
+      icon: "description",
+      icon_bg: "bg-info",
+      message: "Design a new Brochure"
+    }] 
+    %}
+    {% for i in [0,1,2,3,4] %}
+    <div class="list-group-item d-flex align-items-start {% if i > 1 %} bg-light {% endif %}">
+      <div class="avatar avatar-xs mr-3">
+        <span class="avatar-title rounded-circle bg-primary">
+          <img src="assets/images/logo@2x.png" width="10" alt="avatar">
+        </span>
+      </div>
+
+      <div class="flex d-flex flex-column">
+        <div class="d-flex align-items-center mb-1">
+          <div class="avatar avatar-xxs mr-1">
+              <img src="{{ list_items[i].avatar }}" alt="Avatar" class="avatar-img rounded-circle">
+          </div>
+          <strong class="text-15pt text-ellipsis mr-1">{{ list_items[i].name }}</strong>
+        </div>
+        <small class="mb-1">{{  list_items[i].message }}</small>
+        <small class="text-muted">{{ list_items[i].date }}</small>
+      </div>
+
+      <i class="material-icons icon-muted ml-3">arrow_forward</i>
+    </div>
+    {% endfor %}
+    <div class="card-footer text-center border-0">
+      <a class="text-muted" href="">View All (54)</a>
+    </div>
+  </div>
+</div>
+<!-- END ACTIVITY -->

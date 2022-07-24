@@ -1,0 +1,15 @@
+{% macro component(icons=true, tooltips=false, slug=slug, prefix=prefix) %}
+<li class="sidebar-menu-item{% if slug === 'social-profile' %} active{% endif %}"{% if tooltips %} data-toggle="tooltip" data-title="Profile" data-placement="right" data-container="body" data-boundary="window"{% endif %}>
+  <a class="sidebar-menu-button" href="{{ prefix }}social-profile.html">
+    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">people</i>
+    <span class="sidebar-menu-text">Profile</span>
+  </a>
+</li>
+<li class="sidebar-menu-item{% if slug === 'social-edit-account' %} active{% endif %}"{% if tooltips %} data-toggle="tooltip" data-title="Edit Account" data-placement="right" data-container="body" data-boundary="window"{% endif %}>
+  <a class="sidebar-menu-button" href="{{ prefix }}social-edit-account.html">
+    <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">portrait</i>
+    <span class="sidebar-menu-text">Edit Account</span>
+  </a>
+</li>
+{% endmacro %}
+{{ component() }}

@@ -1,0 +1,116 @@
+{% if 'fluid' in prefix %}<div class="page__header">{% endif %}
+  <div class="{{ containerClass }} page__heading-container">
+    <div class="page__heading d-flex align-items-center">
+      <div class="flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+          </ol>
+        </nav>
+        <h1 class="m-0">{{ title }}</h1>
+      </div>
+      <div class="btn-group btn-group-sm ml-3" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-light"><i class="material-icons">keyboard_arrow_left</i></button>
+        <button type="button" class="btn btn-light"><i class="material-icons">keyboard_arrow_right</i></button>
+      </div>
+    </div>
+  </div>
+{% if 'fluid' in prefix %}</div> <!-- // END page__header --> {% endif %}
+
+{% if 'fluid' in prefix %}
+<div class="page__header page__header-nav">
+  <div class="{{ containerClass }} page__container">
+    {% include "layouts/_navbar.secondary.html" %}
+  </div>
+</div>
+{% endif %}
+
+<div class="{{ containerClass }} page__container">
+  <div class="card card-shadow">
+    <div class="card-header bg-white d-flex align-items-center">
+      <div class="flex d-flex align-items-center">
+        <div class="rounded border bg-white mr-3" style="padding: 0.25rem;">
+          <img src="assets/images/company.svg" alt="company">
+        </div>
+        <div class="flex">
+          <h4 class="card-title">Medical Clinic Name</h4>
+          <div class="text-muted">3 Employees</div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light btn-sm ml-3"><i class="material-icons mr-1">edit</i> Edit</button>
+    </div>
+    <div class="card-body">
+      <p>Total Sales: <strong>&dollar;29,291</strong></p>
+      <p>Email: <a href="">contact@frontted.com</a></p>
+      <p>Phone: +1 391 821 291</p>
+      <p class="mb-0">Website: <a href="">https://www.acmecorp.com</a></p>
+    </div>
+    <div class="card-footer card-header-tabs-basic nav" role="tablist">
+      <a href="#overview" class="active" data-toggle="tab" role="tab" aria-selected="true">Overview</a>
+      <a href="#sales" data-toggle="tab" role="tab" aria-selected="false">Sales</a>
+      <a href="#tickets" data-toggle="tab" role="tab" aria-selected="false">Tickets</a>
+      <a href="#activity" data-toggle="tab" role="tab" aria-selected="false">Activity</a>
+    </div>
+  </div>
+
+  <div class="row card-group-row">
+    <div class="col-md card-group-row__col">
+      <div class="card card-sm bg-primary border-0 card-group-row__card">
+        <div class="card-body d-flex align-items-center">
+          <div class="flex">
+            <div class="card-title text-white">Sales</div>
+            <h4 class="text-white mb-0">&dollar;233,192</h4>
+          </div>
+          <i class="material-icons text-white-50 icon-40pt ml-3">receipt</i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md card-group-row__col">
+      <div class="card card-sm bg-success border-0 card-group-row__card">
+        <div class="card-body d-flex align-items-center">
+          <div class="flex">
+            <div class="card-title text-white">Orders</div>
+            <h4 class="text-white mb-0">&dollar;122,245</h4>
+          </div>
+          <i class="material-icons text-white-50 icon-40pt ml-3">receipt</i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md card-group-row__col">
+      <div class="card card-sm bg-primary-dark border-0 card-group-row__card">
+        <div class="card-body d-flex align-items-center">
+          <div class="flex">
+            <div class="card-title text-white">Growth</div>
+            <h4 class="text-white mb-0">66%</h4>
+          </div>
+          <i class="material-icons text-white-50 icon-40pt ml-3">receipt</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <div class="card">
+        <div class="card-header bg-white d-flex align-items-center">
+          <h4 class="card-header__title flex m-0">Current Sales</h4>
+          <div
+            data-toggle="flatpickr" 
+            data-flatpickr-wrap="true"
+            data-flatpickr-static="true" 
+            data-flatpickr-mode="range" 
+            data-flatpickr-alt-format="d/m/Y" 
+            data-flatpickr-date-format="d/m/Y">
+            <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 <span class="text-muted mx-1">to</span> 20/03/2018</a>
+            <input class="flatpickr-hidden-input" type="hidden" value="13/03/2018 to 20/03/2018" data-input>
+          </div>
+        </div>
+        <div class="card-body text-muted">
+          <div class="chart" style="height: calc(248px);">
+            <canvas id="earningsTrafficChart">
+              <span class="h5"><strong>Website Traffic / Earnings</strong> area chart goes here.</span>
+            </canvas>
+          </div>
+        </div>
+      </div>
+</div>
+

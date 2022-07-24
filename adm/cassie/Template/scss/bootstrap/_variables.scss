@@ -1,0 +1,61 @@
+
+// Gray Color Palette
+$gray-100:                        #f3f6f9;
+$gray-200:                        #e9ecf1;
+$gray-300:                        #d9dfe7;
+$gray-400:                        #c4cdd6;
+$gray-500:                        #919fac;
+$gray-600:                        #637382;
+$gray-700:                        #454f5b;
+$gray-800:                        #363d47;
+$gray-900:                        #212b35;
+
+$blue:                            $color-brand-01;
+
+// General
+$body-color:                      $color-text-02;
+$border-color:                    rgba($color-ui-02, .85);
+$transition-base:                 all 0.25s;
+
+$border-radius:                   0;
+$border-radius-lg:                0;
+$border-radius-sm:                0;
+
+// Buttons/Input
+$btn-padding-x:                   1rem;
+$input-btn-padding-y:             0.437rem;
+
+// Cards
+$card-cap-bg:                     darken($color-ui-01, 1.5%);
+$card-border-color:               $border-color;
+
+// Fonts
+$font-size-base:                  .875rem;
+$font-size-sm:                    .8125rem;
+$font-size-xs:                    .75rem;
+
+$font-family-base:                'Roboto', sans-serif;
+$font-family-secondary:           'Fira Sans', sans-serif;
+
+$font-family-sans:                'Helvetica Neue', Helvetica, sans-serif;
+$font-family-serif:               'Roboto Slab', serif;
+$font-family-mono:                'Roboto Mono', monospace;
+$font-family-cursive:             'Oleo Script Swash Caps', cursive;
+
+$font-family-numeric:             'Oswald', sans-serif;
+$font-family-numeric-2:           'Lato', sans-serif;
+
+
+// Forms
+$input-border-color:              $gray-300;
+$input-focus-border-color:        $gray-400;
+
+// Links
+$link-hover-decoration:           none;
+
+// Pagination
+$pagination-padding-x:            0.85rem;
+$pagination-line-height:          1.367;
+
+// Popovers
+$popover-border-color:            darken($color-ui-02, 3%);

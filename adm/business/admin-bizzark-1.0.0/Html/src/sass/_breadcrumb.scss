@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  & + [aria-label="breadcrumb"] {
+    margin-top: -.6rem;
+  }
+}
+
+.breadcrumb {
+  align-items: center;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: $breadcrumb-color;
+  > a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+  + .breadcrumb-item {
+    &::before {
+      font-family: "Material Icons";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: "liga";
+      content: "keyboard_arrow_right";
+    }
+  }
+}

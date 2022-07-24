@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="121" y="132" width="929" height="276"></rect>
+        <filter x="-1.7%" y="-4.5%" width="103.3%" height="111.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.831372549   0 0 0 0 0.862745098   0 0 0 0 0.88627451  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="-1.0658141e-14" y="-1.0658141e-14" width="48.52" height="48.52" rx="2"></rect>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mini" transform="translate(-147.000000, -158.000000)">
+            <g id="Rectangle-Copy-10">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke-opacity="0.144585883" stroke="#979797" stroke-width="1" fill="#F5F7F9" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Rectangle-Copy-9" stroke-opacity="0.144585883" stroke="#979797" fill="#FFFFFF" x="121" y="132" width="929" height="228"></rect>
+            <g id="Group-5" transform="translate(143.000000, 154.000000)">
+                <g id="Group-4">
+                    <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" opacity="0.34" x="0" y="0" width="56" height="56" rx="2"></rect>
+                    <g id="Group-7" transform="translate(4.000000, 4.000000)">
+                        <g id="Rectangle">
+                            <use fill-opacity="0.54" fill="#01B875" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="icona_block" opacity="0.5" transform="translate(7.000000, 8.000000)" fill="#FFFFFF">
+                            <rect id="Rectangle" x="0" y="31.7333333" width="34" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-12" x="14.1666667" y="11.9" width="6.23333333" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-13" x="14.1666667" y="18.1333333" width="6.23333333" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-18" x="26.6333333" y="18.1333333" width="6.23333333" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-17" x="1.7" y="18.1333333" width="6.23333333" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-14" x="13.6" y="23.2333333" width="6.8" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-23" x="11.9" y="0" width="10.2" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-11" x="8.5" y="3.96666667" width="17.5666667" height="2.26666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle" x="7.36666667" y="5.1" width="2.26666667" height="27.2" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-16" x="24.9333333" y="5.1" width="2.26666667" height="27.2" rx="1.13333333"></rect>
+                            <rect id="Rectangle" x="13.6" y="24.3666667" width="2.26666667" height="7.93333333" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-21" x="11.3333333" y="0.566666667" width="2.26666667" height="3.96666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-22" x="20.4" y="0.566666667" width="2.26666667" height="3.96666667" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-19" x="1.13333333" y="19.2666667" width="2.26666667" height="13.0333333" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-15" x="18.1333333" y="24.3666667" width="2.26666667" height="7.93333333" rx="1.13333333"></rect>
+                            <rect id="Rectangle-Copy-20" x="30.6" y="19.2666667" width="2.26666667" height="13.0333333" rx="1.13333333"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

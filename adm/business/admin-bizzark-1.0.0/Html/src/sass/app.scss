@@ -1,0 +1,105 @@
+// Variables
+@import './variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// MDK
+@import 'material-design-kit/src/style';
+
+// APP
+@import './flexbox';
+@import './icons';
+@import './type';
+@import './layout';
+@import './layout-mini';
+@import './dropdown';
+@import './header';
+@import './search-form';
+@import './navbar';
+@import './navbar-dark';
+@import './navbar-light';
+@import './drawer';
+@import './sidebar';
+@import './sidebar-primary';
+@import './card';
+@import './table';
+@import './button';
+@import './breadcrumb';
+@import './form';
+@import './flatpickr';
+@import './input-group';
+@import './progress';
+@import './tabs';
+@import './list-group';
+@import './borders';
+@import './custom-checkbox-toggle';
+@import './alert';
+@import './loader';
+@import './helpers';
+@import './badge';
+@import './avatar';
+@import './chart';
+@import './pagination';
+@import './page-separator';
+@import './apps/trello';
+@import './apps/chat';
+@import './daterangepicker';
+@import './toastr';
+@import './fullcalendar';
+@import './preloader';
+
+// 
+@import './dashboard-area-tabs';
+@import './dashboard-location-tabs';
+@import './todo';
+@import './skills';
+@import './login';
+@import './login-centered-boxed';
+@import './stories';
+@import './pricing';
+@import './map';
+@import './digital-product';
+
+// custom
+
+@import './card-course';
+@import './activity-timeline';
+@import './image';
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  white-space: nowrap;
+}
+
+@each $color, $value in $theme-colors {
+  .bg-soft-#{$color} {
+    color: darken(theme-color($color), 5%) !important;
+    background-color: rgba(theme-color($color), .1) !important;
+  }
+}
+
+.filters-sidebar {
+  max-width: 270px; 
+  flex: 0 0 270px;
+
+  .flatpickr-calendar.static {
+    width: 230px;
+  }
+}
+
+.layout-default.has-drawer-opened {
+  .navbar {
+    padding-left: 0;
+  }
+  .navbar-brand {
+    color: white;
+    background-color: $dark;
+    padding: 0 $navbar-padding-x;
+    width: $mdk-drawer-width;
+    height: $navbar-height;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,248 @@
+
+// Local variables
+@import "../variables";
+@import "../bootstrap/variables";
+
+// Local mixins
+@import "../mixins";
+
+// Bootstrap variables and mixins
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+body {
+  background-image: none;
+  background-color: #d8dce3; //darken($gray-200, 2%);
+}
+
+.sidebar {
+  background-color: $gray-900;
+  @include gradient-y($gray-900, darken($gray-900, 3%));
+  border-right-width: 0;
+
+  hr { opacity: .1; }
+}
+
+.sidebar-header {
+  border-bottom-color: rgba(#fff, .05);
+  position: relative;
+  z-index: auto;
+}
+
+.sidebar-logo {
+  color: lighten($color-brand-01, 5%);
+  @include hover-focus() { color: lighten($color-brand-01, 5%); }
+
+  span { font-weight: 500; }
+}
+
+.sidebar-logo-headline {
+  color: rgba(#fff, .4);
+  font-weight: 300;
+}
+
+.sidebar-body {
+  > .ps__rail-y {
+    background-color: transparent;
+
+    > .ps__thumb-y {
+      background-color: rgba(#fff, .85);
+    }
+  }
+}
+
+.nav-sidebar {
+  .content-label {
+    color: rgba(#fff, .35);
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .nav-item {
+    &.show {
+      .nav-link {
+        color: #fff;
+        font-weight: 400;
+
+        svg {
+          color: #fff;
+          fill: none;
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    color: rgba(#fff, .6);
+    font-weight: 300;
+    @include hover-focus() { background-color: transparent; }
+
+    &.with-sub::after {
+      border-color: rgba(#fff, .4);
+    }
+
+    &.active {
+      background-color: $color-brand-01;
+      color: #fff;
+      font-weight: 400;
+
+      svg {
+        fill: rgba(#fff, .16);
+        color: #fff;
+      }
+    }
+  }
+
+  .nav-sub::before { border-left-color: rgba(#fff, .1); }
+
+  .nav-sub-link {
+    color: rgba(#fff, .7);
+    font-weight: 300;
+
+    @include hover-focus() { color: #fff; }
+
+    &.active {
+      color: lighten($color-brand-01, 10%);
+      font-weight: 400;
+
+      &::before { border-color: $color-brand-01; }
+    }
+  }
+}
+
+.content {
+  padding-top: $header-height-mobile;
+  @include media-breakpoint-up(sm) { padding-top: $header-height - 10px; }
+  @include media-breakpoint-up(lg) { padding-top: $header-height; }
+}
+
+.content-header {
+  padding: 15px;
+  @include media-breakpoint-up(sm) { padding: 20px; }
+}
+
+.header {
+  background-color: #fff;
+  border-bottom-width: 0;
+  box-shadow: $shadow-base;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  @include media-breakpoint-up(lg) { left: $sidebar-width - 10px; }
+  @include media-breakpoint-up(xl) { left: $sidebar-width; }
+}
+
+.header-search {
+  background-color: darken($color-ui-01, 2.5%);
+  border-color: transparent;
+
+  &.active {
+    box-shadow: none;
+  }
+}
+
+// card
+.card {
+  border-width: 0;
+  box-shadow: none;
+}
+
+// calendar
+.content-body-calendar,
+.content-body-chat,
+.content-body-profile {
+  padding-top: 10px;
+  @include media-breakpoint-up(sm) { padding-top: 20px; }
+}
+
+.content-calendar {
+  border-width: 0;
+  box-shadow: $shadow-01, $shadow-02;
+  height: calc(100vh - 120px);
+}
+
+// chat
+.chat-sidebar,
+.chat-body,
+.mail-body-content,
+.profile-body {
+  border-width: 0;
+  box-shadow: $shadow-01, $shadow-02;
+}
+
+// timeline
+.timeline-body::before {
+	border-left-color: darken($color-ui-03, 4%);
+}
+
+.card-timeline,
+.card-timeline-event {
+  border-width: 0;
+  box-shadow: none;
+}
+
+// people
+.card-people {
+  &,&:hover,&:focus {
+    border-width: 0;
+    box-shadow: none;
+  }
+}
+
+.card-people-two {
+  &,
+  .card-body,
+  .card-footer {
+    border-width: 0;
+    box-shadow: none;
+  }
+}
+
+.card-people-three {
+  &,.card-body {
+    border-width: 0;
+    box-shadow: none;
+  }
+}
+
+// profile settings
+.list-group-settings {
+  border-width: 0;
+  box-shadow: none;
+}
+
+// invoice
+.card-invoice {
+  border-width: 0;
+  box-shadow: none;
+}
+
+// pricing
+.card-pricing {
+  border-width: 0;
+  box-shadow: none;
+}
+
+// components
+.content-right-components .nav {
+  border-left-color: darken($color-ui-03, 6%);
+}
+
+.component-section {
+  padding: 25px;
+  background-color: $color-ui-01;
+  border: 0;
+
+  &.no-code { padding-bottom: 25px; }
+
+  + .component-section { margin-top: 30px; }
+
+  .card {
+    border-width: 1px;
+    border-color: $gray-300;
+  }
+}

@@ -1,0 +1,41 @@
+
+.modal-content {
+  border-width: 0;
+
+  .close {
+    font-weight: $font-weight-light;
+    font-size: 24px;
+    line-height: 0.87;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.5px;
+    }
+  }
+}
+
+.modal-header {
+  align-items: center;
+
+  .close {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba(darken($gray-900, 8%), .7);
+
+  &.show { opacity: 1; }
+}
+
+.modal-title {
+  font-size: 18px;
+  color: $color-text-01;
+  line-height: 1.2;
+}
+
+.modal-body {
+  color: $color-text-02;
+}

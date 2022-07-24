@@ -1,0 +1,26 @@
+
+.page-error {
+  background-color: $color-ui-01;
+}
+
+.error-panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+
+  .svg-wrapper {
+    width: 200px;
+    object { width: 100%; }
+
+    @include media-breakpoint-up(sm) { width: 300px; }
+  }
+
+  .svg-wrapper-503 {
+    width: 200px;
+  }
+}

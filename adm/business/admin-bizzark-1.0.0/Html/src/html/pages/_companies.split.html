@@ -1,0 +1,43 @@
+
+<form class="list-group list-group-flush">
+  <div class="list-group-item">
+    <strong>Filters</strong>
+  </div>
+  <div class="list-group-item">
+    <label class="text-label" for="filter_name">Name</label>
+    <input id="filter_name" type="text" class="form-control" placeholder="Search by name">
+  </div>
+  <div class="list-group-item">
+    <label class="text-label" for="filter_category">Industry</label><br>
+    <select id="filter_category" class="custom-select">
+      <option value="all">Any</option>
+      <option value="all">Software</option>
+      <option value="all">Production of Goods</option>
+      <option value="all">Health</option>
+      <option value="all">Sports</option>
+    </select>
+  </div>
+  <div class="list-group-item">
+    <label class="text-label" for="filter_stock">Has Sales</label>
+    <div class="custom-control custom-checkbox mt-sm-2">
+      <input type="checkbox" class="custom-control-input" id="filter_stock" checked="">
+      <label class="custom-control-label" for="filter_stock">Yes</label>
+    </div>
+  </div>
+  <div class="list-group-item">
+    <label class="text-label" for="filter_date">Created Date</label>
+    <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+  </div>
+  <div class="list-group-item">
+    <label class="text-label d-block mb-4">Range</label>
+    <input type="text" 
+      data-toggle="ion-rangeslider"
+      data-min="0"
+      data-max="1000"
+      data-from="200"
+      data-to="800"
+      data-prefix="$"
+      data-type="double"
+      data-grid="true">
+  </div>
+</form>
