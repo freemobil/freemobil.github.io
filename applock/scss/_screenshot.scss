@@ -1,0 +1,104 @@
+//
+// screenshot.scss
+//
+.swiper-container {
+    margin-top: 50px;
+}
+.swiper-slide{
+    cursor: pointer;
+    &.swiper-slide-active img {
+        border: 12px solid transparent;
+    }
+}
+.swiper-button-next {
+    background-image: none;
+}
+.swiper-button-prev {
+    background-image: none;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 33px;
+    height: 33px;
+    margin-top: -22px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 20px;
+    color: $custom;
+    border: 1px solid $custom;
+    border-radius: 8px;
+    &:hover {
+        color: $white;
+        background: $custom;
+    }
+}
+.screenshot-cell {
+    position: absolute;
+    top: -547px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    img {
+        height: 590px;
+    }
+}
+@media (max-width: 1024px){    
+    .swiper-container {
+        margin-top: 30px;
+    }
+    .screenshot-cell {
+        top: -450px;
+        img {
+            height: 480px;
+        }
+    }
+}
+@media (max-width: 991px){
+    .screenshot-cell {
+        top: -330px;
+        img {
+            height: 345px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .screenshot-cell {
+        top: -445px;
+        img {
+            height: 475px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+}
+
+
+@media (max-width: 425px){
+    .screenshot-cell {
+        top: -380px;
+        img {
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .screenshot-cell {
+        top: -330px;
+        img {
+            height: 345px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .screenshot-cell {
+        top: -575px;
+        img {
+            height: 620px;
+        }
+    }
+}

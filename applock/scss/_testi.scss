@@ -1,0 +1,41 @@
+//
+// testi.scss
+//
+.testi-icon {
+    i {
+        font-size: 64px;
+    }
+}
+.testi-review {
+    .name {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+    .testimonial {
+        cursor: -webkit-grab;
+        .content-review {
+            .review {
+                font-size: 17px;
+                color: $gray-500;
+            }
+        }
+    } 
+    img {
+        height: 85px;
+    }
+}
+.owl-theme {
+    .owl-controls {
+        .owl-page {
+            span {
+                border-radius: 50px;
+                background: transparent;
+                border: 1px solid $custom;
+            }
+        }
+        .owl-page.active span, 
+        &.clickable .owl-page:hover span {
+            background: $custom;
+        }
+    }
+}

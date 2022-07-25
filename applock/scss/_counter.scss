@@ -1,0 +1,16 @@
+//
+// counter.scss
+//
+.bg-counter {
+    position: relative;
+    padding: 60px 0;
+    .counter-box {
+        .counter-icon {
+            font-size: 40px;
+        }
+        .counter-head {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+}

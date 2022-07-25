@@ -1,0 +1,32 @@
+//
+// price.scss
+//
+.pricing-table {
+    border-radius: 8px;
+    .price-header {
+        border-radius: 8px 8px 0 0;
+        .price-title {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: $secondary;
+        }
+    }
+    .price-value{
+        background: $gray-200;
+        .price-lable {
+            h4 {                        
+                display: inline-block;
+            }
+        }
+    }
+    .pricing-features {
+        ul {
+            li {
+                position: relative;
+                padding: 7px 0;
+            }
+        }
+    }
+}

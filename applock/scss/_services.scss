@@ -1,0 +1,108 @@
+//
+// feature.scss
+//
+.services {
+    .core-service {
+        .core-service-content {
+            .content {
+                overflow: hidden;
+                display: block;
+                .title {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .icon i {
+            font-size: 25px;
+        }
+        .fea-right {
+            .icon {
+                float: right;
+            }
+        }
+        .fea-left {
+            .icon {
+                float: left;
+            }
+        }
+    }
+}
+//Avalabile Feature
+.device-feature {
+    .icon {
+        img {
+            height: 50px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 77% 23% 20% 80% / 60% 56% 44% 40%;
+            background-color: $custom;
+            opacity: 0.4;
+            z-index: -2;
+            transition: all 0.5s ease;
+        }
+    }
+    .content {
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    &.device-border {
+        &:after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 32px;
+            top: 30px;
+            opacity: 0.4;
+            left: 70%;
+            background: url("../images/border.png") center center no-repeat;
+        }
+    }
+    &:hover {
+        .icon {
+            &:before {
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                bottom: -12px;
+                right: -12px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .services {                   
+        .core-service-img {
+            display: none;                
+        }
+    }
+}
+@media (min-width: 200px) and (max-width: 767px) {
+    .services {
+        .core-service {
+            .fea-right {
+                text-align: left !important;
+                .icon {
+                    float: left;
+                    margin-left: 0 !important;
+                    margin-right: 24px;
+                }
+            } 
+        }
+    }
+    .device-feature {
+        &.device-border{
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//
+// cta.scss
+//
+//bg cta
+.bg-cta {
+    padding: 100px 0;
+    .play-btn {
+        img {
+            height: 80px;
+        }
+    }
+}
+//download
+.app-download {
+    li {
+        a {
+            img {
+                height: 58px;
+            }
+        }
+    }
+}

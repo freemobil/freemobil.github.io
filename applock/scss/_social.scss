@@ -1,0 +1,39 @@
+//
+// social.scss
+//
+.social-icon {
+    li {
+        a {            
+            color: $body-color;
+            border: 1px solid $body-color;
+            display: inline-block;
+            height: 34px;
+            width: 34px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border-radius: 50px;
+            overflow: hidden;
+            position: relative;
+            i {                
+                font-size: 16px;
+                line-height: 32px;
+            }
+            &:hover {
+                background-color: $custom;
+                border-color: $custom !important;
+                color: $white !important;
+            }
+        }
+    }
+    &.social {
+        li {
+            a {
+                color: $gray-500;
+                border-color: $gray-500;
+            }
+        }
+    }
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 3px;
+}

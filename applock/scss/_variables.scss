@@ -1,0 +1,43 @@
+//
+// variables.scss
+//
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto&display=swap');
+
+// Color variables
+$white:                       #ffffff;
+
+$primary:                     #005ED1;
+$secondary:                   #9CA1A3;
+$success:                     #159B42;
+$info:                        #4BA2AA;
+$warning:                     #FCD581;
+$danger:                      #D52941;
+$dark:                        #29292d;
+$black:                       #010101;
+$muted:                       #707070;
+$light:                       #f8f8f8;
+$d-light:                     #f0f0f0;
+
+//Gray Color
+$gray-100:                    #f8f9fa;
+$gray-200:                    #e9ecef;
+$gray-300:                    #dee2e6;
+$gray-400:                    #ced4da;
+$gray-500:                    #adb5bd;
+$gray-600:                    #6c757d; 
+$gray-700:                    #495057;
+//Custom
+$custom:                      #23d1b7;
+$body-color:                  #535353;
+$shadow:                        0 .5rem 1rem rgba(0,0,0,.15)!important;
+//Overlay
+$overlay:                     rgba(20, 30, 58, 0.85);
+
+// Base font
+$font-size-base:              15px;
+
+$font-family-base:            'Nunito', sans-serif;
+$font-family-secondary:       'Roboto', sans-serif;
+
