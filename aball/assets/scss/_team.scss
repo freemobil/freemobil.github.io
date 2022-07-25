@@ -1,0 +1,392 @@
+
+
+
+/*===========================
+    9.TEAM css 
+===========================*/
+
+
+
+
+
+.team-area{
+	padding-top: 88px;
+	padding-bottom: 38px;
+	overflow: hidden;
+	& .container-fluid{
+		& .col-lg-3{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+	& .section-title{
+		padding-bottom: 6px;
+	}
+
+}
+
+.team-item{
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+	z-index: 4;
+	@include transition(0.3s);
+	& .team-overlay{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(rgba(255, 171, 74, 0.5) 0%, #000 100%);
+		opacity: 0;
+		@include transition(0.3s);
+		& .content{
+			padding-left: 20px;
+			padding-bottom: 10px;
+			& .title{
+				color: $white;
+				font-size: 25px;
+				margin-bottom: 1px;
+			}
+			& span{
+				color: #E0E0E0;
+				font-family: $medium;
+				display: inline-block;
+				padding-bottom: 6px;
+			}
+			& ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				& li{
+					display: inline-block;
+					margin-right: 16px;
+					& a{
+						color: $white;
+						font-size: 13px;
+					}
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+	& img{
+		width: 100%;
+	}
+}
+
+
+
+.team-active{
+	& .slick-current{
+		& .team-item{
+			box-shadow: 0px 25px 60px rgba(0, 0, 0, 0.6);
+			z-index: 5;
+			transform: scale(1.05);
+			& .team-overlay{
+				opacity: 1;
+
+			}
+		}
+	}
+	& .slick-arrow{
+		z-index: 9;
+		position: absolute;
+		top: 44%;
+		transform: translateY(-50%);
+		height: 130px;
+		width: 130px;
+		background: $white;
+		border-radius: 50%;
+		line-height: 140px;
+		font-size: 46px;
+		color: $black;
+		cursor: pointer;
+		@include transition(0.3s);
+		opacity: 0;
+		&:hover{
+			background: $theme-color;
+		}
+
+		&.prev{
+			left: -3%;
+			text-align: right;
+			padding-right: 30px;
+			@media #{$laptop} {
+				left: -5%;
+			}
+			@media #{$lg} {
+				left: -6%;
+			}
+			@media #{$md} {
+				left: -10%;
+			}
+		}
+		&.next{
+			right: -3%;
+			text-align: left;
+			padding-left: 30px;
+			@media #{$laptop} {
+				right: -5%;
+			}
+			@media #{$lg} {
+				right: -6%;
+			}
+			@media #{$md} {
+				right: -10%;
+			}
+		}
+	}
+	& .slick-dots{
+		position: absolute;
+		left: 50%;
+		bottom: 42px;
+		transform: translateX(-50%);
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		z-index: 9;
+		& li{
+			display: inline-block;
+			& button{
+				height: 6px;
+				width: 6px;
+				border: 0;
+				font-size: 0px;
+				border-radius: 50%;
+				background: #E0E0E0;
+				padding: 0;
+				margin: 0 5px;
+				@include transition(0.3s);
+			}
+			&.slick-active{
+				& button{
+					background: $theme-color;
+					width: 25px;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+	&:hover{
+		& .slick-arrow{
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.team-2-area{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	&.team-servies-3{
+		padding-top: 0;
+		padding-bottom: 68px;
+	}
+	&.team-8-area{
+		padding-top: 83px;
+	}
+	&.team-service-area{
+		padding-top: 65px;
+	}
+    &.team-2-about{
+        padding-top: 66px;
+        padding-bottom: 100px;
+        & .team-2-item{
+            & .team-overlay-2{
+                background: $white;
+            }
+        }
+
+    }
+    &.team-about-3{
+        padding-top: 66px;
+    }
+}
+
+
+.team-2-item{
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 10;
+	& > img{
+		width: 100%;
+	}
+	& .team-overlay{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient( rgba(250, 208, 41, 0.25) 0%,#ff564f 100%);
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		& .item{
+			text-align: center;
+			padding-bottom: 10px;
+			& .title{
+				color: $white;
+				font-size: 22px;
+				font-family: $semibold;
+				margin-bottom: 0px;
+			}
+			& span{
+				color: $white;
+				font-size: 15px;
+				font-family: $medium;
+
+			}
+			& ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				& li{
+					display: inline-block;
+					& a{
+						color: $white;
+						margin: 0 3px;
+					}
+				}
+			}
+		}
+	}
+	& .team-overlay-2{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: $white;
+		z-index: 2;
+		padding-top: 45px;
+		opacity: 1;
+		@include transition(0.3s);
+		@media #{$lg} {
+			padding-top: 20px;
+		}
+		@media #{$md} {
+			padding-top: 20px;
+		}
+		@media #{$xs} {
+			padding-top: 60px;
+		}
+		& .title{
+			font-size: 22px;
+			font-family: $semibold;
+			padding-top: 33px;
+			margin-bottom: 5px;
+		}
+	}
+	&:hover{
+		& .team-overlay-2{
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+	&.team-12-item{
+		& .team-overlay{
+			background: linear-gradient(rgba(250, 208, 41, 0.25) 0%, #564FFF 100%);
+		}
+	}
+	&.team-service-item{
+		& .team-overlay-2{
+			background: #f5f5f5;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.team-5-area{
+	background: $white;
+	padding-bottom: 83px;
+	& .team-title{
+		& .title{
+			font-size: 54px;
+			line-height: 62px;
+		}
+	}
+	& .team-5-item{
+		box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+		margin-bottom: 80px;
+		& img{
+			display: inline-block;
+		}
+
+	}
+    &.team-16-area{
+        & .team-2-item {
+            & .team-overlay{
+                background: linear-gradient(rgba(250, 208, 41, 0.25) 0%, #3863F6 100%);
+            }
+        }
+        & .team-5-active {
+            & .slick-dots {
+                & li{
+                    &.slick-active {
+                        & button{
+                            background: #3863F6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.team-5-active{
+	& .slick-dots{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		& li{
+			display: inline-block;
+			& button{
+				height: 6px;
+				width: 6px;
+				border: 0;
+				background: #E0E0E0;
+				border-radius: 50%;
+				display: inline-block;
+				font-size: 0;
+				padding: 0;
+				margin: 0 5px;
+
+			}
+			&.slick-active{
+				& button{
+					width: 25px;
+					border-radius: 10px;
+					background: linear-gradient(90deg, #fad029 0%, #ff564f 65%);
+				}
+			}
+		}
+	}
+}
+

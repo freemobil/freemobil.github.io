@@ -1,0 +1,50 @@
+// Font Family
+
+$light: 'space_grotesk';
+
+$regular: 'space_grotesk';
+
+$medium: 'space_grotesk';
+
+$semibold: 'space_grotesk';
+
+$bold: 'space_grotesk';
+
+$playfair: 'Playfair Display', serif;
+
+// Colors ---------------
+$white: #fff;
+
+$black: #000;
+
+$grey:#f7f7fd;
+
+$theme-color: #FFAB4A;
+
+$theme-color-2: #2AA38C;
+
+$theme-color-3: #FF564F;
+
+$theme-color-4: #564FFF;
+
+$text-color: #33415C;
+
+$hr-border-color:#eceff8;
+
+
+// Heading Color
+$heading-color: #404040;
+
+// Soft color
+$black-soft:#7e7e7e;
+
+
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1600px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+

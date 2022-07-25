@@ -1,0 +1,107 @@
+
+
+
+/*===========================
+    8.OVERVIEW css 
+===========================*/
+
+
+
+
+.overview-area{
+	background: #F3F3F3;
+	padding-top: 88px;
+	&.overview-7-area{
+		background: $white;
+		padding-top: 28px;
+	}
+}
+
+.overview-content{
+	padding-right: 90px;
+	@media #{$md} {
+		padding-right: 50px;
+	}
+	@media #{$xs} {
+		padding-right: 0px;
+	}
+	& span{
+		display: block;
+		font-size: 25px;
+		font-family: $medium;
+		text-transform: uppercase;
+		color: $black;
+		padding-top: 5px;
+		padding-bottom: 38px;
+		font-weight: 500;
+	}
+	& .title{
+		font-size: 54px;
+		line-height: 62px;
+        text-transform: capitalize;
+		@media #{$xs} {
+			font-size: 32px;
+			line-height: 42px;
+		}
+	}
+	& > a{
+		margin-top: 35px;
+		font-size: 18px;
+	}
+	& .brand-item{
+		& .item{
+			margin-right: 45px;
+			&:last-child{
+				margin-right: 0;
+			}
+			& a{
+				opacity: .4;
+				@include transition(0.3s);
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.overview-counter-area{
+	margin-left: -30px;
+	@media #{$md} {
+		margin-left: 0;
+	}
+	@media #{$xs} {
+		margin-left: 0;
+	}
+}
+
+
+.overview-counter-item{
+	background: $white;
+	padding: 40px 40px 30px;
+	border-radius: 5px;
+	@media #{$md} {
+		margin-top: 30px;
+	}
+	@media #{$xs} {
+		margin-top: 30px;
+		text-align: center;
+	}
+	& .icon{
+		height: 77px;
+	}
+	&  .title{
+		font-size: 60px;
+		font-weight: 500;
+		padding-top: 30px;
+		margin-bottom: 6px;
+	}
+	& > span{
+		display: inline-block;
+		font-size: 20px;
+		@media #{$xs} {
+			font-size: 16px;
+		}
+	}
+
+}

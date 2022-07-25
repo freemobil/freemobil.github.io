@@ -1,0 +1,86 @@
+
+
+
+/*===========================
+    18.KEY FEATURE css 
+===========================*/
+
+
+
+
+.key-feature-area{
+	padding-bottom: 100px;
+	background: $white;
+}
+
+.key-feature-content{
+	padding-left: 100px;
+	padding-right: 100px;
+	@media #{$lg} {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	@media #{$md} {
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-top: 40px;
+		text-align: center;
+	}
+	@media #{$xs} {
+		padding-left: 0px;
+		padding-right: 0px;
+		text-align: center;
+		margin-top: 40px;
+	}
+	& .title{
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 600;
+	}
+	& .text{
+		font-weight: 300;
+		color: $black;
+		padding-top: 6px;
+	}
+	& a{
+		margin-top: 48px;
+		display: inline-block;
+		font-size: 14px;
+		font-family: $regular;
+		text-transform: uppercase;
+		color: #707070;
+		& span{
+			height: 30px;
+			width: 30px;
+			background: $theme-color-2;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 24px;
+			display: inline-block;
+			margin-left: 12px;
+		}
+	}
+}
+
+.key-feature-thumb{
+	@media #{$md} {
+		text-align: center;
+	}
+	@media #{$xs} {
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+.key-features-9-area{
+	padding-top: 90px;
+	background: $white;
+}

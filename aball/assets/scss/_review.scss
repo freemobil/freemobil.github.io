@@ -1,0 +1,105 @@
+
+
+
+/*===========================
+    14.REVIEW css 
+===========================*/
+
+
+
+
+
+.review-area{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: $white;
+
+}
+
+.review-item{
+	display: flex;
+	justify-content: center;
+	@media #{$xs} {
+		display: block;
+	}
+	& .review-content{
+		margin-right: 68px;
+		@media #{$lg} {
+			margin-right: 0;
+		}
+		@media #{$md} {
+			margin-right: 0;
+		}
+		@media #{$xs} {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		
+		& .title{
+			font-size: 70px;
+			font-weight: 500;
+			color: #33415C;
+			margin-bottom: 3px;
+			& span{
+				font-size: 22px;
+				margin-left: -11px;
+			}
+		}
+		& ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			& li{
+				display: inline-block;
+				& i{
+					font-size: 17px;
+					color: #FFAB4A;
+				}
+			}
+		}
+		& > span{
+			color: #383838;
+			& span{
+				color: $theme-color-3;
+			}
+		}
+	}
+}
+
+
+
+.review-box{
+	& ul{
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		& > li{
+			text-align: center;
+			height: 142px;
+			width: 165px;
+			background: #F5F5F5;
+			border-radius: 5px;
+			padding-top: 25px;
+			margin: 0 10px;
+			@media #{$lg} {
+				width: 135px;
+			}
+			@media #{$xs} {
+				width: 150px;
+				margin-bottom: 30px;
+			}
+			& span{
+				display: block;
+				font-size: 13px;
+				padding-top: 13px;
+				margin-bottom: -8px;
+			}
+			& i{
+				color: #FFAB4A;
+				font-size: 10px;
+			}
+		}
+	}
+}
