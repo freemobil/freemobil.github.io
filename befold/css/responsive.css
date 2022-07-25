@@ -1,0 +1,116 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+.sidebar-rc-post .rc-post-content {
+	margin-left: 122px;
+}
+.sidebar-rc-post .rc-post-content h4 {
+	font-size: 13px;
+}
+.blog-default-text p {
+	padding-right: 0;
+}
+.about-text {
+	padding-top: 0;
+	padding-left: 0;
+}
+.about-text p {
+	padding-right: 0;
+}
+
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.address-wrapper {
+	padding-left: 0;
+}
+.about-text {
+	padding-top: 0;
+	padding-left: 0;
+}
+.about-text p {
+	padding-right: 0;
+}
+.slider-content p {
+	margin-right: 0;
+}
+.copyright {
+	margin-top: 8px;
+}
+
+
+
+
+
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.blog-default-text {
+	padding-left: 0;
+}
+.blog-default-text p {
+	padding-right: 0;
+}
+.blog-default-text p {
+	padding-right: 0;
+}
+.copyright {
+	margin-top: 0;
+}
+.sidebar-rc-post .rc-post-content {
+	margin-left: 120px;
+}
+.sidebar-rc-post .rc-post-content h4 {
+	font-size: 13px;
+}
+.comments-avatar {
+	float: none;
+	margin-bottom: 10px;
+}
+.comments-text {
+	padding-left: 0;
+}
+.comments-reply {
+	padding-left: 15px;
+}
+.address-wrapper {
+	padding-left: 0;
+}
+.logo {
+	margin-top: 17px;
+}
+.about-text {
+	padding-top: 0;
+	padding-left: 0;
+}
+.about-text p {
+	padding-right: 0;
+}
+.slider-content p {
+	margin-right: 0;
+}
+
+
+
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
