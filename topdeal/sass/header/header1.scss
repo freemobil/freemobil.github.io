@@ -1,0 +1,357 @@
+/*============HEADER V1 ==================*/
+
+
+//** simple and lightweight mixin library for Sass **
+//-- url : http://bourbon.io/docs ---
+@import 'bourbon/bourbon';
+
+//** Mixins for Rem Font Sizing **
+//-- url : http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+@import 'utilities/rem';
+
+//** Variables for responsive design in bootstrap with sass **
+//-- url : https://gist.github.com/webinfinita/11407836
+@import 'utilities/bootstrap_breakpoints';
+
+//** Makes supporting both left-to-right (LTR) and right-to-left (RTL) easy.**
+//-- url : https://github.com/tysonmatanich/directional-scss
+@import 'utilities/directional';
+
+//Mixins utilities
+@import 'utilities/theme_variables';
+@import 'utilities/utilities';
+
+/*===============================================
+	[SASS DIRECTORY ]
+	
+    [1] BLOCK HEADER
+    [2] BLOCK FOOTER
+	
+==============================================*/
+
+.typeheader-1{
+    .header-top{
+        border-top: 5px solid #64c0d1;
+        padding: 18px 0 14px;
+        background: #fff;
+        @include breakpoint(lg){
+            .header-sevices{
+                width: 58%;
+                padding: 0 5px;
+            }
+            .header-cart{
+                width: 17%;
+                padding:side-values(0 15px 0 0) ;
+                margin: 0;
+            }
+        }
+        .html--sevices{ margin: 0; }         
+    }
+    .header-center{
+        background: $background;
+    }
+    .header-form {
+        position: fixed;
+        top: 160px;
+        margin: 0;
+        z-index: 11;
+        #{$right}: 0;
+        #{$left}: auto;
+        .button-header {
+            text-align: center;
+            width: 40px;
+            border-radius: 3px 0 0 3px;
+            background: $background;
+            cursor: pointer;
+            line-height: 40px;
+            color: #fff;
+            position: relative;
+            @include if-rtl{ border-radius:0 3px 3px 0; }
+            &.active:before {
+                opacity: 1;
+                visibility: visible;
+            }
+            &:before {
+                position: absolute;
+                border-style: solid;
+                border-width: 9px;
+                top: 10px;
+                visibility: hidden;
+                content: "";
+                display: block;
+                border-color: side-values(transparent transparent transparent #fff);
+                opacity: 0;
+                position: absolute;
+                transition: all 0.3s ease-in 0s;
+                z-index: 12;
+                #{$right}: 42px;
+                #{$left}: auto;
+            }
+        }
+        .dropdown-form {
+            position: absolute;
+            z-index: 3;
+            background: #fff;
+            top: 0px;
+            display: none;
+            width: 200px;
+            padding: 15px 20px 12px;
+            -moz-box-shadow: 0 1px 4px 0 #c1c1c1;
+            -webkit-box-shadow: 0 1px 4px 0 #c1c1c1;
+            box-shadow: 0 1px 4px 0 #c1c1c1;
+            border-radius: 3px;
+            #{$right}: 60px;
+            #{$left}: auto;
+            .btn-group .btn-link{ display: none; }
+            span.text{
+                display: block;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #222;
+                line-height: 20px;
+            }
+            .dropdown-menu{
+                position: relative;
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                border: none;
+                box-shadow: none;
+                margin: 5px 0 0;
+                > li > button{ padding: 0; outline: none; }
+                li {
+                    line-height: 35px;
+                    display: inline-block;
+                    border: 1px solid #ebebeb;
+                    padding: 0 8px;
+                    margin: 0 1px 7px 0;
+                    min-width: 65px;
+                    &:hover{ border-color: $background; color: $background; }
+                    img{ display: none; }
+                    > a{ padding: 0; display: inline-block; background: #fff!important;}
+                }
+            }
+        }
+        .button-user{
+            position: fixed;
+            top: 210px;
+            margin: 0;
+            z-index: 10;
+            width: 40px;
+            line-height: 40px;
+            height: 40px;
+            border-radius: 3px 0 0 3px;
+            float: none;
+            overflow: hidden;
+            #{$right}: 0;
+            @include if-rtl{ border-radius:0 3px 3px 0; }
+            .user-info a{
+                position: relative;
+                display: block;
+                text-indent: -999px;
+                background: $background;
+                &:before {
+                    content: '';
+                    background: url("../../image/icon/icon-full.png")  no-repeat center;
+                    background-position: -79px -296px;
+                    width: 23px;
+                    height: 24px;
+                    position: absolute;
+                    text-align: center;
+                    top: 8px;
+                    #{$left}: 8px;;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .sevices-menu{
+        ul li {
+            padding: 0 5px;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            display: inline-block;
+            .icon {
+                width: 40px;
+                height: 33px;
+                line-height: 33px;
+                display: inline-block;
+            }
+            &.home .icon {
+                background: transparent url("../../image/icon/icon-home.png") no-repeat $left center; 
+            }
+            &.mail .icon {
+                width: 45px;
+                background: transparent url("../../image/icon/icon-mail.png") no-repeat $left center; 
+            }
+            &.delivery .icon {
+                background: transparent url("../../image/icon/icon-delively.png") no-repeat $left center;
+            }
+            .text {
+                display: inline-block;
+                font-size: 0;
+                line-height: 16px;
+                p{ margin-bottom: 0; }
+                a,
+                p {
+                    color: #555;
+                    line-height: 12px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+        
+    &.navbar-compact{
+        .header-top{;}
+        .header-center{display: none; margin: 0; }
+        .header-bottom{
+            padding: 15px 0 10px;
+            position: fixed;
+            background: #fff none repeat scroll 0 0;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            .navbar-logo{ img{max-width: 110px;} }
+            .megamenu-style-dev .horizontal ul.megamenu > li > a{
+                padding: 5px 15px 5px;
+            }
+            .phone-header{ top: -5px; }
+        }
+    }
+   
+    .header-search{
+        margin-top: 10px;
+    }
+    #sosearchpro.so-search{ margin: 0; width: 100%; padding: 0;
+        .select_category { 
+            width: 115px; 
+            border: 0; 
+            background: #fff; 
+            cursor: pointer;    
+            border-radius: 3px 0 0 3px;  
+            border-#{$right}: 1px solid #ebebeb;
+            @include if-rtl{ border-radius: 0 3px 3px 0; } 
+            select{ height: 30px; line-height: 30px;cursor: pointer; }
+            &:after { content: "\f0d7"; background-color: transparent; line-height: 30px;font-size: 12px; width: 20px; color: #444; #{$right}: 3px;  #{$left}: auto;}
+        }
+        .autosearch-input { 
+            cursor: pointer; 
+            border-radius: 0;  
+            border: 0; 
+            height: 30px; 
+            background: #fff; 
+            padding-#{$left}: 20px;
+            @include transition(all .3s ease 0s); 
+            &::-moz-placeholder {
+                color: #222;
+                opacity: 1;
+            }
+            &:-ms-input-placeholder { color: #222; }
+            &::-webkit-input-placeholder  { color: #222; }
+        }
+        .button-search {
+            border: 0; 
+            font-size: 16px; 
+            height: 30px; 
+            padding: 0 8px; 
+            min-width: 30px; 
+            text-align: center; 
+            @include transition(all .3s ease 0s); 
+            background: #222;
+            border-radius: 0 3px 3px 0;
+             @include if-rtl{  border-radius: 3px 0 0 3px; } 
+            i {  color: #fff; font-size: 14px; position: relative; top: -2px; }
+            &:hover{ 
+                background: darken(#222,10%);
+            }
+        }
+        
+    }
+    .shopping_cart{
+        padding: 0;
+        cursor: pointer;
+        float: $right;
+        display: inline-block;
+        margin: 0;
+        .fa-check-circle{ display: none; }
+        .handle{
+            width: 40px;
+            border-radius: 3px;
+            float: $left;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            padding: 0;
+            font-size: 0;
+            background: $background url("../../image/icon/icon-cart.png") no-repeat center center;
+            margin-#{$right}: 8px;
+        }
+        .btn-shopping-cart{
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: $left;
+
+            a.top_cart{ color: #fff;
+                .shopcart .text-shopping-cart{padding: 0px; color: #fff;font-size: 12px; text-transform: uppercase; font-weight: bold; float: $left;margin: 0;}
+                &:hover{ color: $linkColor;
+                    .shopcart .text-shopping-cart{color: $linkColor;}
+                }
+            } 
+            .cart-info{
+                float: $left;
+                .title-cart{
+                    display: block;
+                    vertical-align: middle;
+                    color: #222;
+                    font-size: 14px;
+                    margin: 0;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    line-height: 18px;
+                }
+                .total-shopping-cart{
+                    line-height: 20px;
+                    padding: 0;
+                    color: #222;
+                    font-size: 12px;
+                    .items_cart2{
+                        color: $linkColor;
+                    }
+                }
+            }           
+        } 
+        .dropdown-menu{top: 41px!important; #{$right}: 0px; #{$left}: auto;}
+    }
+
+
+    .megamenu-style-dev{
+        .navbar-default{ background: transparent; }
+        .horizontal{
+            ul.megamenu > li{ float: none; display: inline-block; }
+            ul.megamenu > li > .sub-menu{ text-align: $left }
+            ul.megamenu > li.active > a, ul.megamenu > li:hover > a{ background: darken($background,10%);
+            }
+            ul.megamenu > li > a{
+                color: #fff; font-size: 14px; height: auto; padding-left:11px; padding-right:20px ;
+                text-transform: uppercase; text-shadow: none;  font-weight: bold; 
+                strong{ font-weight: bold; }
+                .caret{
+                    position: absolute;
+                    #{$right}: 7px;
+                    top: 24px;
+                    z-index: 999;
+                    content: "";
+                }
+            }
+            // ul.megamenu > li:first-child a{
+            //     padding-#{$left}: 0;
+            // }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@include breakpoint(lg){
+	.footer-has-toggle{
+ 		display: block !important;
+ 	}
+	.container {
+	    width: 1200px;
+	}
+	.container-megamenu.vertical .vertical-wrapper{ position: absolute;}
+}

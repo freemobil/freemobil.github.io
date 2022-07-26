@@ -1,0 +1,360 @@
+
+//** simple and lightweight mixin library for Sass **
+//-- url : http://bourbon.io/docs ---
+@import 'bourbon/bourbon';
+
+//** Mixins for Rem Font Sizing **
+//-- url : http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+@import 'utilities/rem';
+
+//** Variables for responsive design in bootstrap with sass **
+//-- url : https://gist.github.com/webinfinita/11407836
+@import 'utilities/bootstrap_breakpoints';
+
+//** Makes supporting both left-to-right (LTR) and right-to-left (RTL) easy.**
+//-- url : https://github.com/tysonmatanich/directional-scss
+@import 'utilities/directional';
+
+//Mixins utilities
+@import 'utilities/theme_variables';
+@import 'utilities/utilities';
+
+/************************************************************************************************
+  FOOTER V3
+*************************************************************************************************/
+footer.typefooter-3{
+	
+	.section_1{     
+		padding: 30px 0;
+		// .show-error{
+		// 	color: #fff!important;
+		//     position: absolute;
+		//     background: #ef2c2c;
+		//     padding: 2px 5px;
+		//     min-width: 139px;
+		//     font-size: 12px;
+		//     text-align: center;
+		//     border-radius: 3px;
+		//     white-space: nowrap;
+		//     top: -32px;
+		//     #{$right}: 0;
+		// }
+		.module.news-letter{margin: 0;
+			.newsletter{ display: table;padding: 0;background: transparent !important;border: none;}
+			.title-block{
+			    color: #222;
+		        font-weight: 400;
+			    font-size: 12px;
+			    text-transform: uppercase;
+			    margin: 3px 0 0 0;
+			    vertical-align: middle;
+			    display: table-cell;
+			    width: 50%;
+			    .fa {
+				    font-size: 26px;
+				    margin-#{$right}: 5px;
+				}
+				.page-heading{
+					font-weight: 600;
+				    font-size: 14px;
+				    display: inline-block;
+				    padding-top: 5px;
+				    margin-bottom: 0;
+				}
+				.newsletter_promo{
+					display: inline-block;
+					line-height: 37px;
+					margin-#{$left}: 5px;
+					span {
+					    color: $linkColor;
+					    margin-right: 3px;
+					}
+				}
+			}
+			.block_content{ width: 40%; display: table-cell;
+				form {
+					padding:0;
+				    margin: 0;
+				    width: 100%;
+				    border-radius: 50px;
+				    background: #fff;
+				    vertical-align: middle;
+			        border: 1px solid #ebebeb;
+				} 
+				.form-inline .form-group{
+				    margin: 0;
+				    height: 40px;
+				    padding: side-values(0 60px 0 0);
+				    position: relative;
+				    width: 100%;
+				    input{
+					    border: none;
+					    box-shadow: none;
+					    background: transparent;
+					    color: #555;
+					    font-size: 12px;
+					    width: 100%;
+					    font-weight: normal;
+					    padding: 0 20px;
+					    height: 40px;
+					}
+					.subcribe{
+						position: absolute;
+						#{$right}: 0;
+					}
+					button{
+					    color: #fff;
+					    height: 41px;
+					    top: -1px;
+					    background: $background;
+					    bottom: -1px;
+					    width: auto;
+					    padding: 0 20px;
+					    border:none;
+					    border-radius: 0px 40px 40px 0;
+					    position: absolute;
+					    text-transform: uppercase;
+					    font-weight: bold;
+					    text-align: center;
+					    font-size: 12px;
+					    @include breakpoint(lg){
+						    min-width: 100px;
+						}
+					    #{$right}: -1px;
+					    i.fa{ display: block!important; color: #fff; }
+					    > span{ display: none; }
+					    @include if-rtl{ border-radius: 40px 0 0 40px; }
+					    &:hover{
+					    	color: $linkColor; background: darken($background,10%);
+					    }
+					}
+				}
+			}
+		}
+		.footer-social{
+			font-size: 0;
+			    margin-top: 6px;
+			.block-title{ display: none; }
+			.socials {
+			    font-size: 0;
+			    text-align: center;
+			    a {
+		    	    display: inline-block;
+				    margin-#{$right}: 2px;
+					
+				    .fa {
+					    color: #555;
+					    font-size: 14px;
+					    border: none;
+					    border-radius: 0;
+					    width: 22px;
+					    background: transparent;
+					    display: inline-block;
+    					height: 30px;
+    					line-height: 28px;
+    					text-align: center;
+    					&:hover{ color: $linkColor; }
+					}
+					p{ display: none; }
+				}
+			}
+		}
+	}
+	.section_2{
+	    text-align: center;
+	    border-top: 1px solid #ebebeb;
+	    border-bottom: 1px solid #ebebeb;
+	    div.bonus-menus.bonus-menu-4 ul li {
+		    width: 20%;
+		    text-align: center;
+		    transition: all 0.3s ease 0s;
+		    cursor: pointer;
+		    padding: 30px 3px 0 3px;
+		    min-height: 200px;
+		    border-#{$left}: 1px solid #ebebeb;
+		    .icon {
+			    width: 70px;
+			    height: 65px;
+			    line-height: 65px;
+			    margin-bottom: 13px;
+			}
+			.text {
+			    display: block;
+			    margin: 0;
+			    h5 {
+				    margin-bottom: 5px;
+				    a {
+					    color: #222;
+					    font-size: 16px;
+					    font-weight: bold;
+					    text-transform: uppercase;
+					    transition: all 0.3s ease 0s;
+					}
+				}
+				p {
+				    color: #222;
+				    font-size: 12px;
+				    text-transform: none;
+			        margin: 0;
+					line-height: 16px;
+				}
+			}
+			&.secure .icon {
+			    background: transparent url("#{$imgPath}icon/icon-secure-3.png")  no-repeat center center;
+			}
+			&.help .icon {
+			    background: transparent url("#{$imgPath}icon/icon-help-3.png")  no-repeat center center;
+			}
+			&.trustpay .icon {
+			    background: transparent url("#{$imgPath}icon/icon-trust-3.png")  no-repeat center center;
+			}
+			&.delivery .icon {
+				background: transparent url("#{$imgPath}icon/icon-delivery-3.png")  no-repeat center center;
+			}
+			&.value .icon {
+				background: transparent url("#{$imgPath}icon/icon-value-3.png")  no-repeat center center;
+			}
+			&.value {
+			    border-#{$right}: 1px solid #ebebeb;
+			}
+			&:hover {
+			    background: $background;
+			    &.secure .icon {
+				    background: transparent url("#{$imgPath}icon/icon-secure-3-3.png")  no-repeat center center;
+				}
+				&.help .icon {
+				    background: transparent url("#{$imgPath}icon/icon-help-3-3.png")  no-repeat center center;
+				}
+				&.trustpay .icon {
+				    background: transparent url("#{$imgPath}icon/icon-trust-3-3.png")  no-repeat center center;
+				}
+				&.delivery .icon {
+					background: transparent url("#{$imgPath}icon/icon-delivery-3-3.png")  no-repeat center center;
+				}
+				&.value .icon {
+					background: transparent url("#{$imgPath}icon/icon-value-3-3.png")  no-repeat center center;
+				}
+				.text h5 a,
+				.text p{ color: #fff; }
+			}
+		}
+		div.bonus-menus ul li .icon, 
+		div.bonus-menus ul li .text {
+		    display: inline-block;
+		    vertical-align: middle;
+		}	
+	}
+	.section_3{ 
+		margin-bottom: 15px;
+    	padding: 18px 0 0;
+		.contactinfo{
+			h4.title-footer {
+			    color: transparent;
+			    font-weight: bold;
+			    font-size: 16px;
+			    text-transform: uppercase;
+			    margin: 0 0 12px;
+			    text-indent: -99999px;
+			    background: transparent url("#{$imgPath}icon/logo-footer.png")  no-repeat $left center;
+			    height: 38px;
+			}
+			p { font-size: 14px; }
+			.content-footer .address,
+			.content-footer .email,
+			.content-footer .phone {
+			    padding:side-values(0 0 0 25px);
+			    position: relative;
+			    line-height: 22px;
+			    margin-bottom: 10px;
+			}
+			.content-footer .address label, 
+			.content-footer .email label, 
+			.content-footer .phone label {
+			    font-size: 16px;
+			    color: #666;
+			    position: absolute;
+			    top: 0;
+			    padding: 0;
+			    margin: 0;
+			    background: transparent;
+			    #{$left}: 0;
+			}
+			.content-footer .address span,
+			.content-footer .email span, 
+			.content-footer .phone span {
+			    color: #555;
+			    font-size: 14px;
+			    font-weight: normal;
+			}
+		}
+		.footer-links{
+			h4.title-footer {
+			    color: #222;
+			    font-weight: bold;
+			    font-size: 14px;
+			    text-transform: uppercase;
+			    margin: 0 0 12px;
+			    padding: 10px 0 18px;
+			    position: relative;
+			    &:before {
+				    content: "";
+				    position: absolute;
+				    height: 2px;
+				    width: 40px;
+				    background: $background;
+				    top: auto;
+				    bottom: -1px;
+				    #{$left}: 0;
+				    #{right}: auto;
+				}
+			}
+			ul.links {
+			    padding: 0;
+			    li a {
+				    color: #555;
+				    font-size: 14px;
+				    font-weight: normal;
+				    display: block;
+				    padding: 2px 13px;
+				    position: relative;
+				    &:before {
+					    content: "";
+					    font-family: fontawesome;
+					    display: block;
+					    position: absolute;
+					    height: 3px;
+					    width: 3px;
+					    border-radius: 50%;
+					    background: #555555;
+					    top: 12px;
+					    #{$left}: 0;
+					}
+					&:hover{ color: $linkColor; }
+				}
+			}
+		}
+		.home3_instagram{
+			.instagram_users{ margin-bottom: 15px; 
+				.img_users a{ border: none; 
+					&:hover{ 
+						img{ opacity: 0.7; }
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		padding: 15px 0 15px;
+	    font-size: 12px;
+	    border-top: 1px solid #ebebeb;
+	    color: #555;
+	    background: transparent;
+	    .copyright{
+	     a{color: $linkColor; }
+	 	}
+	    .paymen{ text-align: $right; }
+	}
+	.so-instagram-gallery .instagram-items-inner.owl2-carousel{
+		border: none;
+	}
+}
