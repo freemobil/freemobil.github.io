@@ -1,0 +1,24 @@
+extends ../_skeleton
+
+block variables
+  - pageName = 'Search Results'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  //Search results
+  section.section-lg.bg-default
+    .container
+      .row.justify-content-center.row-30.row-lg-50
+        .col-lg-9
+          //RD Search
+          form.rd-form.rd-search.rd-form-inline( action='search-results.html', method='GET' )
+            .form-wrap
+              label.form-label( for='rd-search-form-input' ) Enter your search term
+              input#rd-search-form-input.form-input( type='text', name='s', autocomplete='off' )
+        .col-lg-9
+          .rd-search-results
+
+  include ../sections/_footer-classic

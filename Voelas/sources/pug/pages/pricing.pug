@@ -1,0 +1,69 @@
+extends ../_skeleton
+
+include ../components/_pricing
+
+block variables
+  - pageName = 'Pricing'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs({
+    title: 'Pricing Table'
+  })
+
+  // Section Small Packages
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4.font-weight-bold Small Packages.
+      .row.row-30
+        .col-sm-6.col-md-4
+          +pricing-modern({
+            title: 'Basic Pass',
+            price: '29.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: ['Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate']
+          })
+        .col-sm-6.col-md-4
+          +pricing-modern({
+            title: 'Silver Pass',
+            price: '39.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: ['Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate']
+          })(class='pricing-modern-primary')
+        .col-sm-6.col-md-4
+          +pricing-modern({
+            title: 'Gold Pass',
+            price: '49.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: ['Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate']
+          })
+
+  // Section Large Packages
+  section.section.section-lg.bg-gray-100.text-center
+    .container
+      h4.font-weight-bold Large Packages.
+      .row.row-30
+        .col-sm-6.col-md-4
+          +pricing({
+            title: 'Basic Pass',
+            price: '29.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: ['Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate']
+          })
+        .col-sm-6.col-md-4
+          +pricing({
+            title: 'Silver Pass',
+            price: '39.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: ['Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate']
+          })
+        .col-sm-6.col-md-4
+          +pricing({
+            title: 'Gold Pass',
+            price: '49.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: ['Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate']
+          })
+
+  include ../sections/_footer-classic

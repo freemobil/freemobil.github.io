@@ -1,0 +1,30 @@
+extends ../_skeleton
+
+block variables
+  - pageName = '503'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  // 404
+  section.section.section-lg.bg-default.text-center
+    .container
+      .block-about
+        .block-about-content
+          h6 Sorry, we're offline right now to make our site even better.
+            br
+            | Please, come back later and check what we've been up to.
+          h3 Service is temporary unavailable
+          p Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices dolores sit ipsum velit purus aliquet, massa fringilla leo orci. Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.
+          +img( 'home-2-01-830x440' )(class='block-about-img')
+          .group
+            a.button.button-secondary.box-with-triangle-right( href='index.html' data-triangle=".button-overlay" )
+              span Go to home page
+              span.button-overlay
+            a.button.button-primary( href='contacts.html' data-triangle=".button-overlay" )
+              span Contacts
+              span.button-overlay
+
+  include ../sections/_footer-classic

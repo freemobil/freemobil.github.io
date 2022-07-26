@@ -1,0 +1,69 @@
+extends ../_skeleton
+include ../components/_progress-linear
+include ../components/_progress-circle
+include ../components/_counter
+
+block variables
+  - pageName = 'Progress Bars'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  //Skill Bars
+  section.section.section-lg.bg-default
+    .container
+      h3 Progress Bars, Skill Bars, Counters
+      .row.justify-content-md-center.row-md-reverse.row-lg-justify.row-50
+        .col-md-10.col-lg-6
+          .inset-lg-right-30
+            h4 Welcome to Our Website
+            p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.
+
+        .col-md-10.col-lg-6
+          +progress-linear({
+            title: 'Regular Seating',
+            value: '75'
+          })
+
+          +progress-linear({
+            title: 'Comfortable Seat',
+            value: '85'
+          })
+
+          +progress-linear({
+            title: 'Coffee Break',
+            value: '80'
+          })
+  hr
+
+  include ../sections/_section-counters
+
+  //Circle Progress Bars
+  section.section.section-lg.text-center.bg-gray-100
+    .container
+      h4 Circle Progress Bars
+      .row.row-30.justify-content-center
+        .col-sm-5.col-lg-3
+          +progress-circle({
+            title: 'Conference',
+            value: 40
+          })
+        .col-sm-5.col-lg-3
+          +progress-circle({
+            title: 'Event',
+            value: 50
+          })
+        .col-sm-5.col-lg-3
+          +progress-circle({
+            title: 'Meetings',
+            value: 60
+          })
+        .col-sm-5.col-lg-3
+          +progress-circle({
+            title: 'Seminar',
+            value: 85
+          })
+
+  include ../sections/_footer-classic

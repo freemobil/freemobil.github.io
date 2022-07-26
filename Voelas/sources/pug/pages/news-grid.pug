@@ -1,0 +1,95 @@
+extends ../_skeleton
+
+include ../components/_news
+include ../components/_pagination
+
+block variables
+  - pageName = 'News'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs({
+    title: 'Our News'
+  })
+
+  // Section Our News
+  section.section.section-lg.bg-default.text-center
+    .container
+      .row.row-30.row-lg-50
+        .col-md-4
+          +news({
+            img: 'news-01-370x284',
+            title: 'Many Important Brands Have Given us Their Trust.',
+            text: 'Sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ',
+            author: 'Dan Fisher',
+            date: '18 Jan, 2019',
+            datetime: '2019-01-18'
+          })
+        .col-md-4
+          +news({
+            img: 'news-02-370x284',
+            title: 'BUILDING A ROOM DETECTOR FOR HOT DeVICES.',
+            text: 'Magnum hippotoxotas ducunt ad triticum. Mori etiam ducunt ad rusticus ratione.',
+            author: 'Dan Fisher',
+            date: '16 Jan, 2019',
+            datetime: '2019-01-16'
+          })
+        .col-md-4
+          +news({
+            img: 'news-03-370x284',
+            title: 'Let’s become the best sale marketer of the next year.',
+            text: 'Albus, lotus cedriums virtualiter pugna de barbatus, regius burgus. Historia regius.',
+            author: 'Dan Fisher',
+            date: '12 Jan, 2019',
+            datetime: '2019-01-12'
+          })
+        .col-md-4
+          +news({
+            img: 'news-04-370x284',
+            title: 'Professional services you can trust on our business.',
+            text: 'Cum species cantare, omnes humani generises pugna superbus, regius demissioes.',
+            author: 'Dan Fisher',
+            date: '10 Jan, 2019',
+            datetime: '2019-01-10'
+          })
+        .col-md-4
+          +news({
+            img: 'news-05-370x284',
+            title: 'Multiple customers in various industries and segments.',
+            text: 'Mirabilis, domesticus tumultumques semper manifestum de talis, altus nixus.',
+            author: 'Dan Fisher',
+            date: '08 Jan, 2019',
+            datetime: '2019-01-08'
+          })
+        .col-md-4
+          +news({
+            img: 'news-06-370x284',
+            title: 'We only work with the modern business technology.',
+            text: 'Cum urbs accelerare, omnes fortises anhelare camerarius, bassus visuses.',
+            author: 'Dan Fisher',
+            date: '06 Jan, 2019',
+            datetime: '2019-01-06'
+          })
+    .divider.divider-gray-100
+    ul.pagination-classic
+      li.pagination-classic-item: a.pagination-classic-link-prev.disabled( href='#' data-triangle=".pagination-classic-overlay" )
+        .pagination-classic-overlay
+        span.fa-angle-left
+      li.pagination-classic-item: a.pagination-classic-link.active( href='#' data-triangle=".pagination-classic-overlay" )
+        .pagination-classic-overlay
+        span 01
+      li.pagination-classic-item: a.pagination-classic-link( href='#' data-triangle=".pagination-classic-overlay" )
+        .pagination-classic-overlay
+        span 02
+      li.pagination-classic-item: a.pagination-classic-link( href='#' data-triangle=".pagination-classic-overlay" )
+        .pagination-classic-overlay
+        span 03
+      li.pagination-classic-item: a.pagination-classic-link( href='#' data-triangle=".pagination-classic-overlay" )
+        .pagination-classic-overlay
+        span 05
+      li.pagination-classic-item: a.pagination-classic-link-next( href='#' data-triangle=".pagination-classic-overlay" )
+        .pagination-classic-overlay
+        span.fa-angle-right
+
+  include ../sections/_footer-classic

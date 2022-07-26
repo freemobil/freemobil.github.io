@@ -1,0 +1,81 @@
+extends ../_skeleton
+
+include ../components/_sponsor
+
+block variables
+  - pageName = 'Sponsors'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs({
+    title: 'Our Sponsors'
+  })
+
+  // Section Silver Sponsors
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4 Silver Sponsors.
+      .row.row-30.justify-content-center
+        .col-sm-5.col-lg-3
+          +sponsor-modern({
+            default: 'silver-sponsor-1-117x70.png',
+            active:  'silver-sponsor-1-active-117x70.png'
+          })
+        .col-sm-5.col-lg-3
+          +sponsor-modern({
+            default: 'silver-sponsor-2-66x83.png',
+            active:  'silver-sponsor-2-active-66x83.png'
+          })
+        .col-sm-5.col-lg-3
+          +sponsor-modern({
+            default: 'silver-sponsor-3-119x33.png',
+            active:  'silver-sponsor-3-active-119x33.png'
+          })
+        .col-sm-5.col-lg-3
+          +sponsor-modern({
+            default: 'silver-sponsor-4-116x68.png',
+            active:  'silver-sponsor-4-active-116x68.png'
+          })
+
+  // Section Gold Sponsors
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4 Gold Sponsors.
+      .row.row-30.justify-content-center
+        .col-md-6.col-lg-4: +sponsor-ritmo({
+          img: {
+            default: 'gold-sponsor-1-117x70.png',
+            active:  'gold-sponsor-active-1-117x70.png'
+          },
+          title: 'FastLane',
+          text: 'There are many variations of sages of not them lpsum ipsum is simply the majoy have some form.'
+        })
+        .col-md-6.col-lg-4: +sponsor-ritmo({
+          img: {
+            default: 'gold-sponsor-2-100x58.png',
+            active:  'gold-sponsor-active-2-100x58.png'
+          },
+          title: 'FastLane',
+          text: 'There are many variations of sages of not them lpsum ipsum is simply the majoy have some form.'
+        })
+        .col-md-6.col-lg-4: +sponsor-ritmo({
+          img: {
+            default: 'gold-sponsor-3-99x38.png',
+            active:  'gold-sponsor-active-3-99x38.png'
+          },
+          title: 'FastLane',
+          text: 'There are many variations of sages of not them lpsum ipsum is simply the majoy have some form.'
+        })
+
+  // Section Become a sponsor
+  section.section.section-lg.bg-default.text-center
+    .container
+      .block-lg.block-center
+        h6 Become a sponsor.
+        h2 Let’s become a part of our conference
+        a.button.button-lg.button-primary.button-offset-xl( href='become-a-sponsor.html' data-triangle=".button-overlay" )
+          span Become a sponsor
+          span.button-overlay
+
+  include ../sections/_footer-classic

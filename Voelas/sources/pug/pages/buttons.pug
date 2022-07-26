@@ -1,0 +1,91 @@
+extends ../_skeleton
+
+block variables
+  - pageName = 'Buttons'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  //Button Sizes
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4 Button Sizes
+      p 4 different sizes: super, large, default and small.
+      .group-xl
+        .button.button-xl.button-primary( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Super Size
+        .button.button-lg.button-primary( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Large size
+        .button.button-primary( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Default size
+        .button.button-sm.button-primary( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Small size
+
+  hr
+
+  //Button Shapes
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4 Button Shapes
+      p 4 different shapes: default, round, round 2, and circle.
+      .group-xl
+        .button.button-primary( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Default
+        .button.button-primary.button-round-1( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Round 1
+        .button.button-primary.button-round-2( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Round 2
+        .button.button-primary.button-circle( data-triangle=".button-overlay" )
+          span.button-overlay
+          span Circle
+
+  hr
+
+  //Buttons with Icons
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4 Buttons with Icons
+      p Buttons are fully integrated with 900+ icons.
+      .group-xl
+        .button.button-icon.button-icon-right.button-primary( data-triangle=".button-overlay" )
+          span.icon.fa-check
+          | Icon right
+          span.button-overlay
+        .button.button-icon.button-icon-left.button-primary( data-triangle=".button-overlay" )
+          span.icon.fa-apple
+          | Icon left
+          span.button-overlay
+        .button.button-icon.button-icon-right.button-secondary( data-triangle=".button-overlay" )
+          span.icon.fa-coffee
+          | Icon right
+          span.button-overlay
+        .button.button-icon.button-icon-left.button-secondary( data-triangle=".button-overlay" )
+          span.icon.fa-comment
+          | Icon left
+          span.button-overlay
+
+  hr
+
+  //Buttons with Shadow
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4 Buttons with Shadow
+      p Enhance your buttons with a shadow effect.
+      .group-xl
+        .button.button-primary.button-circle.button-shadow( data-triangle=".button-overlay" )
+          span Shadow
+          span.button-overlay
+        .button.button-secondary.button-circle.button-shadow( data-triangle=".button-overlay" )
+          span Shadow
+          span.button-overlay
+
+  include ../sections/_footer-classic

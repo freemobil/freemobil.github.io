@@ -1,0 +1,159 @@
+extends ../_skeleton
+
+include ../components/_news
+include ../components/_pagination
+
+block variables
+  - pageName = 'News Left Sidebar'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs()
+
+  // Section Our News
+  section.section.section-lg.bg-default
+    .container
+      .row.row-50
+        .col-lg-7.col-xl-8.order-last
+          article.post
+            .post-img: +img('news-01-770x472')
+            ul.post-meta
+              li.post-meta-author
+               span by
+               =" "
+               a(href='#') Dan Fisher
+              li.post-meta-date: time( datetime='2019-01-16' ) 19 Aug, 2019
+              li.post-meta-comments: span 2 Comments
+            h3.post-title: a(href='single-news.html') Building a room detector for hot devices
+            p.post-excerpt Sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a.news-link( href='single-news.html' ) Read More
+          article.post
+            .post-img: +img('news-02-770x472')
+            ul.post-meta
+              li.post-meta-author
+               span by
+               =" "
+               a(href='#') Dan Fisher
+              li.post-meta-date: time( datetime='2019-01-16' ) 24 Jul, 2019
+              li.post-meta-comments: span 2 Comments
+            h3.post-title: a(href='single-news.html') Many importan brands have given us their trust
+            p.post-excerpt Sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a.news-link( href='single-news.html' ) Read More
+          article.post
+            .post-img: +img('news-03-770x472')
+            ul.post-meta
+              li.post-meta-author
+               span by
+               =" "
+               a(href='#') Dan Fisher
+              li.post-meta-date: time( datetime='2019-01-16' ) 14 Jun, 2019
+              li.post-meta-comments: span 2 Comments
+            h3.post-title: a(href='single-news.html') Let's become the best sale marketer of the year
+            p.post-excerpt Sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a.news-link( href='single-news.html' ) Read More
+          article.post
+            .post-img: +img('news-04-770x472')
+            ul.post-meta
+              li.post-meta-author
+               span by
+               =" "
+               a(href='#') Dan Fisher
+              li.post-meta-date: time( datetime='2019-01-16' ) 4 Mar, 2019
+              li.post-meta-comments: span 2 Comments
+            h3.post-title: a(href='single-news.html') Multiple customers in various industries
+            p.post-excerpt Sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a.news-link( href='single-news.html' ) Read More
+          .divider.divider-gray-100.position-relative
+          ul.pagination-classic
+            li.pagination-classic-item: a.pagination-classic-link-prev.disabled( href='#' data-triangle=".pagination-classic-overlay" )
+              .pagination-classic-overlay
+              span.fa-angle-left
+            li.pagination-classic-item: a.pagination-classic-link.active( href='#' data-triangle=".pagination-classic-overlay" )
+              .pagination-classic-overlay
+              span 01
+            li.pagination-classic-item: a.pagination-classic-link( href='#' data-triangle=".pagination-classic-overlay" )
+              .pagination-classic-overlay
+              span 02
+            li.pagination-classic-item: a.pagination-classic-link( href='#' data-triangle=".pagination-classic-overlay" )
+              .pagination-classic-overlay
+              span 03
+            li.pagination-classic-item: a.pagination-classic-link( href='#' data-triangle=".pagination-classic-overlay" )
+              .pagination-classic-overlay
+              span 05
+            li.pagination-classic-item: a.pagination-classic-link-next( href='#' data-triangle=".pagination-classic-overlay" )
+              .pagination-classic-overlay
+              span.fa-angle-right
+        .col-lg-5.col-xl-4.order-first
+          .row.row-30
+            .col-lg-12
+              form.rd-form.rd-search.rd-form-inline( action='search-results.html', method='GET' )
+                .form-wrap
+                  label.form-label( for='rd-search-form-input' ) Search
+                  input#rd-search-form-input.form-input( type='text', name='s', autocomplete='off' )
+            .col-sm-7.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Latest Posts
+                .post-aside-content
+                  .post-mini
+                    .unit
+                      .unit-left: +img('single-news-05-59x59')
+                      .unit-body
+                        p.post-mini-author by
+                          =" "
+                          a(href='#') Dan Fisher
+                        p.post-mini-title: a(href='#') Many Important Brands Have Given us Their Trust.
+                  .post-mini
+                    .unit
+                      .unit-left: +img('single-news-06-59x59')
+                      .unit-body
+                        p.post-mini-author by
+                          =" "
+                          a(href='#') Dan Fisher
+                        p.post-mini-title: a(href='#') Let’s become the best sale marketer of the next year.
+                  .post-mini
+                    .unit
+                      .unit-left: +img('single-news-07-59x59')
+                      .unit-body
+                        p.post-mini-author by
+                          =" "
+                          a(href='#') Dan Fisher
+                        p.post-mini-title: a(href='#') Multiple customers in various industries and segments.
+            .col-sm-5.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Categories
+                .post-aside-content
+                  ul.list-marked
+                    li: a(href='#') Conference
+                    li: a(href='#') Event
+                    li: a(href='#') Meetings
+                    li: a(href='#') Seminar
+                    li: a(href='#') Meetups
+                    li: a(href='#') Workshop
+            .col-sm-7.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Archive
+                .post-aside-content
+                  ul.list-marked
+                    li: a(href='#') January 2019
+                    li: a(href='#') February 2019
+                    li: a(href='#') March 2019
+                    li: a(href='#') April 2019
+                    li: a(href='#') May 2019
+                    li: a(href='#') June 2019
+            .col-sm-5.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Tags
+                .post-aside-content
+                  ul.post-aside-list-tag
+                    li: a(href='#') Event
+                    li: a(href='#') Conference
+                    li: a(href='#') Seminar
+                    li: a(href='#') Meetup
+                    li: a(href='#') Workshop
+                    li: a(href='#') Meeting
+                    li: a(href='#') Business
+                    li: a(href='#') Organizer
+                    li: a(href='#') Professionals
+
+  include ../sections/_footer-classic

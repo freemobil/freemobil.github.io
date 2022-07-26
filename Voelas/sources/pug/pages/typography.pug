@@ -1,0 +1,174 @@
+extends ../_skeleton
+
+include ../components/_svg-icons
+include ../components/_sponsor
+
+block variables
+  - pageName = 'Typography'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  //Base typography
+  section.section.section-lg.bg-default
+    .container
+      .row.row-50
+        .col-xl-8
+          ul.list-xl
+            li
+              h1 H1 Heading
+              p A falsis, accola pius galatae. Devatio, acipenser, et barcas. Ecce, azureus lactea! Pol, a bene scutum, rusticus lamia! Speciess nocere! Turpiss velum in culina! Ubi est gratis gallus? Abactor camerarius index est. Volare virtualiter ducunt ad dexter amor. Cum danista mori.
+
+            li
+              h2 H2 Heading
+              p A falsis, accola pius galatae. Devatio, acipenser, et barcas. Ecce, azureus lactea! Pol, a bene scutum, rusticus lamia! Speciess nocere! Turpiss velum in culina! Ubi est gratis gallus? Abactor camerarius index est. Volare virtualiter ducunt ad dexter amor. Cum danista mori.
+
+            li
+              h3 H3 Heading
+              p A falsis, accola pius galatae. Devatio, acipenser, et barcas. Ecce, azureus lactea! Pol, a bene scutum, rusticus lamia! Speciess nocere! Turpiss velum in culina! Ubi est gratis gallus? Abactor camerarius index est. Volare virtualiter ducunt ad dexter amor. Cum danista mori.
+
+            li
+              h4 H4 Heading
+              p A falsis, accola pius galatae. Devatio, acipenser, et barcas. Ecce, azureus lactea! Pol, a bene scutum, rusticus lamia! Speciess nocere! Turpiss velum in culina! Ubi est gratis gallus? Abactor camerarius index est. Volare virtualiter ducunt ad dexter amor. Cum danista mori.
+
+            li
+              h5 H5 Heading
+              p A falsis, accola pius galatae. Devatio, acipenser, et barcas. Ecce, azureus lactea! Pol, a bene scutum, rusticus lamia! Speciess nocere! Turpiss velum in culina! Ubi est gratis gallus? Abactor camerarius index est. Volare virtualiter ducunt ad dexter amor. Cum danista mori.
+            li
+              h6 H6 Heading
+              p A falsis, accola pius galatae. Devatio, acipenser, et barcas. Ecce, azureus lactea! Pol, a bene scutum, rusticus lamia! Speciess nocere! Turpiss velum in culina! Ubi est gratis gallus? Abactor camerarius index est. Volare virtualiter ducunt ad dexter amor. Cum danista mori.
+
+  //Blockquote
+  section.section.section-lg.bg-default
+    .container
+      .row.row-50
+        .col-lg-10.col-xl-8
+          h3 Blockquote
+          .testimonial
+            +img('testimonial-thumb-01-80x80')(class='img-round')
+            // Testimonial
+            p.testimonial-text.heading-4 Pes rusticus brabeuta est. Pol, talis lapsus! Contencio de fidelis palus, transferre brodium! Germanus, varius decors aliquando gratia de.
+            ul.list-inline
+              li: span.icon.icon-sm.icon-secondary.fa-star
+              li: span.icon.icon-sm.icon-secondary.fa-star
+              li: span.icon.icon-sm.icon-secondary.fa-star
+              li: span.icon.icon-sm.icon-secondary.fa-star
+              li: span.icon.icon-sm.icon-secondary.fa-star
+            .testimonial-footer
+              span.testimonial-name Jesscia Brown
+              =" "
+              span.testimonial-cite -  Our Customers
+
+  //HTML Text Elements
+  section.section.section-lg.bg-default
+    .container
+      .row
+        .col-lg-10.col-xl-8
+          h3 HTML Text Elements
+          p.text-block
+            span.font-weight-bold Bold text
+            mark This is a highlighted text
+            span.text-strike This is a strikethrough text
+            span.text-underline This is an underlined text.
+            span A falsis, gluten talis cacula. Visus undas, tanquam gratis frondator. A falsis, solem velox epos. Domesticus, barbatus genetrixs grauiter consumere de regius, emeritis demolitione.
+            a( href='#' ) Link
+            a.link-hover( href='#' ) Hover link
+            a.link-active( href='#' ) Press link
+            span Vae, lotus hydra! Ignigenas prarere in chremisa! Paluss congregabo in talis avenio! Cum bursa ridetis, omnes lactaes perdere bi-color, brevis sectames.
+            span.tooltip-custom( data-toggle='tooltip', data-placement='top', title='Tooltips' ) Tooltips
+
+  //Unordered List
+  section.section.section-lg.bg-default
+    .container
+      .row.row-50
+        .col-xl-8
+          h3 Unordered List
+          p Primus, fatalis xiphiass recte fallere de castus, festus idoleum. Cur terror ridetis? Cum tabes crescere, omnes adgiumes fallere regius, fidelis aususes.
+          ul.list-marked
+            li: a(href='#') Conference
+            li: a(href='#') Event
+            li: a(href='#') Meetings
+            li: a(href='#') Seminar
+            li: a(href='#') Meetups
+            li: a(href='#') Workshop
+          p Sunt exsules amor mirabilis, domesticus lapsuses. Eheu, salvus rector! Lumens volare, tanquam emeritis guttus. Cum mensa assimilant, omnes fluctuies convertam germanus, emeritis lamiaes.
+
+  //Ordered List
+  section.section.section-lg.bg-default
+    .container
+      .row.row-50
+        .col-xl-8
+          h3 Ordered List
+          p Fortis naviss ducunt ad magister. Poetas manducare, tanquam peritus palus. Cur rumor crescere? Cum scutum persuadere, omnes consiliumes acquirere bassus, castus burguses.
+          ol.list-ordered
+            li Dedication
+            li Knowledge
+            li Experience
+            li Reliability
+            li Flexibility
+          p A falsis, danista rusticus candidatus. Est fidelis plasmator, cesaris. Mori sed mire ducunt ad superbus pulchritudine. Nutrix de gratis solitudo, anhelare indictio.
+
+  //Icon List
+  section.section.section-lg.bg-default
+    .container
+      .row
+        .col-sm-12
+          h3 Icon List
+        .col-sm-6.col-lg-4
+          +sponsor-info({
+            icon: {
+              name: 'lightbulb',
+              className: 'svg-icon-lg  icon-primary'
+            },
+            title: 'Platinum Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4
+          +sponsor-info({
+            icon: {
+              name: 'bullseye',
+              className: 'svg-icon-lg  icon-secondary'
+            },
+            title: 'Gold sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4
+          +sponsor-info({
+            icon: {
+              name: 'flag',
+              className: 'svg-icon-lg  icon-success'
+            },
+            title: 'Silver Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+  //Image Centered
+  section.section.section-lg.bg-default
+    .container
+      .row
+        .col-lg-10.col-xl-8
+          h3 Image Centered
+          figure.figure-light
+            +img( 'home-2-01-830x440' ).img-centered
+            figcaption
+              p Biggest digital conference
+          p Lanistas credere, tanquam rusticus musa. Heu, solitudo! Cur omnia trabem? Fraticinida de superbus brodium, visum detrius! Vae. Parmas peregrinationes in cubiculum! Est secundus urbs, cesaris. Vae. Est velox lanista, cesaris. Deuss ire in tectum! Sunt scutumes aperto lotus, neuter nixuses. Mortems sunt scutums de alter accentor.
+
+  //Image Left
+  section.section.section-lg.bg-default
+    .container: .row: .col-lg-10.col-xl-8
+      h3 Image Left
+      .row.row-30
+        .col-md-6: +img( 'home-2-01-830x440' )
+        .col-md-6: p Nobilis brodium unus amors capio est. Hercle, adiurator superbus!. A falsis, brodium camerarius assimilatio. Brevis sagas ducunt ad historia. A falsis, luna fidelis finis. Scutums congregabo in mare! Ausus volares, tanquam azureus lamia. Cur usus volare? Cum lumen congregabo.
+
+  //Image Right
+  section.section.section-lg.bg-default
+    .container: .row: .col-lg-10.col-xl-8
+      h3 Image Right
+      .row.row-30.flex-md-row-reverse
+        .col-md-6: +img( 'home-2-01-830x440' )
+        .col-md-6: p Nobilis brodium unus amors capio est. Hercle, adiurator superbus!. A falsis, brodium camerarius assimilatio. Brevis sagas ducunt ad historia. A falsis, luna fidelis finis. Scutums congregabo in mare! Ausus volares, tanquam azureus lamia. Cur usus volare? Cum lumen congregabo.
+
+  include ../sections/_footer-classic

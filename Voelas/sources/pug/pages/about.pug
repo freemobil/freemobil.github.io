@@ -1,0 +1,100 @@
+extends ../_skeleton
+
+include ../components/_svg-icons
+include ../components/_speaker
+include ../components/_counter
+
+block variables
+  - pageName = 'About'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  // Section Who We are
+  section.section.section-lg.bg-default
+    .container
+      .row.row-30.justify-content-center
+        .col-md-10.col-lg-6
+          h6 Who we are
+          h3 get to know about voelas 2019 event organization.
+          p.paragraph-inset-right-25 Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices dolores sit ipsum velit purus aliquet, massa fringilla leo orci. Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered.
+          ul.list.list-md
+            li
+              .unit
+                .unit-left
+                  .icon-rect.icon-rect-secodanry( data-triangle=".icon-rect-overlay" )
+                    .icon-rect-overlay
+                    +svg-icon('tick')(class='svg-icon-sm-1')
+                .unit-body
+                  h5 The biggest conference for all types of
+                    br
+                    =" "
+                    | businesses.
+            li
+              .unit
+                .unit-left
+                  .icon-rect.icon-rect-secodanry( data-triangle=".icon-rect-overlay" )
+                    .icon-rect-overlay
+                    +svg-icon('tick')(class='svg-icon-sm-1')
+                .unit-body
+                  h5 The biggest conference for all types of
+                    br
+                    =" "
+                    | businesses.
+        .col-md-10.col-lg-6
+          .img-separated: +img('about-01-562x588')
+
+  // Team management
+  section.section.section-lg.bg-gray-100.text-center
+    .container
+      h6 Our team
+      h3 Team management.
+      .row.row-30
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-01-270x303',
+            title: 'Jesscia brown',
+            position: 'Co Founder'
+          })
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-02-270x303',
+            title: 'Mike hardons',
+            position: 'Lead Developer'
+          })
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-05-270x303',
+            title: 'John Smith',
+            position: 'Assistant'
+          })
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-06-270x303',
+            title: 'Sarah Rose',
+            position: 'Designer'
+          })
+
+  // Section We Have Top Executive And Start Up Here
+  +parallax({
+    img: 'bg-parallax-05-1894x758.jpg',
+    innerClass: 'section-lg context-dark text-center'
+  }).section
+    .container
+      .row.row-30.justify-content-center
+        .col-md-10.col-lg-9
+          h6.text-secondary get involved in our business community
+          h2 980+ have registered to join our business conference.
+          a.button.button-secondary.box-with-triangle-right.button-offset-xl( href='#' data-triangle=".button-overlay" )
+            span Reserve your seat
+            span.button-overlay
+
+  include ../sections/_section-testimonials
+
+  hr
+
+  include ../sections/_section-counters
+
+  include ../sections/_footer-classic

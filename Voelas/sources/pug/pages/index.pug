@@ -1,0 +1,331 @@
+extends ../_skeleton
+
+include ../components/_svg-icons
+include ../components/_countdown
+include ../components/_speaker
+include ../components/_card
+include ../components/_thumbnail
+include ../components/_sponsor
+include ../components/_news
+
+block page
+  include ../sections/_header-classic
+
+  include ../sections/_section-swiper-slider-classic
+
+  // Section Book Your Ticket
+  +parallax({
+    img:        'bg-parallax-01-1894x778.jpg',
+    innerClass: 'section-lg context-dark text-center parallax-overlay-gradient-primary'
+  }).section
+    .container.wow.fadeIn
+      // Block with content
+      .block-lg.block-center
+        h6 Time is running out
+        h3 Book your ticket.
+        p Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        +countdown-rect( {to: '2020-12-31'} )
+
+  // Section Biggest 2019 Digital Conference
+  section.section.section-lg.bg-default.wow.fadeIn
+    .container
+      .row.row-30.justify-content-center
+        .col-md-10.col-lg-6.col-xl-5
+          h6 about event
+          h3.heading-lg-postfix-15 Biggest 2019 Digital conference.
+          p There are many variations of passages of available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of you need to be sure there isn't anything embarrassing hidden in the middle of text. All the generators on the Internet.
+          // List Inline
+          ul.list-inline.list-inline-xl
+            li
+              .unit
+                .unit-left: +svg-icon(`earth-globe`)(class='svg-icon-sm svg-icon-primary')
+                .unit-body
+                  h5 Where
+                  p New York, United States
+            li
+              .unit
+                .unit-left: +svg-icon(`small-calendar`)(class='svg-icon-sm svg-icon-primary' )
+                .unit-body
+                  h5 When
+                  p: time(datetime='2019-01-05') January 5 to 9, 2019
+          a.button.button-primary(href='#' data-triangle=".button-overlay" )
+            span Buy Tickets
+            span.button-overlay
+        .col-md-10.col-lg-6.col-xl-7.text-md-right
+          // Image Box
+          .images-box
+            .images-box-item.images-box-item-right
+              .wow.fadeScale
+                +img('home-1-01-470x590')
+            .images-box-item.images-box-item-left
+              .wow.fadeScale
+                +img('home-1-02-270x257')
+
+  // Section Who Is Speaking
+  +parallax({
+    img:        'bg-parallax-02-1894x1950.jpg',
+    innerClass: 'section-lg context-dark text-center'
+  }).section
+    .container
+      h6.text-secondary Our Speakers
+      h3 who is speaking.
+      .row.row-30
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'speaker-01-330x354',
+              title:    'Jesscia brown',
+              position: 'Co Founder'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'speaker-02-330x354',
+              title:    'Mike hardons',
+              position: 'Lead Developer'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'speaker-03-330x354',
+              title:    'Chritine Eve',
+              position: 'Manager'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'speaker-04-330x354',
+              title:    'Kevin Martin',
+              position: 'Supporter'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'speaker-05-330x354',
+              title:    'Sarah Rose',
+              position: 'Designer'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'speaker-06-330x354',
+              title:    'John Smith',
+              position: 'Assistant'
+            })
+      a.button.button-secondary.box-with-triangle-right.wow.fadeScale( href='speakers.html' data-triangle=".button-overlay" )
+        span View all speakers
+        span.button-overlay
+
+  // Section Conference Schedule
+  section.section.section-lg.bg-default.text-center
+    .container
+      h6 Event Schedule plan
+      h3 Conference Schedule.
+      #tabs-1.tabs-custom.tabs-horizontal.tabs-corporate
+        //Nav tabs
+        ul.nav.nav-tabs
+          li.nav-item( role='presentation' )
+            a.nav-link.nav-link.nav-link-secondary-darker( href='#tabs-1-1', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite First Day
+              span.nav-link-title January 5, 2019
+          li.nav-item( role='presentation'  )
+            a.nav-link.nav-link-purple-heart( href='#tabs-1-2', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite Second Day
+              span.nav-link-title January 6, 2019
+          li.nav-item( role='presentation' )
+            a.nav-link.nav-link-primary( href='#tabs-1-3', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite Third Day
+              span.nav-link-title January 8, 2019
+          li.nav-item( role='presentation' )
+            a.nav-link.nav-link-secodanry( href='#tabs-1-4', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite Fourth Day
+              span.nav-link-title January 9, 2019
+
+        //Tab panes
+        .tab-content.wow.fadeIn
+          #tabs-1-1.tab-pane.fade
+            #accordion1.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 1
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 2
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 3
+              }).card-corporate
+              // Schedule Simple
+              include ../components/card-content/schedule-item-4/_schedule-item-header
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 5
+              }).card-corporate
+
+          #tabs-1-2.tab-pane.fade
+            #accordion2.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 3
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 2
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 1
+              }).card-corporate
+              // Schedule Simple
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 5
+              }).card-corporate
+
+          #tabs-1-3.tab-pane.fade
+            #accordion3.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 2
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 3
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 1
+              }).card-corporate
+              // Schedule Simple
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 5
+              }).card-corporate
+
+          #tabs-1-4.tab-pane.fade
+            #accordion4.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 1
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 3
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 2
+              }).card-corporate
+              // Schedule Simple
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 5
+              }).card-corporate
+
+  // Section Photo Gallery
+  +parallax({
+    img:        'bg-parallax-03-1894x1662.jpg',
+    innerClass: 'section-lg context-dark text-center parallax-overlay-gradient-primary-1'
+  }).section
+    .container.container-wide
+      h6 event album
+      h3 Photo Gallery.
+      .row.row-ten.row-narrow.row-30.row-lg-50.justify-content-center( data-lightgallery="group" )
+        .col-sm-4.col-md-3.col-lg-2
+          .wow
+            div
+              +thumbnail({
+                img:      'gallery-01-298x343',
+                original: 'gallery-01-original-1200x800'
+              })
+        .col-sm-4.col-md-3.col-lg-2
+          .wow
+            div
+              +thumbnail({
+                img:      'gallery-02-298x343',
+                original: 'gallery-02-original-1200x800'
+              })
+        .col-sm-4.col-md-3.col-lg-2
+          .wow
+            div
+              +thumbnail({
+                img:      'gallery-03-298x343',
+                original: 'gallery-03-original-1200x800'
+              })
+        .col-sm-4.col-md-3.col-lg-2
+          .wow
+            div
+              +thumbnail({
+                img:      'gallery-04-298x343',
+                original: 'gallery-04-original-1200x800'
+              })
+        .col-sm-4.col-md-3.col-lg-2
+          .wow
+            div
+              +thumbnail({
+                img:      'gallery-05-298x343',
+                original: 'gallery-05-original-1200x800'
+              })
+        .col-xl-12
+          p.font-weight-sbold.font-secondary
+            span Don’t hesitate, contact us for better help and services.
+            =" "
+            a.link-inline( href='#' ) Book Ticket Now
+
+  include ../sections/_section-testimonials
+
+  // Section Official Sponsors
+  +parallax({
+    img:        'bg-parallax-04-1894x1170.jpg',
+    innerClass: 'section-lg context-dark text-center'
+  }).section
+    .container
+      h6 Our sponsorships
+      h3 Official Sponsors.
+      .row.row-30.row-lg-50.justify-content-center
+        .col-sm-5.col-lg-3
+          .wow: div: +sponsor( 'sponsor-01-117x70' )
+        .col-sm-5.col-lg-3
+          .wow: div: +sponsor( 'sponsor-02-66x83' )
+        .col-sm-5.col-lg-3
+          .wow: div: +sponsor( 'sponsor-03-119x33' )
+        .col-sm-5.col-lg-3
+          .wow: div: +sponsor( 'sponsor-04-116x68' )
+        .col-xl-12
+          p.font-weight-sbold.font-secondary
+            span.wow( data-splitting ) Don’t hesitate, contact us for better help and services.
+            =" "
+            a.link-inline.wow.fadeScale( href='#' ) View All Sponsors
+
+  // News & Articles.
+  include ../sections/_section-new-and-articles
+
+  include ../sections/_section-with-video-link
+
+  // Section Newsletter Sign Up
+  section.section.section-lg.bg-default.text-center
+    .container
+      .row.justify-content-center.row-30
+        .col-md-10.col-lg-8
+          h6 newsletter signup
+          h3 Join for news updates.
+          form.rd-form.rd-mailform.rd-form-inline( data-form-output='form-output-global', data-form-type='subscribe', method='post', action='bat/rd-mailform.php' )
+            .form-wrap
+              input#subscribe-form-email.form-input( type='email', name='email', data-constraints='@Email @Required' )
+              label.form-label( for='subscribe-form-email' ) Email Address
+            .form-button
+              button.button.button-primary( type='submit' data-triangle=".button-overlay" )
+                span Subscribe now
+                span.button-overlay
+
+  include ../sections/_footer-classic

@@ -1,0 +1,75 @@
+extends ../_skeleton
+
+block variables
+  - pageName = 'Contact'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs
+
+  include ../sections/_section-google-map
+
+  //Mailform
+  section.section.section-lg.bg-default
+    .container
+      .row.row-30.justify-content-center
+        .col-xs-10.col-sm-9.col-md-6.col-lg-7.col-xl-8
+          h6 contact with us
+          h3 Have question? Write a
+            br.d-none.d-xs-block
+            =" "
+            | message.
+          //RD Mailform
+          form.rd-mailform.rd-form( data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php' )
+            .row.row-10.row-narrow-xs
+              .col-lg-6
+                .form-wrap
+                  label.form-label( for='contact-name' ) Your Name
+                  input#contact-name.form-input( type='text', name='name', data-constraints='@Required' )
+              .col-lg-6
+                .form-wrap
+                  label.form-label( for='contact-email' ) Email Address
+                  input#contact-email.form-input( type='email', name='email', data-constraints='@Required @Email' )
+              .col-lg-12
+                .form-wrap
+                  label.form-label( for='contact-message' ) Write Message
+                  textarea#contact-message.form-input( name='message', data-constraints='@Required' )
+              .col-lg-12
+                .form-button
+                  button.button.button-lg.button-primary( type='submit' data-triangle=".button-overlay" )
+                    span.button-overlay
+                    span Send Message
+        .col-xs-10.col-sm-9.col-md-6.col-lg-5.col-xl-4
+          .block-address
+            .block-address-item
+              h5.block-address-title Address
+              p.block-address-text 88 New Street, Washington DC
+                br.d-none.d-xs-block
+                =" "
+                | United States, America
+            .block-address-item
+              h5.block-address-title Phone
+              p.block-address-text
+                span Local:
+                =" "
+                a(href='tel:#') 222 999 888
+                br
+                span Mobile:
+                =" "
+                a(href='tel:#') 000 8888 999
+            .block-address-item
+              h5.block-address-title Email
+              p.block-address-text
+                a(href='mailto:#') needhelp@voelas.com
+                br
+                a(href='mailto:#') inquiry@voelas.com
+            .block-address-item
+              h5.block-address-title Follow
+              ul.list-inline.list-inline-xs
+                li: a.icon.icon-rect.icon-xs.icon-white.fa-facebook( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+                li: a.icon.icon-rect.icon-xs.icon-white.fa-twitter( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+                li: a.icon.icon-rect.icon-xs.icon-white.fa-linkedin( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+                li: a.icon.icon-rect.icon-xs.icon-white.fa-youtube-play( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+
+  include ../sections/_footer-classic

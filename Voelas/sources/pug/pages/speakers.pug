@@ -1,0 +1,85 @@
+extends ../_skeleton
+
+include ../components/_speaker
+
+block variables
+  - pageName = 'Speakers'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs()
+
+  // Section Senior Speakers
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4.font-weight-bold Senior speakers.
+      .row.row-30
+        .col-md-6.col-lg-4
+          +speaker({
+            img: 'speaker-01-330x354',
+            title: 'Jesscia brown',
+            position: 'Co Founder'
+          })
+        .col-md-6.col-lg-4
+          +speaker({
+            img: 'speaker-02-330x354',
+            title: 'Mike hardons',
+            position: 'Lead Developer'
+          })
+        .col-md-6.col-lg-4
+          +speaker({
+            img: 'speaker-03-330x354',
+            title: 'Chritine Eve',
+            position: 'Manager'
+          })
+        .col-md-6.col-lg-4
+          +speaker({
+            img: 'speaker-04-330x354',
+            title: 'Kevin Martin',
+            position: 'Supporter'
+          })
+        .col-md-6.col-lg-4
+          +speaker({
+            img: 'speaker-05-330x354',
+            title: 'Sarah Rose',
+            position: 'Designer'
+          })
+        .col-md-6.col-lg-4
+          +speaker({
+            img: 'speaker-06-330x354',
+            title: 'John Smith',
+            position: 'Assistant'
+          })
+
+  // Section All other speakers
+  section.section.section-lg.bg-default.text-center
+    .container
+      h4.font-weight-bold All other speakers.
+      .row.row-30
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-01-270x303',
+            title: 'Jesscia brown',
+            position: 'Co Founder'
+          })
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-02-270x303',
+            title: 'Mike hardons',
+            position: 'Lead Developer'
+          })
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-05-270x303',
+            title: 'John Smith',
+            position: 'Assistant'
+          })
+        .col-sm-6.col-lg-3
+          +speaker-classic({
+            img: 'speaker-06-270x303',
+            title: 'Sarah Rose',
+            position: 'Designer'
+          })
+
+  include ../sections/_footer-classic

@@ -1,0 +1,187 @@
+extends ../_skeleton
+
+include ../components/_news
+include ../components/_pagination
+
+block variables
+  - pageName = 'Single news'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs()
+
+  // Section Our News
+  section.section.section-lg.bg-default
+    .container
+      .row.row-50
+        .col-lg-7.col-xl-8
+          article.post-single
+            .post-single-img: +img('single-news-01-770x472')
+            ul.post-single-meta
+              li.post-single-meta-author
+               span by
+               =" "
+               a(href='#') Dan Fisher
+              li.post-single-meta-date: time( datetime='2019-01-16' ) 16 Jan, 2019
+              li.post-single-meta-comments: span 2 Comments
+            h3.post-single-title Building a room detector for hot devices.
+            p.post-single-text Sed quia conse quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            p.post-single-quote.heading-4 “Sed ut perspiciatis unde omnis iste natus error sit voluptatem cusantium doloremque laudantium totam rem”
+            p.post-single-text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.
+            .post-single-social
+              .row.row-20.align-items-center
+                .col-sm-6
+                  dl.post-single-terms
+                    dt Tags:
+                    dd
+                      a(href='#') Event
+                      =" "
+                      span ,
+                      =" "
+                      a(href='#') Conference
+                      =" "
+                      span ,
+                      =" "
+                      a(href='#') Seminar
+                .col-sm-6.text-sm-right
+                  ul.list-inline.list-inline-xs
+                    li: a.icon.icon-rect.icon-xs.icon-white.fa-facebook( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+                    li: a.icon.icon-rect.icon-xs.icon-white.fa-twitter( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+                    li: a.icon.icon-rect.icon-xs.icon-white.fa-linkedin( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+                    li: a.icon.icon-rect.icon-xs.icon-white.fa-youtube-play( href='#' data-triangle=".icon-rect-overlay" ): .icon-rect-overlay
+            .post-single-navigation
+              .row.row-15
+                .col-sm-6
+                  a.button.button.button-block.button-secondary.box-with-triangle-right( href='#' data-triangle=".button-overlay" )
+                    span Previous post
+                    span.button-overlay
+                .col-sm-6
+                  a.button.button-block.button-primary( href='#' data-triangle=".button-overlay" )
+                    span Next post
+                    span.button-overlay
+            .post-single-about
+              .unit.unit-spacing-lg.align-items-center.d-block.d-xs-flex
+                .unit-left: +img('single-news-02-170x190')
+                .unit-body
+                  h5.post-single-about-title Christine Eve
+                  p.post-single-about-text Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer condimentum purus. In non ex at ligula fringilla lobortis et not the aliquet ncover many web sites still in their infancy.
+                  a.post-single-about-link(href='news.html') View All Posts
+            .post-single-comment
+              h4.post-single-comment-title 2 Comments
+              .post-single-comment-item
+                .unit.unit-spacing-md-big.d-block.d-xs-flex
+                  .unit-left: +img('single-news-03-112x111')(class='post-single-comment-img')
+                  .unit-body
+                    h5.post-single-comment-author Kevin Martin
+                    .post-single-comment-date: time(datetime='2019-01-16') 16 January, 2019  5:00 pm
+                    p.post-single-comment-text Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer condimentum purus. In non ex at ligula fringilla lobortis et not the aliquet.
+                    a.button.button-sm.button-primary( href='#' data-triangle=".button-overlay" )
+                      span Reply
+                      span.button-overlay
+              .post-single-comment-item
+                .unit.unit-spacing-md-big.d-block.d-xs-flex
+                  .unit-left: +img('single-news-04-112x111')(class='post-single-comment-img')
+                  .unit-body
+                    h5.post-single-comment-author Sarah Albert
+                    .post-single-comment-date: time(datetime='2019-01-16') 17 January, 2019  12:00 pm
+                    p.post-single-comment-text Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer condimentum purus. In non ex at ligula fringilla lobortis et not the aliquet.
+                    a.button.button-sm.button-primary( href='#' data-triangle=".button-overlay" )
+                      span Reply
+                      span.button-overlay
+
+            .post-single-form
+              h4.post-single-form-title Leave a comment
+              //RD Mailform
+              form.rd-mailform.rd-form( data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php' )
+                .row.row-10.row-narrow-xs
+                  .col-md-6
+                    .form-wrap
+                      label.form-label( for='contact-name' ) Your Name
+                      input#contact-name.form-input( type='text', name='name', data-constraints='@Required' )
+                  .col-md-6
+                    .form-wrap
+                      label.form-label( for='contact-email' ) Email Address
+                      input#contact-email.form-input( type='email', name='email', data-constraints='@Required @Email' )
+                  .col-lg-12
+                    .form-wrap
+                      label.form-label( for='contact-message' ) Write Message
+                      textarea#contact-message.form-input( name='message', data-constraints='@Required' )
+                  .col-lg-12
+                    .form-button
+                      button.button.button-lg.button-primary( type='submit' data-triangle=".button-overlay" )
+                        span.button-overlay
+                        span Submit comment
+        .col-lg-5.col-xl-4
+          .row.row-30
+            .col-lg-12
+              form.rd-form.rd-search.rd-form-inline( action='search-results.html', method='GET' )
+                .form-wrap
+                  label.form-label( for='rd-search-form-input' ) Search
+                  input#rd-search-form-input.form-input( type='text', name='s', autocomplete='off' )
+            .col-sm-7.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Latest Posts
+                .post-aside-content
+                  .post-mini
+                    .unit
+                      .unit-left: +img('single-news-05-59x59')
+                      .unit-body
+                        p.post-mini-author by
+                          =" "
+                          a(href='#') Dan Fisher
+                        p.post-mini-title: a(href='#') Many Important Brands Have Given us Their Trust.
+                  .post-mini
+                    .unit
+                      .unit-left: +img('single-news-06-59x59')
+                      .unit-body
+                        p.post-mini-author by
+                          =" "
+                          a(href='#') Dan Fisher
+                        p.post-mini-title: a(href='#') Let’s become the best sale marketer of the next year.
+                  .post-mini
+                    .unit
+                      .unit-left: +img('single-news-07-59x59')
+                      .unit-body
+                        p.post-mini-author by
+                          =" "
+                          a(href='#') Dan Fisher
+                        p.post-mini-title: a(href='#') Multiple customers in various industries and segments.
+            .col-sm-5.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Categories
+                .post-aside-content
+                  ul.list-marked
+                    li: a(href='#') Conference
+                    li: a(href='#') Event
+                    li: a(href='#') Meetings
+                    li: a(href='#') Seminar
+                    li: a(href='#') Meetups
+                    li: a(href='#') Workshop
+            .col-sm-7.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Archive
+                .post-aside-content
+                  ul.list-marked
+                    li: a(href='#') January 2019
+                    li: a(href='#') February 2019
+                    li: a(href='#') March 2019
+                    li: a(href='#') April 2019
+                    li: a(href='#') May 2019
+                    li: a(href='#') June 2019
+            .col-sm-5.col-md-6.col-lg-12
+              .post-aside
+                h5.post-aside-title Tags
+                .post-aside-content
+                  ul.post-aside-list-tag
+                    li: a(href='#') Event
+                    li: a(href='#') Conference
+                    li: a(href='#') Seminar
+                    li: a(href='#') Meetup
+                    li: a(href='#') Workshop
+                    li: a(href='#') Meeting
+                    li: a(href='#') Business
+                    li: a(href='#') Organizer
+                    li: a(href='#') Professionals
+
+  include ../sections/_footer-classic

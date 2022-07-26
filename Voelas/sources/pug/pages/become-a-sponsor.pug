@@ -1,0 +1,73 @@
+extends ../_skeleton
+
+include ../components/_svg-icons
+include ../components/_sponsor
+
+block variables
+  - pageName = 'Become a Sponsor'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs()
+
+  // Section Become A Sponsor
+  section.section.section-lg.bg-default.text-center
+    .container
+      .row.row-separated
+        .col-sm-6.col-lg-4.row-separated-item
+          +sponsor-info({
+            icon: {
+              name: 'lightbulb',
+              className: 'svg-icon-lg  icon-primary'
+            },
+            title: 'Platinum Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4.row-separated-item
+          +sponsor-info({
+            icon: {
+              name: 'bullseye',
+              className: 'svg-icon-lg  icon-secondary'
+            },
+            title: 'Gold sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4.row-separated-item
+          +sponsor-info({
+            icon: {
+              name: 'flag',
+              className: 'svg-icon-lg  icon-success'
+            },
+            title: 'Silver Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4.row-separated-item
+          +sponsor-info({
+            icon: {
+              name: 'handshake',
+              className: 'svg-icon-lg  icon-purple-heart'
+            },
+            title: 'platinum Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4.row-separated-item
+          +sponsor-info({
+            icon: {
+              name: 'diamond',
+              className: 'svg-icon-lg  icon-dodger-blue'
+            },
+            title: 'Private Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+        .col-sm-6.col-lg-4.row-separated-item
+          +sponsor-info({
+            icon: {
+              name: 'puzzle',
+              className: 'svg-icon-lg icon-pumpkin'
+            },
+            title: 'Main Sponsor',
+            text: 'There are many variations of passages of Lorem sum available but the majority have suffered alteration in some form.'
+          })
+
+  include ../sections/_footer-classic

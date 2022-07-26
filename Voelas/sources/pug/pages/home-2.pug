@@ -1,0 +1,327 @@
+extends ../_skeleton
+
+include ../components/_svg-icons
+include ../components/_counter
+include ../components/_countdown
+include ../components/_speaker
+include ../components/_card
+include ../components/_thumbnail
+include ../components/_pricing
+include ../components/_news
+
+block variables
+  - pageName = 'Home 2'
+
+block page
+  include ../sections/_header-classic
+
+  include ../sections/_section-swiper-slider-modern
+
+  // Section Why Choose This Conference
+  section.section.section-lg.bg-default.text-center
+    .container
+      .block-about
+        .block-about-content
+          h6 why choose this conference
+          h3.block-about-title The most inspirational conference for businesses.
+          p There are many variations of passages of available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        +img( 'home-2-01-830x440' )(class='block-about-img wow fadeScale')
+
+  hr
+
+  include ../sections/_section-counters
+
+  // Section Book Your Ticket
+  +parallax({
+    img:        'bg-parallax-01-1894x1200.jpg',
+    innerClass: 'section-lg context-dark text-center text-lg-left parallax-overlay-gradient-primary'
+  }).section
+    .container
+      .row.row-30.align-items-center
+        .col-lg-5
+          h6 Time is running out
+          h3 Book your ticket.
+        .col-lg-7.text-lg-right
+          +countdown-classic( {to: '2020-12-31'} )
+
+  // Section Who Is Speaking
+  section.section.section-md.bg-gray-100.text-center
+    .container
+      .row.row-30.justify-content-center.justify-content-lg-between
+        .col-md-10.col-lg-5.text-lg-left
+          h6.text-secondary Our Speakers
+          h3 who is speaking.
+          p There are many variations of passages of available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+          a.button.button-secondary.button-offset-xl.wow.fadeScale( href='#' data-triangle=".button-overlay" )
+            span View all speakers
+            span.button-overlay
+        .col-lg-6
+          .row.row-30
+            .col-sm-6
+              .wow
+                +speaker-classic({
+                  img: 'speaker-01-270x303',
+                  title: 'Jesscia brown',
+                  position: 'Co Founder'
+                })
+            .col-sm-6
+              .wow
+                +speaker-classic({
+                  img: 'speaker-02-270x303',
+                  title: 'Mike hardons',
+                  position: 'Lead Developer'
+                })
+        .col-sm-6.col-lg-3
+          .wow
+            +speaker-classic({
+              img:      'speaker-03-270x303',
+              title:    'Chritine Eve',
+              position: 'Manager'
+            })
+        .col-sm-6.col-lg-3
+          .wow
+            +speaker-classic({
+              img:      'speaker-04-270x303',
+              title:    'Kevin Martin',
+              position: 'Supporter'
+            })
+        .col-sm-6.col-lg-3
+          .wow
+            +speaker-classic({
+              img:      'speaker-05-270x303',
+              title:    'John Smith',
+              position: 'Assistant'
+            })
+        .col-sm-6.col-lg-3
+          .wow
+            +speaker-classic({
+              img:      'speaker-06-270x303',
+              title:    'Sarah Rose',
+              position: 'Designer'
+            })
+
+  include ../sections/_section-testimonials
+
+  include ../sections/_section-with-video-link
+
+  // Section Conference Schedule
+  section.section.section-lg.bg-default.text-center
+    .container
+      h6 Event Schedule plan
+      h3 Conference Schedule.
+      #tabs-1.tabs-custom.tabs-vertical.tabs-corporate
+        //Nav tabs
+        ul.nav.nav-tabs
+          li.nav-item( role='presentation' )
+            a.nav-link.nav-link.nav-link-secondary-darker( href='#tabs-1-1', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite First Day
+              span.nav-link-title January 5, 2019
+          li.nav-item( role='presentation'  )
+            a.nav-link.nav-link-purple-heart( href='#tabs-1-2', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite Second Day
+              span.nav-link-title January 6, 2019
+          li.nav-item( role='presentation' )
+            a.nav-link.nav-link-primary( href='#tabs-1-3', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite Third Day
+              span.nav-link-title January 8, 2019
+          li.nav-item( role='presentation' )
+            a.nav-link.nav-link-secodanry( href='#tabs-1-4', data-toggle='tab' data-triangle=".nav-link-overlay" )
+              span.nav-link-overlay
+              span.nav-link-cite Fourth Day
+              span.nav-link-title January 9, 2019
+
+        //Tab panes
+        .tab-content
+          #tabs-1-1.tab-pane.fade
+            #accordion1.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 1
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 2
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 3
+              }).card-corporate
+              // Schedule Simple
+              include ../components/card-content/schedule-item-4/_schedule-item-header
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion1',
+                case: 5
+              }).card-corporate.card-corporate
+
+          #tabs-1-2.tab-pane.fade
+            #accordion2.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 3
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 2
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 1
+              }).card-corporate
+              // Schedule Simple
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion2',
+                case: 5
+              }).card-corporate
+
+          #tabs-1-3.tab-pane.fade
+            #accordion3.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 2
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 3
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 1
+              }).card-corporate
+              // Schedule Simple
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion3',
+                case: 5
+              }).card-corporate
+
+          #tabs-1-4.tab-pane.fade
+            #accordion4.card-group-custom.card-group-corporate(role='tablist', aria-multiselectable='false')
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 1
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 3
+              }).card-corporate
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 2
+              }).card-corporate
+              // Schedule Simple
+              +schedule-classic-simple()
+              +card-schedule({
+                parentId: 'accordion4',
+                case: 5
+              }).card-corporate
+
+  // Section Photo Gallery Fluid
+  section.section.section-lg.bg-default.text-center
+    .container-fluid
+      h6 event album
+      h3 Photo Gallery.
+      .row.row-narrow-xs.row-10( data-lightgallery="group" )
+        .col-lg-6
+          .wow.fadeIn
+            .wow
+              +thumbnail-big({
+                img:      'gallery-06-942x473',
+                original: 'gallery-06-original-1200x798'
+              })
+        .col-xs-6.col-lg-3
+          .wow
+            +thumbnail-big({
+              img:      'gallery-07-466x473',
+              original: 'gallery-07-original-1200x800'
+            })
+        .col-xs-6.col-lg-3
+          .wow
+            +thumbnail-big({
+              img:      'gallery-08-466x473',
+              original: 'gallery-08-original-1200x800'
+            })
+        .col-xs-6.col-lg-3
+          .wow
+            +thumbnail-big({
+              img:      'gallery-09-466x473',
+              original: 'gallery-09-original-1200x797'
+            })
+        .col-xs-6.col-lg-3
+          .wow
+            +thumbnail-big({
+              img:      'gallery-10-466x473',
+              original: 'gallery-10-original-1200x800'
+            })
+        .col-lg-6
+          .wow
+            +thumbnail-big({
+              img:      'gallery-11-942x473',
+              original: 'gallery-11-original-1200x800'
+            })
+
+  // Section Event Packages
+  section.section.section-lg.bg-gray-100.text-center
+    .container
+      h6 Our Pricing
+      h3 Event Packages.
+      .row.row-30
+        .col-sm-6.col-lg-4
+          +pricing({
+            title: 'Basic Pass',
+            price: '29.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: [ 'Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate' ]
+          })
+        .col-sm-6.col-lg-4
+          +pricing({
+            title: 'Silver Pass',
+            price: '39.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: [ 'Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate' ]
+          })
+        .col-sm-6.col-lg-4
+          +pricing({
+            title: 'Gold Pass',
+            price: '49.00',
+            description: 'Our Pass Price Excluding 20% VAT',
+            list: [ 'Regular Seating', 'Comfortable Seat', 'Coffee Break', 'One Workshop', 'Certificate' ]
+          })
+
+  include ../sections/_section-new-and-articles
+
+  // Section Newsletter Sign Up
+  +parallax({
+    img: 'bg-parallax-03-1894x1662.jpg',
+    innerClass: 'section-lg context-dark text-center parallax-overlay-gradient-primary-1'
+  }).section
+    .container
+      h6 book your seats
+      h3 reserve your seat.
+      .row.justify-content-center.row-30
+        .col-md-12
+          form.rd-form.rd-mailform.rd-form-inline.text-left( data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php' )
+            .form-wrap
+              input#contact-name.form-input( type='text', name='name', data-constraints='@Required' )
+              label.form-label( for='contact-name' ) Your Name
+            .form-wrap
+              input#contact-email.form-input( type='email', name='email', data-constraints='@Email @Required' )
+              label.form-label( for='contact-email' ) E-mail
+            .form-wrap
+              select#select-package.form-input( name='package-plan', data-constraints='@Required', data-placeholder='Select a Package')
+                option( label='placeholder' )
+                option Basic Pass
+                option Silver Pass
+                option Gold Pass
+            .form-button
+              button.button.button-secondary( type='submit' data-triangle=".button-overlay" )
+                span Subscribe now
+                span.button-overlay
+
+  include ../sections/_section-google-map
+
+  include ../sections/_footer-classic

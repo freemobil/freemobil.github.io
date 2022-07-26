@@ -1,0 +1,82 @@
+extends ../_skeleton
+
+include ../components/_thumbnail
+
+block variables
+  - pageName = 'Gallery'
+
+block page
+  include ../sections/_header-classic
+
+  +breadcrumbs({
+    title: 'Our Gallery'
+  })
+
+  // Section Grid Gallery
+  section.section.section-lg.bg-default.text-center
+    .container.container-wide
+      h4.font-weight-bold Grid Gallery.
+      .row.row-ten.row-narrow.row-30.row-lg-50.justify-content-center( data-lightgallery="group" )
+        .col-sm-4.col-md-3.col-lg-2
+          +thumbnail({
+            img: 'gallery-01-298x343',
+            original: 'gallery-01-original-1200x800'
+          })
+        .col-sm-4.col-md-3.col-lg-2
+          +thumbnail({
+            img: 'gallery-02-298x343',
+            original: 'gallery-02-original-1200x800'
+          })
+        .col-sm-4.col-md-3.col-lg-2
+          +thumbnail({
+            img: 'gallery-03-298x343',
+            original: 'gallery-03-original-1200x800'
+          })
+        .col-sm-4.col-md-3.col-lg-2
+          +thumbnail({
+            img: 'gallery-04-298x343',
+            original: 'gallery-04-original-1200x800'
+          })
+        .col-sm-4.col-md-3.col-lg-2
+          +thumbnail({
+            img: 'gallery-05-298x343',
+            original: 'gallery-05-original-1200x800'
+          })
+
+  // Section Full Width Gallery
+  section.section.section-lg.bg-default.text-center
+    .container-fluid
+      h4.font-weight-bold Full Width Gallery.
+      .row.row-narrow-xs.row-10( data-lightgallery="group" )
+        .col-lg-6
+          +thumbnail-big({
+            img: 'gallery-06-942x473',
+            original: 'gallery-06-original-1200x798'
+          })
+        .col-xs-6.col-lg-3
+          +thumbnail-big({
+            img: 'gallery-07-466x473',
+            original: 'gallery-07-original-1200x800'
+          })
+        .col-xs-6.col-lg-3
+          +thumbnail-big({
+            img: 'gallery-08-466x473',
+            original: 'gallery-08-original-1200x800'
+          })
+        .col-xs-6.col-lg-3
+          +thumbnail-big({
+            img: 'gallery-09-466x473',
+            original: 'gallery-09-original-1200x797'
+          })
+        .col-xs-6.col-lg-3
+          +thumbnail-big({
+            img: 'gallery-10-466x473',
+            original: 'gallery-10-original-1200x800'
+          })
+        .col-lg-6
+          +thumbnail-big({
+            img: 'gallery-11-942x473',
+            original: 'gallery-11-original-1200x800'
+          })
+
+  include ../sections/_footer-classic
