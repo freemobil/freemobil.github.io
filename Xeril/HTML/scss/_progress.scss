@@ -1,0 +1,50 @@
+//
+// Progress.scss
+//
+.bg-progress {
+  background-image: url(../images/features/img-2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.progress-border {
+    &:before {
+        content: "";
+        border: 1px solid rgba($white, 0.4%);
+        position: absolute;
+        width: 72%;
+        left: 64%;
+        top: 65px;
+    }  
+}
+ 
+.progress-count {
+    h3 {
+        border: 2px solid rgba($white, 0.4%);
+        background: $primary;
+        color: $white;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}
+
+.progress-content {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        background-color: $white;
+        transform: rotate(45deg);
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+        margin-top: -35px;
+    }
+}

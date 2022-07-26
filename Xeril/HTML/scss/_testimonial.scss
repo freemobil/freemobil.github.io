@@ -1,0 +1,57 @@
+//
+// TEstimonial.scss
+//
+
+.bg-testimonial {
+  background-image: url(../images/blog/img-2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.testimonial-box{
+  .testimonial-title {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.carousel-indicators {
+  align-items: center;
+  position: relative;
+  li{
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      overflow: hidden;
+      opacity: 1;
+      border: 4px solid transparent;
+  }
+  .active {
+      opacity: 1;
+      border: 4px solid $primary;
+      z-index: 3;
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: $primary;
+  background-size: 100% 40%;
+  border-radius: 50%;
+  
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}

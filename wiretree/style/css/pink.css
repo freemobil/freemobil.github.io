@@ -1,0 +1,121 @@
+a {
+    color: #ca6689;
+}
+h2.post-title a:hover {
+    color: #ca6689
+}
+a.button,
+.forms fieldset .btn-submit,
+.comment-form .btn-submit,
+.page-navi ul li a {
+    background-color: #ca6689;
+}
+a.button.navy:hover {
+    background: #ca6689
+}
+ul.unordered li:before {
+    color: #ca6689;
+}
+.lite1 {
+    color: #ca6689;
+    border-bottom: 1px dotted #ca6689;
+}
+footer a:hover,
+.subfooter a:hover {
+    color: #ca6689
+}
+.menu ul li a:hover {
+    color: #ca6689;
+}
+.menu ul li.active a,
+.menu ul li a.selected {
+    color: #ca6689;
+}
+.menu ul li ul li,
+.menu ul li.active li {
+    color: #ca6689;
+}
+.menu ul li.active ul li a:hover,
+.menu ul li ul li a:hover {
+    color: #ca6689
+}
+.tp-caption.red-bg {
+    background: #ca6689;
+}
+.tp-caption i {
+    color: #ca6689;
+}
+.tp-bullets.simplebullets.round .bullet.selected,
+.tp-bullets.simplebullets.round .bullet:hover {
+    background-color: #ca6689
+}
+.tparrows:hover {
+    background-color: #ca6689;
+}
+.items li .info h4 a:hover {
+    color: #ca6689
+}
+.filter li a:hover {
+    background: #ca6689;
+}
+.filter li a.active {
+    background: #ca6689;
+    border-color: #ca6689 transparent; /* changed hover value */
+}
+.sidebox.widget .post-list li a:hover {
+    color: #ca6689
+}
+i.contact {
+    color: #ca6689;
+}
+#twitter em a:hover {
+    color: #ca6689
+}
+#twitter ul li:before {
+    color: #ca6689;
+}
+.tab a:hover {
+    background: #ca6689;
+}
+.tab a.active {
+    background: #ca6689;
+    border-color: #ca6689 transparent; /* changed hover value */
+}
+.toggle h4.title:hover,
+.toggle h4.title.active {
+    background-color: #ca6689;
+}
+ul.latest li .info .date {
+    background-color: #ca6689;
+}
+ul.latest li .info .date:before {
+	border-bottom: 5px solid #ca6689;
+}
+ul.latest li .text h4 a:hover {
+    color: #ca6689
+}
+.post .post-content .meta a:hover {
+    color: #ca6689
+}
+.post h2 a:hover {
+    color: #ca6689
+}
+.navigation a i {
+    background-color: #ca6689;
+}
+#comments .info h2 a:hover {
+    color: #ca6689
+}
+#comments a.reply-link:hover {
+    color: #ca6689
+}
+.overlay a .more {
+    background: rgba(202, 102, 137, 0.92);
+}
+.showbiz .detailholder h4 a:hover {
+    color: #ca6686;
+}
+.sb-navigation-left,
+.sb-navigation-right {
+    background: #ca6686;
+}

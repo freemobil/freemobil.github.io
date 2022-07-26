@@ -1,0 +1,63 @@
+//
+// about.scss
+//
+
+
+
+.about-box{
+    padding: 40px 30px;
+    i{
+        font-size: 40px;;
+    }
+}
+
+
+
+// Skill
+
+.skill-box {
+    z-index: 3;
+    position: relative;
+    .progress {
+        height: 8px;
+        background:$gray-200;
+        overflow: visible;
+    }
+    .progress-bar {
+        position: relative;
+        background-color: $primary;
+        animation: animate-positive 2s;
+        overflow: visible;
+    }
+    .progress-value {
+        display: block;
+        color: $dark;
+        position: absolute;
+        top: -31px;
+        right: -25px;
+    }
+}
+
+.about-img{
+    position: relative;
+    margin-left: -50px;
+    margin-top: 0px;
+    max-width: calc(50% + 50px);
+    flex: none;
+}
+
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+
+

@@ -1,0 +1,43 @@
+.overlay a .more {
+    background: #ca6666;
+}
+.forms fieldset .text-input,
+.forms fieldset .text-area,
+.searchform input,
+.comment-form input,
+.comment-form textarea {
+    padding-top: 8px;
+}
+hr,
+.lined:after,
+.long-lined:after,
+.etabs,
+.client-list li,
+.content .post,
+.single .related,
+.page-intro {
+	border-bottom: 1px solid #d7d7d7;
+}
+.menu ul li ul li,
+.menu ul li.active li,
+ul.latest li,
+.client-list li,
+.sidebox,
+.project .item {
+    border-top: 1px solid #d7d7d7;
+}
+.client-list li {
+    border-right: 1px solid #d7d7d7;
+}
+.client-list li:first-child {
+    border-left: 1px solid #d7d7d7;
+}
+blockquote p {
+    border-left: 2px solid #d7d7d7;
+}
+.content .post img {
+    max-width: 250px;
+}
+.content.full .post img {
+    max-width: none;
+}

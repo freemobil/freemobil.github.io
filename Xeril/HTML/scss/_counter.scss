@@ -1,0 +1,26 @@
+//
+// counter.scss
+//
+
+
+.bg-counter {
+  background-image: url(../images/bg-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.counter-icon{
+ i{
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  background: $primary;
+  display: inline-block;
+  color: $white;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 50%;
+ }
+}

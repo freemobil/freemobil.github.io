@@ -1,0 +1,28 @@
+//
+// Progress.scss
+//
+
+.pricing-box{
+  .pricing-label{
+    position: absolute;
+      display: block;
+      top: 0;
+      right: 14px;
+   h5{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: $primary;
+    border-radius: 50%;
+   }
+  }
+  h1{
+    font-size: 44px;
+  }
+  .pricing-features{
+    p{
+      border-bottom: 1px solid $gray-200;
+      padding-bottom: 12px;
+    }
+  }
+}

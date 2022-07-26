@@ -1,0 +1,52 @@
+//
+// variables.scss
+//
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Rubik:400,500,700&display=swap');
+
+
+$primary:   #f1894c;
+$success:   #34D1BF;
+$info:      #57B8FF;
+$warning:   #FBB13C;
+$danger:    #FE6847;
+$purple:    #9261c6;
+$pink:      #ff7aa3;
+$white:     #ffffff;
+$dark:      #343a40;
+$light:     #f9f9f9;
+$muted:     #888888;
+
+// stylelint-disable
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #efefef;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$colors: (
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "purple": $purple,
+    "pink": $pink,
+    "white": $white,
+    "light": $light
+);
+// Body Background
+$body-bg:                   #f5f5f5;
+$box-shadow:                0px 7px 3px 0px rgba(239, 239, 239, 0.3);
+
+// Base font
+$font-size-base:              14px;
+
+$font-family-base:            'Raleway', sans-serif;
+$font-family-secondary:       'Rubik', sans-serif;

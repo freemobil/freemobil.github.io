@@ -1,0 +1,36 @@
+//
+// general.scss
+//
+
+body {
+    font-family: $font-family-base;
+    font-size: 15px;
+    color: $dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-secondary;
+    color: $dark;
+}
+
+.btn,
+.btn:focus,
+button,
+button:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+
+p{
+    line-height: 1.8;
+}
+

@@ -1,0 +1,27 @@
+//
+// team.scss
+//
+.team-box {
+    .team-img {
+        img {
+            width: 130px;
+        }
+    }
+    .team-content {
+        border: solid 1px $gray-200;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: $white;
+            transform: rotate(45deg);
+            border: solid 1px $gray-200;
+            border-color: $gray-200 transparent transparent $gray-200;
+            left: 0;
+            right: 0;
+            margin: 0px auto;
+            margin-top: -36px;
+        }
+    }
+}

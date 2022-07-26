@@ -1,0 +1,63 @@
+//
+// contact.scss
+//
+
+
+.contact-box {
+    -webkit-box-shadow: 0 2px 2px rgba(10, 16, 20, 0.16), 0 0 2px rgba(10, 16, 20, 0.01);
+            box-shadow: 0 2px 2px rgba(10, 16, 20, 0.16), 0 0 2px rgba(10, 16, 20, 0.01);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  textarea.form-control {
+    height: auto !important;
+  }
+  
+  .error {
+    margin: 8px 0px;
+    display: none;
+    color: $danger;
+  }
+  
+  #ajaxsuccess {
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    clear: both;
+    margin: 8px 0px;
+  }
+  
+  .error_message {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $danger;
+    border: 2px solid $danger;
+  }
+  
+  .contact-loader {
+    display: none;
+  }
+  
+  #success_page {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .custom-form {
+    .form-control {
+      height: 44px;
+      font-size: 14px;
+      background-color: $light;
+      padding-left: 20px;
+      border: none;
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  
+
+  

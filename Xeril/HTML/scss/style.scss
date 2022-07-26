@@ -1,0 +1,51 @@
+/* Template Name: Xeril
+   Author: Themesdesign
+   Version: 1.0.0
+   File Description: Main Css file of the template
+*/
+
+/****************************************\
+
+01.general
+02.helper
+03.components
+04.menu
+05.home
+06.about
+07.services
+08.features
+09.video
+10.cta
+11.download
+12.sreenshort
+13.counter
+14.pricing
+15.client
+16.faq
+17.contact
+18.footer
+19.responsive
+
+*****************************************/
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "home";
+@import "about";
+@import "progress";
+@import "portfolio";
+@import "counter";
+@import "team";
+@import "testimonial";
+@import "pricing";
+@import "blog";
+@import "cta";
+@import "contact";
+@import "footer";
+@import "responsive";
+
+
+
