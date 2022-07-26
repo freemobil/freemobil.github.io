@@ -1,0 +1,22 @@
+a:focus, a:active, .color,
+.a-icon,
+.counter,
+.se-icon,
+.con-icon,
+.social-container a {
+    color: #ffcc00;
+}
+.skillbar-bar,
+.label-primary,
+#team .team-social,
+.btn, .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger,
+.process-block,
+.cbp-l-filters-button .cbp-filter-item-active,
+.label-primary,
+#contact input.submit {
+    background-color: #ffcc00; 
+}
+
+/* Website highlight color */
+::-moz-selection {background: #ffcc00;text-shadow: none;}
+::selection {background: #ffcc00;text-shadow: none;}

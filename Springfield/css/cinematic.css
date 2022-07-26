@@ -1,0 +1,159 @@
+@keyframes cinematiccustom
+{
+0%   {transform: translateX(0%) translateY(0%) scale(1);}
+100% {transform: translateX(-15%) translateY(25%) scale(1.5);}
+}
+@-webkit-keyframes cinematiccustom 
+{
+0%   {-webkit-transform: translateX(0%) translateY(0%) scale(1);}
+100% {-webkit-transform: translateX(-15%) translateY(25%) scale(1.5);}
+}
+.iS-CinematicCustom {
+-webkit-animation-name: cinematiccustom;
+animation-name: cinematiccustom;	
+}
+/*******************************************/
+@keyframes cinematiccenter
+{
+0%   {transform: scale(1);}
+100% {transform: scale(1.5);}
+}
+@-webkit-keyframes cinematiccenter 
+{
+0%   {-webkit-transform: scale(1);}
+100% {-webkit-transform: scale(1.5);}
+}
+@keyframes cinematictop
+{
+0%   {transform: translateY(0%) scale(1);}
+100% {transform: translateY(25%) scale(1.5);}
+}
+@-webkit-keyframes cinematictop 
+{
+0%   {-webkit-transform: translateY(0%) scale(1);}
+100% {-webkit-transform: translateY(25%) scale(1.5);}
+}
+@keyframes cinematicbottom
+{
+0%   {transform: translateY(0%) scale(1);}
+100% {transform: translateY(-25%) scale(1.5);}
+}
+@-webkit-keyframes cinematicbottom
+{
+0%   {-webkit-transform: translateY(0%) scale(1);}
+100% {-webkit-transform: translateY(-25%) scale(1.5);}
+}
+@keyframes cinematicleft
+{
+0%   {transform: translateX(0%) scale(1);}
+100% {transform: translateX(25%) scale(1.5);}
+}
+@-webkit-keyframes cinematicleft 
+{
+0%   {-webkit-transform: translateX(0%) scale(1);}
+100% {-webkit-transform: translateX(25%) scale(1.5);}
+}
+@keyframes cinematicright
+{
+0%   {transform: translateX(0%) scale(1);}
+100% {transform: translateX(-25%) scale(1.5);}
+}
+@-webkit-keyframes cinematicright
+{
+0%   {-webkit-transform: translateX(0%) scale(1);}
+100% {-webkit-transform: translateX(-25%) scale(1.5);}
+}
+@keyframes cinematictopleft
+{
+0%   {transform: translateY(0%) translateX(0%) scale(1);}
+100% {transform: translateY(25%) translateX(25%) scale(1.5);}
+}
+@-webkit-keyframes cinematictopleft
+{
+0%   {-webkit-transform: translateY(0%) translateX(0%) scale(1);}
+100% {-webkit-transform: translateY(25%) translateX(25%) scale(1.5);}
+}
+@keyframes cinematictopright
+{
+0%   {transform: translateY(0%) translateX(0%) scale(1);}
+100% {transform: translateY(25%) translateX(-25%) scale(1.5);}
+}
+@-webkit-keyframes cinematictopright
+{
+0%   {-webkit-transform: translateY(0%) translateX(0%) scale(1);}
+100% {-webkit-transform: translateY(25%) translateX(-25%) scale(1.5);}
+}
+@keyframes cinematicbottomleft
+{
+0%   {transform: translateY(0%) translateX(0%) scale(1);}
+100% {transform: translateY(-25%) translateX(25%) scale(1.5);}
+}
+@-webkit-keyframes cinematicbottomleft
+{
+0%   {-webkit-transform: translateY(0%) translateX(0%) scale(1);}
+100% {-webkit-transform: translateY(-25%) translateX(25%) scale(1.5);}
+}
+@keyframes cinematicbottomright
+{
+0%   {transform: translateY(0%) translateX(0%) scale(1);}
+100% {transform: translateY(-25%) translateX(-25%) scale(1.5);}
+}
+@-webkit-keyframes cinematicbottomright
+{
+0%   {-webkit-transform: translateY(0%) translateX(0%) scale(1);}
+100% {-webkit-transform: translateY(-25%) translateX(-25%) scale(1.5);}
+}
+/*****************************************/
+.iS-CinematicCenter {
+-webkit-animation-name: cinematiccenter;
+animation-name: cinematiccenter;	
+}
+.iS-CinematicTop {
+-webkit-animation-name: cinematictop;
+animation-name: cinematictop;	
+}
+.iS-CinematicBottom {
+-webkit-animation-name: cinematicbottom;
+animation-name: cinematicbottom;	
+}
+.iS-CinematicLeft {
+-webkit-animation-name: cinematicleft;
+animation-name: cinematicleft;	
+}
+.iS-CinematicRight {
+-webkit-animation-name: cinematicright;
+animation-name: cinematicright;	
+}
+.iS-CinematicTopLeft {
+-webkit-animation-name: cinematictopleft;
+animation-name: cinematictopleft;	
+}
+.iS-CinematicTopRight {
+-webkit-animation-name: cinematictopright;
+animation-name: cinematictopright;	
+}
+.iS-CinematicBottomLeft {
+-webkit-animation-name: cinematicbottomleft;
+animation-name: cinematicbottomleft;	
+}
+.iS-CinematicBottomRight {
+-webkit-animation-name: cinematicbottomright;
+animation-name: cinematicbottomright;	
+}
+/******************************************/
+.iS-Cinematic {
+-webkit-animation-duration: 60s;
+animation-duration: 60s;
+}
+.iS-Active .iS-Cinematic {
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+}
+.iS-Preactive .iS-Cinematic, .iS-Pruactive .iS-Cinematic {
+-webkit-animation-name: none;
+animation-name: none;
+}
+.iS-Proactive .iS-Cinematic, .iS-Priactive .iS-Cinematic {
+-webkit-animation-play-state:paused;
+animation-play-state:paused;
+}

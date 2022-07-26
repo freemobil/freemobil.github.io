@@ -1,0 +1,121 @@
+#elements {
+    padding-bottom: 60px;
+    padding-top: 60px;
+	
+}
+.elements-heading {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.fact-container .f2{text-align:center;}
+.fact-container .f2 i {
+    display: block;
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+.fa-icon {
+    color: #FF6F40;
+    font-size: 52px;
+    margin: 0 0 20px;
+    position: relative;
+    text-align: center;
+}
+.shadow-fa-icon {
+    bottom: -25px;
+    color: rgba(0, 0, 0, 0.08);
+    font-size: 80px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+}
+.fact-container .fa-icon i.ani{
+    -webkit-animation-duration: 5s; -moz-animation-duration: 5s;-o-animation-duration: 5s;animation-duration: 5s;		
+    animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;	
+    -webkit-animation-name: diagram4;-moz-animation-name: diagram4;-o-animation-name: diagram4;-ms-animation-name: diagram4;animation-name: diagram4;
+    animation-timing-function: linear 0s;-webkit-animation-timing-function: linear 0s;-moz-animation-timing-function: linear 0s;	-o-animation-timing-function: linear 0s;
+}
+.fact-container .fa-icon i.ani[data-step="1"] {animation-delay: 1s;-webkit-animation-delay: 1s;}
+.fact-container .fa-icon i.ani[data-step="2"] {animation-delay: 2s;-webkit-animation-delay: 2s;}
+.fact-container .fa-icon i.ani[data-step="3"] {animation-delay: 3s;-webkit-animation-delay: 3s;}
+.fact-container .fa-icon i.ani[data-step="4"] {animation-delay: 4s;-webkit-animation-delay: 4s;}
+
+@keyframes diagram4 {0%, 100%, 48%, 52% {font-size:52px;}50% {font-size:62px;}}
+@-webkit-keyframes diagram4 {0%, 100%, 48%, 52% {font-size:52px;}50% {font-size:62px;}}
+@-moz-keyframes diagram4 {0%, 100%, 48%, 52% {font-size:52px;}50% {font-size:62px;}}
+
+.sb2{background:#f2f2f2;}
+.pb2{height:30px;}
+
+.featured-video-section{
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+    margin: 30px 0;
+    overflow: hidden;
+    position: relative;
+}
+.panel-default{
+border-color:#f2f2f2;
+cursor:pointer;
+}
+.panel-el2 > .panel-heading {
+    background-color: #212121;
+    border-color: #212121;
+    color: #FFFFFF;
+}
+.panel-el2 .panel-body {
+    background: none repeat scroll 0 0 #212121;
+    color: #FFFFFF;
+    padding: 15px;
+}
+.tab-content{
+	padding:40px;
+}
+.nav-tabs > li a{color:#212121;}
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color:#FF6F40;
+	border-color:#FF6F40;
+}
+.tb2{background-color:#212121;color:#fff;}
+.tb2-nav > li.active > a, .tb2-nav > li.active > a:hover, .tb2-nav > li.active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #212121;
+    border-color: #212121 #212121 transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: default;
+}
+
+.ele-imgleft{
+	 position: relative;
+	 border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+.ele-rightcontent{
+	float: left;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+}
+.ele-service-column {
+    overflow: hidden;
+	width:80%;
+}

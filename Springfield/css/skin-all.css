@@ -1,0 +1,706 @@
+/*dots*/
+.iS.iS-SkinDots {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background:#1E2936
+}
+.iS-SkinDots .iS-Commands {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.iS-SkinDots .iS-Content {
+	position: absolute;	
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top:0px;
+}
+.iS-SkinDots .iS-Items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinDots .iS-Item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinDots .iS-Previous {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	left: 5%;	
+	line-height: 40px;
+	margin-top: -20px;
+}
+.iS-SkinDots .iS-Next {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	right: 5%;
+	line-height: 40px;
+	margin-top: -20px;
+}
+.iS-SkinDots .iS-Play {
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 2%;
+    text-align: center;
+    top: 5%;
+    width: 20px;
+    z-index: 3;
+}
+.iS-SkinDots .iS-Playactive {
+}
+.iS-SkinDots .iS-Stop {
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 30px;
+    position: absolute;
+    right: 2%;
+    text-align: center;
+    top: 5%;
+    width: 20px;
+    z-index: 3;
+}
+.iS-SkinDots .iS-Stopactive {
+}
+.iS-SkinDots .iS-Loopline {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 3px;
+	left: 0px;
+	bottom: 0px;
+}
+.iS-SkinDots .iS-Dots {
+	position: absolute;	
+	text-align: center;
+	left: 0%;
+	bottom: 2%;
+	width: 100%;
+	height: auto;
+	padding: 2px 0px;
+	text-align: center;
+	overflow: hidden;
+	
+	display:none;
+}
+.iS-SkinDots .iS-Dot {
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 3;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	margin: 0px 7px;
+	border-radius: 50%;
+	border: 2px solid;
+	line-height: 47px;
+}
+/*Colors*/
+
+.iS-SkinDots .iS-Previous {
+	color: #888;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+}
+.iS-SkinDots .iS-Previous:hover {
+	color: #fff;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+}
+.iS-SkinDots .iS-Next {
+	color: #888;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	 background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+}
+.iS-SkinDots .iS-Next:hover {
+	color: #fff;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+}
+.iS-SkinDots .iS-Play {
+	color: #888;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.iS-SkinDots .iS-Play:hover {
+	color: #fff;
+}
+.iS-SkinDots .iS-Playactive {
+}
+.iS-SkinDots .iS-Stop {
+	color: #888;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.iS-SkinDots .iS-Stop:hover {
+	color: #fff;	
+}
+.iS-SkinDots .iS-Stopactive {
+}
+.iS-SkinDots .iS-Dots {
+	
+}
+.iS-SkinDots .iS-Dot {
+	color: #ff4848;
+	background-color: #fff;	
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.iS-SkinDots .iS-Dot:hover {
+	color: #fff;
+	background-color: #ff4848;	
+	border-color: #ff4848;	
+}
+.iS-SkinDots .iS-Dotactive {
+	color: #fff;
+	background-color: #ff4848;	
+	border-color: #ff4848;			
+}
+.iS-SkinDots .iS-Loopline {
+	background-color: #fff;	
+}
+/*Responsive*/
+@media (min-width: 0px) and (max-width: 499px) {
+	.iS.iS-SkinDots {
+		width: 100%;
+		height: 480px;
+	}
+	.iS-SkinDots .iS-Next, .iS-SkinDots .iS-Previous {
+		display: none;
+	}
+}
+@media (min-width: 500px) and (max-width: 767px) {
+	.iS.iS-SkinDots  {
+		width: 100%;
+		height: 568px;
+	}
+	.iS-SkinDots .iS-Next, .iS-SkinDots .iS-Previous {
+		display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+	.iS.iS-SkinDots  {
+		width: 100%;
+		height: 668px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){ 
+	.iS.iS-SkinDots  {
+		width: 100%;
+		height: 700px;
+	}
+}
+@media (min-width: 1200px) {
+	.iS.iS-SkinDots  {
+		width: 100%;
+		height: 700px;
+	}
+}
+/*icons*/
+.iS.iS-SkinIcons  {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.iS-SkinIcons .iS-Commands {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.iS-SkinIcons .iS-Content {
+	position: absolute;	
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top:0px;
+}
+.iS-SkinIcons .iS-Items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinIcons .iS-Item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinIcons .iS-Previous {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	left: 5%;
+	border-radius: 50%;
+	border: 1px solid;
+	line-height: 41px;
+	margin-top: -20px;
+}
+.iS-SkinIcons .iS-Next {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	right: 5%;
+	border-radius: 50%;
+	border: 1px solid;
+	line-height: 41px;
+	margin-top: -20px;
+}
+.iS-SkinIcons .iS-Play {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	top: 5%;
+	right: 5%;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid;
+	line-height: 38px;
+}
+.iS-SkinIcons .iS-Playactive {
+}
+.iS-SkinIcons .iS-Stop {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	top: 5%;
+	right: 5%;
+	margin-right: 50px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid;
+	line-height: 38px;
+}
+.iS-SkinIcons .iS-Stopactive {
+}
+.iS-SkinIcons .iS-Loopline {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 5px;
+	left: 0px;
+	bottom: 0px;
+}
+.iS-SkinIcons .iS-Dots {
+	position: absolute;	
+	text-align: center;
+	left: 0%;
+	bottom: -30px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.iS-SkinIcons .iS-Dot {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 3;
+	width: 59px;
+	height: 59px;
+	margin: 0px 10px;
+	border: 2px solid;
+	border-radius: 50%;
+	line-height: 59px;
+	font-size: 20px;
+	text-align: center;
+}
+/*Colors*/
+
+.iS-SkinIcons .iS-Previous {
+	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: rgba(255,72,72,0.1);
+}
+.iS-SkinIcons .iS-Previous:hover {
+	background-color: #ff4848;
+}
+.iS-SkinIcons .iS-Next {
+	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: rgba(255,72,72,0.1);
+}
+.iS-SkinIcons .iS-Next:hover {
+	background-color: #ff4848;
+}
+.iS-SkinIcons .iS-Play {
+	color: #fff;
+	border-color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: rgba(255,72,72,0.1);
+}
+.iS-SkinIcons .iS-Play:hover {
+	background-color: #ff4848;
+}
+.iS-SkinIcons .iS-Playactive {
+}
+.iS-SkinIcons .iS-Stop {
+	color: #fff;
+	border-color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: rgba(255,72,72,0.1);
+}
+.iS-SkinIcons .iS-Stop:hover {
+	background-color: #ff4848;
+}
+.iS-SkinIcons .iS-Stopactive {
+}
+.iS-SkinIcons .iS-Dots {
+	
+}
+.iS-SkinIcons .iS-Dot {
+	color: #ff4848;
+	background-color: #fff;	
+	box-shadow: 0px 0px 0px 2px #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.iS-SkinIcons .iS-Dot:hover {
+	color: #fff;
+	background-color: #ff4848;
+	border-color: #ff4848;
+}
+.iS-SkinIcons .iS-Dotactive {
+	color: #fff;
+	background-color: #ff4848;	
+	border-color: #ff4848;			
+}
+.iS-SkinIcons .iS-Loopline {
+	background-color: #ff4848;	
+}
+/*Responsive*/
+@media (min-width: 0px) and (max-width: 499px) {
+	.iS.iS-SkinIcons  {
+		width: 100%;
+		height: 480px;
+	}
+	.iS-SkinIcons .iS-Next, .iS-SkinIcons .iS-Previous {
+		display: none;
+	}
+	.iS-SkinIcons .iS-Dots {
+		bottom: -20px;
+	}
+	.iS-SkinIcons .iS-Dot {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		margin: 0px 5px;
+	}
+}
+@media (min-width: 500px) and (max-width: 767px) {
+	.iS.iS-SkinIcons  {
+		width: 100%;
+		height: 568px;
+	}
+	.iS-SkinIcons .iS-Next, .iS-SkinIcons .iS-Previous {
+		display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+	.iS.iS-SkinIcons  {
+		width: 100%;
+		height: 668px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){ 
+	.iS.iS-SkinIcons  {
+		width: 100%;
+		height: 700px;
+	}
+}
+@media (min-width: 1200px) {
+	.iS.iS-SkinIcons  {
+		width: 100%;
+		height: 700px;
+	}
+}
+/*thumbnails*/
+.iS.iS-SkinThumbnails {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 100px;
+}
+.iS-SkinThumbnails .iS-Commands {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.iS-SkinThumbnails .iS-Content {
+	position: absolute;	
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top:0px;
+}
+.iS-SkinThumbnails .iS-Items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinThumbnails .iS-Item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinThumbnails .iS-Previous {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	height: 110px;
+	width: 10%;
+	left: 0%;
+	bottom: 0;
+	line-height: 108px;
+	font-size: 4em;
+}
+.iS-SkinThumbnails .iS-Next {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	height: 110px;
+	width: 10%;
+	right: 0%;
+	bottom: 0;
+	line-height: 108px;
+	font-size: 4em;
+}
+.iS-SkinThumbnails .iS-Play {
+	position: absolute;	
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	top: 5%;
+	right: 5%;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid;
+	line-height: 38px;
+}
+.iS-SkinThumbnails .iS-Playactive {
+}
+.iS-SkinThumbnails .iS-Stop {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	top: 5%;
+	right: 5%;
+	margin-right: 50px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid;
+	line-height: 38px;
+}
+.iS-SkinThumbnails .iS-Stopactive {
+}
+.iS-SkinThumbnails .iS-Loopline {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: 5px;
+	left: 0px;
+	bottom: 110px;
+}
+.iS-SkinThumbnails .iS-Dots {
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+	left: 10%;
+	bottom: 0;
+	width: 80%;
+	height: 110px;
+	text-align: center;
+	overflow: hidden;
+}
+.iS-SkinThumbnails .iS-Dot {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	width: 20%;
+	height: 110px;
+	opacity: 0.5;
+	min-width: 110px;
+	max-width: 200px;
+}
+.iS-SkinThumbnails .iS-Dotactive {
+	opacity: 1;
+}
+/*Plus*/
+.iS-SkinThumbnails .iS-Dot:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	z-index: 10;
+	opacity: 0;
+}
+.iS-SkinThumbnails .iS-Dotactive:after {
+	opacity: 1;	
+}
+/*Colors*/
+.iS-SkinThumbnails .iS-Previous {
+	background-color: #222;
+	color: #555;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.iS-SkinThumbnails .iS-Previous:hover {
+	background-color: #ff4848;
+	color: #fff;
+}
+.iS-SkinThumbnails .iS-Next {
+	background-color: #222;
+	color: #555;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.iS-SkinThumbnails .iS-Next:hover {
+	background-color: #ff4848;
+	color: #fff;
+}
+.iS-SkinThumbnails .iS-Play {
+	color: #fff;
+	border-color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: rgba(255,72,72,0.1);
+}
+.iS-SkinThumbnails .iS-Play:hover {
+	background-color: #ff4848;
+}
+.iS-SkinThumbnails .iS-Playactive {
+}
+.iS-SkinThumbnails .iS-Stop {
+	color: #fff;
+	border-color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: rgba(255,72,72,0.1);
+}
+.iS-SkinThumbnails .iS-Stop:hover {
+	background-color: #ff4848;
+}
+.iS-SkinThumbnails .iS-Stopactive {
+}
+.iS-SkinThumbnails .iS-Dots {
+	background-color: #222;
+}
+.iS-SkinThumbnails .iS-Dot {
+	color: #ff4848;
+	background-color: #fff;	
+	-webkit-transition: -webkit-transform .3s ease-in-out;
+	transition: transform .3s ease-in-out;
+}
+.iS-SkinThumbnails .iS-Dotactive {
+	color: #fff;
+	background-color: #ff4848;	
+	border-color: #ff4848;
+}
+.iS-SkinThumbnails .iS-Dot:after {
+	background-color: rgba(255, 72, 72, 0.8)
+}
+.iS-SkinThumbnails .iS-Loopline {
+	background-color: #ff4848;	
+}
+/*Responsive*/
+@media (min-width: 0px) and (max-width: 499px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 480px;
+	}
+	.iS-SkinThumbnails .iS-Next, .iS-SkinThumbnails .iS-Previous {
+		width: 50%;
+	}
+	.iS-SkinThumbnails .iS-Dots {
+		display: none;
+	}
+}
+@media (min-width: 500px) and (max-width: 767px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 568px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 668px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){ 
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 700px;
+	}
+}
+@media (min-width: 1200px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 700px;
+	}
+}
