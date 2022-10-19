@@ -1,0 +1,24 @@
+/* :: Modal CSS */
+
+.modal-content {
+    border: 0;
+    border-radius: 0.75rem;
+}
+
+.modal.fade.bottom-align-modal {
+    overflow: hidden;
+}
+
+.modal-dialog-end {
+    display: flex;
+    align-items: flex-end;
+    min-height: calc(100% - 1rem);
+}
+
+.modal.fade .modal-dialog.modal-dialog-end {
+    transform: translate(0, 50px);
+}
+
+.modal.show .modal-dialog.modal-dialog-end {
+    transform: none;
+}

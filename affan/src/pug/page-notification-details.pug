@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Notification Details
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        // Page Content Wrapper 
+        .page-content-wrapper.py-3
+            .container
+                .card
+                    .card-body.direction-rtl
+                        p New comment on "Affan - PWA Mobile HTML5 Template" from designing world.
+                        .border-bottom.border-top.py-4
+                            p.lead "Good job! Waiting for admin dashboard too!"
+                            a.btn.btn-primary.btn-sm(href="https://themeforest.net/item/affan-pwa-mobile-html-template/29715548/comments") View the comment
+                        p.mb-0.fz-12.mt-4
+                            i.bi.bi-clock.mx-1
+                            | 12 Dec 2021 12:36 AM
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

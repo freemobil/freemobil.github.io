@@ -1,0 +1,171 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Product Details
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                .card.product-details-card.mb-3                    
+                    span.badge.bg-warning.text-dark.position-absolute.product-badge Sale -10%
+
+                    .card-body
+                        .product-gallery-wrapper
+                            .product-gallery
+                                a(href="img/bg-img/p1.jpg")
+                                    img.rounded(src="img/bg-img/p1.jpg", alt="")
+
+                                a(href="img/bg-img/p2.jpg")
+                                    img.rounded(src="img/bg-img/p2.jpg", alt="")
+
+                                a(href="img/bg-img/p3.jpg")
+                                    img.rounded(src="img/bg-img/p3.jpg", alt="")
+
+                .card.product-details-card.mb-3.direction-rtl
+                    .card-body
+                        h3 Wooden Table
+                        h1 $9.89
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolores natus laboriosam accusantium.
+
+                        form(action="#")
+                            select.form-select.mb-3#chooseSize(name="chooseSize", aria-label="Default select example")
+                                option(value="1", selected) Choose Size
+                                option(value="2") Small
+                                option(value="3") Medium
+                                option(value="3") Large
+
+                            .input-group
+                                input.input-group-text.form-control(type="number", value="1")
+                                button.btn.btn-primary.w-50(type="submit") Add to Cart
+
+                .card.product-details-card.mb-3.direction-rtl
+                    .card-body
+                        h5 Description
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta tempore tenetur provident eligendi porro, eius nulla? Aliquam, blanditiis id. Corporis.
+                        p.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ut fugit accusantium quo quidem magni laboriosam!
+                        
+                        .rating-card-two.mt-4
+                            // Rating result 
+                            .d-flex.align-items-center.justify-content-between.mb-3.border-bottom.pb-2
+                                .rating
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-half
+
+                                span 4.44 out of 5 ratings
+                            
+                            // Rating Details 
+                            .rating-detail
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 5 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 78%;", role="progressbar", aria-valuenow="78", aria-valuemin="0", aria-valuemax="100")
+                                    span 78%
+
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 4 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 14%;", role="progressbar", aria-valuenow="14", aria-valuemin="0", aria-valuemax="100")
+                                    span 14%
+
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 3 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 8%;", role="progressbar", aria-valuenow="8", aria-valuemin="0", aria-valuemax="100")
+                                    span 8%
+
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 2 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 0%;", role="progressbar", aria-valuenow="0", aria-valuemin="0", aria-valuemax="100")
+                                    span 0%
+                                    
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 1 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 0%;", role="progressbar", aria-valuenow="0", aria-valuemin="0", aria-valuemax="100")
+                                    span 0%
+
+                .card.related-product-card.direction-rtl
+                    .card-body
+                        h5.mb-3 Related Products
+
+                        .row.g-3
+                            // Single Top Product Card 
+                            .col-6.col-sm-4.col-lg-3
+                                .card.single-product-card.border
+                                    .card-body.p-3
+                                        // Product Thumbnail 
+                                        a.product-thumbnail.d-block(href="page-shop-details.html")
+                                            img(src="img/bg-img/p1.jpg", alt="")
+                                            // Badge 
+                                            span.badge.bg-primary Sale
+                                        // Product Title 
+                                        a.product-title.d-block.text-truncate(href="page-shop-details.html") Wooden Tool
+                                        // Product Price 
+                                        p.sale-price $9.89
+                                            span $13.42
+                                        a.btn.btn-danger.btn-sm(href="#") Add to Cart
+
+                            // Single Top Product Card 
+                            .col-6.col-sm-4.col-lg-3
+                                .card.single-product-card.border
+                                    .card-body.p-3
+                                        // Product Thumbnail 
+                                        a.product-thumbnail.d-block(href="page-shop-details.html")
+                                            img(src="img/bg-img/p2.jpg", alt="")
+                                            // Badge 
+                                            span.badge.bg-primary Sale
+                                        // Product Title 
+                                        a.product-title.d-block.text-truncate(href="page-shop-details.html") Atoms Musk
+                                        // Product Price 
+                                        p.sale-price $3.36
+                                            span $5.99
+                                        a.btn.btn-danger.btn-sm(href="#") Add to Cart
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

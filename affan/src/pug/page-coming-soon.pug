@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Static Backdrop Modal 
+        .cs-newsletter-form.modal.fade#staticBackdrop(data-bs-backdrop="static", data-bs-keyboard="false", tabindex="-1", aria-labelledby="staticBackdropLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body
+                        button.btn.btn-close.p-1.ms-auto(type="button", data-bs-dismiss="modal", aria-label="Close")
+                        h6.mb-3 Subscribe our newsletter.
+                        form(action="#")
+                            input.form-control.mb-3(type="email", placeholder="Enter your email")
+                            button.btn.btn-primary.w-100(type="submit") Subscribe
+
+        // Page Content Wrapper 
+        .coming-soon-wrapper.bg-white.text-center.bg-overlay(style="background-image: url('img/bg-img/26.jpg')")
+            .container
+                .cs-logo
+                    a(href="page-home.html")
+                        img(src="img/core-img/logo-dark.png", alt="")
+                h2.text-white.display-3 Coming Soon
+                p.text-white It is very nicely designed &amp; coded with the latest technology.
+                #countdown2.countdown2.justify-content-center(data-date="11-6-2022", data-time="23:24")
+                    .day
+                        span.num
+                        span.word
+                    .hour
+                        span.num
+                        span.word
+                    .min
+                        span.num
+                        span.word
+                    .sec
+                        span.num
+                        span.word
+                .notify-email.mt-5
+                    button.btn.btn-warning(type="button", data-bs-toggle="modal", data-bs-target="#staticBackdrop") Notify via Email
+
+        include inc/footer.pug

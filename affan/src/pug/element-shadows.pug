@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Shadow
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Shadows
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        .shadow-none.p-3.mb-5.bg-light.rounded No shadow
+                        .shadow-sm.p-3.mb-5.bg-white.rounded Small shadow
+                        .shadow.p-3.mb-5.bg-white.rounded Regular shadow
+                        .shadow-lg.p-3.bg-white.rounded Larger shadow
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

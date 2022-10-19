@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Back Button 
+        .login-back-button
+            a(href="page-register.html")
+                svg.bi.bi-arrow-left-short(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                    path(fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z")
+
+        // Login Wrapper Area 
+        .login-wrapper.d-flex.align-items-center.justify-content-center
+            .custom-container
+                .text-center
+                    img.mx-auto.mb-4.d-block(src="img/bg-img/36.png", alt="")
+                    h3 Phone Verification
+                    p We will send you an OTP on this phone number.
+
+                // OTP Send Form 
+                .otp-form.mt-4
+                    form(action="page-otp-confirm.html")
+                        .input-group.mb-3
+                            select.input-group-text.form-select(name="dialingcode", aria-label="Default select example")
+                                option(value="+880", selected) +880
+                                option(value="+920") +920
+                                option(value="+061") +061
+                            input.form-control(type="text", placeholder="Enter phone number")
+                        button.btn.btn-primary.w-100(type="submit") Send Now
+
+                // Term & Privacy Info 
+                .login-meta-data.px-4.text-center
+                    p.mt-3.mb-0 By providing my phone number, I hereby agree the
+                        a.mx-1.stretched-link(href="page-privacy-policy.html") Term of Services
+                        | and 
+                        a.mx-1.stretched-link(href="page-privacy-policy.html") Privacy Policy.
+
+        include inc/footer.pug

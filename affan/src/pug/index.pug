@@ -1,0 +1,627 @@
+doctype html
+html#previewPage(lang="en")
+    head
+        include inc/head.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+    body
+        .preview-iframe-wrapper
+            // Video Popup
+            .video-popup-modal.modal.fade#videobtn(tabindex="-1", aria-hidden="true")
+                .modal-dialog.modal-dialog-centered
+                    .modal-content
+                        button.btn-close#popupVideoBtnClose(type="button" class="" data-bs-dismiss="modal" aria-label="Close")
+                        .modal-body.p-0
+                            .ratio.ratio-16x9
+                                iframe#homePagePopupVideo(src="https://www.youtube.com/embed/-D6QFpH7zCA?enablejsapi=1&html5=1", title="Affan Promo Video", frameborder="0", allowfullscreen)
+
+            // Header Area
+            .demo-header-wrapper
+                .container.demo-container
+                    // Header Content 
+                    .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                        // Logo Wrapper 
+                        .logo-wrapper
+                            a(href="page-home.html")
+                                img(src="img/core-img/logo.png", alt="")
+
+                        // Settings 
+                        .setting-wrapper
+                            include inc/setting-btn.pug
+
+            // Preview Hero Area 
+            .preview-hero-area
+                span.big-shadow-text Affan
+                .container.demo-container.direction-rtl
+                    .row.g-2.align-items-center.justify-content-between
+                        .col-12.col-lg-3
+                            h6.version-number.d-inline-block.px-3.py-2.rounded-pill.mb-3.lh-1 Current version - 1.3.0
+                            h2.demo-title.mb-3
+                                span Affan 
+                                |  - PWA Mobile HTML Template
+                            ul.demo-desc.ps-0.mb-5
+                                li
+                                    i.bi.bi-check2
+                                    | PWA Ready
+                                li
+                                    i.bi.bi-check2
+                                    | Vanilla JavaScript
+                                li
+                                    i.bi.bi-check2
+                                    | Bootstrap 5.1.0
+                                li
+                                    i.bi.bi-check2
+                                    | Creative Design
+                                li
+                                    i.bi.bi-check2
+                                    | Dark Mode
+                                li
+                                    i.bi.bi-check2
+                                    | Right to Left (RTL)
+
+                            a.btn.btn-outline-danger.btn-lg(href="#", data-bs-toggle="modal" data-bs-target="#videobtn") Watch promo video
+
+                        .col-12.col-lg-5
+                            .text-center
+                                iframe.shadow-lg(src="element-hero-blocks.html")
+
+                        .col-12.col-lg-3
+                            .text-lg-end
+                                // Mobile Live Preview 
+                                .live-preview-btn.mb-3
+                                    a.btn.btn-primary.btn-lg.d-lg-none.mb-5(href="element-hero-blocks.html", target="_blank") Click the button to live preview
+
+                                // QR Code 
+                                .qr-code-wrapper
+                                    img.mb-3(src="img/demo-img/qr-code.svg", alt="")
+                                    h6.mb-0 Scan this QR code to view <br> on your mobile device.
+
+            // Features Area 
+            .features-area
+                .container.demo-container.direction-rtl
+                    .row.justify-content-center
+                        .col-12.col-lg-7.col-xl-6
+                            .section-heading.text-center
+                                h2.display-5.mb-3 Key Features
+                                p.mb-0 Affan is a modern and latest technology-based mobile template. It's come with 
+                                    span.special-text Creative Design, Vanilla JavaScript, Bootstrap 5, PWA Ready, Dark Mode &amp; Right to Left (RTL) 
+                                    | features.
+
+                    .row.g-4.justify-content-center
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/bootstrap.png", alt="")
+                                    h5.mb-0 Bootstrap 5.1.0
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/pwa.png", alt="")
+                                    h5.mb-0 PWA Ready
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/js.png", alt="")
+                                    h5.mb-0 Vanilla JavaScript
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/npm.png", alt="")
+                                    h5.mb-0 NPM
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/gulp.png", alt="")
+                                    h5.mb-0 Gulp 4
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/pug.png", alt="")
+                                    h5.mb-0 PUG
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/sass.png", alt="")
+                                    h5.mb-0 SCSS
+
+                        .col-12.col-sm-6.col-lg-4.col-xl-3
+                            .card.active
+                                .card-body.text-center.py-5
+                                    img.mb-4(src="img/demo-img/dark.png", alt="")
+                                    h5.mb-0 Dark &amp; RTL Mode
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.mb-0 HTML5
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.mb-0 220+ Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Varieties Header Menu
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Varieties Footer Menu
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Left &amp; Right Sidebar Menu
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Alerts &amp; Toasts
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Automated Online/Offline Detection
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 RTL Ready
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 220+ Reusable Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 100+ Ready Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Varieties Form Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Auto Complete Form
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Range Input Slider
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Accordion/FAQ
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Timeline
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Image Gallery
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 User Ratings
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Lots of Helper Elements
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Carousel
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Data Table
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Countdown &amp; Counterup
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Apex Charts
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Versatile Mobile Template
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Nicely Designed
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 PWA Ready
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Bootstrap 5.1.0
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Node Package Manager
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Gulp 4
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 SCSS CSS preprocessor
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Pug
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Coded with the Latest Technology
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Bug Free Code
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Cross Browser Support
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Notifications Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Language Page
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Password Strength Meter
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 OTP Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Shop Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 User Profile
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Coming Soon
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Authentication Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Unique Design
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Blog Pages
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Google Fonts
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Easy to Customize
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Clean &amp; 100% Validate Code
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Settings Page
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Dark Mode
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 404
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Fancy Button
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Vanilla JavaScript
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Comparison Table
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Offcanvas
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Tab
+
+                        .col-12.col-md-6.col-xl-4
+                            .card.active
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Tiny Slider
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Fallback Page
+
+                        .col-12.col-md-6.col-xl-4
+                            .card
+                                .card-body.p-2
+                                    .d-flex.align-items-center
+                                        svg.bi.bi-check.text-success(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z")
+                                        h6.ms-1.mb-0 Fancy UI Card
+
+            // Footer Area 
+            .preview-footer-area.py-5
+                .container.demo-container.direction-rtl.h-100.d-flex.align-items-center.justify-content-between
+                    p.mb-0 2021 &copy; Made by Designing World
+                    a.btn.btn-info(href="https://themeforest.net/item/affan-pwa-mobile-html-template/29715548" target="_blank") Buy Now
+
+            script.
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                var closeButtom = document.getElementById("popupVideoBtnClose");
+                var player;
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player("homePagePopupVideo", {
+                    videoId: '-D6QFpH7zCA',
+                        events: {
+                            'onReady': onPlayerReady,
+                        }
+                    });
+                }
+
+                function onPlayerReady(event) {
+                    closeButtom.addEventListener("click", function () {
+                        player.stopVideo();
+                    });
+                }
+
+        include inc/footer.pug

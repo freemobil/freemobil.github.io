@@ -1,0 +1,155 @@
+/* :: Shortcodes CSS */
+
+.fz-14 {
+    font-size: 14px !important;
+}
+
+.fz-12 {
+    font-size: 12px !important;
+}
+
+input:required,
+textarea:required,
+input:invalid,
+textarea:invalid {
+    box-shadow: none !important;
+}
+
+.list-unstyled {
+    li {
+        margin-top: 0.5rem;
+        list-style: circle;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        ul {
+            li {
+
+                &:first-child {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.img-circle {
+    border-radius: 50% !important;
+}
+
+.bi {
+    display: inline-block;
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $dark;
+        opacity: .75;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.bg-gray {
+    background-color: $gray !important;
+}
+
+.stretched-link {
+    position: relative;
+    z-index: 1;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+
+    }
+}
+
+.border-content small {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.rounded {
+    border-radius: 0.325rem !important;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.325rem !important;
+    border-top-right-radius: 0.325rem !important;
+}
+
+.rounded-right {
+    border-top-right-radius: 0.325rem !important;
+    border-bottom-right-radius: 0.325rem !important;
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: 0.325rem !important;
+    border-bottom-left-radius: 0.325rem !important;
+}
+
+.rounded-left {
+    border-bottom-left-radius: 0.325rem !important;
+    border-top-left-radius: 0.325rem !important;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem !important;
+}
+
+.dark-mode-switching,
+.rtl-mode-switching {
+    transition-duration: 300ms;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+    background-color: $white;
+    display: none;
+
+    svg {
+        margin: 0 auto .5rem;
+        color: $heading;
+    }
+
+    .dark-mode-text,
+    .rtl-mode-text {
+        display: none;
+    }
+
+    .light-mode-text,
+    .ltr-mode-text {
+        display: block;
+    }
+}
+
+.home-page-toast {
+    position: fixed !important;
+    z-index: 1000 !important;
+    top: 65px;
+    right: 15px;
+    max-width: 18.5rem;
+}

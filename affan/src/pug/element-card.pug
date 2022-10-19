@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Card
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Card 01
+
+            .container
+                .card
+                    .card-body.text-center.p-5
+                        img.mb-4(src="img/bg-img/19.png", alt="")
+                        h2.mb-4 Creative ideas for your company
+                        a.btn.btn-creative.btn-danger.btn-lg(href="#") Discover More
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Card 02
+
+            .container
+                .card.card-round
+                    .card-body.d-flex.align-items-center.direction-rtl
+                        .card-img-wrap
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        .card-content
+                            h5.mb-3 Stunning creative branding ideas
+                            a.btn.btn-info.btn-round(href="#") Get yours idea
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Card 03
+
+            .container
+                .card.card-gradient-bg
+                    .card-body.p-5.direction-rtl
+                        h2.display-3.mb-4 Get free consultation
+                        a.btn.btn-lg.btn-light.btn-round(href="#") Contact Now
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Card 04
+
+            .container
+                .card.card-bg-img.bg-img.bg-overlay(style="background-image: url('img/bg-img/3.jpg')")
+                    .card-body.p-5.direction-rtl
+                        h2.text-white.display-3.mb-4 Modern branding ideas
+                        a.btn.btn-warning(href="#") View details
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Card 05
+
+            .container
+                .card.bg-primary.bg-img(style="background-image: url('img/core-img/2.png')")
+                    .card-body.p-5.direction-rtl
+                        svg.bi.bi-cpu.text-white.mb-3(width="48" height="48" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z")
+                        h2.text-white Modern branding ideas
+                        p.text-white.mb-0 Affan is a modern and latest technology based mobile template.
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Bootstrap Card
+
+            .container
+                .card.position-relative.shadow-sm
+                    img.card-img-top(src="img/bg-img/1.jpg", alt="")
+                    span.badge.bg-warning.text-dark.position-absolute.card-badge Now $24
+
+                    .card-body.direction-rtl
+                        h2 Howdy, Affan!
+                        p Affan is a modern and latest technology based mobile template. It's come with creative design &amp; progressive web app (PWA) features.
+                        a.btn.btn-primary(href="#") Learn More
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

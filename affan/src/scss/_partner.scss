@@ -1,0 +1,39 @@
+/* :: Partner CSS */
+
+.partner-logo-slide-wrapper,
+.partner-logo-slide-wrapper-2 {
+    position: relative;
+    z-index: 1;
+
+    .tns-nav {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            border: 0;
+            transition-duration: 400ms;
+            width: 1.5rem;
+            height: .25rem;
+            border-radius: 50px;
+            background-color: $gray;
+            margin: 0 .25rem;
+
+            &.tns-nav-active {
+                background-color: $primary;
+                width: 1.75rem;
+            }
+        }
+    }
+}
+
+.partner-logo-slide-wrapper-2 {
+    .tns-nav {
+        button {
+            &.tns-nav-active {
+                background-color: $warning;
+            }
+        }
+    }
+}

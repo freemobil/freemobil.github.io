@@ -1,0 +1,235 @@
+/* :: Accordion CSS */
+
+.accordion-button {
+    padding: .75rem 1rem;
+    font-size: 14px;
+    color: $heading;
+    border-color: $border;
+    font-weight: 500;
+}
+
+.accordion-collapse {
+    border-color: $border;
+}
+
+.accordion-style-one {
+    .accordion-item {
+        margin-bottom: 0;
+        border-bottom: 0;
+
+        h6 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 1px solid $border;
+            color: $primary;
+            cursor: pointer;
+
+            &.collapsed {
+                color: $heading;
+            }
+
+            i {
+                transition-duration: 400ms;
+                margin-right: 0;
+                transform: rotate(180deg);
+            }
+
+            &.collapsed i {
+                transform: rotate(0deg);
+            }
+        }
+
+        .accordion-collapse {
+            border: 0 !important;
+        }
+
+        .accordion-body {
+            border-bottom: 1px solid $border;
+        }
+
+        &:last-child {
+            h6 {
+                border-bottom: 1px solid $border;
+
+                &.collapsed {
+                    border-bottom: 0;
+                }
+            }
+
+            .accordion-body {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.accordion-style-two {
+    .accordion-item {
+        margin-bottom: 0;
+        border-bottom: 0;
+
+        h6 {
+            transition-duration: 400ms;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            width: 100%;
+            padding: .75rem 1rem;
+            border-bottom: 1px solid $border;
+            color: $danger;
+            cursor: pointer;
+
+            &.collapsed {
+                color: $heading;
+            }
+
+            i {
+                transition-duration: 400ms;
+                margin-right: 0.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: $danger;
+                color: $white;
+                font-size: 10px;
+                text-align: center;
+                line-height: 1.5rem;
+                border-radius: 50%;
+                transform: rotate(45deg);
+            }
+
+            &.collapsed i {
+                background-color: $heading;
+                transform: rotate(0deg);
+            }
+        }
+
+        .accordion-collapse {
+            border: 0 !important;
+        }
+
+        .accordion-body {
+            border-bottom: 1px solid $border;
+        }
+
+        &:last-child {
+            h6 {
+                border-bottom: 1px solid $border;
+
+                &.collapsed {
+                    border-bottom: 0;
+                }
+            }
+
+            .accordion-body {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.accordion-style-three {
+    .accordion-item {
+        margin-bottom: .25rem;
+        border: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h6 {
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            width: 100%;
+            padding: .375rem 1rem;
+            border-bottom: 1px solid $border;
+            color: $primary;
+            cursor: pointer;
+            font-size: 14px;
+
+            &.collapsed {
+                color: $heading;
+            }
+
+            svg {
+                transition-duration: 400ms;
+                margin-right: 0;
+                transform: rotate(180deg);
+            }
+
+            &.collapsed svg {
+                transform: rotate(0deg);
+            }
+        }
+
+        .accordion-collapse {
+            border: 0 !important;
+        }
+
+        .accordion-body {
+            padding: 0.5rem;
+        }
+
+        &:last-child {
+            h6 {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.accordion-style-four {
+    .accordion-item {
+        margin-bottom: 0;
+
+        h6 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            width: 100%;
+            padding: .5rem 0;
+            color: $warning;
+            cursor: pointer;
+
+            &.collapsed {
+                color: $white;
+            }
+
+            svg {
+                transition-duration: 400ms;
+                margin-right: 0;
+                transform: rotate(180deg);
+            }
+
+            &.collapsed svg {
+                transform: rotate(0deg);
+            }
+        }
+
+        .accordion-collapse {
+            border: 0 !important;
+        }
+
+        .accordion-body {
+            padding: 0;
+            padding-bottom: 0.5rem;
+
+            p {
+                color: $text-gray;
+            }
+        }
+
+        &:last-child {
+            h6 {
+                border-bottom: 0;
+            }
+        }
+    }
+}

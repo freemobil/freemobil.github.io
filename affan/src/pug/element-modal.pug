@@ -1,0 +1,141 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Modal
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        // Bootstrap Basic Modal 
+        .modal.fade#bootstrapBasicModal(tabindex="-1", aria-labelledby="exampleModalLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+                .modal-content
+                    .modal-header
+                        h6.modal-title#exampleModalLabel Modal Heading
+                        button.btn.btn-close.p-1.ms-auto(type="button", data-bs-dismiss="modal", aria-label="Close")
+
+                    .modal-body
+                        p.mb-0 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quasi illum eveniet quidem dolores consectetur tempore architecto quo quos.
+                    
+                    .modal-footer
+                        button.btn.btn-sm.btn-secondary(type="button", data-bs-dismiss="modal") Close
+                        button.btn.btn-sm.btn-success(type="button") Save
+
+        // Fullscreen Modal 
+        .modal.fade#fullscreenModal(tabindex="-1", aria-labelledby="fullscreenModalLabel", aria-hidden="true")
+            .modal-dialog.modal-fullscreen-md-down
+                .modal-content
+                    .modal-header
+                        h6.modal-title#fullscreenModalLabel Modal Heading
+                        button.btn.btn-close.p-1.ms-auto(type="button", data-bs-dismiss="modal", aria-label="Close")
+
+                    .modal-body
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore excepturi magnam odio commodi. Quaerat, eaque. Neque eius, accusamus atque, asperiores iure dolor quibusdam eum pariatur libero eaque voluptate magnam? Ratione, dignissimos! Doloremque soluta totam libero recusandae qui nemo eius exercitationem quisquam. Voluptas.
+                        p.mb-0 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quasi illum eveniet quidem dolores consectetur tempore architecto quo quos, repudiandae porro quisquam esse sit pariatur nemo blanditiis expedita minus qui?                        
+                    
+                    .modal-footer
+                        button.btn.btn-sm.btn-secondary(type="button", data-bs-dismiss="modal") Close
+                        button.btn.btn-sm.btn-success(type="button") Save
+        
+        // Static Backdrop Modal 
+        .modal.fade#staticBackdrop(data-bs-backdrop="static", data-bs-keyboard="false", tabindex="-1", aria-labelledby="staticBackdropLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h6.modal-title#staticBackdropLabel Static Backdrop
+                        button.btn.btn-close.p-1.ms-auto(type="button", data-bs-dismiss="modal", aria-label="Close")
+
+                    .modal-body
+                        p.mb-0 I will not close if you click outside me. Don't even try to press escape key.
+                    
+                    .modal-footer
+                        button.btn.btn-sm.btn-secondary(type="button", data-bs-dismiss="modal") Close
+                        button.btn.btn-sm.btn-success(type="button") I Understood
+
+        // Bottom Align Modal 
+        .modal.fade.bottom-align-modal#bottomAlignModal(tabindex="-1", aria-labelledby="bottomAlignModalLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-end
+                .modal-content
+                    .modal-header
+                        h6.modal-title#bottomAlignModalLabel Bottom Align Modal
+                        button.btn.btn-close.p-1.ms-auto(type="button", data-bs-dismiss="modal", aria-label="Close")
+
+                    .modal-body
+                        p.mb-0 I will not close if you click outside me. Don't even try to press escape key.
+                    
+                    .modal-footer
+                        button.btn.btn-sm.btn-secondary(type="button", data-bs-dismiss="modal") Close
+                        button.btn.btn-sm.btn-success(type="button") Save
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Bootstrap Basic Modal
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        // Bootstrap Basic Modal Trigger Button 
+                        button.btn.btn-primary(type="button", data-bs-toggle="modal", data-bs-target="#bootstrapBasicModal") Bootstrap Basic Modal
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Fullscreen Modal
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        // Fullscreen Modal Trigger Button 
+                        button.btn.btn-primary(type="button", data-bs-toggle="modal", data-bs-target="#fullscreenModal") Fullscreen Modal
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Static Backdrop
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        // Static Backdrop Modal Trigger Button 
+                        button.btn.btn-primary(type="button", data-bs-toggle="modal", data-bs-target="#staticBackdrop") Static Backdrop Modal
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Bottom Align Modal
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        // Bottom Align Modal Trigger Button 
+                        button.btn.btn-primary(type="button", data-bs-toggle="modal", data-bs-target="#bottomAlignModal") Bottom Align Modal
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

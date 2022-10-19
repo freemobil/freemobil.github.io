@@ -1,0 +1,103 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Cart
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Cart Wrapper 
+                .cart-wrapper-area
+                    .cart-table.card.mb-3
+                        .table-responsive.card-body
+                            table.table.mb-0.text-center
+                                thead
+                                    tr
+                                        th(scope="col") Image
+                                        th(scope="col") Description
+                                        th(scope="col") Quantity
+                                        th(scope="col") Remove
+
+                                tbody
+                                    tr
+                                        th(scope="row")
+                                            img(src="img/bg-img/p1.jpg" alt="")
+                                        td
+                                            h6.mb-1 Wooden Tool
+                                            span $9.89 × 1
+                                        td
+                                            .quantity
+                                                input.qty-text(type="text" value="1")
+                                        td
+                                            a.remove-product(href="#")
+                                                i.bi.bi-x-lg
+
+                                    tr
+                                        th(scope="row")
+                                            img(src="img/bg-img/p3.jpg" alt="")
+                                        td
+                                            h6.mb-1 Black T-shirt
+                                            span $10.99 × 2
+                                        td
+                                            .quantity
+                                                input.qty-text(type="text" value="2")
+                                        td
+                                            a.remove-product(href="#")
+                                                i.bi.bi-x-lg
+
+                                    tr
+                                        th(scope="row")
+                                            img(src="img/bg-img/p5.jpg" alt="")
+                                        td
+                                            h6.mb-1 Crispy Biscuit
+                                            span $0.78 × 9
+                                        td
+                                            .quantity
+                                                input.qty-text(type="text" value="9")
+                                        td
+                                            a.remove-product(href="#")
+                                                i.bi.bi-x-lg
+
+                        .card-body.border-top
+                            .apply-coupon
+                                h6.mb-0 Have a coupon?
+                                p.mb-2 Enter your coupon code here &amp; get awesome discounts!
+
+                                .coupon-form
+                                    form(action="#")
+                                        .form-group
+                                            .input-group
+                                                input.form-control.input-group-text.text-start(type="text" placeholder="OFFER30")
+                                                button.btn.btn-primary(type="submit") Apply
+                                        // Checkout 
+                                        a.btn.btn-danger.w-100.mt-4(href="page-checkout.html") $38.89 &amp; Pay
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

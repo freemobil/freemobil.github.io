@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Switches
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Bootstrap Switches
+
+            .container
+                .card
+                    .card-body
+                        .form-check.form-switch
+                            input.form-check-input#flexSwitchCheckDefault(type="checkbox")
+                            label.form-check-label(for="flexSwitchCheckDefault") Default Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input#flexSwitchCheckChecked(type="checkbox" checked)
+                            label.form-check-label(for="flexSwitchCheckChecked") Checked Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input#flexSwitchCheckDisabled(type="checkbox" disabled)
+                            label.form-check-label(for="flexSwitchCheckDisabled") Disabled Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input#flexSwitchCheckCheckedDisabled(type="checkbox" checked disabled)
+                            label.form-check-label(for="flexSwitchCheckCheckedDisabled") Disabled Checked Switch
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Colorful Switches
+
+            .container
+                .card
+                    .card-body
+                        .form-check.form-switch
+                            input.form-check-input.form-check-success#successSwitch(type="checkbox" checked)
+                            label.form-check-label(for="successSwitch") Success Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input.form-check-warning#warningSwitch(type="checkbox" checked)
+                            label.form-check-label(for="warningSwitch") Warning Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input.form-check-danger#dangerSwitch(type="checkbox" checked)
+                            label.form-check-label(for="dangerSwitch") Danger Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input.form-check-info#infoSwitch(type="checkbox" checked)
+                            label.form-check-label(for="infoSwitch") Info Switch
+
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input.form-check-light#lightSwitch(type="checkbox" checked)
+                            label.form-check-label(for="lightSwitch") Light Switch
+                        
+                        .mb-2
+
+                        .form-check.form-switch
+                            input.form-check-input.form-check-dark#dark8Switch(type="checkbox" checked)
+                            label.form-check-label(for="dark8Switch") Dark Switch
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,65 @@
+/* :: Image Gallery CSS */
+
+.image-gallery-card {
+    #filterContainer>a {
+        width: calc(50% - 1rem);
+    }
+
+    .card-body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.single-gallery-item {
+    position: relative;
+    z-index: 1;
+    border-radius: .5rem;
+
+    img {
+        border-radius: .5rem;
+    }
+
+    .fav-icon {
+        text-align: center;
+        transition-duration: 500ms;
+        background-color: $white;
+        color: $danger;
+        position: absolute;
+        width: 1.75rem;
+        height: 1.75rem;
+        top: .5rem;
+        right: .5rem;
+        z-index: 10;
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+
+        i {
+            line-height: 32px;
+        }
+
+        &.active {
+            background-color: $danger;
+            color: $white;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .fav-icon {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+#baguetteBox-overlay .full-image img {
+    max-height: calc(100% - 4rem);
+    box-shadow: none;
+    margin: 2rem auto;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}

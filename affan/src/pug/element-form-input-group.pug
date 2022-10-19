@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Input group
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Input group
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .input-group.mb-3
+                                span.input-group-text#basic-addon1 @
+                                input.form-control(type="text" placeholder="Designing World" aria-label="Username" aria-describedby="basic-addon1")
+
+                            .input-group.mb-3
+                                input.form-control(type="text" placeholder="care.designingworld" aria-label="Recipient's username" aria-describedby="basic-addon2")
+                                span.input-group-text#basic-addon2 @gmail.com
+
+                            label.form-label(for="basic-url") Your profile URL
+                            .input-group.mb-3
+                                span.input-group-text#basic-addon3 themeforest.net/user/
+                                input.form-control#basic-url(type="text" aria-describedby="basic-addon3" placeholder="designing-world")
+
+                            .input-group.mb-3
+                                span.input-group-text Price
+                                input.form-control(type="text" aria-label="Amount (to the nearest dollar)" placeholder="24")
+                                span.input-group-text $
+
+                            .input-group.mb-3
+                                .input-group-text
+                                    input.form-check-input(type="checkbox" value="" aria-label="Checkbox for following text input")
+                                input.form-control(type="text" aria-label="Text input with checkbox" placeholder="Checkbox")
+
+                            .input-group.mb-3
+                                .input-group-text
+                                    input.form-check-input(type="radio" value="" aria-label="Radio button for following text input")
+                                input.form-control(type="text" aria-label="Text input with radio button" placeholder="Radio")
+
+                            .input-group.mb-3
+                                span.input-group-text Name
+                                input.form-control(type="text" aria-label="First name" placeholder="First name")
+                                input.form-control(type="text" aria-label="Last name" placeholder="Last name")
+
+                            .input-group.mb-3
+                                button.btn.btn-primary.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false") Dropdown
+                                ul.dropdown-menu
+                                    li
+                                        a.dropdown-item(href="#") Action 1
+                                    li
+                                        a.dropdown-item(href="#") Action 2
+                                    li
+                                        a.dropdown-item(href="#") Action 3
+                                input.form-control(type="text" aria-label="Text input with dropdown button")
+
+                            .input-group
+                                span.input-group-text Message
+                                textarea.form-control(aria-label="With textarea" placeholder="Hello, Designing World!")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

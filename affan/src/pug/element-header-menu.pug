@@ -1,0 +1,197 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Header Menu
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Header One
+
+            .header-demo-bg.shadow-sm
+                .container
+                    // # Header One Layout Start 
+                    // # Copy the code from here ... 
+
+                    // Header Content 
+                    .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                        // Navbar Toggler 
+                        .navbar--toggler#affanNavbarToggler
+                            span.d-block
+                            span.d-block
+                            span.d-block
+
+                        // Logo Wrapper 
+                        .logo-wrapper
+                            a(href="page-home.html")
+                                img(src="img/core-img/logo.png", alt="")
+
+                        // Settings 
+                        .setting-wrapper
+                            include inc/setting-btn.pug
+
+                    // # Header One Layout End 
+
+            // Header Two 
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Header Two
+
+            .header-demo-bg.shadow-sm
+                .container
+                    include inc/header-2.pug
+
+
+            // Header Three 
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Header Three
+
+            .header-demo-bg.shadow-sm
+                .container
+                    include inc/header-3.pug
+
+
+            // Header Four 
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Header Four
+
+            .header-demo-bg.shadow-sm
+                .container
+                    include inc/header-4.pug
+
+
+            // Header Five 
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Header Five
+
+            .header-demo-bg.shadow-sm
+                .container
+                    include inc/header-5.pug
+
+
+            // Header Six 
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Header Six
+
+            .header-demo-bg.shadow-sm
+                .container
+                    include inc/header-6.pug
+
+
+            // Header Colorful 
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Colorful Header
+
+            .header-demo-bg.bg-primary.shadow-sm
+                .container
+                    // # Header Two Layout 
+                    // # Copy the code from here ... 
+
+                    // Header Content 
+                    .header-content.header-style-two.position-relative.d-flex.align-items-center.justify-content-between
+                        // Logo Wrapper 
+                        .logo-wrapper
+                            a(href="page-home.html")
+                                img(src="img/core-img/logo-dark.png", alt="")
+
+                        .navbar-content-wrapper.d-flex.align-items-center
+                            // Search 
+                            .search-wrapper.me-2
+                                a.search-trigger-btn(href="#")
+                                    svg.bi.bi-search(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                        path(fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z")
+                                        path(fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z")
+                            
+                            // Navbar Toggler 
+                            .navbar--toggler#affanNavbarToggler
+                                .span-wrap
+                                    span.d-block
+                                    span.d-block
+                                    span.d-block
+
+                    // # Header Two Layout End 
+
+            .bg-success.shadow-sm.mt-3
+                .container
+                    include inc/header-4.pug
+
+            .bg-danger.shadow-sm.mt-3
+                .container
+                    include inc/header-5.pug
+
+            .bg-info.shadow-sm.mt-3
+                .container
+                    include inc/header-6.pug
+
+            .bg-warning.shadow-sm.mt-3
+                .container
+                    include inc/header-2.pug
+
+            .bg-dark.shadow-sm.mt-3
+                .container
+                    // # Header Three Layout 
+                    // # Copy the code from here ... 
+
+                    // Header Content 
+                    .header-content.header-style-three.position-relative.d-flex.align-items-center.justify-content-between                            
+                        // Navbar Toggler 
+                        .navbar--toggler#affanNavbarToggler
+                            .span-wrap
+                                span.d-block
+                                span.d-block
+                                span.d-block
+
+                        // Logo Wrapper 
+                        .logo-wrapper
+                            a(href="page-home.html")
+                                img(src="img/core-img/logo-dark.png", alt="")
+
+                        // User Profile 
+                        .user-profile-wrapper
+                            a.user-profile-trigger-btn(href="#")
+                                img(src="img/bg-img/2.jpg", alt="")
+
+                    // # Header Three Layout End 
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

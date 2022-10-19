@@ -1,0 +1,425 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body.pe-0
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="page-home.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Chats
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        // Add new contact modal 
+        .add-new-contact-modal.modal.fade.px-0#addnewcontact(data-bs-backdrop="static", data-bs-keyboard="false", tabindex="-1", aria-labelledby="addnewcontactlabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4
+                        .d-flex.align-items-center.justify-content-between.mb-4
+                            h6.modal-title#addnewcontactlabel New message
+                            button.btn.btn-close.p-1.ms-auto.me-0(type="button", data-bs-dismiss="modal", aria-label="Close")
+
+                        form(action="#")
+                            .input-group.mb-3
+                                span.input-group-text#to To
+                                input.form-control(type="text" placeholder="" aria-label="Username" aria-describedby="to")
+                            .form-group
+                                label.form-label(for="message") Message
+                                textarea.form-control#message(name="textarea", cols="3", rows="5", placeholder="")
+                            button.btn.btn-primary.w-100(type="submit") Send
+
+        .page-content-wrapper.py-3            
+            // Add New Contact 
+            .add-new-contact-wrap
+                a.shadow(href="#", data-bs-toggle="modal" data-bs-target="#addnewcontact")
+                    i.bi.bi-plus-lg
+
+            .container
+                .card.mb-2
+                    .card-body.p-2
+                        .chat-search-box
+                            form(action="#")
+                                .input-group
+                                    span.input-group-text#searchbox
+                                        i.bi.bi-search
+                                    input.form-control(type="search" placeholder="Search users or messages" aria-describedby="searchbox")
+
+                // User Status Slide 
+                .chat-user-status-slides-wrapper
+                    .chat-user-status-slides.mb-2
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user1.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Aynal
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user2.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Afrin
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user3.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Fairoze
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide.offline
+                                a(href="#")
+                                    img(src="img/bg-img/user4.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate ReFresh
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user1.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate রবিন
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide.offline
+                                a(href="#")
+                                    img(src="img/bg-img/user2.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Hasnain
+                        
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user1.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Aynal
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user2.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Afrin
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user3.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Fairoze
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide.offline
+                                a(href="#")
+                                    img(src="img/bg-img/user4.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate ReFresh
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide
+                                a(href="#")
+                                    img(src="img/bg-img/user1.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate রবিন
+
+                        // Single Status Slide 
+                        div
+                            .user-status-slide.offline
+                                a(href="#")
+                                    img(src="img/bg-img/user2.png", alt="")
+                                    .active-status
+                                    p.mb-0.mt-2.text-truncate Hasnain
+
+                // Element Heading 
+                .element-heading
+                    h6.ps-1 Recent contacts
+
+                // Chat User List 
+                ul.ps-0.chat-user-list
+                    // Single Chat User 
+                    li.p-3.chat-unread
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user1.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Designing World
+                                .last-chat
+                                    p.mb-0.text-truncate Hello, Are you there?
+                                        span.badge.rounded-pill.bg-primary.ms-2 2
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user2.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Mustafa Rabbi
+                                .last-chat
+                                    p.text-truncate.mb-0 How can I help you?
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3.offline
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user3.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Affan Islam
+                                .last-chat
+                                    p.text-truncate.mb-0 I want to buy your Affan template.
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user4.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Jannatun Lima
+                                .last-chat
+                                    p.text-truncate.mb-0 Affan - PWA Mobile HTML Template
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Waves Motion
+                                .last-chat
+                                    p.text-truncate.mb-0
+                                        i.bi.bi-file-earmark-zip
+                                        | affan-pwa-mobile.zip
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3.offline
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user1.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Samantha Sarah
+                                .last-chat
+                                    p.text-truncate.mb-0 Would you please provide a purchase link?
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user2.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Hasnain Ahmed
+                                .last-chat
+                                    p.text-truncate.mb-0 Sure, Here are the purchase link. Please click the purchase now button, then fill up your all payment info.
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+                    // Single Chat User 
+                    li.p-3.offline
+                        a.d-flex(href="page-chat.html")
+                            // Thumbnail 
+                            .chat-user-thumbnail.me-3.shadow
+                                img.img-circle(src="img/bg-img/user3.png", alt="")
+                                span.active-status
+                            // Info 
+                            .chat-user-info
+                                h6.text-truncate.mb-0 Shaila Afrin
+                                .last-chat
+                                    p.text-truncate.mb-0 You are welcome &#128525; &#128525;
+
+                        // Options 
+                        .dropstart.chat-options-btn
+                            button.btn.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                i.bi.bi-three-dots-vertical
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic-mute
+                                        | Mute
+                                li
+                                    a(href="#")
+                                        i.bi.bi-slash-circle
+                                        | Ban
+                                li
+                                    a(href="#")
+                                        i.bi.bi-trash
+                                        | Remove
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

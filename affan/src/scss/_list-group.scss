@@ -1,0 +1,73 @@
+/* :: List Group CSS */
+
+.list-group {
+    border-radius: 0.5rem;
+}
+
+.list-group-item {
+    position: relative;
+    z-index: 1;
+    border-color: $border;
+    font-size: 14px;
+    color: #073984;
+    padding: 0.625rem 1rem;
+
+    &.active {
+        background-color: $white;
+        border-color: $border !important;
+        color: $primary;
+        font-weight: 500;
+
+        &::after {
+            position: absolute;
+            width: 3px;
+            height: 74%;
+            content: "";
+            background-color: $primary;
+            top: 13%;
+            left: 0;
+            z-index: -10;
+        }
+    }
+
+    &.disabled {
+        background-color: $white;
+        border-color: $border !important;
+        color: $border;
+        font-weight: 500;
+
+        &::after {
+            position: absolute;
+            width: 3px;
+            height: 74%;
+            content: "";
+            background-color: $border;
+            top: 13%;
+            left: 0;
+            z-index: -10;
+        }
+    }
+}
+
+.list-group-flush {
+    .list-group-item {
+        background-color: transparent !important;
+
+        &.disabled {
+            border-color: $border !important;
+            color: $text-gray;
+            font-weight: 500;
+
+            &::after {
+                position: absolute;
+                width: 3px;
+                height: 74%;
+                content: "";
+                background-color: $text-gray;
+                top: 13%;
+                left: 0;
+                z-index: -10;
+            }
+        }
+    }
+}

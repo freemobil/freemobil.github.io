@@ -1,0 +1,117 @@
+/* :: Reboot CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: $fonts;
+    overflow-x: hidden;
+    background-color: #e2e9fe;
+    color: $text;
+    scrollbar-width: thin;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading;
+}
+
+p {
+    font-size: 14px;
+    color: $text;
+}
+
+a,
+a:hover,
+a:focus {
+    transition-duration: 500ms;
+    text-decoration: none;
+    outline: 0 solid transparent;
+}
+
+ul {
+    margin: 0;
+
+    li {
+        list-style: none;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            list-style: none;
+            text-decoration: none;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    @media #{$breakpoint-xxl} {
+        max-width: 760px;
+    }
+
+    @media #{$breakpoint-xl} {
+        max-width: 740px;
+    }
+
+    @media #{$breakpoint-lg} {
+        max-width: 720px;
+    }
+
+    @media #{$breakpoint-md} {
+        max-width: 580px;
+    }
+}
+
+.custom-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media #{$breakpoint-xxl} {
+        max-width: 500px;
+    }
+
+    @media #{$breakpoint-xl} {
+        max-width: 480px;
+    }
+
+    @media #{$breakpoint-lg} {
+        max-width: 480px;
+    }
+
+    @media #{$breakpoint-md} {
+        max-width: 450px;
+    }
+
+    @media #{$breakpoint-xs} {
+        max-width: 300px;
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        max-width: 320px;
+    }
+
+    @media #{$breakpoint-sm} {
+        max-width: 370px;
+    }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    letter-spacing: -1px;
+}

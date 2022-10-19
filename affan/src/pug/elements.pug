@@ -1,0 +1,417 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/header.pug
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3#elementsSearchList
+            .container
+                .card
+                    .card-body.p-3
+                        .form-group.mb-0
+                            input.form-control#elementsSearchInput(type="text", onkeyup="elementsSearch()", placeholder="Search element...")
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-list
+                        .heading-text
+                            h6.mb-1 Navigation
+                            span Modern header, footer, and sidebar nav.
+
+                // Page Item 
+                a.affan-element-item(href="element-header-menu.html")
+                    | Header Menu
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-footer-menu.html")
+                    | Footer Menu
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-sidebar-left-menu.html")
+                    | Sidebar Left Menu
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-sidebar-right-menu.html")
+                    | Sidebar Right Menu
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-bell-fill
+                        .heading-text
+                            h6.mb-1 Notifications
+                            span Display alerts &amp; notifications creatively.
+
+                // Page Item  
+                a.affan-element-item(href="element-alerts.html")
+                    | Alerts
+                    i.bi.bi-chevron-right
+
+                // Page Item  
+                a.affan-element-item(href="element-toasts.html")
+                    | Toasts
+                    i.bi.bi-chevron-right
+
+                // Page Item  
+                a.affan-element-item(href="element-online-offline-detection.html")
+                    | Online / Offline Detection
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-ui-checks
+                        .heading-text
+                            h6.mb-1 Form Layouts
+                            span All form input components.
+
+                // Page Item  
+                a.affan-element-item(href="element-form-input.html")
+                    | Input
+                    i.bi.bi-chevron-right
+
+                // Page Item  
+                a.affan-element-item(href="element-form-textarea.html")
+                    | Textarea
+                    i.bi.bi-chevron-right
+
+                // Page Item  
+                a.affan-element-item(href="element-form-select.html")
+                    | Select
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-input-group.html")
+                    | Input Group
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-check.html")
+                    | Checkbox
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-radio.html")
+                    | Radio
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-file-upload.html")
+                    | File Upload
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-range.html")
+                    | Range
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-auto-complete.html")
+                    | Auto Complete
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-switches.html")
+                    | Switches
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-form-validation.html")
+                    | Form Validation
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-columns-gap
+                        .heading-text
+                            h6.mb-1 UI Elements
+                            span Beautifully designed lots of UI elements.
+
+                // Page Item 
+                a.affan-element-item(href="element-accordion.html")
+                    | Accordion
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-badge.html")
+                    | Badge
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-button.html")
+                    | Button
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-breadcrumb.html")
+                    | Breadcrumb
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-timeline.html")
+                    | Timeline
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-card.html")
+                    | Card
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-image-gallery.html")
+                    | Image Gallery
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-hero-blocks.html")
+                    | Hero Blocks
+                    i.bi.bi-chevron-right
+                    
+                // Page Item 
+                a.affan-element-item(href="element-tab.html")
+                    | Tab
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-offcanvas.html")
+                    | Offcanvas
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-user-ratings.html")
+                    | User Ratings
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-testimonial.html")
+                    | Testimonials
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-call-to-action.html")
+                    | Call to Action
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-partner-logo.html")
+                    | Partner Logo
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-tools
+                        .heading-text
+                            h6.mb-1 Helpers
+                            span Quickly create any blocks with helpers.
+
+                // Page Item 
+                a.affan-element-item(href="element-borders.html")
+                    | Borders
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-colors.html")
+                    | Colors
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-dividers.html")
+                    | Dividers
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-embed-video.html")
+                    | Embeds Video
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-images.html")
+                    | Images
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-list-group.html")
+                    | List Group
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-modal.html")
+                    | Modal
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-pagination.html")
+                    | Pagination
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-progress-bar.html")
+                    | Progress Bar
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-scrollspy.html")
+                    | Scrollspy
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-spinners.html")
+                    | Spinners
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-stretched-link.html")
+                    | Stretched link
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-shadows.html")
+                    | Shadows
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-sizing.html")
+                    | Sizing
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-tooltips.html")
+                    | Tooltips
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-text-truncation.html")
+                    | Text truncation
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-typography.html")
+                    | Typography
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-text.html")
+                    | Text
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-sliders
+                        .heading-text
+                            h6.mb-1 Carousels
+                            span Create a variety of carousels.
+
+                // Page Item 
+                a.affan-element-item(href="element-bootstrap-carousel.html")
+                    | Bootstrap Carousel
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-tiny-slider.html")
+                    | Tiny Slider
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-table
+                        .heading-text
+                            h6.mb-1 Tables
+                            span Make responsive table layouts.
+
+                // Page Item 
+                a.affan-element-item(href="element-basic-table.html")
+                    | Basic Table
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-data-table.html")
+                    | Data Table
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-price-table.html")
+                    | Price Table
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-comparison-table.html")
+                    | Comparison Table
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-clock-history
+                        .heading-text
+                            h6.mb-1 Timer
+                            span Countdown or countup your milestones.
+
+                // Page Item 
+                a.affan-element-item(href="element-countdown.html")
+                    | Count Down
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-counterup.html")
+                    | Counter Up
+                    i.bi.bi-chevron-right
+
+                .affan-element-item
+                    .element-heading-wrapper
+                        i.bi.bi-bar-chart
+                        .heading-text
+                            h6.mb-1 Charts
+                            span Lots of charts for showing data.
+
+                // Page Item 
+                a.affan-element-item(href="element-area-charts.html")
+                    | Area Chart
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-column-charts.html")
+                    | Column Chart
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item(href="element-line-charts.html")
+                    | Line Chart
+                    i.bi.bi-chevron-right
+
+                // Page Item 
+                a.affan-element-item.mb-0(href="element-pie-charts.html")
+                    | Pie Chart
+                    i.bi.bi-chevron-right
+
+                script.
+                    function elementsSearch() {
+                        var input = document.getElementById('elementsSearchInput');
+                        var filter = input.value.toUpperCase();
+                        var list = document.getElementById("elementsSearchList");
+                        var listItem = list.getElementsByClassName('affan-element-item');
+
+                        for (i = 0; i < listItem.length; i++) {
+                            var a = listItem[i];
+                            var textValue = a.textContent || a.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                listItem[i].style.display = "";
+                            } else {
+                                listItem[i].style.display = "none";
+                            }
+                        }
+                    }
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

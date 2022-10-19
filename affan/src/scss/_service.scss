@@ -1,0 +1,41 @@
+/* :: Service CSS */
+
+.service-card {
+    position: relative;
+    z-index: 1;
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .service-text {
+        flex: 0 0 60%;
+        max-width: 60%;
+        width: 60%;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $white;
+        }
+
+        p {
+            color: rgba(255, 255, 255, .75);
+        }
+    }
+
+    .service-img {
+        flex: 0 0 40%;
+        max-width: 40%;
+        width: 40%;
+        text-align: right;
+        padding-left: 1.5rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

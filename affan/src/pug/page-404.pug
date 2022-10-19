@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/sidenav.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Page Not found
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        // Page Content Wrapper 
+        .page-content-wrapper.py-3
+            .custom-container
+                .card
+                    .card-body.px-5.text-center
+                        img.mb-4(src="img/bg-img/39.png", alt="")
+                        h4 OOPS... <br> Page not found!
+                        p.mb-4 We couldn't find any results for your search. Try again.
+                        a.btn.btn-creative.btn-danger(href="page-home.html") Go to Home
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

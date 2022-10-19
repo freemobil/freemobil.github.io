@@ -1,0 +1,135 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container
+                // Header Content
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title
+                    .page-heading
+                        h6.mb-0 Team
+
+                    // Navbar Toggler
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .team-member-wrapper.direction-rtl
+                .container
+                    .row.g-3                        
+                        // Single Team Member
+                        .col-6
+                            .card.team-member-card.shadow
+                                .card-body
+                                    // Member Image
+                                    .team-member-img.shadow-sm
+                                        img(src="img/bg-img/2.jpg", alt="")
+                                    // Team Info
+                                    .team-info
+                                        h6.mb-1.fz-14 Affan Islam
+                                        p.mb-0.fz-12 UX/UI Designer
+
+                                // Contact Info
+                                .contact-info.bg-primary
+                                    p.mb-0.text-truncate care@example.com
+                        
+                        // Single Team Member
+                        .col-6
+                            .card.team-member-card.shadow
+                                .card-body
+                                    // Member Image
+                                    .team-member-img.shadow-sm
+                                        img(src="img/bg-img/20.jpg", alt="")
+                                    // Team Info
+                                    .team-info
+                                        h6.mb-1.fz-14 Hasnain Riyadh
+                                        p.mb-0.fz-12 Support Manager
+
+                                // Contact Info
+                                .contact-info.bg-primary
+                                    p.mb-0.text-truncate care@example.com
+                        
+                        // Single Team Member
+                        .col-6
+                            .card.team-member-card.shadow
+                                .card-body
+                                    // Member Image
+                                    .team-member-img.shadow-sm
+                                        img(src="img/bg-img/21.jpg", alt="")
+                                    // Team Info
+                                    .team-info
+                                        h6.mb-1.fz-14 Nazrul Sumon
+                                        p.mb-0.fz-12 Developer
+
+                                // Contact Info
+                                .contact-info.bg-warning
+                                    p.mb-0.text-truncate care@example.com
+                        
+                        // Single Team Member
+                        .col-6
+                            .card.team-member-card.shadow
+                                .card-body
+                                    // Member Image
+                                    .team-member-img.shadow-sm
+                                        img(src="img/bg-img/2.jpg", alt="")
+                                    // Team Info
+                                    .team-info
+                                        h6.mb-1.fz-14 Affan Islam
+                                        p.mb-0.fz-12 UX/UI Designer
+
+                                // Contact Info
+                                .contact-info.bg-warning
+                                    p.mb-0.text-truncate care@example.com
+                        
+                        // Single Team Member
+                        .col-6
+                            .card.team-member-card.shadow
+                                .card-body
+                                    // Member Image
+                                    .team-member-img.shadow-sm
+                                        img(src="img/bg-img/20.jpg", alt="")
+                                    // Team Info
+                                    .team-info
+                                        h6.mb-1.fz-14 Hasnain Riyadh
+                                        p.mb-0.fz-12 Support Manager
+
+                                // Contact Info
+                                .contact-info.bg-info
+                                    p.mb-0.text-truncate care@example.com
+                        
+                        // Single Team Member
+                        .col-6
+                            .card.team-member-card.shadow
+                                .card-body
+                                    // Member Image
+                                    .team-member-img.shadow-sm
+                                        img(src="img/bg-img/21.jpg", alt="")
+                                    // Team Info
+                                    .team-info
+                                        h6.mb-1.fz-14 Nazrul Sumon
+                                        p.mb-0.fz-12 Developer
+
+                                // Contact Info
+                                .contact-info.bg-info
+                                    p.mb-0.text-truncate care@example.com
+                    
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

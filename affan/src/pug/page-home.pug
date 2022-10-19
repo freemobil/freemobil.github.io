@@ -1,0 +1,195 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/header.pug
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper
+
+            // Welcome Toast 
+            .toast.toast-autohide.custom-toast-1.toast-success.home-page-toast(role="alert", aria-live="assertive", aria-atomic="true", data-bs-delay="7000", data-bs-autohide="true")
+                .toast-body
+                    svg.bi.bi-bookmark-check.text-white(width="30", height="30", viewBox="0 0 16 16", fill="currentColor", xmlns="http://www.w3.org/2000/svg")
+                        path(fill-rule="evenodd", d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z")
+                        path(fill-rule="evenodd", d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z")
+                    .toast-text.ms-3.me-2
+                        p.mb-1.text-white Welcome to Affan!
+                        small.d-block Click the "Add to Home Screen" button &amp; enjoy it like an app.
+                button.btn.btn-close.btn-close-white.position-absolute.p-1(type="button", data-bs-dismiss="toast", aria-label="Close")
+
+            include inc/tiny-slider-one.pug
+
+            .pt-3
+
+            .container.direction-rtl
+                .card.mb-3
+                    .card-body
+                        .row.g-3
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/pwa.png", alt="")
+                                    p.mb-0 PWA Ready
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/bootstrap.png", alt="")
+                                    p.mb-0 Bootstrap 5
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/js.png", alt="")
+                                    p.mb-0 Vanilla JS
+
+            .container
+                .card.card-bg-img.bg-img.bg-overlay.mb-3(style="background-image: url('img/bg-img/3.jpg')")
+                    .card-body.direction-rtl.p-5
+                        h2.text-white Reusable elements
+                        p.mb-4.text-white More than 220+ reusable modern design elements. Just copy the code and paste it on your desired page.
+                        a.btn.btn-warning(href="elements.html") All elements
+
+            .container.direction-rtl
+                .card.mb-3
+                    .card-body
+                        .row.g-3
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/sass.png", alt="")
+                                    p.mb-0 SCSS
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/pug.png", alt="")
+                                    p.mb-0 PUG
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/npm.png", alt="")
+                                    p.mb-0 NPM
+
+            .container
+                .card.bg-primary.mb-3.bg-img(style="background-image: url('img/core-img/1.png')")
+                    .card-body.direction-rtl.p-5
+                        h2.text-white Ready pages
+                        p.mb-4.text-white Already designed more than 100+ pages for your needs. Such as - Authentication, Chats, eCommerce, Blog &amp; Miscellaneous pages.
+                        a.btn.btn-warning(href="pages.html") All pages
+
+            .container.direction-rtl
+                .card.mb-3
+                    .card-body
+                        .row.g-3
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        img(src="img/demo-img/gulp.png", alt="")
+                                    p.mb-0 Gulp 4
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        i.bi.bi-moon.text-dark
+                                    p.mb-0 Dark Mode
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        i.bi.bi-box-arrow-left.text-info
+                                    p.mb-0 RTL Ready
+
+            .container
+                .card.mb-3
+                    .card-body
+                        h3 Customer Review
+                        .testimonial-slide-three-wrapper
+                            .testimonial-slide3.testimonial-style3
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-warning.mb-2
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill
+                                        h6.mb-2 The code looks clean, and the designs are excellent. I recommend.
+                                        span.d-block Mrrickez, Themeforest
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-warning.mb-2
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill
+                                        h6.mb-2 All complete, <br> great craft.
+                                        span.d-block Mazatlumm, Themeforest
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-warning.mb-2
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill
+                                        h6.mb-2 Awesome template! <br> Excellent support!
+                                        span.d-block Vguntars, Themeforest
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-warning.mb-2
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill.me-1
+                                            i.bi.bi-star-fill
+                                        h6.mb-2 Nice modern design, <br> I love the product.
+                                        span.d-block electroMEZ, Themeforest
+
+            .container.direction-rtl
+                .card
+                    .card-body
+                        .row.g-3
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        i.bi.bi-star.text-warning
+                                    p.mb-0 Best Rated
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        svg.bi.bi-award.text-success(xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16")
+                                            path(d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z")
+                                            path(d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z")
+                                    p.mb-0 Elegant
+
+                            .col-4
+                                .feature-card.mx-auto.text-center
+                                    .card.mx-auto.bg-gray
+                                        svg.bi.bi-lightning-charge.text-primary(xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16")
+                                            path(d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z")
+                                    p.mb-0 Trendsetter
+
+            .pb-3
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

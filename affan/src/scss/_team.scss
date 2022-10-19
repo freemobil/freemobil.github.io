@@ -1,0 +1,44 @@
+/* :: Team Member CSS */
+
+.team-member-card {
+    position: relative;
+    z-index: 1;
+    text-align: center !important;
+    background-color: $white !important;
+    overflow: hidden;
+
+    .team-member-img {
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1.5rem;
+        max-width: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        &::after {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            content: '';
+            top: 5%;
+            right: 5%;
+            z-index: 10;
+            border: 1px solid $white;
+            border-radius: 50%;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .contact-info {
+        padding: .5rem 1rem;
+        border-radius: 0 0 6px 6px;
+
+        p {
+            color: $white;
+        }
+    }
+}

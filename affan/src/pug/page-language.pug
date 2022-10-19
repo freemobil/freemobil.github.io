@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Select Language
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        // Page Content Wrapper 
+        .page-content-wrapper.py-3
+            .container
+                // Language Area 
+                .card
+                    .card-body
+                        .language-area-wrapper
+                            ul.ps-0.language-lists
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="English", checked)
+                                        label.form-check-label(for="English") English
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Afrikaans")
+                                        label.form-check-label(for="Afrikaans") Afrikaans
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Albanian")
+                                        label.form-check-label(for="Albanian") Albanian
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Amharic")
+                                        label.form-check-label(for="Amharic") Amharic
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Arabic")
+                                        label.form-check-label(for="Arabic") Arabic
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Armenian")
+                                        label.form-check-label(for="Armenian") Armenian
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Azerbaijani")
+                                        label.form-check-label(for="Azerbaijani") Azerbaijani
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Basque")
+                                        label.form-check-label(for="Basque") Basque
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Belarusian")
+                                        label.form-check-label(for="Belarusian") Belarusian
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Bengali")
+                                        label.form-check-label(for="Bengali") Bengali
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Bosnian")
+                                        label.form-check-label(for="Bosnian") Bosnian
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Bulgarian")
+                                        label.form-check-label(for="Bulgarian") Bulgarian
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Catalan")
+                                        label.form-check-label(for="Catalan") Catalan
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Cebuano")
+                                        label.form-check-label(for="Cebuano") Cebuano
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Chichewa")
+                                        label.form-check-label(for="Chichewa") Chichewa
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Chinese")
+                                        label.form-check-label(for="Chinese") Chinese
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Corsican")
+                                        label.form-check-label(for="Corsican") Corsican
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Croatian")
+                                        label.form-check-label(for="Croatian") Croatian
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Czech")
+                                        label.form-check-label(for="Czech") Czech
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Danish")
+                                        label.form-check-label(for="Danish") Danish
+                                li
+                                    .form-check
+                                        input.form-check-input(type="radio", name="languageRadio", id="Dutch")
+                                        label.form-check-label(for="Dutch") Dutch
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

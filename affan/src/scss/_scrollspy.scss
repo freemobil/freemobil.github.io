@@ -1,0 +1,60 @@
+/* :: Scrollspy CSS */
+
+.scrollspy-indicatiors {
+
+    .nav-link {
+        padding: 0.25rem .625rem;
+        background-color: $gray;
+        color: $heading;
+        margin-right: 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 14px;
+
+        &.active {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    ul {
+        li:last-child {
+            .nav-link {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.data-scrollspy {
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding-right: 0.5rem;
+}
+
+.vertical-scrollspy {
+    position: relative;
+    z-index: 1;
+
+    .scrollspy-indicatiors {
+        flex: 0 0 95px;
+        width: 95px;
+        min-width: 95px;
+
+        .nav-link {
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            li:last-child {
+                .nav-link {
+                    margin-bottom: 0;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

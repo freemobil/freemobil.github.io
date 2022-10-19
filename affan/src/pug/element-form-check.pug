@@ -1,0 +1,195 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Checkbox
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Checkbox
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .form-check
+                                input.form-check-input#defaultCheckbox(type="checkbox" value="")
+                                label.form-check-label(for="defaultCheckbox") Default Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input#checkedCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="checkedCheckbox") Checked Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.indeterminate#indeterminateCheckbox(type="checkbox" value="")
+                                label.form-check-label(for="indeterminateCheckbox") Indeterminate Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input#disabledCheckbox(type="checkbox" value="" disabled)
+                                label.form-check-label(for="disabledCheckbox") Disabled Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input#disabledCheckbox2(type="checkbox" value="" checked disabled)
+                                label.form-check-label(for="disabledCheckbox2") Disabled Checked Checkbox
+
+            .container
+                // Element Heading
+                .element-heading.mt-3
+                    h6 Colorful Checkbox 
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .form-check
+                                input.form-check-input.form-check-success#successCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="successCheckbox") Success Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-danger#dangerCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="dangerCheckbox") Danger Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-warning#warningCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="warningCheckbox") Warning Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-info#infoCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="infoCheckbox") Info Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-secondary#secondaryCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="secondaryCheckbox") Secondary Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-light#lightCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="lightCheckbox") Light Checkbox
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-dark#darkCheckbox(type="checkbox" value="" checked)
+                                label.form-check-label(for="darkCheckbox") Dark Checkbox
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Checkbox Large
+
+            .container
+                .card
+                    .card-body
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-success#successCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="successCheckbox2") Success Checkbox
+
+                        .mb-2
+
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-danger#dangerCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="dangerCheckbox2") Danger Checkbox
+
+                        .mb-2
+
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-warning#warningCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="warningCheckbox2") Warning Checkbox
+
+                        .mb-2
+
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-info#infoCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="infoCheckbox2") Info Checkbox
+
+                        .mb-2
+
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-secondary#secondaryCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="secondaryCheckbox2") Secondary Checkbox
+
+                        .mb-2
+
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-light#lightCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="lightCheckbox2") Light Checkbox
+
+                        .mb-2
+
+                        .form-check
+                            input.form-check-input.form-check-input-lg.form-check-dark#darkCheckbox2(type="checkbox" value="" checked)
+                            label.form-check-label(for="darkCheckbox2") Dark Checkbox
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Checkbox Card
+
+            .container
+                .card
+                    .card-body
+                        .list-group
+                            label.list-group-item(for="listCheckbox1")
+                                input.form-check-input.me-2#listCheckbox1(type="checkbox", value="")
+                                | List Checkbox 1
+
+                            label.list-group-item(for="listCheckbox2")
+                                input.form-check-input.me-2#listCheckbox2(type="checkbox", value="", checked)
+                                | List Checkbox 2
+
+                            label.list-group-item(for="listCheckbox3")
+                                input.form-check-input.me-2#listCheckbox3(type="checkbox", value="")
+                                | List Checkbox 3
+
+                            label.list-group-item(for="listCheckbox4")
+                                input.form-check-input.me-2#listCheckbox4(type="checkbox", value="")
+                                | List Checkbox 4
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

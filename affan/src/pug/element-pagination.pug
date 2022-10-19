@@ -1,0 +1,173 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Pagination
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Bootstrap Pagination
+
+            .container
+                .card
+                    .card-body
+                        nav(aria-label="Page navigation example")
+                            ul.pagination.direction-rtl
+                                li.page-item.disabled
+                                    a.page-link(href="#",  aria-label="Previous")
+                                        span(aria-hidden="true") &laquo;
+                                li.page-item.active
+                                    a.page-link(href="#") 1
+                                li.page-item
+                                    a.page-link(href="#") 2
+                                li.page-item
+                                    a.page-link(href="#") 3
+                                li.page-item
+                                    a.page-link(href="#") ...
+                                li.page-item
+                                    a.page-link(href="#") 9
+                                li.page-item
+                                    a.page-link(href="#",  aria-label="Next")
+                                        span(aria-hidden="true") &raquo;
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Pagination 02
+
+            .container
+                .card
+                    .card-body
+                        nav(aria-label="Page navigation example")
+                            ul.pagination.direction-rtl.pagination-one
+                                li.page-item.disabled
+                                    a.page-link(href="#",  aria-label="Previous")
+                                        svg.bi.bi-chevron-left(width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z")
+                                li.page-item.active
+                                    a.page-link(href="#") 1
+                                li.page-item
+                                    a.page-link(href="#") 2
+                                li.page-item
+                                    a.page-link(href="#") 3
+                                li.page-item
+                                    a.page-link(href="#") ...
+                                li.page-item
+                                    a.page-link(href="#") 9
+                                li.page-item
+                                    a.page-link(href="#",  aria-label="Next")
+                                        svg.bi.bi-chevron-right(width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Pagination 03
+
+            .container
+                .card
+                    .card-body
+                        nav(aria-label="Page navigation example")
+                            ul.pagination.direction-rtl.pagination-two
+                                li.page-item
+                                    a.page-link(href="#",  aria-label="Previous")
+                                        svg.bi.bi-chevron-left(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z")
+                                li.page-item.active
+                                    a.page-link(href="#") 1
+                                li.page-item
+                                    a.page-link(href="#") 2
+                                li.page-item
+                                    a.page-link(href="#") 3
+                                li.page-item
+                                    a.page-link(href="#") ...
+                                li.page-item
+                                    a.page-link(href="#") 9
+                                li.page-item
+                                    a.page-link(href="#",  aria-label="Next")
+                                        svg.bi.bi-chevron-right(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Pagination 04
+
+            .container
+                .card
+                    .card-body
+                        .d-flex.align-items-center.justify-content-between
+                            nav(aria-label="Page navigation example")
+                                ul.pagination.direction-rtl.pagination-three
+                                    li.page-item
+                                        a.page-link(href="#",  aria-label="Previous")
+                                            svg.bi.bi-chevron-left(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                                path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z")
+                                    li.page-item
+                                        a.page-link(href="#") 3
+                                    li.page-item
+                                        a.page-link(href="#",  aria-label="Next")
+                                            svg.bi.bi-chevron-right(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                                path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z")
+
+                            small Showing 3 of 31
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Pagination 05
+
+            .container
+                .card
+                    .card-body
+                        .d-flex.align-items-center.justify-content-between.direction-rtl
+                            .goto-page-form
+                                form.d-flex.align-items-center(action="#")
+                                    label(for="gotoPageNumber") Go to page
+                                    input.form-control.form-control-sm.mx-2#gotoPageNumber(type="text", value="3")
+                                    button.btn.btn-sm.btn-danger(type="submit") Go
+
+
+                            nav(aria-label="Page navigation example")
+                                ul.pagination.pagination-four
+                                    li.page-item
+                                        a.page-link(href="#",  aria-label="Previous")
+                                            svg.bi.bi-caret-left(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                                path(fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z")
+
+                                    li.page-item
+                                        a.page-link(href="#",  aria-label="Next")
+                                            svg.bi.bi-caret-right(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                                path(fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

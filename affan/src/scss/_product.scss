@@ -1,0 +1,74 @@
+/* :: Product CSS */
+
+.product-details-card {
+    position: relative;
+    z-index: 1;
+
+    .product-badge {
+        top: 2.5rem;
+        left: 2.5rem;
+        z-index: 100;
+    }
+
+    .product-gallery {
+        >a {
+            cursor: zoom-in;
+        }
+    }
+}
+
+.single-product-card {
+    position: relative;
+    z-index: 1;
+
+    .product-thumbnail {
+        position: relative;
+        z-index: 1;
+
+        img {
+            border-radius: .375rem;
+        }
+
+        .badge {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            z-index: 10;
+        }
+    }
+
+    .product-title {
+        font-size: 1.125rem;
+        color: $heading;
+        margin-top: .75rem;
+        font-weight: 500;
+        margin-bottom: .25rem;
+    }
+
+    .sale-price {
+        font-size: 1rem;
+        color: $primary;
+        font-weight: 500;
+
+        span {
+            font-size: 1rem;
+            margin-left: 0.25rem;
+            text-decoration: line-through;
+            color: $danger;
+        }
+    }
+}
+
+.product-list-wrap {
+    .single-product-card .product-thumbnail img {
+        max-height: 7rem;
+    }
+}
+
+.shop-pagination {
+    small {
+        border-left: 3px solid $primary;
+        padding-left: .5rem;
+        line-height: 1;
+    }
+}

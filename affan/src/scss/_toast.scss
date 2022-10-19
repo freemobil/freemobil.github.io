@@ -1,0 +1,81 @@
+/* :: Toast CSS */
+
+.toast-header {
+    color: $heading;
+    padding: 0.5rem 0.75rem;
+}
+
+.custom-toast-1 {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 0.5rem;
+
+    .toast-body {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        svg {
+            flex: 0 0 30px;
+            width: 30px;
+            max-width: 30px;
+        }
+
+        .toast-text {
+            p {
+                color: $heading;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .btn-close {
+        top: 0.625rem;
+        right: 0.625rem;
+        z-index: 10;
+    }
+}
+
+.toast-primary {
+    background-color: $primary !important;
+    color: $white;
+}
+
+.toast-success {
+    background-color: $success !important;
+    color: $white;
+}
+
+.toast-danger {
+    background-color: $danger !important;
+    color: $white;
+}
+
+.toast-warning {
+    background-color: $warning !important;
+    color: $white;
+}
+
+.toast-info {
+    background-color: $info !important;
+    color: $white;
+}
+
+.toast-dark {
+    background-color: $dark !important;
+    color: $white;
+}
+
+.toast-autohide-animation {
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    z-index: 10;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: $gray;
+    animation: toast-animation linear 0s;
+    border-radius: 0 0 0 2rem;
+}

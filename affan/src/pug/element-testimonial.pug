@@ -1,0 +1,146 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Testimonial
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Testimonial 01
+
+            .container                
+                .testimonial-slide-one-wrapper
+                    .testimonial-slide.testimonial-style1
+                        // Single Testimonial Slide 
+                        div
+                            .card
+                                .card-body
+                                    .single-testimonial-slide
+                                        .image-wrapper.shadow
+                                            img(src="img/bg-img/20.jpg", alt="")
+                                        .text-content
+                                            p.mb-2 I strongly recommend this agency to everyone interested in running a business.
+                                            span.d-block - Riyadh
+                                        i.bi.bi-chat-quote.text-warning
+
+                        // Single Testimonial Slide 
+                        div
+                            .card
+                                .card-body
+                                    .single-testimonial-slide
+                                        .image-wrapper.shadow
+                                            img(src="img/bg-img/2.jpg", alt="")
+                                        .text-content
+                                            p.mb-2 You've saved our business! Thanks guys, keep up the good work! The best on the net!
+                                            span.d-block - Affan
+                                        i.bi.bi-chat-quote.text-warning
+
+                        // Single Testimonial Slide 
+                        div
+                            .card
+                                .card-body
+                                    .single-testimonial-slide
+                                        .image-wrapper.shadow
+                                            img(src="img/bg-img/21.jpg", alt="")
+                                        .text-content
+                                            p.mb-2 Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.
+                                            span.d-block - Designing World
+                                        i.bi.bi-chat-quote.text-warning
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Testimonial 02
+
+            .container
+                .card
+                    .card-body.p-0
+                        .testimonial-slide-two-wrapper
+                            .testimonial-slide2.testimonial-style2
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .image-wrapper.shadow-sm
+                                        img(src="img/bg-img/2.jpg", alt="")
+                                        i.bi.bi-chat-quote
+                                    .text-content
+                                        p.mb-0 I strongly recommend this agency to everyone interested a business.
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .image-wrapper.shadow-sm
+                                        img(src="img/bg-img/20.jpg", alt="")
+                                        i.bi.bi-chat-quote
+                                    .text-content
+                                        p.mb-0 You've saved our business! Thanks guys, keep up the good work!
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .image-wrapper.shadows-sm
+                                        img(src="img/bg-img/21.jpg", alt="")
+                                        i.bi.bi-chat-quote
+                                    .text-content
+                                        p.mb-0 Absolutely wonderful! I wish I would have thought of it first.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Testimonial 03
+
+            .container
+                .card
+                    .card-body
+                        h2 Customer Review
+                        .testimonial-slide-three-wrapper
+                            .testimonial-slide3.testimonial-style3
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-danger.mb-2 Top
+                                        p.mb-2 I strongly recommend this agency to everyone interested in running a business.
+                                        span.d-block - Suha, Designingworld
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-warning.mb-2 Top
+                                        p.mb-2 You've saved our business! Thanks guys, keep up the good work! The best on the net!
+                                        span.d-block - Riyadhu, Shape Digital
+
+                                // Single Testimonial Slide 
+                                .single-testimonial-slide
+                                    .text-content
+                                        span.d-inline-block.badge.bg-primary.mb-2 Top
+                                        p.mb-2 Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.
+                                        span.d-block - Affan, Founder
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,36 @@
+{
+  "name": "affan-pwa-mobile-html-template",
+  "version": "1.3.0",
+  "description": "Affan - PWA Mobile HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Designing-World",
+  "license": "SEE LICENSE IN <license>",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browserslist": "^4.16.6",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.6",
+    "sass": "^1.36.0"
+  },
+  "dependencies": {
+    "apexcharts": "^3.19.3",
+    "baguettebox.js": "^1.11.1",
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.5.0",
+    "counterup2": "^2.0.2",
+    "magic-grid": "^3.2.4",
+    "tiny-slider": "^2.9.3",
+    "vanilla-datatables": "^1.6.16",
+    "vanilla-rangeslider": "^1.0.0"
+  }
+}

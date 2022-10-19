@@ -1,0 +1,107 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Service
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Service Card 
+                .card.service-card.bg-danger.bg-gradient.mb-3
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 Vanilla JS
+                                p.mb-0 The write less, do more with JavaScript Library.
+                            .service-img
+                                img(src="img/demo-img/js.png", alt="")
+
+                // Service Card 
+                .card.service-card.bg-info.bg-gradient.mb-3
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 Bootstrap 5.1.0
+                                p.mb-0 Build fast, responsive sites with Bootstrap.
+                            .service-img
+                                img(src="img/demo-img/bootstrap.png", alt="")
+
+                // Service Card 
+                .card.service-card.bg-success.bg-gradient.mb-3
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 PWA Ready
+                                p.mb-0 Click the "Add to Home Screen" button &amp; enjoy it like an app.
+                            .service-img
+                                img(src="img/demo-img/pwa.png", alt="")
+
+                // Service Card 
+                .card.service-card.bg-warning.bg-gradient.mb-3
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 Powered by npm
+                                p.mb-0 We used a node package manager for script management.
+                            .service-img
+                                img(src="img/demo-img/npm.png", alt="")
+
+                // Service Card 
+                .card.service-card.bg-info.bg-gradient.mb-3
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 PUG
+                                p.mb-0 It compiles to HTML and has a simplified syntax, which can make you more productive and your code more readable.
+                            .service-img
+                                img(src="img/demo-img/pug.png", alt="")
+
+                // Service Card 
+                .card.service-card.bg-primary.bg-gradient.mb-3
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 SCSS
+                                p.mb-0 Sass is the most mature, stable, and powerful professional grade CSS.
+                            .service-img
+                                img(src="img/demo-img/sass.png", alt="")
+
+                // Service Card 
+                .card.service-card.bg-warning.bg-gradient
+                    .card-body
+                        .d-flex.align-items-center
+                            .service-text
+                                h5 Dark &amp; RTL Mode
+                                p.mb-0 Dark mode makes it easier to stay focused on your work.
+                            .service-img
+                                img(src="img/demo-img/dark.png", alt="")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

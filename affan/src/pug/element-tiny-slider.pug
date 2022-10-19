@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Tiny Slider
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Tiny Slider 01
+
+            // Tiny Slider One 
+            include inc/tiny-slider-one.pug
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Tiny Slider 02
+
+            // Tiny Slider Two 
+            include inc/tiny-slider-two.pug
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Tiny Slider 03
+
+            // Tiny Slider Three 
+            include inc/tiny-slider-three.pug
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

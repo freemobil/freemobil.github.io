@@ -1,0 +1,89 @@
+/* :: Hero Block CSS */
+
+.hero-block-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh !important;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-block-content {
+    position: relative;
+    padding: 3rem 0;
+    width: 100%;
+    z-index: 10;
+
+    img {
+        max-height: 15rem;
+    }
+
+    h2 {
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.hero-block-styles {
+    .hb-styles1 {
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        top: 2rem;
+        left: 2rem;
+        background-repeat: repeat;
+        opacity: 0.6;
+        z-index: -10;
+    }
+
+    .hb-styles2 {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        border: 1rem solid $white;
+        opacity: 0.1;
+        top: 10%;
+        right: -3rem;
+        z-index: -10;
+        border-radius: 50%;
+    }
+
+    .hb-styles3 {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        bottom: -5rem;
+        right: -5rem;
+        z-index: -10;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 1);
+        background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1));
+        background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, 1));
+        opacity: 0.2;
+    }
+}
+
+.skip-page {
+    position: fixed;
+    top: 2rem;
+    z-index: 100;
+    line-height: 1;
+    right: 2rem;
+
+    a {
+        color: $white;
+        font-size: 14px;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: $warning;
+        }
+    }
+}

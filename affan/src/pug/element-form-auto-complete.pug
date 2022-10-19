@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Auto Complete
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Auto complete countries
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", autocomplete="off")
+                            .form-group.mb-0
+                                input.form-control#autoCompleteCountries(type="text", name="myCountry", placeholder="Type a country name")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Auto complete place
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", autocomplete="off")
+                            .form-group.mb-0
+                                input.form-control#autoCompletePlace(type="text", name="place", placeholder="Type a place name")
+
+        include inc/footer-nav.pug
+
+        include inc/footer-form-autocomplete.pug

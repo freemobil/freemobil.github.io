@@ -1,0 +1,137 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Typography
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Headings
+
+            .container
+                .card
+                    .card-body
+                        h1 h1. Bootstrap heading
+                        h2 h2. Bootstrap heading
+                        h3 h3. Bootstrap heading
+                        h4 h4. Bootstrap heading
+                        h5 h5. Bootstrap heading
+                        h6.mb-0 h6. Bootstrap heading
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Customizing headings
+
+            .container
+                .card
+                    .card-body
+                        h3.mb-0 Fancy display heading 
+                            span.text-primary  with faded primary text
+
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Display headings
+
+            .container
+                .card
+                    .card-body
+                        h1.display-1 Display One
+                        h1.display-2 Display Two
+                        h1.display-3 Display Three
+                        h1.display-4 Display Four
+                        h1.display-5 Display Five
+                        h1.display-6.mb-0 Display Six
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Leading text
+
+            .container
+                .card
+                    .card-body
+                        p.lead.mb-0 It is very nicely designed with modern features &amp; coded with the latest technology.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Inline text elements
+
+            .container
+                .card
+                    .card-body
+                        p You can use the mark tag to 
+                            mark highlight
+                            | text.
+                        p
+                            del This line of text is meant to be treated as deleted text.
+                        p
+                            s This line of text is meant to be treated as no longer accurate.
+                        p
+                            ins This line of text is meant to be treated as an addition to the document.
+                        p
+                            u This line of text will render as underlined
+                        p
+                            small This line of text is meant to be treated as fine print.
+                        p
+                            strong This line rendered as bold text.
+                        p.mb-0
+                            em This line rendered as italicized text.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Unstyled list
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        ul.list-unstyled.ps-3
+                            li Unstyled list 1
+                            li Unstyled list 2
+                            li Unstyled list 3
+                            li Unstyled list 4
+                            li Unstyled list 5
+                            li Unstyled list 6
+                                ul
+                                    li Unstyled list 6.1
+                                    li Unstyled list 6.2
+                                    li Unstyled list 6.3
+                            li Unstyled list 7
+                            li Unstyled list 8
+                            li Unstyled list 9
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

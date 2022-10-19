@@ -1,0 +1,43 @@
+/* :: User Profile CSS */
+
+.user-info-card {
+    position: relative;
+    z-index: 1;
+
+    .user-profile {
+        position: relative;
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+
+        i {
+            position: absolute;
+            top: 11px;
+            right: 8px;
+            font-size: 14px;
+            color: $white;
+            z-index: 1;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        form {
+            .form-control {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: 0;
+                top: 6px;
+                border: 0;
+                border-radius: 50%;
+                padding: 0;
+                line-height: 30px;
+                text-indent: -99999999999999999rem;
+                background-color: $primary;
+            }
+        }
+    }
+}

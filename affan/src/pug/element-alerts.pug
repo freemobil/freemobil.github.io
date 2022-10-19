@@ -1,0 +1,257 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Alerts
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Alerts 01
+
+            .container
+                .card
+                    .card-body
+                        .alert.custom-alert-1.alert-primary.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-secondary.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-success.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-danger.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-x-circle
+                            | Message not sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-warning.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-exclamation-circle
+                            | Oops! Message not sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-info.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-info-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-light.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-1.alert-dark.alert-dismissible.fade.show.mb-0(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Alerts 02
+
+            .container
+                .card
+                    .card-body
+                        .alert.custom-alert-2.alert-primary.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-secondary.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-success.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-danger.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-x-circle
+                            | Message not sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-warning.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-exclamation-circle
+                            | Oops! Message not sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-info.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-info-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-light.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-2.alert-dark.alert-dismissible.fade.show.mb-0(role="alert")
+                            i.bi.bi-check-circle
+                            | Message successfully sent!
+                            button.btn.btn-close.btn-close-white.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Alerts 03
+
+            .container
+                .card
+                    .card-body
+                        .alert.custom-alert-3.alert-primary.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            .alert-text
+                                h6 Successfully sent!
+                                span Your email successfully sent!
+                                a.btn.btn-sm.btn-primary.mt-2(href="#") View Details
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-secondary.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-person-plus
+                            .alert-text
+                                h6 New user added
+                                span Your email successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-success.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-all
+                            .alert-text
+                                h6 Payment received!
+                                span Your email successfully sent!
+                                a.btn.btn-sm.btn-success.mt-2(href="#") View balance
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-danger.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-x-circle
+                            .alert-text
+                                h6 Oops! something is wrong
+                                span Your email successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-warning.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-exclamation-circle
+                            .alert-text
+                                h6 Warning!
+                                span Your email successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-info.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-arrow-repeat
+                            .alert-text
+                                h6 Update available
+                                span Your email successfully sent!
+                                a.btn.btn-sm.btn-creative.btn-info.mt-2(href="#") Update Now
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-light.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            .alert-text
+                                h6 Successfully sent!
+                                span Your email successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.custom-alert-3.alert-dark.mb-0.alert-dismissible.fade.show(role="alert")
+                            i.bi.bi-check-circle
+                            .alert-text
+                                h6 Successfully sent!
+                                span Your email successfully sent!
+                                a.btn.btn-sm.btn-outline-dark.mt-2(href="#") View Details
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Bootstrap Alerts
+
+            .container
+                .card
+                    .card-body
+                        .alert.alert-primary(role="alert") A simple primary alert!
+                        .alert.alert-secondary(role="alert") A simple secondary alert!
+                        .alert.alert-success(role="alert") A simple success alert!
+                        .alert.alert-danger(role="alert") A simple danger alert!
+                        .alert.alert-warning(role="alert") A simple warning alert!
+                        .alert.alert-info(role="alert") A simple info alert!
+                        .alert.alert-light(role="alert") A simple light alert!
+                        .alert.mb-0.alert-dark(role="alert") A simple dark alert!
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Alerts with close icon
+
+            .container
+                .card
+                    .card-body
+                        .alert.d-flex.align-items-center.alert-primary.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.alert-secondary.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.alert-success.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.alert-danger.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.alert-warning.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.alert-info.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.alert-light.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+                        .alert.d-flex.align-items-center.mb-0.alert-dark.alert-dismissible.fade.show(role="alert")
+                            | Message successfully sent!
+                            button.btn.btn-close.position-relative.p-1.ms-auto(type="button", data-bs-dismiss="alert", aria-label="Close")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,203 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Image Gallery
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Masonry Image Gallery
+
+            .container
+                .card.image-gallery-card
+                    .card-body
+                        #filterContainer.gallery-img
+                            // Gallery Image 
+                            a.single-gallery-item(href="img/bg-img/4.jpg")
+                                img(src="img/bg-img/4.jpg", alt="")
+
+                                // Fav Icon 
+                                .fav-icon.shadow
+                                    i.bi.bi-heart-fill
+                            
+                            // Gallery Image 
+                            a.single-gallery-item(href="img/bg-img/5.jpg")
+                                img(src="img/bg-img/5.jpg", alt="")
+
+                                // Fav Icon 
+                                .fav-icon.shadow
+                                    i.bi.bi-heart-fill
+
+                            // Gallery Image 
+                            a.single-gallery-item(href="img/bg-img/6.jpg")
+                                img(src="img/bg-img/6.jpg", alt="")
+
+                                // Fav Icon 
+                                .fav-icon.shadow
+                                    i.bi.bi-heart-fill
+
+                            // Gallery Image 
+                            a.single-gallery-item(href="img/bg-img/7.jpg")
+                                img(src="img/bg-img/7.jpg", alt="")
+
+                                // Fav Icon 
+                                .fav-icon.shadow
+                                    i.bi.bi-heart-fill
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Same Size Image Gallery
+
+            .container
+                .card
+                    .card-body
+                        .row.g-3
+                            // Single Image Gallery 
+                            .col-6
+                                .single-gallery-item
+                                    img(src="img/bg-img/8.jpg", alt="")
+                                    // Fav Icon
+                                    a.fav-icon.shadow(href="#")
+                                        i.bi.bi-heart-fill
+
+                            // Single Image Gallery 
+                            .col-6
+                                .single-gallery-item
+                                    img(src="img/bg-img/9.jpg", alt="")
+                                    // Fav Icon
+                                    a.fav-icon.shadow(href="#")
+                                        i.bi.bi-heart-fill
+
+                            // Single Image Gallery 
+                            .col-6
+                                .single-gallery-item
+                                    img(src="img/bg-img/10.jpg", alt="")
+                                    // Fav Icon
+                                    a.fav-icon.shadow(href="#")
+                                        i.bi.bi-heart-fill
+
+                            // Single Image Gallery 
+                            .col-6
+                                .single-gallery-item
+                                    img(src="img/bg-img/11.jpg", alt="")
+                                    // Fav Icon
+                                    a.fav-icon.shadow(href="#")
+                                        i.bi.bi-heart-fill
+
+                            // Single Image Gallery 
+                            .col-6
+                                .single-gallery-item
+                                    img(src="img/bg-img/12.jpg", alt="")
+                                    // Fav Icon
+                                    a.fav-icon.shadow(href="#")
+                                        i.bi.bi-heart-fill
+
+                            // Single Image Gallery 
+                            .col-6
+                                .single-gallery-item
+                                    img(src="img/bg-img/13.jpg", alt="")
+                                    // Fav Icon
+                                    a.fav-icon.shadow(href="#")
+                                        i.bi.bi-heart-fill
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Slider Image Gallery
+
+            .container
+                .card
+                    .card-body
+                        .row.gx-2.align-items-end
+                            .col-8
+                                .image-gallery-text.mb-4
+                                    h3.mb-0 Our recent works
+                                    p.mb-0 Latest awesome portfollio.
+                            .col-4.text-end
+                                a.btn.btn-primary.btn-sm.mb-4(href="#") View More
+                            
+                        // Image Gallery Slides Wrapper 
+                        .image-gallery-slides-wrapper
+                            .image-gallery-carousel
+                                // Single Image Gallery 
+                                div
+                                    .single-gallery-item
+                                        // Gallery Image 
+                                        img(src="img/bg-img/14.jpg", alt="")
+
+                                        // Fav Icon 
+                                        a.fav-icon.shadow(href="#")
+                                            i.bi.bi-heart-fill
+
+                                // Single Image Gallery 
+                                div
+                                    .single-gallery-item
+                                        // Gallery Image 
+                                        img(src="img/bg-img/15.jpg", alt="")
+
+                                        // Fav Icon 
+                                        a.fav-icon.shadow(href="#")
+                                            i.bi.bi-heart-fill
+
+                                // Single Image Gallery 
+                                div
+                                    .single-gallery-item
+                                        // Gallery Image 
+                                        img(src="img/bg-img/16.jpg", alt="")
+
+                                        // Fav Icon 
+                                        a.fav-icon.shadow(href="#")
+                                            i.bi.bi-heart-fill
+
+                                // Single Image Gallery 
+                                div
+                                    .single-gallery-item
+                                        // Gallery Image 
+                                        img(src="img/bg-img/17.jpg", alt="")
+
+                                        // Fav Icon 
+                                        a.fav-icon.shadow(href="#")
+                                            i.bi.bi-heart-fill
+
+                                // Single Image Gallery 
+                                div
+                                    .single-gallery-item
+                                        // Gallery Image 
+                                        img(src="img/bg-img/18.jpg", alt="")
+
+                                        // Fav Icon 
+                                        a.fav-icon.shadow(href="#")
+                                            i.bi.bi-heart-fill
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/header.pug
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // User Information
+                .card.user-info-card.mb-3
+                    .card-body.d-flex.align-items-center
+                        .user-profile.me-3
+                            img(src="img/bg-img/2.jpg", alt="")
+                            i.bi.bi-pencil
+                            form(action="#")
+                                input.form-control(type="file")
+
+                        .user-info
+                            .d-flex.align-items-center
+                                h5.mb-1 Affan Islam
+                                span.badge.bg-warning.ms-2.rounded-pill Pro
+                            p.mb-0 UX/UI Designer
+
+                // User Meta Data
+                .card.user-data-card
+                    .card-body
+                        form(action="#")
+                            .form-group.mb-3
+                                label.form-label(for="Username") Username
+                                input.form-control#Username(type="text", value="@designing-world", placeholder="Username")
+
+                            .form-group.mb-3
+                                label.form-label(for="fullname") Full Name
+                                input.form-control#fullname(type="text", value="Affan Islam", placeholder="Full Name", readonly)
+
+                            .form-group.mb-3
+                                label.form-label(for="email") Email Address
+                                input.form-control#email(type="text", value="care@example.com", placeholder="Email Address", readonly)
+
+                            .form-group.mb-3
+                                label.form-label(for="job") Job Title
+                                input.form-control#job(type="text", value="UX/UI Designer", placeholder="Job Title")
+
+                            .form-group.mb-3
+                                label.form-label(for="portfolio") Portfolio URL
+                                input.form-control#portfolio(type="url", value="https://themeforest.net/user/designing-world", placeholder="Portfolio URL")
+
+                            .form-group.mb-3
+                                label.form-label(for="address") Address
+                                input.form-control#address(type="text", value="28/C Green Road, BD", placeholder="Address")
+
+                            .form-group.mb-3
+                                label.form-label(for="bio") Bio
+                                textarea.form-control#bio(name="bio", cols="30", rows="10", placeholder="Working as UX/UI Designer at Designing World since 2016.")
+
+                            button.btn.btn-success.w-100(type="submit") Update Now
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

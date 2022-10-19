@@ -1,0 +1,295 @@
+/* :: Price Table CSS */
+
+.price-table-one {
+    position: relative;
+    z-index: 1;
+
+    .nav-tabs .nav-link {
+        margin-bottom: 0;
+        border: 1px solid $border;
+        background-color: $white;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0.5rem;
+        color: $primary;
+        font-size: 2rem;
+
+        &.active {
+            background-color: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+    }
+
+    .single-price-content {
+        position: relative;
+        z-index: 1;
+        background-color: $primary;
+        border-radius: 1rem;
+        overflow: hidden;
+        max-width: 22rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5rem;
+
+        &::before {
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+            background-color: $white;
+            border-radius: 50%;
+            content: "";
+            top: -3rem;
+            right: -5rem;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .price {
+            h2 {
+                line-height: 1.5;
+                margin-bottom: 0;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+
+        .pricing-desc {
+            margin-top: 2rem;
+            margin-bottom: 2.25rem;
+
+            ul {
+                li {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 2;
+
+                    &.times {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-tabs {
+        .nav-item {
+            &:nth-child(2) {
+                .nav-link {
+                    color: $danger;
+                }
+
+                .nav-link.active {
+                    background-color: $danger;
+                    border-color: $danger;
+                    color: $white;
+                }
+            }
+
+            &:nth-child(3) {
+                .nav-link {
+                    color: $success;
+                }
+
+                .nav-link.active {
+                    background-color: $success;
+                    border-color: $success;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        border: 0;
+
+        .tab-pane {
+            &:nth-child(2) {
+                .single-price-content {
+                    background-color: $danger;
+                }
+            }
+
+            &:nth-child(3) {
+                .single-price-content {
+                    background-color: $success;
+                }
+            }
+        }
+    }
+}
+
+.price-table-two {
+    position: relative;
+    z-index: 1;
+
+    .single-price-table {
+        position: relative;
+        z-index: 1;
+        transition-duration: 500ms;
+        flex: 1 0 0;
+        text-align: center;
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+        background-color: $gray;
+
+        &:nth-child(2) {
+            margin-left: .75rem;
+            margin-right: .75rem;
+        }
+
+        .text {
+            h6 {
+                display: block;
+                margin-bottom: 0;
+            }
+        }
+
+        .price {
+            position: relative;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            z-index: 1;
+
+            &::before,
+            &::after {
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                border-radius: 6px;
+                z-index: 1;
+                top: -1rem;
+                content: "";
+                left: 50%;
+                margin-left: -25px;
+                background-color: $white;
+                opacity: 0.3;
+            }
+
+            &::after {
+                bottom: -1rem;
+                top: auto;
+            }
+
+            h3 {
+                display: block;
+                margin-bottom: 0;
+                line-height: 1;
+                font-weight: 700;
+            }
+
+            span {
+                font-size: 13px;
+                display: block;
+            }
+        }
+
+        .form-check {
+            padding-left: 50%;
+            margin-left: -0.75rem;
+
+            .form-check-input {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-top: 0;
+            }
+        }
+
+        &.active {
+            background-color: $primary;
+            border-color: transparent !important;
+
+            .text {
+                h6 {
+                    color: $white;
+                }
+            }
+
+            .price {
+                h3 {
+                    color: $white;
+                }
+
+                span {
+                    color: $border;
+                }
+            }
+
+            .badge {
+                background-color: $danger !important;
+            }
+        }
+    }
+}
+
+.comparison-table-one,
+.comparison-table-two {
+    .table> :not(caption)>*>* {
+        padding: .5rem .75rem;
+    }
+
+    .table {
+        i {
+            font-size: 1rem;
+        }
+    }
+}
+
+.comparison-table-two {
+    .table {
+        > :not(:last-child)> :last-child>* {
+            border-bottom-color: $border;
+        }
+
+        thead {
+            tr {
+                th:nth-child(2) {
+                    text-align: center;
+                }
+
+                th:last-child {
+                    background-color: $primary;
+                    color: $white;
+                    border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+                    border-radius: .25rem .25rem 0 0;
+                    text-align: center;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(2) {
+                    text-align: center;
+                }
+
+                td:last-child {
+                    background-color: $primary;
+                    color: $white;
+                    border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+                    text-align: center;
+                }
+
+                &:last-child {
+                    td {
+                        border-bottom-color: transparent !important;
+
+                        &:last-child {
+                            border-radius: 0 0 .25rem .25rem;
+                        }
+                    }
+
+                    th {
+                        border-bottom-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+}

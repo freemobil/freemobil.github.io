@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        // Header Area
+        .header-area#headerArea
+            .container
+                // Header Content
+                .header-content.header-style-four.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button
+                    .back-button
+                        a(href="page-home.html")
+                            include inc/back-btn.pug
+
+                    // Page Title
+                    .page-heading
+                        h6.mb-0 Settings
+
+                    // User Profile
+                    .user-profile-wrapper
+                        a.user-profile-trigger-btn(href="#")
+                            img(src="img/bg-img/20.jpg", alt="")
+
+        .page-content-wrapper.py-3
+            .container
+                // Setting Card
+                .card.mb-3.shadow-sm
+                    .card-body.direction-rtl
+                        p Settings
+
+                        .single-setting-panel
+                            .form-check.form-switch.mb-2
+                                input.form-check-input(type="checkbox", id="flexSwitchCheckDefault", checked)
+                                label.form-check-label(for="flexSwitchCheckDefault") Availability Status
+
+                        .single-setting-panel
+                            .form-check.form-switch.mb-2
+                                input.form-check-input(type="checkbox", id="flexSwitchCheckDefault2", checked)
+                                label.form-check-label(for="flexSwitchCheckDefault2") Send Me Notifications
+
+                        .single-setting-panel
+                            .form-check.form-switch.mb-2
+                                input.form-check-input(type="checkbox", id="darkSwitch")
+                                label.form-check-label(for="darkSwitch") Dark Mode
+
+                        .single-setting-panel
+                            .form-check.form-switch
+                                input.form-check-input(type="checkbox", id="rtlSwitch")
+                                label.form-check-label(for="rtlSwitch") RTL Mode
+
+                // Setting Card
+                .card.mb-3.shadow-sm
+                    .card-body.direction-rtl
+                        p Account
+
+                        .single-setting-panel
+                            a(href="page-user-profile.html")
+                                .icon-wrapper
+                                    i.bi.bi-person
+                                | Update Profile
+
+                        .single-setting-panel
+                            a(href="page-user-profile.html")
+                                .icon-wrapper.bg-warning
+                                    i.bi.bi-pencil
+                                | Update Bio
+
+                        .single-setting-panel
+                            a(href="page-change-password.html")
+                                .icon-wrapper.bg-info
+                                    i.bi.bi-lock
+                                | Change Password
+
+                        .single-setting-panel
+                            a(href="page-language.html")
+                                .icon-wrapper.bg-success
+                                    i.bi.bi-globe2
+                                | Language
+
+                        .single-setting-panel
+                            a(href="page-privacy-policy.html")
+                                .icon-wrapper.bg-danger
+                                    i.bi.bi-shield-lock
+                                | Privacy Policy
+
+                // Setting Card
+                .card.shadow-sm
+                    .card-body.direction-rtl
+                        p Register &amp; Logout
+
+                        .single-setting-panel
+                            a(href="page-register.html")
+                                .icon-wrapper.bg-primary
+                                    i.bi.bi-person
+                                | Create New Account
+
+                        .single-setting-panel
+                            a(href="page-login.html")
+                                .icon-wrapper.bg-danger
+                                    i.bi.bi-box-arrow-right
+                                | Logout
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug
