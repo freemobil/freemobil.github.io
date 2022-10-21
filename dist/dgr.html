@@ -1,0 +1,1330 @@
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Affan - PWA Mobile HTML Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0134d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>Güven Timleri</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+    <!-- Internet Connection Status -->
+    <!-- # This code for showing internet connection status -->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Dark mode switching -->
+    <div class="dark-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="dark-mode-text text-center">
+          <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+          </svg>
+          <p class="mb-0">Switching to dark mode</p>
+        </div>
+        <div class="light-mode-text text-center">
+          <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </svg>
+          <p class="mb-0">Switching to light mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- RTL mode switching -->
+    <div class="rtl-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="rtl-mode-text text-center">
+          <svg class="bi bi-text-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to RTL mode</p>
+        </div>
+        <div class="ltr-mode-text text-center">
+          <svg class="bi bi-text-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to default mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- Setting Popup Overlay -->
+    <div id="setting-popup-overlay"></div>
+    <!-- Setting Popup Card -->
+    <div class="card setting-popup-card shadow-lg" id="settingCard">
+      <div class="card-body">
+        <div class="container">
+          <div class="setting-heading d-flex align-items-center justify-content-between mb-3">
+            <p class="mb-0">Settings</p>
+            <div class="btn-close" id="settingCardClose"></div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="darkSwitch">
+              <label class="form-check-label" for="darkSwitch">Dark mode</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Area -->
+    <div class="header-area" id="headerArea">
+      <div class="container">
+        <!-- Header Content -->
+        <div class="header-content position-relative d-flex align-items-center justify-content-between">
+          <!-- Back Button -->
+          <div class="back-button"><a href="pages.html">
+              <svg class="bi bi-arrow-left-short" width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+              </svg></a></div>
+          <!-- Page Title -->
+          <div class="page-heading">
+            <h4 class="mb-0">Diğer Hırsızlıklar(Krşk)</h4>
+          </div>
+          <!-- Settings -->
+          <div class="setting-wrapper">
+            <div class="setting-trigger-btn" id="settingTriggerBtn">
+              <svg class="bi bi-gear" width="18" height="18" viewBox="0 0 16 16" fill="url(#gradientSettings)" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gradientSettings" spreadMethod="pad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0" style="stop-color: #0134d4; stop-opacity:1;"></stop>
+                    <stop offset="100%" style="stop-color: #28a745; stop-opacity:1;"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"></path>
+                <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"></path>
+              </svg><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper py-3">
+      <div class="container">
+        <!-- Element Heading -->
+        <div class="element-heading">
+        </div>
+      </div>
+      <div class="container">
+        <div class="card image-gallery-card">
+          <div class="card-body">
+            <div class="gallery-img" id="filterContainer">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/001.jpg"><img src="img/dgr/001.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/002.jpg"><img src="img/dgr/002.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/003.jpg"><img src="img/dgr/003.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/004.jpg"><img src="img/dgr/004.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/005.jpg"><img src="img/dgr/005.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/006.jpg"><img src="img/dgr/006.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/007.jpg"><img src="img/dgr/007.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/008.jpg"><img src="img/dgr/008.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/009.jpg"><img src="img/dgr/009.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/010.jpg"><img src="img/dgr/010.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/011.jpg"><img src="img/dgr/011.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/012.jpg"><img src="img/dgr/012.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/013.jpg"><img src="img/dgr/013.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/014.jpg"><img src="img/dgr/014.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/015.jpg"><img src="img/dgr/015.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/016.jpg"><img src="img/dgr/016.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/017.jpg"><img src="img/dgr/017.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/018.jpg"><img src="img/dgr/018.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/019.jpg"><img src="img/dgr/019.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/020.jpg"><img src="img/dgr/020.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/021.jpg"><img src="img/dgr/021.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/022.jpg"><img src="img/dgr/022.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/023.jpg"><img src="img/dgr/023.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/024.jpg"><img src="img/dgr/024.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/025.jpg"><img src="img/dgr/025.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/026.jpg"><img src="img/dgr/026.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/027.jpg"><img src="img/dgr/027.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/028.jpg"><img src="img/dgr/028.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/029.jpg"><img src="img/dgr/029.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/030.jpg"><img src="img/dgr/030.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/031.jpg"><img src="img/dgr/031.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/032.jpg"><img src="img/dgr/032.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/033.jpg"><img src="img/dgr/033.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/034.jpg"><img src="img/dgr/034.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/035.jpg"><img src="img/dgr/035.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/036.jpg"><img src="img/dgr/036.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/037.jpg"><img src="img/dgr/037.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/038.jpg"><img src="img/dgr/038.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/039.jpg"><img src="img/dgr/039.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/040.jpg"><img src="img/dgr/040.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/041.jpg"><img src="img/dgr/041.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/042.jpg"><img src="img/dgr/042.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/043.jpg"><img src="img/dgr/043.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/044.jpg"><img src="img/dgr/044.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/045.jpg"><img src="img/dgr/045.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/046.jpg"><img src="img/dgr/046.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/047.jpg"><img src="img/dgr/047.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/048.jpg"><img src="img/dgr/048.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/049.jpg"><img src="img/dgr/049.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/050.jpg"><img src="img/dgr/050.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/051.jpg"><img src="img/dgr/051.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/052.jpg"><img src="img/dgr/052.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/053.jpg"><img src="img/dgr/053.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/054.jpg"><img src="img/dgr/054.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/055.jpg"><img src="img/dgr/055.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/056.jpg"><img src="img/dgr/056.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/057.jpg"><img src="img/dgr/057.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/058.jpg"><img src="img/dgr/058.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/059.jpg"><img src="img/dgr/059.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/060.jpg"><img src="img/dgr/060.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/061.jpg"><img src="img/dgr/061.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/062.jpg"><img src="img/dgr/062.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/063.jpg"><img src="img/dgr/063.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/064.jpg"><img src="img/dgr/064.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/065.jpg"><img src="img/dgr/065.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/066.jpg"><img src="img/dgr/066.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/067.jpg"><img src="img/dgr/067.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/068.jpg"><img src="img/dgr/068.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/069.jpg"><img src="img/dgr/069.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/070.jpg"><img src="img/dgr/070.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/071.jpg"><img src="img/dgr/071.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/072.jpg"><img src="img/dgr/072.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/073.jpg"><img src="img/dgr/073.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/074.jpg"><img src="img/dgr/074.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/075.jpg"><img src="img/dgr/075.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/076.jpg"><img src="img/dgr/076.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/077.jpg"><img src="img/dgr/077.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/078.jpg"><img src="img/dgr/078.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/079.jpg"><img src="img/dgr/079.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/080.jpg"><img src="img/dgr/080.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/081.jpg"><img src="img/dgr/081.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/082.jpg"><img src="img/dgr/082.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/083.jpg"><img src="img/dgr/083.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/084.jpg"><img src="img/dgr/084.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/085.jpg"><img src="img/dgr/085.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/086.jpg"><img src="img/dgr/086.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/087.jpg"><img src="img/dgr/087.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/088.jpg"><img src="img/dgr/088.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/089.jpg"><img src="img/dgr/089.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/090.jpg"><img src="img/dgr/090.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/091.jpg"><img src="img/dgr/091.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/092.jpg"><img src="img/dgr/092.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/093.jpg"><img src="img/dgr/093.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/094.jpg"><img src="img/dgr/094.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/095.jpg"><img src="img/dgr/095.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/096.jpg"><img src="img/dgr/096.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/097.jpg"><img src="img/dgr/097.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/098.jpg"><img src="img/dgr/098.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/099.jpg"><img src="img/dgr/099.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/100.jpg"><img src="img/dgr/100.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/101.jpg"><img src="img/dgr/101.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/102.jpg"><img src="img/dgr/102.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/103.jpg"><img src="img/dgr/103.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/104.jpg"><img src="img/dgr/104.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/105.jpg"><img src="img/dgr/105.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/106.jpg"><img src="img/dgr/106.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/107.jpg"><img src="img/dgr/107.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/108.jpg"><img src="img/dgr/108.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/109.jpg"><img src="img/dgr/109.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/110.jpg"><img src="img/dgr/110.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/111.jpg"><img src="img/dgr/111.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/112.jpg"><img src="img/dgr/112.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/113.jpg"><img src="img/dgr/113.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/114.jpg"><img src="img/dgr/114.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/115.jpg"><img src="img/dgr/115.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/116.jpg"><img src="img/dgr/116.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/117.jpg"><img src="img/dgr/117.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/118.jpg"><img src="img/dgr/118.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/119.jpg"><img src="img/dgr/119.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/120.jpg"><img src="img/dgr/120.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/121.jpg"><img src="img/dgr/121.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/122.jpg"><img src="img/dgr/122.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/123.jpg"><img src="img/dgr/123.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/124.jpg"><img src="img/dgr/124.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/125.jpg"><img src="img/dgr/125.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/126.jpg"><img src="img/dgr/126.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/127.jpg"><img src="img/dgr/127.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/128.jpg"><img src="img/dgr/128.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/129.jpg"><img src="img/dgr/129.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/130.jpg"><img src="img/dgr/130.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/131.jpg"><img src="img/dgr/131.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/132.jpg"><img src="img/dgr/132.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/133.jpg"><img src="img/dgr/133.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/134.jpg"><img src="img/dgr/134.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/135.jpg"><img src="img/dgr/135.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/136.jpg"><img src="img/dgr/136.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/137.jpg"><img src="img/dgr/137.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/138.jpg"><img src="img/dgr/138.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/139.jpg"><img src="img/dgr/139.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/140.jpg"><img src="img/dgr/140.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/141.jpg"><img src="img/dgr/141.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/142.jpg"><img src="img/dgr/142.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/143.jpg"><img src="img/dgr/143.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/144.jpg"><img src="img/dgr/144.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/145.jpg"><img src="img/dgr/145.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/146.jpg"><img src="img/dgr/146.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/147.jpg"><img src="img/dgr/147.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/148.jpg"><img src="img/dgr/148.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/149.jpg"><img src="img/dgr/149.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/150.jpg"><img src="img/dgr/150.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/151.jpg"><img src="img/dgr/151.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/152.jpg"><img src="img/dgr/152.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/153.jpg"><img src="img/dgr/153.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/154.jpg"><img src="img/dgr/154.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/155.jpg"><img src="img/dgr/155.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/156.jpg"><img src="img/dgr/156.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/157.jpg"><img src="img/dgr/157.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/158.jpg"><img src="img/dgr/158.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/159.jpg"><img src="img/dgr/159.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/160.jpg"><img src="img/dgr/160.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/161.jpg"><img src="img/dgr/161.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/162.jpg"><img src="img/dgr/162.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/163.jpg"><img src="img/dgr/163.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/164.jpg"><img src="img/dgr/164.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/165.jpg"><img src="img/dgr/165.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/166.jpg"><img src="img/dgr/166.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/167.jpg"><img src="img/dgr/167.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/168.jpg"><img src="img/dgr/168.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/169.jpg"><img src="img/dgr/169.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/170.jpg"><img src="img/dgr/170.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/171.jpg"><img src="img/dgr/171.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/172.jpg"><img src="img/dgr/172.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/173.jpg"><img src="img/dgr/173.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/174.jpg"><img src="img/dgr/174.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/175.jpg"><img src="img/dgr/175.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/176.jpg"><img src="img/dgr/176.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/177.jpg"><img src="img/dgr/177.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/178.jpg"><img src="img/dgr/178.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/179.jpg"><img src="img/dgr/179.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/180.jpg"><img src="img/dgr/180.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/181.jpg"><img src="img/dgr/181.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/182.jpg"><img src="img/dgr/182.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/183.jpg"><img src="img/dgr/183.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/184.jpg"><img src="img/dgr/184.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/185.jpg"><img src="img/dgr/185.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/186.jpg"><img src="img/dgr/186.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/187.jpg"><img src="img/dgr/187.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/188.jpg"><img src="img/dgr/188.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/189.jpg"><img src="img/dgr/189.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/190.jpg"><img src="img/dgr/190.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/191.jpg"><img src="img/dgr/191.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/192.jpg"><img src="img/dgr/192.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/193.jpg"><img src="img/dgr/193.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/194.jpg"><img src="img/dgr/194.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/195.jpg"><img src="img/dgr/195.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/196.jpg"><img src="img/dgr/196.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/197.jpg"><img src="img/dgr/197.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/198.jpg"><img src="img/dgr/198.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/199.jpg"><img src="img/dgr/199.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/200.jpg"><img src="img/dgr/200.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/201.jpg"><img src="img/dgr/201.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/202.jpg"><img src="img/dgr/202.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/203.jpg"><img src="img/dgr/203.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/204.jpg"><img src="img/dgr/204.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/205.jpg"><img src="img/dgr/205.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/206.jpg"><img src="img/dgr/206.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/207.jpg"><img src="img/dgr/207.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/208.jpg"><img src="img/dgr/208.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/209.jpg"><img src="img/dgr/209.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/210.jpg"><img src="img/dgr/210.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/211.jpg"><img src="img/dgr/211.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/212.jpg"><img src="img/dgr/212.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/213.jpg"><img src="img/dgr/213.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/214.jpg"><img src="img/dgr/214.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/215.jpg"><img src="img/dgr/215.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/216.jpg"><img src="img/dgr/216.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/217.jpg"><img src="img/dgr/217.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/218.jpg"><img src="img/dgr/218.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/219.jpg"><img src="img/dgr/219.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/220.jpg"><img src="img/dgr/220.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/221.jpg"><img src="img/dgr/221.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/222.jpg"><img src="img/dgr/222.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/223.jpg"><img src="img/dgr/223.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/224.jpg"><img src="img/dgr/224.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/225.jpg"><img src="img/dgr/225.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/226.jpg"><img src="img/dgr/226.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/227.jpg"><img src="img/dgr/227.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/228.jpg"><img src="img/dgr/228.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/229.jpg"><img src="img/dgr/229.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/230.jpg"><img src="img/dgr/230.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/231.jpg"><img src="img/dgr/231.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/232.jpg"><img src="img/dgr/232.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/233.jpg"><img src="img/dgr/233.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/234.jpg"><img src="img/dgr/234.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/235.jpg"><img src="img/dgr/235.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/236.jpg"><img src="img/dgr/236.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/237.jpg"><img src="img/dgr/237.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/238.jpg"><img src="img/dgr/238.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/239.jpg"><img src="img/dgr/239.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/240.jpg"><img src="img/dgr/240.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/241.jpg"><img src="img/dgr/241.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/242.jpg"><img src="img/dgr/242.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/243.jpg"><img src="img/dgr/243.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/244.jpg"><img src="img/dgr/244.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/245.jpg"><img src="img/dgr/245.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/246.jpg"><img src="img/dgr/246.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/247.jpg"><img src="img/dgr/247.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/248.jpg"><img src="img/dgr/248.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/249.jpg"><img src="img/dgr/249.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/250.jpg"><img src="img/dgr/250.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/251.jpg"><img src="img/dgr/251.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/252.jpg"><img src="img/dgr/252.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/253.jpg"><img src="img/dgr/253.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/254.jpg"><img src="img/dgr/254.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/255.jpg"><img src="img/dgr/255.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/256.jpg"><img src="img/dgr/256.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/257.jpg"><img src="img/dgr/257.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/258.jpg"><img src="img/dgr/258.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/259.jpg"><img src="img/dgr/259.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/260.jpg"><img src="img/dgr/260.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/261.jpg"><img src="img/dgr/261.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/262.jpg"><img src="img/dgr/262.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/263.jpg"><img src="img/dgr/263.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/264.jpg"><img src="img/dgr/264.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/265.jpg"><img src="img/dgr/265.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/266.jpg"><img src="img/dgr/266.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/267.jpg"><img src="img/dgr/267.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/268.jpg"><img src="img/dgr/268.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/269.jpg"><img src="img/dgr/269.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/270.jpg"><img src="img/dgr/270.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/271.jpg"><img src="img/dgr/271.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/272.jpg"><img src="img/dgr/272.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/273.jpg"><img src="img/dgr/273.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/274.jpg"><img src="img/dgr/274.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/275.jpg"><img src="img/dgr/275.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/276.jpg"><img src="img/dgr/276.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/277.jpg"><img src="img/dgr/277.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/278.jpg"><img src="img/dgr/278.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/279.jpg"><img src="img/dgr/279.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/280.jpg"><img src="img/dgr/280.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/281.jpg"><img src="img/dgr/281.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/282.jpg"><img src="img/dgr/282.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/283.jpg"><img src="img/dgr/283.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/284.jpg"><img src="img/dgr/284.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/285.jpg"><img src="img/dgr/285.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/286.jpg"><img src="img/dgr/286.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/287.jpg"><img src="img/dgr/287.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/288.jpg"><img src="img/dgr/288.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/289.jpg"><img src="img/dgr/289.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/290.jpg"><img src="img/dgr/290.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/291.jpg"><img src="img/dgr/291.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/292.jpg"><img src="img/dgr/292.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/293.jpg"><img src="img/dgr/293.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/294.jpg"><img src="img/dgr/294.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/295.jpg"><img src="img/dgr/295.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/296.jpg"><img src="img/dgr/296.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/297.jpg"><img src="img/dgr/297.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/298.jpg"><img src="img/dgr/298.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/299.jpg"><img src="img/dgr/299.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/300.jpg"><img src="img/dgr/300.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/300.jpg"><img src="img/dgr/300.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/301.jpg"><img src="img/dgr/301.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/302.jpg"><img src="img/dgr/302.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/303.jpg"><img src="img/dgr/303.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/304.jpg"><img src="img/dgr/304.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/305.jpg"><img src="img/dgr/305.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/306.jpg"><img src="img/dgr/306.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/307.jpg"><img src="img/dgr/307.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/308.jpg"><img src="img/dgr/308.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/309.jpg"><img src="img/dgr/309.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/310.jpg"><img src="img/dgr/310.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/311.jpg"><img src="img/dgr/311.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/312.jpg"><img src="img/dgr/312.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/313.jpg"><img src="img/dgr/313.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/314.jpg"><img src="img/dgr/314.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/315.jpg"><img src="img/dgr/315.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/316.jpg"><img src="img/dgr/316.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/317.jpg"><img src="img/dgr/317.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/318.jpg"><img src="img/dgr/318.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/319.jpg"><img src="img/dgr/319.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/320.jpg"><img src="img/dgr/320.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/321.jpg"><img src="img/dgr/321.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/322.jpg"><img src="img/dgr/322.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/323.jpg"><img src="img/dgr/323.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/324.jpg"><img src="img/dgr/324.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/325.jpg"><img src="img/dgr/325.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/326.jpg"><img src="img/dgr/326.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/327.jpg"><img src="img/dgr/327.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/328.jpg"><img src="img/dgr/328.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/329.jpg"><img src="img/dgr/329.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/330.jpg"><img src="img/dgr/330.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/331.jpg"><img src="img/dgr/331.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/332.jpg"><img src="img/dgr/332.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/333.jpg"><img src="img/dgr/333.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/334.jpg"><img src="img/dgr/334.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/335.jpg"><img src="img/dgr/335.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/336.jpg"><img src="img/dgr/336.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/337.jpg"><img src="img/dgr/337.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/338.jpg"><img src="img/dgr/338.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/339.jpg"><img src="img/dgr/339.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/340.jpg"><img src="img/dgr/340.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/341.jpg"><img src="img/dgr/341.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/342.jpg"><img src="img/dgr/342.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/343.jpg"><img src="img/dgr/343.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/344.jpg"><img src="img/dgr/344.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/345.jpg"><img src="img/dgr/345.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/346.jpg"><img src="img/dgr/346.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/347.jpg"><img src="img/dgr/347.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/348.jpg"><img src="img/dgr/348.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/349.jpg"><img src="img/dgr/349.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/350.jpg"><img src="img/dgr/350.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/351.jpg"><img src="img/dgr/351.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/352.jpg"><img src="img/dgr/352.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/353.jpg"><img src="img/dgr/353.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/354.jpg"><img src="img/dgr/354.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/355.jpg"><img src="img/dgr/355.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/356.jpg"><img src="img/dgr/356.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/357.jpg"><img src="img/dgr/357.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/358.jpg"><img src="img/dgr/358.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/359.jpg"><img src="img/dgr/359.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/360.jpg"><img src="img/dgr/360.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/361.jpg"><img src="img/dgr/361.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/362.jpg"><img src="img/dgr/362.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/363.jpg"><img src="img/dgr/363.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/364.jpg"><img src="img/dgr/364.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/365.jpg"><img src="img/dgr/365.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/366.jpg"><img src="img/dgr/366.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/367.jpg"><img src="img/dgr/367.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/368.jpg"><img src="img/dgr/368.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/369.jpg"><img src="img/dgr/369.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/370.jpg"><img src="img/dgr/370.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/371.jpg"><img src="img/dgr/371.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/372.jpg"><img src="img/dgr/372.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/373.jpg"><img src="img/dgr/373.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/374.jpg"><img src="img/dgr/374.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/375.jpg"><img src="img/dgr/375.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/376.jpg"><img src="img/dgr/376.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/377.jpg"><img src="img/dgr/377.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/378.jpg"><img src="img/dgr/378.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/379.jpg"><img src="img/dgr/379.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/380.jpg"><img src="img/dgr/380.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/381.jpg"><img src="img/dgr/381.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/382.jpg"><img src="img/dgr/382.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/383.jpg"><img src="img/dgr/383.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/384.jpg"><img src="img/dgr/384.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/385.jpg"><img src="img/dgr/385.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/386.jpg"><img src="img/dgr/386.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/387.jpg"><img src="img/dgr/387.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/388.jpg"><img src="img/dgr/388.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/389.jpg"><img src="img/dgr/389.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/390.jpg"><img src="img/dgr/390.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/391.jpg"><img src="img/dgr/391.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/392.jpg"><img src="img/dgr/392.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/393.jpg"><img src="img/dgr/393.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/394.jpg"><img src="img/dgr/394.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/395.jpg"><img src="img/dgr/395.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/396.jpg"><img src="img/dgr/396.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/397.jpg"><img src="img/dgr/397.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/398.jpg"><img src="img/dgr/398.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/399.jpg"><img src="img/dgr/399.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/400.jpg"><img src="img/dgr/400.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/401.jpg"><img src="img/dgr/401.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/402.jpg"><img src="img/dgr/402.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/403.jpg"><img src="img/dgr/403.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/404.jpg"><img src="img/dgr/404.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/405.jpg"><img src="img/dgr/405.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/406.jpg"><img src="img/dgr/406.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/407.jpg"><img src="img/dgr/407.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/408.jpg"><img src="img/dgr/408.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/409.jpg"><img src="img/dgr/409.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/410.jpg"><img src="img/dgr/410.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/411.jpg"><img src="img/dgr/411.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/412.jpg"><img src="img/dgr/412.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/413.jpg"><img src="img/dgr/413.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/414.jpg"><img src="img/dgr/414.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/415.jpg"><img src="img/dgr/415.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/416.jpg"><img src="img/dgr/416.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/417.jpg"><img src="img/dgr/417.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/418.jpg"><img src="img/dgr/418.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/419.jpg"><img src="img/dgr/419.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/420.jpg"><img src="img/dgr/420.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/421.jpg"><img src="img/dgr/421.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/422.jpg"><img src="img/dgr/422.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/423.jpg"><img src="img/dgr/423.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/424.jpg"><img src="img/dgr/424.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/425.jpg"><img src="img/dgr/425.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/426.jpg"><img src="img/dgr/426.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/427.jpg"><img src="img/dgr/427.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/428.jpg"><img src="img/dgr/428.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/429.jpg"><img src="img/dgr/429.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/430.jpg"><img src="img/dgr/430.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/431.jpg"><img src="img/dgr/431.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/432.jpg"><img src="img/dgr/432.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/433.jpg"><img src="img/dgr/433.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/434.jpg"><img src="img/dgr/434.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/435.jpg"><img src="img/dgr/435.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/436.jpg"><img src="img/dgr/436.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/437.jpg"><img src="img/dgr/437.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/438.jpg"><img src="img/dgr/438.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/439.jpg"><img src="img/dgr/439.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/440.jpg"><img src="img/dgr/440.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/441.jpg"><img src="img/dgr/441.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/442.jpg"><img src="img/dgr/442.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/443.jpg"><img src="img/dgr/443.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/444.jpg"><img src="img/dgr/444.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/445.jpg"><img src="img/dgr/445.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/446.jpg"><img src="img/dgr/446.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/447.jpg"><img src="img/dgr/447.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/448.jpg"><img src="img/dgr/448.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/449.jpg"><img src="img/dgr/449.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/450.jpg"><img src="img/dgr/450.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/451.jpg"><img src="img/dgr/451.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/452.jpg"><img src="img/dgr/452.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/453.jpg"><img src="img/dgr/453.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/454.jpg"><img src="img/dgr/454.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/455.jpg"><img src="img/dgr/455.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/456.jpg"><img src="img/dgr/456.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/457.jpg"><img src="img/dgr/457.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/458.jpg"><img src="img/dgr/458.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/459.jpg"><img src="img/dgr/459.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/460.jpg"><img src="img/dgr/460.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/461.jpg"><img src="img/dgr/461.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/462.jpg"><img src="img/dgr/462.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/463.jpg"><img src="img/dgr/463.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/464.jpg"><img src="img/dgr/464.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/465.jpg"><img src="img/dgr/465.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/466.jpg"><img src="img/dgr/466.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/467.jpg"><img src="img/dgr/467.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/468.jpg"><img src="img/dgr/468.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/469.jpg"><img src="img/dgr/469.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/470.jpg"><img src="img/dgr/470.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/471.jpg"><img src="img/dgr/471.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/472.jpg"><img src="img/dgr/472.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/473.jpg"><img src="img/dgr/473.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/474.jpg"><img src="img/dgr/474.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/475.jpg"><img src="img/dgr/475.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/476.jpg"><img src="img/dgr/476.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/477.jpg"><img src="img/dgr/477.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/478.jpg"><img src="img/dgr/478.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/479.jpg"><img src="img/dgr/479.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/480.jpg"><img src="img/dgr/480.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/481.jpg"><img src="img/dgr/481.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/482.jpg"><img src="img/dgr/482.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/483.jpg"><img src="img/dgr/483.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/484.jpg"><img src="img/dgr/484.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/485.jpg"><img src="img/dgr/485.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/486.jpg"><img src="img/dgr/486.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/487.jpg"><img src="img/dgr/487.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/488.jpg"><img src="img/dgr/488.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/489.jpg"><img src="img/dgr/489.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/490.jpg"><img src="img/dgr/490.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/491.jpg"><img src="img/dgr/491.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/492.jpg"><img src="img/dgr/492.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/493.jpg"><img src="img/dgr/493.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/494.jpg"><img src="img/dgr/494.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/495.jpg"><img src="img/dgr/495.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/496.jpg"><img src="img/dgr/496.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/497.jpg"><img src="img/dgr/497.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/498.jpg"><img src="img/dgr/498.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/499.jpg"><img src="img/dgr/499.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/500.jpg"><img src="img/dgr/500.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/501.jpg"><img src="img/dgr/501.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/502.jpg"><img src="img/dgr/502.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/503.jpg"><img src="img/dgr/503.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/504.jpg"><img src="img/dgr/504.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/505.jpg"><img src="img/dgr/505.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/506.jpg"><img src="img/dgr/506.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/507.jpg"><img src="img/dgr/507.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/508.jpg"><img src="img/dgr/508.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/509.jpg"><img src="img/dgr/509.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/510.jpg"><img src="img/dgr/510.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/511.jpg"><img src="img/dgr/511.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/512.jpg"><img src="img/dgr/512.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/513.jpg"><img src="img/dgr/513.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/514.jpg"><img src="img/dgr/514.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/515.jpg"><img src="img/dgr/515.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/516.jpg"><img src="img/dgr/516.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/517.jpg"><img src="img/dgr/517.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/518.jpg"><img src="img/dgr/518.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/519.jpg"><img src="img/dgr/519.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/520.jpg"><img src="img/dgr/520.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/521.jpg"><img src="img/dgr/521.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/522.jpg"><img src="img/dgr/522.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/523.jpg"><img src="img/dgr/523.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/524.jpg"><img src="img/dgr/524.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/525.jpg"><img src="img/dgr/525.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/526.jpg"><img src="img/dgr/526.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/527.jpg"><img src="img/dgr/527.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/528.jpg"><img src="img/dgr/528.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/529.jpg"><img src="img/dgr/529.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/530.jpg"><img src="img/dgr/530.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/531.jpg"><img src="img/dgr/531.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/532.jpg"><img src="img/dgr/532.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/533.jpg"><img src="img/dgr/533.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/534.jpg"><img src="img/dgr/534.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/535.jpg"><img src="img/dgr/535.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/536.jpg"><img src="img/dgr/536.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/537.jpg"><img src="img/dgr/537.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/538.jpg"><img src="img/dgr/538.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/539.jpg"><img src="img/dgr/539.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/540.jpg"><img src="img/dgr/540.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/541.jpg"><img src="img/dgr/541.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/542.jpg"><img src="img/dgr/542.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/543.jpg"><img src="img/dgr/543.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/544.jpg"><img src="img/dgr/544.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/545.jpg"><img src="img/dgr/545.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/546.jpg"><img src="img/dgr/546.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/547.jpg"><img src="img/dgr/547.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/548.jpg"><img src="img/dgr/548.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/549.jpg"><img src="img/dgr/549.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/550.jpg"><img src="img/dgr/550.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/551.jpg"><img src="img/dgr/551.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/552.jpg"><img src="img/dgr/552.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/553.jpg"><img src="img/dgr/553.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/554.jpg"><img src="img/dgr/554.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/555.jpg"><img src="img/dgr/555.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/556.jpg"><img src="img/dgr/556.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/557.jpg"><img src="img/dgr/557.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/558.jpg"><img src="img/dgr/558.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/559.jpg"><img src="img/dgr/559.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/560.jpg"><img src="img/dgr/560.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/561.jpg"><img src="img/dgr/561.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/562.jpg"><img src="img/dgr/562.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/563.jpg"><img src="img/dgr/563.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/564.jpg"><img src="img/dgr/564.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/565.jpg"><img src="img/dgr/565.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/566.jpg"><img src="img/dgr/566.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/567.jpg"><img src="img/dgr/567.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/568.jpg"><img src="img/dgr/568.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/569.jpg"><img src="img/dgr/569.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/570.jpg"><img src="img/dgr/570.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/571.jpg"><img src="img/dgr/571.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/572.jpg"><img src="img/dgr/572.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/573.jpg"><img src="img/dgr/573.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/574.jpg"><img src="img/dgr/574.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/575.jpg"><img src="img/dgr/575.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/576.jpg"><img src="img/dgr/576.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/577.jpg"><img src="img/dgr/577.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/578.jpg"><img src="img/dgr/578.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/579.jpg"><img src="img/dgr/579.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/580.jpg"><img src="img/dgr/580.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/581.jpg"><img src="img/dgr/581.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/582.jpg"><img src="img/dgr/582.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/583.jpg"><img src="img/dgr/583.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/584.jpg"><img src="img/dgr/584.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/585.jpg"><img src="img/dgr/585.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/586.jpg"><img src="img/dgr/586.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/587.jpg"><img src="img/dgr/587.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/588.jpg"><img src="img/dgr/588.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/589.jpg"><img src="img/dgr/589.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/590.jpg"><img src="img/dgr/590.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/591.jpg"><img src="img/dgr/591.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/592.jpg"><img src="img/dgr/592.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/593.jpg"><img src="img/dgr/593.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/594.jpg"><img src="img/dgr/594.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/595.jpg"><img src="img/dgr/595.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/596.jpg"><img src="img/dgr/596.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/597.jpg"><img src="img/dgr/597.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/598.jpg"><img src="img/dgr/598.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/599.jpg"><img src="img/dgr/599.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/600.jpg"><img src="img/dgr/600.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/601.jpg"><img src="img/dgr/601.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/602.jpg"><img src="img/dgr/602.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/603.jpg"><img src="img/dgr/603.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/604.jpg"><img src="img/dgr/604.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/605.jpg"><img src="img/dgr/605.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/606.jpg"><img src="img/dgr/606.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/607.jpg"><img src="img/dgr/607.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/608.jpg"><img src="img/dgr/608.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/609.jpg"><img src="img/dgr/609.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/610.jpg"><img src="img/dgr/610.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/611.jpg"><img src="img/dgr/611.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/612.jpg"><img src="img/dgr/612.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/613.jpg"><img src="img/dgr/613.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/614.jpg"><img src="img/dgr/614.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/615.jpg"><img src="img/dgr/615.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/616.jpg"><img src="img/dgr/616.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/617.jpg"><img src="img/dgr/617.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/618.jpg"><img src="img/dgr/618.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/619.jpg"><img src="img/dgr/619.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/620.jpg"><img src="img/dgr/620.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/621.jpg"><img src="img/dgr/621.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/622.jpg"><img src="img/dgr/622.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/623.jpg"><img src="img/dgr/623.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/624.jpg"><img src="img/dgr/624.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/625.jpg"><img src="img/dgr/625.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/626.jpg"><img src="img/dgr/626.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/627.jpg"><img src="img/dgr/627.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/628.jpg"><img src="img/dgr/628.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/629.jpg"><img src="img/dgr/629.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/630.jpg"><img src="img/dgr/630.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/631.jpg"><img src="img/dgr/631.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/632.jpg"><img src="img/dgr/632.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/633.jpg"><img src="img/dgr/633.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/634.jpg"><img src="img/dgr/634.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/635.jpg"><img src="img/dgr/635.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/636.jpg"><img src="img/dgr/636.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/637.jpg"><img src="img/dgr/637.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/638.jpg"><img src="img/dgr/638.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/639.jpg"><img src="img/dgr/639.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/640.jpg"><img src="img/dgr/640.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/641.jpg"><img src="img/dgr/641.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/642.jpg"><img src="img/dgr/642.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/643.jpg"><img src="img/dgr/643.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/644.jpg"><img src="img/dgr/644.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/645.jpg"><img src="img/dgr/645.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/646.jpg"><img src="img/dgr/646.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/647.jpg"><img src="img/dgr/647.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/648.jpg"><img src="img/dgr/648.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/649.jpg"><img src="img/dgr/649.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/650.jpg"><img src="img/dgr/650.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/651.jpg"><img src="img/dgr/651.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/652.jpg"><img src="img/dgr/652.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/653.jpg"><img src="img/dgr/653.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/654.jpg"><img src="img/dgr/654.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/655.jpg"><img src="img/dgr/655.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/656.jpg"><img src="img/dgr/656.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/657.jpg"><img src="img/dgr/657.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/658.jpg"><img src="img/dgr/658.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/659.jpg"><img src="img/dgr/659.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/660.jpg"><img src="img/dgr/660.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/661.jpg"><img src="img/dgr/661.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/662.jpg"><img src="img/dgr/662.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/663.jpg"><img src="img/dgr/663.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/664.jpg"><img src="img/dgr/664.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/665.jpg"><img src="img/dgr/665.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/666.jpg"><img src="img/dgr/666.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/667.jpg"><img src="img/dgr/667.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/668.jpg"><img src="img/dgr/668.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/669.jpg"><img src="img/dgr/669.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/670.jpg"><img src="img/dgr/670.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/671.jpg"><img src="img/dgr/671.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/672.jpg"><img src="img/dgr/672.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/673.jpg"><img src="img/dgr/673.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/674.jpg"><img src="img/dgr/674.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/675.jpg"><img src="img/dgr/675.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/676.jpg"><img src="img/dgr/676.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/677.jpg"><img src="img/dgr/677.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/678.jpg"><img src="img/dgr/678.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/679.jpg"><img src="img/dgr/679.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/680.jpg"><img src="img/dgr/680.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/681.jpg"><img src="img/dgr/681.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/682.jpg"><img src="img/dgr/682.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/683.jpg"><img src="img/dgr/683.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/684.jpg"><img src="img/dgr/684.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/685.jpg"><img src="img/dgr/685.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/686.jpg"><img src="img/dgr/686.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/687.jpg"><img src="img/dgr/687.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/688.jpg"><img src="img/dgr/688.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/689.jpg"><img src="img/dgr/689.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/690.jpg"><img src="img/dgr/690.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/691.jpg"><img src="img/dgr/691.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/692.jpg"><img src="img/dgr/692.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/693.jpg"><img src="img/dgr/693.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/694.jpg"><img src="img/dgr/694.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/695.jpg"><img src="img/dgr/695.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/696.jpg"><img src="img/dgr/696.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/697.jpg"><img src="img/dgr/697.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/698.jpg"><img src="img/dgr/698.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/699.jpg"><img src="img/dgr/699.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/700.jpg"><img src="img/dgr/700.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/701.jpg"><img src="img/dgr/701.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/702.jpg"><img src="img/dgr/702.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/703.jpg"><img src="img/dgr/703.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/704.jpg"><img src="img/dgr/704.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/705.jpg"><img src="img/dgr/705.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/706.jpg"><img src="img/dgr/706.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/707.jpg"><img src="img/dgr/707.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/708.jpg"><img src="img/dgr/708.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/709.jpg"><img src="img/dgr/709.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/710.jpg"><img src="img/dgr/710.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/711.jpg"><img src="img/dgr/711.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/712.jpg"><img src="img/dgr/712.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/713.jpg"><img src="img/dgr/713.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/714.jpg"><img src="img/dgr/714.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/715.jpg"><img src="img/dgr/715.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/716.jpg"><img src="img/dgr/716.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/717.jpg"><img src="img/dgr/717.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/718.jpg"><img src="img/dgr/718.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/719.jpg"><img src="img/dgr/719.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/720.jpg"><img src="img/dgr/720.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/721.jpg"><img src="img/dgr/721.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/722.jpg"><img src="img/dgr/722.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/723.jpg"><img src="img/dgr/723.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/724.jpg"><img src="img/dgr/724.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/725.jpg"><img src="img/dgr/725.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/726.jpg"><img src="img/dgr/726.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/727.jpg"><img src="img/dgr/727.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/728.jpg"><img src="img/dgr/728.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/729.jpg"><img src="img/dgr/729.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/730.jpg"><img src="img/dgr/730.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/731.jpg"><img src="img/dgr/731.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/732.jpg"><img src="img/dgr/732.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/733.jpg"><img src="img/dgr/733.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/734.jpg"><img src="img/dgr/734.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/735.jpg"><img src="img/dgr/735.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/736.jpg"><img src="img/dgr/736.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/737.jpg"><img src="img/dgr/737.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/738.jpg"><img src="img/dgr/738.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/739.jpg"><img src="img/dgr/739.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/740.jpg"><img src="img/dgr/740.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/741.jpg"><img src="img/dgr/741.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/742.jpg"><img src="img/dgr/742.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/743.jpg"><img src="img/dgr/743.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/744.jpg"><img src="img/dgr/744.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/745.jpg"><img src="img/dgr/745.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/746.jpg"><img src="img/dgr/746.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/747.jpg"><img src="img/dgr/747.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/748.jpg"><img src="img/dgr/748.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/749.jpg"><img src="img/dgr/749.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/750.jpg"><img src="img/dgr/750.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/751.jpg"><img src="img/dgr/751.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/752.jpg"><img src="img/dgr/752.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/753.jpg"><img src="img/dgr/753.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/754.jpg"><img src="img/dgr/754.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/755.jpg"><img src="img/dgr/755.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/756.jpg"><img src="img/dgr/756.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/757.jpg"><img src="img/dgr/757.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/758.jpg"><img src="img/dgr/758.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/759.jpg"><img src="img/dgr/759.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/760.jpg"><img src="img/dgr/760.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/761.jpg"><img src="img/dgr/761.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/762.jpg"><img src="img/dgr/762.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/763.jpg"><img src="img/dgr/763.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/764.jpg"><img src="img/dgr/764.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/765.jpg"><img src="img/dgr/765.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/766.jpg"><img src="img/dgr/766.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/767.jpg"><img src="img/dgr/767.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/768.jpg"><img src="img/dgr/768.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/769.jpg"><img src="img/dgr/769.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/770.jpg"><img src="img/dgr/770.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/771.jpg"><img src="img/dgr/771.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/772.jpg"><img src="img/dgr/772.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/773.jpg"><img src="img/dgr/773.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/774.jpg"><img src="img/dgr/774.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/775.jpg"><img src="img/dgr/775.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/776.jpg"><img src="img/dgr/776.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/777.jpg"><img src="img/dgr/777.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/778.jpg"><img src="img/dgr/778.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/779.jpg"><img src="img/dgr/779.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/780.jpg"><img src="img/dgr/780.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/781.jpg"><img src="img/dgr/781.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/782.jpg"><img src="img/dgr/782.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/783.jpg"><img src="img/dgr/783.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/784.jpg"><img src="img/dgr/784.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/785.jpg"><img src="img/dgr/785.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/786.jpg"><img src="img/dgr/786.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/787.jpg"><img src="img/dgr/787.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/788.jpg"><img src="img/dgr/788.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/789.jpg"><img src="img/dgr/789.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/790.jpg"><img src="img/dgr/790.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/791.jpg"><img src="img/dgr/791.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/792.jpg"><img src="img/dgr/792.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/793.jpg"><img src="img/dgr/793.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/794.jpg"><img src="img/dgr/794.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/795.jpg"><img src="img/dgr/795.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/796.jpg"><img src="img/dgr/796.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/797.jpg"><img src="img/dgr/797.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/798.jpg"><img src="img/dgr/798.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/799.jpg"><img src="img/dgr/799.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/800.jpg"><img src="img/dgr/800.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/801.jpg"><img src="img/dgr/801.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/802.jpg"><img src="img/dgr/802.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/803.jpg"><img src="img/dgr/803.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/804.jpg"><img src="img/dgr/804.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/805.jpg"><img src="img/dgr/805.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/806.jpg"><img src="img/dgr/806.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/807.jpg"><img src="img/dgr/807.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/808.jpg"><img src="img/dgr/808.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/809.jpg"><img src="img/dgr/809.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/810.jpg"><img src="img/dgr/810.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/811.jpg"><img src="img/dgr/811.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/812.jpg"><img src="img/dgr/812.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/813.jpg"><img src="img/dgr/813.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/814.jpg"><img src="img/dgr/814.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/815.jpg"><img src="img/dgr/815.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/816.jpg"><img src="img/dgr/816.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/817.jpg"><img src="img/dgr/817.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/818.jpg"><img src="img/dgr/818.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/819.jpg"><img src="img/dgr/819.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/820.jpg"><img src="img/dgr/820.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/821.jpg"><img src="img/dgr/821.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/822.jpg"><img src="img/dgr/822.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/823.jpg"><img src="img/dgr/823.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/824.jpg"><img src="img/dgr/824.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/825.jpg"><img src="img/dgr/825.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/826.jpg"><img src="img/dgr/826.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/827.jpg"><img src="img/dgr/827.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/828.jpg"><img src="img/dgr/828.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/829.jpg"><img src="img/dgr/829.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/830.jpg"><img src="img/dgr/830.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/831.jpg"><img src="img/dgr/831.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/832.jpg"><img src="img/dgr/832.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/833.jpg"><img src="img/dgr/833.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/834.jpg"><img src="img/dgr/834.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/835.jpg"><img src="img/dgr/835.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/836.jpg"><img src="img/dgr/836.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/837.jpg"><img src="img/dgr/837.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/838.jpg"><img src="img/dgr/838.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/839.jpg"><img src="img/dgr/839.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/840.jpg"><img src="img/dgr/840.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/841.jpg"><img src="img/dgr/841.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/842.jpg"><img src="img/dgr/842.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/843.jpg"><img src="img/dgr/843.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/844.jpg"><img src="img/dgr/844.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/845.jpg"><img src="img/dgr/845.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/846.jpg"><img src="img/dgr/846.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/847.jpg"><img src="img/dgr/847.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/848.jpg"><img src="img/dgr/848.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/849.jpg"><img src="img/dgr/849.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/850.jpg"><img src="img/dgr/850.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/851.jpg"><img src="img/dgr/851.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/852.jpg"><img src="img/dgr/852.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/853.jpg"><img src="img/dgr/853.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/854.jpg"><img src="img/dgr/854.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/855.jpg"><img src="img/dgr/855.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/856.jpg"><img src="img/dgr/856.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/857.jpg"><img src="img/dgr/857.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/858.jpg"><img src="img/dgr/858.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/859.jpg"><img src="img/dgr/859.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/860.jpg"><img src="img/dgr/860.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/861.jpg"><img src="img/dgr/861.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/862.jpg"><img src="img/dgr/862.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/863.jpg"><img src="img/dgr/863.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/864.jpg"><img src="img/dgr/864.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/865.jpg"><img src="img/dgr/865.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/866.jpg"><img src="img/dgr/866.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/867.jpg"><img src="img/dgr/867.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/868.jpg"><img src="img/dgr/868.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/869.jpg"><img src="img/dgr/869.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/870.jpg"><img src="img/dgr/870.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/871.jpg"><img src="img/dgr/871.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/872.jpg"><img src="img/dgr/872.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/873.jpg"><img src="img/dgr/873.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/874.jpg"><img src="img/dgr/874.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/875.jpg"><img src="img/dgr/875.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/876.jpg"><img src="img/dgr/876.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/877.jpg"><img src="img/dgr/877.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/878.jpg"><img src="img/dgr/878.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/879.jpg"><img src="img/dgr/879.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/880.jpg"><img src="img/dgr/880.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/881.jpg"><img src="img/dgr/881.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/882.jpg"><img src="img/dgr/882.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/883.jpg"><img src="img/dgr/883.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/884.jpg"><img src="img/dgr/884.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/885.jpg"><img src="img/dgr/885.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/886.jpg"><img src="img/dgr/886.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/887.jpg"><img src="img/dgr/887.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/888.jpg"><img src="img/dgr/888.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/889.jpg"><img src="img/dgr/889.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/890.jpg"><img src="img/dgr/890.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/891.jpg"><img src="img/dgr/891.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/892.jpg"><img src="img/dgr/892.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/893.jpg"><img src="img/dgr/893.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/894.jpg"><img src="img/dgr/894.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/895.jpg"><img src="img/dgr/895.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/896.jpg"><img src="img/dgr/896.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/897.jpg"><img src="img/dgr/897.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/898.jpg"><img src="img/dgr/898.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/899.jpg"><img src="img/dgr/899.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/900.jpg"><img src="img/dgr/900.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/901.jpg"><img src="img/dgr/901.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/902.jpg"><img src="img/dgr/902.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/903.jpg"><img src="img/dgr/903.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/904.jpg"><img src="img/dgr/904.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/905.jpg"><img src="img/dgr/905.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/906.jpg"><img src="img/dgr/906.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/907.jpg"><img src="img/dgr/907.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/908.jpg"><img src="img/dgr/908.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/909.jpg"><img src="img/dgr/909.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/910.jpg"><img src="img/dgr/910.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/911.jpg"><img src="img/dgr/911.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/912.jpg"><img src="img/dgr/912.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/913.jpg"><img src="img/dgr/913.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/914.jpg"><img src="img/dgr/914.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/915.jpg"><img src="img/dgr/915.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/916.jpg"><img src="img/dgr/916.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/917.jpg"><img src="img/dgr/917.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/918.jpg"><img src="img/dgr/918.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/919.jpg"><img src="img/dgr/919.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/920.jpg"><img src="img/dgr/920.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/921.jpg"><img src="img/dgr/921.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/922.jpg"><img src="img/dgr/922.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/923.jpg"><img src="img/dgr/923.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/924.jpg"><img src="img/dgr/924.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/925.jpg"><img src="img/dgr/925.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/926.jpg"><img src="img/dgr/926.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/927.jpg"><img src="img/dgr/927.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/928.jpg"><img src="img/dgr/928.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/929.jpg"><img src="img/dgr/929.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/930.jpg"><img src="img/dgr/930.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/931.jpg"><img src="img/dgr/931.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/932.jpg"><img src="img/dgr/932.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/933.jpg"><img src="img/dgr/933.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/934.jpg"><img src="img/dgr/934.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/935.jpg"><img src="img/dgr/935.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/936.jpg"><img src="img/dgr/936.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/937.jpg"><img src="img/dgr/937.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/938.jpg"><img src="img/dgr/938.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/939.jpg"><img src="img/dgr/939.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/940.jpg"><img src="img/dgr/940.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/941.jpg"><img src="img/dgr/941.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/942.jpg"><img src="img/dgr/942.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/943.jpg"><img src="img/dgr/943.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/944.jpg"><img src="img/dgr/944.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/945.jpg"><img src="img/dgr/945.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/946.jpg"><img src="img/dgr/946.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/947.jpg"><img src="img/dgr/947.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/948.jpg"><img src="img/dgr/948.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/949.jpg"><img src="img/dgr/949.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/950.jpg"><img src="img/dgr/950.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/951.jpg"><img src="img/dgr/951.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/952.jpg"><img src="img/dgr/952.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/953.jpg"><img src="img/dgr/953.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/954.jpg"><img src="img/dgr/954.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/955.jpg"><img src="img/dgr/955.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/956.jpg"><img src="img/dgr/956.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/957.jpg"><img src="img/dgr/957.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/958.jpg"><img src="img/dgr/958.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/959.jpg"><img src="img/dgr/959.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/960.jpg"><img src="img/dgr/960.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/961.jpg"><img src="img/dgr/961.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/962.jpg"><img src="img/dgr/962.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/963.jpg"><img src="img/dgr/963.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/964.jpg"><img src="img/dgr/964.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/965.jpg"><img src="img/dgr/965.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/966.jpg"><img src="img/dgr/966.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/967.jpg"><img src="img/dgr/967.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/968.jpg"><img src="img/dgr/968.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/969.jpg"><img src="img/dgr/969.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/970.jpg"><img src="img/dgr/970.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/971.jpg"><img src="img/dgr/971.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/972.jpg"><img src="img/dgr/972.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/973.jpg"><img src="img/dgr/973.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/974.jpg"><img src="img/dgr/974.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/975.jpg"><img src="img/dgr/975.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/976.jpg"><img src="img/dgr/976.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/977.jpg"><img src="img/dgr/977.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/978.jpg"><img src="img/dgr/978.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/979.jpg"><img src="img/dgr/979.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/980.jpg"><img src="img/dgr/980.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/981.jpg"><img src="img/dgr/981.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/982.jpg"><img src="img/dgr/982.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/983.jpg"><img src="img/dgr/983.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/984.jpg"><img src="img/dgr/984.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/985.jpg"><img src="img/dgr/985.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/986.jpg"><img src="img/dgr/986.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/987.jpg"><img src="img/dgr/987.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/988.jpg"><img src="img/dgr/988.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/989.jpg"><img src="img/dgr/989.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/990.jpg"><img src="img/dgr/990.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/991.jpg"><img src="img/dgr/991.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/992.jpg"><img src="img/dgr/992.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/993.jpg"><img src="img/dgr/993.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/994.jpg"><img src="img/dgr/994.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/995.jpg"><img src="img/dgr/995.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/996.jpg"><img src="img/dgr/996.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/997.jpg"><img src="img/dgr/997.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/998.jpg"><img src="img/dgr/998.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/999.jpg"><img src="img/dgr/999.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1000.jpg"><img src="img/dgr/1000.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1001.jpg"><img src="img/dgr/1001.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1002.jpg"><img src="img/dgr/1002.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1003.jpg"><img src="img/dgr/1003.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1004.jpg"><img src="img/dgr/1004.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1005.jpg"><img src="img/dgr/1005.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1006.jpg"><img src="img/dgr/1006.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1007.jpg"><img src="img/dgr/1007.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1008.jpg"><img src="img/dgr/1008.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1009.jpg"><img src="img/dgr/1009.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1010.jpg"><img src="img/dgr/1010.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1011.jpg"><img src="img/dgr/1011.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1012.jpg"><img src="img/dgr/1012.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1013.jpg"><img src="img/dgr/1013.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1014.jpg"><img src="img/dgr/1014.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1015.jpg"><img src="img/dgr/1015.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1016.jpg"><img src="img/dgr/1016.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1017.jpg"><img src="img/dgr/1017.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1018.jpg"><img src="img/dgr/1018.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1019.jpg"><img src="img/dgr/1019.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1020.jpg"><img src="img/dgr/1020.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1021.jpg"><img src="img/dgr/1021.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1022.jpg"><img src="img/dgr/1022.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1023.jpg"><img src="img/dgr/1023.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1024.jpg"><img src="img/dgr/1024.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1025.jpg"><img src="img/dgr/1025.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1026.jpg"><img src="img/dgr/1026.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1027.jpg"><img src="img/dgr/1027.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1028.jpg"><img src="img/dgr/1028.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1029.jpg"><img src="img/dgr/1029.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1030.jpg"><img src="img/dgr/1030.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1031.jpg"><img src="img/dgr/1031.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1032.jpg"><img src="img/dgr/1032.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1033.jpg"><img src="img/dgr/1033.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1034.jpg"><img src="img/dgr/1034.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1035.jpg"><img src="img/dgr/1035.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1036.jpg"><img src="img/dgr/1036.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1037.jpg"><img src="img/dgr/1037.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1038.jpg"><img src="img/dgr/1038.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1039.jpg"><img src="img/dgr/1039.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1040.jpg"><img src="img/dgr/1040.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1041.jpg"><img src="img/dgr/1041.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1042.jpg"><img src="img/dgr/1042.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1043.jpg"><img src="img/dgr/1043.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1044.jpg"><img src="img/dgr/1044.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1045.jpg"><img src="img/dgr/1045.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1046.jpg"><img src="img/dgr/1046.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1047.jpg"><img src="img/dgr/1047.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1048.jpg"><img src="img/dgr/1048.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1049.jpg"><img src="img/dgr/1049.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1050.jpg"><img src="img/dgr/1050.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1051.jpg"><img src="img/dgr/1051.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1052.jpg"><img src="img/dgr/1052.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1053.jpg"><img src="img/dgr/1053.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1054.jpg"><img src="img/dgr/1054.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1055.jpg"><img src="img/dgr/1055.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1056.jpg"><img src="img/dgr/1056.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1057.jpg"><img src="img/dgr/1057.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1058.jpg"><img src="img/dgr/1058.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1059.jpg"><img src="img/dgr/1059.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1060.jpg"><img src="img/dgr/1060.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1061.jpg"><img src="img/dgr/1061.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1062.jpg"><img src="img/dgr/1062.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1063.jpg"><img src="img/dgr/1063.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1064.jpg"><img src="img/dgr/1064.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1065.jpg"><img src="img/dgr/1065.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1066.jpg"><img src="img/dgr/1066.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1067.jpg"><img src="img/dgr/1067.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1068.jpg"><img src="img/dgr/1068.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1069.jpg"><img src="img/dgr/1069.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1070.jpg"><img src="img/dgr/1070.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1071.jpg"><img src="img/dgr/1071.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1072.jpg"><img src="img/dgr/1072.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1073.jpg"><img src="img/dgr/1073.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1074.jpg"><img src="img/dgr/1074.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1075.jpg"><img src="img/dgr/1075.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1076.jpg"><img src="img/dgr/1076.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1077.jpg"><img src="img/dgr/1077.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1078.jpg"><img src="img/dgr/1078.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1079.jpg"><img src="img/dgr/1079.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1080.jpg"><img src="img/dgr/1080.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1081.jpg"><img src="img/dgr/1081.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1082.jpg"><img src="img/dgr/1082.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1083.jpg"><img src="img/dgr/1083.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1084.jpg"><img src="img/dgr/1084.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1085.jpg"><img src="img/dgr/1085.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1086.jpg"><img src="img/dgr/1086.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1087.jpg"><img src="img/dgr/1087.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1088.jpg"><img src="img/dgr/1088.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1089.jpg"><img src="img/dgr/1089.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1090.jpg"><img src="img/dgr/1090.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1091.jpg"><img src="img/dgr/1091.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1092.jpg"><img src="img/dgr/1092.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1093.jpg"><img src="img/dgr/1093.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1094.jpg"><img src="img/dgr/1094.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1095.jpg"><img src="img/dgr/1095.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1096.jpg"><img src="img/dgr/1096.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1097.jpg"><img src="img/dgr/1097.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1098.jpg"><img src="img/dgr/1098.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1099.jpg"><img src="img/dgr/1099.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1100.jpg"><img src="img/dgr/1100.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1101.jpg"><img src="img/dgr/1101.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1102.jpg"><img src="img/dgr/1102.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1103.jpg"><img src="img/dgr/1103.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1104.jpg"><img src="img/dgr/1104.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1105.jpg"><img src="img/dgr/1105.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1106.jpg"><img src="img/dgr/1106.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1107.jpg"><img src="img/dgr/1107.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1108.jpg"><img src="img/dgr/1108.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1109.jpg"><img src="img/dgr/1109.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1110.jpg"><img src="img/dgr/1110.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1111.jpg"><img src="img/dgr/1111.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1112.jpg"><img src="img/dgr/1112.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1113.jpg"><img src="img/dgr/1113.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1114.jpg"><img src="img/dgr/1114.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1115.jpg"><img src="img/dgr/1115.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1116.jpg"><img src="img/dgr/1116.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1117.jpg"><img src="img/dgr/1117.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1118.jpg"><img src="img/dgr/1118.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1119.jpg"><img src="img/dgr/1119.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1120.jpg"><img src="img/dgr/1120.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1121.jpg"><img src="img/dgr/1121.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1122.jpg"><img src="img/dgr/1122.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1123.jpg"><img src="img/dgr/1123.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1124.jpg"><img src="img/dgr/1124.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1125.jpg"><img src="img/dgr/1125.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1126.jpg"><img src="img/dgr/1126.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1127.jpg"><img src="img/dgr/1127.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1128.jpg"><img src="img/dgr/1128.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1129.jpg"><img src="img/dgr/1129.jpg" alt="">
+			<!-- Gallery Image --><a class="single-gallery-item" href="img/dgr/1130.jpg"><img src="img/dgr/1130.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Nav -->
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container px-0">
+        <!-- =================================== -->
+        <!-- Paste your Footer Content from here -->
+        <!-- =================================== -->
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+          <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+            <li><a href="index.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+			<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+			</svg><span>Home</span></a></li>
+            <li><a href="dkmn.html">
+                <svg class="bi bi-folder2-open" width="25" height="25" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"></path>
+                </svg><span>Dökümanlar</span></a></li>
+            <li><a href="ttnk.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+				<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+				<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+				</svg><span>Üst Yazı</span></a></li>
+		   <li><a href="web.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 14 14">
+				<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+				<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+				</svg><span>Web Siteler</span></a></li>
+            <li><a href="search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg><span>Search</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- All JavaScript Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideToggle.min.js"></script>
+    <script src="js/internet-status.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/vanilla-dataTables.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/magic-grid.min.js"></script>
+    <script src="js/dark-rtl.js"></script>
+    <script src="js/active.js"></script>
+    <!-- PWA -->
+    <script src="js/pwa.js"></script>
+  </body>
+</html>
