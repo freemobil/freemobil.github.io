@@ -1,0 +1,639 @@
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Affan - PWA Mobile HTML Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0134d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>Güven Timleri</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+    <!-- Internet Connection Status -->
+    <!-- # This code for showing internet connection status -->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Dark mode switching -->
+    <div class="dark-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="dark-mode-text text-center">
+          <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+          </svg>
+          <p class="mb-0">Switching to dark mode</p>
+        </div>
+        <div class="light-mode-text text-center">
+          <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </svg>
+          <p class="mb-0">Switching to light mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- RTL mode switching -->
+    <div class="rtl-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="rtl-mode-text text-center">
+          <svg class="bi bi-text-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to RTL mode</p>
+        </div>
+        <div class="ltr-mode-text text-center">
+          <svg class="bi bi-text-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to default mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- Setting Popup Overlay -->
+    <div id="setting-popup-overlay"></div>
+    <!-- Setting Popup Card -->
+    <div class="card setting-popup-card shadow-lg" id="settingCard">
+      <div class="card-body">
+        <div class="container">
+          <div class="setting-heading d-flex align-items-center justify-content-between mb-3">
+            <p class="mb-0">Settings</p>
+            <div class="btn-close" id="settingCardClose"></div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="darkSwitch">
+              <label class="form-check-label" for="darkSwitch">Dark mode</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Area -->
+    <div class="header-area" id="headerArea">
+      <div class="container">
+        <!-- Header Content -->
+        <div class="header-content position-relative d-flex align-items-center justify-content-between">
+          <!-- Back Button -->
+          <div class="back-button"><a href="index.html">
+              <svg class="bi bi-arrow-left-short" width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+              </svg></a></div>
+          <!-- Page Title -->
+          <div class="page-heading">
+            <h4 class="mb-0">Şüpheli Şahıs Sorgu</h4>
+          </div>
+          <!-- Settings -->
+          <div class="setting-wrapper">
+            <div class="setting-trigger-btn" id="settingTriggerBtn">
+              <svg class="bi bi-gear" width="18" height="18" viewBox="0 0 16 16" fill="url(#gradientSettings)" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gradientSettings" spreadMethod="pad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0" style="stop-color: #0134d4; stop-opacity:1;"></stop>
+                    <stop offset="100%" style="stop-color: #28a745; stop-opacity:1;"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"></path>
+                <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"></path>
+              </svg><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper py-3">
+      <div class="container">
+        <!-- Element Heading -->
+<html lang="tr" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>Şüpheli Şahıs Sorgu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  
+<style>
+.fast-search {
+  margin-top: 12px;
+  padding: 10px;
+  color: DodgerBlue;
+  background: linear-gradient(to bottom left, AliceBlue 30%, DodgerBlue);
+}
+.fast-search.fast-search-opposite {
+  background: linear-gradient(to bottom right, AliceBlue 30%, DodgerBlue);
+}
+
+.fast-search-title {
+  font-size: 24px;
+  text-shadow: 0 2px 0 White;
+  margin: 0 0 10px;
+}
+
+.fast-search-title2 {
+  font-size: 18px;
+  text-shadow: 0 2px 0 White;
+  margin: 0 0 10px;
+}
+
+.fast-search-input {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.fast-search-opposite .fast-search-input {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.fast-search-list {
+  margin-bottom: 0;
+}
+
+.fast-search-list-item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.fast-search-list-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.fast-search-list-item:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-2">
+      <div class="fast-search fast-search-opposite">
+        <h1 class="text-center fast-search-title">ŞÜPHELİ ŞAHIS SORGULAMA</h1>
+        <input class="form-control fast-search-input" id="search_input" placeholder="Search">
+        <ul class="list-group fast-search-list" id="search_list">
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/001.jpg"  Kenan AKYÜREK 22558779184</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/002.jpg"  Hasan AĞIRMAN 27596288186</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/003.jpg"  Solmaz ŞİVAR 15673467616</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/062.jpg"  Umut ŞİVAR 26026123530</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/004.jpg"  Ahmet Serpen</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/009.jpg"  Rachdi Elkbaili</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/006.jpg"  Cem UYAR 67633268078</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/007.jpg"  Uğur AKSU 36538663370</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/008.jpg"  Leyla KOÇAK 22924226762</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/061.jpg"  Ebru KOÇAK 12134501186</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/010.jpg"  Arif KOÇAK 24082188104</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/011.jpg"  Engin KANMAZ 27997657260</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/012.jpg"  Serkan KANMAZ 22330846738</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/013.jpg"  Muhammed KANMAZ 27901660416</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/014.jpg"  Ömer KANMAZ 27934659364</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/015.jpg"  Yılmaz KANMAZ 27958658572</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/016.jpg"  Abbas ÖZTÜRK 19651935616</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/017.jpg"  İnan AKKOYUN 73489059364</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/018.jpg"  Sercan GÜMÜŞTEN</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/019.jpg"  Nurida İBRAHİMOVA 99352455866</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/020.jpg"  Günel ASGAROVA 99032618840</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/021.jpg"  Hasan AHMEDOV 1989/Azerbaycan</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/022.jpg"  Merhamet POGYEV 1993/Azerbaycan</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/023.jpg"  Evren ARSLAN 16334509270</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/024.jpg"  Can Polat AYDIN 53470155404</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/025.jpg"  Serhat ARSLANTAŞ 14020766938</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/026.jpg"  Eyüp Can TOYTEKİN 49075266942</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/027.jpg"  Nusret GÖKÇEN 17789617466</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/028.jpg"  Çınar Dikmen </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/029.jpg"  Taylan UZUNKALA </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/030.jpg"  ALIREZA ASLANY/İran</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/031.jpg"  Hasan NEDEF 99670636534	</a></li>		
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/032.jpg"  Serkan ARITÜRK 42148929256</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/033.jpg"  Adnan GÖZGÜ 39332023128</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/034.jpg"  Yılmaz GÖZGÜ 39521016894</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/035.jpg"  Baran ATEŞLİ 14906405920</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/036.jpg"  Deniz SÜREN 30770291964</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/037.jpg"  Özcan ÇELEP 17117114834</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/038.jpg"  Nusret ARSLAN 10856543248</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/039.jpg"  Sinan YÜKSEL 20819562148</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/040.jpg"  Osman KIVANÇ 29389886418</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/041.jpg"  Sinan KABUL 18791889810</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/042.jpg"  Tunahan YILMAZ 21352329984</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/043.jpg"  Furkan ALTAN 62533370784</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/044.jpg"  Barış GÜLERMAN 45064382754</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/045.jpg"  Ender ALMADIK 40735141814</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/046.jpg"  Rahman Mustafa KARACA</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/047.jpg"  Onur İNCE  </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/048.jpg"  Kemal PALAS</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/049.jpg"  Nafi AKINCI 67384113542</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/050.jpg"  Serkan ÇALGICI 42547480846</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/051.jpg"  Erdoğan SOYBİR 38008647040</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/052.jpg"  Erhan ÇOBAN 42619819628</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/053.jpg"  Serdal BERGİL 52030444934</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/054.jpg"  Kurtça Mehmet YILMAZ 13019884004</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/060.jpg"  Şuayip YILMAZ 13172878940</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/055.jpg"  Feridun Yıldız</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/056.jpg"  Serdar ATA 66427001174</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/057.jpg"  Chary JUMAYEV 99162349058</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/058.jpg"  Aziz JUMAYEV 99398918578</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/059.jpg"  Mahmut PEHLİVANOĞLU 16655973552</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/063.jpg"  Barış ÇEBİ 52612630196</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/064.jpg"  Mert EKE </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/065.jpg"  Buket EKE </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/066.jpg"  Faruk GÖREN 61672073990</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/067.jpg"  Şaban YILDIRIM 25688112104</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/068.jpg"  İsrafil AĞBAŞ 13370143192</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/069.jpg"  Eyüp GEZGİN 40366468434	</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/070.jpg"  Fazlı KAMANLI 52903273876</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/071.jpg"  Ahmet GÜR 56359480864</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/072.jpg"  Deniz ÖZDEMİR 55222508728</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/073.jpg"  Nurullah YILDIRIM </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/074.jpg"  Doğan HALİS 24970102106</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/075.jpg"  İlhan KILIÇÇEKEN 42169508072</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/076.jpg"  Gökhan ABANLI 46288370794</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/077.jpg"  Önder ÖZDEMİR 57439358486</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/078.jpg"  Erdinç USLU 15530458764</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/079.jpg"  Oğuzhan ÖZKARAKAŞ 31186848896</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/080.jpg"  Mehmet YALVAÇ 19660293646</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/081.jpg"  Ergün SEZİŞ 49300601890</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/082.jpg"  Eyüp BAYÇELEBİ 32209476430</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/083.jpg"  İbrahim GÖKMEN 20923206778</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/084.jpg"  Fatih BALLİK 23752075416</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/085.jpg"  Hakan KANŞIRAY 49519594556</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/086.jpg"  Ahmet ÇAĞLAR 10739439040</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/087.jpg"  Uğur UÇAR 50641305330</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/088.jpg"  Şenol AKSOY </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/089.jpg"  Berk BOSTANOĞLU 46261503096</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/090.jpg"  Cebrail KUVAYTAN 55237204110</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/091.jpg"  Batuhan KARACA 37052043914</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/092.jpg"  Onur Remzi YENİCİ 52213626614</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/093.jpg"  Mehmet SARISOY 36481688666</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/094.jpg"  Muharrem TAŞ 34012418744</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/095.jpg"  Ahmet ÖZDEMİR 20804645436</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/096.jpg"  Murat OKKAY 35891231462</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/097.jpg"  Madatyan ARMAN AS0688704</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/098.jpg"  Turgut USLU 21713328502</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/099.jpg"  Yunus SOYLU 24110258328</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/100.jpg"  Etem YAZGI 01.01.1966</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/101.jpg"  Uğur BAYRAKTAR 12236401582</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/102.jpg"  Cihan TURGUT 13471759018</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/103.jpg"  Kadir KUMAŞ 19232272840</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/104.jpg"  Abdülsamet ŞİŞMAN 22870920516</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/105.jpg"  Serkan CANLI 30899014116</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/106.jpg"  İsmail TOPRAK 11883072640</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/107.jpg"  Bilgehan MUTAY 57109562410</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/108.jpg"  Ali YILMAZ 18562746526</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/109.jpg"  Ramazan KILIÇ 24646008886</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/110.jpg"  Hasan KIŞLA 44530791014</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/111.jpg"  Deniz ÖZDEMİR 52222508728</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/112.jpg"  Özcan YILDIRIM </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/113.jpg"  Mehmet Cemal GÜL 38938615980</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/114.jpg"  Yusuf ALDEMİR 18290601692</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/115.jpg"  Halil ÖZER 15401302646</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/116.jpg"  Abderranmane MAISI </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/117.jpg"  Ersin AYDOĞAN 45223158886 </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/118.jpg"  Murat AYDEMİR 60859482068</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/119.jpg"  Türkyılmaz TOKER 41113525530</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/120.jpg"  İsa ÇINAR 38074592008</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/121.jpg"  Samet AY 17504072006</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/122.jpg"  Ozan ŞİRELİ 50821167246</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/123.jpg"  Mehmet KAYA 13967963240</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/124.jpg"  Enes ATİLLA 26090032394</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/125.jpg"  Yunus Emre ABO 56086466674</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/126.jpg"  Emirhan DUMAN 15005787160</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/127.jpg"  Cihan KOLCU </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/128.jpg"  Hakan BOZBEŞPARMAK 14384518396</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/129.jpg"  Ali BASKIN 37279742270</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/130.jpg"  Doboş CLAUDIA/Romanya 1751026272691</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/131.jpg"  Hasan GÖÇER 50074112482 </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/132.jpg"  Erkan YAKUT 18631314120</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/133.jpg"  Niyaz Gül SHİNWARİ </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/134.jpg"  Mustafa AYDIN 26554836650</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/135.jpg"  Selçuk ALGÜN 26062662482</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/136.jpg"  Soner ILGIN 19123854070</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/137.jpg"  Gökhan Sertkaya</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/138.jpg"  Murat BAYTAŞ 39682925464</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/139.jpg"  Sinan TOZAN 70063037534</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/140.jpg"  Özge DUT 49891908132</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/141.jpg"  Serdal ÇELİK 17002848506</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/142.jpg"  Metin Can KOÇAL 16709113682</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/dgr/143.jpg"  Nihat ÖNER 21034231994</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/001.jpg"  Yusuf KELEŞ 33454800940</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/002.jpg"  Yaren ÇAKAN 31186266294</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/005.jpg"  Ayşe ALANFER 30769167942</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/006.jpg"  Erdal ARISAL 44827375460</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/007.jpg"  Aslı ARSLANALP 47530356238</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/008.jpg"  İsmet CENGİZ 20336829700</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/009.jpg"  Canan ÇELİKDAĞ 14033402670</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/010.jpg"  Dilber ATMACA 28753355086</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/011.jpg"  Emir ATMACA </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/012.jpg"  İlyas ASLAN 37837211934</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/013.jpg"  İlker YEŞİLİPEK 48643266346</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/014.jpg"  Kezban TİTİZLER 10450962704</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/015.jpg"  Gül TİTİZLER 29209339704</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/014.jpg"  Emine UYSAL 10471962066</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/016.jpg"  Ekrem AKA 17011382216</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/017.jpg"  Salih KARKUŞ 21632776026</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/018.jpg"  Tural ORTAK 42994086844</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/019.jpg"  Tuğba SEYMANER 18755507682</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/020.jpg"  Hamiyet SEYMANER 18740508182</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/021.jpg"  Damla GÜRBÜZER 10103986828</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/022.jpg"  Ayşe ŞENTÜRK</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/023.jpg"  Nuray TOMAK</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/024.jpg"  Nur TAMKOŞAR 18371258364</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/025.jpg"  İrem Gülçiçek ÖZER 21308163532</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/026.jpg"  Aycan UZDİLLİ 34729007002</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/027.jpg"  Yunus KELEŞ 14273569782</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/028.jpg"  Lamia ÖZMUT 26122447660</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/029.jpg"  Emir Ali TANRIKULU 37135092662</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/030.jpg"  Hamza TİTİZLER </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/031.jpg"  Fatma Sultan ÇEDİK 34513167448</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/032.jpg"  Serpil ÖZMUT</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/033.jpg"  Neriman TİTİZLER</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/034.jpg"  Aygün ÖZCAN 43837026058</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/035.jpg"  Pınar BOZAN 12833027062</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/036.jpg"  Ayhan YAKIŞIR 46288418618</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/037.jpg"  Halil İbrahim KOÇ 29912196144</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/038.jpg"  Onurhan SUNER 35525372608</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/039.jpg"  Hacı Salih AKMEŞE 10591375326</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/040.jpg"  Emrullah OKTATAR 36811595176</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/041.jpg"  Bahar KURT 99850202320</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/042.jpg"  Aydan ÖZBAY 62107139380</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/043.jpg"  Doğan KARASÖĞÜT 10927956762</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/044.jpg"  Müjde ŞENYÜZ 10349524648</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/045.jpg"  Nigar GARİPLER 50941180446</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/046.jpg"  Zeki KAHRİMAN 23909332270</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/047.jpg"  Ahmet SAZ 39103176886</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/048.jpg"  Ercan KÖKEL 11347827700</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/049.jpg"  Halil GÖL 20795098044</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/050.jpg"  Samet KÜÇÜK 47506655648</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/051.jpg"  Dilber METE 20938613158</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/052.jpg"  Hasret KAÇAR </a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/053.jpg"  Emine ÇELİK 12689948344</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/054.jpg"  Berkan KELEŞ 14273570122</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/055.jpg"  Nuray ADIKAL 26347435206</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/056.jpg"  Selen TAKU 50092500618</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/057.jpg"  Canan MAZLUM 48712164542</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/058.jpg"  Asya BAŞSİMİTÇİ</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/059.jpg"  Yeşim YEVGUN</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/060.jpg"  Yeşim YEŞİLTOPRAK 39916234186</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/061.jpg"  Sultan KALAYCI 10898507840</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/062.jpg"  Bülent YAKIŞIR</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/063.jpg"  Nuriye YEŞİLLER 16214328366</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/064.jpg"  Dilara YILMAZ 53443000144</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/065.jpg"  Aleyna ÖZKIRAN 21155199890</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/066.jpg"  Özgür İMERT 24958958718</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/067.jpg"  Tuğçe ÇAĞLAR 29164932668</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/068.jpg"  Ece ÇAĞLAR 17540968066</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/069.jpg"  Gülpembe KURT 34061417354</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/070.jpg"  Yağmur KURT 12530483062</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/071.jpg"  Emine ZEYREK</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/072.jpg"  Maviş IRMAK</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/073.jpg"  Naz KÜÇÜKBOYACI 51901142474</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/074.jpg"  Anıl ÖZDEMİR 56230177562</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/075.jpg"  Demet GÜRBÜZER 30737299224</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/076.jpg"  Tuncay BÜYÜK 33140192250</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/077.jpg"  Muhammet ÖZMUT 38235013332</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/078.jpg"  Selin MEYDANCI 11294494802</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/079.jpg"  Aycan TANRISEVERGİL 47272301916</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/080.jpg"  Asya TANRISEVERGİL 22933896024</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/081.jpg"  Hasret TANRISEVERGİL 29467331106</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/082.jpg"  Münevver CANBAZ</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/083.jpg"  Kardelen BAŞSİMİTÇİ 40498978368</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/084.jpg"  Songül KANIK 23552114834</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/085.jpg"  Birsen ATEŞGÜNEŞ 51724147922</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/086.jpg"  Kazım KOYUN 11732081554</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/087.jpg"  Ramazan Tarık ÖZDEMİR</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/088.jpg"  Safiye LAMA</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/089.jpg"  Barış KARADEMİR 58171276366</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/090.jpg"  Haydar MAYALI 11519383692</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/091.jpg"  İbrahim Halil YANAR 19831295424</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/092.jpg"  Gaye YILDIZ 10898508076</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/093.jpg"  Diyadin ÇOBAN 33580367454</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/094.jpg"  İrem DİMEN 11608569646</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/095.jpg"  Naciye BAKIRHAN 39388619276</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/096.jpg"  Ebru DEDELER 30478589936</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/097.jpg"  Zübeyd TUTUŞ 20327530394</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/098.jpg"  Okan ATABİNEN 39979548756</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/099.jpg"  Cemile AY 42877004934</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/100.jpg"  Ceylan VAYKİ 48418292198</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/101.jpg"  Ömer YAVUZ 16156406290</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/102.jpg"  Ramazan AYDOĞDU 61303381746</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/103.jpg"  Hüsnü YILDIRIM 10427116338</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/104.jpg"  Emre ATABİNEN 57577213692</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/105.jpg"  Birgül TANRISEVERGİL 16232332338</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/106.jpg"  Şirin ELGÖRMÜŞ 10414950600</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/107.jpg"  Celal ALTAY 36505263336</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/108.jpg"  Can YASAVUR 13274384608</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/109.jpg"  Hediye TANİREL 52429133784</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/110.jpg"  Elif ŞAHİN 14845816276</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/111.jpg"  Nazar BAKIRHAN 53242773744</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/112.jpg"  Kutlay FAK 51400770420</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/113.jpg"  Hasret TANRISEVERGİL 29467331106</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/114.jpg"  Cem ERSUN 56329032246</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/115.jpg"  Azize ESER 10460597248</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/116.jpg"  Serap BAKIRYAPAN 10084961784</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/117.jpg"  Gül YELEĞEN 17779735590</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/118.jpg"  ILGIMA SAIFUDINOVA</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/119.jpg"  Hatice Özer</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/120.jpg"  Tayfun ARSLAN 39166208432</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/121.jpg"  Yaren DİMEN 11605569700</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/122.jpg"  Birol KIZILOĞLU</a></li>
+			<li class="list-group-item fast-search-list-item"><img src="img/ynksc/123.jpg"  Aygün KARASÖĞÜT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+      <script id="rendered-js" >
+/**
+ * fastLiveFilter jQuery plugin 1.0.3
+ * 
+ * Copyright (c) 2011, Anthony Bush
+ * License: <https://www.opensource.org/licenses/bsd-license.php>
+ * Project Website: http://anthonybush.com/projects/jquery_fast_live_filter/
+ **/
+
+jQuery.fn.fastLiveFilter = function (list, options) {
+  // Options: input, list, timeout, callback
+  options = options || {};
+  list = jQuery(list);
+  var input = this;
+  var lastFilter = '';
+  var timeout = options.timeout || 0;
+  var callback = options.callback || function () {};
+  var pType = options.type || "filter";
+
+  var keyTimeout;
+
+  // NOTE: because we cache lis & len here, users would need to re-init the plugin
+  // if they modify the list in the DOM later.  This doesn't give us that much speed
+  // boost, so perhaps it's not worth putting it here.
+  var lis = list.children();
+  var len = lis.length;
+  var oldDisplay = len > 0 ? lis[0].style.display : "block";
+  callback(len); // do a one-time callback on initialization to make sure everything's in sync
+
+  if (pType === "search") {
+    for (var i = 0; i < len; i++) {if (window.CP.shouldStopExecution(0)) break;
+      lis[i].style.display = "none";
+    }window.CP.exitedLoop(0);
+  }
+
+  input.change(function () {
+    // var startTime = new Date().getTime();
+    var filter = input.val().toLowerCase();
+
+    var li, innerText;
+    var numShown = 0;
+    for (var i = 0; i < len; i++) {if (window.CP.shouldStopExecution(1)) break;
+      li = lis[i];
+      innerText = !options.selector ?
+      li.textContent || li.innerText || "" :
+      $(li).find(options.selector).text();
+
+      if (pType !== "search" || filter.trim().length > 0) {
+        if (innerText.toLowerCase().indexOf(filter) >= 0) {
+          if (li.style.display == "none") {
+            li.style.display = oldDisplay;
+          }
+          numShown++;
+        } else {
+          if (li.style.display != "none") {
+            li.style.display = "none";
+          }
+        }
+      } else {
+        li.style.display = "none";
+      }
+    }window.CP.exitedLoop(1);
+    callback(numShown);
+    // var endTime = new Date().getTime();
+    // console.log('Search for ' + filter + ' took: ' + (endTime - startTime) + ' (' + numShown + ' results)');
+    return false;
+  }).keydown(function () {
+    clearTimeout(keyTimeout);
+    keyTimeout = setTimeout(function () {
+      if (input.val() === lastFilter) return;
+      lastFilter = input.val();
+      input.change();
+    }, timeout);
+  });
+  return this; // maintain jQuery chainability
+};
+
+$('#filter_input').fastLiveFilter('#filter_list');
+$('#search_input').fastLiveFilter('#search_list', { type: "search" });
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+    <!-- Footer Nav -->
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container px-0">
+        <!-- =================================== -->
+        <!-- Paste your Footer Content from here -->
+        <!-- =================================== -->
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+          <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+            <li><a href="index.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+			<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+			</svg><span>Home</span></a></li>
+            <li><a href="dkmn.html">
+                <svg class="bi bi-folder2-open" width="25" height="25" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"></path>
+                </svg><span>Dökümanlar</span></a></li>
+            <li><a href="ttnk.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+				<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+				<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+				</svg><span>Üst Yazı</span></a></li>
+		   <li><a href="web.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 14 14">
+				<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+				<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+				</svg><span>Web Siteler</span></a></li>
+            <li><a href="search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg><span>Search</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- All JavaScript Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideToggle.min.js"></script>
+    <script src="js/internet-status.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/vanilla-dataTables.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/magic-grid.min.js"></script>
+    <script src="js/dark-rtl.js"></script>
+    <script src="js/active.js"></script>
+    <!-- PWA -->
+    <script src="js/pwa.js"></script>
+  </body>
+</html>
