@@ -1,0 +1,2044 @@
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Affan - PWA Mobile HTML Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0134d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>Güven Timleri</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+    <!-- Internet Connection Status -->
+    <!-- # This code for showing internet connection status -->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Dark mode switching -->
+    <div class="dark-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="dark-mode-text text-center">
+          <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+          </svg>
+          <p class="mb-0">Switching to dark mode</p>
+        </div>
+        <div class="light-mode-text text-center">
+          <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </svg>
+          <p class="mb-0">Switching to light mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- RTL mode switching -->
+    <div class="rtl-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="rtl-mode-text text-center">
+          <svg class="bi bi-text-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to RTL mode</p>
+        </div>
+        <div class="ltr-mode-text text-center">
+          <svg class="bi bi-text-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to default mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- Setting Popup Overlay -->
+    <div id="setting-popup-overlay"></div>
+    <!-- Setting Popup Card -->
+    <div class="card setting-popup-card shadow-lg" id="settingCard">
+      <div class="card-body">
+        <div class="container">
+          <div class="setting-heading d-flex align-items-center justify-content-between mb-3">
+            <p class="mb-0">Settings</p>
+            <div class="btn-close" id="settingCardClose"></div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="darkSwitch">
+              <label class="form-check-label" for="darkSwitch">Dark mode</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Area -->
+    <div class="header-area" id="headerArea">
+      <div class="container">
+        <!-- Header Content -->
+        <div class="header-content position-relative d-flex align-items-center justify-content-between">
+          <!-- Back Button -->
+          <div class="back-button"><a href="ebook.html">
+              <svg class="bi bi-arrow-left-short" width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+              </svg></a></div>
+          <!-- Page Title -->
+          <div class="page-heading">
+            <h3 class="mb-0">Kişisel Gelişim</h3>
+          </div>
+              </svg><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper py-3">
+      <div class="blog-wrapper direction-rtl">
+        <div class="container">
+          <div class="row g-1">
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2112"><img src="ebook/2112.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2114"><img src="ebook/2114.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2167"><img src="ebook/2167.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2173"><img src="ebook/2173.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2226"><img src="ebook/2226.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2366"><img src="ebook/2366.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2386"><img src="ebook/2386.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2397"><img src="ebook/2397.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2419"><img src="ebook/2419.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2435"><img src="ebook/2435.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2436"><img src="ebook/2436.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2463"><img src="ebook/2463.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2480"><img src="ebook/2480.jpg" alt=""></a>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2481"><img src="ebook/2481.jpg" alt=""></a>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2483"><img src="ebook/2483.jpg" alt=""></a>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2501"><img src="ebook/2501.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2548"><img src="ebook/2548.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2560"><img src="ebook/2560.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2689"><img src="ebook/2689.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2715"><img src="ebook/2715.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2739"><img src="ebook/2739.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2779"><img src="ebook/2779.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2781"><img src="ebook/2781.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2782"><img src="ebook/2782.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2837"><img src="ebook/2837.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2889"><img src="ebook/2889.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2897"><img src="ebook/2897.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2904"><img src="ebook/2904.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2975"><img src="ebook/2975.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub2/bibi/?book=2998"><img src="ebook/2998.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3000"><img src="ebook/3000.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3001"><img src="ebook/3001.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3002"><img src="ebook/3002.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3003"><img src="ebook/3003.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3004"><img src="ebook/3004.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3056"><img src="ebook/3056.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3057"><img src="ebook/3057.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3101"><img src="ebook/3101.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3116"><img src="ebook/3116.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3118"><img src="ebook/3118.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3124"><img src="ebook/3124.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3139"><img src="ebook/3139.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3141"><img src="ebook/3141.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3143"><img src="ebook/3143.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3145"><img src="ebook/3145.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3180"><img src="ebook/3180.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3198"><img src="ebook/3198.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3204"><img src="ebook/3204.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3252"><img src="ebook/3252.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3258"><img src="ebook/3258.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3267"><img src="ebook/3267.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3271"><img src="ebook/3271.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3276"><img src="ebook/3276.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3290"><img src="ebook/3290.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3296"><img src="ebook/3296.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3300"><img src="ebook/3300.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3368"><img src="ebook/3368.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3445"><img src="ebook/3445.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3471"><img src="ebook/3471.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3472"><img src="ebook/3472.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3473"><img src="ebook/3473.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3479"><img src="ebook/3479.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3494"><img src="ebook/3494.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3517"><img src="ebook/3517.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3530"><img src="ebook/3530.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3592"><img src="ebook/3592.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3603"><img src="ebook/3603.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3604"><img src="ebook/3604.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3630"><img src="ebook/3630.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3638"><img src="ebook/3638.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3641"><img src="ebook/3641.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3642"><img src="ebook/3642.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3645"><img src="ebook/3645.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3649"><img src="ebook/3649.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3656"><img src="ebook/3656.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3658"><img src="ebook/3658.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3661"><img src="ebook/3661.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3662"><img src="ebook/3662.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3667"><img src="ebook/3667.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3701"><img src="ebook/3701.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3702"><img src="ebook/3702.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3709"><img src="ebook/3709.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3719"><img src="ebook/3719.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3728"><img src="ebook/3728.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3729"><img src="ebook/3729.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3730"><img src="ebook/3730.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3733"><img src="ebook/3733.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3743"><img src="ebook/3743.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3845"><img src="ebook/3845.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3912"><img src="ebook/3912.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3914"><img src="ebook/3914.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3924"><img src="ebook/3924.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub3/bibi/?book=3925"><img src="ebook/3925.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4029"><img src="ebook/4029.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4130"><img src="ebook/4130.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4134"><img src="ebook/4134.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4138"><img src="ebook/4138.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4219"><img src="ebook/4219.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4304"><img src="ebook/4304.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4306"><img src="ebook/4306.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4362"><img src="ebook/4362.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4376"><img src="ebook/4376.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4386"><img src="ebook/4386.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4387"><img src="ebook/4387.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4432"><img src="ebook/4432.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4458"><img src="ebook/4458.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4474"><img src="ebook/4474.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4539"><img src="ebook/4539.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4595"><img src="ebook/4595.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4606"><img src="ebook/4606.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4622"><img src="ebook/4622.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4661"><img src="ebook/4661.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4684"><img src="ebook/4684.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4718"><img src="ebook/4718.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4736"><img src="ebook/4736.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4766"><img src="ebook/4766.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4798"><img src="ebook/4798.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4851"><img src="ebook/4851.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4856"><img src="ebook/4856.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4868"><img src="ebook/4868.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4904"><img src="ebook/4904.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4906"><img src="ebook/4906.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4912"><img src="ebook/4912.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4938"><img src="ebook/4938.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub4/bibi/?book=4994"><img src="ebook/4994.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5007"><img src="ebook/5007.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5035"><img src="ebook/5035.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5042"><img src="ebook/5042.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5096"><img src="ebook/5096.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5097"><img src="ebook/5097.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5104"><img src="ebook/5104.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5111"><img src="ebook/5111.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5117"><img src="ebook/5117.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5166"><img src="ebook/5166.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5179"><img src="ebook/5179.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5219"><img src="ebook/5219.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5233"><img src="ebook/5233.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5301"><img src="ebook/5301.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5306"><img src="ebook/5306.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5325"><img src="ebook/5325.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5380"><img src="ebook/5380.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5440"><img src="ebook/5440.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5447"><img src="ebook/5447.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5478"><img src="ebook/5478.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5483"><img src="ebook/5483.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5496"><img src="ebook/5496.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5510"><img src="ebook/5510.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5553"><img src="ebook/5553.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5586"><img src="ebook/5586.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5633"><img src="ebook/5633.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5661"><img src="ebook/5661.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5662"><img src="ebook/5662.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5663"><img src="ebook/5663.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+            <!-- Single Blog Card -->
+            <div class="col-4">
+			<div class="card partner-slide-card border bg-gray">
+				<div class="card-body p-2"><a href="https://prometheus3434.github.io/epub5/bibi/?book=5664"><img src="ebook/5664.jpg" alt=""></a>
+</div>
+
+
+</div>
+</div>
+        </div>			
+        </div>
+      </div>
+      <div class="container">
+        <div class="card mt-3">
+          <div class="card-body p-3">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center pagination-one direction-rtl">
+                <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous">
+                    <svg class="bi bi-chevron-left" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                    </svg></a></li>
+                <li class="page-item active"><a class="page-link" href="ekssl.html">1</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#" aria-label="Next">
+                    <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                    </svg></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Nav -->
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container px-0">
+        <!-- =================================== -->
+        <!-- Paste your Footer Content from here -->
+        <!-- =================================== -->
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+          <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+            <li><a href="index.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+			<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+			</svg><span>Home</span></a></li>
+            <li><a href="dkmn.html">
+                <svg class="bi bi-folder2-open" width="25" height="25" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"></path>
+                </svg><span>Dökümanlar</span></a></li>
+            <li><a href="ttnk.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+				<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+				<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+				</svg><span>Üst Yazı</span></a></li>
+		   <li><a href="web.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 14 14">
+				<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+				<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+				</svg><span>Web Siteler</span></a></li>
+            <li><a href="search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg><span>Search</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- All JavaScript Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideToggle.min.js"></script>
+    <script src="js/internet-status.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/vanilla-dataTables.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/magic-grid.min.js"></script>
+    <script src="js/dark-rtl.js"></script>
+    <script src="js/active.js"></script>
+
+  </body>
+</html>
