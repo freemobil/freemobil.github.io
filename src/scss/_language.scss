@@ -1,0 +1,28 @@
+/* :: Language CSS */
+
+.language-lists {
+    position: relative;
+    z-index: 1;
+
+    .form-check {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 0;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+        color: $text;
+    }
+
+    li {
+        padding: .375rem .75rem;
+        border: 1px solid $border;
+        border-radius: .375rem;
+        margin-bottom: 0.75rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

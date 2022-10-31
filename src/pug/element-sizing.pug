@@ -1,0 +1,95 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Sizing
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Width Sizing
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        p All width relative to the parent width.
+                        .w-25.p-2.bg-light.mb-2.rounded w-25
+                        .w-50.p-2.bg-light.mb-2.rounded w-50
+                        .w-75.p-2.bg-light.mb-2.rounded w-75
+                        .w-100.p-2.bg-light.mb-2.rounded w-100
+                        .w-auto.p-2.bg-light.mb-2.rounded w-auto
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Height Sizing
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        p All height relative to the parent height.
+
+                        .d-flex.bg-gray.justify-content-between(style="height: 120px;")
+                            .h-25.p-1.bg-info.mb-2.text-white.rounded-bottom h-25
+                            .h-50.p-1.bg-info.mb-2.text-white.rounded-bottom h-50
+                            .h-75.p-1.bg-info.mb-2.text-white.rounded-bottom h-75
+                            .h-100.p-1.bg-info.mb-2.text-white.rounded-bottom h-100
+                            .h-auto.p-1.bg-info.mb-2.text-white.rounded-bottom h-auto
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Max Width &amp; Max Height
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        .mw-100.p-2.bg-light.mb-2.rounded Max Width 100%
+
+                        .bg-gray(style="height: 120px;")
+                            .mh-100.p-1.bg-info.mb-2.text-white Max Height 100%
+
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Relative to the viewport
+            
+            .min-vw-100.bg-primary.text-white.mb-3.p-2 Min-width 100vw
+            .vw-100.bg-success.text-white.mb-3.p-2 Width 100vw
+
+            .container                
+                .min-vh-100.bg-primary.rounded.text-center.p-3.text-white.mb-3 Min-height 100vh
+                .vh-100.bg-info.rounded.text-center.p-3.text-white Height 100vh
+            
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

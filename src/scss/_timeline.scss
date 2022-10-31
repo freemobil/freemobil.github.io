@@ -1,0 +1,163 @@
+/* :: Timeline CSS */
+
+.timeline-card {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+    border-left: 0.5rem solid $primary !important;
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 1.5rem;
+        right: 1.5rem;
+        background-color: $primary;
+        width: 16px;
+        height: 16px;
+        opacity: 0.05;
+        border-radius: 50%;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .timeline-text {
+        .badge {
+            background-color: $primary;
+        }
+    }
+
+    .timeline-icon {
+
+        svg,
+        i {
+            color: $primary;
+        }
+    }
+
+    .timeline-tags {
+        span {
+            display: inline-block;
+            margin: 0.125rem;
+        }
+    }
+
+    &.bg-success {
+        border-left-color: $success !important;
+        background-color: $white !important;
+
+        .timeline-icon {
+
+            svg,
+            i {
+                color: $success;
+            }
+        }
+
+        .timeline-text {
+            .badge {
+                background-color: $success;
+            }
+        }
+    }
+
+    &.bg-danger {
+        border-left-color: $danger !important;
+        background-color: $white !important;
+
+        .timeline-icon {
+
+            svg,
+            i {
+                color: $danger;
+            }
+        }
+
+        .timeline-text {
+            .badge {
+                background-color: $danger;
+            }
+        }
+    }
+
+    &.bg-warning {
+        border-left-color: $warning !important;
+        background-color: $white !important;
+
+        .timeline-icon {
+
+            svg,
+            i {
+                color: $warning;
+            }
+        }
+
+        .timeline-text {
+            .badge {
+                background-color: $warning;
+            }
+        }
+    }
+
+    &.bg-info {
+        border-left-color: $info !important;
+        background-color: $white !important;
+
+        .timeline-icon {
+
+            svg,
+            i {
+                color: $info;
+            }
+        }
+
+        .timeline-text {
+            .badge {
+                background-color: $info;
+            }
+        }
+    }
+
+    &.bg-dark {
+        border-left-color: $dark !important;
+        background-color: $white !important;
+
+        .timeline-icon {
+
+            svg,
+            i {
+                color: $dark;
+            }
+        }
+
+        .timeline-text {
+            .badge {
+                background-color: $dark;
+            }
+        }
+    }
+
+    &.bg-secondary {
+        border-left-color: $text !important;
+        background-color: $white !important;
+
+        .timeline-icon {
+
+            svg,
+            i {
+                color: $text;
+            }
+        }
+
+        .timeline-text {
+            .badge {
+                background-color: $text;
+            }
+        }
+    }
+}

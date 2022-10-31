@@ -1,0 +1,30 @@
+// Setting Popup Overlay 
+#setting-popup-overlay
+
+// Setting Popup Card 
+.card.setting-popup-card.shadow-lg#settingCard
+    .card-body
+        .container
+            .setting-heading.d-flex.align-items-center.justify-content-between.mb-3
+                p.mb-0 Settings
+                .btn-close#settingCardClose
+
+            .single-setting-panel
+                .form-check.form-switch.mb-2
+                    input.form-check-input(type="checkbox", id="availabilityStatus", checked)
+                    label.form-check-label(for="availabilityStatus") Availability status
+
+            .single-setting-panel
+                .form-check.form-switch.mb-2
+                    input.form-check-input(type="checkbox", id="sendMeNotifications", checked)
+                    label.form-check-label(for="sendMeNotifications") Send me notifications
+
+            .single-setting-panel
+                .form-check.form-switch.mb-2
+                    input.form-check-input(type="checkbox", id="darkSwitch")
+                    label.form-check-label(for="darkSwitch") Dark mode
+
+            .single-setting-panel
+                .form-check.form-switch
+                    input.form-check-input(type="checkbox", id="rtlSwitch")
+                    label.form-check-label(for="rtlSwitch") RTL mode

@@ -1,0 +1,77 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Stretched link
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Stretched link
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        h5.card-title Card with stretched link
+                        p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                        a.stretched-link(href="#") Stretched link
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Stretched link with colors
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        a.stretched-link.text-primary.mb-2.d-block(href="#") This is a primary color stretched link
+                        a.stretched-link.text-secondary.mb-2.d-block(href="#") This is a secondary color stretched link
+                        a.stretched-link.text-success.mb-2.d-block(href="#") This is a success color stretched link
+                        a.stretched-link.text-danger.mb-2.d-block(href="#") This is a danger color stretched link
+                        a.stretched-link.text-warning.mb-2.d-block(href="#") This is a warning color stretched link
+                        a.stretched-link.text-info.mb-2.d-block(href="#") This is a info color stretched link
+                        a.stretched-link.text-light.mb-2.d-block(href="#") This is a light color stretched link
+                        a.stretched-link.text-dark.mb-0.d-block(href="#") This is a dark color stretched link
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Stretched link with paragraph text
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        p.mb-0 Some quick example text to build on the
+                            a.stretched-link(href="#")  card title 
+                            | and make up the bulk of the card's content.
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

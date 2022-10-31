@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Tooltip
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Tooltip on top
+
+            .container
+                .card
+                    .card-body.text-center
+                        a.btn.btn-primary(href="#", data-bs-toggle="tooltip", data-bs-placement="top", title="Hi, I am a top tooltip!") Tooltip on top
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Tooltip on right
+
+            .container
+                .card
+                    .card-body
+                        a.btn.btn-success.ms-auto(href="#", data-bs-toggle="tooltip" data-bs-placement="right" title="Hi, I am a right tooltip!") Tooltip on right
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Tooltip on bottom
+
+            .container
+                .card
+                    .card-body.text-center
+                        a.btn.btn-info(href="#", data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hi, I am a bottom tooltip!") Tooltip on bottom
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Tooltip on left
+
+            .container
+                .card
+                    .card-body
+                        .text-end
+                            a.btn.btn-danger(href="#", data-bs-toggle="tooltip" data-bs-placement="left" title="Hi, I am a left tooltip!") Tooltip on left
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Tooltip on HTML
+
+            .container
+                .card
+                    .card-body
+                        button.btn.btn-warning(type="button", data-bs-toggle="tooltip", data-bs-html="true", title="<em>Tooltip</em> <u>with</u> <b>HTML</b>") Tooltip with HTML
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

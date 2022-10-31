@@ -1,0 +1,24 @@
+/* :: Counterup CSS */
+
+.single-counter-wrap {
+    position: relative;
+    z-index: 1;
+
+    .solid-line {
+        display: block;
+        width: 2rem;
+        margin: 0.5rem auto 0.75rem;
+        height: 0.25rem;
+        border-radius: 12px;
+        background-color: $primary;
+    }
+
+    >i {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+}

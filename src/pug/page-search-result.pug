@@ -1,0 +1,121 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Paste your Header Content from here 
+
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Search Result
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                .card
+                    .card-body.direction-rtl
+                        // Search Form Wrapper 
+                        .search-form-wrapper
+                            p.mb-2.fz-12 397+ results found for Affan template
+                            // Search Form 
+                            form.mb-3.pb-4.border-bottom(action="#")
+                                .input-group
+                                    input.form-control.form-control-clicked(type="search", value="Affan template")
+                                    button.btn.btn-dark(type="submit")
+                                        i.bi.bi-search.fz-14
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 Affan - Multipurpose Ecommerce Mobile HTML Template
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="#") https://themeforest.net/item/suha-multipurpose-ecommerce-mobile-template/25294162
+                            p.mb-0 Suha – Multipurpose Ecommerce Mobile HTML Template. A versatile mobile e-commerce shop template.
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 WordPress Themes &amp; Website Templates from ThemeForest
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="#") https://themeforest.net/
+                            p.mb-0 Discover 1000s of premium WordPress themes &amp; website templates, including multipurpose and responsive Bootstrap templates, email templates &amp; HTML
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 Sign in to ThemeForest - Envato Account
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="https://account.envato.com/") https://account.envato.com/
+                            p.mb-0 Your Envato Account gives you access not just to ThemeForest, but also to the other Envato Market sites listed below. They're stocked with everything from
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 Envato ThemeForest Cyber Monday &amp; Black Friday Deals
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="#") https://envato.com/c/cybermonday/themes/
+                            p.mb-0 Enjoy a week of savings across Envato with Cyber Monday &amp; Black Friday 2019 deals. Save on premium creative assets from Envato Market, Envato Elements ...
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 Affan - Multipurpose Ecommerce Mobile HTML Template
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="#") https://themeforest.net/item/suha-multipurpose-ecommerce-mobile-template/25294162
+                            p.mb-0 Suha – Multipurpose Ecommerce Mobile HTML Template. A versatile mobile e-commerce shop template.
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 WordPress Themes &amp; Website Templates from ThemeForest
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="https://themeforest.net") https://themeforest.net/
+                            p.mb-0 Discover 1000s of premium WordPress themes &amp; website templates, including multipurpose and responsive Bootstrap templates, email templates &amp; HTML
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 Sign in to ThemeForest - Envato Account
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="https://account.envato.com/") https://account.envato.com/
+                            p.mb-0 Your Envato Account gives you access not just to ThemeForest, but also to the other Envato Market sites listed below. They're stocked with everything from
+
+                        // Single Search Result 
+                        .single-search-result.mb-3.border-bottom.pb-3
+                            h6.text-truncate.mb-1 Envato ThemeForest Cyber Monday &amp; Black Friday Deals
+                            a.text-truncate.mb-2.d-block.fz-12.text-decoration-underline(href="#") https://envato.com/c/cybermonday/themes/
+                            p.mb-0 Enjoy a week of savings across Envato with Cyber Monday &amp; Black Friday 2019 deals. Save on premium creative assets from Envato Market, Envato Elements ...
+
+                        // Pagination 
+                        nav(aria-label="Page navigation example")
+                            ul.pagination.pagination-two.justify-content-center
+                                li.page-item
+                                    a.page-link(href="#",  aria-label="Previous")
+                                        svg.bi.bi-chevron-left(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z")
+                                li.page-item.active
+                                    a.page-link(href="#") 1
+                                li.page-item
+                                    a.page-link(href="#") 2
+                                li.page-item
+                                    a.page-link(href="#") 3
+                                li.page-item
+                                    a.page-link(href="#") ...
+                                li.page-item
+                                    a.page-link(href="#") 9
+                                li.page-item
+                                    a.page-link(href="#",  aria-label="Next")
+                                        svg.bi.bi-chevron-right(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                            path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

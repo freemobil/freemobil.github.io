@@ -1,0 +1,160 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Basic Table
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Basic Table
+
+            .container
+                .card
+                    .card-body
+                        table.table.mb-0
+                            thead
+                                tr
+                                    th(scope="col") #
+                                    th(scope="col") First
+                                    th(scope="col") Last
+                                    th(scope="col") Handle
+                            tbody
+                                tr
+                                    th(scope="row") 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope="row") 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope="row") 3
+                                    td(colspan="2") Larry the Bird
+                                    td @twitter
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Striped Table
+
+            .container
+                .card
+                    .card-body
+                        table.table.mb-0.table-striped
+                            thead
+                                tr
+                                    th(scope="col") #
+                                    th(scope="col") First
+                                    th(scope="col") Last
+                                    th(scope="col") Handle
+                            tbody
+                                tr
+                                    th(scope="row") 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope="row") 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope="row") 3
+                                    td(colspan="2") Larry the Bird
+                                    td @twitter
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Hoverable Rows Table
+
+            .container
+                .card
+                    .card-body
+                        table.table.mb-0.table-hover
+                            thead
+                                tr
+                                    th(scope="col") #
+                                    th(scope="col") First
+                                    th(scope="col") Last
+                                    th(scope="col") Handle
+                            tbody
+                                tr
+                                    th(scope="row") 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope="row") 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope="row") 3
+                                    td(colspan="2") Larry the Bird
+                                    td @twitter
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Dark Table
+
+            .container
+                .card
+                    .card-body
+                        table.table.mb-0.table-dark.table-striped
+                            thead
+                                tr
+                                    th(scope="col") #
+                                    th(scope="col") First
+                                    th(scope="col") Last
+                                    th(scope="col") Handle
+                            tbody
+                                tr
+                                    th(scope="row") 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                tr
+                                    th(scope="row") 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                tr
+                                    th(scope="row") 3
+                                    td(colspan="2") Larry the Bird
+                                    td @twitter
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

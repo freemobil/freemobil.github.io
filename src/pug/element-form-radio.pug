@@ -1,0 +1,121 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Radio
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Radio
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .form-check
+                                input.form-check-input(type="radio", name="exampleRadio", id="primaryRadio")
+                                label.form-check-label(for="primaryRadio") Primary Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-success(type="radio", name="exampleRadio", id="successRadio", checked)
+                                label.form-check-label(for="successRadio") Success Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-danger(type="radio", name="exampleRadio", id="dangerRadio")
+                                label.form-check-label(for="dangerRadio") Danger Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-warning(type="radio", name="exampleRadio", id="warningRadio")
+                                label.form-check-label(for="warningRadio") Warning Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-info(type="radio", name="exampleRadio", id="infoRadio")
+                                label.form-check-label(for="infoRadio") Info Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-secondary(type="radio", name="exampleRadio", id="secondaryRadio")
+                                label.form-check-label(for="secondaryRadio") Secondary Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-light(type="radio", name="exampleRadio", id="lightRadio")
+                                label.form-check-label(for="lightRadio") Light Radio
+
+                            .mb-2
+
+                            .form-check
+                                input.form-check-input.form-check-dark(type="radio", name="exampleRadio", id="darkRadio")
+                                label.form-check-label(for="darkRadio") Dark Radio
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Radio Card
+
+            .container
+                .card
+                    .card-body
+                        .single-plan-check.shadow-sm.active-effect
+                            .form-check.mb-0
+                                input.form-check-input(type="radio", name="planChoose", id="Individual")
+                                label.form-check-label(for="Individual") Individual
+                            svg.bi.bi-person.text-primary(width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z")
+
+                        .single-plan-check.active.shadow-sm.active-effect
+                            .form-check.mb-0
+                                input.form-check-input(type="radio", name="planChoose", id="Team", checked)
+                                label.form-check-label(for="Team") Team
+                            svg.bi.bi-people.text-success(width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z")
+
+                        .single-plan-check.shadow-sm.active-effect
+                            .form-check.mb-0
+                                input.form-check-input(type="radio", name="planChoose", id="Company")
+                                label.form-check-label(for="Company") Company
+                            svg.bi.bi-building.text-danger(width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z")
+                                path(d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

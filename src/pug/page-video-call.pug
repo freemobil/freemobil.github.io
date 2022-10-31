@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        // Video Call Screen
+        .video-call-screen(style="background-image: url('img/bg-img/36.jpg')")
+            // Video Streaming Code Goes Here
+
+            // Back Button
+            .call-back-button
+                a(href="page-chat.html")
+                    svg.bi.bi-arrow-left-short(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                        path(fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z")
+
+            // Button Group
+            .call-btn-group
+                a.btn.btn-dark.btn-circle(href="page-chat.html")
+                    i.bi.bi-chat-text
+
+                a.btn.btn-lg.btn-danger.p-4.btn-call-cancel(href="#")
+                    i.bi.bi-telephone
+
+                a.btn.btn-dark.btn-circle(href="#")
+                    i.bi.bi-mic-mute
+
+        include inc/footer.pug

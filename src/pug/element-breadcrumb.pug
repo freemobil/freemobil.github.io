@@ -1,0 +1,189 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Breadcrumb
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Breadcrumb One
+
+            .breadcrumb-wrapper.breadcrumb-one
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Two
+
+            .breadcrumb-wrapper.breadcrumb-two
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Three
+
+            .breadcrumb-wrapper.breadcrumb-three
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#")
+                                    i.bi.bi-house-fill
+                                    | Home
+                            li.breadcrumb-item
+                                a(href="#")
+                                    i.bi.bi-justify-right
+                                    | Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Four
+
+            .breadcrumb-wrapper.breadcrumb-four.bg-overlay(style="background-image: url('img/bg-img/30.jpg')")
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-transparent.py-4.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Breadcrumb Colorful
+
+            .breadcrumb-wrapper.bg-primary.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-primary.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-success.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-success.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-warning.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-warning.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-danger.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-danger.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-info.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-info.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+            .mb-4
+
+            .breadcrumb-wrapper.bg-dark.breadcrumb-colorful
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.bg-dark.py-3.px-1
+                            li.breadcrumb-item
+                                a(href="#") Home
+                            li.breadcrumb-item
+                                a(href="#") Elements
+                            li.breadcrumb-item.active(aria-current="page") Breadcrumb
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Basic Breadcrumb
+
+            .container
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb.mb-0.py-2.px-3.rounded
+                        li.breadcrumb-item
+                            a(href="#") Home
+                        li.breadcrumb-item
+                            a(href="#") Elements
+                        li.breadcrumb-item.active(aria-current="page") Breadcrumb
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Embeds Video
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 21:9 Aspect Ratio
+
+            .container
+                // 21:9 Aspect Ratio 
+                .ratio.ratio-21x9.mb-4
+                    iframe(src="https://www.youtube.com/embed/lFGvqvPh5jI")
+
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 16:9 Aspect Ratio
+
+            .container
+                // 16:9 Aspect Ratio 
+                .ratio.ratio-16x9.mb-4
+                    iframe(src="https://www.youtube.com/embed/lFGvqvPh5jI")
+
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 4:3 Aspect Ratio
+
+            .container
+                // 4:3 Aspect Ratio 
+                .ratio.ratio-4x3.mb-4
+                    iframe(src="https://www.youtube.com/embed/lFGvqvPh5jI")
+
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 1:1 Aspect Ratio
+
+            .container
+                // 1:1 Aspect Ratio 
+                .ratio.ratio-1x1
+                    iframe.embed-responsive-item(src="https://www.youtube.com/embed/lFGvqvPh5jI")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

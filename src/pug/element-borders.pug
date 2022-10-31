@@ -1,0 +1,209 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Borders
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Additive Border
+
+            .container
+                .card.direction-rtl
+                    .card-body.d-flex.flex-wrap
+                        .border-content
+                            span.border.border-primary.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border All Side
+
+                        .border-content
+                            span.border-top.border-primary.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Top
+
+                        .border-content
+                            span.border-end.border-primary.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Right
+
+                        .border-content
+                            span.border-bottom.border-primary.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Bottom
+
+                        .border-content
+                            span.border-start.border-primary.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Left
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Border Width
+
+            .container
+                .card.direction-rtl
+                    .card-body.d-flex.flex-wrap
+                        .border-content
+                            span.border.border-primary.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border 1px
+
+                        .border-content
+                            span.border.border-primary.border-2.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border 2px
+
+                        .border-content
+                            span.border.border-primary.border-3.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border 3px
+
+                        .border-content
+                            span.border.border-primary.border-4.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border 4px
+
+                        .border-content
+                            span.border.border-primary.border-5.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border 5px
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Subtractive Border
+
+            .container
+                .card.direction-rtl
+                    .card-body.d-flex.flex-wrap
+                        .border-content
+                            span.border.border-primary.border-0.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border All Side
+
+                        .border-content
+                            span.border.border-primary.border-top-0.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Top
+
+                        .border-content
+                            span.border.border-primary.border-end-0.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Right
+
+                        .border-content
+                            span.border.border-primary.border-bottom-0.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Bottom
+
+                        .border-content
+                            span.border.border-primary.border-start-0.d-inline-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Left
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Border color
+                                
+            .container
+                .card.direction-rtl
+                    .card-body.d-flex.flex-wrap
+                        .border-content
+                            span.border.border-primary.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Primary
+
+                        .border-content
+                            span.border.border-secondary.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Secondary
+
+                        .border-content
+                            span.border.border-success.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Success
+
+                        .border-content
+                            span.border.border-danger.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Danger
+
+                        .border-content
+                            span.border.border-warning.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Warning
+
+                        .border-content
+                            span.border.border-info.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Info
+
+                        .border-content
+                            span.border.border-light.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Light
+
+                        .border-content
+                            span.border.border-dark.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border Dark
+
+                        .border-content
+                            span.border.border-white.d-block.bg-light.m-1(style="width: 5rem; height: 5rem;")
+                            small.d-block Border White
+
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Border Radius
+
+            .container
+                .card.direction-rtl
+                    .card-body.d-flex.flex-wrap
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-top(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded Top
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-right(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded Right
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-bottom(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded Bottom
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-left(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded Left
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-circle(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded Circle
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-pill(style="width: 12rem; height: 5rem;")
+                            small.d-block Rounded Pill
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-0(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded 0
+
+                        .border-content
+                            span.border.d-block.bg-light.m-1.rounded-lg(style="width: 5rem; height: 5rem;")
+                            small.d-block Rounded Large
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

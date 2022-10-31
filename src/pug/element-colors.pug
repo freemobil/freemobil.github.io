@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Colors
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Text Colors
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        p.text-primary .text-primary
+                        p.text-secondary .text-secondary
+                        p.text-success .text-success
+                        p.text-danger .text-danger
+                        p.text-warning .text-warning
+                        p.text-info .text-info
+                        p.text-light.bg-dark .text-light
+                        p.text-dark .text-dark
+                        p.text-white.bg-dark .text-white
+                        p.text-body .text-body
+                        p.text-muted .text-muted
+                        p.text-black-50 .text-black-50
+                        p.text-white-50.bg-dark.mb-0 .text-white-50
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Background colors
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .p-3.mb-2.bg-primary.text-white.rounded .bg-primary
+                        .p-3.mb-2.bg-secondary.text-white.rounded .bg-secondary
+                        .p-3.mb-2.bg-success.text-white.rounded .bg-success
+                        .p-3.mb-2.bg-danger.text-white.rounded .bg-danger
+                        .p-3.mb-2.bg-warning.text-dark.rounded .bg-warning
+                        .p-3.mb-2.bg-info.text-white.rounded .bg-info
+                        .p-3.mb-2.bg-light.text-dark.rounded .bg-light
+                        .p-3.mb-2.bg-dark.text-white.rounded .bg-dark
+                        .p-3.mb-2.bg-white.text-dark.rounded .bg-white
+                        .p-3.mb-0.bg-transparent.text-dark.rounded .bg-transparent
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Background gradient
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .p-3.mb-2.bg-primary.bg-gradient.text-white.rounded .bg-primary
+                        .p-3.mb-2.bg-secondary.bg-gradient.text-white.rounded .bg-secondary
+                        .p-3.mb-2.bg-success.bg-gradient.text-white.rounded .bg-success
+                        .p-3.mb-2.bg-danger.bg-gradient.text-white.rounded .bg-danger
+                        .p-3.mb-2.bg-warning.bg-gradient.text-dark.rounded .bg-warning
+                        .p-3.mb-2.bg-info.bg-gradient.text-white.rounded .bg-info
+                        .p-3.mb-2.bg-light.bg-gradient.text-dark.rounded .bg-light
+                        .p-3.mb-0.bg-dark.bg-gradient.text-white.rounded .bg-dark
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,68 @@
+/* :: Card CSS */
+
+.card {
+    border: 0;
+    border-radius: 6px;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: calc(.5rem - 1px);
+    border-top-right-radius: calc(.5rem - 1px);
+}
+
+.card-img,
+.card-img-bottom {
+    border-bottom-right-radius: calc(.5rem - 1px);
+    border-bottom-left-radius: calc(.5rem - 1px);
+}
+
+.card-bg-img {
+    &.bg-overlay {
+        &::after {
+            border-radius: .5rem;
+        }
+    }
+}
+
+.card-gradient-bg {
+    background: #0cebeb;
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.cta-card {
+    position: relative;
+    z-index: 1;
+
+    &.bg-overlay::after {
+        opacity: 0.8;
+    }
+}
+
+.card-badge {
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.card-img-wrap {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 100px;
+    width: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.card-round {
+    border-radius: 50rem !important;
+}

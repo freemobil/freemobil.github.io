@@ -1,0 +1,97 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Input
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 All input field
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .form-group
+                                label.form-label(for="exampleInputText") Input text
+                                input.form-control#exampleInputText(type="text", placeholder="Designing World")
+
+                            .form-group
+                                label.form-label(for="exampleInputemail") Input email
+                                input.form-control#exampleInputemail(type="email", placeholder="care.designingworld@gmail.com")
+
+                            .form-group
+                                label.form-label(for="exampleInputpassword") Input password
+                                input.form-control#exampleInputpassword(type="password")
+
+                            .form-group
+                                label.form-label(for="exampleInputnumber") Input number
+                                input.form-control#exampleInputnumber(type="number", placeholder="12")
+
+                            .form-group
+                                label.form-label(for="exampleInputtelephone") Input telephone
+                                input.form-control#exampleInputtelephone(type="tel", placeholder="+880 123 456 7890")
+
+                            .form-group
+                                label.form-label(for="exampleInputurl") Input url
+                                input.form-control#exampleInputurl(type="url", placeholder="https://themeforest.net/user/designing-world")
+
+                            .form-group
+                                label.form-label(for="exampleInputReadonly") Readonly input
+                                input.form-control#exampleInputReadonly(type="text", placeholder="Designing World", readonly)
+
+                            .form-group
+                                label.form-label(for="exampleInputText3") Readonly plain text
+                                input.form-control-plaintext#exampleInputText3(type="text", placeholder="Designing World", readonly)
+
+                            .form-group
+                                label.form-label(for="exampleColorInput") Color picker
+                                input.form-control.form-control-color#exampleColorInput(type="color", value="#563d7c", data-bs-toggle="tooltip" data-bs-placement="right" title="Choose your color")
+
+                            .form-group
+                                label.form-label(for="inputDate") Date picker
+                                input.form-control#inputDate(type="date")
+
+                            .form-group
+                                label.form-label(for="exampleInputText2") Input large
+                                input.form-control.form-control-lg#exampleInputText2(type="text", placeholder="Designing World")
+
+                            .form-group
+                                label.form-label(for="exampleInputText38") Input small
+                                input.form-control.form-control-sm#exampleInputText38(type="text", placeholder="Designing World")
+
+                            button.btn.btn-primary.w-100.d-flex.align-items-center.justify-content-center(type="button") Send Message
+                                svg.bi.bi-arrow-right-short(width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

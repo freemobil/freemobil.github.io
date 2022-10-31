@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Countdown
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Countdown 01
+
+            .container
+                .card.shadow-sm.bg-img(style="background-image: url('img/core-img/2.png')")
+                    .card-body.text-center.p-5
+                        h2 Coming Soon
+                        p It is very nicely designed &amp; coded with the latest technology.
+                        #countdown1.countdown1(data-date="22-12-2022", data-time="00:00")
+                            .day
+                                span.num
+                                span.word
+                            .hour
+                                span.num
+                                span.word
+                            .min
+                                span.num
+                                span.word
+                            .sec
+                                span.num
+                                span.word
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Countdown 02
+
+            .container
+                .card.bg-info.coming-soon-card.text-center.bg-img(style="background-image: url('img/core-img/1.png')")
+                    .card-body.p-5
+                        .icon-wrap
+                            svg.bi.bi-clock.text-info(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z")
+                                path(fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z")
+                        h2.text-white Coming Soon
+                        p.text-white It is very nicely designed &amp; coded with the latest technology.
+                        #countdown3.countdown3(data-date="28-2-2022", data-time="11:26")
+                            .day
+                                span.num
+                                span.word
+                            .hour
+                                span.num
+                                span.word
+                            .min
+                                span.num
+                                span.word
+                            .sec
+                                span.num
+                                span.word
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Countdown 03
+
+            .card.bg-img.bg-overlay.rounded-0.py-5(style="background-image: url('img/bg-img/30.jpg')")
+                .card-body
+                    .container.direction-rtl
+                        h2.text-white New
+                            span.text-warning.ms-2 update
+                            <br> available in:
+                        #countdown2.countdown2(data-date="11-6-2022", data-time="23:24")
+                            .day
+                                span.num
+                                span.word
+                            .hour
+                                span.num
+                                span.word
+                            .min
+                                span.num
+                                span.word
+                            .sec
+                                span.num
+                                span.word
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

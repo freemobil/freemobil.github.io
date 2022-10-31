@@ -1,0 +1,167 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Rating
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Rating 01
+
+            .container
+                // Rating Card 
+                .card
+                    .card-body
+                        .rating-card-one
+                            .d-flex.align-items-center.justify-content-between
+                                .rating
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-half
+
+                                span 4.65 out of 5
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Rating 02
+
+            .container
+                // Rating Card 
+                .card
+                    .card-body
+                        .rating-card-two
+                            // Rating result 
+                            .d-flex.align-items-center.justify-content-between.mb-3.border-bottom.pb-2
+                                .rating
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-fill
+                                    a(href="#")
+                                        i.bi.bi-star-half
+
+                                span 4.44 out of 5 ratings
+                            
+                            // Rating Details 
+                            .rating-detail
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 5 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 78%;", role="progressbar", aria-valuenow="78", aria-valuemin="0", aria-valuemax="100")
+                                    span 78%
+
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 4 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 14%;", role="progressbar", aria-valuenow="14", aria-valuemin="0", aria-valuemax="100")
+                                    span 14%
+
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 3 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 8%;", role="progressbar", aria-valuenow="8", aria-valuemin="0", aria-valuemax="100")
+                                    span 8%
+
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 2 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 0%;", role="progressbar", aria-valuenow="0", aria-valuemin="0", aria-valuemax="100")
+                                    span 0%
+                                    
+                                // Single Rating Details 
+                                .d-flex.align-items-center.mt-2
+                                    span 1 star
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.bg-warning(style="width: 0%;", role="progressbar", aria-valuenow="0", aria-valuemin="0", aria-valuemax="100")
+                                    span 0%
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Rating 03
+
+            .container
+                // Rating Card 
+                .card
+                    .card-body.py-5
+                        .rating-card-three.text-center
+                            h6.mb-3 How was your experience with us?
+
+                            .stars
+                                input.stars-checkbox#first-star(type="radio", name="star")
+                                label.stars-star(for="first-star")
+                                    svg.star-icon#star1(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve")
+                                        polygon(points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182")
+
+                                input.stars-checkbox#second-star(type="radio", name="star")
+                                label.stars-star(for="second-star")
+                                    svg.star-icon#star2(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve")
+                                        polygon(points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182")
+
+                                input.stars-checkbox#third-star(type="radio", name="star")
+                                label.stars-star(for="third-star")
+                                    svg.star-icon#star3(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve")
+                                        polygon(points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182")
+
+                                input.stars-checkbox#fourth-star(type="radio", name="star")
+                                label.stars-star(for="fourth-star")
+                                    svg.star-icon#star4(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve")
+                                        polygon(points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182")
+
+                                input.stars-checkbox#fifth-star(type="radio", name="star")
+                                label.stars-star(for="fifth-star")
+                                    svg.star-icon#star5(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve")
+                                        polygon(points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

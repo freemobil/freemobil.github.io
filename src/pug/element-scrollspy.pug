@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Scrollspy
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Scrollspy
+
+            .container
+                .card
+                    .card-body
+                        // Horizontal Scrollspy 
+                        nav.scrollspy-indicatiors.mb-3#scrollspyWrapper
+                            ul.d-flex.ps-0
+                                li
+                                    a.nav-link(href="#sec1") Section 1
+                                li
+                                    a.nav-link(href="#sec2") Section 2
+                                li
+                                    a.nav-link(href="#sec3") Section 3
+
+                        .data-scrollspy(data-bs-spy="scroll", data-bs-target="#scrollspyWrapper", data-bs-offset="0")
+                            h5#sec1 Section 1
+                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellendus hic. Laboriosam voluptatum explicabo commodi quaerat consequatur, officiis tempore suscipit quisquam ratione enim nihil, molestiae maiores dicta error at repellat asperiores unde ab! Repudiandae assumenda fugit architecto debitis facere et mollitia inventore quibusdam! Blanditiis voluptatem quaerat, modi ipsa omnis aliquid amet numquam quod quis tenetur rerum qui pariatur sit vero consequuntur, id dolores debitis hic perspiciatis exercitationem. Aperiam, accusamus autem? Dolor labore quam molestiae alias earum a unde corporis quibusdam esse, perferendis blanditiis distinctio est, sunt velit mollitia dolorem nostrum eveniet, recusandae iure quasi officia. Placeat cumque nihil, architecto quidem tempora exercitationem iste laudantium, eveniet nisi sequi impedit sint voluptates?
+
+                            h5#sec2 Section 2
+                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellendus hic. Laboriosam voluptatum explicabo commodi quaerat consequatur, officiis tempore suscipit quisquam ratione enim nihil, molestiae maiores dicta error at repellat asperiores unde ab! Repudiandae assumenda fugit architecto debitis facere et mollitia inventore quibusdam! Blanditiis voluptatem quaerat, modi ipsa omnis aliquid amet numquam quod quis tenetur rerum qui pariatur sit vero consequuntur, id dolores debitis hic perspiciatis exercitationem. Aperiam, accusamus autem? Dolor labore quam molestiae alias earum a unde corporis quibusdam esse, perferendis blanditiis distinctio est, sunt velit mollitia dolorem nostrum eveniet, recusandae iure quasi officia. Placeat cumque nihil, architecto quidem tempora exercitationem iste laudantium, eveniet nisi sequi impedit sint voluptates?
+
+                            h5#sec3 Section 3
+                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellendus hic. Laboriosam voluptatum explicabo commodi quaerat consequatur, officiis tempore suscipit quisquam ratione enim nihil, molestiae maiores dicta error at repellat asperiores unde ab! Repudiandae assumenda fugit architecto debitis facere et mollitia inventore quibusdam! Blanditiis voluptatem quaerat, modi ipsa omnis aliquid amet numquam quod quis tenetur rerum qui pariatur sit vero consequuntur, id dolores debitis hic perspiciatis exercitationem. Aperiam, accusamus autem? Dolor labore quam molestiae alias earum a unde corporis quibusdam esse, perferendis blanditiis distinctio est, sunt velit mollitia dolorem nostrum eveniet, recusandae iure quasi officia. Placeat cumque nihil, architecto quidem tempora exercitationem iste laudantium, eveniet nisi sequi impedit sint voluptates?
+
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Vertical Scrollspy
+
+            .container
+                .card
+                    .card-body
+                        // Vertical Scrollspy 
+                        .vertical-scrollspy.d-flex
+                            nav.scrollspy-indicatiors#scrollspyWrapper2
+                                ul.ps-0
+                                    li
+                                        a.nav-link(href="#sec4") Section 1
+                                    li
+                                        a.nav-link(href="#sec5") Section 2
+                                    li
+                                        a.nav-link(href="#sec6") Section 3
+
+                            .data-scrollspy(data-bs-spy="scroll", data-bs-target="#scrollspyWrapper2", data-bs-offset="0")
+                                h5#sec4 Section 1
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellendus hic. Laboriosam voluptatum explicabo commodi quaerat consequatur, officiis tempore suscipit quisquam ratione enim nihil, molestiae maiores dicta error at repellat asperiores unde ab! Repudiandae assumenda fugit architecto debitis facere et mollitia inventore quibusdam! Blanditiis voluptatem quaerat, modi ipsa omnis aliquid amet numquam quod quis tenetur rerum qui pariatur sit vero consequuntur, id dolores debitis hic perspiciatis exercitationem. Aperiam, accusamus autem? Dolor labore quam molestiae alias earum a unde corporis quibusdam esse, perferendis blanditiis distinctio est, sunt velit mollitia dolorem nostrum eveniet, recusandae iure quasi officia. Placeat cumque nihil, architecto quidem tempora exercitationem iste laudantium, eveniet nisi sequi impedit sint voluptates?
+
+                                h5#sec5 Section 2
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellendus hic. Laboriosam voluptatum explicabo commodi quaerat consequatur, officiis tempore suscipit quisquam ratione enim nihil, molestiae maiores dicta error at repellat asperiores unde ab! Repudiandae assumenda fugit architecto debitis facere et mollitia inventore quibusdam! Blanditiis voluptatem quaerat, modi ipsa omnis aliquid amet numquam quod quis tenetur rerum qui pariatur sit vero consequuntur, id dolores debitis hic perspiciatis exercitationem. Aperiam, accusamus autem? Dolor labore quam molestiae alias earum a unde corporis quibusdam esse, perferendis blanditiis distinctio est, sunt velit mollitia dolorem nostrum eveniet, recusandae iure quasi officia. Placeat cumque nihil, architecto quidem tempora exercitationem iste laudantium, eveniet nisi sequi impedit sint voluptates?
+
+                                h5#sec6 Section 3
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellendus hic. Laboriosam voluptatum explicabo commodi quaerat consequatur, officiis tempore suscipit quisquam ratione enim nihil, molestiae maiores dicta error at repellat asperiores unde ab! Repudiandae assumenda fugit architecto debitis facere et mollitia inventore quibusdam! Blanditiis voluptatem quaerat, modi ipsa omnis aliquid amet numquam quod quis tenetur rerum qui pariatur sit vero consequuntur, id dolores debitis hic perspiciatis exercitationem. Aperiam, accusamus autem? Dolor labore quam molestiae alias earum a unde corporis quibusdam esse, perferendis blanditiis distinctio est, sunt velit mollitia dolorem nostrum eveniet, recusandae iure quasi officia. Placeat cumque nihil, architecto quidem tempora exercitationem iste laudantium, eveniet nisi sequi impedit sint voluptates?
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

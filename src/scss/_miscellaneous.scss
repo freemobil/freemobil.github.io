@@ -1,0 +1,207 @@
+/* :: Miscellaneous CSS */
+
+.page-content-wrapper {
+    margin-top: 50px;
+    margin-bottom: 62px;
+}
+
+.affan-page-item {
+    display: flex;
+    align-items: center;
+    transition-duration: 500ms;
+    font-size: 1rem;
+    background-color: transparent;
+    padding: .5rem 0;
+    color: #073984;
+    border-radius: .5rem;
+    border: 1px solid transparent;
+
+    .icon-wrapper {
+        transition-duration: 500ms;
+        margin-right: .5rem;
+        width: 2.25rem;
+        height: 2.25rem;
+        background-color: $gray;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            transition-duration: 500ms;
+        }
+    }
+
+    >i {
+        margin-left: auto;
+    }
+
+    &.active,
+    &:hover,
+    &:focus {
+        background-color: $white;
+        border-color: $border;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        padding: .5rem .75rem;
+
+        .icon-wrapper {
+            background-color: $text-gray;
+        }
+    }
+}
+
+.affan-element-item {
+    background-color: transparent;
+    margin: 1rem 0;
+}
+
+a.affan-element-item {
+    margin: .25rem 0;
+    background-color: $white;
+    padding: .625rem 1rem;
+    color: #073984;
+    display: flex;
+    align-items: center;
+    border-radius: .25rem;
+
+    i {
+        margin-left: auto;
+    }
+}
+
+.element-heading-wrapper {
+    display: flex;
+    align-items: center;
+
+    i {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $primary;
+        border-radius: 50%;
+        text-align: center;
+        color: $white;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 2.5rem;
+        min-width: 2.5rem;
+        color: $white;
+        font-size: 1.25rem;
+    }
+
+    span {
+        font-size: 13px;
+        color: $text;
+        display: block;
+    }
+}
+
+.order-success-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+.single-setting-panel {
+
+    .form-check-label {
+        color: $text;
+        font-weight: 500;
+    }
+
+    a {
+        color: $text;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+
+        .icon-wrapper {
+            background-color: $primary;
+            margin-right: 0.5rem;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            svg,
+            i {
+                color: $white;
+                line-height: 1;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    &:last-child {
+        a {
+            margin-bottom: 0;
+        }
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+
+        label {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+#setting-popup-overlay {
+    position: fixed !important;
+    z-index: 100 !important;
+    background-color: $dark;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 350ms;
+
+    &.active {
+        opacity: .85;
+        visibility: visible;
+    }
+}
+
+.setting-popup-card {
+    position: fixed !important;
+    height: auto;
+    width: calc(100% - 1rem);
+    z-index: 10000 !important;
+    top: 58px;
+    left: .5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+    transform: translate(0, 20px);
+
+    #settingCardClose {
+        cursor: pointer;
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}

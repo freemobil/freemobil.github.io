@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Select
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Select
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .form-group
+                                label.form-label(for="defaultSelect") Default select
+                                select.form-select#defaultSelect(name="defaultSelect", aria-label="Default select example")
+                                    option(value="1", selected) One
+                                    option(value="2") Two
+                                    option(value="3") Three
+
+                            .form-group
+                                label.form-label(for="multipleSelect") Multiple select
+                                select.form-select#multipleSelect(name="multipleSelect", multiple, aria-label="multiple select example")
+                                    option(value="1", selected) One
+                                    option(value="2") Two
+                                    option(value="3") Three
+                                    option(value="4") Four
+
+                            .form-group
+                                label.form-label(for="multipleSelect2") Multiple select with size
+                                select.form-select#multipleSelect2(name="multipleSelect2", multiple, size="3", aria-label="multiple select example")
+                                    option(value="1", selected) One
+                                    option(value="2") Two
+                                    option(value="3") Three
+                                    option(value="4") Four
+                                    option(value="5") Five
+
+                            .form-group
+                                label.form-label(for="defaultSelectLg") Large select
+                                select.form-select.form-select-lg#defaultSelectLg(name="defaultSelectLg", aria-label="Default select example")
+                                    option(value="1", selected) One
+                                    option(value="2") Two
+                                    option(value="3") Three
+
+                            .form-group.mb-0
+                                label.form-label(for="defaultSelectSm") Small select
+                                select.form-select.form-select-sm#defaultSelectSm(name="defaultSelectSm", aria-label="Default select example")
+                                    option(value="1", selected) One
+                                    option(value="2") Two
+                                    option(value="3") Three
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

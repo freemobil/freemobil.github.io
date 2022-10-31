@@ -1,0 +1,111 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Paste your Header Content from here 
+
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Blog Details
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper
+            .container
+                .pt-3.d-block
+                .blog-details-post-thumbnail.position-relative
+                    // Post Image 
+                    img.w-100.rounded-lg(src="img/bg-img/24.jpg", alt="")
+
+                    // Post Bookmark 
+                    a(href="#").post-bookmark.position-absolute.card-badge
+                        i.bi.bi-bookmark
+
+            .blog-description.py-3
+                .container
+                    a.badge.bg-primary.mb-2.d-inline-block(href="#") News
+                    h3.mb-3 A collection of textile samples lay spread out on the table
+
+                    .d-flex.align-items-center.mb-4
+                        a.badge-avater(href="#")
+                            img.img-circle(src="img/bg-img/user1.png" alt="")
+                        span.ms-2 Jarah Clark
+
+                    p.fz-14 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+
+                    p.fz-14 He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+
+                    p.fz-14 The bedding was hardly able to cover it and seemed ready to slide off any moment.
+
+                    p.fz-14 His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought.
+
+                    p.fz-14 It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+
+                    p.fz-14 A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+
+                    p.fz-14 It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
+
+            // All Comments 
+            .rating-and-review-wrapper.pb-3.mt-3
+                .container
+                    h6.mb-3 All comments
+
+                    // Rating Review 
+                    .rating-review-content
+                        ul.ps-2
+                            li.single-user-review.d-flex
+                                .user-thumbnail.mt-0
+                                    img(src="img/bg-img/2.jpg", alt="")
+                                .rating-comment
+                                    p.comment.mb-1 I strongly recommend this agency to everyone interested in running a business.
+                                    span.name-date 12 Dec 2021
+
+                            li.single-user-review.d-flex
+                                .user-thumbnail.mt-0
+                                    img(src="img/bg-img/20.jpg", alt="")
+                                .rating-comment
+                                    p.comment.mb-1 You've saved our business! Thanks guys, keep up the good work! The best on the net!
+                                    span.name-date 8 Dec 2021
+
+                            li.single-user-review.d-flex
+                                .user-thumbnail.mt-0
+                                    img(src="img/bg-img/21.jpg", alt="")
+                                .rating-comment
+                                    p.comment.mb-1 Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.
+                                    span.name-date 28 Nov 2021
+
+            // Comment Form 
+            .ratings-submit-form.pb-3
+                .container
+                    h6.mb-3 Submit a comment
+
+                    form(action="#")
+                        .form-group
+                            textarea.form-control.mb-3.border-0(name="comment", cols="30", rows="10", placeholder="Write a comment")
+                        button.btn.w-100.btn-primary(type="submit") Post Comment
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

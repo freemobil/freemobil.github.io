@@ -1,0 +1,15 @@
+/* :: Preloader CSS */
+
+#preloader {
+    background-color: $gray;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

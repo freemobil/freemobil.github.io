@@ -1,0 +1,223 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Offcanvas
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Left offcanvas
+
+            .container
+                .card
+                    .card-body
+                        // Trigger Button 
+                        button.btn.btn-primary(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasleft", aria-controls="offcanvasLeft") Toggle left offcanvas
+
+                        // Offcanvas Wrapper 
+                        .offcanvas.offcanvas-start#offcanvasleft(tabindex="-1", aria-labelledby="offcanvasStartLabel")
+                            // Close Button 
+                            button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+
+                            // Offcanvas Body 
+                            .offcanvas-body.p-4
+                                h5 Placement
+                                p There’s no default placement for offcanvas components, so you must add one of the modifier classes below;
+                                ul.ps-0.mb-4
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-start
+                                        | places offcanvas on the left of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-end
+                                        | places offcanvas on the right of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-top
+                                        | places offcanvas on the top of the viewport.
+                                    li.fz-14
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-bottom
+                                        | places offcanvas on the bottom of the viewport.
+
+                                h5 Hide &amp; Show
+                                p Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the  
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .show 
+                                    | class on an element with the 
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas 
+                                    | class.
+                                ul.ps-0
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas
+                                        | hides content (by default).
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas.show
+                                        | shows content.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Top offcanvas
+
+            .container
+                .card
+                    .card-body
+                        // Trigger Button 
+                        button.btn.btn-success(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasTop", aria-controls="offcanvasTop") Toggle top offcanvas
+
+                        // Offcanvas Wrapper 
+                        .offcanvas.offcanvas-top#offcanvasTop(tabindex="-1", aria-labelledby="offcanvasTopLabel")
+                            // Close Button 
+                            button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+                            // Offcanvas Body 
+                            .offcanvas-body.p-4
+                                h5 Placement
+                                p There’s no default placement for offcanvas components, so you must add one of the modifier classes below;
+                                ul.ps-0.mb-4
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-start
+                                        | places offcanvas on the left of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-end
+                                        | places offcanvas on the right of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-top
+                                        | places offcanvas on the top of the viewport.
+                                    li.fz-14
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-bottom
+                                        | places offcanvas on the bottom of the viewport.
+
+                                h5 Hide &amp; Show
+                                p Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the  
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .show 
+                                    | class on an element with the 
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas 
+                                    | class.
+                                ul.ps-0
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas
+                                        | hides content (by default).
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas.show
+                                        | shows content.
+
+            .container
+                .element-heading.mt-3
+                    h6 Right offcanvas
+
+            .container
+                .card
+                    .card-body
+                        // Trigger Button 
+                        button.btn.btn-warning(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasRight", aria-controls="offcanvasRight") Toggle right offcanvas
+
+                        // Offcanvas Wrapper 
+                        .offcanvas.offcanvas-end#offcanvasRight(tabindex="-1", aria-labelledby="offcanvasRightLabel")
+                            // Close Button 
+                            button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+                            // Offcanvas Body 
+                            .offcanvas-body.p-4.text-end
+                                h5 Placement
+                                p There’s no default placement for offcanvas components, so you must add one of the modifier classes below;
+                                ul.ps-0.mb-4
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-start
+                                        | places offcanvas on the left of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-end
+                                        | places offcanvas on the right of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-top
+                                        | places offcanvas on the top of the viewport.
+                                    li.fz-14
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-bottom
+                                        | places offcanvas on the bottom of the viewport.
+
+                                h5 Hide &amp; Show
+                                p Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the  
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .show 
+                                    | class on an element with the 
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas 
+                                    | class.
+                                ul.ps-0
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas
+                                        | hides content (by default).
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas.show
+                                        | shows content.
+
+            .container
+                .element-heading.mt-3
+                    h6 Minimal Tab
+
+            .container
+                .card
+                    .card-body
+                        // Trigger Button 
+                        button.btn.btn-info(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasBottom", aria-controls="offcanvasBottom") Toggle bottom offcanvas
+
+                        // Offcanvas Wrapper 
+                        .offcanvas.offcanvas-bottom#offcanvasBottom(tabindex="-1", aria-labelledby="offcanvasBottomLabel")
+                            // Close Button 
+                            button.btn-close.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+                            // Offcanvas Body 
+                            .offcanvas-body.p-4
+                                h5 Placement
+                                p There’s no default placement for offcanvas components, so you must add one of the modifier classes below;
+                                ul.ps-0.mb-4
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-start
+                                        | places offcanvas on the left of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-end
+                                        | places offcanvas on the right of the viewport.
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-top
+                                        | places offcanvas on the top of the viewport.
+                                    li.fz-14
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas-bottom
+                                        | places offcanvas on the bottom of the viewport.
+
+                                h5 Hide &amp; Show
+                                p Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the  
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .show 
+                                    | class on an element with the 
+                                    code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas 
+                                    | class.
+                                ul.ps-0
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas
+                                        | hides content (by default).
+                                    li.fz-14.pb-2
+                                        code.bg-dark.text-white.rounded.p-1.me-1 .offcanvas.show
+                                        | shows content.
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,331 @@
+/* :: Form CSS */
+
+.form-check-input[type="checkbox"].indeterminate {
+    background-color: $primary;
+    border-color: $primary;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+
+.form-check-input {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: #073984;
+}
+
+.form-check-input.form-check-success:checked {
+    background-color: $success;
+    border-color: $success;
+}
+
+.form-check-input.form-check-danger:checked {
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.form-check-input.form-check-warning:checked {
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.form-check-input.form-check-info:checked {
+    background-color: $info;
+    border-color: $info;
+}
+
+.form-check-input.form-check-secondary:checked {
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+.form-check-input.form-check-light:checked {
+    background-color: $gray;
+    border-color: $gray;
+}
+
+.form-check-input.form-check-dark:checked {
+    background-color: $dark;
+    border-color: $dark;
+}
+
+.form-check-input-lg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0;
+
+    ~.form-check-label {
+        font-size: 1rem;
+        margin-left: .5rem;
+    }
+}
+
+.form-group {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-size: 14px;
+    color: $text;
+    font-weight: 500;
+}
+
+.form-select {
+    transition-duration: 500ms;
+    border: 1px solid;
+    padding: .5rem 1rem;
+    min-height: 40px;
+    font-size: 14px;
+    color: #073984;
+    background-color: $white;
+    border-color: $border;
+
+    option {
+        padding: 0.25rem 0.5rem;
+        outline: none;
+    }
+
+    &.form-control-clicked {
+        background-color: #cfe2ff;
+        border-color: #cfe2ff;
+        color: #073984;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        border-color: #cfe2ff;
+        color: #073984;
+        background-color: $white;
+    }
+
+    &.form-select-lg {
+        min-height: 50px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    &.form-select-sm {
+        min-height: 2rem;
+        padding: .375rem .5rem;
+        font-size: .75rem;
+        border-radius: .375rem;
+    }
+}
+
+.form-control {
+    transition-duration: 500ms;
+    border-style: solid;
+    padding: .5rem 1rem;
+    height: 41px;
+    max-height: 41px;
+    font-size: 14px;
+    color: #073984;
+    background-color: $white;
+    border-width: 1px;
+    border-color: $border;
+    border-radius: 5px;
+
+    &.form-control-clicked {
+        background-color: #cfe2ff;
+        border-color: #cfe2ff;
+        color: #073984;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        border-color: #cfe2ff;
+        color: #073984;
+        background-color: $white;
+    }
+
+    &.form-control-lg {
+        height: 50px;
+        min-height: 50px;
+        padding: 0.625rem 1rem;
+        font-size: 16px;
+    }
+
+    &.form-control-sm {
+        height: 32px;
+        padding: 0.375rem 0.5rem;
+        font-size: 12px;
+        border-radius: 0.375rem;
+    }
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.form-control-plaintext {
+    font-size: 14px;
+}
+
+.form-file-label {
+    border-color: $border;
+    font-weight: 500;
+}
+
+.form-file-input,
+.form-file {
+    &:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+.file-upload-card {
+    position: relative;
+    z-index: 1;
+    border: 2px dashed $primary;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(1, 52, 212, 0.1);
+}
+
+.single-plan-check {
+    position: relative;
+    z-index: 1;
+    transition-duration: 500ms;
+    margin-bottom: 0.5rem;
+    border: 1px solid $border;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.active {
+        border-color: $primary;
+    }
+}
+
+.autocomplete-items {
+    margin-top: 0.25rem;
+
+    >div {
+        transition-duration: 500ms;
+        padding: 0.5rem 0.75rem;
+        background-color: $white;
+        font-size: 14px;
+        cursor: pointer;
+        color: $heading;
+        border-radius: 0.25rem;
+
+        &:hover {
+            background-color: $gray;
+        }
+
+        strong {
+            color: $primary;
+        }
+    }
+}
+
+.form-control-color {
+    min-width: 4rem;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: $border;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    border-color: #cfe2ff;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+    border-color: $primary;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+    border-color: $primary;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-image: none;
+}
+
+input[type="color"] {
+
+    &.form-control.is-valid,
+    &.form-control:valid {
+        background-image: none;
+    }
+}
+
+.valid-feedback,
+.invalid-feedback {
+    margin-left: 0.25rem;
+    font-size: 12px;
+}
+
+.input-group-text {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+
+    li a {
+        font-size: 14px;
+    }
+}
+
+.goto-page-form {
+    flex: 0 0 60%;
+    max-width: 60%;
+    width: 60%;
+
+    label {
+        font-size: 12px;
+    }
+
+    .form-control {
+        max-width: 40px;
+        text-align: center;
+    }
+}
+
+#password-visibility {
+    top: 8.5px;
+    right: .625rem;
+    z-index: 10;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+
+    i {
+        line-height: 1.5rem;
+    }
+
+    i.bi-eye-slash {
+        display: none;
+    }
+
+    &.active {
+        i.bi-eye-slash {
+            display: block;
+        }
+
+        i.bi-eye {
+            display: none;
+        }
+    }
+}

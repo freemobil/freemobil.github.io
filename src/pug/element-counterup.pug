@@ -1,0 +1,201 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Counter Up
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Counter Up 01
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        .row
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    h4.mb-0
+                                        span.counter 1256
+                                        | +
+                                    span.solid-line
+                                    p.mb-0 Total Sales
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    h4.mb-0
+                                        span.counter 21
+                                        | k
+                                    span.solid-line
+                                    p.mb-0 Coffee Served
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    h4.mb-0
+                                        span.counter 767
+                                        | +
+                                    span.solid-line
+                                    p.mb-0 Happy Clients
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Counter Up 02
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        .row
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-heart-fill.mb-2.text-danger
+                                    h4.mb-1.text-success
+                                        span.counter 1399
+                                        | +
+                                    p.mb-0 Total Sales
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-cup-fill.mb-2.text-warning
+                                    h4.mb-1.text-warning
+                                        span.counter 11
+                                        | k
+                                    p.mb-0 Coffee Served
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-people-fill.mb-2.text-danger
+                                    h4.mb-1.text-danger
+                                        span.counter 479
+                                        | +
+                                    p.mb-0 Happy Clients
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Counter Up 03
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        .row
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-award.mb-2.text-success
+                                    h4.mb-0.text-success
+                                        span.counter 1691
+                                        | +
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-bezier.mb-2.text-warning
+                                    h4.mb-0.text-primary
+                                        span.counter 18
+                                        | k
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-bookmark-star.mb-2.text-danger
+                                    h4.mb-0.text-danger
+                                        span.counter 1208
+                                        | +
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Counter Up 04
+
+            .container
+                .card.bg-danger
+                    .card-body.direction-rtl
+                        .row
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-basket.mb-2.text-white
+                                    h6.mb-0.text-white
+                                        span.counter 885
+                                        | +
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-cup.mb-2.text-white
+                                    h6.mb-0.text-white
+                                        span.counter 23
+                                        | k
+
+                            .col-4
+                                // Single Counter 
+                                .single-counter-wrap.text-center
+                                    i.bi.bi-emoji-smile.mb-2.text-white
+                                    h6.mb-0.text-white
+                                        span.counter 1247
+                                        | +
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Counter Up 05
+
+            .bg-img.bg-overlay.py-4(style="background-image: url('img/bg-img/30.jpg')")
+                .container.direction-rtl
+                    .row.align-items-center
+                        .col-6
+                            .single-counter-wrap
+                                h6.text-white.mt-2 Some of <br> our milestones.
+                                span.solid-line.ms-0.bg-warning
+
+                        .col-3
+                            // Single Counter 
+                            .single-counter-wrap.text-center
+                                i.bi.bi-calendar2-check-fill.mb-1.text-white
+                                h6.mb-0.text-white
+                                    span.counter 361
+
+                        .col-3
+                            // Single Counter 
+                            .single-counter-wrap.text-center
+                                i.bi.bi-handbag.mb-1.text-white
+                                h6.mb-0.text-white
+                                    span.counter 1378
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

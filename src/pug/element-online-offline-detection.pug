@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Offline Detection
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                .card.offline-online-card
+                    .card-body.text-center
+                        h6.border-bottom.pb-2 Offline / Online Detection
+                        p Press the button to view offline / online notifications. These buttons are used for demo purposes.
+                        a.mx-1.offline-detection.btn.btn-danger(href="#") Offline Detect
+                        a.mx-1.online-detection.btn.btn-success(href="#") Online Detect
+
+            .container
+                .card.mt-4.offline-online-card
+                    .card-body
+                        h6 How it works?
+                        p.mb-2 Offline / online detection
+                            strong.mx-1.text-primary works automatically.
+                            | No coding required, it works by default on each page.
+                        p.mb-0 Disconnect your WiFi or mobile internet connection, you will be notified. When your connection returns, you will be notified again.
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

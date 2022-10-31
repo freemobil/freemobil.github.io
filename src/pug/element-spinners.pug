@@ -1,0 +1,220 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Spinner
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Circle loader
+                                
+            .container
+                .card.bg-dark
+                    .card-body
+                        // Circle Loader 
+                        .circle-loader
+                            .circle-big
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Dot loader
+
+            .container
+                .card.bg-primary
+                    .card-body.py-5
+                        // Dot Loader 
+                        .dot-loader
+                            .dot1
+                            .dot2
+                            .dot3
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Circle spinner
+
+            .container
+                .card.direction-rtl
+                    .card-body.d-flex
+                        // Circle Spinner 
+                        .circle-spinner
+                            .circle
+
+                        // Circle Spinner 
+                        .circle-spinner.circle-spinner-success
+                            .circle
+                            
+                        // Circle Spinner 
+                        .circle-spinner.circle-spinner-warning
+                            .circle
+                            
+                        // Circle Spinner 
+                        .circle-spinner.circle-spinner-danger
+                            .circle
+                            
+                        // Circle Spinner 
+                        .circle-spinner.circle-spinner-info
+                            .circle
+                            
+                        // Circle Spinner 
+                        .circle-spinner.circle-spinner-light
+                            .circle
+                            
+                        // Circle Spinner 
+                        .circle-spinner.circle-spinner-dark
+                            .circle
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Border spinner
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .spinner-border.text-primary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-secondary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-success(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-warning(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-danger(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-info(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-light(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.text-dark(role="status")
+                            span.visually-hidden Loading...
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Growing spinner
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .spinner-grow.text-primary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-secondary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-success(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-warning(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-danger(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-info(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-light(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.text-dark(role="status")
+                            span.visually-hidden Loading...
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Spinner small size
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .spinner-grow.spinner-grow-sm.text-primary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-secondary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-success(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-warning(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-danger(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-info(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-light(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-grow.spinner-grow-sm.text-dark(role="status")
+                            span.visually-hidden Loading...
+
+                        .border-top.my-3
+
+                        .spinner-border.spinner-border-sm.text-primary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-secondary(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-success(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-warning(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-danger(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-info(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-light(role="status")
+                            span.visually-hidden Loading...
+
+                        .spinner-border.spinner-border-sm.text-dark(role="status")
+                            span.visually-hidden Loading...
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

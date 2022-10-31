@@ -1,0 +1,134 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Comparison Table
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Comparison Table 1
+
+            .container
+                .card.comparison-table-two
+                    .card-body
+                        table.table.mb-0
+                            thead
+                                tr
+                                    th Features
+                                    th Basic
+                                    th 
+                                        svg.bi.bi-gem.text-warning(xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16")
+                                            path(d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z")
+                            tbody
+                                tr
+                                    th Price
+                                    td Free
+                                    td $99
+                                tr
+                                    th Lifetime Usage
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.bi.bi-check-lg
+                                tr
+                                    th Support
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.bi.bi-check-lg
+                                tr
+                                    th Domain License
+                                    td 1
+                                    td 10
+                                tr
+                                    th Access to Extensions
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.bi.bi-check-lg
+                                tr
+                                    th Copyright Removal
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.bi.bi-check-lg
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Comparison Table 2
+
+            .container
+                .card.comparison-table-one
+                    .card-body
+                        table.table.mb-0
+                            thead.thead-light
+                                tr
+                                    th Features
+                                    th Basic
+                                    th Pro
+                            tbody
+                                tr
+                                    th Price
+                                    td Free
+                                    td $99
+                                tr
+                                    th Lifetime Usage
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.text-success.bi.bi-check-lg
+                                tr
+                                    th Premium Supports
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.text-success.bi.bi-check-lg
+                                tr
+                                    th Domain License
+                                    td 1
+                                    td 10
+                                tr
+                                    th Access to Extensions
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.text-success.bi.bi-check-lg
+                                tr
+                                    th Copyright Removal
+                                    td
+                                        i.text-danger.bi.bi-x-lg
+                                    td
+                                        i.text-success.bi.bi-check-lg
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

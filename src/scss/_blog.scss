@@ -1,0 +1,82 @@
+/* :: Blog CSS */
+
+.card-blog-img {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+    height: 173px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.card-blog-content {
+    padding: 1.5rem;
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.blog-description {
+    p {
+        font-size: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.blog-title {
+    font-weight: 500;
+    overflow: hidden;
+    height: 48px;
+
+    &:hover,
+    &:focus {
+        color: $primary !important;
+    }
+}
+
+.single-user-review {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .user-thumbnail {
+        margin-top: 0.5rem;
+        flex: 0 0 40px;
+        width: 40px;
+        max-width: 40px;
+        margin-right: .5rem;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .name-date {
+        display: block;
+        font-size: 12px;
+    }
+}
+
+.post-bookmark {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50%;
+    color: $white;
+
+    &:hover,
+    &:focus {
+        background-color: $danger;
+    }
+}

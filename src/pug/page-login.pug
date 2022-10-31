@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Back Button 
+        .login-back-button
+            a(href="element-hero-blocks.html")
+                svg.bi.bi-arrow-left-short(width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                    path(fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z")
+
+        // Login Wrapper Area 
+        .login-wrapper.d-flex.align-items-center.justify-content-center
+            .custom-container
+                .text-center.px-4
+                    img.login-intro-img(src="img/bg-img/36.png" alt="")
+
+                // Register Form 
+                .register-form.mt-4
+                    h6.mb-3.text-center Log in to continue to Affan.
+
+                    form(action="page-home.html")
+                        .form-group
+                            input.form-control(type="text" placeholder="Username")
+                        .form-group.position-relative
+                            input.form-control#psw-input(type="password" placeholder="Enter Password")
+                            #password-visibility.position-absolute
+                                i.bi.bi-eye
+                                i.bi.bi-eye-slash
+                        button.btn.btn-primary.w-100(type="submit") Sign In
+
+                // Login Meta 
+                .login-meta-data.text-center
+                    a.stretched-link.forgot-password.d-block.mt-3.mb-1(href="page-forget-password.html") Forgot Password?
+                    p.mb-0 Didn't have an account? 
+                        a.stretched-link(href="page-register.html") Register Now
+
+        include inc/footer.pug

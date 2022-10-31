@@ -1,0 +1,97 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Checkout
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Checkout Wrapper 
+                .checkout-wrapper-area
+                    .card
+                        .card-body.checkout-form
+                            h6.mb-3 Enter your billing details
+
+                            form(action="page-payment-confirm.html")
+                                .form-group
+                                    input.form-control.mb-3(type="text", placeholder="Your full name")
+
+                                .form-group
+                                    input.form-control.mb-3(type="text", placeholder="Your company")
+
+                                .form-group
+                                    input.form-control.mb-3(type="email", placeholder="Your email")
+
+                                .form-group
+                                    input.form-control.mb-3(type="text", placeholder="Your mobile number")
+
+                                .form-group
+                                    select.form-select.mb-3#selectCountry(name="selectCountry", aria-label="Default select example")
+                                        option(value="1", selected) Your Country
+                                        option(value="2") Bangladesh
+                                        option(value="2") India
+                                        option(value="2") United Kingdom
+                                        option(value="3") United States
+
+                                .form-group
+                                    select.form-select.mb-3#selectDistrict(name="selectDistrict", aria-label="Default select example")
+                                        option(value="1", selected) Your City
+                                        option(value="2") Dhaka
+                                        option(value="3") Barishal
+                                        option(value="3") Khulna
+
+                                .form-group
+                                    input.form-control.mb-3(type="text", placeholder="Street address")
+
+                                .form-group
+                                    input.form-control.mb-3(type="text", placeholder="Postcode or ZIP")
+                                
+                                .form-group
+                                    input.form-control.mb-3(type="text", placeholder="Postcode or ZIP")
+
+                                .form-group
+                                    textarea.form-control.mb-3#notes(name="notes", cols="30", rows="10", placeholder="Notes")
+
+                                .form-check.mb-2
+                                    input.form-check-input(type="radio", name="exampleRadio", id="darkRadio1", checked)
+                                    label.form-check-label(for="darkRadio1") Regular Courier $0.49
+
+                                .form-check.mb-2
+                                    input.form-check-input(type="radio", name="exampleRadio", id="darkRadio2")
+                                    label.form-check-label(for="darkRadio2") Free Shipping $0
+
+                                .form-check
+                                    input.form-check-input(type="radio", name="exampleRadio", id="darkRadio3")
+                                    label.form-check-label(for="darkRadio3") Emergency Delivery $2
+
+                                button.btn.btn-danger.mt-3.w-100(type="submit") Pay Now &amp; Order
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

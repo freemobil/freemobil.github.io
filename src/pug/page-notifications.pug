@@ -1,0 +1,115 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Paste your Header Content from here 
+
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Notifications
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        // Page Content Wrapper 
+        .page-content-wrapper.py-3
+            // Notifications Area 
+            .notification-area
+                .container
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.unread.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-chat-dots.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate New comment on your template
+                                span.text-truncate New comment on "Affan - PWA Mobile HTML5 Template" from designing world
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.unread.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-star.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate A new rating has been received
+                                span.text-truncate A new rating has been received for Saasbox - Bootstrap 5 Multipurpose HTML Template for Saas &amp; Agency
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.unread.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-check2-circle.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate You sold an item!
+                                span.text-truncate Congratulations! You sold a Single License for Affan.
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-chat-dots.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate New comment on your template
+                                span.text-truncate New comment on "Affan - PWA Mobile HTML5 Template" from designing world
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-star.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate A new rating has been received
+                                span.text-truncate A new rating has been received for Saasbox - Bootstrap 5 Multipurpose HTML Template for Saas &amp; Agency
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-check2-circle.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate You sold an item!
+                                span.text-truncate Congratulations! You sold a Single License for Affan.
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-chat-dots.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate New comment on your template
+                                span.text-truncate New comment on "Affan - PWA Mobile HTML5 Template" from designing world
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-star.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate A new rating has been received
+                                span.text-truncate A new rating has been received for Saasbox - Bootstrap 5 Multipurpose HTML Template for Saas &amp; Agency
+
+                    // Single Notification 
+                    a(href="page-notification-details.html")
+                        .alert.custom-alert-3.alert-primary(role="alert")
+                            i.bi.bi-check2-circle.mt-0
+                            .alert-text.w-75
+                                h6.text-truncate You sold an item!
+                                span.text-truncate Congratulations! You sold a Single License for Apland.                    
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

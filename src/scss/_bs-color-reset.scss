@@ -1,0 +1,1172 @@
+/* :: Bootstrap Color Reset CSS */
+
+a {
+    color: $primary;
+}
+
+kbd {
+    background-color: $dark;
+}
+
+caption {
+    color: $text;
+}
+
+.blockquote-footer {
+    color: $text;
+}
+
+.img-thumbnail {
+    border-color: $border;
+}
+
+.figure-caption {
+    color: $text;
+}
+
+.table {
+    border-color: $border;
+}
+
+.table-primary {
+    color: $heading;
+}
+
+.table-secondary {
+    color: $heading;
+}
+
+.table-success {
+    color: $heading;
+}
+
+.table-info {
+    color: $heading;
+}
+
+.table-warning {
+    color: $heading;
+}
+
+.table-danger {
+    color: $heading;
+}
+
+.table-light {
+    color: $heading;
+}
+
+.form-text {
+    color: $text;
+}
+
+.form-control {
+    color: $heading;
+    border-color: $border;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: $text;
+}
+
+.form-control::-moz-placeholder {
+    color: $text;
+}
+
+.form-control::-ms-input-placeholder {
+    color: $text;
+}
+
+.form-control:-ms-input-placeholder {
+    color: $text;
+}
+
+.form-control::placeholder {
+    color: $text;
+}
+
+.form-control-plaintext {
+    color: $heading;
+}
+
+.form-select {
+    color: $heading;
+    border-color: $border;
+}
+
+.form-select:focus::-ms-value {
+    color: $heading;
+    background-color: $white;
+}
+
+.form-select:disabled {
+    color: $text;
+    background-color: $gray;
+}
+
+.form-check-input {
+    background-color: $white;
+    border: 1px solid $border;
+}
+
+.form-check-input:checked {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.form-check-input[type="checkbox"]:indeterminate {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.form-file-text {
+    color: $heading;
+    background-color: $white;
+}
+
+.form-file-button {
+    color: $heading;
+    background-color: $gray;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: $primary;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: $primary;
+}
+
+.form-range::-ms-thumb {
+    background-color: $primary;
+}
+
+.input-group-text {
+    color: $heading;
+    background-color: #cff2ff;
+    border-color: #cff2ff;
+}
+
+.valid-feedback {
+    color: $success;
+}
+
+.valid-tooltip {
+    color: $white;
+    background-color: rgba(40, 167, 69, 0.9);
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    border-color: $success;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+    border-color: $success;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+    border-color: $success;
+}
+
+.was-validated .form-select:valid,
+.form-select.is-valid {
+    border-color: $success;
+}
+
+.was-validated .form-select:valid:focus,
+.form-select.is-valid:focus {
+    border-color: $success;
+}
+
+.was-validated .form-check-input:valid,
+.form-check-input.is-valid {
+    border-color: $success;
+}
+
+.was-validated .form-check-input:valid:checked,
+.form-check-input.is-valid:checked {
+    background-color: $success;
+}
+
+.was-validated .form-check-input:valid~.form-check-label,
+.form-check-input.is-valid~.form-check-label {
+    color: $success;
+}
+
+.was-validated .form-file-input:valid~.form-file-label,
+.form-file-input.is-valid~.form-file-label {
+    border-color: $success;
+}
+
+.was-validated .form-file-input:valid:focus~.form-file-label,
+.form-file-input.is-valid:focus~.form-file-label {
+    border-color: $success;
+}
+
+.invalid-feedback {
+    color: $danger;
+}
+
+.invalid-tooltip {
+    color: $white;
+    background-color: rgba(220, 53, 69, 0.9);
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: $danger;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+    border-color: $danger;
+}
+
+.was-validated .form-select:invalid,
+.form-select.is-invalid {
+    border-color: $danger;
+}
+
+.was-validated .form-select:invalid:focus,
+.form-select.is-invalid:focus {
+    border-color: $danger;
+}
+
+.was-validated .form-check-input:invalid,
+.form-check-input.is-invalid {
+    border-color: $danger;
+}
+
+.was-validated .form-check-input:invalid:checked,
+.form-check-input.is-invalid:checked {
+    background-color: $danger;
+}
+
+.was-validated .form-check-input:invalid~.form-check-label,
+.form-check-input.is-invalid~.form-check-label {
+    color: $danger;
+}
+
+.was-validated .form-file-input:invalid~.form-file-label,
+.form-file-input.is-invalid~.form-file-label {
+    border-color: $danger;
+}
+
+.was-validated .form-file-input:invalid:focus~.form-file-label,
+.form-file-input.is-invalid:focus~.form-file-label {
+    border-color: $danger;
+}
+
+.btn {
+    color: $heading;
+}
+
+.btn:hover {
+    color: $heading;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-primary:hover {
+    color: $white;
+    background-color: #025ce2;
+    border-color: #0257d5;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: $white;
+    background-color: #025ce2;
+    border-color: #0257d5;
+}
+
+.btn-check:checked+.btn-primary,
+.btn-check:active+.btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle {
+    color: $white;
+    background-color: #0257d5;
+    border-color: #0252c9;
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-secondary {
+    color: $white;
+    background-color: $text;
+    border-color: $text;
+}
+
+.btn-secondary:hover {
+    color: $white;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+    color: $white;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-check:checked+.btn-secondary,
+.btn-check:active+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary.active,
+.show>.btn-secondary.dropdown-toggle {
+    color: $white;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+.btn-success {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-success:hover {
+    color: $white;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-check:focus+.btn-success,
+.btn-success:focus {
+    color: $white;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-check:checked+.btn-success,
+.btn-check:active+.btn-success,
+.btn-success:active,
+.btn-success.active,
+.show>.btn-success.dropdown-toggle {
+    color: $white;
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+.btn-success:disabled,
+.btn-success.disabled {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-info {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-info:hover {
+    color: $white;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-check:focus+.btn-info,
+.btn-info:focus {
+    color: $white;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-check:checked+.btn-info,
+.btn-check:active+.btn-info,
+.btn-info:active,
+.btn-info.active,
+.show>.btn-info.dropdown-toggle {
+    color: $white;
+    background-color: #117a8b;
+    border-color: #10707f;
+}
+
+.btn-info:disabled,
+.btn-info.disabled {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-warning {
+    color: $heading;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-warning:hover {
+    color: $heading;
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-check:focus+.btn-warning,
+.btn-warning:focus {
+    color: $heading;
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-check:checked+.btn-warning,
+.btn-check:active+.btn-warning,
+.btn-warning:active,
+.btn-warning.active,
+.show>.btn-warning.dropdown-toggle {
+    color: $heading;
+    background-color: #d39e00;
+    border-color: #c69500;
+}
+
+.btn-warning:disabled,
+.btn-warning.disabled {
+    color: $heading;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-danger {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-danger:hover {
+    color: $white;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-check:focus+.btn-danger,
+.btn-danger:focus {
+    color: $white;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-check:checked+.btn-danger,
+.btn-check:active+.btn-danger,
+.btn-danger:active,
+.btn-danger.active,
+.show>.btn-danger.dropdown-toggle {
+    color: $white;
+    background-color: #bd2130;
+    border-color: #b21f2d;
+}
+
+
+.btn-danger:disabled,
+.btn-danger.disabled {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-light {
+    color: $heading;
+    background-color: $gray;
+    border-color: $gray;
+}
+
+.btn-light:hover {
+    color: $heading;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.btn-check:focus+.btn-light,
+.btn-light:focus {
+    color: $heading;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.btn-check:checked+.btn-light,
+.btn-check:active+.btn-light,
+.btn-light:active,
+.btn-light.active,
+.show>.btn-light.dropdown-toggle {
+    color: $heading;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
+}
+
+.btn-light:disabled,
+.btn-light.disabled {
+    color: $heading;
+    background-color: $gray;
+    border-color: $gray;
+}
+
+.btn-dark {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+}
+
+.btn-dark:hover {
+    color: $white;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.btn-check:focus+.btn-dark,
+.btn-dark:focus {
+    color: $white;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.btn-check:checked+.btn-dark,
+.btn-check:active+.btn-dark,
+.btn-dark:active,
+.btn-dark.active,
+.show>.btn-dark.dropdown-toggle {
+    color: $white;
+    background-color: #1d2124;
+    border-color: #171a1d;
+}
+
+.btn-dark:disabled,
+.btn-dark.disabled {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+}
+
+.btn-outline-primary:hover {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-check:checked+.btn-outline-primary,
+.btn-check:active+.btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+    color: $primary;
+}
+
+.btn-outline-secondary {
+    color: $text;
+    border-color: $text;
+}
+
+.btn-outline-secondary:hover {
+    color: $white;
+    background-color: $text;
+    border-color: $text;
+}
+
+.btn-check:checked+.btn-outline-secondary,
+.btn-check:active+.btn-outline-secondary,
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show {
+    color: $white;
+    background-color: $text;
+    border-color: $text;
+}
+
+.btn-outline-secondary:disabled,
+.btn-outline-secondary.disabled {
+    color: $text;
+}
+
+.btn-outline-success {
+    color: $success;
+    border-color: $success;
+}
+
+.btn-outline-success:hover {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-check:checked+.btn-outline-success,
+.btn-check:active+.btn-outline-success,
+.btn-outline-success:active,
+.btn-outline-success.active,
+.btn-outline-success.dropdown-toggle.show {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-outline-success:disabled,
+.btn-outline-success.disabled {
+    color: $success;
+}
+
+.btn-outline-info {
+    color: $info;
+    border-color: $info;
+}
+
+.btn-outline-info:hover {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-check:checked+.btn-outline-info,
+.btn-check:active+.btn-outline-info,
+.btn-outline-info:active,
+.btn-outline-info.active,
+.btn-outline-info.dropdown-toggle.show {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-outline-info:disabled,
+.btn-outline-info.disabled {
+    color: $info;
+}
+
+.btn-outline-warning {
+    color: $warning;
+    border-color: $warning;
+}
+
+.btn-outline-warning:hover {
+    color: $heading;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-check:checked+.btn-outline-warning,
+.btn-check:active+.btn-outline-warning,
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.btn-outline-warning.dropdown-toggle.show {
+    color: $heading;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-outline-warning:disabled,
+.btn-outline-warning.disabled {
+    color: $warning;
+}
+
+.btn-outline-danger {
+    color: $danger;
+    border-color: $danger;
+}
+
+.btn-outline-danger:hover {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-check:checked+.btn-outline-danger,
+.btn-check:active+.btn-outline-danger,
+.btn-outline-danger:active,
+.btn-outline-danger.active,
+.btn-outline-danger.dropdown-toggle.show {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-outline-danger:disabled,
+.btn-outline-danger.disabled {
+    color: $danger;
+}
+
+.btn-outline-light {
+    color: $gray;
+    border-color: $gray;
+}
+
+.btn-outline-light:hover {
+    color: $heading;
+    background-color: $gray;
+    border-color: $gray;
+}
+
+.btn-check:checked+.btn-outline-light,
+.btn-check:active+.btn-outline-light,
+.btn-outline-light:active,
+.btn-outline-light.active,
+.btn-outline-light.dropdown-toggle.show {
+    color: $heading;
+    background-color: $gray;
+    border-color: $gray;
+}
+
+.btn-outline-light:disabled,
+.btn-outline-light.disabled {
+    color: $gray;
+}
+
+.btn-outline-dark {
+    color: $dark;
+    border-color: $dark;
+}
+
+.btn-outline-dark:hover {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+}
+
+.btn-check:checked+.btn-outline-dark,
+.btn-check:active+.btn-outline-dark,
+.btn-outline-dark:active,
+.btn-outline-dark.active,
+.btn-outline-dark.dropdown-toggle.show {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+}
+
+.btn-outline-dark:disabled,
+.btn-outline-dark.disabled {
+    color: $dark;
+}
+
+.btn-link {
+    color: $primary;
+}
+
+.btn-link:hover {
+    color: #024dbc;
+}
+
+.btn-link:disabled,
+.btn-link.disabled {
+    color: $text;
+}
+
+.dropdown-menu {
+    color: $heading;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-divider {
+    border-top: 1px solid $gray;
+}
+
+.dropdown-item {
+    color: $heading;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #16181b;
+    background-color: $gray;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: $white;
+    background-color: $primary;
+}
+
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+    color: $text;
+}
+
+.dropdown-header {
+    color: $text;
+}
+
+.dropdown-item-text {
+    color: $heading;
+}
+
+.nav-link.disabled {
+    color: $text;
+}
+
+.nav-tabs {
+    border-bottom-color: $border;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border-color: $gray $gray $border;
+}
+
+.nav-tabs .nav-link.disabled {
+    color: $text;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: $heading;
+    background-color: $white;
+    border-color: $border $border $white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: $white;
+    background-color: $primary;
+}
+
+.breadcrumb {
+    background-color: $gray;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: $text;
+    content: "/";
+}
+
+.breadcrumb-item.active {
+    color: $text;
+}
+
+.page-link {
+    color: $primary;
+    background-color: $white;
+    border: 1px solid $border;
+}
+
+.page-link:hover {
+    color: #024dbc;
+    background-color: $gray;
+    border-color: $border;
+}
+
+.page-item.active .page-link {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.page-item.disabled .page-link {
+    color: $text;
+    background-color: $white;
+    border-color: $border;
+}
+
+.progress {
+    background-color: $gray;
+}
+
+.progress-bar {
+    color: $white;
+    background-color: $primary;
+}
+
+.list-group-item-action {
+    color: $heading;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+    color: $heading;
+    background-color: $gray;
+}
+
+.list-group-item-action:active {
+    color: $heading;
+    background-color: $gray;
+}
+
+.list-group-item {
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item.disabled,
+.list-group-item:disabled {
+    color: $text;
+    background-color: $white;
+}
+
+.list-group-item.active {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.toast {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+    color: $text;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.modal-header {
+    border-bottom: 1px solid $border;
+}
+
+.modal-footer {
+    border-top: 1px solid $border;
+}
+
+.popover-body {
+    color: $heading;
+}
+
+.link-primary {
+    color: $primary;
+}
+
+.link-primary:hover,
+.link-primary:focus {
+    color: #024dbc;
+}
+
+.link-secondary {
+    color: $text;
+}
+
+.link-secondary:hover,
+.link-secondary:focus {
+    color: #494f54;
+}
+
+.link-success {
+    color: $success;
+}
+
+.link-success:hover,
+.link-success:focus {
+    color: #19692c;
+}
+
+.link-info {
+    color: $info;
+}
+
+.link-info:hover,
+.link-info:focus {
+    color: #0f6674;
+}
+
+.link-warning {
+    color: $warning;
+}
+
+.link-warning:hover,
+.link-warning:focus {
+    color: #ba8b00;
+}
+
+.link-danger {
+    color: $danger;
+}
+
+.link-danger:hover,
+.link-danger:focus {
+    color: #a71d2a;
+}
+
+.link-light {
+    color: $gray;
+}
+
+.link-light:hover,
+.link-light:focus {
+    color: #cbd3da;
+}
+
+.link-dark {
+    color: $dark;
+}
+
+.link-dark:hover,
+.link-dark:focus {
+    color: #121416;
+}
+
+.border {
+    border-color: $border !important;
+}
+
+.border-top {
+    border-top-color: $border !important;
+}
+
+.border-end {
+    border-right-color: $border !important;
+}
+
+.border-bottom {
+    border-bottom-color: $border !important;
+}
+
+.border-start {
+    border-left-color: $border !important;
+}
+
+.border-primary {
+    border-color: $primary !important;
+}
+
+.border-secondary {
+    border-color: $text !important;
+}
+
+.border-success {
+    border-color: $success !important;
+}
+
+.border-info {
+    border-color: $info !important;
+}
+
+.border-warning {
+    border-color: $warning !important;
+}
+
+.border-danger {
+    border-color: $danger !important;
+}
+
+.border-light {
+    border-color: $gray !important;
+}
+
+.border-dark {
+    border-color: $dark !important;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $text !important;
+}
+
+.text-success {
+    color: $success !important;
+}
+
+.text-info {
+    color: $info !important;
+}
+
+.text-warning {
+    color: $warning !important;
+}
+
+.text-danger {
+    color: $danger !important;
+}
+
+.text-light {
+    color: $gray !important;
+}
+
+.text-dark {
+    color: $dark !important;
+}
+
+.text-body {
+    color: $heading !important;
+}
+
+.text-muted {
+    color: $text !important;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-secondary {
+    background-color: $text !important;
+}
+
+.bg-success {
+    background-color: $success !important;
+}
+
+.bg-info {
+    background-color: $info !important;
+}
+
+.bg-warning {
+    background-color: $warning !important;
+}
+
+.bg-danger {
+    background-color: $danger !important;
+}
+
+.bg-light {
+    background-color: $gray !important;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: $gray;
+}
+
+.bs-tooltip-auto[x-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: $heading;
+}
+
+.bs-tooltip-auto[x-placement^=right] .tooltip-arrow::before,
+.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: $heading;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: $heading;
+}
+
+.bs-tooltip-auto[x-placement^=left] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: $heading;
+}
+
+.tooltip-inner {
+    padding: .375rem 1rem;
+    background-color: $heading;
+}
+
+.tooltip.show {
+    opacity: 1;
+}

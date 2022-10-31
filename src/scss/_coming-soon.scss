@@ -1,0 +1,40 @@
+/* :: Coming Soon CSS */
+
+.coming-soon-wrapper {
+    position: relative;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .countdown2 {
+        span {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.cs-logo a {
+    display: block;
+    margin-bottom: 2.75rem;
+
+    img {
+        max-height: 2rem;
+    }
+}
+
+.cs-newsletter-form {
+
+    .modal-body {
+        padding: 2rem;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+    }
+}

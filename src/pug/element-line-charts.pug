@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Line Chart
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Line Chart 01
+
+            .container
+                .card.shadow-sm
+                    .card-body.pb-0
+                        .chart-wrapper
+                            #lineChart1
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Line Chart 02
+
+            .container
+                .card.shadow-sm
+                    .card-body.pb-0
+                        .chart-wrapper
+                            #lineChart2
+
+        include inc/footer-nav.pug
+
+        include inc/footer-chart.pug

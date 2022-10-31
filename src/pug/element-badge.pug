@@ -1,0 +1,234 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Badge
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Badge
+
+            .container
+                .card
+                    .card-body
+                        .direction-rtl
+                            // Badge 
+                            span.m-1.badge.bg-primary Primary
+                            span.m-1.badge.bg-secondary Secondary
+                            span.m-1.badge.bg-success Success
+                            span.m-1.badge.bg-danger Danger
+                            span.m-1.badge.bg-warning.text-dark Warning
+                            span.m-1.badge.bg-info Info
+                            span.m-1.badge.bg-light.text-dark Light
+                            span.m-1.badge.bg-dark Dark
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Pill badge
+
+            .container
+                .card
+                    .card-body
+                        .direction-rtl
+                            // Pill Badge 
+                            span.m-1.badge.rounded-pill.bg-primary Primary
+                            span.m-1.badge.rounded-pill.bg-secondary Secondary
+                            span.m-1.badge.rounded-pill.bg-success Success
+                            span.m-1.badge.rounded-pill.bg-danger Danger
+                            span.m-1.badge.rounded-pill.bg-warning.text-dark Warning
+                            span.m-1.badge.rounded-pill.bg-info Info
+                            span.m-1.badge.rounded-pill.bg-light.text-dark Light
+                            span.m-1.badge.rounded-pill.bg-dark Dark
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Avater badge
+
+            .container
+                .card
+                    .card-body
+                        .badge-avater-wrap.d-flex.align-items-center.mb-3
+                            // Badge Avater Lg 
+                            a.me-2.badge-avater.badge-avater-lg(href="#")
+                                img.img-circle(src="img/bg-img/user1.png", alt="")
+                                span.status.bg-success
+
+                            // Badge Avater 
+                            a.me-2.badge-avater(href="#")
+                                img.img-circle(src="img/bg-img/user2.png", alt="")
+                                span.status.bg-success
+
+                            // Badge Avater Sm 
+                            a.me-2.badge-avater.badge-avater-sm(href="#")
+                                img.img-circle(src="img/bg-img/user3.png", alt="")
+                                span.status.bg-success
+
+                            // Badge Avater Lg 
+                            a.me-2.badge-avater.badge-avater-lg.bg-primary(href="#") A
+                                span.status.bg-success
+
+                            // Badge Avater 
+                            a.me-2.badge-avater.bg-primary(href="#") B
+                                span.status.bg-success
+
+                            // Badge Avater Sm 
+                            a.me-2.badge-avater.badge-avater-sm.bg-primary(href="#") C
+                                span.status.bg-success
+
+                        
+                        // Badge Avater Group 
+                        .badge-avater-group
+                            // Badge Avater Lg 
+                            a.badge-avater.badge-avater-lg(href="#")
+                                img.img-circle(src="img/bg-img/user1.png", alt="")
+
+                            // Badge Avater Lg 
+                            a.badge-avater.badge-avater-lg(href="#")
+                                img.img-circle(src="img/bg-img/user2.png", alt="")
+
+                            // Badge Avater Lg 
+                            a.badge-avater.badge-avater-lg(href="#")
+                                img.img-circle(src="img/bg-img/user3.png", alt="")
+
+                            // Badge Avater Lg 
+                            a.badge-avater.badge-avater-lg(href="#")
+                                img.img-circle(src="img/bg-img/user4.png", alt="")
+
+                            // Badge Avater Lg 
+                            a.badge-avater.badge-avater-lg.bg-primary(href="#") +3
+
+                        .mb-3                            
+                        
+                        // Badge Avater Group 
+                        .badge-avater-group
+                            // Badge Avater 
+                            a.badge-avater(href="#")
+                                img.img-circle(src="img/bg-img/user1.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater(href="#")
+                                img.img-circle(src="img/bg-img/user2.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater(href="#")
+                                img.img-circle(src="img/bg-img/user3.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater(href="#")
+                                img.img-circle(src="img/bg-img/user4.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater.bg-primary(href="#") +3
+
+                        .mb-3
+                        
+                        // Badge Avater Group 
+                        .badge-avater-group
+                            // Badge Avater 
+                            a.badge-avater.badge-avater-sm(href="#")
+                                img.img-circle(src="img/bg-img/user1.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater.badge-avater-sm(href="#")
+                                img.img-circle(src="img/bg-img/user2.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater.badge-avater-sm(href="#")
+                                img.img-circle(src="img/bg-img/user3.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater.badge-avater-sm(href="#")
+                                img.img-circle(src="img/bg-img/user4.png", alt="")
+
+                            // Badge Avater 
+                            a.badge-avater.badge-avater-sm.bg-primary(href="#") +3
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Badge with button
+
+            .container
+                .card
+                    .card-body
+                        .direction-rtl
+                            a.btn.btn-primary.m-1(href="#") Notification
+                                span.ms-1.badge.bg-success 1
+
+                            a.btn.btn-warning.m-1(href="#") Cart
+                                span.ms-1.badge.rounded-pill.bg-dark 9
+
+                            a.btn.btn-danger.m-1(href="#") Profile
+                                span.ms-1.badge.rounded-pill.bg-primary 3
+
+                            a.btn.btn-info.m-1(href="#") Sales
+                                span.ms-1.badge.rounded-pill.bg-primary 1280
+
+                            a.btn.btn-dark.m-1(href="#") Revenue
+                                span.ms-1.badge.bg-primary $63
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Badge Notification
+
+            .container
+                .card
+                    .card-body
+                        .direction-rtl
+                            button.btn.btn-success.position-relative(type="button") Inbox 
+                                span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-info 26
+                            
+                            button.ms-3.btn.btn-primary.position-relative(type="button") Spam 
+                                span.position-absolute.top-0.start-100.translate-middle.badge.rounded-circle.bg-danger.p-2
+                                    span.visually-hidden unread messages
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Badge with heading
+
+            .container
+                .card
+                    .card-body
+                        h4 Hello Affan!
+                            span.badge.bg-primary.ms-2 badge
+
+                        h5 Hello Affan!
+                            span.badge.bg-primary.ms-2 badge
+
+                        h6.mb-0 Hello Affan!
+                            span.badge.bg-primary.ms-2 badge
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

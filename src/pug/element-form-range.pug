@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Range
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Range
+
+            .container
+                .card
+                    .card-body
+                        label.form-label(for="bootstrapRange") Bootstrap range
+                        input.form-range#bootstrapRange(type="range")            
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Range with step
+
+            .container
+                .card
+                    .card-body
+                        label.form-label(for="stepRange") Range with step
+                        input.form-range#stepRange(type="range", min="0", max="5", step="1")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Disabled range
+
+            .container
+                .card
+                    .card-body
+                        label.form-label(for="disabledRange") Disabled Range
+                        input.form-range#disabledRange(type="range", min="0", max="100", step="1", disabled)
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Range with value
+
+            .container
+                .card
+                    .card-body
+                        .range-with-value.d-flex.align-items-center
+                            input.form-range#range-with-value(type="range", min="0", max="500", value="233", step="1")
+                            button.btn.btn-primary.btn-sm.ms-3#rangevalue 233
+                            script.
+                                var rangeInput = document.getElementById("range-with-value");
+                                var rangeValue = document.querySelector("#rangevalue");
+
+                                rangeInput.addEventListener("click", function(){
+                                    var ranValOnMouseMove = rangeInput.value;
+                                    rangeValue.innerHTML = ranValOnMouseMove;
+                                });
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Range with double slide
+
+            .container
+                .card
+                    .card-body
+                        input#ionRangeSlider1(type="text", name="ionrange", value="", data-type="double", data-min="0", data-max="5000", data-from="700", data-to="2400", data-prefix="$", data-grid="true", data-grid-num="5")
+            
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Single range
+
+            .container
+                .card
+                    .card-body
+                        input#ionRangeSlider2(type="text", name="ion-range", value="", data-min="0", data-max="5000", data-from="0", data-prefix="$", data-grid="true", data-grid-num="5")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

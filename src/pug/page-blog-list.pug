@@ -1,0 +1,134 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Blog List
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                .row.g-3.justify-content-center
+                    // Single Blog Card 
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.shadow-sm.blog-list-card
+                            .d-flex.align-items-center
+                                .card-blog-img.position-relative(style="background-image: url('img/bg-img/22.jpg')")
+                                    span.badge.bg-warning.text-dark.position-absolute.card-badge Agency
+
+                                .card-blog-content
+                                    span.badge.bg-danger.rounded-pill.mb-2.d-inline-block 25 Nov
+                                    a.blog-title.d-block.mb-3.text-dark(href="page-blog-details.html") The 5 best reviews in Affan
+                                    a.btn.btn-primary.btn-sm(href="page-blog-details.html") Read More
+
+                    // Single Blog Card 
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.shadow-sm.blog-list-card
+                            .d-flex.align-items-center
+                                .card-blog-img.position-relative(style="background-image: url('img/bg-img/23.jpg')")
+                                    span.badge.bg-warning.text-dark.position-absolute.card-badge Business
+
+                                .card-blog-content
+                                    span.badge.bg-danger.rounded-pill.mb-2.d-inline-block 15 Nov
+                                    a.blog-title.d-block.mb-3.text-dark(href="page-blog-details.html") The 5 best reviews in Affan
+                                    a.btn.btn-primary.btn-sm(href="page-blog-details.html") Read More
+
+                    // Single Blog Card 
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.shadow-sm.blog-list-card
+                            .d-flex.align-items-center
+                                .card-blog-img.position-relative(style="background-image: url('img/bg-img/24.jpg')")
+                                    span.badge.bg-warning.text-dark.position-absolute.card-badge World
+
+                                .card-blog-content
+                                    span.badge.bg-danger.rounded-pill.mb-2.d-inline-block 12 Nov
+                                    a.blog-title.d-block.mb-3.text-dark(href="page-blog-details.html") The 5 best reviews in Affan
+                                    a.btn.btn-primary.btn-sm(href="page-blog-details.html") Read More
+
+                    // Single Blog Card 
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.shadow-sm.blog-list-card
+                            .d-flex.align-items-center
+                                .card-blog-img.position-relative(style="background-image: url('img/bg-img/25.jpg')")
+                                    span.badge.bg-warning.text-dark.position-absolute.card-badge Fashion
+
+                                .card-blog-content
+                                    span.badge.bg-danger.rounded-pill.mb-2.d-inline-block 11 Nov
+                                    a.blog-title.d-block.mb-3.text-dark(href="page-blog-details.html") The 5 best reviews in Affan
+                                    a.btn.btn-primary.btn-sm(href="page-blog-details.html") Read More
+
+                    // Single Blog Card 
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.shadow-sm.blog-list-card
+                            .d-flex.align-items-center
+                                .card-blog-img.position-relative(style="background-image: url('img/bg-img/26.jpg')")
+                                    span.badge.bg-warning.text-dark.position-absolute.card-badge Sports
+
+                                .card-blog-content
+                                    span.badge.bg-danger.rounded-pill.mb-2.d-inline-block 8 Nov
+                                    a.blog-title.d-block.mb-3.text-dark(href="page-blog-details.html") The 5 best reviews in Affan
+                                    a.btn.btn-primary.btn-sm(href="page-blog-details.html") Read More
+
+                    // Single Blog Card 
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.shadow-sm.blog-list-card
+                            .d-flex.align-items-center
+                                .card-blog-img.position-relative(style="background-image: url('img/bg-img/27.jpg')")
+                                    span.badge.bg-warning.text-dark.position-absolute.card-badge Info
+
+                                .card-blog-content
+                                    span.badge.bg-danger.rounded-pill.mb-2.d-inline-block 4 Nov
+                                    a.blog-title.d-block.mb-3.text-dark(href="page-blog-details.html") The 5 best reviews in Affan
+                                    a.btn.btn-primary.btn-sm(href="page-blog-details.html") Read More
+
+            .container
+                .row.justify-content-center
+                    .col-12.col-md-8.col-lg-7.col-xl-6
+                        .card.mt-3
+                            .card-body.p-3
+                                nav(aria-label="Page navigation example")
+                                    ul.pagination.justify-content-center.pagination-one.direction-rtl
+                                        li.page-item.disabled
+                                            a.page-link(href="#",  aria-label="Previous")
+                                                svg.bi.bi-chevron-left(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                                    path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z")
+                                        li.page-item.active
+                                            a.page-link(href="#") 1
+                                        li.page-item
+                                            a.page-link(href="#") 2
+                                        li.page-item
+                                            a.page-link(href="#") ...
+                                        li.page-item
+                                            a.page-link(href="#") 9
+                                        li.page-item
+                                            a.page-link(href="#",  aria-label="Next")
+                                                svg.bi.bi-chevron-right(width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                                    path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

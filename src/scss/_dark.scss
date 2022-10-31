@@ -1,0 +1,982 @@
+/* :: Dark CSS */
+
+[data-theme="dark"] {
+    background-color: $dark-primary;
+
+    .dark-mode-switching {
+        background-color: $dark-primary;
+
+        svg {
+            color: $warning;
+        }
+
+        .dark-mode-text {
+            display: block;
+        }
+
+        .light-mode-text {
+            display: none;
+        }
+    }
+
+    .rtl-mode-switching {
+        background-color: $dark-primary;
+
+        svg {
+            color: $warning;
+        }
+    }
+
+    body {
+        // Reboot CSS
+
+        background-color: $dark-primary;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $white;
+        }
+
+        #preloader {
+            background-color: $dark-primary;
+        }
+
+        .card {
+            background-color: $dark-secondary;
+        }
+
+        .border {
+            border-color: rgba(255, 255, 255, .15) !important;
+        }
+
+        .border-top {
+            border-top-color: rgba(255, 255, 255, .15) !important;
+        }
+
+        .border-start {
+            border-left-color: rgba(255, 255, 255, .15) !important;
+        }
+
+        .border-bottom {
+            border-bottom-color: rgba(255, 255, 255, .15) !important;
+        }
+
+        .border-end {
+            border-right-color: rgba(255, 255, 255, .15) !important;
+        }
+
+        .border-content>span {
+            background-color: rgba(255, 255, 255, 0.05) !important;
+        }
+
+        .img-thumbnail {
+            border-color: rgba(255, 255, 255, 0.15);
+            background-color: transparent;
+        }
+
+        .dropdown-menu {
+            background-color: $dark-secondary;
+
+            .dropdown-item {
+                color: $white;
+            }
+
+            .dropdown-item:hover,
+            .dropdown-item:focus {
+                color: $white;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        // Demo Page CSS
+
+        .demo-header-wrapper {
+            background-color: $dark-primary;
+            border-bottom-color: rgba(255, 255, 255, 0.07);
+        }
+
+        .preview-iframe-wrapper {
+            .preview-hero-area {
+                background-color: $dark-primary;
+
+                .version-number {
+                    background-color: $dark-secondary;
+                }
+
+                .demo-title span {
+                    color: $warning;
+                }
+            }
+
+            .qr-code-wrapper {
+                img {
+                    background-color: $dark-secondary;
+                }
+
+                h6 {
+                    color: $white;
+                }
+            }
+
+            .features-area {
+                background-color: $dark-secondary;
+
+                .card {
+                    border-color: rgba(255, 255, 255, .1);
+                }
+
+                .card.active {
+                    border-color: transparent !important;
+                    background-color: $info !important;
+
+                    h6 {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .special-text {
+            color: $warning;
+        }
+
+        // Pages & Elements Page CSS
+
+        .affan-page-item {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(255, 255, 255, .1);
+                color: $warning;
+                border-color: rgba(255, 255, 255, .15);
+            }
+
+            .icon-wrapper {
+                background-color: rgba(255, 255, 255, .2);
+            }
+        }
+
+        a.affan-element-item {
+            background-color: rgba(255, 255, 255, .1);
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: $warning;
+            }
+        }
+
+        // Header Area CSS
+
+        .header-area {
+            background-color: $dark-secondary;
+            border-bottom-color: rgba(255, 255, 255, 0.07);
+        }
+
+        .header-content .back-button a {
+            color: $warning;
+        }
+
+        .sidenav-wrapper,
+        .offcanvas {
+            background-color: $dark-secondary;
+        }
+
+        .sidenav-nav li a:hover,
+        .sidenav-nav li a:focus,
+        .sidenav-nav li .night-mode-nav:hover {
+            color: $warning;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidenav-nav li ul {
+            background-color: rgba(255, 255, 255, .1);
+        }
+
+        .nav-url .dropdown-icon i {
+            color: $warning;
+        }
+
+        .nav-url.dd-open {
+            background-color: rgba(255, 255, 255, .1);
+        }
+
+        .sidenav-nav li ul li a:hover,
+        .sidenav-nav li ul li a:focus {
+            background-color: transparent;
+        }
+
+        .social-info-wrap {
+            border-top-color: rgba(255, 255, 255, 0.1);
+
+            a {
+
+                &:hover,
+                &:focus {
+                    color: $warning;
+                }
+            }
+        }
+
+        .copyright-info p a {
+            color: $white;
+        }
+
+        .header-content .setting-trigger-btn {
+            color: $warning;
+
+            span {
+                background-color: $danger;
+            }
+        }
+
+        .header-content.header-style-five .navbar--toggler {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .header-content .navbar--toggler span {
+            background-color: $white;
+        }
+
+        .header-demo-bg {
+            background-color: $dark-secondary;
+        }
+
+        .header-content.header-style-two {
+            .search-trigger-btn {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: $white;
+            }
+
+            .navbar--toggler {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .header-content.header-style-three .navbar--toggler {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .header-content.header-style-six .search-trigger-btn {
+            color: $warning;
+        }
+
+        // Alert & Toast CSS
+
+        .toast {
+            background-color: $dark-secondary;
+            border-color: transparent;
+        }
+
+        .toast-header {
+            color: $white;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-bottom-color: transparent;
+        }
+
+        .custom-alert-1 {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .custom-toast-1 .toast-body .toast-text p {
+            color: $white;
+        }
+
+        .custom-alert-1.alert-dark {
+            color: $white;
+        }
+
+        .custom-alert-1.alert-dark::after {
+            background-color: $white;
+        }
+
+        // Form CSS
+
+        .form-control {
+            color: $white;
+            background-color: $dark-secondary;
+            border-color: rgba(255, 255, 255, 0.1);
+
+            &.form-control-clicked {
+                background-color: #cfe2ff;
+                border-color: #cfe2ff;
+                color: #073984;
+            }
+        }
+
+        .form-control-plaintext {
+            color: $white;
+        }
+
+        .was-validated .form-control:invalid,
+        .form-control.is-invalid {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .form-select {
+            color: $white;
+            background-color: $dark-secondary;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .form-select.form-control-clicked {
+            background-color: #cfe2ff;
+            border-color: #cfe2ff;
+            color: #073984;
+        }
+
+        .input-group-text {
+            color: $white;
+            background-color: $dark-secondary;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .form-check-label {
+            color: $white;
+        }
+
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23686868' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+        }
+
+        .form-select[multiple],
+        .form-select[size]:not([size="1"]) {
+            background-image: none;
+        }
+
+        #rangevalue {
+            color: $white !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .autocomplete-items>div {
+            background-color: transparent;
+            color: $white;
+
+            strong {
+                color: $warning;
+            }
+        }
+
+        // Login & Register CSS
+
+        .login-wrapper {
+            background-color: $dark-primary;
+        }
+
+        .login-meta-data a,
+        .login-back-button a {
+            color: $warning;
+        }
+
+        .register-form .form-check-label {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .otp-sec {
+            color: $warning;
+        }
+
+        // Footer CSS
+
+        .footer-nav-area {
+            background-color: $dark-secondary;
+            border-top-color: rgba(255, 255, 255, 0.07);
+        }
+
+        .footer-nav {
+            background-color: $dark-secondary;
+        }
+
+        .footer-nav ul li a {
+            color: $white;
+
+            span {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .footer-nav ul li a:hover,
+        .footer-nav ul li a:focus,
+        .footer-nav ul li.active a {
+            color: $white;
+        }
+
+        .footer-nav ul li a:hover span,
+        .footer-nav ul li a:focus span,
+        .footer-nav ul li.active a span {
+            color: $warning;
+        }
+
+        .footer-nav.footer-style-three ul li a {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-nav.footer-style-three ul li.active a,
+        .footer-nav.footer-style-three ul li a:hover,
+        .footer-nav.footer-style-three ul li a:focus {
+            background-color: $warning;
+            color: $white;
+        }
+
+        .footer-nav.footer-style-five ul li::after,
+        .footer-nav.footer-style-six ul li::after {
+            background-color: $warning;
+        }
+
+        .setting-popup-card .btn-close,
+        .custom-alert-1 .btn-close,
+        .toast .toast-header .btn-close,
+        .custom-toast-1 .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+
+        .footer-nav.footer-style-two li.active a {
+            background-color: rgba(241, 177, 15, 0.3);
+        }
+
+        .footer-nav.footer-style-two li.active a::before {
+            background-color: $warning;
+        }
+
+        // Accordion CSS
+
+        .accordion-item {
+            background-color: $dark-secondary;
+            border-color: rgba(255, 255, 255, .1);
+        }
+
+        .accordion-button {
+            background-color: $dark-primary;
+            color: $white;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .accordion-collapse {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .accordion-item .accordion-body {
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .accordion-style-one .accordion-item h6 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: $warning;
+        }
+
+        .accordion-style-one .accordion-item h6.collapsed {
+            color: $white;
+        }
+
+        .accordion-style-two .accordion-item h6.collapsed {
+            color: $white;
+        }
+
+        .accordion-style-two .accordion-item h6 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .accordion-style-three .accordion-item h6 {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+            color: $white;
+        }
+
+        .accordion-style-four .accordion-item {
+            border: 0;
+        }
+
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f1b10f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        // Breadcrumb CSS
+
+        .breadcrumb-wrapper {
+            background-color: $dark-secondary;
+        }
+
+        .breadcrumb {
+            background-color: $dark-secondary;
+
+            .breadcrumb-item {
+                color: $white;
+
+                a {
+                    color: $white;
+
+                    &:hover,
+                    &:focus {
+                        color: $warning;
+                    }
+                }
+            }
+        }
+
+        .breadcrumb-three .breadcrumb-item a i {
+            color: $warning;
+        }
+
+        // Timeline CSS
+
+        .timeline-card {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+
+            &::after {
+                background-color: $white;
+            }
+        }
+
+        .timeline-card.bg-dark {
+            border-left-color: $heading !important;
+        }
+
+        // Rating CSS
+
+        .rating-card-one>div {
+            background-color: transparent;
+        }
+
+        .rating-card-two>div {
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .rating-detail .progress-bar-wrapper {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        // List Item CSS
+
+        .list-group-item {
+            color: $white;
+            background-color: $dark-secondary;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .list-group-item.active {
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            color: $warning;
+        }
+
+        .list-group-item.disabled {
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            color: rgba(241, 177, 15, 0.4);
+        }
+
+        // Pagination CSS
+
+        .page-link {
+            color: $white;
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .page-item.active .page-link {
+            color: $white;
+            background-color: $danger;
+            border-color: $danger;
+        }
+
+        .page-item.disabled .page-link {
+            color: rgba(241, 177, 15, 0.4);
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .pagination.pagination-one .page-item:first-child .page-link {
+            border-left: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pagination.pagination-one .page-link {
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .pagination.pagination-one .page-item:last-child .page-link {
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .pagination.pagination-one .page-item.active .page-link::after {
+            background-color: $danger;
+        }
+
+        .progress {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        // Progress Bar CSS
+
+        .skill-progress-bar .skill-icon {
+            border-color: rgba(255, 255, 255, 0.1);
+
+            svg {
+                color: $white !important;
+            }
+        }
+
+        .skill-progress-bar .skill-name p {
+            color: $white;
+        }
+
+        // Chat CSS
+
+        .chat-user-status-slides .user-status-slide a {
+            background-color: $dark-secondary;
+            box-shadow: none;
+        }
+
+        .chat-user-list {
+            box-shadow: none;
+
+            li {
+                background-color: $dark-secondary;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            li.chat-unread .chat-user-info .last-chat p {
+                color: $warning;
+            }
+
+            li .chat-options-btn li,
+            li .chat-options-btn li:hover,
+            li .chat-options-btn li:focus {
+                background-color: transparent;
+            }
+
+            li .chat-options-btn .dropdown-menu a:hover,
+            li .chat-options-btn .dropdown-menu a:focus {
+                color: $warning;
+                background-color: transparent;
+            }
+
+            li:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        .chat-user-info .user-thumbnail-name p {
+            color: $white;
+        }
+
+        .call-video-wrapper a {
+            color: $white;
+        }
+
+        .single-chat-item .user-message .single-message p {
+            background-color: $dark-secondary;
+        }
+
+        .single-chat-item.outgoing .user-message .single-message p {
+            background-color: $primary;
+            color: $white;
+        }
+
+        .single-chat-item .user-message .download-file-wrap {
+            background-color: $dark-secondary;
+        }
+
+        .single-chat-item .user-message .single-message .typing {
+            background-color: $dark-secondary;
+        }
+
+        .chat-footer {
+            background-color: $dark-secondary;
+        }
+
+        .chat-footer .btn-emoji {
+            color: $warning;
+        }
+
+        .chat-footer .btn-add-file {
+            color: $warning;
+        }
+
+        .single-chat-item .user-message .dropdown-menu a:hover,
+        .single-chat-item .user-message .dropdown-menu a:focus {
+            color: $warning;
+        }
+
+        .chat-user--info .user-thumbnail-name p {
+            color: $white;
+        }
+
+        // Data Table CSS
+
+        .dataTable-top .dataTable-selector,
+        .dataTable-top .dataTable-input {
+            border-color: rgba(255, 255, 255, .1);
+            color: $warning;
+            background-color: rgba(255, 255, 255, .1);
+        }
+
+        .dataTable-container .dataTable-table thead>tr>th {
+            border-color: rgba(255, 255, 255, .1);
+            background-color: rgba(255, 255, 255, .1);
+        }
+
+        .dataTable-container .dataTable-table tbody tr td,
+        .dataTable-container .dataTable-table tbody tr th {
+            border-color: rgba(255, 255, 255, .1);
+        }
+
+        .dataTable-sorter::before {
+            border-top-color: $warning;
+        }
+
+        .dataTable-sorter::after {
+            border-bottom-color: $warning;
+        }
+
+        .dataTable-pagination li a {
+            color: $white;
+        }
+
+        // Table CSS
+
+        .table {
+            color: rgba(255, 255, 255, 0.7);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .table-hover>tbody>tr:hover {
+            color: $text;
+        }
+
+        .table-striped>tbody>tr:nth-of-type(2n+1) {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .table> :not(:last-child)> :last-child>* {
+            border-bottom-color: rgba(255, 255, 255, .25);
+        }
+
+        .table-light {
+            color: $white;
+            border-color: rgba(255, 255, 255, 0.15);
+
+            tr th,
+            tr td {
+                background-color: transparent;
+                border-color: rgba(255, 255, 255, 0.15);
+            }
+        }
+
+        // Cart Table CSS
+
+        .cart-table .border-top {
+            border-top-color: rgba(255, 255, 255, 0.05) !important;
+        }
+
+        .cart-table .qty-text {
+            border-color: rgba(255, 255, 255, 0.1);
+            background-color: transparent;
+            color: $white;
+        }
+
+        .cart-table table .remove-product {
+            color: $white;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .cart-table table .remove-product:hover,
+        .cart-table table .remove-product:focus {
+            color: $white;
+            background-color: $danger;
+        }
+
+        // Miscellaneous CSS
+
+        .shop-pagination small {
+            border-left-color: $warning;
+        }
+
+
+
+        .notification-message {
+            background-color: $dark-primary !important;
+        }
+
+        .offcanvas-start .btn-close,
+        .offcanvas-top .btn-close,
+        .offcanvas-end .btn-close,
+        .offcanvas-bottom .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+
+        .scrollspy-indicatiors .nav-link {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: $white;
+        }
+
+        .scrollspy-indicatiors .nav-link.active {
+            background-color: $warning;
+            color: $white;
+        }
+
+        .price-table-two .single-price-table {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .price-table-two .single-price-table.active {
+            background-color: $primary;
+        }
+
+        .countdown1>div .num {
+            color: $warning;
+        }
+
+        .countdown1 {
+            color: $white;
+        }
+
+        .single-product-card .product-title {
+            color: $white;
+        }
+
+        .single-product-card .sale-price {
+            color: $warning;
+        }
+
+        .team-member-card {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .language-lists li {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .notification-area {
+            .alert {
+                background-color: rgba(255, 255, 255, 0.05);
+                border-color: rgba(255, 255, 255, 0.05);
+                color: $white;
+
+                &.unread {
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                    border-color: rgba(255, 255, 255, 0.1);
+                    color: $white;
+                }
+            }
+        }
+
+        .single-search-result {
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+
+            a {
+                color: rgba(241, 177, 15, 0.75);
+            }
+        }
+
+        .blog-title {
+            color: $white !important;
+        }
+
+        .blog-title:hover,
+        .blog-title:focus {
+            color: $warning !important;
+        }
+
+        .single-setting-panel a {
+
+            &:hover,
+            &:focus {
+                color: $warning;
+            }
+        }
+
+        .standard-tab {
+            .nav {
+                border-color: rgba(255, 255, 255, 0.05);
+            }
+
+            .btn {
+                color: $white;
+            }
+        }
+
+        .minimal-tab {
+            .btn {
+                color: $white;
+
+                &.active {
+                    border-bottom-color: $warning;
+                    color: $warning;
+                }
+            }
+        }
+
+        .nav-tabs {
+            border-color: rgba(255, 255, 255, 0.1);
+
+            .nav-link {
+                color: $white;
+
+                &:hover,
+                &.active {
+                    border-color: rgba(255, 255, 255, 0.05);
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+
+        .tab-content {
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .price-table-one .nav-tabs {
+
+            .nav-link,
+            .nav-link:hover {
+                border-color: rgba(255, 255, 255, 0.05);
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-link.active {
+                background-color: $primary;
+                color: $white;
+                border-color: $primary;
+            }
+        }
+
+        .offline-online-card h6 {
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .offline-online-card strong {
+            color: $warning !important;
+        }
+
+        .modal-content {
+            background-color: $dark-secondary;
+
+            .btn-close {
+                filter: invert(1) grayscale(100%) brightness(200%);
+            }
+
+            .modal-header {
+                border-bottom-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .modal-footer {
+                border-top-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .single-plan-check {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}

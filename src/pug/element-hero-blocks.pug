@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Hero Block Wrapper 
+        .hero-block-wrapper.bg-primary
+            // Styles 
+            .hero-block-styles
+                .hb-styles1(style="background-image: url('img/core-img/dot.png')")
+                .hb-styles2
+                .hb-styles3
+                
+            .custom-container
+                // Skip Page 
+                .skip-page
+                    a(href="page-home.html") Skip
+
+                // Hero Block Content 
+                .hero-block-content
+                    img.mb-4(src="img/bg-img/19.png", alt="")
+                    h2.display-4.text-white.mb-3 Build your website easier with Affan
+                    p.text-white Affan is a modern and latest technology based mobile template.
+                    a.btn.btn-warning.btn-lg.w-100(href="page-login.html") Get Started
+
+        include inc/footer.pug

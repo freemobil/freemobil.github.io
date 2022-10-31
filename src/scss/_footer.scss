@@ -1,0 +1,298 @@
+/* :: Footer Nav CSS */
+
+.footer-nav-area {
+    position: fixed !important;
+    transition-duration: 500ms;
+    background-color: $white;
+    width: 100%;
+    height: 62px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-top: 1px solid $border;
+}
+
+.footer-nav {
+    background-color: $white;
+    width: 100%;
+    height: 62px;
+
+    ul {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+
+        li {
+            position: relative;
+            z-index: 1;
+            flex: 1 1 0;
+
+            a {
+                position: relative;
+                display: block;
+                font-size: 12px;
+                text-align: center;
+                font-weight: 500;
+                text-transform: capitalize;
+                line-height: 1;
+                color: $heading;
+                z-index: 1;
+
+                svg {
+                    transition-duration: 500ms;
+                }
+
+                span {
+                    transition-duration: 500ms;
+                    color: $heading;
+                    display: block;
+                    margin-top: .25rem;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+
+                    span {
+                        color: $primary;
+                    }
+                }
+            }
+
+            &.active {
+                a {
+                    color: $primary;
+
+                    span {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &.footer-style-two {
+        li.active {
+            a {
+                position: relative;
+                z-index: 1;
+                width: 3.5rem;
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(1, 52, 212, 0.3);
+                margin: -25px auto 0;
+                border-radius: 50%;
+                color: $white;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+
+                &::before {
+                    border-radius: 50%;
+                    position: absolute;
+                    width: 80%;
+                    height: 80%;
+                    top: 10%;
+                    right: 10%;
+                    z-index: -10;
+                    background-color: $primary;
+                    content: "";
+                }
+            }
+        }
+    }
+
+    &.footer-style-three {
+        ul li {
+            a {
+                background-color: $gray;
+                width: 2.625rem;
+                height: 2.625rem;
+                border-radius: 50%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover,
+                &:focus {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+
+            &.active {
+                a {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.footer-style-four {
+        ul li {
+            text-align: center;
+
+            a {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                display: block;
+                margin-top: 0.25rem;
+                font-weight: 500;
+                line-height: 1;
+            }
+
+            &.active {
+                a {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    &.footer-style-five {
+        ul li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                width: 2rem;
+                height: 3px;
+                background-color: $primary;
+                content: "";
+                position: absolute;
+                bottom: 0;
+                transform: translateX(-50%);
+                left: 50%;
+                opacity: 0;
+                transition-duration: 500ms;
+            }
+
+            &.active,
+            &:hover,
+            &:focus {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &.footer-style-six {
+        ul li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                width: 2rem;
+                height: 3px;
+                background-color: $primary;
+                content: "";
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+                left: 50%;
+                opacity: 0;
+                transition-duration: 500ms;
+            }
+
+            &.active,
+            &:hover,
+            &:focus {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &.footer-style-seven {
+        ul li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                width: 7px;
+                height: 7px;
+                background-color: $success;
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                transform: translateX(-50%);
+                left: 50%;
+                opacity: 0;
+                transition-duration: 500ms;
+            }
+
+            &.active,
+            &:hover,
+            &:focus {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.horizontal-scroll {
+
+    &.footer-nav {
+        ul {
+            scrollbar-width: thin;
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            li {
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+.bg-success,
+.bg-primary,
+.bg-secondary,
+.bg-dark,
+.bg-danger,
+.bg-info,
+.bg-warning {
+
+    &.footer-nav {
+        ul {
+            li {
+                a {
+                    color: rgba(255, 255, 255, 0.6);
+
+                    &:hover,
+                    &:focus {
+                        color: $white;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

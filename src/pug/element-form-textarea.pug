@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Input
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Textarea
+
+            .container
+                .card
+                    .card-body
+                        form(action="#", method="GET")
+                            .form-group
+                                label.form-label(for="exampleTextarea1") Input textarea
+                                textarea.form-control#exampleTextarea1(name="textarea", cols="3", rows="5", placeholder="Write something...")
+
+                            button.btn.btn-primary.w-100.d-flex.align-items-center.justify-content-center(type="button") Send Message
+                                svg.bi.bi-arrow-right-short(width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

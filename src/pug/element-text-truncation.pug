@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Text truncation
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Text truncation
+
+            .container
+                .card
+                    .card-body.direction-rtl
+                        .row
+                            .col-7.text-truncate
+                                h4 Truncate long strings of text with an ellipsis.
+                        span.d-inline-block.text-truncate.mb-0(style="max-width: 145px;") Truncate long strings of text with an ellipsis.
+
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

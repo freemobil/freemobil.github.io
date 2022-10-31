@@ -1,0 +1,100 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Bootstrap Carousel
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Bootstrap Carousel
+
+            // Bootstrap Carousel 
+            #bootstrapCarousel.carousel.slide(data-bs-ride="carousel")
+                // Carousel Indicators 
+                .carousel-indicators
+                    button.active(type="button", data-bs-target="#bootstrapCarousel", data-bs-slide-to="0", aria-current="true", aria-label="Slide 1")
+                    button(type="button", data-bs-target="#bootstrapCarousel", data-bs-slide-to="1", aria-label="Slide 2")
+                    button(type="button", data-bs-target="#bootstrapCarousel", data-bs-slide-to="2", aria-label="Slide 3")
+
+                // Carousel Inner 
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src="img/bg-img/23.jpg", alt="")
+                    .carousel-item
+                        img.d-block.w-100(src="img/bg-img/24.jpg", alt="")
+                    .carousel-item
+                        img.d-block.w-100(src="img/bg-img/25.jpg", alt="")
+
+                // Carousel Control Prev 
+                button.carousel-control-prev(data-bs-target="#bootstrapCarousel", type="button", data-bs-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.visually-hidden Previous
+
+                // Carousel Control Next 
+                button.carousel-control-next(data-bs-target="#bootstrapCarousel", type="button", data-bs-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.visually-hidden Next
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Bootstrap Carousel Crossfade
+
+            // Bootstrap Carousel 
+            #bootstrapCarouselFade.carousel.slide.carousel-fade(data-bs-ride="carousel")
+                // Carousel Indicators 
+                .carousel-indicators
+                    button.active(type="button", data-bs-target="#bootstrapCarouselFade", data-bs-slide-to="0", aria-current="true", aria-label="Slide 1")
+                    button(type="button", data-bs-target="#bootstrapCarouselFade", data-bs-slide-to="1", aria-label="Slide 2")
+                    button(type="button", data-bs-target="#bootstrapCarouselFade", data-bs-slide-to="2", aria-label="Slide 3")
+
+                // Carousel Inner 
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src="img/bg-img/26.jpg", alt="")
+                    .carousel-item
+                        img.d-block.w-100(src="img/bg-img/27.jpg", alt="")
+                    .carousel-item
+                        img.d-block.w-100(src="img/bg-img/28.jpg", alt="")
+
+                // Carousel Control Prev 
+                button.carousel-control-prev(data-bs-target="#bootstrapCarouselFade", type="button", data-bs-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.visually-hidden Previous
+
+                // Carousel Control Next 
+                button.carousel-control-next(data-bs-target="#bootstrapCarouselFade", type="button", data-bs-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.visually-hidden Next
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

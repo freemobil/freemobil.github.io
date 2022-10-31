@@ -1,0 +1,81 @@
+// # Sidenav Left 
+
+// Offcanvas 
+.offcanvas.offcanvas-start#affanOffcanvas(data-bs-scroll="true", tabindex="-1", aria-labelledby="affanOffcanvsLabel")
+    button.btn-close.btn-close-white.text-reset(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+
+    .offcanvas-body.p-0
+        // Side Nav Wrapper 
+        .sidenav-wrapper
+            // Sidenav Profile 
+            .sidenav-profile.bg-gradient
+                .sidenav-style1
+
+                // User Thumbnail 
+                .user-profile
+                    img(src="img/bg-img/2.jpg", alt="")
+
+                // User Info 
+                .user-info
+                    h6.user-name.mb-0 Affan Islam
+                    span CEO, Designing World
+
+            // Sidenav Nav 
+            ul.sidenav-nav.ps-0
+                li
+                    a(href="page-home.html")
+                        i.bi.bi-house-door
+                        | Home
+                li
+                    a(href="elements.html")
+                        i.bi.bi-folder2-open
+                        | Elements
+                        span.badge.bg-danger.rounded-pill.ms-2 220+
+                li
+                    a(href="pages.html")
+                        i.bi.bi-collection
+                        | Pages
+                        span.badge.bg-success.rounded-pill.ms-2 100+
+                li
+                    a(href="#")
+                        i.bi.bi-cart-check
+                        | Shop
+                    ul
+                        li
+                            a(href="page-shop-grid.html") Shop Grid
+                        li
+                            a(href="page-shop-list.html") Shop List
+                        li
+                            a(href="page-shop-details.html") Shop Details
+                        li
+                            a(href="page-cart.html") Cart
+                        li
+                            a(href="page-checkout.html") Checkout
+                li
+                    a(href="settings.html")
+                        i.bi.bi-gear
+                        | Settings
+                li
+                    .night-mode-nav
+                        i.bi.bi-moon
+                        | Night Mode
+                        .form-check.form-switch
+                            input.form-check-input.form-check-success#darkSwitch(type="checkbox")
+                li
+                    a(href="page-login.html")
+                        i.bi.bi-box-arrow-right
+                        | Logout
+
+            // Social Info 
+            .social-info-wrap
+                a(href="#")
+                    i.bi.bi-facebook
+                a(href="#")
+                    i.bi.bi-twitter
+                a(href="#")
+                    i.bi.bi-linkedin
+
+            // Copyright Info 
+            .copyright-info
+                p 2021 &copy; Made by
+                    a(href="#") Designing World

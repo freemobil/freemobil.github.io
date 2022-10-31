@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Image
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Responsive Image
+
+            .container.direction-rtl
+                img(src="img/bg-img/1.jpg", class="img-fluid", alt="")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Image Thumbnail
+
+            .container.direction-rtl
+                img(src="img/bg-img/9.jpg", class="img-thumbnail", alt="")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Round Image
+
+            .container.direction-rtl
+                img(src="img/bg-img/7.jpg", class="rounded", alt="")
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Circle Image
+
+            .container.direction-rtl
+                img(src="img/bg-img/21.jpg", class="img-circle", alt="")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

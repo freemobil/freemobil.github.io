@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Paste your Header Content from here 
+
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Invoice
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                .card.invoice-card.shadow
+                    .card-body
+                        // Download Invoice 
+                        .download-invoice.text-end.mb-3
+                            a.btn.btn-sm.btn-primary.me-2(href="#")
+                                i.bi.bi-file-earmark-pdf.me-1
+                                | PDF
+                            a.btn.btn-sm.btn-light(href="#")
+                                i.bi.bi-printer.me-1
+                                | Print
+
+                        // Invoice Info 
+                        .invoice-info.text-end.mb-4
+                            h5.mb-1.fz-14 Designing World Inc.
+                            h6.fz-12 Invoice No. #36A89G
+                            p.mb-0.fz-12 Due Date: Nov 16, 2022
+
+                        // Invoice Table 
+                        .invoice-table
+                            .table-responsive
+                                table.table.table-bordered.caption-top
+                                    caption List of works
+
+                                    thead.table-light
+                                        tr
+                                            th Sl.
+                                            th Description
+                                            th Unit
+                                            th Q.
+                                            th Total
+                                    tbody
+                                        tr
+                                            td 1
+                                            td Website design and development
+                                            td $120
+                                            td 4
+                                            td $480
+                                        tr
+                                            td 2
+                                            td Digital Marketing
+                                            td $80
+                                            td 2
+                                            td $160
+                                        tr
+                                            td 3
+                                            td Support
+                                            td $100
+                                            td 1
+                                            td $100
+                                    tfoot.table-light
+                                        tr
+                                            td.text-end(colspan="4") Total:
+                                            td.text-end $740
+                                        tr
+                                            td.text-end(colspan="4") VAT (10%):
+                                            td.text-end $74
+                                        tr
+                                            td.text-end(colspan="4") Grand Total:
+                                            td.text-end $814
+
+                        p.mb-0 Notice: This is auto generated invoice.
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

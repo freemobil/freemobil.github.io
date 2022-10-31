@@ -1,0 +1,209 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Price Table
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Price Table 01
+
+            .container
+                .card
+                    .card-body
+                        // Price Table One 
+                        .price-table-one
+                            ul.nav.nav-tabs.border-bottom-0.mb-3.align-items-center.justify-content-center#priceTab(role="tablist")
+                                li.nav-item(role="presentation")
+                                    a.nav-link.shadow#priceTabOne(data-bs-toggle="tab", href="#priceTab_One", role="tab", aria-controls="priceTab_One", aria-selected="false")
+                                        i.bi.bi-egg
+
+                                li.nav-item(role="presentation")
+                                    a.nav-link.active.shadow#priceTabTwo(data-bs-toggle="tab", href="#priceTab_Two", role="tab", aria-controls="priceTab_Two", aria-selected="true")
+                                        i.bi.bi-lightning
+
+                                li.nav-item(role="presentation")
+                                    a.nav-link.shadow#priceTabThree(data-bs-toggle="tab", href="#priceTab_Three", role="tab", aria-controls="priceTab_Three", aria-selected="false")
+                                        i.bi.bi-cpu
+
+                            .tab-content#priceTabContent
+                                .tab-pane.fade#priceTab_One(role="tabpanel" aria-labelledby="priceTabOne")
+                                    // Single Price Table 
+                                    .single-price-content.shadow-sm
+                                        .price
+                                            span.text-white.mb-2 Intro
+                                            h2.display-3 $3.19
+                                            span.badge.bg-light.text-dark.rounded-pill Save -29%
+
+                                        // Pricing Desc 
+                                        .pricing-desc
+                                            ul.ps-0
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | 3 Month Usage
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Lifetime Updates
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | 2 Website License
+                                                li.times
+                                                    i.bi.bi-x-lg.me-2
+                                                    | Free Support
+                                                li.times
+                                                    i.bi.bi-x-lg.me-2
+                                                    | Download New Release
+
+                                        // Purchase 
+                                        .purchase
+                                            a.btn.btn-warning.btn-lg.btn-creative.w-100(href="#") Choose Plan
+                                            small.d-block.text-white.mt-2.ms-1 No credit card required*
+
+                                .tab-pane.fade.show.active#priceTab_Two(role="tabpanel" aria-labelledby="priceTabTwo")
+                                    // Single Price Table 
+                                    .single-price-content.shadow-sm
+                                        .price
+                                            span.text-white.mb-2 Popular
+                                            h2.display-3 $19.19
+                                            span.badge.bg-light.text-dark.rounded-pill Save -29%
+
+                                        // Pricing Desc 
+                                        .pricing-desc
+                                            ul.ps-0
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | 6 Month Usage
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Lifetime Updates
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | 10 Website License
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Free Support
+                                                li.times
+                                                    i.bi.bi-x-lg.me-2
+                                                    | Download New Release
+
+                                        // Purchase 
+                                        .purchase
+                                            a.btn.btn-light.btn-lg.btn-creative(href="#") Choose Plan
+
+                                .tab-pane.fade#priceTab_Three(role="tabpanel" aria-labelledby="priceTabThree")
+                                    // Single Price Table 
+                                    .single-price-content.shadow-sm
+                                        .price
+                                            span.text-white.mb-2 Pro
+                                            h2.display-3 $49.99
+                                            span.badge.bg-light.text-dark.rounded-pill Save -29%
+
+                                        // Pricing Desc 
+                                        .pricing-desc
+                                            ul.ps-0
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | 12 Month Usage
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Lifetime Updates
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Unlimited Website License
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Free Support
+                                                li
+                                                    i.bi.bi-check-lg.me-2
+                                                    | Download New Release
+
+                                        // Purchase 
+                                        .purchase
+                                            a.btn.btn-primary.btn-lg.btn-creative(href="#") Choose Plan
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Price Table 02
+
+            .container
+                .card
+                    .card-body
+                        // Price Table Two 
+                        .price-table-two.d-flex.align-items-center                        
+                            // Single Price Table 
+                            .single-price-table.active-effect
+                                .text
+                                    h6.fz-14 Basic
+                                    span.badge.bg-primary.rounded-pill Save 7%
+
+                                .price
+                                    h3 $9
+                                    span.fz-12 per month
+
+                                .purchase
+                                    .form-check.mb-0
+                                        input.form-check-input.form-check-warning.mx-0.shadow(type="radio", name="exampleRadio", id="choosePlan1")
+                                        label.form-check-label(for="choosePlan1")
+
+                            // Single Price Table 
+                            .single-price-table.active-effect.active
+                                .text
+                                    h6.fz-14 Standard
+                                    span.badge.bg-primary.rounded-pill Save 16%
+
+                                .price
+                                    h3 $59
+                                    span.fz-12 per month
+
+                                .purchase
+                                    .form-check
+                                        input.form-check-input.form-check-warning.mx-0.shadow(type="radio", name="exampleRadio", id="choosePlan2", checked)
+                                        label.form-check-label(for="choosePlan2")
+
+                            // Single Price Table 
+                            .single-price-table.active-effect
+                                .text
+                                    h6.fz-14 Premium
+                                    span.badge.bg-primary.rounded-pill Save 23%
+
+                                .price
+                                    h3 $99
+                                    span.fz-12 per month
+
+                                .purchase
+                                    .form-check
+                                        input.form-check-input.form-check-warning.mx-0.shadow(type="radio", name="exampleRadio", id="choosePlan3")
+                                        label.form-check-label(for="choosePlan3")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

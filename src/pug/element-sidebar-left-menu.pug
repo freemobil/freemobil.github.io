@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Paste your Header Content from here 
+
+                // Header Content 
+                .header-content.header-style-three.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Left Sidebar
+
+                    // User Profile 
+                    .user-profile-wrapper
+                        a.user-profile-trigger-btn(href="#")
+                            img(src="img/bg-img/2.jpg", alt="")
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper
+            // Breadcrumb Area 
+            .breadcrumb-wrapper.breadcrumb-two.mb-4
+                .container
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.mb-0.px-1.py-4
+                            li.breadcrumb-item
+                                a(href="page-home.html") Home
+                            li.breadcrumb-item
+                                a(href="elements.html") Elements
+                            li.breadcrumb-item.active(aria-current="page") Left Sidebar
+
+            // Left Sidebar Button 
+            .container
+                a.btn.btn-primary.btn-lg.w-100#affanNavbarToggler(href="#", data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas") Click the button for left sidebar
+                .text-center
+                    img.w-50.mt-4.mb-3(src="img/bg-img/left-sidebar.png", alt="")
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

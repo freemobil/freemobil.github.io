@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 List Group
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 List group active &amp; disabled state
+
+            .container
+                .card
+                    .card-body
+                        ul.list-group
+                            li.list-group-item List group item 1
+                            li.list-group-item.active List group item 2
+                            li.list-group-item List group item 3
+                            li.list-group-item.disabled List group item 4
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 List group links
+
+            .container
+                .card
+                    .card-body
+                        .list-group
+                            a.list-group-item.list-group-item-action(href="#") List group item 1
+                            a.list-group-item.list-group-item-action(href="#") List group item 2
+                            a.list-group-item.list-group-item-action.active(href="#") List group item 3
+                            a.list-group-item.list-group-item-action.disabled(href="#") List group item 4
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 List group flush
+
+            .container
+                .card
+                    .card-body
+                        ul.list-group.list-group-flush
+                            li.list-group-item List group item 1
+                            li.list-group-item.active List group item 2
+                            li.list-group-item List group item 3
+                            li.list-group-item.disabled List group item 4
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 List group with badges
+
+            .container
+                .card
+                    .card-body
+                        ul.list-group
+                            li.list-group-item.d-flex.align-items-center.justify-content-between
+                                | List group item 1
+                                span.badge.bg-primary.rounded-pill 12
+
+                            li.list-group-item.d-flex.align-items-center.justify-content-between
+                                | List group item 2
+                                span.badge.bg-success.rounded-pill 6
+
+                            li.list-group-item.d-flex.align-items-center.justify-content-between
+                                | List group item 3
+                                span.badge.bg-warning.rounded-pill 7
+
+                            li.list-group-item.d-flex.align-items-center.justify-content-between
+                                | List group item 4
+                                span.badge.bg-info.rounded-pill 3
+                
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 List group checkboxes
+
+            .container
+                .card
+                    .card-body
+                        .list-group
+                            label.list-group-item
+                                input.form-check-input.me-2(type="checkbox", value="")
+                                | List group item 1
+
+                            label.list-group-item
+                                input.form-check-input.me-2(type="checkbox", value="", checked)
+                                | List group item 2
+
+                            label.list-group-item
+                                input.form-check-input.me-2(type="checkbox", value="")
+                                | List group item 3
+
+                            label.list-group-item
+                                input.form-check-input.me-2(type="checkbox", value="")
+                                | List group item 4
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

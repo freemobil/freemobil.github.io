@@ -1,0 +1,122 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.header-style-five.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="pages.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 FAQ
+
+                    // Navbar Toggler 
+                    .navbar--toggler#affanNavbarToggler(data-bs-toggle="offcanvas", data-bs-target="#affanOffcanvas", aria-controls="affanOffcanvas")
+                        span.d-block
+                        span.d-block
+                        span.d-block
+
+        include inc/sidenav.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Accordion Card 
+                .card.bg-primary.rounded-0.rounded-top
+                    .card-body.text-center.py-3
+                        h6.mb-0.text-white.line-height-1 For Buyers
+
+                .card.mb-3.rounded-0.rounded-bottom
+                    .card-body
+                        .accordion.accordion-flush.accordion-style-two#accordionStyle2
+
+                            // Single Accordion 
+                            .accordion-item
+                                .accordion-header#accordionFour
+                                    h6(data-bs-toggle="collapse", data-bs-target="#accordionStyleFour", aria-expanded="true", aria-controls="accordionStyleFour")
+                                        i.bi.bi-plus-lg
+                                        | What is refund policy?
+
+                                .accordion-collapse.collapse.show#accordionStyleFour(aria-labelledby="accordionFour", data-bs-parent="#accordionStyle2")
+                                    .accordion-body
+                                        p.mb-0 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, velit?
+
+                            // Single Accordion 
+                            .accordion-item
+                                .accordion-header#accordionFive
+                                    h6.collapsed(data-bs-toggle="collapse", data-bs-target="#accordionStyleFive", aria-expanded="false", aria-controls="accordionStyleFive")
+                                        i.bi.bi-plus-lg
+                                        | Can it accept Paypal?
+
+                                .accordion-collapse.collapse#accordionStyleFive(aria-labelledby="accordionFive", data-bs-parent="#accordionStyle2")
+                                    .accordion-body
+                                        p.mb-0 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, a cupiditate.
+
+                            // Single Accordion 
+                            .accordion-item
+                                .accordion-header#accordionSix
+                                    h6.collapsed(data-bs-toggle="collapse", data-bs-target="#accordionStyleSix", aria-expanded="false", aria-controls="accordionStyleSix")
+                                        i.bi.bi-plus-lg
+                                        | What is PWA ready?
+
+                                .accordion-collapse.collapse#accordionStyleSix(aria-labelledby="accordionSix", data-bs-parent="#accordionStyle2")
+                                    .accordion-body
+                                        p.mb-0 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, a cupiditate.
+
+
+                // Accordion Card 
+                .card.bg-danger.rounded-0.rounded-top
+                    .card-body.text-center.py-3
+                        h6.mb-0.text-white.line-height-1 For Authors
+
+                .card.rounded-0.rounded-bottom
+                    .card-body
+                        .accordion.accordion-flush.accordion-style-two#accordionStyle22
+
+                            // Single Accordion 
+                            .accordion-item
+                                .accordion-header#accordionFour2
+                                    h6(data-bs-toggle="collapse", data-bs-target="#accordionStyleFour2", aria-expanded="true", aria-controls="accordionStyleFour2")
+                                        i.bi.bi-plus-lg
+                                        | What is refund policy?
+
+                                .accordion-collapse.collapse.show#accordionStyleFour2(aria-labelledby="accordionFour2", data-bs-parent="#accordionStyle22")
+                                    .accordion-body
+                                        p.mb-0 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, velit?
+
+                            // Single Accordion 
+                            .accordion-item
+                                .accordion-header#accordionFive2
+                                    h6.collapsed(data-bs-toggle="collapse", data-bs-target="#accordionStyleFive2", aria-expanded="false", aria-controls="accordionStyleFive2")
+                                        i.bi.bi-plus-lg
+                                        | Can it accept Paypal?
+
+                                .accordion-collapse.collapse#accordionStyleFive2(aria-labelledby="accordionFive2", data-bs-parent="#accordionStyle22")
+                                    .accordion-body
+                                        p.mb-0 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, a cupiditate.
+
+                            // Single Accordion 
+                            .accordion-item
+                                .accordion-header#accordionSix3
+                                    h6.collapsed(data-bs-toggle="collapse", data-bs-target="#accordionStyleSix3", aria-expanded="false", aria-controls="accordionStyleSix3")
+                                        i.bi.bi-plus-lg
+                                        | What is PWA ready?
+
+                                .accordion-collapse.collapse#accordionStyleSix3(aria-labelledby="accordionSix3", data-bs-parent="#accordionStyle22")
+                                    .accordion-body
+                                        p.mb-0 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, a cupiditate.
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,539 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Chat User Info 
+                    .chat-user--info.d-flex.align-items-center
+                        // Back Button 
+                        .back-button
+                            a(href="page-chat-users.html")
+                                include inc/back-btn.pug
+
+                        // User Thumbnail & Name 
+                        .user-thumbnail-name
+                            img(src="img/bg-img/2.jpg", alt="")
+                            .info.ms-1
+                                p Affan
+                                span.active-status Active Now
+                                // span.offline-status.text-muted Last actived 27m ago
+
+                    // Call & Video Wrapper 
+                    .call-video-wrapper.d-flex.align-items-center
+                        // Video Icon 
+                        .video-icon.me-3
+                            a.text-secondary#videoCallingButton(href="#")
+                                svg.bi.bi-camera-video(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175l3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z")
+
+                        // Call Icon 
+                        .call-icon.me-3
+                            a.text-secondary#callingButton(href="#")
+                                svg.bi.bi-telephone(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16")
+                                    path(d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z")
+
+                        // Info Icon 
+                        .info-icon
+                            a.text-secondary(href="#")
+                                svg.bi.bi-info-circle(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16")
+                                    path(d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                                    path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z")
+
+        // Video Calling Popup 
+        #videoCallingPopup.video-calling-popup-wrap
+            .video-calling-popup-body.bg-overlay(style="background-image: url('img/bg-img/2.jpg')")
+                // User Thumbnail 
+                .user-thumbnail.mb-3
+                    img(src="img/bg-img/2.jpg", alt="")
+
+                // Video Icon 
+                .video-icon.d-block.mb-1
+                    svg.bi.bi-camera-video.text-white(xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" viewBox="0 0 16 16")
+                        path(fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175l3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z")
+                h6.mb-5.text-white Affan is video calling...
+                // Button Group 
+                .button-group
+                    a.btn.btn-lg.btn-danger.btn-round.me-3#videoCallDecline(href="#") Decline
+                    a.btn.btn-lg.btn-success.btn-round.ms-3(href="page-video-call.html") Accept
+
+        // Calling Popup 
+        #callingPopup.calling-popup-wrap
+            .calling-popup-body.bg-primary
+                // User Thumbnail 
+                .user-thumbnail.mb-3
+                    img(src="img/bg-img/2.jpg", alt="")
+
+                // Call Icon 
+                .call-icon.d-block.mb-2
+                    svg.bi.bi-telephone.text-white(xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" viewBox="0 0 16 16")
+                        path(d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z")
+                h6.mb-5.text-white Affan is calling...
+                // Button Group 
+                .button-group
+                    a.btn.btn-lg.btn-danger.btn-round.me-3#callDecline(href="#") Decline
+                    a.btn.btn-lg.btn-success.btn-round.ms-3(href="#") Accept
+
+        .page-content-wrapper.py-3#chat-wrapper
+            .container
+                .chat-content-wrap
+
+                    // Single Chat Item 
+                    .single-chat-item
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username.
+                            span.name-first-letter A
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p Hello, Are you there?
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:39 AM
+
+                    // Single Chat Item 
+                    .single-chat-item.outgoing
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/user3.png", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p Yes, How can I help you?
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:46 AM
+                                .sent-status.seen
+                                    i.bi.bi-check-lg(aria-hidden="true")
+
+                    // Single Chat Item 
+                    .single-chat-item
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p I want to buy your Affan template.
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            .message-content
+                                .single-message
+                                    p Affan - PWA Mobile HTML Template
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:46 AM
+
+                    // Single Chat Item 
+                    .single-chat-item.outgoing
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/user3.png", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    .gallery-img
+                                        a(href="img/bg-img/30.jpg")
+                                            img(src="img/bg-img/30.jpg", alt="")
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:39 AM
+                                .sent-status.seen
+                                    i.bi.bi-check-lg(aria-hidden="true")
+
+                    // Single Chat Item 
+                    .single-chat-item
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p Would you please provide a purchase link?
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:39 AM
+
+                    // Single Chat Item 
+                    .single-chat-item.outgoing
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/user3.png", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p Sure, Here are the purchase link. Please click the purchase now button, then fill up your all payment info.
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            .message-content
+                                .single-message
+                                    a.btn.btn-success.btn-round(href="https://themeforest.net/item/affan-pwa-mobile-html-template/29715548", target="_blank") Buy Now - $24
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:46 AM
+                                .sent-status.seen
+                                    i.bi.bi-check-lg(aria-hidden="true")
+
+                    // Single Chat Item 
+                    .single-chat-item
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p Thanks!
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:39 AM
+
+                    // Single Chat Item 
+                    .single-chat-item
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    .download-file-wrap.d-flex.align-items-center
+                                        .download-avatar.bg-light
+                                            .dl-icon
+                                                i.bi.bi-file-earmark-zip-fill
+                                            a.download-btn(href="#")
+                                                i.bi.bi-download
+                                        .download-file-info
+                                            .file-name.text-truncate affan-pwa-mobile-html-template.zip
+                                            .file-size 11.69 MB
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:39 AM
+
+                    // Single Chat Item 
+                    .single-chat-item.outgoing
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/user3.png", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    p You are welcome &#128525; &#128525;
+
+                                // Options 
+                                .dropstart
+                                    button.btn.btn-options.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                        i.bi.bi-three-dots-vertical
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-reply
+                                                | Reply
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-forward
+                                                | Forward
+                                        li
+                                            a(href="#")
+                                                i.bi.bi-trash
+                                                | Remove
+
+                            // Time and Status 
+                            .message-time-status
+                                .sent-time 11:46 AM
+                                .sent-status.delivered
+                                    i.bi.bi-check-lg(aria-hidden="true")
+
+                    // Single Chat Item 
+                    .single-chat-item
+                        // User Avatar 
+                        .user-avatar.mt-1
+                            // If the user avatar isn't available, will visible the first letter of the username. 
+                            span.name-first-letter A
+                            img(src="img/bg-img/2.jpg", alt="")
+
+                        // User Message 
+                        .user-message
+                            .message-content
+                                .single-message
+                                    .typing
+                                        span.dot
+                                        span.dot
+                                        span.dot
+
+        .chat-footer
+            .container.h-100
+                .chat-footer-content.h-100.d-flex.align-items-center
+                    form(action="#")
+                        // Message 
+                        input.form-control(type="text", placeholder="Type here...")
+
+                        // Emoji 
+                        button.btn.btn-emoji.mx-2(type="button")
+                            svg.bi.bi-emoji-smile(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                path(d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                                path(d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z")
+
+                        // Add File 
+                        .dropup.me-2
+                            button.btn.btn-add-file.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                svg.bi.bi-plus-circle(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="" viewBox="0 0 16 16")
+                                    path(d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                                    path(d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z")
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")
+                                        i.bi.bi-files
+                                        | Files
+                                li
+                                    a(href="#")
+                                        i.bi.bi-mic
+                                        | Audio
+                                li
+                                    a(href="#")
+                                        i.bi.bi-file-earmark
+                                        | Document
+                                li
+                                    a(href="#")
+                                        i.bi.bi-file-bar-graph
+                                        | Pull
+                                li
+                                    a(href="#")
+                                        i.bi.bi-geo-alt
+                                        | Location
+
+                        // Send 
+                        button.btn.btn-submit(type="submit")
+                            svg.bi.bi-cursor(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16")
+                                path(d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z")
+
+        include inc/footer.pug

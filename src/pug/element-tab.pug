@@ -1,0 +1,167 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Tabs
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Standard Tab
+
+            .container
+                .card
+                    .card-body
+                        .standard-tab
+                            ul.nav.rounded-lg.mb-2.p-2.shadow-sm#affanTabs1(role="tablist")
+                                li.nav-item(role="presentation")
+                                    button.btn.active#bootstrap-tab(data-bs-toggle="tab", data-bs-target="#bootstrap", type="button", role="tab", aria-controls="bootstrap", aria-selected="true") RTL
+
+                                li.nav-item(role="presentation")
+                                    button.btn#pwa-tab(data-bs-toggle="tab" data-bs-target="#pwa" type="button" role="tab" aria-controls="pwa" aria-selected="false") PWA
+
+                                li.nav-item(role="presentation")
+                                    button.btn#dark-tab(data-bs-toggle="tab" data-bs-target="#dark" type="button" role="tab" aria-controls="dark" aria-selected="false") Dark
+
+                            .tab-content.rounded-lg.p-3.shadow-sm#affanTabs1Content
+                                .tab-pane.fade.show.active#bootstrap(role="tabpanel" aria-labelledby="bootstrap-tab")
+                                    h6 RTL Ready
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#pwa(role="tabpanel" aria-labelledby="pwa-tab")
+                                    h6 PWA Ready
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#dark(role="tabpanel" aria-labelledby="dark-tab")
+                                    h6 Dark Mode
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+            .container
+                .element-heading.mt-3
+                    h6 Colorful Tab
+
+            .container
+                .card.bg-primary.bg-gradient
+                    .card-body
+                        .colorful-tab
+                            ul.nav.p-1.mb-3.shadow-sm#affanTab3(role="tablist")
+                                li.nav-item(role="presentation")
+                                    button.btn.btn-primary.active#creative-tab(data-bs-toggle="tab", data-bs-target="#creative", type="button", role="tab", aria-controls="creative", aria-selected="true") Creative
+
+                                li.nav-item(role="presentation")
+                                    button.btn.btn-primary#modern-tab(data-bs-toggle="tab" data-bs-target="#modern" type="button" role="tab" aria-controls="modern" aria-selected="false") Modern
+
+                                li.nav-item(role="presentation")
+                                    button.btn.btn-primary#latest-tab(data-bs-toggle="tab" data-bs-target="#latest" type="button" role="tab" aria-controls="latest" aria-selected="false") Latest
+
+                            .tab-content.shadow-sm.p-3#affanTab3Content
+                                .tab-pane.fade.show.active#creative(role="tabpanel" aria-labelledby="creative-tab")
+                                    h6.text-white Creative design.
+                                    p.mb-0.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#modern(role="tabpanel" aria-labelledby="modern-tab")
+                                    h6.text-white Modern trends.
+                                    p.mb-0.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#latest(role="tabpanel" aria-labelledby="latest-tab")
+                                    h6.text-white Latest technology.
+                                    p.mb-0.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+            .container
+                .element-heading.mt-3
+                    h6 Minimal Tab
+
+            .container
+                .card
+                    .card-body
+                        .minimal-tab
+                            ul.nav.nav-tabs.mb-3#affanTab2(role="tablist")
+                                li.nav-item(role="presentation")
+                                    button.btn.active#sass-tab(data-bs-toggle="tab", data-bs-target="#sass", type="button", role="tab", aria-controls="sass", aria-selected="true") Sass
+
+                                li.nav-item(role="presentation")
+                                    button.btn#npm-tab(data-bs-toggle="tab" data-bs-target="#npm" type="button" role="tab" aria-controls="npm" aria-selected="false") NPM
+
+                                li.nav-item(role="presentation")
+                                    button.btn#gulp-tab(data-bs-toggle="tab" data-bs-target="#gulp" type="button" role="tab" aria-controls="gulp" aria-selected="false") Gulp
+
+                                li.nav-item(role="presentation")
+                                    button.btn#pug-tab(data-bs-toggle="tab" data-bs-target="#pug" type="button" role="tab" aria-controls="pug" aria-selected="false") Pug
+
+                            .tab-content.rounded-lg.p-3#affanTab2Content
+                                .tab-pane.fade.show.active#sass(role="tabpanel" aria-labelledby="sass-tab")
+                                    h6 Built with SASS
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#npm(role="tabpanel" aria-labelledby="npm-tab")
+                                    h6 Built with NPM
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#gulp(role="tabpanel" aria-labelledby="gulp-tab")
+                                    h6 Built with Gulp js
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                                .tab-pane.fade#pug(role="tabpanel" aria-labelledby="pug-tab")
+                                    h6 Built with Pug
+                                    p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+            .container
+                .element-heading.mt-3
+                    h6 Bootstrap Tab
+
+            .container
+                .card
+                    .card-body
+                        ul.nav.nav-tabs#bootstrapTab(role="tablist")
+                            li.nav-item.me-2(role="presentation")
+                                button.nav-link.active#home-tab(data-bs-toggle="tab", data-bs-target="#home", type="button", role="tab", aria-controls="home", aria-selected="true") Home
+
+                            li.nav-item.me-2(role="presentation")
+                                button.nav-link#profile-tab(data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false") Profile
+
+                            li.nav-item(role="presentation")
+                                button.nav-link#contact-tab(data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false") Contact
+
+                        .tab-content.p-3.border-top-0#bootstrapTabContent
+                            .tab-pane.fade.show.active#home(role="tabpanel" aria-labelledby="home-tab")
+                                h6 I'm tab one!
+                                p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, impedit natus itaque fuga aperiam qui eos ut.
+
+                            .tab-pane.fade#profile(role="tabpanel" aria-labelledby="profile-tab")
+                                h6 I'm tab two!
+                                p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, impedit natus itaque fuga aperiam qui eos ut.
+
+                            .tab-pane.fade#contact(role="tabpanel" aria-labelledby="contact-tab")
+                                h6 I'm tab three!
+                                p.mb-0 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, impedit natus itaque fuga aperiam qui eos ut.
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug

@@ -1,0 +1,122 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/internet-status.pug
+
+        include inc/dark-rtl-loader.pug
+
+        include inc/setting-popup.pug
+
+        // Header Area 
+        .header-area#headerArea
+            .container
+                // Header Content 
+                .header-content.position-relative.d-flex.align-items-center.justify-content-between
+                    // Back Button 
+                    .back-button
+                        a(href="elements.html")
+                            include inc/back-btn.pug
+
+                    // Page Title 
+                    .page-heading
+                        h6.mb-0 Text
+
+                    // Settings 
+                    .setting-wrapper
+                        include inc/setting-btn.pug
+
+        .page-content-wrapper.py-3
+            .container
+                // Element Heading 
+                .element-heading
+                    h6 Text alignment
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        h6.text-start.text-primary Left aligned text
+                        h6.text-center.text-success Center aligned text
+                        h6.text-end.mb-0.text-info Right aligned text
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Text wrapping
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .badge.bg-primary.text-wrap(style="width: 5rem;") This text should wrap.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Text overflow
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        .text-nowrap.bg-gray(style="width: 8rem;") This text should overflow the parent.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Text transform
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        h6.text-lowercase Lowercased text.
+                        h6.text-uppercase Uppercased text.
+                        h6.text-capitalize.mb-0 CapiTaliZed text.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Font weight and italics
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        p.fw-bold Bold text.
+                        p.fw-bolder Bolder weight text (relative to the parent element).
+                        p.fw-normal Normal weight text.
+                        p.fw-light Light weight text.
+                        p.fw-lighter Lighter weight text (relative to the parent element).
+                        p.fst-italic Italic text.
+                        p.fst-normal.mb-0 Text without font style
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Line height
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        p.lh-1 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus.
+                        p.lh-sm Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus.
+                        p.lh-base Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus.
+                        p.lh-lg.mb-0 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus.
+
+            .container
+                // Element Heading 
+                .element-heading.mt-3
+                    h6 Text decoration
+
+            .container
+                .card.direction-rtl
+                    .card-body
+                        p.text-decoration-underline This text has a line underneath it.
+                        p.text-decoration-line-through This text has a line going through it.
+                        a.text-decoration-none(href="#") This link has its text decoration removed
+
+
+        include inc/footer-nav.pug
+
+        include inc/footer.pug
