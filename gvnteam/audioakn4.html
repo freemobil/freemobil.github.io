@@ -1,0 +1,1211 @@
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Affan - PWA Mobile HTML Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0134d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>Güven Timleri</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+    <!-- Internet Connection Status -->
+    <!-- # This code for showing internet connection status -->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Dark mode switching -->
+    <div class="dark-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="dark-mode-text text-center">
+          <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+          </svg>
+          <p class="mb-0">Switching to dark mode</p>
+        </div>
+        <div class="light-mode-text text-center">
+          <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </svg>
+          <p class="mb-0">Switching to light mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- RTL mode switching -->
+    <div class="rtl-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="rtl-mode-text text-center">
+          <svg class="bi bi-text-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to RTL mode</p>
+        </div>
+        <div class="ltr-mode-text text-center">
+          <svg class="bi bi-text-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to default mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- Setting Popup Overlay -->
+    <div id="setting-popup-overlay"></div>
+    <!-- Setting Popup Card -->
+    <div class="card setting-popup-card shadow-lg" id="settingCard">
+      <div class="card-body">
+        <div class="container">
+          <div class="setting-heading d-flex align-items-center justify-content-between mb-3">
+            <p class="mb-0">Settings</p>
+            <div class="btn-close" id="settingCardClose"></div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="availabilityStatus" checked>
+              <label class="form-check-label" for="availabilityStatus">Availability status</label>
+            </div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="sendMeNotifications" checked>
+              <label class="form-check-label" for="sendMeNotifications">Send me notifications</label>
+            </div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="darkSwitch">
+              <label class="form-check-label" for="darkSwitch">Dark mode</label>
+            </div>
+          </div>
+          <div class="single-setting-panel">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="rtlSwitch">
+              <label class="form-check-label" for="rtlSwitch">RTL mode</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Area -->
+    <div class="header-area" id="headerArea">
+      <div class="container">
+        <!-- Header Content -->
+        <div class="header-content position-relative d-flex align-items-center justify-content-between">
+          <!-- Back Button -->
+          <div class="back-button"><a href="audiobook.html">
+              <svg class="bi bi-arrow-left-short" width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+              </svg></a></div>
+          <!-- Page Title -->
+          <div class="page-heading">
+            <h4 class="mb-0">AudioBooks/Akın Altan</h4>
+          </div>
+          <!-- Settings -->
+          <div class="setting-wrapper">
+            <div class="setting-trigger-btn" id="settingTriggerBtn">
+              <svg class="bi bi-gear" width="18" height="18" viewBox="0 0 16 16" fill="url(#gradientSettings)" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gradientSettings" spreadMethod="pad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0" style="stop-color: #0134d4; stop-opacity:1;"></stop>
+                    <stop offset="100%" style="stop-color: #28a745; stop-opacity:1;"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"></path>
+                <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"></path>
+              </svg><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper py-3">
+      <div class="blog-wrapper direction-rtl">
+        <div class="container">
+          <div class="row g-2">
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/eJ2NO_FPEpA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEutAY9TnmmdJbz7PQA8X50uHCFg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/xcVvzzlFX1U/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUEmWN5drUhRL5MZ16IUZIAkvFmg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/xKqoTcz8GK0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA17zgSIgSCqWQxv9oVpSqIs6MPug" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/xC-vJ4_7i_o/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCIfUpDsUNUWUQXiFNee6t0bRof5A" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/5isLcGGkgKM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCO35aYFooN2TNgwz5b2B5kCFeb6w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/EB1FW8prTtg/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByOEVYX5y261sXX0jpMBpxLnjM9g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/23DUoMupEpE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAK0NY_i5GUDTT_Jz6UTI0ULzbZeQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Mopkb_y_EmA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDprKDAujWAVHv2DLP79Iwh22t-Ow" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/pr_GM05qjWw/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBwgsPksEgES-zsJ3aZXfszSFKQKQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/zDSmSiYi-zc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA-AKpGpDJdVMfaF134VIBA5ThvtQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/dXbpEtVh7_A/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7TU7YWZNx8ZQjhbaCkD7Zp_5BZA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/-jIwCXU6W3w/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAQ4eRRli4L47tYk_lSqXleS8nJsg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/68eSBCnQtts/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZGcjpVg2r-LYubTQcLoZ0Q-wS1A" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/2ahZJiDUPmE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDofRYFtKIDLl7Jzrk4IjjrFFdMdg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/l51G7GFwL_A/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPQ3CTHj86awwnnaKbjJtN-FBPQA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/kc9c_ioGKFA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDz3_X1pWUXIn5ZPSecTIMubL3-Xw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/p3Kbl1f3xJg/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJQKphLq9p-GtrcsUJADi5GMqvzA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/O1TvwJbQAsU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDt1buYcapZzaC0ub37HDAlKEApww" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/6gYgB82LvUk/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6LCwj_GKhXgW2NjZaZfwO-xJ5Qg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Ux7NDdGe-cU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBf0p4VyQi6GA-YyE79i-5p64B5Tg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/PbL_9u_fB3U/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACC0qBOjCTvCgY0Sd_eKgzJJoZNA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/76BMtrZxn2s/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJ2RxASTwKjATPr3pkKQ-HUCPdxg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/hjxtG7mnnhM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZFv_ZFF9vloujKutsfDGpSqVeRA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/mL_hTYDF7kc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDqfikIcRnch_lulRhVbz43xbPYNg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/gbd4w1HbcpU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAEWn0PYPExI3-AHShjkJAUx9GAqw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/OO68xwZe3-g/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlvAiBuLG4v_nc_bq7csN_RN5wOQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/EDxcxSM6hkE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVALbujIzoFE5ySuYpegWxoFAJOQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/SzHD7maNEkI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6LKgWoeoAXu160Cz8b9dkVT35Sg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/sdCS9_ZwP6o/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQQoLkbzhXdQRJl1c7zcrwUjG9mg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/OyxJQGmr_aE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxv2xh4slX5J_34DS32N_-ywELwA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/pSOM-rWiOkI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0W3nUiW9n9_TJf5oJnPl0PO62Cw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/7c_FBLEvB3U/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBR1Zctj5xRYikXEsyEUzkQ-WElBA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/FWrezzwmcNU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqzXEAiVyy8JfIkGPYwA_mUAfqmg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/-J6p4t2Ccz0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCE2I67pp0-efcLf0N68oLasIKrDg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/IT2gH0kp-aY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAT_XQffY8CFblKQSX6m-ITBm4vxA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/4Nk-jz9dq8k/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAsJaDY3Ly3SQ42pKmG4r2RJwoOaw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/0ZWd1iOb-MA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAi2vsj1dyAV8G0_RDAyimRJmj78g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/m4161fOlL9c/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuY4Hj-9uWNKsHpHiW2DbikAmXCQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/0IVPeek8HHI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLokZOaejYRDpWqZFnocr-rIyMSA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/J_rI-GhMObE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjvDBnNdFPNtlYf-bwRIckpURbaQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/0Z1PcrtD7XM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAPM50kQKmGCoHxXx4USRDI1MK7BA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/x8DoDTk77UA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0Xeb6cYtCDqkGVTgPvt5UoRhLEw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Bo08XcVrMls/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA4G7NcFm3F4UddY9zMXF3ZNPGalw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/p3AXXw1IB2g/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAa_1GRgQFHqdos5BKp3Q7JGWjgPg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/LCbKXSJmUYU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD_2QLNuMws296pq17pxNJ-E0hctg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/7jFqr_Z31TI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBeHDH8RPeOfkNfRTXyeDYsDW0SSQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/EgMZdhowXjg/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCQr7jE9ec1mgplQMMWdHwNjykIzg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/PFW4c00CGOs/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA07qMfuyItAOyFFy3S0kWPF09zUQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/x7AofNpJxeU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDKYQs2FL5msn8t51AMSiPXlP_etg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/y8mqO48820k/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDa9n6TW-9_T6tS4HeGvfqC1HqnWg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/loIbcrK3NDo/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfYAkyhtiy92WdGWyTgfqEFpJAhQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/kOf1K4S5F2I/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwgbaShAr2OuEXS0dY4rzcSZUEVg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/yP1SgRing_8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHfajLKbeVVBRvQ5SCwubmUi3eeA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Br6Lnc1j9zw/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbi7rUU_boyIZjwcCZjYkwuwD0ig" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/dewQvI-6hac/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkA7j8-JdQqZ2m1x5Lg0ra0ayzAQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/nA-BWSlajSI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATcd0nbJvBYgja1Qx-wFU1Lr5hLA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/YVtBwtbeeik/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0zYPM7i8y6VLJcRq1HugNirGu-g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/MXEqi_VT9lI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOlKwz9cK_2n3vFO4_1R9qJEoy1g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/PUx4L1p9pqA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzBntSS0ueKFnUdx-VU5Py7pzr2w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/B0bVRKRhQV4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9EPWO6xdZvG27Pqr1uRuULgraDg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Ax5_mhlRfGI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8-odL-voYCXyzIA_3CFVmMJfJVw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/O9wcZhzONxE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCSa-GgdvDnIpVeJui3S3-kptTLnQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/nJs7zheZZhQ/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBwpzCemukDMjkcxuNdMS-DZqzBA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/7Y9Ud4rX2_E/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-J_-XLhftJ30CNUm6qyyCMAjmsw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/KOzfeBh1V2w/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCT96IeWXf8urRqKL3tVxZo8fn3pQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Sp_aEpO5niA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBVhRX4k_kR1XUBpeSZwm48VpH3-g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/iNQ43aofxLw/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBVHVh-Jbmw72YZTksIpIHNQFnizg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/0sRnG2RW7ys/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyIeNq2z1J_vQoZNkPsYu0ZmvnkA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/ojdanZabyIM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQxiAqe0wF-e3VthAFI4N-1rCchA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/W9OlKvlfgs0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJhGbaXpKIUCZ2iOlrwGHVNzaJvg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/9deARweswpA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAM2m6pmfN-HvSfpZiC51fSV0os9Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/7sMskibuiNM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEMmk5AXvZv2RUNw9dbDIC0WwYIg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/JvwCDt_g6sI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCQeXP1hSdn8aLaV_RzqdH4NfsT4A" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/qKan0dieiN8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7FAEei8AUfVzfLduAY68FpW98Jg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/oaHC4oLi5JM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmqqXDCjlihRqPs-TpE5Zmj4woAg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/DaPRDiAfibY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDD0nV6oLqWzGD24tKs3KaUCO85XQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/ZpXDZwvQ6NY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAbWe9DH3skQwtXSc3NXUJ48r_3Tg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Kj9O_mKe3DY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyxXo4noR2YOJZ68jAnncRacpEsQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/0CPdPe1Kc68/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXPACJ8RwbwlebaIXh0W4pFxI7ug" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/zKBORFhpgfE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDsXpxBTOP6EQH8aSD_BDXxp99FUA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/cnWFTtc_EjA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAx4zfxTB_y5RGNNK_7cYOEvbe-Bw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/d4og9oEXT-s/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyMaEABheGaA4ePzSmB6IwEZCVPQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/apz44JGqcRA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDKKwGwhg2872OaGdA816iRl1nIVw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/CL2xEjlyCKQ/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZaiYwZF0Pt_LzTanFQ8b24tHVRw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/hFBTuE3UN1Y/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAq5ip-CbReiPT4NSURCw3-jf8r_Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/QR7D6a2CHy8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARur2kmNZKcHcAdq6zQ2TJPPzqKg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/XQbVZMkW24k/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCwUHMxR1ZbM0NzVBvcUO-cKRB2w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/pX6tk6c0keA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBR_ipM0W7MwZoTd1AAWFACWv_hRQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/ZnefJ2mMt5Y/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJ2B4472K-6BTPf1V41J3wLbYduw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/WMsaXsxpP_0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3s8NGMeomwmynRO0iW9lST576Yg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/1tsT5DT9gDo/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9VskjRT9GVV-7_MIpm5uhVKjmqQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/cBZ90Il4His/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbXwZFaZ4pI1qmvBNWrLRZi3spyQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/FBfZJD-31a4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBwgfta5Xy5ZoA-zKSzkehteJ_XnA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Dhp9_t1pWS4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlY3zGgWZywmr5kPri_Kh4RcWt4A" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/7riV0Vuomp4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkhhKt9BwSo3RXYHx5pfaX5DCDXA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/J5597axDeU4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjYIUAUa7kUGCidLG78jvffnlx-g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/JqU3aSiW_yw/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBICraF02bYDRKMhLjwYcYIJIt-Gw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/HwiUPX3s34A/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6d-p7fCwVrEm9oHFbCTXpoTXpZw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/lg1odaHFUy4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTJcLKTGpW6-Mt_fYeXfg3YM7meQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/1SkDZERq6DE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADhsRrKrzyzQJBH2grZbN4GYanqg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Y_NkC293XIg/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlbl4v-RI1wfFN51Nr1a_hsrqirA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/QBiy8yZLMT0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCT-cHPhFt5MyHSsJnWA2tlzoLhsw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/mwrR_jaJias/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCc6HLfUkFCCZJfEiCqYaKUvhAWKg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/4GGOfnB9HKQ/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDKmd7TViDZGrpM55doveBPACjLbQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/u_0OtIakFQ0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD0ryLIJKq7yXSzdlY10vLxHH-8aw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/HaTKyr2Bjys/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCsW7CAUQHKiyEjQzhrL8UUFZJM2w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/pcYFzk7oywM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCv5givkcM6iHzN1oWW9aLg6TQLDg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/GJrRwJXtAwg/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDR9pebN8ejegiXlw_csRTN7PFtog" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/bLskSe9GpVc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW6mHReVRc1iQtiONmL4psSktB3w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/c76a9ZpNJsE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHLdG8RLbhv13yMvLpauTeaRuNBQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/q8-FTX21nlw/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDwfhh2Ny6B3wc_gLQn-ln_9vZ64w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/JUmGyRuvisc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYdBRPtDhyYj-DKPJvxVrNRTdykQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/ppSpAgP0ybA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAvo823qB426_fPw7yZEbIaPpCVhw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/rxdTSUgMRX4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDFPb3aBqDOMKmcXXOg6s3xTAZsQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/qczzUv-f270/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACEP9VY6WTplh6f4EdXZollMpaPQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/MoQ-T3THu98/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-NZyd_KGUiJQOn5kY5JOHqyAbNw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/y75MTIR1cGo/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2288kWznIYjIks7sd342GCqNiDQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/8J8VoNRffD4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcGlGt4KQP3ntzknlUJ0oRttqO0Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/uRmWq94l6_E/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFDzQhk9XXveVZ7q26zWvTbDQu8A" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/lkxy6gfbEhU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBInmuNoEjj1xSS6CiYkhEi7NY25Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/EFcduqdsioc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTCpNNrYJJMjjClwBcG4h5StTp5w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/wixggjL4PYo/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-2fTC16wKHYV9KNsHWg3NhTJdOg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/O0GFapdrLjM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCttrgijt5tOy77YyJPi9ZvqSv89Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/YIn6KLHuBHc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBHMSbgwdNR6ceemb08vtF17p3Ssg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/fX1htp09ySs/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3-JB40EmGop9nSi3Qedo2AAjmKQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/FMWK9UWuj-4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgqHQLfuJr6IjIot1gH5q6E_hxqg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/XzcwJcwJ_Jc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBsjyhV-l5cCAZ9YeNV5snCduLF6Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/pvjwVOIdGjk/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxFtjyFef6bAX5Xnki-jAwDuKlcw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/ct8pvq2wzPs/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzxZnvjc-XucM0foiwC8G0GdRyGg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/PibCPqh2Zw8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCaPT7rBbPGy3PTz_YWhVQOTNwIXQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/O9bEs2KcQyM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBScAvNyy16IJePZ_zHBz44F2hbUg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/QUDPTBhiELE/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDkG3xNBSzgVQePz-liuDoYXtG9Nw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/LRmpByZ4nis/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLANVDyA-owhhlV5Q6Sc8EntFFuXKw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/JCWcGvIMU-Y/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJHWgUHwgPf2gNmourND_WakeFJA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/rFHH7Wfoqro/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6c7WjwEgQl-usQqj44w129O5YGw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/mjRoTZn1xS8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCKpd9l223aNkNaaHeQ5eGNLkaVmA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/C7CLKCxXAl8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDi6NtmqEg5Y1_WRFCMfFuJ7AuTHQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/w51KYV6QLts/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcVe81H2H-le7Ke8mFUvDw-zlj0Q" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/3tGkQfKp-jo/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6gYcjSS-9M3z0VRXrIINmu3EaMA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/z6PM_E2-yok/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeI3xrB1k6d_EqptqnfFxEKbhUlQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/-VJReRZ9OnY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJUv2ooiGZLbyag7D7DbqmsH_l2w" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/uG3Q22i6YjY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATObdK-I7qfNBQ5Xpc1MSzV0VyIw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Q6EiBTwiDFU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDFFFbVm2UBbhUI0W-QDAVwVgAgSQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/6HHYrcIQw54/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrUgE2y9FhmHoncDWSkzI3xqEWgQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/SiAAUx9MMPI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5OerRiEHHf-csuT02V615ZsQAUw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Oi6PXT38-kg/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhBczF0cNjY1N_YbbjGdfv1vSCsQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/bJJMUeJhRTY/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDpknE3OgVbVrb5dgHRSpMI69nWXA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/_njQCOtQzqA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5D-EYAiorgGcdv415rbxoDRLIuA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/iuVEbly6gzw/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2E5AWlwbTolF3o30kzoowqWRQrA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/uVBf6oS-TNM/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCA2f-a7lE9CsWUfY6XRJnS15Kxtw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/h5FMGOWzNy8/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBUqUwJV9hqCWAOuOonHsDFyLS_VQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Ue6u99Xp4Xc/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKf3z_Fv6IIxXJeRAvg0NQTolYAw" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/XA0DV9Yqa68/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGV20VWblMfVJ9KuJTdP6to2M3gQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/1WKuZ4l3NFI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnIBlkzFH9z79SczHgpKSFS2ETyQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/ivzY63ETcQs/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB865lC2SXs5GkdOCD2QhKqu-BwDA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/EX3kdJo4ZqA/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjqFfZ54a1H2VvIAGPKTmd48R4xg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/1IW1xxQeZmU/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCdUKnMSrlZlnlE-hkysqQlaqaS4A" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/6M0_qOmAWDo/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdhRPSxPYMXuLbLCTnp9BsQ0ekEQ" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/sp6mV-YsVw4/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADD-WZjHyv6CPSizNfClgOZ6YBaA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/Ac0AYT48P2w/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdCGN6ivoyOtVS_fn2ct5cSR6NrA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/LO3vP2ll--0/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKsVNUR7r0AqadzwtKT1pC0DkG3g" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/a83UgualR2Y/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDVzT9jE52vfB4XThjTwffwDfQElg" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/57L7CaCfEJI/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1OULiEBBJ2xUh0nOTggwKljRavA" alt=""></a></div>
+				</div>
+            </div>
+            <!-- Single Blog Card -->
+            <div class="col-6">
+              <div class="card partner-slide-card border bg-gray">
+                <div class="card-body p-2"><a href="msc/akn/090.html"><img src="https://i.ytimg.com/vi/PbUKFBjCf4c/maxresdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAMT41Fi8eaJ_a9E7wxf1CGKblwDw" alt=""></a></div>
+				</div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card mt-3">
+          <div class="card-body p-3">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center pagination-one direction-rtl">
+                <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous">
+                    <svg class="bi bi-chevron-left" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                    </svg></a></li>
+                <li class="page-item"><a class="page-link" href="audioakn1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="audioakn2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="audioakn3.html">3</a></li>
+				<li class="page-item active"><a class="page-link" href="audioakn4.html">4</a></li>
+				<li class="page-item"><a class="page-link" href="audioakn5.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="#" aria-label="Next">
+                    <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                    </svg></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Nav -->
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container px-0">
+        <!-- =================================== -->
+        <!-- Paste your Footer Content from here -->
+        <!-- =================================== -->
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+          <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+            <li><a href="home.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+			<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+			</svg><span>Home</span></a></li>
+            <li><a href="dkmn.html">
+                <svg class="bi bi-folder2-open" width="25" height="25" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"></path>
+                </svg><span>Dökümanlar</span></a></li>
+            <li><a href="ebook.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+               </svg><span>E-Book</span></a></li>
+		   <li><a href="web.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 14 14">
+				<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+				<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+				</svg><span>Web Siteler</span></a></li>
+            <li><a href="search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg><span>Search</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- All JavaScript Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideToggle.min.js"></script>
+    <script src="js/internet-status.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/vanilla-dataTables.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/magic-grid.min.js"></script>
+    <script src="js/dark-rtl.js"></script>
+    <script src="js/active.js"></script>
+    <!-- PWA -->
+    <script src="js/pwa.js"></script>
+  </body>
+</html>

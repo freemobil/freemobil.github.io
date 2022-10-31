@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Affan - PWA Mobile HTML Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0134d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>Affan - PWA Mobile HTML Template</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+    <!-- Internet Connection Status -->
+    <!-- # This code for showing internet connection status -->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Dark mode switching -->
+    <div class="dark-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="dark-mode-text text-center">
+          <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+          </svg>
+          <p class="mb-0">Switching to dark mode</p>
+        </div>
+        <div class="light-mode-text text-center">
+          <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </svg>
+          <p class="mb-0">Switching to light mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- RTL mode switching -->
+    <div class="rtl-mode-switching">
+      <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="rtl-mode-text text-center">
+          <svg class="bi bi-text-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to RTL mode</p>
+        </div>
+        <div class="ltr-mode-text text-center">
+          <svg class="bi bi-text-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+          <p class="mb-0">Switching to default mode</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header Area -->
+    <div class="header-area" id="headerArea">
+      <div class="container">
+        <!-- # Paste your Header Content from here -->
+        <!-- # Header Five Layout -->
+        <!-- # Copy the code from here ... -->
+        <!-- Header Content -->
+        <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+          <!-- Navbar Toggler -->
+          <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas"><span class="d-block"></span><span class="d-block"></span><span class="d-block"></span></div>
+        </div>
+        <!-- # Header Five Layout End -->
+      </div>
+    </div>
+    <!-- # Sidenav Left -->
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel">
+      <button class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="offcanvas-body p-0">
+        <!-- Side Nav Wrapper -->
+        <div class="sidenav-wrapper">
+          <!-- Sidenav Profile -->
+          <div class="sidenav-profile bg-gradient">
+            <div class="sidenav-style1"></div>
+            <!-- User Thumbnail -->
+            <div class="user-profile"><img src="img/bg-img/user.png" alt=""></div>
+            <!-- User Info -->
+            <div class="user-info">
+              <h6 class="user-name mb-0">Güven Timleri Şube Müdürlüğü</h6><span>B Bölge Büro Amirliği</span>
+            </div>
+          </div>
+          <!-- Sidenav Nav -->
+          <ul class="sidenav-nav ps-0">
+            <li><a href="index.html"><i class="bi bi-house-door"></i>Home</a></li>
+            <li><a href="pages.html"><i class="bi bi-person-square"></i>Eşgal Arşivi</a></li>
+            <li><a href="search.html"><i class="bi bi-person-bounding-box"></i>Şüpheli/Foto Sorgu</a></li>
+            <li><a href="knn.html"><i class="bi bi-archive-fill"></i>Kanun ve Mevzuatlar</a></li>
+            <li><a href="ttnk.html"><i class="bi bi-file-text"></i>Matbu Tutanak ve Üst Yazılar</a></li>
+            <li><a href="dkmn.html"><i class="bi bi-folder-plus"></i>Mesleki Dökümanlar</a></li>
+            <li><a href="brzml.html"><i class="bi bi-cup-fill"></i>Biraz Mola</a></li>
+            <li>
+              <div class="night-mode-nav"><i class="bi bi-moon"></i>Night Mode
+                <div class="form-check form-switch">
+                  <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+                </div>
+              </div>
+            </li>
+          </ul>
+		  <!-- Copyright Info -->
+          <div class="copyright-info">
+            <p>2022 &copy;Made By ProMeTHeuS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content-wrapper py-3" id="elementsSearchList">
+      <div class="container">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="form-group mb-0">
+              <input class="form-control" id="elementsSearchInput" type="text" onkeyup="elementsSearch()" placeholder="Search element...">
+            </div>
+          </div>
+        </div>
+        <div class="affan-element-item">
+          <div class="element-heading-wrapper"><i class="bi bi-book"></i>
+            <div class="heading-text">
+              <h6 class="mb-1">E-Kütüphane</h6><span></span>
+            </div>
+          </div>
+        </div>
+<!-- Page Item --><a class="affan-element-item" href="001.html">2890 Yılında - Jules Verne<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="002.html">Acı - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="003.html">Adaları Seven Adam - D.H. Lawrence<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="004.html">Adsız Kent - H. P. Lovecraft<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="005.html">Akla Kara - Voltaire<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="006.html">Aktris - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="007.html">Albaya Mektup - Gabriel Garcia<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="008.html">Alyoşka’nın Yüreği - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="009.html">Amontillado Fıçısı - Edgar Allan POE<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="010.html">Annemin Günahı - Yeorgios Vizinos<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="011.html">Aoste Şehrinin Cüzamlısı - Xavier de Maistre<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="012.html">Apollon Ve Tamara - Mihail Zoşçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="013.html">Aptalcık - Nikolay Leskov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="014.html">Asılmış Adamın Gelini - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="015.html">Asker Çocuğu - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="016.html">Aslan ve Unicorn - George Orwell<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="017.html">Aşık Garip - Mihail Lermontov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="018.html">Aşk Üzerine - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="019.html">At Tüccarının Kızı - D. H. Lawrence<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="020.html">Ateş Piramiti - Arthur Machen<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="021.html">Ateş ve Buz - Ray Bradbury<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="022.html">Ateş Yakmak - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="023.html">Ateşi Kıvılcımken Söndürmeli - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="024.html">Augsburg Tebeşir Dairesi - Bertolt Brecht<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="025.html">Avcı Graccus - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="026.html">Ay Bataklığı - H.P. Lovecraft<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="027.html">Aylaklığa Övgü - Bertrand Russell<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="028.html">Zorlu Bir Çatışma - Ambrose Bierce<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="029.html">Ayrılan Yollar - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="030.html">Aziz Ayyaş'ın Efsanesi - Joseph Roth<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="031.html">Baba Oğul - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="032.html">Baba - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="033.html">Bağdat Sandığının Esrarı - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="034.html">Bahçıvan - Rudyard Kipling<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="035.html">Balina Dişi - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="036.html">Balodan Sonra - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="037.html">Baron - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="038.html">Baskın - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="039.html">Başka Bir Ülkede - Ernest Hemingway<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="040.html">Başsız Süvari - Washington Irving<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="041.html">Batard - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="042.html">Bay Bulemann - Theodor Storm<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="043.html">Bay Proharçin - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="044.html">Bebek Borsası - Panteleymon Romanov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="045.html">Bekçinin Öyküsü - Edith Olivier.<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="046.html">Yiten 10 Yıl - F. Scott Fitzgerald<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="047.html">Ben Öldürdüm - Mihail Bulgakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="048.html">Yeni Milyoner - Arkadi Timofeyeviç Averçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="049.html">Bertolt Brecht - Bay Keuner'in Öyküleri<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="050.html">Beş Portakal Çekirdeği - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="051.html">Beyaz Alın - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="052.html">Beyaz Geceler - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="053.html">Beyaz Sessizlik - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="sed054.html">Beyaz Yağmur - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="055.html">Bezginlik - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="056.html">Biblomanya - Gustave Flaubert<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="057.html">Bir Açlık Şampiyonu - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="058.html">Bir Cinayetin Hikayesi - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="059.html">Bir Fili Vurmak - George Orwell<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="060.html">Bir Hapishanede Bulunan İtiraflar - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="061.html">Bir Hayalet Hikayesi - Mark Twain<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="062.html">Bir İdam Mahkûmunun Son Günü - Victor Hugo<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="063.html">Bir İdam - George Orwell<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="064.html">X. Yüzyılda Normadiya  - Gustave Flaubert <i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="065.html">Bir Karşılaşma - James Joyce<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="066.html">Violante ya da Sosyete Hayatı - Marcel Proust <i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="067.html">Bir Kere Sonbaharda - Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="068.html">Bir Masal - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="069.html">Bir Şairin Sesi - Halil Cibran<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="070.html">Bir Yiğitlik Anı - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="071.html">Bir Yufka Yürekli - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="072.html">Birinci Mevki Yolcusu - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="073.html">Uykusuz Dünya - Stefan Zweig <i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="074.html">Boles - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="075.html">Boscombe Vadisinin Esrarı - Sir Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="076.html">Bozguncu - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="077.html">Bozkırda - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="078.html">Bülbül İle Gül - Oscar Wilde<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="079.html">Büyü Üstadı - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="080.html">Büyülü Yer - Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="081.html">Cahillik - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="082.html">Candide’in Bahçesi - Simone de Beauvoir<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="083.html">Carmen - Prosper Mérimée<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="084.html">Cecü'nün Yer Cüceleri - Umberto Eco<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="085.html">Cehennem Azabı - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="086.html">Cemile - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="087.html">Cesur Yeni Dünya - Aldous Huxley<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="088.html">Cezalılar Kolonisi - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="089.html">Cinayet Davası - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="090.html">Cinayet - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="091.html">Çalınan Mektup - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="092.html">Çanlar Değişik Bir Gün İçin Çalıyor - Robert Aıckman<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="093.html">Çarpık Janet - Robert Louis Stevenson<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="094.html">Çekilmez İnsanlar - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="095.html">Çelik Boğaz - Mihail Bulgakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="096.html">Çeyiz - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="097.html">Çifte Kocalı Anna - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="098.html">Çilekler - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="099.html">Çinli - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="100.html">Çocuklar - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="101.html">Çocuklar - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="102.html">Dağ Kızı, Jemina - F. Scott Fitzgerald<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="103.html">Danko’nun Kalbi - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="104.html">Deli - Halil CİBRAN<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="105.html">Ah Çorba, Vah Çorba! - Ryunosuke Akutagawa<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="106.html">Denizde Yangın - Turganyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="107.html">Denizde - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="108.html">Dilek Ağacı - William Faulkner<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="109.html">Dokuz Mektupta Bir Roman - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="110.html">Dönek - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="111.html">Dört Numaralı Otopsi Odası - Stephen King<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="112.html">Duvardaki İz - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="113.html">Duvardaki Kapı - H. G. Wells<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="114.html">Duvarın Gizlediği - Agatha Cristie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="115.html">Düellocu - Joan Vatsek<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="116.html">Dünyanın Yeşil Tepeleri - Robert A. Heinlein<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="117.html">Düşteki Ev - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="118.html">Ebedi Koca - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="119.html">Egoist Dev - Oscar Wilde<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="120.html">El Verdigo - Honoré de Balzac<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="121.html">Elf'lerin Hazinesi - James Baldwin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="122.html">En Büyük Ceza - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="123.html">Erdemin Öyküsü - Henry James<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="124.html">Ertelenen Aşk - Ray Bradbury<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="125.html">Esirlerin Kaçış Serüveni - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="126.html">Eskimo Kızın Aşk Öyküsü - Mark Twain<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="127.html">Esrarengiz Köşk La Grande Bretèche - Honoré de Balzac<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="128.html">Ev Sahibesi - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="129.html">Eveline - James Joyce<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="130.html">Fayton - Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="131.html">Fedakar Kadın - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="132.html">Floransa'da Veba - Gustave Flaubert<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="133.html">Françoise - Lev Nikolayeviç Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="134.html">Gammaz Yürek - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="135.html">Aleksey Babanın Hikayesi - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="136.html">Bir Aşk Macerası - Arkadi Averçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="137.html">Genç Werther'in Acıları - Goethe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="138.html">Gerçek Mutluluk - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="139.html">Geri Çevrilme - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="140.html">Gilbert Keith Chesterton - Mahşerin Üç Atlısı<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="141.html">Gizli Başyapıt - Honoré de Balzac<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="142.html">Golyat - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="143.html">Goryuhino Köyü Tarihi - Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="144.html">Görünmeyen Koleksiyon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="145.html">Göz - Vladimir Nabakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="146.html">Gümüş Kopçalar - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="147.html">Güneşin Oğlu - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="148.html">Güvercinliğimin Hikayesi - İzak Babel<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="149.html">Haç - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="150.html">Haksız Yönetime Karşı - Henry David Thoreau<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="151.html">Han ile Oğlu - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="152.html">Hançer - Mihail Lermontov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="153.html">Hanımefendi - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="154.html">Harp Malulü - Oliver Gold Smith<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="155.html">Hatırlamak - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="156.html">Havyar - Arkadi Averçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="157.html">Hayaller - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="158.html">Hayat Bir Bütündür - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="159.html">Bir Gün Gibi - Luigi Pirandello<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="160.html">Hep Dilimin Yüzünden - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="161.html">Herşeye Rağmen Sevgi - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="162.html">Hiç Kimse Gülmeyecek - Milan Kundera<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="163.html">Irgat Emelyan ve Davul - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="164.html">Issız Gezegendeki Ev - Isaac Asimov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="165.html">Işıklar Sönünce - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="166.html">İnanç Hep Sürer - Manly Wade Wellman<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="167.html">İnfazcı - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="168.html">İnsancıklar - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="169.html">İntihar Kulübü 1. öykü Robert Louis Stevenson<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="170.html">İntihar Kulübü 2. öykü Robert Louis Stevenson<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="171.html">İntihar Kulübü 3. öykü Robert Louis Stevenson<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="172.html">İstiridye - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="173.html">İş, Ölüm, Hastalık - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="174.html">İtalya Masalları - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="175.html">İvan İlyiç'in Ölümü - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="176.html">İvan'ın Sırrı - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="177.html">Japonya Açıklarında Tayfun - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="178.html">Jöleli Şeker - Francis Scotty Key Fitzgerald<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="179.html">Judith - Hjalmar Bergman<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="180.html">Kabadayı - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="181.html">Kaçan Ayna - Giovanni Papini<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="182.html">Kaçınılmaz Beyaz Adam - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="183.html">Kaçış - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="184.html">Kadın Ve Manzara<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="185.html">Kadınların Aşağılaması - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="186.html">Kalda Hattına İlişkin Anılar - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="187.html">Kalleş Ülke - Italo Calvino<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="188.html">Kaloşlar - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="189.html">Kanın Kuvveti - Miguel de Cervantes Saavedra<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="190.html">Kara Avlu - Thomas Burke<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="191.html">Kara Kedi - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="192.html">Kara Keşiş - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="193.html">Kara Şato'nun Kontu - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="194.html">Karahindiba - Wolfgang Borchert<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="195.html">Karanlığın Yüreği - Joseph Conrad<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="196.html">Kardinal Napellus - Gustav Meyrink<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="197.html">Yalanlanamayacak - Karel Çapek<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="198.html">Karışık Yazılar - Paul Valéry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="199.html">Kasımpatları - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="200.html">Kasırga - Arkadiy Averçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="201.html">Katedral - Raymond Carver<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="202.html">Katili Herkes Bulamaz - Georges Simenon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="203.html">Kaybolan Yazı - Nikolay Vasilyeviç Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="204.html">Kaybolmuş Bir Göz - Mihail Bulgakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="205.html">Keçi - Mihail Zoşçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="206.html">Kemancı - Herman Melville<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="207.html">Kemiksizler - Gerald Kersh<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="208.html">Bitmeyen Ruble - Nikolay Leskov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="209.html">Kırcali - Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="210.html">Kırık Taşlar - Heraklitos<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="211.html">Kırım Tasvirleri - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="212.html">Kırmızı Defter - Paul Auster<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="213.html">Kısa Öyküler-Mektup- - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="214.html">Kız Çocuğu - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="215.html">Kız Kardeşler - James Joyce<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="216.html">Kızıl Elma - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="217.html">Kızıl Ölüm’ün Maskesi - Edgar Allan POE<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="218.html">Kızıl Saçlılar Kulübü - Sir Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="219.html">Kitaplardan Korkan Çocuk - Susanna Tamaro<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="220.html">Lanetli Ev ve Şeytan ile Tom Walker<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="221.html">Lazarus - Leonid Andreyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="222.html">Leman Gölü Kıyısındaki Olay - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="223.html">Leon Bloy Bay Pleur'ün Dini<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="224.html">Leopar Adamın Öyküsü - Jack London.<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="225.html">Leporella<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="226.html">Lit - Lit'in Evlenmesi - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="227.html">Lobskaya Dağı - Andrey Platonov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="228.html">Los Amigos Fiyaskosu - Sir Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="229.html">Maça Kızı - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="230.html">Mahşerin Üç Atlısı - G. K. Chesterton<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="231.html">Pahalıya Patlıyor - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="232.html">Palto - Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="233.html">Pandomima - Sami Paşazade Sezai<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="234.html">Büyük Morsalkım - Charlotte Perkins Gilman<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="235.html">Büyük Üretim - Traven<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="236.html">Pazar - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="237.html">Lugin -  Mihail Lermontov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="238.html">Perili Ev - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="239.html">Perpetium Mobile - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="240.html">Peter Schlemihl - Adelbert Von Chamisso<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="241.html">Liberal - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="242.html">Pinti Şovalye - Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="243.html">Plattner Hikayesi - H. G. Wells<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="244.html">Polikuşka - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="245.html">Polzunkov - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="246.html">Portre - Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="247.html">Poseidon - Michael Köhlmeier<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="248.html">Posta Kutusu - Celil Mehmetguluzade<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="249.html">Postacı - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="250.html">Elveda Cordera - Leopoldo Alas<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="251.html">Prometheus - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="252.html">Prometheus - Johann Wolfgang Von Goethe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="253.html">Rainer Maria Rilke - Beyaz Mutluluk<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="254.html">Reading Zındanı Baladı - Oscar Wilde<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="255.html">Rehine - Friedrich Von Schiller<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="256.html">Rip Van Winkle - Washington Irving<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="257.html">Roslavlev - Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="258.html">Bir siyah Fanila İçin - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="259.html">Sadece Fransızca Tarif Edebileceğiniz O His - Stephen King<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="260.html">Sakallı Bebek - Valentin Katayev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="261.html">Herkesin Dostu Anton - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="262.html">Santone'da Sis - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="263.html">Kabus Odası - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="264.html">Özel Öğretmen - Yordan Yovkov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="265.html">Sel - Emile Zola<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="266.html">Sesler Adacığı - Robert Louis Stevenson<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="267.html">Sessizlik Mağarası - Miguel de Unamuno<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="268.html">Seyirciler - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="269.html">SES - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="270.html">Sherlock Holmes Bir Kimlik Vakası - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="271.html">Sihirli Dükkan - H. G. Wells<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="272.html">Simon'un Babası - Guy de Maupassant<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="273.html">Sinyalci - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="274.html">Siwash - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="275.html">Sokratesin Savunması - Platon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="276.html">Korku Nedir Bilmeyen Adam - W. B. Yeats <i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="277.html">Son Mr. Elvesham'in Hikayesi - H. G. Wells<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="278.html">Son - İvan Sergeyeviç Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="279.html">Sosyete Oyunları - Carlo Manzoni<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="280.html">Soyguncu - Nikolay Leskov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="281.html">Soytarı - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="282.html">Soyunun Son Türü - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="283.html">Kurtadamın Döngüsü - Stephen King<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="284.html">Su Kasidesi - Fuzûlî<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="285.html">Sünger Avcısı - Panait Istrati<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="286.html">Sinek - Arkadi Timofeyeviç Averçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="287.html">Siyah Peçe - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="288.html">Sıradan Bir Gün - Nikolay Ostrovski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="289.html">Sırrı Olmayan Sfenks - Oscar Wilde<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="290.html">Ulduz ve Kargalar - Samet Behrengi<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="291.html">Umut İşkencesi Villiers de L'ısle - Adam<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="292.html">Unutulmuş Düşler - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="293.html">Usher Evinin Çöküş - Edgar Allan POE<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="294.html">Uysal Bir Kız - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="295.html">Uzun Boylu Kadın - Pedro Antonio de Alarcon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="296.html">Uçan Trapezdeki Gözü Pek Delikanlı - William Saroyan<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="297.html">Uçurum - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="298.html">Vampir - Alfred Hitchcock<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="299.html">Vanka - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="300.html">Ve Papağan Fıstık Dedi - Price Day<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="301.html">Veba Sırasında Şölen - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="302.html">Viktorya Kazimirovna - Mihail Zoşçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="303.html">Vittoria Accoramboni - Stendal<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="304.html">Volodya - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="305.html">Voltaire Scarmentado'nun Seyahatlerinin Öyküsü<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="306.html">VİY - Nikolay Vasilyeviç Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="307.html">Wakefield - Nathaniel Hawthorne<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="308.html">Yabancı - Howard Phillips Lovecraft<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="309.html">Yalnız Gezenin Düşleri - Jean Jacques Rousseau<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="310.html">Yalnız - Friedrich Nietzsche<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="311.html">Yalnızlığın Uçan Dairesi - Theodore Sturgeon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="312.html">Yapma Güller - Gabriel Garcia Marquez<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="313.html">Yaprak Çizen Niggle - J.R.R Tolkien<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="314.html">Yaralı Yüz - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="315.html">Yaramaz Jim'in Hikayesi - Mark Twain<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="316.html">Yargı - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="317.html">Yargıcın Evi - Bram Stoker<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="318.html">Yaylı Çalgılar Dörtlüsü - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="319.html">Yayın Balığı - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="320.html">Yazar Ve Şeytan - Maksim GORKİ<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="321.html">Yazılmamış Bir Roman - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="322.html">Yağmurlu Havalar - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="323.html">Yaşama Hırsı - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="324.html">Yaşamın Yasası - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="325.html">Yaşlı Gemici - Samuel Taylor Coleridge<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="326.html">Yaşlı Kadın ve Papağan - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="327.html">Onun Kurbanı - Rainer Maria Rilke<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="328.html">Yemelyan Pilyay - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="329.html">Yeni Atlantis - Francis Bacon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="330.html">Yeni Elbise Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="331.html">Yeraltından Notlar - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="332.html">Yetim - Heinrich von Kleist<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="333.html">Yeşil Dil - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="334.html">Yirmi Altı Adam ve Bir Kız - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="335.html">Yiğitçe Ölüm - Charles Baudelaire<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="336.html">Yoksul Köylünün Oğlu - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="337.html">Yol Arkadaşım - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="338.html">Yolagelmez Yan - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="339.html">Yolları Çatallanan Bahçe - Jorge Luis Borges<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="340.html">Yufka Yürek - Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="341.html">Yumurta Büyüklüğünde Tohum - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="342.html">Yuşka - Andrey Platonov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="343.html">Yzur - Leopoldo Lugones<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="344.html">Yüksek ve Alçak Araştırma - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="345.html">Yüz Karası - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="346.html">Yüzü Dönük - Stephen Crane<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="347.html">Yılan - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="348.html">Yıldırım Sesli Manasçı - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="349.html">Zacharius Usta - Jules Verne<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="350.html">Üsteğmen Ergonov'un Hikayesi - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="351.html">Üzerinde Horoz Resmi Olan Havlu - Mihail Bulgakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="352.html">Üç Gün - Yevgeni Zamyatin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="353.html">Üç Kara Kral - Wolfgang Borchert<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="354.html">Üç Karşılaşma - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="355.html">Üç Soru - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="356.html">Fare Ulusu - Franz KAFKA<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="357.html">Üç Ölüm - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="358.html">Üç İhtiyar - Lev Nikolayeviç Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="359.html">Üçüncü Oğul - Andrey Platonov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="360.html">Üçüncü Teslimiyet - Gabriel Garcia Marquez<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="361.html">Şafak Kızı - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="362.html">Şarkıcı Kız - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="363.html">Şair - Arkadi Averçenko<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="364.html">Şehir Dışında Bir Gün - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="365.html">Şehir - Konstantinos Kavafis<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="366.html">Şeytan - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="367.html">Şeytan - Halil Cibran<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="368.html">Şeytani - Mihail Bulgakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="369.html">Şeytanla Asla Bahse Girme - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="370.html">Şeytanın Hilesi - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="371.html">Şeytanın Saati - Fernando Pessoa<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="372.html">Şili'de Deprem - Heinrich Von Kleist<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="373.html">Şişede Bulunan Not - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="374.html">Şişenin Cini - Robert Louis Stevenson<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="375.html">Şosede Çocuklar - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="376.html">Kuyu ve Sarkaç - Edgar Allen Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="377.html">Gölge - Edgar Allen Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="378.html">Kalabalıkların Adamı - Edgar Allen Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="379.html">Korku Üzerine - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="380.html">Maske - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="381.html">Kızıl Tüy - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="382.html">Mektup - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="383.html">Kunduracı ve İblis - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="384.html">Soyunun Son Türü  - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="385.html">Telaş - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="386.html">Tifüs - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="387.html">Nişanlı Kız - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="388.html">Asia - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="389.html">Aşkın Zafer Şarkısı - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="390.html">İlk Aşk - İvan Turgenyev (Akın Altan)<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="391.html">Mumu - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="392.html">Bir Doktorun Olağanüstü Serüvenleri - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="393.html">Köpek Kalbi - Mihaiil Bulgakov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="394.html">Dönüşüm - Franz Kafka (Akın Altan)<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="395.html">Kovalı Süvari - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="396.html">Karı Koca - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="397.html">Mutsuz Olmak - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="398.html">Bir Köy Hekimi - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="399.html">Küçük Bir Kadın - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="400.html">Avcılar - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="401.html">Bir Delinin El Yazması - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="402.html">Kilise Katibi - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="403.html">Perili Ev - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="404.html">Salaş Tiyatrocunun Hikayesi - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="405.html">Köylü Genç Bayan - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="406.html">Büyük Petronun Arabı - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="407.html">Atış - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="408.html">Menzil Bekçisi - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="409.html">Erzurum Yolculuğu - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="410.html">Mektuplarla Roman - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="411.html">Tipi - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="412.html">Mısır Geceleri - Aleksandr Puşkin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="413.html">Bobok - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="414.html">İğrenç Bir Olay - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="415.html">Noel Ağacı ve Bir Evlenme - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="416.html">Timsah - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="417.html">Tuhaf Bir Adamın Rüyası - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="418.html">Manx Altınları - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="419.html">Bir Yiğitlik Anı - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="420.html">Yaşamı Umursamayanların Arasında - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="421.html">Kadın ve Manzara - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="422.html">Kurşun Mühürlü Tren - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="423.html">Ay Işığı Sokağı - Stefan Zweig (A.Altan)<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="424.html">Bir Kalbin Çöküşü - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="425.html">Görünmeyen Koleksiyon - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="426.html">Tek Düze Bir Dünya - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="427.html">Büyük Dudaklı Adam - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="428.html">Bohimya'da Skandal - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="429.html">Donda - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="430.html">Nefretin Bilimi - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="431.html">Öç - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="432.html">Ortak Bir Dil - Mihail Şolohov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="433.html">Yoksulların Ölümü - George Orwell<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="434.html">Eski Zaman Beyleri - Nikolay Vasilyeviç Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="435.html">Delinin Defteri - Nikolay Vasilyeviç Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="436.html">Burun - Nikolay Vasilyeviç Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="437.html">Oğulla Buluşma - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="438.html">Öğretmen Duyşen - Cengiz Aytmatov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="439.html">Modadan Edebiyata - Balzac<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="440.html">İnci - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="441.html">Fareler ve İnsanlar - John Steinbeck<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="442.html">Mavi Sardunya Çiçeği - Agatha Christie<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="443.html">Bir Milyon Sternlik Banknot - Mark Twain<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="444.html">Calaveras Countynin Kurbağası - Mark Twain<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="445.html">Müneccimlerin Hediyesi - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="446.html">Bir Afazi Vakası - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="447.html">Bir Doların Değeri - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="448.html">Saç - Guy De Maupassant<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="449.html">İki Arkadaş - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="450.html">Hayalperest Bir Kadın - Thomas Hardy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S001.html">Şimdi'nin Gücü -  Echart Tolle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S002.html">Sokrates Ne Demek İstiyor - Filozoflar Serisi<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S003.html">Savaşçı - Doğan Cüceloğlu<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S004.html">Arap Hayri - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S005.html">Asfalt Yol - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S006.html">Ayran-  Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S007.html">Bahis - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S008.html">Bir Firar - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S009.html">Bir Orman Hikayesi - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S010.html">Bir siyah Fanila İçin - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S011.html">Birdenbire Sönen Kandilin Hikayesi - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S012.html">Sinyal Memuru - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S013.html">Değirmen - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S014.html">Duvar - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S015.html">Dönüşüm - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S016.html">Kanal - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S017.html">Koyun Masalı - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S018.html">Eskici - Refik Halit Karay<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S019.html">Duygusal Zeka - Kişisel Gelişim<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S020.html">Kırlangıçlar - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S021.html">Noel Hediyesi - O. Henry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S022.html">Palto - Nikolay Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S023.html">Arabalar Beş Kuruşa - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S024.html">Düşman - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S025.html">Hasan Boğuldu - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S026.html">Isıtmak İçin - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S027.html">Mehtaplı Bir Gece - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S028.html">Pazarcı - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S029.html">Satranç - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S030.html">Ses - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S031.html">Sokrates in Savunması - Platon<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S032.html">Sırça Köşk - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S033.html">Tanrı Gerçeği Bilir - Lev Nikolayeviç Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S034.html">Üç Ölüm - Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S035.html">Vahşetin Çağrısı - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S036.html">Viyolonsel - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S037.html">Yargı - Franz Kafka<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S038.html">Yeraltından Notlar - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S039.html">Çaydanlık - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S040.html">Ütopya - Thomas More<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S041.html">İki Şehrin Hikayesi - Charles Dickens<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S042.html">İlk Aşk - İvan Turgenyev<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S043.html">Korkunç Bir Gece - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S044.html">Kuş Kapanı - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S045.html">Mesut İnsanlar Fotoğrafhanesi - Z. Osman Saba<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S046.html">Morgue Sokağı Cinayetleri - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S047.html">Mutlu Prens - Oscar Wilde<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S048.html">Mutsuzluk - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S049.html">Benekli Kordon - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S050.html">Bohemya'da Skandal - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S051.html">Kızıl Saçlılar Kulübü - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S052.html">Mavi Yakut - Arthur Conan Doyle<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S053.html">Şeytan - Halil Cibran<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S054.html">İvan’ın Sırrı - Lev Nikolayeviç Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S055.html">Bir Delinin Hatıra Defteri - Gogol<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S056.html">Boğulan Adam - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S057.html">Dürüst Hırsız - Fyodor Dostoyevski<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S058.html">Ermişin Bahçesi - Halil Cibran<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S059.html">Ermiş - Halil Cibran<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S060.html">Gece Geçen Serseriler - Jack London<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S061.html">Gramofon Avrat - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S062.html">Hanende Melek - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S063.html">Karanfilsiz - Adalet Ağaoğlu<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S064.html">Yoksul Köylünün Oğlu - Lev Nikolayeviç Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S065.html">Usher Evinin Çöküşü - Edgar Allan Poe<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S066.html">Yol Arkadaşım - Maksim Gorki<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S067.html">İnsana Çok Toprak Gerekir mi? - Lev Nikolayeviç Tolstoy<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S068.html">Aşk Aslında Nedir? - Arthur Schopenhauer <i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S069.html">Yoksulların Ölümü - George Orwell<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S070.html">Baharın Tesiri - Ömer Seyfettin<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S071.html">Çirkince - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S081.html">Beyaz Mantolu Adam - Oğuz Atay<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S082.html">Bilinmeyen Bir Kadının Mektubu - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S083.html">Bir Çöküşün Öyküsü - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S084.html">Bir ilkbahar Hikayesi - Sait Faik Abasıyanık<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S085.html">Duvardaki Leke - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S086.html">Dülger Balığının Ölümü - Sait Faik Abasıyanık<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S087.html">Eftalikus'un Kahvesi - Sait Faik Abasıyanık<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S088.html">Ferhunde Kalfa - Halit Ziya Uşaklıgil<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S089.html">Haritada Bir Nokta - Sait Faik Abasıyanık<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S090.html">Kar Yağarken - Halit Ziya Uşaklıgil<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S091.html">Kurtarılamayan Şaheser -  Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S092.html">Küçük Köpekli Kadın - Anton Çehov<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S093.html">Demiryolu Hikayecileri - Oğuz Atay<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S094.html">Martı Jonathan Livingston - Richard Bach<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S095.html">Perili Ev - Virginia Woolf<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S096.html">Selam - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S097.html">Ses - Sabahattin Ali<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S098.html">Unutulan - Oğuz Atay<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S099.html">Aristotales Ne Demek İstiyor ? - Filozoflar Serisi<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S112.html">Ay Işığı Sokağı - Stefan Zweig<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S113.html">Küçük Prens - Antoine de Saint-Exupéry<i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S124.html">Freud Ne Demek İstiyor ? - Kişisel Gelişim Serisi <i class="bi bi-chevron-right"></i></a>
+<!-- Page Item --><a class="affan-element-item" href="S125.html">The Secret Ne Demek İstiyor ? - Kişisel Gelişim Serisi<i class="bi bi-chevron-right"></i></a>
+        <script>
+          function elementsSearch() {
+              var input = document.getElementById('elementsSearchInput');
+              var filter = input.value.toUpperCase();
+              var list = document.getElementById("elementsSearchList");
+              var listItem = list.getElementsByClassName('affan-element-item');
+          
+              for (i = 0; i < listItem.length; i++) {
+                  var a = listItem[i];
+                  var textValue = a.textContent || a.innerText;
+                  if (textValue.toUpperCase().indexOf(filter) > -1) {
+                      listItem[i].style.display = "";
+                  } else {
+                      listItem[i].style.display = "none";
+                  }
+              }
+          }
+          
+        </script>
+      </div>
+    </div>
+    <!-- Footer Nav -->
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container px-0">
+        <!-- =================================== -->
+        <!-- Paste your Footer Content from here -->
+        <!-- =================================== -->
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+          <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+            <li><a href="home.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+			<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+			</svg><span>Home</span></a></li>
+            <li><a href="dkmn.html">
+                <svg class="bi bi-folder2-open" width="25" height="25" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"></path>
+                </svg><span>Dökümanlar</span></a></li>
+            <li><a href="ebook.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+               </svg><span>E-Book</span></a></li>
+		   <li><a href="web.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 14 14">
+				<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+				<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+				</svg><span>Web Siteler</span></a></li>
+            <li><a href="search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg><span>Search</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- All JavaScript Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slideToggle.min.js"></script>
+    <script src="js/internet-status.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/vanilla-dataTables.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/magic-grid.min.js"></script>
+    <script src="js/dark-rtl.js"></script>
+    <script src="js/active.js"></script>
+    <!-- PWA -->
+    <script src="js/pwa.js"></script>
+  </body>
+</html>
