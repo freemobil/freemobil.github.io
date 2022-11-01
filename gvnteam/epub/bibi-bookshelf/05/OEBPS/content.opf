@@ -1,0 +1,248 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Postane</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="Bukowski, Charles">Charles Bukowski</dc:creator>
+    <dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:cf9bf955-153a-405e-98ff-028c44620116</dc:identifier>
+    <dc:date>2002-12-31T22:00:00+00:00</dc:date>
+    <dc:publisher>Parantez Gazetecilik ve Yayıncılık</dc:publisher>
+    <dc:contributor opf:role="trl">Avi Pardo</dc:contributor>
+    <dc:contributor opf:role="dsr">eldkaan</dc:contributor>
+    <dc:description>Yine akşamdan kalmaydım ve sıcak dayanılır gibi değildi -kırk derecelik bir hafta. Her gece içmeye devam ediyor, sabahları Taş ve her şeyin olanaksızlığıyla yüzleşmek zorunda kalıyordum. Çocukların kimileri Afrika güneş kaskları ve gözlükleri giyiyorlardı; ama ben, hep aynıydım, yağmur ya da güneş- yırtık pırtık giysiler, çivileri ayaklarıma batan eski ayakkabılar. Mukavva parçaları koyuyordum ayakkabılarımın tabanlarına. Bir süre için iş görüyorlardı, ama çok geçmeden çiviler topuklarıma batmaya başlıyorlardı yine. Viski ve bira terliyordum, koltuk altlarımdan, ve sırtımda bir torbayla dolanıyordum çarmıh misali; torbadan dergiler çıkarıyor, binlerce mektup dağıtıyordum güneşin altında kavrulup sendeleyerek.</dc:description>
+    <dc:date opf:event="modification">2014-11-11</dc:date>
+    <dc:contributor opf:role="bkp">calibre (5.44.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:subject>Kurgu</dc:subject>
+    <dc:subject>Klasik</dc:subject>
+    <dc:subject>Roman</dc:subject>
+    <dc:language>tr</dc:language>
+    <dc:identifier opf:scheme="calibre">1bfcc147-4411-4268-afa9-40a5ccbefa62</dc:identifier>
+    <dc:identifier opf:scheme="ISBN">9789758441787</dc:identifier>
+    <dc:identifier opf:scheme="UUID">urn:uuid:cf9bf955-153a-405e-98ff-028c44620116</dc:identifier>
+    <meta content="0.7.4" name="Sigil version"/>
+    <meta name="cover" content="postane.jpg"/>
+    <meta name="calibre:title_sort" content="Postane"/>
+    <meta name="calibre:rating" content="10.0"/>
+    <meta name="calibre:user_categories" content="{}"/>
+    <meta name="calibre:author_link_map" content="{&quot;Charles Bukowski&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/first.html" id="first.html" media-type="application/xhtml+xml"/>
+    <item href="Text/pub.html" id="pub.html" media-type="application/xhtml+xml"/>
+    <item href="Text/title.html" id="title.html" media-type="application/xhtml+xml"/>
+    <item href="Text/dedi.html" id="dedi.html" media-type="application/xhtml+xml"/>
+    <item href="Text/warning.xhtml" id="warning.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/etik.html" id="etik.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post1.html" id="post1.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post2.html" id="post2.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post3.html" id="post3.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post4.html" id="post4.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post5.html" id="post5.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post6.html" id="post6.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post7.html" id="post7.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post8.html" id="post8.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post9.html" id="post9.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post10.html" id="post10.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post11.html" id="post11.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post12.html" id="post12.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post13.html" id="post13.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post14.html" id="post14.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post15.html" id="post15.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post16.html" id="post16.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post17.html" id="post17.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post18.html" id="post18.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post19.html" id="post19.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post20.html" id="post20.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post21.html" id="post21.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post22.html" id="post22.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post23.html" id="post23.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post24.html" id="post24.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post25.html" id="post25.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post26.html" id="post26.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post27.html" id="post27.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post28.html" id="post28.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post29.html" id="post29.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post30.html" id="post30.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post31.html" id="post31.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post32.html" id="post32.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post33.html" id="post33.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post34.html" id="post34.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post35.html" id="post35.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post36.html" id="post36.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post37.html" id="post37.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post38.html" id="post38.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post39.html" id="post39.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post40.html" id="post40.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post41.html" id="post41.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post42.html" id="post42.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post43.html" id="post43.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post44.html" id="post44.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post45.html" id="post45.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post46.html" id="post46.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post47.html" id="post47.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post48.html" id="post48.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post49.html" id="post49.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post50.html" id="post50.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post51.html" id="post51.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post52.html" id="post52.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post53.html" id="post53.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post54.html" id="post54.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post55.html" id="post55.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post56.html" id="post56.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post57.html" id="post57.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post58.html" id="post58.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post59.html" id="post59.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post60.html" id="post60.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post61.html" id="post61.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post62.html" id="post62.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post63.html" id="post63.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post64.html" id="post64.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post65.html" id="post65.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post66.html" id="post66.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post67.html" id="post67.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post68.html" id="post68.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post69.html" id="post69.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post70.html" id="post70.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post71.html" id="post71.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post72.html" id="post72.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post73.html" id="post73.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post74.html" id="post74.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post75.html" id="post75.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post76.html" id="post76.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post77.html" id="post77.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post78.html" id="post78.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post79.html" id="post79.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post80.html" id="post80.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post81.html" id="post81.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post82.html" id="post82.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post83.html" id="post83.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post84.html" id="post84.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post85.html" id="post85.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post86.html" id="post86.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post87.html" id="post87.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post88.html" id="post88.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post89.html" id="post89.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post90.html" id="post90.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post91.html" id="post91.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post91_0001.html" id="post91_0001.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post92.html" id="post92.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post93.html" id="post93.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post94.html" id="post94.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post95.html" id="post95.html" media-type="application/xhtml+xml"/>
+    <item href="Text/post95_0001.html" id="post95_0001.html" media-type="application/xhtml+xml"/>
+    <item href="Text/author.xhtml" id="author.xhtml" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Styles/eldv0.1.css" id="eldv0.1.css" media-type="text/css"/>
+    <item href="Images/postane.jpg" id="postane.jpg" media-type="image/jpeg"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="first.html"/>
+    <itemref idref="pub.html"/>
+    <itemref idref="title.html"/>
+    <itemref idref="dedi.html"/>
+    <itemref idref="warning.xhtml"/>
+    <itemref idref="etik.html"/>
+    <itemref idref="post1.html"/>
+    <itemref idref="post2.html"/>
+    <itemref idref="post3.html"/>
+    <itemref idref="post4.html"/>
+    <itemref idref="post5.html"/>
+    <itemref idref="post6.html"/>
+    <itemref idref="post7.html"/>
+    <itemref idref="post8.html"/>
+    <itemref idref="post9.html"/>
+    <itemref idref="post10.html"/>
+    <itemref idref="post11.html"/>
+    <itemref idref="post12.html"/>
+    <itemref idref="post13.html"/>
+    <itemref idref="post14.html"/>
+    <itemref idref="post15.html"/>
+    <itemref idref="post16.html"/>
+    <itemref idref="post17.html"/>
+    <itemref idref="post18.html"/>
+    <itemref idref="post19.html"/>
+    <itemref idref="post20.html"/>
+    <itemref idref="post21.html"/>
+    <itemref idref="post22.html"/>
+    <itemref idref="post23.html"/>
+    <itemref idref="post24.html"/>
+    <itemref idref="post25.html"/>
+    <itemref idref="post26.html"/>
+    <itemref idref="post27.html"/>
+    <itemref idref="post28.html"/>
+    <itemref idref="post29.html"/>
+    <itemref idref="post30.html"/>
+    <itemref idref="post31.html"/>
+    <itemref idref="post32.html"/>
+    <itemref idref="post33.html"/>
+    <itemref idref="post34.html"/>
+    <itemref idref="post35.html"/>
+    <itemref idref="post36.html"/>
+    <itemref idref="post37.html"/>
+    <itemref idref="post38.html"/>
+    <itemref idref="post39.html"/>
+    <itemref idref="post40.html"/>
+    <itemref idref="post41.html"/>
+    <itemref idref="post42.html"/>
+    <itemref idref="post43.html"/>
+    <itemref idref="post44.html"/>
+    <itemref idref="post45.html"/>
+    <itemref idref="post46.html"/>
+    <itemref idref="post47.html"/>
+    <itemref idref="post48.html"/>
+    <itemref idref="post49.html"/>
+    <itemref idref="post50.html"/>
+    <itemref idref="post51.html"/>
+    <itemref idref="post52.html"/>
+    <itemref idref="post53.html"/>
+    <itemref idref="post54.html"/>
+    <itemref idref="post55.html"/>
+    <itemref idref="post56.html"/>
+    <itemref idref="post57.html"/>
+    <itemref idref="post58.html"/>
+    <itemref idref="post59.html"/>
+    <itemref idref="post60.html"/>
+    <itemref idref="post61.html"/>
+    <itemref idref="post62.html"/>
+    <itemref idref="post63.html"/>
+    <itemref idref="post64.html"/>
+    <itemref idref="post65.html"/>
+    <itemref idref="post66.html"/>
+    <itemref idref="post67.html"/>
+    <itemref idref="post68.html"/>
+    <itemref idref="post69.html"/>
+    <itemref idref="post70.html"/>
+    <itemref idref="post71.html"/>
+    <itemref idref="post72.html"/>
+    <itemref idref="post73.html"/>
+    <itemref idref="post74.html"/>
+    <itemref idref="post75.html"/>
+    <itemref idref="post76.html"/>
+    <itemref idref="post77.html"/>
+    <itemref idref="post78.html"/>
+    <itemref idref="post79.html"/>
+    <itemref idref="post80.html"/>
+    <itemref idref="post81.html"/>
+    <itemref idref="post82.html"/>
+    <itemref idref="post83.html"/>
+    <itemref idref="post84.html"/>
+    <itemref idref="post85.html"/>
+    <itemref idref="post86.html"/>
+    <itemref idref="post87.html"/>
+    <itemref idref="post88.html"/>
+    <itemref idref="post89.html"/>
+    <itemref idref="post90.html"/>
+    <itemref idref="post91.html"/>
+    <itemref idref="post91_0001.html"/>
+    <itemref idref="post92.html"/>
+    <itemref idref="post93.html"/>
+    <itemref idref="post94.html"/>
+    <itemref idref="post95.html"/>
+    <itemref idref="post95_0001.html"/>
+    <itemref idref="author.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="Text/cover.xhtml" title="Cover" type="cover"/>
+  </guide>
+</package>

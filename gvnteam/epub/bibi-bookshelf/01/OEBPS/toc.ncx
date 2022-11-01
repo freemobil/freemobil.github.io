@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="UND">
+  <head>
+    <meta content="538a5bc3-24e6-429d-9da0-a9d01c2f3b06" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (0.6.49)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Prens</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="2ac7dcbc-fff9-41ce-ac0a-60f5fc447ad7" playOrder="1">
+      <navLabel>
+        <text>GİRİŞ [*1]</text>
+      </navLabel>
+      <content src="Text/prensson_split_004.html"/>
+    </navPoint>
+    <navPoint id="a50a0380-4a77-483e-9de9-64d641ede177" playOrder="2">
+      <navLabel>
+        <text>MACHIAVELLI’NİN YAŞAMI VE YAPITLARI</text>
+      </navLabel>
+      <content src="Text/prensson_split_005.html"/>
+    </navPoint>
+    <navPoint id="622dffbe-8514-4dac-af67-0fbbf906f1ca" playOrder="3">
+      <navLabel>
+        <text>PRENS</text>
+      </navLabel>
+      <content src="Text/prensson_split_007.html"/>
+      <navPoint id="ca08edbe-f272-4223-8d09-5842d8a57b3f" playOrder="4">
+        <navLabel>
+          <text>Niccolò Machiavelli’den Muhteşem Lorenzo de’ Medici’ye</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html"/>
+      </navPoint>
+      <navPoint id="0753f781-081d-4116-945d-e17c97dcb209" playOrder="5">
+        <navLabel>
+          <text>I Kaç tür prenslik vardır ve hangi yollarla ele geçirilirler?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_6"/>
+      </navPoint>
+      <navPoint id="59e6a7f8-3716-41de-8231-f408b3886c95" playOrder="6">
+        <navLabel>
+          <text>II Mirasa dayalı prenslikler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_7"/>
+      </navPoint>
+      <navPoint id="3e3a0bb7-498f-469e-ba36-28420cc0fc16" playOrder="7">
+        <navLabel>
+          <text>III Karma prenslikler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_8"/>
+      </navPoint>
+      <navPoint id="c9baf6b2-2998-4b05-b114-d9d9658ae1fc" playOrder="8">
+        <navLabel>
+          <text>IV İskender’in işgal ettiği Dareios Krallığı, İskender’in ölümünden sonra onun ardıllarına niçin baş</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_9"/>
+      </navPoint>
+      <navPoint id="aa2569b6-d5d1-4987-8daa-6d1dac2b0eae" playOrder="9">
+        <navLabel>
+          <text>V İşgal edilmeden önce kendi yasalarına göre yaşayan şehirler ya da prenslikler nasıl yönetilmelidir</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_10"/>
+      </navPoint>
+      <navPoint id="a0d6a762-d138-4f0f-90bc-cb00c969c047" playOrder="10">
+        <navLabel>
+          <text>VI Kişinin kendi silahları ve becerisiyle ele geçirdiği yeni prenslikler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_11"/>
+      </navPoint>
+      <navPoint id="c101da95-fb25-481a-9d79-268a78d237d6" playOrder="11">
+        <navLabel>
+          <text>VII Başkalarının silahlarıyla ve talihle ele geçirilen yeni prenslikler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_12"/>
+      </navPoint>
+      <navPoint id="9d64ebec-398a-4d96-b6f8-1a26cd08558e" playOrder="12">
+        <navLabel>
+          <text>VIII Prensliğin başına alçaklıkla geçenler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_13"/>
+      </navPoint>
+      <navPoint id="ceb5d3fc-e2ec-4ead-ac7e-2566ce6c0ba8" playOrder="13">
+        <navLabel>
+          <text>IX Sivil prenslik üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_14"/>
+      </navPoint>
+      <navPoint id="81f4bc57-514c-46f4-a2f8-89be2cf92232" playOrder="14">
+        <navLabel>
+          <text>X Bütün prensliklerin gücü nasıl ölçülmelidir?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_15"/>
+      </navPoint>
+      <navPoint id="3dd4d3a4-3057-4e4a-b434-1721e89bd1e7" playOrder="15">
+        <navLabel>
+          <text>XI Kilise prenslikleri üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_16"/>
+      </navPoint>
+      <navPoint id="9bd67553-0581-48fb-9a78-fe8a79e105a0" playOrder="16">
+        <navLabel>
+          <text>XII Kaç tür askerî güç ve paralı asker vardır?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_17"/>
+      </navPoint>
+      <navPoint id="bb98a26f-8758-4ec3-a355-2785f893ec60" playOrder="17">
+        <navLabel>
+          <text>XIII Yardımcı, karma ve öz askerler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_18"/>
+      </navPoint>
+      <navPoint id="89b01d37-5977-47f8-b14d-77ffe6295d49" playOrder="18">
+        <navLabel>
+          <text>XIV Prensin askerî konularda yapması gerekenler</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_19"/>
+      </navPoint>
+      <navPoint id="f295924f-e1aa-4650-a98a-0a609aa9df30" playOrder="19">
+        <navLabel>
+          <text>XV İnsanların, özellikle prenslerin övülmelerine ya da yerilmelerine neden olan şeyler üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_20"/>
+      </navPoint>
+      <navPoint id="43aabb8e-a8ce-4995-952e-1c4212ca3ef8" playOrder="20">
+        <navLabel>
+          <text>XVI Cömertlik ile cimrilik üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_21"/>
+      </navPoint>
+      <navPoint id="73a9514a-7e0f-42fb-a227-e1dfa99695df" playOrder="21">
+        <navLabel>
+          <text>XVII Acımasızlık ile merhamet üzerine ve sevilmek korkulmaktan daha mı iyidir, yoksa tersi mi?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_22"/>
+      </navPoint>
+      <navPoint id="1810db9e-93cc-4c64-9da6-2d4faaeb1829" playOrder="22">
+        <navLabel>
+          <text>XVIII Prensler sözlerini nasıl tutmalıdır?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_23"/>
+      </navPoint>
+      <navPoint id="7d891302-e107-4e1b-92d5-e0b15614786d" playOrder="23">
+        <navLabel>
+          <text>XIX Küçümsenme ve nefretten nasıl kaçınmak gerektiği üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_24"/>
+      </navPoint>
+      <navPoint id="ffd0fc57-f982-4132-b42f-11eaffaf82a9" playOrder="24">
+        <navLabel>
+          <text>XX Kaleler ve prenslerin her gün yaptığı başka birçok şey yararlı mıdır, yararsız mı?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_25"/>
+      </navPoint>
+      <navPoint id="37a8a3bd-4670-4508-a1bd-36b7935f0f59" playOrder="25">
+        <navLabel>
+          <text>XXI Prens kendisini saydırmak için nasıl davranmalıdır?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_26"/>
+      </navPoint>
+      <navPoint id="e1910f06-80f2-42db-850f-ccdb5bd53e9d" playOrder="26">
+        <navLabel>
+          <text>XXII Prenslerin özel danışmanları üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_27"/>
+      </navPoint>
+      <navPoint id="b6e28f82-f311-4c2c-8345-b190a420c18c" playOrder="27">
+        <navLabel>
+          <text>XXIII Dalkavuklardan nasıl uzak durulacağı üzerine</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_28"/>
+      </navPoint>
+      <navPoint id="0f40acd4-d52c-421d-8f86-f85054ce0f7c" playOrder="28">
+        <navLabel>
+          <text>XXIV İtalyan prensleri niçin devletlerini yitirdiler?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_29"/>
+      </navPoint>
+      <navPoint id="5c0aacab-4814-4c78-ab0f-dadd5d197b5b" playOrder="29">
+        <navLabel>
+          <text>XXV İnsan işlerinde talihin gücü nedir ve talihe nasıl karşı koyulabilir?</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_30"/>
+      </navPoint>
+      <navPoint id="2abc3a96-e62d-4cf8-b5ec-4b940f3d41a5" playOrder="30">
+        <navLabel>
+          <text>XXVI İtalya’yı barbarların elinden kurtarmak için çağrı</text>
+        </navLabel>
+        <content src="Text/prensson_split_008.html#calibre_toc_31"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="de3a6056-d91b-4572-b852-86f2a1e6eadf" playOrder="31">
+      <navLabel>
+        <text>KAYNAKÇA</text>
+      </navLabel>
+      <content src="Text/prensson_split_009.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

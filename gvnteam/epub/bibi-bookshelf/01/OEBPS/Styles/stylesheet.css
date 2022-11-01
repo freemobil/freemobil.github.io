@@ -1,0 +1,215 @@
+@namespace h "http://www.w3.org/1999/xhtml";
+.calibre {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    margin-top: 0;
+    page-break-before: always
+    }
+.calibre1 {
+    display: block;
+    page-break-after: always
+    }
+.calibre2 {
+    height: 51;
+    width: 55
+    }
+.calibre3 {
+    font-size: smaller;
+    line-height: normal;
+    vertical-align: super
+    }
+.calibre4 {
+    border-collapse: separate;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-indent: 0
+    }
+.calibre5 {
+    display: table-row;
+    vertical-align: middle
+    }
+.calibre6 {
+    display: table-cell;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    text-align: inherit;
+    vertical-align: inherit
+    }
+.calibre7 {
+    height: 420;
+    width: 270
+    }
+.chapter {
+    display: block
+    }
+.h1baslik {
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.67em;
+    page-break-before: always;
+    text-align: center
+    }
+.h2baslik {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    text-align: center
+    }
+.idebold {
+    font-weight: bold
+    }
+.ideitalik {
+    font-style: italic
+    }
+.indentmetin {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.25em;
+    margin-left: 3em;
+    margin-right: 0;
+    margin-top: 0.25em;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+.indentmetinitalik {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 0.25em;
+    margin-left: 3em;
+    margin-right: 0;
+    margin-top: 0.25em;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+.kitapickapak {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.25em;
+    text-align: center
+    }
+.kitapickapak1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.25em;
+    text-align: center
+    }
+.kunye {
+    display: block;
+    font-size: 0.75em;
+    margin-bottom: 0;
+    margin-left: 3em;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: left
+    }
+.normal {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.7em;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+.normal1 {
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.7em;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+.normal2 {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 0.7em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.7em;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+.normal3 {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.7em;
+    page-break-before: always;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+.ortayazi {
+    display: block;
+    font-style: normal;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    text-align: center
+    }
+.resim {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    text-align: center
+    }
+.sagnormal {
+    display: block;
+    font-style: normal;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.25em;
+    text-align: right
+    }
+.solbaslik {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.25em;
+    text-align: justify;
+    text-indent: 0.75em
+    }
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: default
+    }
+a[href] {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer
+    }

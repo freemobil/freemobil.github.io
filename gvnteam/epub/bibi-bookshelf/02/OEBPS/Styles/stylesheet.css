@@ -1,0 +1,290 @@
+body
+{
+     font-family: "Charis";
+     line-height: 1.2em;
+}
+h1
+{
+	font-size: xx-large;
+	line-height: 1.5em;
+        margin-top: .5em;
+	margin-bottom: 1em;
+        margin-left: 1.4em;
+}
+h2
+{
+	font-size: x-large;
+	line-height: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1.2em;
+	page-break-before: right;
+	text-align: center;
+}
+h3
+{
+	font-size: large;
+	line-height: 1.5em;
+	margin-top: 1.6em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.ctext
+{
+	font-size: small;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	line-height: 1.2em;
+	text-align: left;
+}
+.paraspaceabove
+{
+	font-size: medium;
+	margin-top: 1.5em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.paraspaceabove1
+{
+	font-size: medium;
+	margin-top: 1.5em;
+	margin-bottom: .2em;
+	text-align: left;
+	page-break-before: right;
+}
+.paraspaceabove2
+{
+	font-size: medium;
+	margin-top: 7.4em;
+	margin-bottom: .2em;
+        margin-left: 5.4em;
+	page-break-before: right;
+}
+.publisher
+{
+	font-size: small;
+	line-height: 1.2em;
+	margin-top: 22em;
+	margin-bottom: 1em;
+        margin-left: 3em;
+}
+.sauthor
+{
+	font-size: medium;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+        margin-left: 3em;
+}
+div.textindent
+{
+	font-size: medium;
+	text-indent: 1em;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.textindent
+{
+	font-size: medium;
+	text-indent: 5.4em;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.textindent1
+{
+	font-size: medium;
+	text-indent: 5.4em;
+	margin-top: 6em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+SPAN.weblink
+{
+	text-decoration: underline;
+}
+.nounder
+{
+	text-decoration: none;
+}
+.smallcap
+{
+    font-size: x-small;
+}
+.smallcap1
+{
+    font-size: small;
+}
+.textcenter
+{
+	font-size: medium;
+	line-height: 1.2em;
+	text-align: left;
+	margin-top: .5em;
+	margin-bottom: .7em;
+}
+.half
+{
+	font-size: medium;
+	line-height: 1.2em;
+	text-align: left;
+	margin-top: .5em;
+	margin-bottom: 2em;
+}
+p
+{
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+svg
+{
+	height: 96%;
+	width: 98%;
+}
+.blockquote1X
+{
+	font-size: medium;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 5em;
+	margin-right: 3em;
+	text-align: left;
+}
+.poem1
+{
+	font-size: small;
+	margin-top: 1em;
+	margin-bottom: .2em;
+	margin-left: 6em;
+}
+.poemX
+{
+	font-size: small;
+	margin-top: .2em;
+	margin-bottom: 1em;
+	margin-left: 6em;
+}
+.center
+{
+	font-size: medium;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.center1
+{
+	font-size: small;
+	text-align: center;
+	margin-top: .2em;
+	margin-bottom: 1em;
+}
+.image
+{
+	font-size: medium;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.image0
+{
+	font-size: medium;
+	text-align: center;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+.copy
+{
+	font-size: small;
+	line-height: 1.8em;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	text-align: left;
+}
+.NoIndent
+{
+	font-size: medium;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.NoIndent1
+{
+	font-size: small;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.footnote
+{
+	font-size: small;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.Indenthanging
+{
+	font-size: medium;
+	text-indent: -2em;
+	margin-left: 2em;
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+em
+{
+        font-style: italic;
+}
+strong
+{
+        font-weight: bold;
+}
+sup
+{
+        font-size: x-small;
+        line-height: .5em;
+}
+div.foot_page
+{
+	font-size: small;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	page-break-before: always;
+	text-align: left;
+}
+div.sidebar
+{
+	font-size: medium;
+	border-style: solid;
+	border-width: 1pt;
+}
+.paraspaceabove11
+{
+	font-size: medium;
+	text-indent: 5.4em;
+	margin-top: 1.2em;
+	margin-bottom: .2em;
+	text-align: left;
+}
+.textindent11
+{
+	font-size: medium;
+	margin-top: 1.5em;
+	margin-bottom: .2em;
+	text-align: left;
+	margin-left: 5.6em;
+}
+.textindent12
+{
+	font-size: medium;
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: left;
+	margin-left: 5.6em;
+}
+p.cover
+{
+margin-top: .1em;
+text-align: center;
+margin-bottom: .1em;
+text-indent: 0em;
+ margin-left: 0em;
+ margin-right: 0em;
+}

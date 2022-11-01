@@ -1,0 +1,238 @@
+/*gövde,paragraf*/
+body {
+  text-align: justify;
+  text-indent: 1em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  line-height: 1.2em;
+}
+p.giris {
+  font-size: small;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+p {
+  font-size: small;
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2em;
+  orphans: 2;
+  widows: 2;
+}
+p.kitap-adi {
+  font-size: large;
+  margin-top: 4em;
+  margin-bottom: 0;
+  line-height: 1em;
+  orphans: 2;
+  widows: 2;
+}
+p.yayıevi {
+  font-size: small;
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1em;
+  orphans: 2;
+  widows: 2;
+}
+p.quotename {
+  display: block;
+  text-align: right;
+  text-indent: 1em;
+  font-style: italic;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+p.quote {
+  display: block;
+  text-align: right;
+  text-indent: -10%;
+  font-style: italic;
+  padding: 0.5em;
+}
+p.noindent {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 6%;
+  text-indent: 0%;
+}
+.blok {
+  display: block;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  text-align: center;
+}
+.poetry {
+  display: block;
+  padding: 50px;
+  font-style: italic;
+}
+p.center {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+  text-indent: 0%;
+}
+.left {
+  text-indent: 0%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: left;
+  margin-right: 0%;
+  font-family: monospace;
+  font-weight: bold;
+}
+.center {
+  text-indent: 0%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  margin-right: 0%;
+  font-family: monospace;
+  font-weight: bold;
+}
+.right {
+  text-indent: 0%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: right;
+  margin-right: 20%;
+  font-family: monospace;
+  font-weight: bold;
+}
+.uline {
+  text-decoration: underline;
+}
+.nob {
+  margin-bottom: 0;
+}
+.not {
+  margin-top: 0;
+}
+/*bölüm numara, başlık*/
+h2.bölüm-no {
+  font-weight: bold;
+  text-align: center;
+  page-break-after: avoid;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+h2.bölüm-ad {
+  font-weight: bold;
+  text-align: center;
+  page-break-after: avoid;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/*Kitap adı, yazar, yayınevi*/
+p.yayınevi {
+  text-align: center;
+  line-height: 1.1em;
+}
+h1 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  line-height: 1em;
+  display: block;
+}
+h2 {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  line-height: 1em;
+  display: block;
+}
+h3 {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1em;
+  display: block;
+}
+h4 {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1em;
+  display: block;
+  font-size: small;
+  font-weight: bold;
+}
+h5 {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1em;
+  display: block;
+}
+h6 {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1em;
+  display: block;
+}
+h1.story {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 0;
+  line-height: 1em;
+  display: block;
+  font-weight: normal;
+}
+h2.author {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: right;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  line-height: 1em;
+  display: block;
+  font-weight: normal;
+}
+h3.subhead {
+  font-family: "UpheavalPro", sans-serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+  line-height: 1em;
+  display: block;
+  font-weight: normal;
+}
+/*logo, resim, harita*/
+p.logo {
+  margin-top: 1em;
+  text-indent: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+.publish {
+  font-size: small;
+  text-align: center;
+  text-indent: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  line-height: 1em;
+  orphans: 2;
+  widows: 2;
+}
